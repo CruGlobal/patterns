@@ -1,9 +1,20 @@
-.swatch__preview{
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	display: block;
-	float: left;
-	height: 60px;
-	width: 100%;
-	margin: 0 0.8em 0.5em 0;
-}
+/**
+ * Primary Colors
+ */
+.cru-gold, %cru-gold                 { background-color: $cru-gold; }
+.cru-gray, %cru-gray                 { background-color: $cru-gray; }
+.white, %white                       { background-color: $white; }
+
+
+/**
+ * Secondary Colors
+ */
+.cru-orange, %cru-orange             { background-color: $cru-orange; }
+
+
+
+/**
+ * Accent Colors
+ */
+.cru-bright-blue, %cru-bright-blue   { background-color: $cru-bright-blue; }
+.cru-deep-blue, %cru-deep-blue       { background-color: $cru-bright-blue; }
