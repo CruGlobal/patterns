@@ -1,0 +1,134 @@
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in brackets.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if brackets.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. Brackets.css ignores its own variables in favour of
+ * using your own, so you can completely modify how brackets.css works without ever
+ * having to alter the framework itself.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of brackets.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+$use-grids:         false;
+$use-nav:           true;
+$use-buttons:       false;
+$use-island:        false;
+$use-block-list:    false;
+$use-options:       false;
+$use-pagination:    false;
+$use-breadcrumb:    false;
+
+
+
+
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override brackets.css’ defaults here.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of brackets.css here.
+ */
+
+
+
+
+
+/*------------------------------------*\
+    $Font Families
+\*------------------------------------*/
+$base-font-family: "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+$numberal-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+$base-font-color: #353535;
+$base-background: #f7f7f7;
+
+
+
+/*------------------------------------*\
+    $Color Palette
+\*------------------------------------*/
+/**
+ * Primary colors
+ */
+$cru-gold:         #f9b625;
+$cru-gray:         #666062;
+$white:            #ffffff;
+
+/**
+ * Secondary colors
+ */
+$cru-orange:       #dd7d1b;
+
+/**
+ * Accent colors
+ */
+$cru-deep-blue:    #007398;
+$cur-bright-blue:  #3eb1c8;
+
+/**
+ * Grayscale
+ */ 
+$dark-gray:         #4c4749;
+
+
+
+
+
+/*------------------------------------*\
+    $BUTTON SETTINGS
+\*------------------------------------*/
+$gold-btn-color: $white;
+$gold-btn-bg: $cru-gold;
+$gold-btn-border: $cru-gold;
+
+
+
+
+/*------------------------------------*\
+    $URL PATHS
+\*------------------------------------*/
+$cru-logo-primary:  url("images/cru-logo.svg");
+$cru-logo-fallback: url("images/cru-logo.png");
+
+
+
+
+
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
+$base-animation-time:	250ms;
+$base-animation-delay:   250ms;
+
+
+
+
+
+/*------------------------------------*\
+    $ADDITIONAL
+\*------------------------------------*/
+$header-height: 73px;
