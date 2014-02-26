@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 brackets.css-template
 =====================
 
@@ -12,3 +13,9 @@ $ git clone --recursive git@github.com:thejamesdempsey/brackets.css-template.git
 $ cd path/to/your/project
 $ ./go
 ```
+=======
+web-elements
+============
+
+Modular elements for cru.org micro-sites
+>>>>>>> f69a7a6f81d8847a18283de37ebfc7044bcc7144
