@@ -30,9 +30,26 @@
 			<select>
 				<option value>Jump To...</option>
 				
-				<option value="#site-header">Site Header</option>
-				<option value="#site-slider">Slider</option>
-				
+				<optgroup label="Branding">
+					<option value="#links">Logo</option>
+					<option value="#headings">Font</option>
+					<option value="#icons">Icons</option>
+					<option value="#colors">Colors</option>
+				</optgroup>
+				<optgroup label="Elements">
+					<option value="#headings">Headings</option>
+					<option value="#links">Links</option>
+					<option value="#text">Text</option>
+					<option value="#forms">Forms</option>
+					<option value="#buttons">Buttons</option>
+					<option value="#buttons">Media</option>
+					<option value="#buttons">Tables</option>
+				</optgroup>
+				<optgroup label="Global">
+					<option value="#head">Head</option>
+					<option value="#header">Header</option>					
+					<option value="#footer">Footer</option>
+				</optgroup>
 				<optgroup label="Layouts">
 					<option value="#layouts-one-whole">One Whole</option>
 					<option value="#layouts-one-half-one-half">Halfs</option>
@@ -40,7 +57,9 @@
 					<option value="#layouts-one-third-two-thirds">One-third / Two-thirds</option>
 					<option value="#layouts-one-fourth-three-fourth">One-fourth / Three-fourths</option>
 				</optgroup>
-				<optgroup label="Content Blocks">
+				<optgroup label="Patterns">
+					<option value="#site-slider">Slider</option>
+					<option value="#content-block-calender">Comments</option>
 					<option value="#content-block-calender">Calender</option>
 					<option value="#content-block-contact">Contact</option>
 					<option value="#content-block-about">About</option>
@@ -55,27 +74,300 @@
 			</select>
 		</nav>
 		
-		<div id="colors" class="pattern">
-			<div class="pattern__head">
-				<h3 class="pattern__name">Colors</h3>
+		<section id="colors">
+			<h2 class="pattern__name">Colors</h2>
+			<div class="pattern  pattern--alt  colors">
+				<div class="pattern__head">
+					<h3>Brand Colors</h3>
+				</div>
+				<div class="pattern__body">
+					<ul class="nav  grid  swatch-group">
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-gold"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Cru Gold</li>
+									<li>#f9b625</li>
+									<li>$color-gold</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-gray"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Cru Gray</li>
+									<li>#666062</li>
+									<li>$color-gray</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-white"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>White</li>
+									<li>#ffffff</li>
+									<li>$color-white</li>
+								</ul>
+							</div>
+						</li>
+				
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-orange"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Cru Orange</li>
+									<li>#dd7d1b</li>
+									<li>$color-orange</li>
+								</ul>
+							</div>
+						</li>
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-bright-blue"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Cru Bright Blue</li>
+									<li>#3eb1c8</li>
+									<li>$color-bright-blue</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview  color-deep-blue"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Cru Deep Blue</li>
+									<li>#007398</li>
+									<li>$color-deep-blue</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				
+					<div class="pattern__head">
+						<h3>Additional Colors</h3>
+					</div>
+					<div class="pattern__body">
+					<ul class="nav  grid  swatch-group">
+
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview" style="background-color:#000000;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Black</li>
+									<li>#000000</li>
+									<li>$color-black</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#444444;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Dark Gray</li>
+									<li>#444444</li>
+									<li>$color-dark-gray</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#999595;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Medium Gray</li>
+									<li>#999595</li>
+									<li>$color-medium-gray</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#e4e4e4;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Light Gray</li>
+									<li>#e4e4e4</li>
+									<li>$color-medium-gray</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#f8f8f8;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Pale Gray</li>
+									<li>#eeeeee</li>
+									<li>$color-pale-gray</li>
+								</ul>
+							</div>
+						</li>
+					
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#F6F3D5;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Yellow</li>
+									<li>#F6F3D5</li>
+									<li>$color-yellow</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#E6F4F9;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Light Blue</li>
+									<li>#E6F4F9</li>
+									<li>$color-light-blue</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#5BBD72;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Green</li>
+									<li>#5BBD72</li>
+									<li>$color-green</li>
+								</ul>
+							</div>
+						</li>
+					
+						<li class="grid__item  desk--one-fifth">
+							<div class="swatch">
+								<span class="swatch__preview"  style="background-color:#D95C5C;"></span>
+								<ul class="nav  nav--stacked  swatch__details">
+									<li>Red</li>
+									<li>#D95C5C</li>
+									<li>$color-red</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				
+				</div>
+				
 			</div>
-			<div class="pattern__body">
-				<ul class="nav  grid">
-					<li class="swatch">
-						<span class="swatch__preview  cru-gold"></span>
-						<ul class="nav nav--stacked  swatch__details">
-							<li>Cru Gold</li>
-							<li>#f9b625</li>
-							<li>$brand-primary</li>
-						</ul>
-					</li>
-				</ul>
+		</section>
+		
+		<section id="headings">
+			<h2 class="section-title">Headings</h2>
+			
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">h1</summary>
+					<code class="pattern__markup">
+						<h1>heading 1</h1>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<h1>heading 1</h1>
+				</div>
 			</div>
-		</div>
+			
+			<div class="pattern">		
+				<details class="pattern__details">
+					<summary class="pattern__name">h2</summary>
+					<code class="pattern__markup">
+						<h2>heading 2</h2>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<h2>heading 2</h2>
+				</div>
+			</div>
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">h3</summary>
+					<code class="pattern__markup">
+						<h3>heading 3</h3>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<h3>heading 3</h3>
+				</div>
+			</div>
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">h1</summary>
+					<code class="pattern__markup">
+						<h4>heading 4</h4>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<h4>heading 4</h4>
+				</div>
+			</div>
+		</section>
+		
+		<section id="links">
+			<h2 class="section-title">Links</h2>
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">a</summary>
+					<code class="pattern__markup">
+						<h4>heading 4</h4>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<hp>This is <a href="#">an inline link</a></p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="lists">
+			<h2 class="section-title">Lists</h2>
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">ordered-list</summary>
+					<code class="pattern__markup">
+						<ol>
+							<li>This</li>
+							<li>is</li>
+							<li>a</li>
+							<li>list</li>
+						</ol>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<ol>
+						<li>This</li>
+						<li>is</li>
+						<li>a</li>
+						<li>list</li>
+					</ol>
+				</div>
+			</div>
+			<div class="pattern">			
+				<details class="pattern__details">
+					<summary class="pattern__name">unordered-list</summary>
+					<code class="pattern__markup">
+						<h4>heading 4</h4>
+					</code>
+				</details>
+				<div class="pattern__view">
+					<hp>This is <a href="#">an inline link</a></p>
+				</div>
+			</div>
+		</section>
+		
+		
+
 		
 		<div class="pattern">
 			<div class="pattern__details">
-				<h3 class="pattern__name">Site Header</h3>
+				<h3 class="pattern__name">Lists</h3>
 			</div>
 			<div class="pattern__preview">
 				
@@ -84,7 +376,7 @@
 		
 		<div class="pattern">
 			<div class="pattern__details">
-				<h3 class="pattern__name">Site Header</h3>
+				<h3 class="pattern__name">Blockquotes</h3>
 			</div>
 			<div class="pattern__preview">
 				
@@ -93,7 +385,7 @@
 		
 		<div class="pattern">
 			<div class="pattern__details">
-				<h3 class="pattern__name">Site Header</h3>
+				<h3 class="pattern__name">Lists</h3>
 			</div>
 			<div class="pattern__preview">
 				
@@ -103,7 +395,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
 		
-		<script src="main.js"></script>
+		<script src="main.min.js"></script>
 		
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

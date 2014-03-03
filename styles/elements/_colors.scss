@@ -1,20 +1,20 @@
 /**
  * Primary Colors
  */
-.cru-gold, %cru-gold                 { background-color: $cru-gold; }
-.cru-gray, %cru-gray                 { background-color: $cru-gray; }
-.white, %white                       { background-color: $white; }
+.color-gold, %color-gold                 { background-color: $color-gold; }
+.color-gray, %color-gray                 { background-color: $color-gray; }
+.color-white, %color-white               { background-color: $color-white; }
 
 
 /**
  * Secondary Colors
  */
-.cru-orange, %cru-orange             { background-color: $cru-orange; }
+.color-orange, %color-orange             { background-color: $color-orange; }
 
 
 
 /**
  * Accent Colors
  */
-.cru-bright-blue, %cru-bright-blue   { background-color: $cru-bright-blue; }
-.cru-deep-blue, %cru-deep-blue       { background-color: $cru-bright-blue; }
+.color-bright-blue, %color-bright-blue   { background-color: $color-bright-blue; }
+.color-deep-blue, %color-deep-blue       { background-color: $color-deep-blue; }

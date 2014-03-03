@@ -27,7 +27,7 @@ $link-height: 36px;
 	max-height: $header-height;
 	border-top-width: 3px;
 	border-top-style: solid;
-	border-top-color: $cru-gold;
+	border-top-color: $color-gold;
 }
 
 .navigation-wrapper{
@@ -143,7 +143,7 @@ $link-height: 36px;
 				&:hover{
 					background-color: #f6f6f6;
 					text-decoration: none;
-					color: $cru-gold;
+					color: $color-gold;
 				}
 			}
 			
@@ -166,7 +166,7 @@ $link-height: 36px;
 				}
 				
 				&:hover{
-					color: $cru-gold;
+					color: $color-gold;
 				}
 			}
 			
@@ -265,11 +265,11 @@ $link-height: 36px;
 #nav > ul > li.hover > a,
 #nav > ul > li > a:hover{
 	background-color: #e9e9e9;
-	color: $cru-gold;
+	color: $color-gold;
 }
 
 #nav > ul > li > ul > li > a{
-	color: $cru-gray;
+	color: $color-gray;
 	line-height: 34px;
 	letter-spacing: 0.2px;
 	font-weight: 400;
