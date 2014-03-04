@@ -1,0 +1,28 @@
+.right-nav{
+	.spoken-form{
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+}
+
+.site-search{
+	position: relative;
+	top: 2px;
+}
+
+	.search-field{
+		width: 254px;
+		max-height: 16px;
+		line-height: 18px;
+	}
+	.search-button{
+		position: absolute;
+		top: 0;
+		right:0;
+		
+		
+		background: transparent;
+		padding-left: 10px;
+		padding-right: 10px;
+		border: none;
+	}
