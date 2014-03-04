@@ -103,13 +103,24 @@ $color-dark-gray:    #444444; /* Cru Gold */
 /*------------------------------------*\
     $BUTTON SETTINGS
 \*------------------------------------*/
+$btn-font-size:        16px;
+$btn-default-padding:  0;
+
 $btn-default-color:            $color-white;
 $btn-default-bg:               $color-gold;
 $btn-default-border:           darken($color-gold, 5%);
 
+$btn-alt-color:                $color-white;
+$btn-alt-bg:                   $color-gray;
+$btn-alt-border:               darken($btn-alt-bg, 5%);
 
-$btn-font-size:        16px;
-$btn-default-padding:  0;
+$btn-subtle-color:             #6d6e71;
+$btn-subtle-bg:                rgba(229, 229, 229, 0.35);
+$btn-subtle-border:            darken($btn-subtle-bg, 5%);
+
+$btn-unstyled-color:           $base-font-color;
+$btn-unstyled-bg:              transparent;
+$btn-unstyled-border:          transparent;
 
 $btn-large-padding:    0 36px;
 $btn-large-min-height: 50px;

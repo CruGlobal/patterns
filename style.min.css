@@ -3562,6 +3562,10 @@ body {
 }
 
 /** @mixin button-variant($color, $background, $border) **/
+.button-group {
+  display: block;
+}
+
 .button--large, input.button--large {
   min-height: 50px;
   line-height: 3.125;
@@ -3597,6 +3601,24 @@ body {
   /* 9 */
 }
 
+.button--alt, input.button--alt {
+  color: white;
+  background-color: #666062;
+  border-color: #595455;
+}
+.button--alt:hover, .button--alt:focus, .button--alt:active, .button--alt.active, .open .button--alt.dropdown-toggle, input.button--alt:hover, input.button--alt:focus, input.button--alt:active, input.button--alt.active, .open input.button--alt.dropdown-toggle {
+  color: white;
+  background-color: #514c4e;
+  border-color: #393637;
+}
+.button--alt:active, .button--alt.active, .open .button--alt.dropdown-toggle, input.button--alt:active, input.button--alt.active, .open input.button--alt.dropdown-toggle {
+  background-image: none;
+}
+.button--alt.disabled, .button--alt.disabled:hover, .button--alt.disabled:focus, .button--alt.disabled:active, .button--alt.disabled.active, .button--alt[disabled], .button--alt[disabled]:hover, .button--alt[disabled]:focus, .button--alt[disabled]:active, .button--alt[disabled].active, fieldset[disabled] .button--alt, fieldset[disabled] .button--alt:hover, fieldset[disabled] .button--alt:focus, fieldset[disabled] .button--alt:active, fieldset[disabled] .button--alt.active, input.button--alt.disabled, input.button--alt.disabled:hover, input.button--alt.disabled:focus, input.button--alt.disabled:active, input.button--alt.disabled.active, input.button--alt[disabled], input.button--alt[disabled]:hover, input.button--alt[disabled]:focus, input.button--alt[disabled]:active, input.button--alt[disabled].active, fieldset[disabled] input.button--alt, fieldset[disabled] input.button--alt:hover, fieldset[disabled] input.button--alt:focus, fieldset[disabled] input.button--alt:active, fieldset[disabled] input.button--alt.active {
+  background-color: #666062;
+  border-color: #595455;
+}
+
 .button--disabled, button[disabled], input[disabled] {
   cursor: not-allowed;
   text-shadow: none;
@@ -3615,6 +3637,34 @@ body {
 .button--disabled.disabled, .button--disabled.disabled:hover, .button--disabled.disabled:focus, .button--disabled.disabled:active, .button--disabled.disabled.active, .button--disabled[disabled], .button--disabled[disabled]:hover, .button--disabled[disabled]:focus, .button--disabled[disabled]:active, .button--disabled[disabled].active, fieldset[disabled] .button--disabled, fieldset[disabled] .button--disabled:hover, fieldset[disabled] .button--disabled:focus, fieldset[disabled] .button--disabled:active, fieldset[disabled] .button--disabled.active, button[disabled].disabled, button[disabled].disabled:hover, button[disabled].disabled:focus, button[disabled].disabled:active, button[disabled].disabled.active, button[disabled][disabled], button[disabled][disabled]:hover, button[disabled][disabled]:focus, button[disabled][disabled]:active, button[disabled][disabled].active, fieldset[disabled] button[disabled], fieldset[disabled] button[disabled]:hover, fieldset[disabled] button[disabled]:focus, fieldset[disabled] button[disabled]:active, fieldset[disabled] button[disabled].active, input[disabled].disabled, input[disabled].disabled:hover, input[disabled].disabled:focus, input[disabled].disabled:active, input[disabled].disabled.active, input[disabled][disabled], input[disabled][disabled]:hover, input[disabled][disabled]:focus, input[disabled][disabled]:active, input[disabled][disabled].active, fieldset[disabled] input[disabled], fieldset[disabled] input[disabled]:hover, fieldset[disabled] input[disabled]:focus, fieldset[disabled] input[disabled]:active, fieldset[disabled] input[disabled].active {
   background-color: #e5e5e5;
   border-color: #d8d8d8;
+}
+
+.button--subtle, input.button--subtle {
+  background-color: #e9e9e9;
+  color: #6d6e71;
+  background-color: rgba(229, 229, 229, 0.35);
+  border-color: rgba(216, 216, 216, 0.35);
+}
+.button--subtle:hover, .button--subtle:focus, .button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:hover, input.button--subtle:focus, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
+  color: #6d6e71;
+  background-color: rgba(209, 209, 209, 0.35);
+  border-color: rgba(186, 186, 186, 0.35);
+}
+.button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
+  background-image: none;
+}
+.button--subtle.disabled, .button--subtle.disabled:hover, .button--subtle.disabled:focus, .button--subtle.disabled:active, .button--subtle.disabled.active, .button--subtle[disabled], .button--subtle[disabled]:hover, .button--subtle[disabled]:focus, .button--subtle[disabled]:active, .button--subtle[disabled].active, fieldset[disabled] .button--subtle, fieldset[disabled] .button--subtle:hover, fieldset[disabled] .button--subtle:focus, fieldset[disabled] .button--subtle:active, fieldset[disabled] .button--subtle.active, input.button--subtle.disabled, input.button--subtle.disabled:hover, input.button--subtle.disabled:focus, input.button--subtle.disabled:active, input.button--subtle.disabled.active, input.button--subtle[disabled], input.button--subtle[disabled]:hover, input.button--subtle[disabled]:focus, input.button--subtle[disabled]:active, input.button--subtle[disabled].active, fieldset[disabled] input.button--subtle, fieldset[disabled] input.button--subtle:hover, fieldset[disabled] input.button--subtle:focus, fieldset[disabled] input.button--subtle:active, fieldset[disabled] input.button--subtle.active {
+  background-color: rgba(229, 229, 229, 0.35);
+  border-color: rgba(216, 216, 216, 0.35);
+}
+
+.button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-color: transparent;
+}
+.button--unstyled:hover, input.button--unstyled:hover, .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover {
+  color: #353535;
 }
 
 .inline-block, .site-logo, .site-logo a, .navigation {
