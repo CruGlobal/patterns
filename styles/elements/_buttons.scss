@@ -1,0 +1,32 @@
+/** @mixin button-variant($color, $background, $border) **/
+
+.button--large, input.button--large{
+	min-height: $btn-large-min-height;
+	line-height: ceil($btn-font-size / $btn-large-min-height) * ($btn-large-min-height / $btn-font-size);
+	@include rem-calc(padding, $btn-large-padding);
+}
+
+.button--small, input.button--small{
+	height: $btn-small-height;
+	min-height: $btn-small-min-height;
+	
+	line-height: ceil($btn-font-size / $btn-small-height) * ($btn-small-height / $btn-font-size);
+	
+	@include rem-calc(padding, $btn-small-padding);
+}
+
+
+.button--alternative{
+	
+}
+
+.button--disabled, button[disabled], input[disabled]{
+	cursor: not-allowed;
+	text-shadow: none;
+	
+	@include button-variant($btn-disabled-color, $btn-disabled-bg, $btn-disabled-border);
+}
+
+.button--subtle{
+	
+}

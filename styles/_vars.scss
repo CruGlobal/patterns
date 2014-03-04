@@ -103,16 +103,43 @@ $color-dark-gray:    #444444; /* Cru Gold */
 /*------------------------------------*\
     $BUTTON SETTINGS
 \*------------------------------------*/
+<<<<<<< HEAD
 
 
+=======
+$btn-default-color:            $color-white;
+$btn-default-bg:               $color-gold;
+$btn-default-border:           darken($color-gold, 5%);
+
+
+$btn-font-size:        16px;
+$btn-default-padding:  0;
+
+$btn-large-padding:    0 36px;
+$btn-large-min-height: 50px;
+
+
+$btn-small-padding:    0 16px;
+$btn-small-height:     30px;
+$btn-small-min-height: 10px;
+
+$btn-disabled-color:   #999595;
+$btn-disabled-bg:      #e5e5e5;
+$btn-disabled-border:  darken($btn-disabled-bg, 5%);
+>>>>>>> dev
 
 
 
 /*------------------------------------*\
     $URL PATHS
 \*------------------------------------*/
+<<<<<<< HEAD
 $cru-logo-primary:  url("images/cru-logo.svg");
 $cru-logo-fallback: url("images/cru-logo.png");
+=======
+$cru-logo-primary:      url("images/cru-logo.svg");
+$cru-logo-fallback:     url("images/cru-logo.png");
+>>>>>>> dev
 
 
 
@@ -121,7 +148,11 @@ $cru-logo-fallback: url("images/cru-logo.png");
 /*------------------------------------*\
     $ANIMATIONS
 \*------------------------------------*/
+<<<<<<< HEAD
 $base-animation-time:	250ms;
+=======
+$base-animation-time:	 250ms;
+>>>>>>> dev
 $base-animation-delay:   250ms;
 
 

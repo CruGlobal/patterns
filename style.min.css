@@ -1433,10 +1433,23 @@ input[type="button"],
 input[type="submit"] {
   display: inline-block;
   max-width: 100%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  background-color: #f9b625;
+  border: 2px solid;
+  border-color: #f8ae0c;
+  color: white;
+=======
+>>>>>>> dev
   background-color: #cccccc;
   border: 2px solid;
   border-color: #bfbfbf;
   color: #353535;
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> dev
   line-height: 2.5;
   text-align: center;
   vertical-align: middle;
@@ -1521,8 +1534,18 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
+<<<<<<< HEAD
   color: #353535;
   background-color: #b3b3b3;
+=======
+<<<<<<< HEAD
+  color: white;
+  background-color: #e59e06;
+=======
+  color: #353535;
+  background-color: #b3b3b3;
+>>>>>>> master
+>>>>>>> dev
   text-decoration: none;
 }
 button:active, button.active,
@@ -3561,6 +3584,68 @@ body {
   background-color: #007398;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/** @mixin button-variant($color, $background, $border) **/
+.button--large, input.button--large {
+  min-height: 50px;
+  line-height: 3.125;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 0 36px;
+  /* 9 */
+  padding: 0 2.25rem;
+  /* 9 */
+}
+
+.button--small, input.button--small {
+  height: 30px;
+  min-height: 10px;
+  line-height: 1.875;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 5 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 0 16px;
+  /* 9 */
+  padding: 0 1rem;
+  /* 9 */
+}
+
+.button--disabled, button[disabled], input[disabled] {
+  cursor: not-allowed;
+  text-shadow: none;
+  color: #999595;
+  background-color: #e5e5e5;
+  border-color: #d8d8d8;
+}
+.button--disabled:hover, .button--disabled:focus, .button--disabled:active, .button--disabled.active, .open .button--disabled.dropdown-toggle, button[disabled]:hover, button[disabled]:focus, button[disabled]:active, button[disabled].active, .open button[disabled].dropdown-toggle, input[disabled]:hover, input[disabled]:focus, input[disabled]:active, input[disabled].active, .open input[disabled].dropdown-toggle {
+  color: #999595;
+  background-color: #d1d1d1;
+  border-color: #bababa;
+}
+.button--disabled:active, .button--disabled.active, .open .button--disabled.dropdown-toggle, button[disabled]:active, button[disabled].active, .open button[disabled].dropdown-toggle, input[disabled]:active, input[disabled].active, .open input[disabled].dropdown-toggle {
+  background-image: none;
+}
+.button--disabled.disabled, .button--disabled.disabled:hover, .button--disabled.disabled:focus, .button--disabled.disabled:active, .button--disabled.disabled.active, .button--disabled[disabled], .button--disabled[disabled]:hover, .button--disabled[disabled]:focus, .button--disabled[disabled]:active, .button--disabled[disabled].active, fieldset[disabled] .button--disabled, fieldset[disabled] .button--disabled:hover, fieldset[disabled] .button--disabled:focus, fieldset[disabled] .button--disabled:active, fieldset[disabled] .button--disabled.active, button[disabled].disabled, button[disabled].disabled:hover, button[disabled].disabled:focus, button[disabled].disabled:active, button[disabled].disabled.active, button[disabled][disabled], button[disabled][disabled]:hover, button[disabled][disabled]:focus, button[disabled][disabled]:active, button[disabled][disabled].active, fieldset[disabled] button[disabled], fieldset[disabled] button[disabled]:hover, fieldset[disabled] button[disabled]:focus, fieldset[disabled] button[disabled]:active, fieldset[disabled] button[disabled].active, input[disabled].disabled, input[disabled].disabled:hover, input[disabled].disabled:focus, input[disabled].disabled:active, input[disabled].disabled.active, input[disabled][disabled], input[disabled][disabled]:hover, input[disabled][disabled]:focus, input[disabled][disabled]:active, input[disabled][disabled].active, fieldset[disabled] input[disabled], fieldset[disabled] input[disabled]:hover, fieldset[disabled] input[disabled]:focus, fieldset[disabled] input[disabled]:active, fieldset[disabled] input[disabled].active {
+  background-color: #e5e5e5;
+  border-color: #d8d8d8;
+}
+
+=======
+>>>>>>> master
+>>>>>>> dev
 .inline-block, .site-logo, .site-logo a, .navigation {
   display: inline-block;
 }
