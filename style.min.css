@@ -1433,10 +1433,17 @@ input[type="button"],
 input[type="submit"] {
   display: inline-block;
   max-width: 100%;
+<<<<<<< HEAD
   background-color: #f9b625;
   border: 2px solid;
   border-color: #f8ae0c;
   color: white;
+=======
+  background-color: #cccccc;
+  border: 2px solid;
+  border-color: #bfbfbf;
+  color: #353535;
+>>>>>>> master
   line-height: 2.5;
   text-align: center;
   vertical-align: middle;
@@ -1521,8 +1528,13 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
+<<<<<<< HEAD
   color: white;
   background-color: #e59e06;
+=======
+  color: #353535;
+  background-color: #b3b3b3;
+>>>>>>> master
   text-decoration: none;
 }
 button:active, button.active,
@@ -3561,6 +3573,7 @@ body {
   background-color: #007398;
 }
 
+<<<<<<< HEAD
 /** @mixin button-variant($color, $background, $border) **/
 .button--large, input.button--large {
   min-height: 50px;
@@ -3617,6 +3630,8 @@ body {
   border-color: #d8d8d8;
 }
 
+=======
+>>>>>>> master
 .inline-block, .site-logo, .site-logo a, .navigation {
   display: inline-block;
 }
