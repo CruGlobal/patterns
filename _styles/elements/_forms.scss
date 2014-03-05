@@ -39,6 +39,10 @@ button, input[type="button"], input[type="submit"], .button--disabled {
 	width: auto;
 }
 
+textarea.text-input{
+	height: 100%;
+}
+
 .form-help{
 	display: block;
 	opacity: 0;
