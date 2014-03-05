@@ -1,294 +1,61 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
-		<!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-		<link rel="dns-prefetch" href="//www.google-analytics.com">
-		<link rel="dns-prefetch" href="//www.ajax.googleapis.com.com">
+---
+layout: fundamental
+title: Pattern Primer
+---
+{% include header.html %}
 
-		<!-- Prerender Pages If Needed -->
+<h2>Brand</h2>
+{% for post in site.categories.brand %}
+<section id="{{ pattern.id }}">
+  <h2 class="section-title">{{ post.title }}</h2>
+  {{ post.content }}
+</section>
+{% endfor %}
 
-        <title></title>
-        
-		<meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<h2>Elements</h2>
+<section id="buttons">
+    <h3 class="section-title">Buttons</h3>	
+{% for post in site.categories.buttons %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
-        <link rel="stylesheet" href="style.min.css">
+<section id="forms">
+    <h3 class="section-title">Forms</h3>	
+{% for post in site.categories.forms order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-		<h1>Cru Web Elements - v0.1.0</h1>
-		<nav>
-			<select>
-				<option value>Jump To...</option>
-				
-				<optgroup label="Branding">
-					<option value="#logo">Logo</option>
-					<option value="#font">Font</option>
-					<option value="#icons">Icons</option>
-					<option value="#colors">Colors</option>
-				</optgroup>
-				<optgroup label="Elements">
-					<option value="#buttons">Buttons</option>
-					<option value="#forms">Forms</option>
-					<option value="#headings">Headings</option>
-					<option value="#links">Links</option>
-					<option value="#lists">Lists</option>
-					<option value="#media">Media</option>
-					<option value="#tables">Tables</option>
-					<option value="#text">Text</option>
-				</optgroup>
-				<optgroup label="Global">
-					<option value="#head">Head</option>
-					<option value="#header">Header</option>					
-					<option value="#footer">Footer</option>
-				</optgroup>
-				<optgroup label="Layouts">
-					<option value="#layouts-one-whole">One Whole</option>
-					<option value="#layouts-one-half-one-half">Halfs</option>
-					<option value="#layouts-two-thirds-one-third">Two-Thirds / One-third</option>
-					<option value="#layouts-one-third-two-thirds">One-third / Two-thirds</option>
-					<option value="#layouts-one-fourth-three-fourth">One-fourth / Three-fourths</option>
-				</optgroup>
-				<optgroup label="Patterns">
-					<option value="#site-slider">Slider</option>
-					<option value="#content-block-calender">Comments</option>
-					<option value="#content-block-calender">Calender</option>
-					<option value="#content-block-contact">Contact</option>
-					<option value="#content-block-about">About</option>
-					<option value="#content-block-meetings">Meetings</option>
-					<option value="#content-block-navigation">Navigation</option>
-					<option value="#content-block-content-block-profile">Profile</option>
-					<option value="#content-block-stories">Stories</option>
-					<option value="#content-block-alumni">Alumni</option>
-					<option value="#content-block-get-involved">Get Involved</option>
-					<option value="#content-block-social">Social Media</option>
-				</optgroup>
-			</select>
-		</nav>
-		
-		<section id="colors">
-			<h2 class="pattern__name">Colors</h2>
-			<div class="pattern  pattern--alt  colors">
-				<div class="pattern__head">
-					<h3>Brand Colors</h3>
-				</div>
-				<div class="pattern__body">
-					<ul class="nav  grid  swatch-group">
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-gold"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Cru Gold</li>
-									<li>#f9b625</li>
-									<li>$color-gold</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-gray"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Cru Gray</li>
-									<li>#666062</li>
-									<li>$color-gray</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-white"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>White</li>
-									<li>#ffffff</li>
-									<li>$color-white</li>
-								</ul>
-							</div>
-						</li>
-				
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-orange"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Cru Orange</li>
-									<li>#dd7d1b</li>
-									<li>$color-orange</li>
-								</ul>
-							</div>
-						</li>
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-bright-blue"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Cru Bright Blue</li>
-									<li>#3eb1c8</li>
-									<li>$color-bright-blue</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview  color-deep-blue"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Cru Deep Blue</li>
-									<li>#007398</li>
-									<li>$color-deep-blue</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				
-					<div class="pattern__head">
-						<h3>Additional Colors</h3>
-					</div>
-					<div class="pattern__body">
-					<ul class="nav  grid  swatch-group">
+<section id="headings">
+    <h3 class="section-title">Headings</h3>	
+{% for post in site.categories.headings order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview" style="background-color:#000000;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Black</li>
-									<li>#000000</li>
-									<li>$color-black</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#444444;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Dark Gray</li>
-									<li>#444444</li>
-									<li>$color-dark-gray</li>
-								</ul>
-							</div>
-						</li>
+<section id="links">
+    <h3 class="section-title">Links</h3>	
+{% for post in site.categories.links order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#999595;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Medium Gray</li>
-									<li>#999595</li>
-									<li>$color-medium-gray</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#e4e4e4;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Light Gray</li>
-									<li>#e4e4e4</li>
-									<li>$color-medium-gray</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#f8f8f8;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Pale Gray</li>
-									<li>#eeeeee</li>
-									<li>$color-pale-gray</li>
-								</ul>
-							</div>
-						</li>
-					
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#F6F3D5;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Yellow</li>
-									<li>#F6F3D5</li>
-									<li>$color-yellow</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#E6F4F9;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Light Blue</li>
-									<li>#E6F4F9</li>
-									<li>$color-light-blue</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#5BBD72;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Green</li>
-									<li>#5BBD72</li>
-									<li>$color-green</li>
-								</ul>
-							</div>
-						</li>
-					
-						<li class="grid__item  desk--one-fifth">
-							<div class="swatch">
-								<span class="swatch__preview"  style="background-color:#D95C5C;"></span>
-								<ul class="nav  nav--stacked  swatch__details">
-									<li>Red</li>
-									<li>#D95C5C</li>
-									<li>$color-red</li>
-								</ul>
-							</div>
-						</li>
+<section id="lists">
+    <h3 class="section-title">Lists</h3>	
+{% for post in site.categories.lists order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
-					</ul>
-				
-				</div>
-				
-			</div>
-		</section>
-		
-		<section id="buttons">
-			<h2 class="section-title">Buttons</h2>
-			<div class="pattern">			
-				<details class="pattern__details">
-					<summary class="pattern__name">btn-default</summary>
-					<code class="pattern__markup">
-						<button>Button</button>
-						<button type="submit">Submit Button</button>
-						<a href="#" class="button">Link button</a></button>
-						<input type="button" value="Input button"></input>
-						<input type="submit" value="Input submit button"></input>
-					</code>
-				</details>
-				<div class="pattern__view">
-					<button>Button</button>
-					<button type="submit">Submit Button</button>
-					<a href="#" class="button">Link button</a></button>
-					<input type="button" value="Input button"></input>
-					<input type="submit" value="Input submit button"></input>
-				</div>
-			</div>
-			
-			<div class="pattern">			
-				<details class="pattern__details">
-					<summary class="pattern__name">btn-large</summary>
-					<code class="pattern__markup">
+<section id="media">
+    <h3 class="section-title">Media</h3>	
+{% for post in site.categories.media order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
 
+<<<<<<< HEAD
 						<button class="button--large">Button</button>
 						<button type="submit" class="button--large">Submit Button</button>
 						<a href="#" class="button  button--large">Link button</a></button>
@@ -1127,3 +894,45 @@
         </script>
     </body>
 </html>
+=======
+<section id="tables">
+    <h3 class="section-title">Tables</h3>	
+{% for post in site.categories.tables order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="text">
+    <h3 class="section-title">Text</h3>	
+{% for post in site.categories.text order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+
+<h3>Global</h2>
+{% for post in site.categories.global %}
+<section id="{{ pattern.id }}">
+  <h3 class="section-title">{{ post.title }}</h3>
+  {{ post.content }}
+</section>
+{% endfor %}
+
+<h2>Components</h2>
+{% for post in site.categories.components %}
+<section id="{{ pattern.id }}">
+  <h3 class="section-title">{{ post.title }}</h3>
+  {{ post.content }}
+</section>
+{% endfor %}
+
+<h2>Patterns</h2>
+{% for post in site.categories.patterns %}
+<section id="{{ pattern.id }}">
+  <h3 class="section-title">{{ post.title }}</h3>
+  {{ post.content }}
+</section>
+{% endfor %}
+
+{% include footer.html %}
+>>>>>>> dev

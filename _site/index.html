@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pattern Primer</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- default CSS via adactio -->
+  <link rel="stylesheet" href="/style.min.css"> 
+
+  <!-- .pattern class CSS -->
+  <style>
+    .pattern {
+        clear: both;
+        overflow: hidden;
+    }
+    .pattern .display {
+        width: 65%;
+        float: left;
+    }
+    .pattern .source {
+        width: 30%;
+        float: right;
+    }
+    .pattern .source textarea {
+        width: 90%;
+    }
+  </style>
+
+  <!-- This space intentionally left blank. Put your custom web-served fonts here -->
+
+  <!-- This space intentionally left blank. Put your web analytics here -->
+
+</head>
+<body></body>
+
+<body>
+  
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+	<h1>Cru Web Elements - v0.1.0</h1>
+	<nav>
+		<select>
+			<option value>Jump To...</option>
+			
+			<optgroup label="Branding">
+				<option value="#logo">Logo</option>
+				<option value="#font">Font</option>
+				<option value="#icons">Icons</option>
+				<option value="#colors">Colors</option>
+			</optgroup>
+			<optgroup label="Elements">
+				<option value="#buttons">Buttons</option>
+				<option value="#forms">Forms</option>
+				<option value="#headings">Headings</option>
+				<option value="#links">Links</option>
+				<option value="#lists">Lists</option>
+				<option value="#media">Media</option>
+				<option value="#tables">Tables</option>
+				<option value="#text">Text</option>
+			</optgroup>
+			<optgroup label="Global">
+				<option value="#head">Head</option>
+				<option value="#header">Header</option>					
+				<option value="#footer">Footer</option>
+			</optgroup>
+			<optgroup label="Layouts">
+				<option value="#layouts-one-whole">One Whole</option>
+				<option value="#layouts-one-half-one-half">Halfs</option>
+				<option value="#layouts-two-thirds-one-third">Two-Thirds / One-third</option>
+				<option value="#layouts-one-third-two-thirds">One-third / Two-thirds</option>
+				<option value="#layouts-one-fourth-three-fourth">One-fourth / Three-fourths</option>
+			</optgroup>
+			<optgroup label="Patterns">
+				<option value="#site-slider">Slider</option>
+				<option value="#content-block-calender">Comments</option>
+				<option value="#content-block-calender">Calender</option>
+				<option value="#content-block-contact">Contact</option>
+				<option value="#content-block-about">About</option>
+				<option value="#content-block-meetings">Meetings</option>
+				<option value="#content-block-navigation">Navigation</option>
+				<option value="#content-block-content-block-profile">Profile</option>
+				<option value="#content-block-stories">Stories</option>
+				<option value="#content-block-alumni">Alumni</option>
+				<option value="#content-block-get-involved">Get Involved</option>
+				<option value="#content-block-social">Social Media</option>
+			</optgroup>
+		</select>
+	</nav>
+
+<h2>Brand</h2>
+
+
+<h2>Elements</h2>
+<section id="buttons">
+    <h3 class="section-title">Buttons</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-subtle</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button  class=&quot;button--subtle&quot;&gt;Button&lt;/button&gt;
+&lt;button  class=&quot;button--subtle&quot; type=&quot;submit&quot;&gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button  button--subtle&quot;&gt;Link button&lt;/a&gt;&lt;/button&gt;
+&lt;input  class=&quot;button--subtle&quot; type=&quot;button&quot; value=&quot;Input button&quot;&gt;&lt;/input&gt;
+&lt;input  class=&quot;button--subtle&quot; type=&quot;submit&quot; value=&quot;Input submit button&quot;&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button  class="button--subtle">Button</button>
+<button  class="button--subtle" type="submit">Submit Button</button>
+<a href="#" class="button  button--subtle">Link button</a></button>
+<input  class="button--subtle" type="button" value="Input button"></input>
+<input  class="button--subtle" type="submit" value="Input submit button"></input>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-small</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button class=&quot;button--large&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;button--large&quot;&gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button  button--large&quot;&gt;Link button&lt;/a&gt;&lt;/button&gt;
+&lt;input class=&quot;button--large&quot; type=&quot;button&quot; value=&quot;Input button&quot;&gt;&lt;/input&gt;
+&lt;input class=&quot;button--large&quot; type=&quot;submit&quot; value=&quot;Input submit button&quot;&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button class="button--large">Button</button>
+<button type="submit" class="button--large">Submit Button</button>
+<a href="#" class="button  button--large">Link button</a></button>
+<input class="button--large" type="button" value="Input button"></input>
+<input class="button--large" type="submit" value="Input submit button"></input>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-large</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button class=&quot;button--large&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;submit&quot; class=&quot;button--large&quot;&gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button  button--large&quot;&gt;Link button&lt;/a&gt;&lt;/button&gt;
+&lt;input type=&quot;button&quot;  class=&quot;button--large&quot; value=&quot;Input button&quot;&gt;&lt;/input&gt;
+&lt;input type=&quot;submit&quot;  class=&quot;button--large&quot; value=&quot;Input submit button&quot;&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button class="button--large">Button</button>
+<button type="submit" class="button--large">Submit Button</button>
+<a href="#" class="button  button--large">Link button</a></button>
+<input type="button"  class="button--large" value="Input button"></input>
+<input type="submit"  class="button--large" value="Input submit button"></input>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-disabled</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button disabled&gt;Button&lt;/button&gt;
+&lt;button type=&quot;submit&quot; disabled&gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button  button--disabled&quot;&gt;Link button&lt;/a&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input button&quot; disabled&gt;&lt;/input&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Input submit button&quot; disabled&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button disabled>Button</button>
+<button type="submit" disabled>Submit Button</button>
+<a href="#" class="button  button--disabled">Link button</a>
+<input type="button" value="Input button" disabled></input>
+<input type="submit" value="Input submit button" disabled></input>
+
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-default</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button&gt;Button&lt;/button&gt;
+&lt;button type=&quot;submit&quot;&gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Link button&lt;/a&gt;&lt;/button&gt;
+&lt;input type=&quot;button&quot; value=&quot;Input button&quot;&gt;&lt;/input&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Input submit button&quot;&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button>Button</button>
+<button type="submit">Submit Button</button>
+<a href="#" class="button">Link button</a></button>
+<input type="button" value="Input button"></input>
+<input type="submit" value="Input submit button"></input>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">btn-alt</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;button class=&quot;button--alt&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;button--alt&quot; type=&quot;submit&quot; &gt;Submit Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;button  button--alt&quot;&gt;Link button&lt;/a&gt;&lt;/button&gt;
+&lt;input  class=&quot;button--alt&quot; type=&quot;button&quot; value=&quot;Input button&quot;&gt;&lt;/input&gt;
+&lt;input  class=&quot;button--alt&quot; type=&quot;submit&quot; value=&quot;Input submit button&quot;&gt;&lt;/input&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<button class="button--alt">Button</button>
+<button class="button--alt" type="submit" >Submit Button</button>
+<a href="#" class="button  button--alt">Link button</a></button>
+<input  class="button--alt" type="button" value="Input button"></input>
+<input  class="button--alt" type="submit" value="Input submit button"></input>
+
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="forms">
+    <h3 class="section-title">Forms</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input.checkbox</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li class=&quot;spoken-form&quot;&gt;
+		&lt;label for=&quot;checkbox&quot;  class=&quot;check&quot;&gt;
+			&lt;input id=&quot;checkbox&quot; type=&quot;checkbox&quot;  class=&quot;checkbox&quot;  required /&gt;Single Checkbox
+		&lt;/label&gt;
+		&lt;small class=&quot;additional&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li class="spoken-form">
+		<label for="checkbox"  class="check">
+			<input id="checkbox" type="checkbox"  class="checkbox"  required />Single Checkbox
+		</label>
+		<small class="additional">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-textarea-disabled</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset class=&quot;select field&quot;&gt;
+        &lt;legend&gt;Textarea Disabled &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li  class=&quot;block-field&quot;&gt;
+				&lt;textarea class=&quot;text-input&quot; rows=&quot;8&quot; cols=&quot;32&quot; required disabled&gt;&lt;/textarea&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset class="select field">
+        <legend>Textarea Disabled <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li  class="block-field">
+				<textarea class="text-input" rows="8" cols="32" required disabled></textarea>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-textarea</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset class=&quot;select field&quot;&gt;
+        &lt;legend&gt;Textarea &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li  class=&quot;block-field&quot;&gt;
+				&lt;textarea class=&quot;text-input&quot; rows=&quot;8&quot; cols=&quot;32&quot; required&gt;&lt;/textarea&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset class="select field">
+        <legend>Textarea <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li  class="block-field">
+				<textarea class="text-input" rows="8" cols="32" required></textarea>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-spoken-layout</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+    &lt;li class=&quot;spoken-form&quot;&gt;
+        Hello, my &lt;label for=&quot;spoken-name&quot;&gt;name&lt;/label&gt; is
+        &lt;input type=&quot;text&quot; class=&quot;text-input&quot; id=&quot;spoken-name&quot;&gt;. My home
+        &lt;label for=&quot;country&quot;&gt;country&lt;/label&gt; is
+        &lt;select id=&quot;country&quot;&gt;
+            &lt;option&gt;UK&lt;/option&gt;
+            &lt;option&gt;US&lt;/option&gt;
+            &lt;option&gt;Other&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+    <li class="spoken-form">
+        Hello, my <label for="spoken-name">name</label> is
+        <input type="text" class="text-input" id="spoken-name">. My home
+        <label for="country">country</label> is
+        <select id="country">
+            <option>UK</option>
+            <option>US</option>
+            <option>Other</option>
+        </select>
+    </li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-signup</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;Signup&lt;/legend&gt;
+	    &lt;ul class=&quot;form-fields&quot;&gt;
+	        &lt;li class=&quot;block-field&quot;&gt;
+				&lt;label for=&quot;email&quot;&gt;Your Email Address:&lt;/label&gt;
+	        	&lt;input id=&quot;email&quot; class=&quot;text-input&quot; type=&quot;email&quot; placeholder=&quot;Where place people send your electronic mail?&quot; /&gt;
+	        	&lt;small class=&quot;additional&quot;&gt;Note about this field&lt;/small&gt;
+	        &lt;/li&gt;
+	        &lt;li class=&quot;block-field&quot;&gt;
+				&lt;label for=&quot;name&quot;&gt;Your Name:&lt;/label&gt;
+	        	&lt;input id=&quot;name&quot; class=&quot;text-input&quot; type=&quot;text&quot; placeholder=&quot;What do people call you?&quot; /&gt;
+	        &lt;/li&gt;
+	        &lt;li class=&quot;block-field&quot;&gt;
+	        	&lt;select class=&quot;form-control&quot;&gt;
+	        	  &lt;option&gt;1&lt;/option&gt;
+	        	  &lt;option&gt;2&lt;/option&gt;
+	        	  &lt;option&gt;3&lt;/option&gt;
+	        	  &lt;option&gt;4&lt;/option&gt;
+	        	  &lt;option&gt;5&lt;/option&gt;
+	        	&lt;/select&gt;
+	        &lt;/li&gt;
+	    &lt;/ul&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form>
+	<fieldset>
+		<legend>Signup</legend>
+	    <ul class="form-fields">
+	        <li class="block-field">
+				<label for="email">Your Email Address:</label>
+	        	<input id="email" class="text-input" type="email" placeholder="Where place people send your electronic mail?" />
+	        	<small class="additional">Note about this field</small>
+	        </li>
+	        <li class="block-field">
+				<label for="name">Your Name:</label>
+	        	<input id="name" class="text-input" type="text" placeholder="What do people call you?" />
+	        </li>
+	        <li class="block-field">
+	        	<select class="form-control">
+	        	  <option>1</option>
+	        	  <option>2</option>
+	        	  <option>3</option>
+	        	  <option>4</option>
+	        	  <option>5</option>
+	        	</select>
+	        </li>
+	    </ul>
+	</fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-select-multiple-disabled</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;select&quot;&gt;Please select your option&lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+	    &lt;select id=&quot;select&quot;  class=&quot;form-control&quot;  multiple disabled&gt;
+	        &lt;optgroup label=&quot;Option Group A&quot;&gt;
+	            &lt;option&gt;Option One&lt;/option&gt;
+	            &lt;option&gt;Option Two&lt;/option&gt;
+	            &lt;option&gt;Option Three&lt;/option&gt;
+	        &lt;/optgroup&gt;
+	        &lt;optgroup label=&quot;Option Group B&quot;&gt;
+	            &lt;option&gt;Option Four&lt;/option&gt;
+	            &lt;option&gt;Option Five&lt;/option&gt;
+	            &lt;option&gt;Option Six&lt;/option&gt;
+	        &lt;/optgroup&gt;
+	    &lt;/select&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="select">Please select your option<abbr title="Required">*</abbr></label>
+	    <select id="select"  class="form-control"  multiple disabled>
+	        <optgroup label="Option Group A">
+	            <option>Option One</option>
+	            <option>Option Two</option>
+	            <option>Option Three</option>
+	        </optgroup>
+	        <optgroup label="Option Group B">
+	            <option>Option Four</option>
+	            <option>Option Five</option>
+	            <option>Option Six</option>
+	        </optgroup>
+	    </select>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-select-multiple</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;select&quot;&gt;Please select your option&lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+	    &lt;select id=&quot;select&quot;  class=&quot;form-control&quot;  multiple&gt;
+	        &lt;optgroup label=&quot;Option Group A&quot;&gt;
+	            &lt;option&gt;Option One&lt;/option&gt;
+	            &lt;option&gt;Option Two&lt;/option&gt;
+	            &lt;option&gt;Option Three&lt;/option&gt;
+	        &lt;/optgroup&gt;
+	        &lt;optgroup label=&quot;Option Group B&quot;&gt;
+	            &lt;option&gt;Option Four&lt;/option&gt;
+	            &lt;option&gt;Option Five&lt;/option&gt;
+	            &lt;option&gt;Option Six&lt;/option&gt;
+	        &lt;/optgroup&gt;
+	    &lt;/select&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="select">Please select your option<abbr title="Required">*</abbr></label>
+	    <select id="select"  class="form-control"  multiple>
+	        <optgroup label="Option Group A">
+	            <option>Option One</option>
+	            <option>Option Two</option>
+	            <option>Option Three</option>
+	        </optgroup>
+	        <optgroup label="Option Group B">
+	            <option>Option Four</option>
+	            <option>Option Five</option>
+	            <option>Option Six</option>
+	        </optgroup>
+	    </select>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-select-disabled</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;select&quot;&gt;Please select your state of birth&lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+	    &lt;select id=&quot;select&quot;  class=&quot;form-control&quot;  disabled&gt;
+	    &lt;/select&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="select">Please select your state of birth<abbr title="Required">*</abbr></label>
+	    <select id="select"  class="form-control"  disabled>
+	    </select>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-select</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;select&quot;&gt;Please select your state of birth&lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+	    &lt;select id=&quot;select&quot;  class=&quot;form-control&quot;&gt;
+		    &lt;option&gt;Alabama&lt;/option&gt;
+		  	    &lt;option&gt;Alaska&lt;/option&gt;
+		  	    &lt;option&gt;Arizona&lt;/option&gt;
+		  	    &lt;option&gt;Arkansas&lt;/option&gt;
+		  	    &lt;option&gt;American Samoa&lt;/option&gt;
+		  	    &lt;option&gt;California&lt;/option&gt;
+		  	    &lt;option&gt;Colorado&lt;/option&gt;
+		  	    &lt;option&gt;Connecticut&lt;/option&gt;
+		  	    &lt;option&gt;Delaware&lt;/option&gt;
+		  	    &lt;option&gt;District of Columbia&lt;/option&gt;
+		  	    &lt;option&gt;Florida&lt;/option&gt;
+		  	    &lt;option&gt;Georgia&lt;/option&gt;
+		  	    &lt;option&gt;Guam&lt;/option&gt;
+		  	    &lt;option&gt;Hawaii&lt;/option&gt;
+		  	    &lt;option&gt;Idaho&lt;/option&gt;
+		  	    &lt;option&gt;Illinois&lt;/option&gt;
+		  	    &lt;option&gt;Indiana&lt;/option&gt;
+		  	    &lt;option&gt;Iowa&lt;/option&gt;
+		  	    &lt;option&gt;Kansas&lt;/option&gt;
+		  	    &lt;option&gt;Kentucky&lt;/option&gt;
+		  	    &lt;option&gt;Louisiana&lt;/option&gt;
+		  	    &lt;option&gt;Maine&lt;/option&gt;
+		  	    &lt;option&gt;Maryland&lt;/option&gt;
+		  	    &lt;option&gt;Massachusetts&lt;/option&gt;
+		  	    &lt;option&gt;Michigan&lt;/option&gt;
+		  	    &lt;option&gt;Minnesota&lt;/option&gt;
+		  	    &lt;option&gt;Mississippi&lt;/option&gt;
+		  	    &lt;option&gt;Missouri&lt;/option&gt;
+		  	    &lt;option&gt;Montana&lt;/option&gt;
+		  	    &lt;option&gt;Nebraska&lt;/option&gt;
+		  	    &lt;option&gt;Nevada&lt;/option&gt;
+		  	    &lt;option&gt;New Hampshire&lt;/option&gt;
+		  	    &lt;option&gt;New Jersey&lt;/option&gt;
+		  	    &lt;option&gt;New Mexico&lt;/option&gt;
+		  	    &lt;option&gt;New York&lt;/option&gt;
+		  	    &lt;option&gt;North Carolina&lt;/option&gt;
+		  	    &lt;option&gt;North Dakota&lt;/option&gt;
+		  	    &lt;option&gt;Northern Mariana Islands&lt;/option&gt;
+		  	    &lt;option&gt;Ohio&lt;/option&gt;
+		  	    &lt;option&gt;Oklahoma&lt;/option&gt;
+		  	    &lt;option&gt;Oregon&lt;/option&gt;
+		  	    &lt;option&gt;Pennsylvania&lt;/option&gt;
+		  	    &lt;option&gt;Puerto Rico&lt;/option&gt;
+		  	    &lt;option&gt;Rhode Island&lt;/option&gt;
+		  	    &lt;option&gt;South Carolina&lt;/option&gt;
+		  	    &lt;option&gt;South Dakota&lt;/option&gt;
+		  	    &lt;option&gt;Tennessee&lt;/option&gt;
+		  	    &lt;option&gt;Texas&lt;/option&gt;
+		  	    &lt;option&gt;United States Virgin Islands&lt;/option&gt;
+		  	    &lt;option&gt;Utah&lt;/option&gt;
+		  	    &lt;option&gt;Vermont&lt;/option&gt;
+		  	    &lt;option&gt;Virginia&lt;/option&gt;
+		  	    &lt;option&gt;Washington&lt;/option&gt;
+		  	    &lt;option&gt;West Virginia&lt;/option&gt;
+		  	    &lt;option&gt;Wisconsin&lt;/option&gt;
+		  	    &lt;option&gt;Wyoming&lt;/option&gt;
+	    &lt;/select&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="select">Please select your state of birth<abbr title="Required">*</abbr></label>
+	    <select id="select"  class="form-control">
+		    <option>Alabama</option>
+		  	    <option>Alaska</option>
+		  	    <option>Arizona</option>
+		  	    <option>Arkansas</option>
+		  	    <option>American Samoa</option>
+		  	    <option>California</option>
+		  	    <option>Colorado</option>
+		  	    <option>Connecticut</option>
+		  	    <option>Delaware</option>
+		  	    <option>District of Columbia</option>
+		  	    <option>Florida</option>
+		  	    <option>Georgia</option>
+		  	    <option>Guam</option>
+		  	    <option>Hawaii</option>
+		  	    <option>Idaho</option>
+		  	    <option>Illinois</option>
+		  	    <option>Indiana</option>
+		  	    <option>Iowa</option>
+		  	    <option>Kansas</option>
+		  	    <option>Kentucky</option>
+		  	    <option>Louisiana</option>
+		  	    <option>Maine</option>
+		  	    <option>Maryland</option>
+		  	    <option>Massachusetts</option>
+		  	    <option>Michigan</option>
+		  	    <option>Minnesota</option>
+		  	    <option>Mississippi</option>
+		  	    <option>Missouri</option>
+		  	    <option>Montana</option>
+		  	    <option>Nebraska</option>
+		  	    <option>Nevada</option>
+		  	    <option>New Hampshire</option>
+		  	    <option>New Jersey</option>
+		  	    <option>New Mexico</option>
+		  	    <option>New York</option>
+		  	    <option>North Carolina</option>
+		  	    <option>North Dakota</option>
+		  	    <option>Northern Mariana Islands</option>
+		  	    <option>Ohio</option>
+		  	    <option>Oklahoma</option>
+		  	    <option>Oregon</option>
+		  	    <option>Pennsylvania</option>
+		  	    <option>Puerto Rico</option>
+		  	    <option>Rhode Island</option>
+		  	    <option>South Carolina</option>
+		  	    <option>South Dakota</option>
+		  	    <option>Tennessee</option>
+		  	    <option>Texas</option>
+		  	    <option>United States Virgin Islands</option>
+		  	    <option>Utah</option>
+		  	    <option>Vermont</option>
+		  	    <option>Virginia</option>
+		  	    <option>Washington</option>
+		  	    <option>West Virginia</option>
+		  	    <option>Wisconsin</option>
+		  	    <option>Wyoming</option>
+	    </select>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-options-radios-captions</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Radio Buttons with Captions &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio1&quot;&gt;&lt;input id=&quot;radio1&quot; name=&quot;radio&quot; type=&quot;radio&quot; checked/&gt; Choice A&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio2&quot;&gt;&lt;input id=&quot;radio2&quot; name=&quot;radio&quot; type=&quot;radio&quot;/&gt; Choice B&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio3&quot;&gt;&lt;input id=&quot;radio3&quot; name=&quot;radio&quot; type=&quot;radio&quot;/&gt; Choice C&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset>
+        <legend>Radio Buttons with Captions <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li>
+                <label for="radio1"><input id="radio1" name="radio" type="radio" checked/> Choice A</label>
+                <small class="additional">Note about this option</small>
+            </li>
+            <li>
+                <label for="radio2"><input id="radio2" name="radio" type="radio"/> Choice B</label>
+                <small class="additional">Note about this option</small>
+            </li>
+            <li>
+                <label for="radio3"><input id="radio3" name="radio" type="radio"/> Choice C</label>
+                <small class="additional">Note about this option</small>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-options-radios</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset class=&quot;select field&quot;&gt;
+        &lt;legend&gt;Radio Buttons &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio1&quot;&gt;&lt;input id=&quot;radio1&quot; name=&quot;radio&quot; type=&quot;radio&quot; checked/&gt; Choice A&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio2&quot;&gt;&lt;input id=&quot;radio2&quot; name=&quot;radio&quot; type=&quot;radio&quot;/&gt; Choice B&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;radio3&quot;&gt;&lt;input id=&quot;radio3&quot; name=&quot;radio&quot; type=&quot;radio&quot;/&gt; Choice C&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset class="select field">
+        <legend>Radio Buttons <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li>
+                <label for="radio1"><input id="radio1" name="radio" type="radio" checked/> Choice A</label>
+            </li>
+            <li>
+                <label for="radio2"><input id="radio2" name="radio" type="radio"/> Choice B</label>
+            </li>
+            <li>
+                <label for="radio3"><input id="radio3" name="radio" type="radio"/> Choice C</label>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-options-checkbox</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset class=&quot;select field&quot;&gt;
+        &lt;legend&gt;Checkboxes &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox1&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked/&gt; Choice A&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox2&quot;&gt;&lt;input id=&quot;checkbox2&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt; Choice B&lt;/label&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox3&quot;&gt;&lt;input id=&quot;checkbox3&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt; Choice C&lt;/label&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset class="select field">
+        <legend>Checkboxes <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li>
+                <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked/> Choice A</label>
+            </li>
+            <li>
+                <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"/> Choice B</label>
+            </li>
+            <li>
+                <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"/> Choice C</label>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-options-checkbox-captions</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form &gt;
+    &lt;fieldset class=&quot;select field&quot;&gt;
+        &lt;legend&gt;Checkboxes with captions &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/legend&gt;
+        &lt;ul class=&quot;check-list&quot;&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox1&quot;&gt;&lt;input id=&quot;checkbox1&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot; checked/&gt; Choice A&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox2&quot;&gt;&lt;input id=&quot;checkbox2&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt; Choice B&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;label for=&quot;checkbox3&quot;&gt;&lt;input id=&quot;checkbox3&quot; name=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt; Choice C&lt;/label&gt;
+                &lt;small class=&quot;additional&quot;&gt;Note about this option&lt;/small&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form >
+    <fieldset class="select field">
+        <legend>Checkboxes with captions <abbr title="Required">*</abbr></legend>
+        <ul class="check-list">
+            <li>
+                <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked/> Choice A</label>
+                <small class="additional">Note about this option</small>
+            </li>
+            <li>
+                <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"/> Choice B</label>
+                <small class="additional">Note about this option</small>
+            </li>
+            <li>
+                <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"/> Choice C</label>
+                <small class="additional">Note about this option</small>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input.url</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;url&quot;&gt;Email Address&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		&lt;input  class=&quot;text-input&quot; id=&quot;url&quot; type=&quot;url&quot;  placeholder=&quot;http://yourwebsite.com&quot;  required /&gt;
+		&lt;small class=&quot;additional&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="url">Email Address<abbr title="required">*</abbr></label>
+		<input  class="text-input" id="url" type="url"  placeholder="http://yourwebsite.com"  required />
+		<small class="additional">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input-text-disabled</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;text&quot;  class=&quot;check&quot;&gt;Text Disabled&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		&lt;input class=&quot;text-input&quot; id=&quot;text&quot; type=&quot;password&quot;  placeholder=&quot;Your text&quot;  disabled /&gt;
+		&lt;small class=&quot;note&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="text"  class="check">Text Disabled<abbr title="required">*</abbr></label>
+		<input class="text-input" id="text" type="password"  placeholder="Your text"  disabled />
+		<small class="note">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input.text</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;text&quot;  class=&quot;check&quot;&gt;Text&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		&lt;input  class=&quot;text-input&quot; id=&quot;text&quot; type=&quot;text&quot;  placeholder=&quot;Your text&quot;  required /&gt;
+		&lt;small class=&quot;note&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="text"  class="check">Text<abbr title="required">*</abbr></label>
+		<input  class="text-input" id="text" type="text"  placeholder="Your text"  required />
+		<small class="note">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input.password</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;email&quot;  class=&quot;check&quot;&gt;Password&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		&lt;input class=&quot;text-input&quot; id=&quot;email&quot; type=&quot;password&quot;  placeholder=&quot;Your password&quot;  required /&gt;
+		&lt;small class=&quot;note&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="email"  class="check">Password<abbr title="required">*</abbr></label>
+		<input class="text-input" id="email" type="password"  placeholder="Your password"  required />
+		<small class="note">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-input.email</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;form-fields&quot;&gt;
+	&lt;li&gt;
+		&lt;label for=&quot;email&quot;&gt;Email Address&lt;abbr title=&quot;required&quot;&gt;*&lt;/abbr&gt;&lt;/label&gt;
+		&lt;input  class=&quot;text-input&quot; id=&quot;email&quot; type=&quot;email&quot;  placeholder=&quot;yourname@example.org&quot;  required /&gt;
+		&lt;small class=&quot;additional&quot;&gt;Note about this form field&lt;/small&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="form-fields">
+	<li>
+		<label for="email">Email Address<abbr title="required">*</abbr></label>
+		<input  class="text-input" id="email" type="email"  placeholder="yourname@example.org"  required />
+		<small class="additional">Note about this form field</small>
+	</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">form-fieldset</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;form&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;Legend&lt;/legend&gt;
+		&lt;p&gt;&lt;small class=&quot;additional&quot;&gt;Required fields are marked &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;&lt;/small&gt;&lt;/p&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<form>
+	<fieldset>
+		<legend>Legend</legend>
+		<p><small class="additional">Required fields are marked <abbr title="Required">*</abbr></small></p>
+	</fieldset>
+</form>
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="headings">
+    <h3 class="section-title">Headings</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h6</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h6&gt;Level six heading&lt;/h6&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h6>Level six heading</h6>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h5</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h5&gt;Level five heading&lt;/h5&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h5>Level five heading</h5>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h4</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h4&gt;Level four heading&lt;/h4&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h4>Level four heading</h4>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h3</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h3&gt;Level three heading&lt;/h3&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h3>Level three heading</h3>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h2</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h2&gt;Level two heading&lt;/h2&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h2>Level two heading</h2>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">h1</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;h1&gt;Level one heading&lt;/h1&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<h1>Level one heading</h1>
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="links">
+    <h3 class="section-title">Links</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">a-rel-external</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;a href=&quot;#&quot; rel=&quot;external&quot;&gt;A link going to an external site&lt;/a&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<a href="#" rel="external">A link going to an external site</a>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">a</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;a href=&quot;#&quot;&gt;An inline link&lt;/a&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<a href="#">An inline link</a>
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="lists">
+    <h3 class="section-title">Lists</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">list-unordered-numbered</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul class=&quot;numbered-list&quot;&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+  &lt;li&gt;Eggs&lt;/li&gt;
+  &lt;li&gt;Yogurt&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul class="numbered-list">
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Yogurt</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">list-unordered</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ul&gt;
+  &lt;li&gt;Apple &lt;/li&gt;
+  &lt;li&gt;Microsoft&lt;/li&gt;
+  &lt;li&gt;Linux&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ul>
+  <li>Apple </li>
+  <li>Microsoft</li>
+  <li>Linux</li>
+</ul>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">lists-ordered</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;ol&gt;
+  &lt;li&gt;Add listed ingredients to large mixing bowl&lt;/li&gt;
+  &lt;li&gt;Stir for two minutes or until no longer lumpy&lt;/li&gt;
+  &lt;li&gt;Pour mixture into a baking pan&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<ol>
+  <li>Add listed ingredients to large mixing bowl</li>
+  <li>Stir for two minutes or until no longer lumpy</li>
+  <li>Pour mixture into a baking pan</li>
+</ol>
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="media">
+    <h3 class="section-title">Media</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">video</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;iframe width=&quot;100%&quot; height=&quot;auto&quot; src=&quot;//www.youtube.com/embed/y6Sxv-sUYtM?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<iframe width="100%" height="auto" src="//www.youtube.com/embed/y6Sxv-sUYtM?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">img</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;img src=&quot;assets/images/tea.jpg&quot; alt=&quot;This is a bodum tea diffuser&quot;&gt;&lt;/img&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<img src="assets/images/tea.jpg" alt="This is a bodum tea diffuser"></img>
+</div>
+</div>
+</section>
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">audio</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;audio src=&quot;#&quot; controls&gt;&lt;/audio&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<audio src="#" controls></audio>
+
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="tables">
+    <h3 class="section-title">Tables</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">table</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;table&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th colspan=&quot;2&quot;&gt;Program&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Main Session&lt;/th&gt;
+			&lt;td&gt;$1,200&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Breakouts&lt;/th&gt;
+			&lt;td&gt;$300&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Workshops&lt;/th&gt;
+			&lt;td&gt;$800&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Party&lt;/th&gt;
+			&lt;td&gt;$200&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Total Conference Costs&lt;/th&gt;
+			&lt;td&gt;$2500&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Hotel&lt;/th&gt;
+			&lt;td&gt;$1000&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Travel&lt;/th&gt;
+			&lt;td&gt;$600&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Total Expenses&lt;/th&gt;
+			&lt;td&gt;4100&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<table>
+	<thead>
+		<tr>
+			<th colspan="2">Program</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Main Session</th>
+			<td>$1,200</td>
+		</tr>
+		<tr>
+			<th>Breakouts</th>
+			<td>$300</td>
+		</tr>
+		<tr>
+			<th>Workshops</th>
+			<td>$800</td>
+		</tr>
+		<tr>
+			<th>Party</th>
+			<td>$200</td>
+		</tr>
+	</tbody>
+</table>
+<table>
+	<tbody>
+		<tr>
+			<th>Total Conference Costs</th>
+			<td>$2500</td>
+		</tr>
+		<tr>
+			<th>Hotel</th>
+			<td>$1000</td>
+		</tr>
+		<tr>
+			<th>Travel</th>
+			<td>$600</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Total Expenses</th>
+			<td>4100</td>
+		</tr>
+	</tfoot>
+</table>
+</div>
+</div>
+</section>
+
+</section>
+
+<section id="text">
+    <h3 class="section-title">Text</h3>	
+
+	<section id="">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">p</summary>
+<code class="pattern__markup">
+  <div>
+    <pre><code class='html'>&lt;p&gt;This is a paragraph of text. Some of the text may be &lt;em&gt;emphasised&lt;/em&gt; and some it might even be &lt;strong&gt;strongly emphasised&lt;/strong&gt;. Occasionally &lt;q&gt;quoted text&lt;/q&gt; may be found within a paragraph &amp;hellip;and of course &lt;a href=&quot;#&quot;&gt;a link&lt;/a&gt; may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.&lt;/p&gt;</code></pre>
+  </div>
+
+</code>
+</details>
+<div class="pattern__view">		
+<p>This is a paragraph of text. Some of the text may be <em>emphasised</em> and some it might even be <strong>strongly emphasised</strong>. Occasionally <q>quoted text</q> may be found within a paragraph &hellip;and of course <a href="#">a link</a> may appear at any point in the text. The average paragraph contains five or six sentences although some may contain as little or one or two while others carry on for anything up to ten sentences and beyond.</p>
+</div>
+</div>
+</section>
+
+</section>
+
+
+<h3>Global</h2>
+
+
+<h2>Components</h2>
+
+
+<h2>Patterns</h2>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
+		
+		<script src="main.min.js"></script>
+		
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+.js-slide{
+	.js-container{
+		right: 16em;
+
+		@include mq(500px) {
+			right: 300px;
+		}
+	
+	}
+	
+	.js-off-canvas{
+		right: 0;
+	}
+}
+/**
+.js-slide .topbar-toggle{
+	&:after{
+		content: " x";
+	}
+}
+*/
+
+
+.js-container{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	width: 100%;
+	
+	z-index: 2;
+	background-color: white;
+	
+	box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+	
+	@include vendor(transition, all 0.25s ease);
+}
+
+
+
+.js-off-canvas{
+	position: fixed;
+	top: 0;
+	right: em(-256px);
+	z-index: 1;
+	
+	width: em(256px);
+	overflow: scroll;
+	height: 100%;
+	
+	background-color: #494c49;
+	border-top: 3px solid;
+	border-color: $color-gold;
+	
+	@include mq(500px) {
+		width: em(300px);
+	}
+}
+
+	.site-nav--off-canvas{
+		width: 100%;
+		text-transform: uppercase;
+		
+		.nav{
+			@include rem(padding-top, 88px);
+		}
+		
+		li{
+			@extend %flush;
+			width: 100%;
+			text-align: left;
+			
+			@include font-size(14px);
+			
+			a{
+				line-height: 20px;
+				line-height: 1.25rem;
+				height: auto;
+				border-bottom: 1px solid;
+				border-color: white;
+				border-color: rgba(255, 255, 255, 0.05);
+				color: white;
+				margin: 0;
+				background-color: transparent;
+				font-weight: normal;
+				text-align: left;
+				
+				@include rem(padding-top, 10px);
+				@include rem(padding-bottom, 10px);
+				@include rem(padding-left, 16px);
+				@include rem(padding-right, 16px);
+				@include vendor(transition, padding color 250ms ease);
+				
+				&:hover{
+					background-color: #000000;
+					text-decoration: none;
+				}
+			}
+		
+		}
+		
+		.search{
+			max-width: 80%;
+			@include rem(margin-left, 16px);
+		}
+	}
