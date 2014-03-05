@@ -2683,7 +2683,7 @@ input[type="submit"] {
  * Take it from here, cap’n... Begin importing your stuff here.
  */
 body {
-  padding: 24px;
+  padding: 0 !important;
   word-break: break-word; }
 
 .page-container {
@@ -3399,6 +3399,10 @@ iframe {
 .flush--bottom, .site-logo, .site-logo h1, .site-nav {
   margin-bottom: 0 !important; }
 
+.site-content {
+  padding: 24px;
+  margin-top: 70px; }
+
 .pattern {
   clear: both;
   position: relative;
@@ -3465,3 +3469,23 @@ iframe {
 
 code {
   font-size: 90%; }
+
+.demo-header {
+  background-color: #f4f4f4;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-height: 68px;
+  border-bottom: 1px solid #ddd; }
+  .demo-header nav {
+    float: right;
+    line-height: 68px; }
+
+.demo-logo {
+  display: inline-block;
+  width: 78px;
+  height: 68px;
+  background: url("assets/images/cru-logo.png");
+  background-image: url("assets/images/cru-logo.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; }
