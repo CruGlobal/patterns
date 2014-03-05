@@ -1164,9 +1164,8 @@ legend {
   border-color: #8c8c8c; }
 
 .text-input, .form-control {
-  display: inline-block;
-  width: auto;
-  min-width: 220px;
+  display: block;
+  width: 100%;
   /** 
    * Make inputs at least the height of their button counterpart (base line-height + padding + border)
    */
@@ -1183,11 +1182,8 @@ legend {
   padding-left: 0.75rem;
   padding-right: 12px;
   padding-right: 0.75rem; }
-  .text-input[disabled], .text-input.disabled, .form-control[disabled], .form-control.disabled {
+  .text-input.disabled, .form-control.disabled {
     cursor: not-allowed; }
-
-textarea.text-input {
-  height: auto; }
 
 /**
  * Group sets of form fields in a list, e.g.:
@@ -1292,26 +1288,6 @@ label,
 .spoken-form label {
   display: inline-block;
   font: inherit; }
-.spoken-form .text-input, .spoken-form .form-control, .spoken-form input {
-  width: auto; }
-
-/**
- * Spoken forms are for forms that read like spoken word, e.g.:
- *
-   <li class=spoken-form>
-       Hello, my <label for=spoken-name>name</label> is
-       <input type=text class=text-input id=spoken-name>. My home
-       <label for=country>country</label> is
-       <select id=country>
-           <option>UK</option>
-           <option>US</option>
-           <option>Other</option>
-       </select>
-   </li>
- *
- */
-.block-field .text-input, .block-field .form-control, .block-field input, .block-field select, .block-field textarea {
-  width: 96%; }
 
 /**
  * Extra help text displayed after a field when that field is in focus, e.g.:
@@ -3177,6 +3153,9 @@ body {
     border-color: #393637; }
   .button--alt:active, .button--alt.active, .open .button--alt.dropdown-toggle, input.button--alt:active, input.button--alt.active, .open input.button--alt.dropdown-toggle {
     background-image: none; }
+  .button--alt.disabled, .button--alt.disabled:hover, .button--alt.disabled:focus, .button--alt.disabled:active, .button--alt.disabled.active, .button--alt[disabled], .button--alt[disabled]:hover, .button--alt[disabled]:focus, .button--alt[disabled]:active, .button--alt[disabled].active, fieldset[disabled] .button--alt, fieldset[disabled] .button--alt:hover, fieldset[disabled] .button--alt:focus, fieldset[disabled] .button--alt:active, fieldset[disabled] .button--alt.active, input.button--alt.disabled, input.button--alt.disabled:hover, input.button--alt.disabled:focus, input.button--alt.disabled:active, input.button--alt.disabled.active, input.button--alt[disabled], input.button--alt[disabled]:hover, input.button--alt[disabled]:focus, input.button--alt[disabled]:active, input.button--alt[disabled].active, fieldset[disabled] input.button--alt, fieldset[disabled] input.button--alt:hover, fieldset[disabled] input.button--alt:focus, fieldset[disabled] input.button--alt:active, fieldset[disabled] input.button--alt.active {
+    background-color: #666062;
+    border-color: #595455; }
 
 .button--subtle, input.button--subtle {
   background-color: #e9e9e9;
@@ -3189,6 +3168,9 @@ body {
     border-color: rgba(186, 186, 186, 0.35); }
   .button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
     background-image: none; }
+  .button--subtle.disabled, .button--subtle.disabled:hover, .button--subtle.disabled:focus, .button--subtle.disabled:active, .button--subtle.disabled.active, .button--subtle[disabled], .button--subtle[disabled]:hover, .button--subtle[disabled]:focus, .button--subtle[disabled]:active, .button--subtle[disabled].active, fieldset[disabled] .button--subtle, fieldset[disabled] .button--subtle:hover, fieldset[disabled] .button--subtle:focus, fieldset[disabled] .button--subtle:active, fieldset[disabled] .button--subtle.active, input.button--subtle.disabled, input.button--subtle.disabled:hover, input.button--subtle.disabled:focus, input.button--subtle.disabled:active, input.button--subtle.disabled.active, input.button--subtle[disabled], input.button--subtle[disabled]:hover, input.button--subtle[disabled]:focus, input.button--subtle[disabled]:active, input.button--subtle[disabled].active, fieldset[disabled] input.button--subtle, fieldset[disabled] input.button--subtle:hover, fieldset[disabled] input.button--subtle:focus, fieldset[disabled] input.button--subtle:active, fieldset[disabled] input.button--subtle.active {
+    background-color: rgba(229, 229, 229, 0.35);
+    border-color: rgba(216, 216, 216, 0.35); }
 
 .button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active {
   color: rgba(0, 0, 0, 0.6);
@@ -3214,65 +3196,28 @@ abbr[title="required"], abbr[title="Required"] {
   color: #d95c5c;
   border-bottom: none; }
 
-input[type="checkbox"], input[type="radio"] {
-<<<<<<< HEAD
-  display: inline-block;
-  vertical-align: middle;
+figcaption {
   /* 3 */
   /* 3 */
   /* 4 */
   /* 6 */
   /* 6 */
   /* 7 */
-  padding-top: 12px;
-  /* 9 */
-  padding-top: 0.75rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
+  /* 4 */
+  /* 5 */
   /* 4 */
   /* 6 */
   /* 6 */
   /* 7 */
-  padding-bottom: 12px;
+  margin: 5px 0 15px;
   /* 9 */
-  padding-bottom: 0.75rem;
+  margin: 0.3125rem 0 0.9375rem;
   /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-right: 8px;
-  /* 9 */
-  margin-right: 0.5rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-bottom: 2px;
-  /* 9 */
-  margin-bottom: 0.125rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
   font-size: 14px;
-  /* 9 */
   font-size: 0.875rem;
-  /* 9 */
-}
+  line-height: 1.71429; }
 
-.inline-block, .site-logo, .site-logo a, .navigation {
-=======
->>>>>>> dev
+input[type="checkbox"], input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
   /* 3 */
