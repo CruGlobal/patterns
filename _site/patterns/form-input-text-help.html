@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>btn-large</title>
+  <title>form-input.text-help</title>
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="http://cruweb.github.io/patterns/style.min.css"> 
@@ -17,13 +17,17 @@
 
 <body>
   
-  <h1>Pattern Sample: btn-large</h1>
+  <h1>Pattern Sample: form-input.text-help</h1>
 
-<button class="button--large">Button</button>
-<button type="submit" class="button--large">Submit Button</button>
-<a href="#" class="button  button--large">Link button</a></button>
-<input type="button"  class="button--large" value="Input button"></input>
-<input type="submit"  class="button--large" value="Input submit button"></input>
+<ul class="form-fields">
+	<li>
+		<label for="text"  class="check">An input with some extra help<abbr title="required">*</abbr></label>
+		<input class="text-input" id="text" type="text"  placeholder="Your text"  required />
+		<small class="form-help">This is an extra hint</small>
+	</li>
+</ul>
+
+
 
 <a href="/" title="A helpful back button!">Back to the primer</a>
 

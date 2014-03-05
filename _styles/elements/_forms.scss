@@ -32,3 +32,41 @@ button, input[type="button"], input[type="submit"], .button--disabled {
       }
   }
 }
+
+.spoken-form input{
+	display: inline-block;
+}
+
+.form-help{
+	display: block;
+	opacity: 0;
+	max-height: 0;
+	top: -1.1538461538461537em;
+	overflow: hidden;
+	@include vendor(transition, all $base-animation-time);
+	
+}
+
+.text-input{
+	@include vendor(transition, all $base-animation-time);
+	&:active, &:focus{
+		border-color: darken($base-ui-color, 25%);
+		
+		& + .form-help{
+			top: 0;
+			opacity: 1;
+		}
+	}
+}
+
+input + .additional{
+	@include rem-calc(margin-top, 6px);
+}
+
+label{
+	@include rem-calc(margin-bottom, 6px);
+}
+
+.additional, .check-list > li{
+	@include rem-calc(margin-bottom, 12px);
+}
