@@ -1,0 +1,19 @@
+---
+layout: pattern
+category: elements
+title: Buttons
+id: buttons
+---
+{% for post in site.categories.buttons %}
+<section id="{{ pattern.id }}">
+  <div class="pattern">
+    <details class="pattern__details">
+      <summary class="pattern__name">{{ post.title }}</summary>
+      <code class="pattern__markup">{{ post.content | xml_escape }}</code>
+    </details>
+    <div class="pattern__view">
+      {{ post.content }}
+    </div>
+  </div>
+</section>
+{% endfor %}
