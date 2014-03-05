@@ -1,0 +1,16 @@
+input, select{
+	
+	
+}
+
+input[type="checkbox"], input[type="radio"]{
+	display: inline-block;
+	vertical-align: middle;
+	
+	@include rem-calc(padding-top, 12px);
+	@include rem-calc(padding-bottom, 12px);
+	@include rem-calc(margin-right, 8px);
+	@include rem-calc(margin-bottom,  2px);
+	
+	@include rem-calc(font-size, 14px);
+}

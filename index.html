@@ -410,20 +410,12 @@
 			<div class="pattern">
 				<details class="pattern__details">
 					<summary class="pattern__name">form-fieldset</summary>
-					<code class="pattern__markup">
-						<form>
-							<fieldset>
-								<legend>Legend</legend>
-								<p><small class="note">Required fields are marked <abbr title="Required">*</abbr></small></p>
-							</fieldset>
-						</form>
-					</code>
 				</details>
 				<div class="pattern__view">
 					<form>
 						<fieldset>
 							<legend>Legend</legend>
-							<p><small class="note">Required fields are marked <abbr title="Required">*</abbr></small></p>
+							<p><small class="additional">Required fields are marked <abbr title="Required">*</abbr></small></p>
 						</fieldset>
 					</form>
 				</div>
@@ -432,20 +424,16 @@
 			<div class="pattern">
 				<details class="pattern__details">
 					<summary class="pattern__name">form-input.checkbox</summary>
-					<code class="pattern__markup">
-						<li  class="field">
-							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Single Checkbox</legend>
-							<p><small class="note">Note about this form field</small></p>
-						</li>
-					</code>
 				</details>
 				<div class="pattern__view">
-						<li>
+					<ul class="form-fields">
+						<li class="spoken-form">
 							<label for="checkbox"  class="check">
 								<input id="checkbox" type="checkbox"  class="checkbox"  required />Single Checkbox
 							</label>
-							<small class="note">Note about this form field</small>
+							<small class="additional">Note about this form field</small>
 						</li>
+					</ul>
 				</div>
 			</div>
 			
@@ -455,11 +443,13 @@
 					<summary class="pattern__name">form-input.email</summary>
 				</details>
 				<div class="pattern__view">
-					<li>
-						<label for="email"  class="check">Email Address<abbr title="required">*</abbr></label>
-						<input id="email" type="email"  placeholder="yourname@example.org"  required />
-						<small class="note">Note about this form field</small>
-					</li>
+					<ul class="form-fields">
+						<li>
+							<label for="email">Email Address<abbr title="required">*</abbr></label>
+							<input id="email" type="email"  placeholder="yourname@example.org"  required />
+							<small class="additional">Note about this form field</small>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<!-- End Email -->
@@ -474,7 +464,7 @@
 				<div class="pattern__view">
 					<li>
 						<label for="email"  class="check">Password<abbr title="required">*</abbr></label>
-						<input id="email" type="password"  placeholder="yourname@example.org"  required />
+						<input id="email" type="password"  placeholder="Your password"  required />
 						<small class="note">Note about this form field</small>
 					</li>
 				</div>
@@ -485,14 +475,21 @@
 			<div class="pattern">
 				<details class="pattern__details">
 					<summary class="pattern__name">form-input.text</summary>
-					<code class="pattern__markup">
-						<form>
-							<fieldset>
-								<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
-							<p><small class="note">Note about this form field</small></p>
-							</fieldset>
-						</form>
-					</code>
+				</details>
+				<div class="pattern__view">
+					<li>
+						<label for="email"  class="check">Text<abbr title="required">*</abbr></label>
+						<input id="email" type="text"  placeholder="Your text"  required />
+						<small class="note">Note about this form field</small>
+					</li>
+				</div>
+			</div>
+			<!-- End Text -->
+			
+			<!-- URL -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
 				</details>
 				<div class="pattern__view">
 					<form>
@@ -503,7 +500,120 @@
 					</form>
 				</div>
 			</div>
-			<!-- End Text -->
+			<!-- End URL -->
+			
+			<!-- Spoken Form -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Spoken Form -->
+			
+			<!-- Form Options Checkboxes Caption -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Options Checkboxes Caption -->
+			
+			<!-- Form Options Checkboxes -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Options Checkboxes -->
+			
+			<!-- Form Options Radios -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Options Radios -->
+			
+			<!-- Form Select -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Select -->
+			
+			
+			<!-- Form Select Disabled -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Select Disabled -->
+			
+			<!-- Form Signup -->
+			<div class="pattern">
+				<details class="pattern__details">
+					<summary class="pattern__name">form-input.text</summary>
+				</details>
+				<div class="pattern__view">
+					<form>
+						<fieldset>
+							<label for="checkbox"  class="check"><input id="checkbox" type="checkbox"  class="ckeckbox"  required />Text</legend>
+							<p><small class="note">Note about this form field</small></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- End Form Signup -->
 		</section>
 		
 		<section id="headings">
