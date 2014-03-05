@@ -3224,8 +3224,6 @@ figcaption {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429; }
-<<<<<<< HEAD
-=======
 
 blockquote {
   letter-spacing: .01rem;
@@ -3244,7 +3242,6 @@ blockquote {
   /* 9 */
   padding-left: 1.75rem;
   /* 9 */ }
->>>>>>> dev
 
 input[type="checkbox"], input[type="radio"] {
   display: inline-block;
@@ -3461,3 +3458,6 @@ iframe {
 .article-wrap {
   padding-left: 2rem;
   padding-right: 2rem; }
+
+code {
+  font-size: 90%; }

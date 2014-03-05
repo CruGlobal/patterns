@@ -6,8 +6,6 @@ abbr[title="required"], abbr[title="Required"] {
 figcaption{
 	@include rem-calc(margin, 5px 0 15px);
 	@include font-size(14px);
-<<<<<<< HEAD
-=======
 }
 
 blockquote{
@@ -17,7 +15,5 @@ blockquote{
 	border-left: 3px solid $color-gold;
 	margin-left: -26px;
 	padding-bottom: 3px;
-	@include rem-calc(padding-left, 28px);
->>>>>>> dev
-	
+	@include rem-calc(padding-left, 28px);	
 }
