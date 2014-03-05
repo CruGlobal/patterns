@@ -2,3 +2,9 @@ abbr[title="required"], abbr[title="Required"] {
 	color: $color-red;
 	border-bottom: none;
 }
+
+figcaption{
+	@include rem-calc(margin, 5px 0 15px);
+	@include font-size(14px);
+	
+}
