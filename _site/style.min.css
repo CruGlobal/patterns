@@ -3215,6 +3215,64 @@ abbr[title="required"], abbr[title="Required"] {
   border-bottom: none; }
 
 input[type="checkbox"], input[type="radio"] {
+<<<<<<< HEAD
+  display: inline-block;
+  vertical-align: middle;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding-top: 12px;
+  /* 9 */
+  padding-top: 0.75rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding-bottom: 12px;
+  /* 9 */
+  padding-bottom: 0.75rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-right: 8px;
+  /* 9 */
+  margin-right: 0.5rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 2px;
+  /* 9 */
+  margin-bottom: 0.125rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  font-size: 14px;
+  /* 9 */
+  font-size: 0.875rem;
+  /* 9 */
+}
+
+.inline-block, .site-logo, .site-logo a, .navigation {
+=======
+>>>>>>> dev
   display: inline-block;
   vertical-align: middle;
   /* 3 */
