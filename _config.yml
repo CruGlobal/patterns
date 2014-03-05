@@ -3,7 +3,7 @@ markdown: redcarpet
 pygments: false
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
-# '/projectname': for subdomains ie: user.github.io/projectname
+projecturl: cruweb.github.io/patterns/ #'/projectname': for subdomains ie: user.github.io/projectname
 baseurl: '/'
 permalink: patterns/:title.html
 exclude: ['s3_website.yml']
