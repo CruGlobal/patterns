@@ -3324,6 +3324,9 @@ button.active, input[type="button"].disabled, input[type="button"].disabled:hove
   display: inline-block;
   width: auto; }
 
+textarea.text-input {
+  height: 100%; }
+
 .form-help {
   display: block;
   opacity: 0;
