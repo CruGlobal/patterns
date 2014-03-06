@@ -3180,7 +3180,7 @@ tbody {
     border-color: rgba(216, 216, 216, 0.35); }
 
 .button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active {
-  color: rgba(0, 0, 0, 0.6);
+  color: #353535;
   background-color: transparent;
   border-color: transparent; }
   .button--unstyled:hover, input.button--unstyled:hover, .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover {

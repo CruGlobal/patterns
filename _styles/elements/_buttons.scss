@@ -31,17 +31,14 @@
 }
 
 .button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active{
-	color: rgba(0, 0, 0, 0.6);
-	background-color: transparent;
-	border-color: transparent;
-	
+	color: $btn-unstyled-color;
+	background-color: $btn-unstyled-bg;
+	border-color: $btn-unstyled-border;
 	
 	&:hover{
 		color: $base-font-color;
 	}
 }
-
-
 
 .button--disabled, button[disabled], input[disabled]{
 	text-shadow: none;
