@@ -3020,7 +3020,6 @@ body {
   src: url("assets/fonts/cruicons.eot") format("embedded-opentype"), url("assets/fonts/cruicons.woff") format("woff"), url("assets/fonts/cruicons-v1.ttf") format("truetype"), url("assets/fonts/cruicons-v1.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 [class^="icon-"]:after, [class*=" icon-"]:after {
   font-family: "cruicons";
   font-style: normal;
@@ -3181,7 +3180,7 @@ tbody {
     border-color: rgba(216, 216, 216, 0.35); }
 
 .button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active {
-  color: rgba(0, 0, 0, 0.6);
+  color: #353535;
   background-color: transparent;
   border-color: transparent; }
   .button--unstyled:hover, input.button--unstyled:hover, .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover {
@@ -3488,4 +3487,5 @@ code {
   background-image: url("assets/images/cru-logo.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain; }
+  background-size: contain;
+  float: left; }
