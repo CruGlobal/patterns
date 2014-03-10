@@ -1444,21 +1444,6 @@
 		"outputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/README.html",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_styles\/brackets.css\/components\/_buttons.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/components\/_buttons.scss",
-		"outputAbbreviatedPath": "\/_styles\/brackets.css\/css\/_buttons.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/_styles\/brackets.css\/components\/_islands.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1968,7 +1953,7 @@
 		"inputAbbreviatedPath": "\/_styles\/style.scss",
 		"outputAbbreviatedPath": "\/style.min.css",
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
