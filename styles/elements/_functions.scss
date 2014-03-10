@@ -1,5 +1,0 @@
-@function em($value, $context: $rem-base) {
-	$value: strip-units($value) / strip-units($context) * 1em;
-	@if ($value == 0em) { $value: 0; }
-   @return $value;
-}
