@@ -160,22 +160,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/elements\/buttons\/0001-01-01-btn-alt.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/elements\/buttons\/0001-01-01-btn-alt.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/elements\/buttons\/0001-01-01-btn-default.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/elements\/buttons\/0001-01-01-btn-default.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/_posts\/elements\/buttons\/0001-01-01-btn-disabled.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -189,6 +173,22 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/elements\/buttons\/0001-01-01-btn-large.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/elements\/buttons\/0001-01-01-btn-primary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/elements\/buttons\/0001-01-01-btn-primary.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/elements\/buttons\/0001-01-01-btn-secondary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/elements\/buttons\/0001-01-01-btn-secondary.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -253,6 +253,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/elements\/forms\/0001-01-01-form-input-text-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/elements\/forms\/0001-01-01-form-input-text-help.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/elements\/forms\/0001-01-01-form-input-text-help.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -664,6 +672,14 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/header.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -720,6 +736,14 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_site\/pages\/article.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/pages\/article.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/patterns\/abbr.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -760,22 +784,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/patterns\/btn-alt.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/patterns\/btn-alt.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/patterns\/btn-default.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/patterns\/btn-default.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/_site\/patterns\/btn-disabled.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -789,6 +797,22 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/patterns\/btn-large.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-primary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-primary.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-secondary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-secondary.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -965,6 +989,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-text-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-text-help.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-text-help.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -1337,21 +1369,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_styles\/brackets.css\/_brackets.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/_brackets.scss",
-		"outputAbbreviatedPath": "\/_styles\/css\/_brackets.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/_styles\/brackets.css\/_defaults.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1367,20 +1384,50 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_styles\/brackets.css\/components\/_buttons.scss": {
+	"\/_styles\/brackets.css\/bower_components\/normalize-scss\/_normalize.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/components\/_buttons.scss",
-		"outputAbbreviatedPath": "\/_styles\/brackets.css\/css\/_buttons.css",
+		"inputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/_normalize.scss",
+		"outputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/css\/_normalize.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/_styles\/brackets.css\/bower_components\/normalize-scss\/LICENSE.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/LICENSE.md",
+		"outputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/LICENSE.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_styles\/brackets.css\/bower_components\/normalize-scss\/normalize.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_styles\/brackets.css\/bower_components\/normalize-scss\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/README.md",
+		"outputAbbreviatedPath": "\/_styles\/brackets.css\/bower_components\/normalize-scss\/README.html",
+		"outputPathIsSetByUser": 0
 		},
 	"\/_styles\/brackets.css\/components\/_islands.scss": {
 		"createSourceMap": 0,
@@ -1561,14 +1608,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/_styles\/brackets.css\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
 		},
 	"\/_styles\/brackets.css\/generic\/_clearfix.scss": {
 		"createSourceMap": 0,
@@ -1761,6 +1800,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_styles\/elements\/_mixins.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_mixins.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_mixins.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_styles\/elements\/_off-canvas.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1821,6 +1875,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_styles\/elements\/_tables.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_tables.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_tables.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_styles\/elements\/_text.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1874,9 +1943,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_styles\/style.scss",
-		"outputAbbreviatedPath": "\/css\/style.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputAbbreviatedPath": "\/style.min.css",
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -1900,6 +1969,14 @@
 		"outputAbbreviatedPath": "\/assets\/images\/tea.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/header.html": {
 		"fileType": 8192,
@@ -1957,6 +2034,14 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/pages\/article.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/article.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -1970,7 +2055,7 @@
 		},
 	"\/style.min.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style.min.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -2558,7 +2643,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+	"skippedItemsString": "_cache, logs, _logs, cache, \/bower_components, .git, log, .svn, .hg",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
