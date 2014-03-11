@@ -24,6 +24,7 @@
 /**
  * Take it from here, cap’n... Begin importing your stuff here.
  */
+@import "elements/mixins";
 @import "elements/functions";
 @import "elements/page";
 @import "elements/header";
@@ -31,6 +32,7 @@
 @import "elements/fonts";
 @import "elements/search";
 @import "elements/colors";
+@import "elements/tables";
 @import "elements/buttons";
 @import "elements/text";
 @import "elements/forms";

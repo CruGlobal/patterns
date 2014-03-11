@@ -1,0 +1,40 @@
+
+@function em-calc($values, $context: $rem-base) {
+    @return (strip-units($values) / $context) * 1em;
+}
+
+
+@mixin btn($background, $border, $color: inherit) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 8%);
+        border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+      border-color: $border;
+	  cursor: not-allowed;
+	  pointer-events: none; // Future-proof disabling of clicks
+    }
+  }
+}

@@ -1,61 +1,32 @@
-/** @mixin button-variant($color, $background, $border) **/
+/** @mixin btn($background, $border, $color) **/
 .button-group{
 	display: block;
 }
 
 
-.button--large, input.button--large{
-	min-height: $btn-large-min-height;
-	line-height: ceil($btn-font-size / $btn-large-min-height) * ($btn-large-min-height / $btn-font-size);
-	@include rem-calc(padding, $btn-large-padding);
+.button--primary{
+	@extend %text--white;
+	
+	@include btn($btn-primary-bg, $btn-primary-border);
 }
 
-.button--small, input.button--small{
-	height: $btn-small-height;
-	min-height: $btn-small-min-height;
+.button--secondary{
+	@extend %text--white;
 	
-	line-height: ceil($btn-font-size / $btn-small-height) * ($btn-small-height / $btn-font-size);
-	
-	@include rem-calc(padding, $btn-small-padding);
-}
-
-
-.button--alt, input.button--alt{
-	@include button-variant($btn-alt-color, $btn-alt-bg, $btn-alt-border);
-	
+	@include btn($btn-alt-bg, $btn-alt-border);
 }
 
 .button--subtle, input.button--subtle{
 	background-color: #e9e9e9;
-	@include button-variant($btn-subtle-color, $btn-subtle-bg, $btn-subtle-border);
+	@include btn($btn-subtle-bg, $btn-subtle-border, $btn-subtle-color);
 }
 
 .button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active{
-	color: rgba(0, 0, 0, 0.6);
-	background-color: transparent;
-	border-color: transparent;
-	
+	color: $btn-unstyled-color;
+	background-color: $btn-unstyled-bg;
+	border-color: $btn-unstyled-border;
 	
 	&:hover{
 		color: $base-font-color;
-	}
-}
-
-
-
-.button--disabled, button[disabled], input[disabled]{
-	text-shadow: none;
-	background: #e5e5e5;
-	background: rgba(229, 229, 229, 0.5);
-	border-color: $btn-disabled-border;
-	color: $btn-disabled-color;
-
-	&:hover, &:active, &:focus{
-		background: #e5e5e5;
-		background: rgba(229, 229, 229, 0.5);
-		border-color: $btn-disabled-border;
-		color: $btn-disabled-color;
-		
-		cursor: not-allowed;
 	}
 }

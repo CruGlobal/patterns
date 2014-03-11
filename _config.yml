@@ -1,10 +1,13 @@
-name: Jekyll Version of Pattern Primer by adactio
-markdown: redcarpet
+name: Cru Pattern Library
+markdown: rdiscount
+
+rdiscount:
+  extensions: []
+
 pygments: false
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
 projecturl: http://cruweb.github.io/patterns/ #'/projectname': for subdomains ie: user.github.io/projectname
 baseurl: '/'
 permalink: patterns/:title.html
-exclude: ['s3_website.yml']
 safe: false
