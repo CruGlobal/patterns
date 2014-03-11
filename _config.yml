@@ -4,4 +4,4 @@ permalink: patterns/:title.html
 
 name: Cru Pattern Library
 liveurl: http://cruweb.github.io/patterns/ 
-devurl: '0.0.0.0:4000/'
+devurl: '/'
