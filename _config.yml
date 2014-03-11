@@ -1,13 +1,7 @@
-name: Cru Pattern Library
 markdown: rdiscount
-
-rdiscount:
-  extensions: []
-
-pygments: false
-# change baseurl to:
-# '': for root level domains ie: mycustomdomain.com
-projecturl: http://cruweb.github.io/patterns/ #'/projectname': for subdomains ie: user.github.io/projectname
-baseurl: '/'
+pygments: true
 permalink: patterns/:title.html
-safe: false
+
+name: Cru Pattern Library
+liveurl: http://cruweb.github.io/patterns/ 
+devurl: '/'
