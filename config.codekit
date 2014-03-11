@@ -664,6 +664,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/assets\/images\/cru-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5003,
+		"inputAbbreviatedPath": "\/_site\/assets\/images\/cru-logo.png",
+		"outputAbbreviatedPath": "\/_site\/assets\/images\/cru-logo.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/assets\/images\/tea.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66456,
+		"inputAbbreviatedPath": "\/_site\/assets\/images\/tea.jpg",
+		"outputAbbreviatedPath": "\/_site\/assets\/images\/tea.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/header.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1337,21 +1357,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_styles\/brackets.css\/_brackets.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/_brackets.scss",
-		"outputAbbreviatedPath": "\/_styles\/css\/_brackets.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/_styles\/brackets.css\/_defaults.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1361,21 +1366,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_styles\/brackets.css\/_defaults.scss",
 		"outputAbbreviatedPath": "\/_styles\/css\/_defaults.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/_styles\/brackets.css\/components\/_buttons.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/components\/_buttons.scss",
-		"outputAbbreviatedPath": "\/_styles\/brackets.css\/css\/_buttons.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -1561,14 +1551,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/_styles\/brackets.css\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_styles\/brackets.css\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
 		},
 	"\/_styles\/brackets.css\/generic\/_clearfix.scss": {
 		"createSourceMap": 0,
@@ -1970,7 +1952,7 @@
 		},
 	"\/style.min.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style.min.css",
 		"outputAbbreviatedPath": "No Output Path",
