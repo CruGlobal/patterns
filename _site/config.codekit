@@ -3517,7 +3517,7 @@
 		"outputAbbreviatedPath": "\/min\/main.min-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -3541,7 +3541,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "James Dempsey",
+"lastSavedByUser": "Terry Daffron",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -4120,7 +4120,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+	"skippedItemsString": "_cache, logs, _logs, cache, .git, log, .svn, .hg",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
