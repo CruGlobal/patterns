@@ -75,3 +75,7 @@ label{
 .additional, .check-list > li{
 	@include rem-calc(margin-bottom, 12px);
 }
+
+.additional {
+    font-style: italic;
+}
