@@ -1,3 +1,5 @@
+host:        localhost
+
 markdown: rdiscount
 pygments: true
 permalink: patterns/:title.html

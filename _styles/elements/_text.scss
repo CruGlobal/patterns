@@ -3,17 +3,78 @@ abbr[title="required"], abbr[title="Required"] {
 	border-bottom: none;
 }
 
+b, strong{
+	font-weight: 600;
+}
+
+figure{
+	position: relative;
+}
+
 figcaption{
+	line-height: 1.6;
 	@include rem-calc(margin, 5px 0 15px);
-	@include font-size(14px);
+	@include font-size(14px, false);
 }
 
 blockquote{
 	letter-spacing: .01rem;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: italic;
 	border-left: 3px solid $color-gold;
 	margin-left: -26px;
 	padding-bottom: 3px;
-	@include rem-calc(padding-left, 28px);	
+	
+	@include rem-calc(padding-left, 28px);
+	@include font-size($base-font-size);		
+}
+
+	.pullquote{
+		border-left-color: transparent;
+		margin: 48px -100px;
+		text-align: center;
+		@include vendor(transition, margin .1s);
+		
+		em{
+			font-style: normal;
+			font-weight: 500;
+			font-size: 110%;
+		}
+	}
+	
+q{
+    quotes:"“" "”";
+
+    &:before {
+        content: "“";
+        content: open-quote;
+    }
+
+    &:after {
+        content: "“";
+        content: close-quote;
+    }
+
+    q:before {
+        content: "“";
+        content: open-quote;
+    }
+
+    q:after{
+        content: "“";
+        content: close-quote;
+    }
+
+    /**
+     * If an element opens with an inline quote, let’s hang that.
+     */
+    &.opener {
+        display: inline-block;
+        text-indent: -0.22em;
+    }
+	
+    &:first-child {
+        display: inline-block;
+        text-indent: 0;
+    }
 }
