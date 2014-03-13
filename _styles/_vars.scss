@@ -41,7 +41,11 @@ $use-breadcrumb:    false;
 /**
  * Place any variables that should override brackets.css’ defaults here.
  */
+$base-font-size:         19px;
+$base-line-height:       33px;
 
+$header-font-ratio:      1.313;
+$header-font-weight:     400;
 
 
 
@@ -58,19 +62,23 @@ $use-breadcrumb:    false;
 
 
 /*------------------------------------*\
-    $Font Families
+    $Fonts
 \*------------------------------------*/
 $base-font-family: "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
 $numberal-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 
 $base-font-color: #353535;
-$base-background: #f7f7f7;
+
+
+
 
 
 
 /*------------------------------------*\
     $Color Palette
 \*------------------------------------*/
+
+$base-background: #f7f7f7;
 /**
  * Primary colors
  */

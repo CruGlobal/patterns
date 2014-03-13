@@ -10,9 +10,28 @@ body{
 	@include rem(padding-top, 32px);
 }
 
-.page-content{
+.page-content, .single-column{
 	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	@include mq(680px) {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	@include mq(800px){
+		width: 700px;
+	}
 }
+
+.background-size-contain.single-column{
+	@include mq(500px, max){
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 	
