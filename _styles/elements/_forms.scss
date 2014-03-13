@@ -15,8 +15,7 @@ select[multiple]{
 }
 
 
-select, textarea, input[type="text"], 
-button, input[type="button"], input[type="submit"], .button--disabled {
+select, textarea, input[type="text"]{
 	
     &.disabled,
     &[disabled],

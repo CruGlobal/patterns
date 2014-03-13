@@ -18,6 +18,22 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/_includes\/details-only.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/details-only.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_includes\/fonts.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/fonts.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_includes\/footer.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -31,6 +47,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_includes\/head.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_includes\/header.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/header.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -656,6 +680,1281 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/_posts\/globals\/0001-01-01-footer.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/globals\/0001-01-01-footer.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_posts\/globals\/0001-01-01-head.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_posts\/globals\/0001-01-01-head.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize-css\/LICENSE.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize-css\/LICENSE.md",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize-css\/LICENSE.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize-css\/normalize.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize-css\/normalize.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize-css\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize-css\/README.md",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize-css\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/LICENSE.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/LICENSE.md",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/LICENSE.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/README.md",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/font.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/font.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/ie6.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/ie6.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/ie7.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/ie7.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/indent-amount.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/indent-amount.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/strict-normalize-false.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/strict-normalize-false.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/strict-normalize-true.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/controls\/strict-normalize-true.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/README.md",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/font.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/font.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/font.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/ie6.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/ie6.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/ie6.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/ie7.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/ie7.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/ie7.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/indent-amount.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/indent-amount.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/indent-amount.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/strict-normalize-false.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/strict-normalize-false.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/strict-normalize-false.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/strict-normalize-true.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/tests\/strict-normalize-true.scss",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/normalize.scss\/tests\/css\/strict-normalize-true.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/a-download.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/a-download.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/a-download-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/audio-audiodata-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/audio-audiodata-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/audio-audiodata-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/audio-webaudio-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/audio-webaudio-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/audio-webaudio-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/battery-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/battery-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/battery-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/battery-level.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/battery-level.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/battery-level-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/blob-constructor.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/blob-constructor.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/blob-constructor-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/canvas-todataurl-type.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/canvas-todataurl-type.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/canvas-todataurl-type-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/contenteditable.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/contenteditable.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/contenteditable-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/contentsecuritypolicy.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/contentsecuritypolicy.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/contentsecuritypolicy-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/contextmenu.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/contextmenu.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/contextmenu-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/cookies.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/cookies.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/cookies-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/cors.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/cors.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/cors-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundposition-shorthand.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundposition-shorthand.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-backgroundposition-shorthand-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundposition-xy.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundposition-xy.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-backgroundposition-xy-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundrepeat.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundrepeat.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-backgroundrepeat-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundsizecover.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-backgroundsizecover.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-backgroundsizecover-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-boxsizing.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-boxsizing.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-boxsizing-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-calc.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-calc.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-calc-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-cubicbezierrange.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-cubicbezierrange.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-cubicbezierrange-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-displayrunin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-displayrunin.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-displayrunin-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-displaytable.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-displaytable.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-displaytable-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-filters.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-filters.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-filters-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-hyphens.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-hyphens.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-hyphens-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-lastchild.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-lastchild.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-lastchild-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-mask.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-mask.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-mask-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-mediaqueries.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-mediaqueries.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-mediaqueries-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-objectfit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-objectfit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-objectfit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-overflow-scrolling.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-overflow-scrolling.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-overflow-scrolling-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-pointerevents.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-pointerevents.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-pointerevents-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-positionsticky.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-positionsticky.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-positionsticky-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-regions.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-regions.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-regions-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-remunit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-remunit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-remunit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-resize.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-resize.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-resize-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-scrollbars.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-scrollbars.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-scrollbars-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-subpixelfont.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-subpixelfont.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-subpixelfont-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-supports.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-supports.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-supports-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-userselect.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-userselect.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-userselect-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vhunit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vhunit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-vhunit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vmaxunit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vmaxunit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-vmaxunit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vminunit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vminunit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-vminunit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vwunit.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/css-vwunit.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/css-vwunit-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/custom-protocol-handler.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/custom-protocol-handler.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/custom-protocol-handler-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dart.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dart.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dart-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dataview-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dataview-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dataview-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-classlist.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-classlist.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dom-classlist-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-createElement-attrs.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-createElement-attrs.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dom-createElement-attrs-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-dataset.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-dataset.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dom-dataset-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-microdata.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/dom-microdata.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/dom-microdata-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-datalist.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-datalist.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-datalist-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-details.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-details.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-details-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-output.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-output.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-output-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-progress-meter.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-progress-meter.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-progress-meter-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-ruby.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-ruby.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-ruby-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-time.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-time.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-time-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-track.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/elem-track.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/elem-track-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/emoji.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/emoji.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/emoji-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/es5-strictmode.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/es5-strictmode.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/es5-strictmode-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/event-deviceorientation-motion.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/event-deviceorientation-motion.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/event-deviceorientation-motion-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/exif-orientation.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/exif-orientation.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/exif-orientation-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/file-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/file-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/file-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/file-filesystem.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/file-filesystem.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/file-filesystem-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-fileinput.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-fileinput.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-fileinput-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-formattribute.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-formattribute.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-formattribute-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-inputnumber-l10n.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-inputnumber-l10n.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-inputnumber-l10n-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-placeholder.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-placeholder.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-placeholder-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-speechinput.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-speechinput.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-speechinput-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-validation.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/forms-validation.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/forms-validation-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/fullscreen-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/fullscreen-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/fullscreen-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/gamepad.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/gamepad.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/gamepad-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/getusermedia.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/getusermedia.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/getusermedia-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/ie8compat.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/ie8compat.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/ie8compat-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-sandbox.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-sandbox.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/iframe-sandbox-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-seamless.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-seamless.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/iframe-seamless-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-srcdoc.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/iframe-srcdoc.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/iframe-srcdoc-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/img-apng.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/img-apng.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/img-apng-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/img-webp.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/img-webp.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/img-webp-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/json.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/json.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/json-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/lists-reversed.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/lists-reversed.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/lists-reversed-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/mathml.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/mathml.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/mathml-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/modernizr.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/modernizr-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/network-connection.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/network-connection.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/network-connection-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/network-eventsource.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/network-eventsource.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/network-eventsource-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/network-xhr2.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/network-xhr2.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/network-xhr2-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/notification.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/notification.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/notification-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/performance.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/performance.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/performance-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/pointerlock-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/pointerlock-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/pointerlock-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/quota-management-api.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/quota-management-api.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/quota-management-api-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/requestanimationframe.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/requestanimationframe.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/requestanimationframe-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/script-async.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/script-async.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/script-async-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/script-defer.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/script-defer.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/script-defer-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/style-scoped.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/style-scoped.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/style-scoped-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/svg-filters.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/svg-filters.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/svg-filters-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/unicode.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/unicode.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/unicode-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/url-data-uri.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/url-data-uri.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/url-data-uri-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/userdata.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/userdata.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/userdata-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/vibration.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/vibration.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/vibration-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/web-intents.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/web-intents.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/web-intents-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/webgl-extensions.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/webgl-extensions.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/webgl-extensions-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/websockets-binary.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/websockets-binary.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/websockets-binary-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/window-framed.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/window-framed.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/window-framed-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-blobworkers.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-blobworkers.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/workers-blobworkers-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-dataworkers.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-dataworkers.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/workers-dataworkers-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-sharedworkers.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/workers-sharedworkers.js",
+		"outputAbbreviatedPath": "\/_site\/assets\/bower_components\/sprockets-modernizr\/min\/workers-sharedworkers-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/assets\/images\/cru-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5003,
+		"inputAbbreviatedPath": "\/_site\/assets\/images\/cru-logo.png",
+		"outputAbbreviatedPath": "\/_site\/assets\/images\/cru-logo.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/assets\/images\/tea.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66456,
+		"inputAbbreviatedPath": "\/_site\/assets\/images\/tea.jpg",
+		"outputAbbreviatedPath": "\/_site\/assets\/images\/tea.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/blocks\/article.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/blocks\/article.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/blocks\/header.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -664,11 +1963,11 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/css\/style.css": {
-		"fileType": 16,
+	"\/_site\/index.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/css\/style.css",
+		"inputAbbreviatedPath": "\/_site\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -712,6 +2011,142 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_site\/patterns\/abbr.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/abbr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/address.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/address.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/audio.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/audio.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/blockquote.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/blockquote.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/bold.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/bold.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-disabled.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-large.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-large.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-primary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-primary.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-secondary.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-secondary.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-small.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-small.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/btn-subtle.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/btn-subtle.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/cite.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/cite.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/del.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/del.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/details.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/details.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/dfn.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/dfn.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/dl-dfn.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/dl-dfn.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/element-buttons.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/element-buttons.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/patterns\/element-forms.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -720,19 +2155,435 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/patterns\/footer.html": {
+	"\/_site\/patterns\/element-text.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/patterns\/footer.html",
+		"inputAbbreviatedPath": "\/_site\/patterns\/element-text.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/patterns\/head.html": {
+	"\/_site\/patterns\/em.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/patterns\/head.html",
+		"inputAbbreviatedPath": "\/_site\/patterns\/em.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/feedback-error.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/feedback-error.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/feedback.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/feedback.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/figure-blockquote.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/figure-blockquote.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/figure-img.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/figure-img.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/figure-list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/figure-list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-buttons.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-buttons.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-checkbox.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-checkbox.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-fieldset.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-fieldset.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-email.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-email.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-password.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-password.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-text-disabled.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-text-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-text-help.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-text-help.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-text.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-text.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-input-url.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-input-url.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-number.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-number.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-options-checkbox.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-options-checkbox.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-options-checkboxes.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-options-checkboxes.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-options-radios-captions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-options-radios-captions.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-options-radios.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-options-radios.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-select-disabled.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-select-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-select-multiple-disabled.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-select-multiple-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-select-multiple.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-select-multiple.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-select.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-select.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-signup.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-signup.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-spoken.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-spoken.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-text.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-text.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-textarea-disabled.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-textarea-disabled.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-textarea.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-textarea.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/form-url.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/form-url.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/from-input-checkbox.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/from-input-checkbox.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-1.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-1.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-3.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-3.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-4.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-4.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-5.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-5.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/heading-6.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/heading-6.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/hr.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/hr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/img.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/img.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/link-external.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/link-external.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/link.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/link.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/list-ordered.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/list-ordered.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/list-unordered-numbered.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/list-unordered-numbered.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/list-unordered.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/list-unordered.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/pagination-first.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/pagination-first.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/pagination-last.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/pagination-last.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/pagination.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/pagination.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/paragraph.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/paragraph.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/small.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/small.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/strong.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/strong.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/tables.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/tables.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/time.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/time.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/patterns\/video.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/patterns\/video.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -764,6 +2615,21 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_styles\/_demo.scss",
 		"outputAbbreviatedPath": "\/css\/_demo.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_styles\/_vars.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/_vars.scss",
+		"outputAbbreviatedPath": "\/css\/_vars.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -1358,6 +3224,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_styles\/elements\/_article.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_article.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_article.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_styles\/elements\/_buttons.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1397,6 +3278,36 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_styles\/elements\/_fonts.scss",
 		"outputAbbreviatedPath": "\/_styles\/css\/_fonts.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_styles\/elements\/_footer.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_footer.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_footer.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_styles\/elements\/_forms.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_forms.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_forms.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -1463,6 +3374,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_styles\/elements\/_page.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_page.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_page.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_styles\/elements\/_search.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1508,6 +3434,21 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/_styles\/elements\/_text.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/elements\/_text.scss",
+		"outputAbbreviatedPath": "\/_styles\/css\/_text.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/_styles\/elements\/_utilities.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1532,6 +3473,21 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_styles\/elements\/_video.scss",
 		"outputAbbreviatedPath": "\/_styles\/css\/_video.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/_styles\/style.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_styles\/style.scss",
+		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -2804,11 +4760,43 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/blocks\/articles\/demo1\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blocks\/articles\/demo1\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/blocks\/articles\/demo2\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blocks\/articles\/demo2\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/blocks\/header.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/blocks\/header.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -2861,6 +4849,14 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/style.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style.min.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		}
 	},
