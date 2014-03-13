@@ -71,3 +71,13 @@ _site/
 /_site/patterns/strong.html
 /_site/patterns/time.html
 /_site/patterns/video.html
+
+/_site/index.html
+/_site/patterns/abbr.html
+/_site/patterns/address.html
+/_site/patterns/cite.html
+/_site/patterns/pagination-last.html
+/_site/patterns/small.html
+/_site/patterns/tables.html
+/blocks/articles/demo1/index.html
+/blocks/articles/demo2/index.html
