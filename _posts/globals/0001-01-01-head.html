@@ -1,0 +1,16 @@
+---
+layout: patterns
+category: head
+title: head
+---
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.name }}</title>
+  <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="{{ site.root }}style.min.css">	
+	
+  {% include fonts.html %}
+
+  {% include analytics.html %}
+</head>

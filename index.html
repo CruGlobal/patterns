@@ -72,13 +72,16 @@ title: Pattern Primer
 </section>
 
 
-<h3>Global</h2>
-{% for post in site.categories.global %}
+<h2>Global</h2>
 <section id="{{ pattern.id }}">
-  <h3 class="section-title">{{ post.title }}</h3>
-  {{ post.content }}
+	{% for post in site.categories.head  %}
+		{% include details-only.html %}
+	{% endfor %}
+		
+	{% for post in site.categories.global  %}
+		{% include default.html %}
+	{% endfor %}
 </section>
-{% endfor %}
 
 <h2>Components</h2>
 {% for post in site.categories.components %}
