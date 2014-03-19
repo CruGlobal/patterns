@@ -115,3 +115,22 @@ code{
 	background-size: contain;
 	float: left;
 }
+
+%grid-demo{
+	min-height: 80px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+.grid-demo .pattern__view div div{
+	@extend %grid-demo;
+	
+	span{
+		display: inline-block;
+		line-height: 80px;
+	}
+}

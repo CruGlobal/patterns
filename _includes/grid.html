@@ -1,0 +1,15 @@
+<section id="{{ post.id }}">
+<div class="pattern  grid-demo">
+<details class="pattern__details">
+<summary class="pattern__name">{{ post.title }}</summary>
+<code class="pattern__markup">
+{% highlight html %}
+{{ post.content }}  	
+{% endhighlight%}
+</code>
+</details>
+<div class="pattern__view">		
+{{ post.content }}
+</div>
+</div>
+</section>

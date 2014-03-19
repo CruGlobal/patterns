@@ -1,0 +1,25 @@
+.layout-single-column, %layout-single-column{
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	clear: both;
+	
+	@include mq(680px) {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	@include mq(800px){
+		width: 700px;
+	}
+}
+
+.layout-wide{
+	@extend %layout-single-column;
+}
+
+
+.grid__item + .grid__item{
+	float: right;
+}
