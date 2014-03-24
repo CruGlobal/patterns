@@ -1608,16 +1608,16 @@ label,
  * Halves
  */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
-  width: 50%; }
+  width: 49%; }
 
 /**
  * Thirds
  */
 .one-third, .two-sixths, .four-twelfths {
-  width: 33.333%; }
+  width: 32%; }
 
 .two-thirds, .four-sixths, .eight-twelfths {
-  width: 66.666%; }
+  width: 64%; }
 
 /**
  * Quarters
@@ -1711,16 +1711,16 @@ label,
    * Halves
    */
   .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
    */
   .palm--one-third, .palm--two-sixths, .palm--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -1810,16 +1810,16 @@ label,
    * Halves
    */
   .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
    */
   .lap--one-third, .lap--two-sixths, .lap--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -1909,16 +1909,16 @@ label,
    * Halves
    */
   .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
    */
   .portable--one-third, .portable--two-sixths, .portable--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -2008,16 +2008,16 @@ label,
    * Halves
    */
   .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
-    width: 50%; }
+    width: 49%; }
 
   /**
    * Thirds
    */
   .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
-    width: 33.333%; }
+    width: 32%; }
 
   .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
-    width: 66.666%; }
+    width: 64%; }
 
   /**
    * Quarters
@@ -3004,10 +3004,13 @@ body {
       width: 700px; } }
 
 @media screen and (max-width: 31.25em) {
-  .background-size-contain.single-column {
+  .background-size-contain.layout-single-column {
     margin-left: 0;
     margin-right: 0; } }
 
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
 .page--header {
   background-color: #494c49;
   padding: 0; }
@@ -3231,6 +3234,9 @@ body {
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px; }
 
+/*------------------------------------*\
+    $OFF-CANVAS
+\*------------------------------------*/
 .js-slide .js-container {
   right: 16em; }
   @media screen and (min-width: 31.25em) {
@@ -3333,7 +3339,7 @@ body {
   margin-bottom: 1.73684rem;
   /* 9 */ }
 
-.article__footer {
+.post__footer {
   /* 3 */
   /* 3 */
   /* 4 */
@@ -3345,10 +3351,14 @@ body {
   margin-bottom: 5.21053rem;
   /* 9 */ }
 
-.article__list {
+/**
+ * For numbered post formats. Removes the typical magin given to a
+ * list. 
+ */
+.post__list {
   margin-left: 0; }
   @media screen and (max-width: 44.75em) {
-    .article__list li {
+    .post__list li {
       /* 3 */
       /* 3 */
       /* 4 */
@@ -3360,44 +3370,10 @@ body {
       margin-left: 1.15789rem;
       /* 9 */ } }
 
-body {
-  line-height: 1.6;
-  font-size: 19px;
-  font-size: 1rem;
-  line-height: 1.73684; }
-  @media screen and (min-width: 50em) {
-    body {
-      line-height: 1.5;
-      font-size: 22px;
-      font-size: 1.15789rem;
-      line-height: 1.5; } }
-
-.accent:after {
-  content: "-";
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-left: 12px;
-  /* 9 */
-  margin-left: 0.63158rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-right: 12px;
-  /* 9 */
-  margin-right: 0.63158rem;
-  /* 9 */ }
-
-.article__image--primary img {
-  width: 100%; }
-
+/**
+ * A different type of <hr> styling. 
+ */
+/*hr*/
 .section-divider {
   display: block;
   width: 14%;
@@ -3405,10 +3381,17 @@ body {
   border: 0;
   border-top: 1px solid #dddddd; }
 
-.article-title {
+/**
+ * The main title for a post: give to an h1
+ */
+.post-title {
   margin-bottom: 10px;
   font-weight: 100; }
 
+/**
+ * The author, twitter handle and timestamp for a post.
+ * Use to extend .nav
+ */
 .post-meta {
   margin-left: 0;
   list-style-type: none;
@@ -3422,23 +3405,40 @@ body {
   .post-meta a {
     color: #666062; }
 
-.pullquote {
-  border-left-color: transparent;
-  margin: 48px -100px;
-  text-align: center;
-  -webkit-transition: margin 0.1s;
-  -moz-transition: margin 0.1s;
-  -ms-transition: margin 0.1s;
-  -o-transition: margin 0.1s;
-  transition: margin 0.1s; }
-  .pullquote em {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 110%; }
+.source {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 16.5px;
+  /* 9 */
+  margin-top: 0.86842rem;
+  /* 9 */ }
+  .source:before {
+    content: "-"; }
 
-.post-image img {
+/**
+ * The main image in a post. This is a wrapper class with the image 
+ * as a child
+ */
+.post__image--primary {
+  position: relative; }
+
+	/*
+	 * Force the main image to stetch full width to match the text.
+     * Since the posts will be narrow this will not mess up the 
+     * images.
+	 */
+.post-image {
   width: 100%; }
 
+	/** 
+	 * Main image captions. Place the .image-credit within this.
+     * Pulls the caption to the left of the image for wide screens
+     * and centers it for smaller screens.
+	 */
 .post-image__caption {
   position: relative;
   width: 100%;
@@ -3462,48 +3462,18 @@ body {
         content: "";
         margin-bottom: 10px; } }
 
-.post-image__credit {
-  position: absolute;
-  top: 55px;
-  right: -56px;
-  max-width: 80%;
-  padding: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  line-height: 1.6;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: right;
-  font-size: 10px;
-  font-size: 0.52632rem;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
-
 .image-credit {
   display: block;
   margin-top: 16px;
   font-size: 80%;
   color: #666062; }
 
-.source {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-top: 16.5px;
-  /* 9 */
-  margin-top: 0.86842rem;
-  /* 9 */ }
-  .source:before {
-    content: "-"; }
-
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
 /**
- * Cruicons
+ * As of now this is where we will be placing our icon fonts. 
+ * Freight Sans Pro will be served up from Typekit. 
  */
 @font-face {
   font-family: 'cruicons';
@@ -3547,6 +3517,9 @@ body {
   content: '\e804'; }
 
 /* '' */
+/*------------------------------------*\
+    $SEARCH
+\*------------------------------------*/
 .right-nav .spoken-form {
   padding-left: 18px;
   padding-right: 18px; }
@@ -3569,6 +3542,15 @@ body {
   padding-right: 10px;
   border: none; }
 
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+ * Used for background colors at the moment, text is either in 
+ * the default text color or white. You can extend %text-white
+ * found in the _utilities.scss file if you wish to change the
+ * text color. 
+ */
 /**
  * Primary Colors
  */
@@ -3604,7 +3586,16 @@ tbody {
   tbody tr {
     border-bottom: 1px solid #e9e9e9; }
 
-/** @mixin btn($background, $border, $color) **/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/** 
+ * Use this mixin to quickly pump out buttons:
+ * @mixin btn($background, $border, $color).
+ * 
+ * Quick not that it will not work with transparency due to 
+ * the hover states. 
+ */
 .button-group {
   display: block; }
 
@@ -3657,11 +3648,21 @@ tbody {
     cursor: not-allowed;
     pointer-events: none; }
 
-.button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active {
+.button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active,
+input.button--unstyled:link,
+input.button--unstyled:visited,
+input.button--unstyled:hover,
+input.button--unstyled:focus,
+input.button--unstyled:active {
   color: #353535;
   background-color: transparent;
   border-color: transparent; }
-  .button--unstyled:hover, input.button--unstyled:hover, .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover {
+  .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover,
+  input.button--unstyled:link:hover,
+  input.button--unstyled:visited:hover,
+  input.button--unstyled:hover:hover,
+  input.button--unstyled:focus:hover,
+  input.button--unstyled:active:hover {
     color: #353535; }
 
 abbr[title="required"], abbr[title="Required"] {
@@ -3695,6 +3696,33 @@ figcaption {
   font-size: 14px;
   font-size: 0.73684rem; }
 
+/**
+ * Places a dash after a piece of text. Mainly for post meta info
+ * 
+ */
+.accent:after {
+  content: "-";
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-left: 12px;
+  /* 9 */
+  margin-left: 0.63158rem;
+  /* 9 */
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-right: 12px;
+  /* 9 */
+  margin-right: 0.63158rem;
+  /* 9 */ }
+
 blockquote {
   letter-spacing: .01rem;
   font-weight: 300;
@@ -3717,15 +3745,22 @@ blockquote {
   line-height: 1.73684; }
 
 .pullquote {
+  padding-left: 0;
   border-left-color: transparent;
-  margin: 48px -100px;
+  margin: 48px 0px;
   text-align: center;
   -webkit-transition: margin 0.1s;
   -moz-transition: margin 0.1s;
   -ms-transition: margin 0.1s;
   -o-transition: margin 0.1s;
   transition: margin 0.1s; }
-  .pullquote em {
+  @media screen and (min-width: 31.3125em) {
+    .pullquote {
+      margin: 48px -10px; } }
+  @media screen and (min-width: 62.5625em) {
+    .pullquote {
+      margin: 48px -100px; } }
+  .pullquote em, .pullquote strong {
     font-style: normal;
     font-weight: 500;
     font-size: 110%; }
@@ -3754,6 +3789,9 @@ q {
     display: inline-block;
     text-indent: 0; }
 
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
 input[type="checkbox"], input[type="radio"] {
   display: inline-block;
   vertical-align: middle;
@@ -3847,48 +3885,12 @@ textarea.text-input {
       top: 0;
       opacity: 1; }
 
-input + .additional {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-top: 6px;
-  /* 9 */
-  margin-top: 0.31579rem;
-  /* 9 */ }
-
-label {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-bottom: 6px;
-  /* 9 */
-  margin-bottom: 0.31579rem;
-  /* 9 */ }
-
-.additional, .check-list > li {
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  margin-bottom: 12px;
-  /* 9 */
-  margin-bottom: 0.63158rem;
-  /* 9 */ }
-
-.additional {
-  font-style: italic; }
-
 iframe {
   min-height: 100%; }
 
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
 .global-footer > nav {
   background: #f7f7f7;
   border-top: 5px solid;
@@ -3945,8 +3947,11 @@ iframe {
     .layout-single-column, .layout-wide {
       width: 700px; } }
 
-.grid__item + .grid__item {
+.one-half + .one-half, .two-quarters + .one-half, .three-sixths + .one-half, .four-eighths + .one-half, .five-tenths + .one-half, .six-twelfths + .one-half, .one-half + .two-quarters, .two-quarters + .two-quarters, .three-sixths + .two-quarters, .four-eighths + .two-quarters, .five-tenths + .two-quarters, .six-twelfths + .two-quarters, .one-half + .three-sixths, .two-quarters + .three-sixths, .three-sixths + .three-sixths, .four-eighths + .three-sixths, .five-tenths + .three-sixths, .six-twelfths + .three-sixths, .one-half + .four-eighths, .two-quarters + .four-eighths, .three-sixths + .four-eighths, .four-eighths + .four-eighths, .five-tenths + .four-eighths, .six-twelfths + .four-eighths, .one-half + .five-tenths, .two-quarters + .five-tenths, .three-sixths + .five-tenths, .four-eighths + .five-tenths, .five-tenths + .five-tenths, .six-twelfths + .five-tenths, .one-half + .six-twelfths, .two-quarters + .six-twelfths, .three-sixths + .six-twelfths, .four-eighths + .six-twelfths, .five-tenths + .six-twelfths, .six-twelfths + .six-twelfths {
   float: right; }
+
+.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths {
+  margin-left: 2%; }
 
 .inline-block, .site-logo, .site-logo a, .navigation {
   display: inline-block; }
@@ -3957,11 +3962,10 @@ iframe {
 .flush--bottom, .site-logo, .site-logo h1, .site-nav {
   margin-bottom: 0 !important; }
 
-.button--primary, .button--secondary, .text-white {
-  color: #ffffff !important; }
+.text-white, .button--primary, .button--secondary {
+  color: white !important; }
 
 .site-content {
-  padding: 24px;
   margin-top: 70px; }
 
 .pattern {
@@ -4052,7 +4056,7 @@ code {
   background-size: contain;
   float: left; }
 
-.grid-demo .pattern__view div div {
+.grid-demo .pattern__view .one-whole, .grid-demo .pattern__view .one-half, .grid-demo .pattern__view .two-quarters, .grid-demo .pattern__view .three-sixths, .grid-demo .pattern__view .four-eighths, .grid-demo .pattern__view .five-tenths, .grid-demo .pattern__view .six-twelfths, .grid-demo .pattern__view .one-third, .grid-demo .pattern__view .two-sixths, .grid-demo .pattern__view .four-twelfths {
   min-height: 80px;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -4061,6 +4065,6 @@ code {
   text-align: center;
   background-color: #dddddd; }
 
-.grid-demo .pattern__view div div span {
+.grid-demo .pattern__view span {
   display: inline-block;
   line-height: 80px; }

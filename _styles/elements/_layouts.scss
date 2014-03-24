@@ -20,6 +20,10 @@
 }
 
 
-.grid__item + .grid__item{
+.one-half + .one-half{
 	float: right;
+}
+
+.one-third + .one-third {
+	margin-left: 2%;
 }

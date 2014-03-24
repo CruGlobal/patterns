@@ -1,10 +1,8 @@
 .inline-block, %inline-block    { display: inline-block; }
 
 
-.flush, %flush                  { margin:        0!important; }
+.flush, %flush                  { margin:        0 !important; }
 .flush--bottom, %flush--bottom  { margin-bottom: 0 !important; }
 
 
-%text--white, .text-white{
-	color: #ffffff !important;
-}
+.text-white, %text--white       { color: $color-white !important; }

@@ -1499,6 +1499,23 @@ var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=
 </div>
 </section>
 
+	<section id="/patterns/pullquotes">
+<div class="pattern">
+<details class="pattern__details">
+<summary class="pattern__name">pullquote</summary>
+<code class="pattern__markup">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;blockquote</span>  <span class="na">class=</span><span class="s">&quot;pullquote&quot;</span><span class="nt">&gt;&lt;em&gt;</span>Humility is not thinking less of yourself, it&#39;s thinking of yourself less.<span class="nt">&lt;/em&gt;&lt;/blockquote&gt;</span>
+  	
+</code></pre></div>
+</code>
+</details>
+<div class="pattern__view">		
+<blockquote  class="pullquote"><em>Humility is not thinking less of yourself, it's thinking of yourself less.</em></blockquote>
+
+</div>
+</div>
+</section>
+
 	<section id="/patterns/paragraph">
 <div class="pattern">
 <details class="pattern__details">
@@ -1751,9 +1768,9 @@ var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=
 <summary class="pattern__name">blockquote</summary>
 <code class="pattern__markup">
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article-wrap&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;blockquote&gt;&lt;p&gt;</span>Humility is not thinking less of yourself, it&#39;s thinking of yourself less.<span class="nt">&lt;/p&gt;&lt;/blockquote&gt;</span>
-	<span class="nt">&lt;p&gt;</span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="nt">&lt;/p&gt;</span>	
+  <span class="nt">&lt;blockquote&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Humility is not thinking less of yourself, it&#39;s thinking of yourself less.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/blockquote&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
   	
 </code></pre></div>
@@ -1761,9 +1778,9 @@ var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=
 </details>
 <div class="pattern__view">		
 <div class="article-wrap">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	<blockquote><p>Humility is not thinking less of yourself, it's thinking of yourself less.</p></blockquote>
-	<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
+  <blockquote>
+    <p>Humility is not thinking less of yourself, it's thinking of yourself less.</p>
+  </blockquote>
 </div>
 
 </div>
@@ -2000,26 +2017,67 @@ var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=
 <h2>Layouts</h2>
 <section id="">
 
+	<section id="/patterns/thirds">
+<div class="pattern  grid-demo">
+<details class="pattern__details">
+<summary class="pattern__name">thirds</summary>
+<code class="pattern__markup">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-single-column&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-third&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>one-third<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-third&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>one-third<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-third&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>one-third<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>  	
+</code></pre></div>
+</code>
+</details>
+<div class="pattern__view">		
+<div class="layout-single-column">
+  <div class="grid">
+    <div class="grid__item  one-third">
+      <span>one-third</span>
+    </div>
+    <div class="grid__item  one-third">
+      <span>one-third</span>
+    </div>
+    <div class="grid__item  one-third">
+      <span>one-third</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
 	<section id="/patterns/one-whole">
 <div class="pattern  grid-demo">
 <details class="pattern__details">
 <summary class="pattern__name">one-whole</summary>
 <code class="pattern__markup">
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid  one-whole&quot;</span><span class="nt">&gt;</span>
-  	<span class="nt">&lt;span&gt;</span>one-whole<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-single-column&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;one-whole&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>one-whole<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>	
 <span class="nt">&lt;/div&gt;</span>
+
   	
 </code></pre></div>
 </code>
 </details>
 <div class="pattern__view">		
-<div class="grid__item">
-  <div class="grid  one-whole">
-  	<span>one-whole</span>
-  </div>
+<div class="layout-single-column">
+  <div class="one-whole">
+    <span>one-whole</span>
+  </div>	
 </div>
+
 
 </div>
 </div>
@@ -2031,28 +2089,28 @@ var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=
 <summary class="pattern__name">halfs</summary>
 <code class="pattern__markup">
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;layout-single-column&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid&quot;</span><span class="nt">&gt;</span>
-	  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-half&quot;</span><span class="nt">&gt;</span>
-	  	<span class="nt">&lt;span&gt;</span>one-half<span class="nt">&lt;/span&gt;</span>
-	  <span class="nt">&lt;/div&gt;</span>
-	  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-half&quot;</span><span class="nt">&gt;</span>
-	  	<span class="nt">&lt;span&gt;</span>one-half<span class="nt">&lt;/span&gt;</span>
-	  <span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-half&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>one-half<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;grid__item  one-half&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span&gt;</span>one-half<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>  	
 </code></pre></div>
 </code>
 </details>
 <div class="pattern__view">		
 <div class="layout-single-column">
-	<div class="grid">
-	  <div class="grid__item  one-half">
-	  	<span>one-half</span>
-	  </div>
-	  <div class="grid__item  one-half">
-	  	<span>one-half</span>
-	  </div>
-	</div>
+  <div class="grid">
+    <div class="grid__item  one-half">
+      <span>one-half</span>
+    </div>
+    <div class="grid__item  one-half">
+      <span>one-half</span>
+    </div>
+  </div>
 </div>
 </div>
 </div>
