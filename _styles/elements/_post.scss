@@ -1,0 +1,76 @@
+.background-size-contain{
+	@include rem-calc(margin-bottom, $base-line-height);
+}
+
+.post__footer {
+	@include rem-calc(margin-bottom, $base-line-height * 3);
+}
+
+
+/**
+ * For numbered post formats. Removes the typical magin given to a
+ * list. 
+ */
+.post__list{
+	margin-left: 0;
+	
+	li{
+		@include mq(716px, max) {
+			@include rem-calc(margin-left, 22px);
+		}
+	}
+}
+	
+/**
+ * A different type of <hr> styling. 
+ */
+/*hr*/.section-divider{
+	display: block;
+	width: 14%;
+	margin: 50px auto 40px auto;
+	border: 0;
+	border-top: 1px solid #dddddd;
+}
+
+/**
+ * The main title for a post: give to an h1
+ */
+.post-title{
+	margin-bottom: 10px;
+	
+	font-weight: 100;
+}
+
+/**
+ * The author, twitter handle and timestamp for a post.
+ * Use to extend .nav
+ */
+.post-meta{
+	margin-left: 0;
+	list-style-type: none;
+	color: $color-gray;
+	line-height: 1.6;
+	
+	@include font-size(16px, false);
+	
+	> li{
+		display: inline-block;
+	}
+	
+	&, 
+	a{
+		color: $color-gray;
+	}
+}
+	
+
+.source{
+	@include rem-calc(margin-top, $base-line-height / 2);
+	&:before{
+		content: "-";
+	}
+}
+
+
+
+

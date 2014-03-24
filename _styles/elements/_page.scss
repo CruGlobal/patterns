@@ -27,7 +27,7 @@ body{
 	}
 }
 
-.background-size-contain.single-column{
+.background-size-contain.layout-single-column{
 	@include mq(500px, max){
 		margin-left: 0;
 		margin-right: 0;

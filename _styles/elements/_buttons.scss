@@ -1,18 +1,26 @@
-/** @mixin btn($background, $border, $color) **/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/** 
+ * Use this mixin to quickly pump out buttons:
+ * @mixin btn($background, $border, $color).
+ * 
+ * Quick not that it will not work with transparency due to 
+ * the hover states. 
+ */
+
 .button-group{
 	display: block;
 }
 
 
 .button--primary{
-	@extend %text--white;
-	
+	@extend %text--white;	
 	@include btn($btn-primary-bg, $btn-primary-border);
 }
 
 .button--secondary{
-	@extend %text--white;
-	
+	@extend %text--white;	
 	@include btn($btn-alt-bg, $btn-alt-border);
 }
 
@@ -21,12 +29,15 @@
 	@include btn($btn-subtle-bg, $btn-subtle-border, $btn-subtle-color);
 }
 
-.button--unstyled, input.button--unstyled, .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active{
-	color: $btn-unstyled-color;
-	background-color: $btn-unstyled-bg;
-	border-color: $btn-unstyled-border;
-	
-	&:hover{
-		color: $base-font-color;
+.button--unstyled, 
+input.button--unstyled{
+	&:link, &:visited, &:hover, &:focus, &:active{
+		color: $btn-unstyled-color;
+		background-color: $btn-unstyled-bg;
+		border-color: $btn-unstyled-border;
+
+		&:hover{
+			color: $base-font-color;
+		}
 	}
 }

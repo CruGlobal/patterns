@@ -8,7 +8,7 @@ title: Pattern Primer
 	
 <h2>Brand</h2>
 {% for post in site.categories.brand %}
-<section id="{{ pattern.id }}">
+<section id="{{ site.id }}">
   <h2 class="section-title">{{ post.title }}</h2>
   {{ post.content }}
 </section>
@@ -81,6 +81,13 @@ title: Pattern Primer
 	{% for post in site.categories.global  %}
 		{% include default.html %}
 	{% endfor %}
+</section>
+
+<h2>Layouts</h2>
+<section id="{{ pattern.id }}">
+{% for post in site.categories.layouts order:ascending %}
+	{% include grid.html %}
+{% endfor %}
 </section>
 
 <h2>Components</h2>
