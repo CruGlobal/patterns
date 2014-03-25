@@ -1088,25 +1088,28 @@ blockquote {
  * Inline quotes.
  */
 q {
-  quotes: "‘" "’" "“" "”";
+  quotes: "“" "”";
   /**
    * If an element opens with an inline quote, let’s hang that.
    */ }
   q:before {
-    content: "‘";
+    content: "“";
     content: open-quote; }
   q:after {
-    content: "’";
+    content: "“";
     content: close-quote; }
   q q:before {
     content: "“";
     content: open-quote; }
   q q:after {
-    content: "”";
+    content: "“";
     content: close-quote; }
-  q:first-child {
+  q.opener {
     display: inline-block;
     text-indent: -0.22em; }
+  q:first-child {
+    display: inline-block;
+    text-indent: 0; }
 
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
@@ -1255,12 +1258,6 @@ fieldset {
   fieldset + fieldset {
     margin-bottom: 0; }
 
-.form__inputs:first-of-type {
-  margin-bottom: 0; }
-
-.form__actions {
-  margin-bottom: 0; }
-
 legend {
   display: block;
   width: 100%;
@@ -1359,7 +1356,17 @@ legend {
  */
 label,
 .label {
-  display: block; }
+  display: block;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 6px;
+  /* 9 */
+  margin-bottom: 0.31579rem;
+  /* 9 */ }
 
 /**
  * Extra help text in `label`s, e.g.:
@@ -1369,7 +1376,32 @@ label,
  */
 .additional {
   display: block;
-  font-weight: normal; }
+  font-weight: normal;
+  font-style: italic; }
+
+input + .additional {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-top: 6px;
+  /* 9 */
+  margin-top: 0.31579rem;
+  /* 9 */ }
+
+.additional, .check-list > li {
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  margin-bottom: 12px;
+  /* 9 */
+  margin-bottom: 0.63158rem;
+  /* 9 */ }
 
 /*
  * Groups of checkboxes and radios, e.g.:
@@ -1538,15 +1570,6 @@ label,
     text-align: left; }
 
 /**
- * Gutterless grids have all the properties of regular grids, minus any spacing.
- * Extends `.grid`.
- */
-.grid--full {
-  margin-left: 0; }
-  .grid--full > .grid__item {
-    padding-left: 0; }
-
-/**
  * Align the entire grid to the right. Extends `.grid`.
  */
 .grid--right {
@@ -1562,32 +1585,6 @@ label,
   text-align: center; }
   .grid--center > .grid__item {
     text-align: left; }
-
-/**
- * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
- * `.grid`.
- */
-.grid--middle > .grid__item {
-  vertical-align: middle; }
-
-.grid--bottom > .grid__item {
-  vertical-align: bottom; }
-
-/**
- * Create grids with narrower gutters. Extends `.grid`.
- */
-.grid--narrow {
-  margin-left: -16.5px; }
-  .grid--narrow > .grid__item {
-    padding-left: 16.5px; }
-
-/**
- * Create grids with wider gutters. Extends `.grid`.
- */
-.grid--wide {
-  margin-left: -66px; }
-  .grid--wide > .grid__item {
-    padding-left: 66px; }
 
 /*------------------------------------*\
     $WIDTHS
@@ -2758,10 +2755,10 @@ input[disabled]:focus,
  * Font weights
  */
 .weight--light {
-  font-weight: 300 !important; }
+  font-weight: 100 !important; }
 
 .weight--normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .weight--semibold {
   font-weight: 600 !important; }
@@ -2793,29 +2790,52 @@ input[disabled]:focus,
   margin-left: 33px !important; }
 
 .push-half {
-  margin: 33px !important; }
+  margin: 16.5px !important; }
 
 .push-half--top {
-  margin-top: 33px !important; }
+  margin-top: 16.5px !important; }
 
 .push-half--right {
-  margin-right: 33px !important; }
+  margin-right: 16.5px !important; }
 
 .push-half--bottom {
-  margin-bottom: 33px !important; }
+  margin-bottom: 16.5px !important; }
 
 .push-half--left {
-  margin-left: 33px !important; }
+  margin-left: 16.5px !important; }
 
 .push-half--ends {
-  margin-top: 33px !important;
-  margin-bottom: 33px !important; }
+  margin-top: 16.5px !important;
+  margin-bottom: 16.5px !important; }
 
 .push-half--sides {
-  margin-right: 33px !important;
-  margin-left: 33px !important; }
+  margin-right: 16.5px !important;
+  margin-left: 16.5px !important; }
 
-.flush {
+.push-fourth {
+  margin: 8.25px !important; }
+
+.push-fourth--top {
+  margin-top: 8.25px !important; }
+
+.push-fourth--right {
+  margin-right: 8.25px !important; }
+
+.push-fourth--bottom {
+  margin-bottom: 8.25px !important; }
+
+.push-fourth--left {
+  margin-left: 8.25px !important; }
+
+.push-fourth--ends {
+  margin-top: 8.25px !important;
+  margin-bottom: 8.25px !important; }
+
+.push-fourth--sides {
+  margin-right: 8.25px !important;
+  margin-left: 8.25px !important; }
+
+.flush, .site-nav--off-canvas li {
   margin: 0 !important; }
 
 .flush--top {
@@ -2824,7 +2844,7 @@ input[disabled]:focus,
 .flush--right {
   margin-right: 0 !important; }
 
-.flush--bottom {
+.flush--bottom, .form__inputs:first-of-type, .form__actions, .site-logo, .site-logo h1, .site-nav {
   margin-bottom: 0 !important; }
 
 .flush--left {
@@ -2940,7 +2960,7 @@ input[disabled]:focus,
    <a href=# class=go>Read more</a>
  *
  */
-.go:after {
+.go:after, .go:after {
   content: "\00A0" "\00BB" !important; }
 
 /**
@@ -3011,10 +3031,6 @@ body {
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
-.page--header {
-  background-color: #494c49;
-  padding: 0; }
-
 .dropdown {
   display: none; }
 
@@ -3029,6 +3045,7 @@ body {
   width: 100%;
   height: 100%;
   max-height: 73px;
+  background-color: white;
   border-top-width: 3px;
   border-top-style: solid;
   border-top-color: #f9b625; }
@@ -3959,11 +3976,17 @@ iframe {
 .flush, .site-nav--off-canvas li {
   margin: 0 !important; }
 
-.flush--bottom, .site-logo, .site-logo h1, .site-nav {
+.flush--bottom, .form__inputs:first-of-type, .form__actions, .site-logo, .site-logo h1, .site-nav {
   margin-bottom: 0 !important; }
 
 .text-white, .button--primary, .button--secondary {
   color: white !important; }
+
+body {
+  background-color: #f8f8f8; }
+
+.page--home .site-content {
+  padding: 24px !important; }
 
 .site-content {
   margin-top: 70px; }
@@ -3976,7 +3999,7 @@ iframe {
   margin: 0 0 3em;
   width: 100%;
   border: 1px solid;
-  border-color: #e5e5e5;
+  border-color: #dddddd;
   border-radius: 3px;
   background-color: #fff; }
 
@@ -3985,20 +4008,19 @@ iframe {
 
 .pattern__details {
   color: #004b6a;
-  background-color: #fbf9f9;
+  background-color: #f2f2f2;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
   padding: 0.5em 1%;
   overflow: hidden;
   display: block;
   border-bottom: 1px solid;
-  border-color: #e5e5e5;
-  border-color: rgba(229, 229, 229, 0.5);
+  border-color: #dddddd;
   border-radius: 3px 3px 0 0; }
 
 .pattern__view {
   padding: 10px;
   width: auto;
-  background-color: #fff;
+  background-color: #f8f8f8;
   overflow: hidden; }
 
 .swatch-group > li:nth-child(4n+4) {
@@ -4036,7 +4058,6 @@ code {
   font-size: 90%; }
 
 .demo-header {
-  background-color: #f4f4f4;
   padding-left: 24px;
   padding-right: 24px;
   max-height: 68px;
@@ -4046,15 +4067,17 @@ code {
     line-height: 68px; }
 
 .demo-logo {
+  position: absolute;
+  top: 5px;
+  float: left;
   display: inline-block;
   width: 78px;
-  height: 68px;
+  height: 54px;
   background: url("assets/images/cru-logo.png");
   background-image: url("assets/images/cru-logo.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
-  float: left; }
+  background-size: contain; }
 
 .grid-demo .pattern__view .one-whole, .grid-demo .pattern__view .one-half, .grid-demo .pattern__view .two-quarters, .grid-demo .pattern__view .three-sixths, .grid-demo .pattern__view .four-eighths, .grid-demo .pattern__view .five-tenths, .grid-demo .pattern__view .six-twelfths, .grid-demo .pattern__view .one-third, .grid-demo .pattern__view .two-sixths, .grid-demo .pattern__view .four-twelfths {
   min-height: 80px;
