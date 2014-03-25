@@ -1,0 +1,55 @@
+/**
+ * The main image in a post. This is a wrapper class with the image 
+ * as a child
+ */
+.post__image--primary{
+	position: relative;
+}
+	/*
+	 * Force the main image to stetch full width to match the text.
+     * Since the posts will be narrow this will not mess up the 
+     * images.
+	 */
+	.post-image{
+		width: 100%;
+	}
+	
+		/** 
+		 * Main image captions. Place the .image-credit within this.
+	     * Pulls the caption to the left of the image for wide screens
+	     * and centers it for smaller screens.
+		 */
+		.post-image__caption{
+			position: relative;
+			width: 100%;
+			text-align: center;
+			left: 0;
+			margin-top: 10px;
+	
+			@include mq(1164px) {
+				position: absolute;
+				left: -172px;
+				width: 150px;
+				top: 0;
+				text-align: right;
+				margin-top: 0;
+				line-height: 1.6;
+		
+				&:before{
+					width: 25%;
+					margin-left: 75%;
+					border-top: 1px solid #dddddd;
+					display: block;
+					content: "";
+					margin-bottom: 10px;
+				}
+			}
+	
+		}
+		
+		.image-credit{
+			display: block;
+			margin-top: 16px;
+			font-size: 80%;
+			color: #666062;
+		}

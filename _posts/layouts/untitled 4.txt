@@ -1,0 +1,11 @@
+---
+layout: patterns
+category: layouts
+title: halfs
+id: halfs
+---
+<div class="grid__item">
+  <div class="grid  one-half">
+  	<span>one-half</span>
+  </div>
+</div>

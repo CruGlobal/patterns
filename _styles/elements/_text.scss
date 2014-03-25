@@ -17,6 +17,18 @@ figcaption{
 	@include font-size(14px, false);
 }
 
+/**
+ * Places a dash after a piece of text. Mainly for post meta info
+ * 
+ */
+.accent{
+	&:after{
+		content: "-";
+		@include rem-calc(margin-left, 12px);
+		@include rem-calc(margin-right, 12px);
+	}
+}
+
 blockquote{
 	letter-spacing: .01rem;
 	font-weight: 300;
@@ -30,12 +42,22 @@ blockquote{
 }
 
 	.pullquote{
+		padding-left: 0;
 		border-left-color: transparent;
-		margin: 48px -100px;
+		margin: 48px 0px;
 		text-align: center;
+		
+		@include mq(501px) {
+			margin: 48px -10px;
+		}
+		 
+		@include mq(1001px) {
+			margin: 48px -100px;
+		}
+		
 		@include vendor(transition, margin .1s);
 		
-		em{
+		em, strong{
 			font-style: normal;
 			font-weight: 500;
 			font-size: 110%;
