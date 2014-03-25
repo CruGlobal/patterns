@@ -7,7 +7,7 @@ body{
 	background-color:#f4f4f4;
 	
 	@include rem(margin-top, 70px);
-	@include rem(padding-top, 32px);
+	@include rem(padding-top, 38px);
 }
 
 .page-content, .single-column{
@@ -33,5 +33,35 @@ body{
 		margin-right: 0;
 	}
 }
+
+.home-banner{
+	.h4, a{
+		@include mq(981px) {
+			display: inline-block;
+		}
+	}
+	
+	a{
+		
+	}
+	
+	min-height: 84px;
+	
+}
+
+	.callout{
+		@include mq(981px) {
+			line-height: 84px;		
+			float: left;
+		}
+	}
+	
+	.callout-button{
+		float: left;
+		width: auto;
+		@include mq(981px){
+			float: right;
+		}
+	}
 
 	

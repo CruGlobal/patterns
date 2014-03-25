@@ -1,4 +1,4 @@
-$slider-height: 424px;
+$slider-height: 364px;
 
 .preload{
   display: none !important;
@@ -15,6 +15,7 @@ $slider-height: 424px;
 .content-slider{
   overflow: hidden;
   position: relative;
+  @include rem(margin-bottom, 38px);
 
   ul, li{
     margin-top: 0;
@@ -51,10 +52,6 @@ $slider-height: 424px;
 .slider {
   height: $slider-height;
   position: relative;
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
-
 }
 
 
