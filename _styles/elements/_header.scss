@@ -49,7 +49,7 @@ $link-height: 36px;
 		@extend %flush--bottom;
 	
 		float: left;
-		width: 15%;
+		width: 10%;
 		height: $header-height - 3px;
 		
 		padding-left: 12px;
@@ -66,18 +66,18 @@ $link-height: 36px;
 			height: 68px;
 			overflow: hidden;
 			vertical-align: middle;
-		}
-	
-		h1{
-			@extend %flush--bottom;
-		
-			width: 78px;
-			height: 68px;
+			
+			width: 74px;
+			height: 54px;
 			background: url("assets/images/cru-logo.png");
 			background-image: url("assets/images/cru-logo.svg");
 			background-repeat: no-repeat;
 			background-position: top center;
 			background-size: contain;
+		}
+	
+		h1{
+			@extend %flush--bottom;
 		}
 	}
 	

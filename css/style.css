@@ -3006,8 +3006,8 @@ body {
   background-color: #f4f4f4;
   margin-top: 70px;
   margin-top: 3.68421rem;
-  padding-top: 38px;
-  padding-top: 2rem; }
+  padding-top: 32px;
+  padding-top: 1.68421rem; }
 
 .page-content, .single-column {
   max-width: 800px;
@@ -3027,24 +3027,6 @@ body {
   .background-size-contain.layout-single-column {
     margin-left: 0;
     margin-right: 0; } }
-
-.home-banner {
-  min-height: 84px; }
-  @media screen and (min-width: 61.3125em) {
-    .home-banner .h4, .home-banner a {
-      display: inline-block; } }
-
-@media screen and (min-width: 61.3125em) {
-  .callout {
-    line-height: 84px;
-    float: left; } }
-
-.callout-button {
-  float: left;
-  width: auto; }
-  @media screen and (min-width: 61.3125em) {
-    .callout-button {
-      float: right; } }
 
 /*------------------------------------*\
     $HEADER
@@ -3085,7 +3067,7 @@ body {
 
 .site-logo {
   float: left;
-  width: 10%;
+  width: 15%;
   height: 70px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3096,7 +3078,7 @@ body {
     height: 68px;
     overflow: hidden;
     vertical-align: middle;
-    width: 74px;
+    width: 100%;
     height: 54px;
     background: url("assets/images/cru-logo.png");
     background-image: url("assets/images/cru-logo.svg");
@@ -4045,11 +4027,6 @@ iframe {
 .one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths {
   margin-left: 2%; }
 
-.wide-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px; }
-
 .preload {
   display: none !important; }
 
@@ -4061,9 +4038,7 @@ iframe {
 
 .content-slider {
   overflow: hidden;
-  position: relative;
-  margin-bottom: 38px;
-  margin-bottom: 2rem; }
+  position: relative; }
   .content-slider ul, .content-slider li {
     margin-top: 0;
     padding-left: 0; }
@@ -4094,12 +4069,15 @@ iframe {
       transform: translateX(10px); } }
 
 .slider {
-  height: 364px;
-  position: relative; }
+  height: 424px;
+  position: relative;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto; }
 
 .mask {
   overflow: hidden;
-  height: 364px; }
+  height: 424px; }
 
 .slider__item {
   position: absolute;
