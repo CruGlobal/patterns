@@ -1,3 +1,11 @@
+body{
+	background-color: #f8f8f8;
+}
+
+.page--home .site-content{
+	padding: 24px !important;
+}
+
 .site-content{
 	margin-top: 70px;
 }
@@ -10,7 +18,7 @@
 	margin: 0 0 3em;
 	width: 100%;
 	border: 1px solid;
-	border-color: #e5e5e5;
+	border-color: #dddddd;
 	border-radius: 3px;
 	
 	background-color: #fff;
@@ -22,14 +30,13 @@
 
 .pattern__details{
 	color: #004b6a;
-	background-color: #fbf9f9;
+	background-color: #f2f2f2;
 	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
 	padding: 0.5em 1%;
 	overflow: hidden;
 	display: block;
 	border-bottom: 1px solid;
-	border-color: #e5e5e5;
-	border-color: rgba(229, 229, 229, 0.5);
+	border-color: #dddddd;
 	border-radius: 3px 3px 0 0;
 }
 
@@ -38,7 +45,7 @@
 	.pattern__view{
 		padding: 10px;
 		width: auto;
-		background-color: #fff;
+		background-color: #f8f8f8;
 		overflow: hidden;
 	}
 	
@@ -85,14 +92,12 @@ code{
 }
 
 .demo-header {
-	background-color: #f4f4f4;
 	padding-left: 24px;
 	padding-right: 24px;
 	
 	max-height: 68px;
 
 	border-bottom: 1px solid #ddd;
-	
 	
 	nav{
 		float: right;
@@ -102,15 +107,18 @@ code{
 }
 
 .demo-logo{
+	position: absolute;
+	top: 5px;
+	float: left;
+	
 	display: inline-block;
 	width: 78px;
-	height: 68px;
+	height: 54px;
 	background: url("assets/images/cru-logo.png");
 	background-image: url("assets/images/cru-logo.svg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
-	float: left;
 }
 
 %grid-demo{

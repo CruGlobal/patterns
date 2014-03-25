@@ -4,13 +4,39 @@ category: head
 title: head
 ---
 
-<head>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>	
   <meta charset="utf-8">
-  <title>{{ page.name }}</title>
-  <meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="{{ site.root }}style.min.css">	
-	
-  {% include fonts.html %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
-  {% include analytics.html %}
-</head>
+  <!-- Prefetch DNS for external assets (Twitter widgets etc). -->
+  <link rel="dns-prefetch" href="//use.typekit.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//www.ajax.googleapis.com.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//cdn.api.twitter.com">
+  <link rel="dns-prefetch" href="//p.twitter.com">
+
+  <!-- Prerender Necessary Pages -->
+  <!-- <link rel="prerender" href="#"></link> -->
+
+  <title>Cru</title>
+	
+  <!-- Load Stylesheets and fonts -->
+  {% include fonts.html %}
+  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
+	
+	
+  <link rel="shortcut icon" href="/icon.png">
+  <meta name="apple-mobile-web-app-title" content="csswizardry">
+  <meta name="description" content="Cru helps people in every segment of society -- from students to athletes to families to business professionals -- truly follow Jesus Christ.">	
+	
+	
+  <!-- Load Javascipt libraries the need to be at the top of the page -->
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>

@@ -1,6 +1,7 @@
 ---
 layout: fundamental
 title: Pattern Primer
+page-class: page--home
 ---
 {% include header.html %}
 	<h1>Website Style Guide</h1>
@@ -89,14 +90,6 @@ title: Pattern Primer
 	{% include grid.html %}
 {% endfor %}
 </section>
-
-<h2>Components</h2>
-{% for post in site.categories.components %}
-<section id="{{ pattern.id }}">
-  <h3 class="section-title">{{ post.title }}</h3>
-  {{ post.content }}
-</section>
-{% endfor %}
 
 <h2>Patterns</h2>
 {% for post in site.categories.patterns %}

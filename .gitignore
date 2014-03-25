@@ -1,5 +1,6 @@
-/config.codekit
-
-/_site/config.codekit
-/_site
-/_site/*
+.DS_Store
+codekit-config.json
+config-codekit.json
+config.codekit
+.sass-cache/
+_site
