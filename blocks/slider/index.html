@@ -13,7 +13,7 @@ title: Pattern Primer
         <li  class="slider__item  slider--main  animate--first js-at-bat">
           <a href="#camera">
             <div class="block-image">
-              <div class="background-image" style="background-image: url('assets/images/cru640x360_story_01.jpg')"></div>
+              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_01.jpg')"></div>
             </div>
             <div class="article-details">
               <a href="#camera">
@@ -29,7 +29,7 @@ title: Pattern Primer
         <li  class="slider__item  slider--second  animate--second  js-on-deck">
           <a href="#birds">
             <div class="block-image">
-              <div class="background-image" style="background-image: url('assets/images/cru640x360_story_02.jpg')"></div>
+              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_02.jpg')"></div>
             </div>
             <div class="article-details">
               <a href="#birds">
@@ -46,7 +46,7 @@ title: Pattern Primer
         <li  class="slider__item  slider--next  animate--third js-in-the-hole">
           <a href="#train">
             <div class="block-image">
-              <div class="background-image" style="background-image: url('assets/images/cru640x360_story_03.jpg')"></div>
+              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_03.jpg')"></div>
             </div>
             <div class="article-details">
               <a href="#train">
@@ -62,7 +62,7 @@ title: Pattern Primer
         <li  class="slider__item  slider--last  animate--fourth js-last-up">
           <a href="#tea">
             <div class="block-image">
-              <div class="background-image" style="background-image: url('assets/images/cru640x360_story_04.jpg')"></div>
+              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_04.jpg')"></div>
             </div>
             <div class="article-details">
               <a href="#tea">
@@ -83,27 +83,14 @@ title: Pattern Primer
   <!-- .slider--controls -->
   <a class="slider-control  slider-control__prev">
 				<span class="slider-control--btn">
-					<i class="icon-prev"></i>
+					<i class="icon-left-arrow"></i>
 				</span>
   </a>
   <a class="slider-control  slider-control__next">
 				<span class="slider-control--btn">
-					<i class="icon-next"></i>
+					<i class="icon-right-arrow"></i>
 				</span>
   </a>
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
-
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
 
 {% include footer.html %}
