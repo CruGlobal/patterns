@@ -1586,6 +1586,13 @@ input + .additional {
   .grid--center > .grid__item {
     text-align: left; }
 
+/**
+ * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
+ * `.grid`.
+ */
+.grid--middle > .grid__item {
+  vertical-align: middle; }
+
 /*------------------------------------*\
     $WIDTHS
 \*------------------------------------*/
@@ -3049,6 +3056,15 @@ body {
   margin-left: 0;
   margin-right: 2%; }
 
+.action-icons {
+  height: 150px;
+  width: 150px; }
+
+.mask--circle {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden; }
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -3274,21 +3290,16 @@ body {
 /*------------------------------------*\
     $OFF-CANVAS
 \*------------------------------------*/
-.js-slide .js-container {
-  right: 16em; }
-  @media screen and (min-width: 31.25em) {
-    .js-slide .js-container {
-      right: 300px; } }
+@media screen and (max-width: 33.75em) {
+  .js-slide .js-container {
+    right: 70%; } }
+@media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
+  .js-slide .js-container {
+    right: 18.75em; } }
+
 .js-slide .js-off-canvas {
   right: 0; }
 
-/**
-.js-slide .topbar-toggle{
-	&:after{
-		content: " x";
-	}
-}
-*/
 .js-container {
   position: absolute;
   right: 0;
@@ -3307,17 +3318,21 @@ body {
 .js-off-canvas {
   position: fixed;
   top: 0;
-  right: -16em;
   z-index: 1;
-  width: 16em;
+  width: 15.5em;
   overflow: scroll;
   height: 100%;
   background-color: #494c49;
   border-top: 3px solid;
   border-color: #f9b625; }
-  @media screen and (min-width: 31.25em) {
+  @media screen and (max-width: 33.75em) {
     .js-off-canvas {
-      width: 18.75em; } }
+      width: 70%;
+      right: -70%; } }
+@media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
+  .js-off-canvas {
+    width: 18.75em;
+    right: -18.75em; } }
 
 .site-nav--off-canvas {
   width: 100%;

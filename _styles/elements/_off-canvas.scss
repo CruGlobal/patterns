@@ -4,25 +4,21 @@
 
 .js-slide{
 	.js-container{
-		right: 16em;
-
-		@include mq(500px) {
-			right: 300px;
+		@include mq(540px, max) {
+			right: 70%;
 		}
-	
+		
+		@include mq(541px) {
+			@include mq(980px, max) {
+				right: 18.75em;
+			}
+		}
 	}
 	
 	.js-off-canvas{
 		right: 0;
 	}
 }
-/**
-.js-slide .topbar-toggle{
-	&:after{
-		content: " x";
-	}
-}
-*/
 
 
 .js-container{
@@ -46,10 +42,9 @@
 .js-off-canvas{
 	position: fixed;
 	top: 0;
-	right: em(-256px);
 	z-index: 1;
 	
-	width: em(256px);
+	width: 15.5em;
 	overflow: scroll;
 	height: 100%;
 	
@@ -57,8 +52,16 @@
 	border-top: 3px solid;
 	border-color: $color-gold;
 	
-	@include mq(500px) {
-		width: em(300px);
+	@include mq(540px, max) {
+		width: 70%;
+		right: -70%;
+	}
+	
+	@include mq(541px) {
+		@include mq(980px, max) {
+			width: 18.75em;
+			right: -18.75em;
+		}
 	}
 }
 
