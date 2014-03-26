@@ -177,11 +177,6 @@ $link-height: 36px;
 				@include mq(981px){
 					display: none;
 				}
-				
-				&:after{
-					content: " ≡";
-
-				}
 			}
 						
 			.topbar-close{
@@ -189,7 +184,7 @@ $link-height: 36px;
 				
 				color: #ffffff;
 				
-				@include rem(top, 32px);
+				@include rem(top, 22px);
 				@include rem(right, 16px);
 				
 				&:after{
@@ -229,6 +224,11 @@ $link-height: 36px;
 					color: #444444;
 				}
 			}
+		}
+		
+		.search{
+			height: auto;
+			line-height: 1.5;
 		}
 	
 #nav > ul > li > ul{
