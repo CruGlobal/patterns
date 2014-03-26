@@ -5,7 +5,7 @@
 .js-slide{
 	.js-container{
 		@include mq(540px, max) {
-			right: 70%;
+			right: 75%;
 		}
 		
 		@include mq(541px) {
@@ -13,10 +13,6 @@
 				right: 18.75em;
 			}
 		}
-	}
-	
-	.js-off-canvas{
-		right: 0;
 	}
 }
 
@@ -26,7 +22,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	
+	min-height: 100%;
 	width: 100%;
 	
 	z-index: 2;
@@ -42,6 +38,7 @@
 .js-off-canvas{
 	position: fixed;
 	top: 0;
+	right: 0;
 	z-index: 1;
 	
 	width: 15.5em;
@@ -53,14 +50,12 @@
 	border-color: $color-gold;
 	
 	@include mq(540px, max) {
-		width: 70%;
-		right: -70%;
+		width: 75%;
 	}
 	
 	@include mq(541px) {
 		@include mq(980px, max) {
 			width: 18.75em;
-			right: -18.75em;
 		}
 	}
 }
@@ -110,5 +105,14 @@
 		.search{
 			max-width: 80%;
 			@include rem(margin-left, 16px);
+		}
+		
+		.search-button{
+			right: 20px;
+			
+			& > i{
+				font-size: 16px;
+				
+			}
 		}
 	}

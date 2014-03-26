@@ -3196,14 +3196,12 @@ body {
   @media screen and (min-width: 61.3125em) {
     .topbar-open {
       display: none; } }
-  .topbar-open:after {
-    content: " ≡"; }
 
 .topbar-close {
   position: absolute;
   color: #ffffff;
-  top: 32px;
-  top: 1.68421rem;
+  top: 22px;
+  top: 1.15789rem;
   right: 16px;
   right: 0.84211rem; }
   .topbar-close:after {
@@ -3230,6 +3228,10 @@ body {
       background-color: #f6f6f6;
       text-decoration: none;
       color: #444444; }
+
+.search {
+  height: auto;
+  line-height: 1.5; }
 
 #nav > ul > li > ul {
   left: -62px;
@@ -3292,19 +3294,17 @@ body {
 \*------------------------------------*/
 @media screen and (max-width: 33.75em) {
   .js-slide .js-container {
-    right: 70%; } }
+    right: 75%; } }
 @media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
   .js-slide .js-container {
     right: 18.75em; } }
-
-.js-slide .js-off-canvas {
-  right: 0; }
 
 .js-container {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
+  min-height: 100%;
   width: 100%;
   z-index: 2;
   background-color: white;
@@ -3318,6 +3318,7 @@ body {
 .js-off-canvas {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 1;
   width: 15.5em;
   overflow: scroll;
@@ -3327,12 +3328,10 @@ body {
   border-color: #f9b625; }
   @media screen and (max-width: 33.75em) {
     .js-off-canvas {
-      width: 70%;
-      right: -70%; } }
+      width: 75%; } }
 @media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
   .js-off-canvas {
-    width: 18.75em;
-    right: -18.75em; } }
+    width: 18.75em; } }
 
 .site-nav--off-canvas {
   width: 100%;
@@ -3378,6 +3377,10 @@ body {
     max-width: 80%;
     margin-left: 16px;
     margin-left: 0.84211rem; }
+  .site-nav--off-canvas .search-button {
+    right: 20px; }
+    .site-nav--off-canvas .search-button > i {
+      font-size: 16px; }
 
 .background-size-contain {
   /* 3 */
@@ -3641,7 +3644,17 @@ body {
 .search-field {
   width: 254px;
   max-height: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+  border-width: 1px;
+  font-size: 80%; }
+  .search-field::-webkit-input-placeholder {
+    font-size: 14px; }
+  .search-field::-moz-placeholder {
+    font-size: 14px; }
+  .search-field:-ms-input-placeholder {
+    font-size: 14px; }
+  .search-field:-moz-placeholder {
+    font-size: 14px; }
 
 .search-button {
   position: absolute;
@@ -3651,6 +3664,9 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   border: none; }
+  .search-button > i {
+    color: #6d6e71;
+    font-size: 70%; }
 
 /*------------------------------------*\
     $COLORS

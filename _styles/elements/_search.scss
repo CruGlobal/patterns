@@ -17,6 +17,13 @@
 		width: 254px;
 		max-height: 16px;
 		line-height: 18px;
+		border-width: 1px;
+		
+		font-size: 80%;
+		&::-webkit-input-placeholder { font-size: 14px;}
+		      &::-moz-placeholder { font-size: 14px;}
+		      &:-ms-input-placeholder { font-size: 14px;}
+		      &:-moz-placeholder { font-size: 14px;}
 	}
 	.search-button{
 		position: absolute;
@@ -28,4 +35,10 @@
 		padding-left: 10px;
 		padding-right: 10px;
 		border: none;
+		
+		> i{
+			color: $btn-default-color;
+			font-size: 70%;
+			
+		}
 	}
