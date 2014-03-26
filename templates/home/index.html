@@ -205,7 +205,7 @@ page-class: page--home
 				</div>
 				
 				
-				<div class="layout-single-column  layout--wide">
+				<div class="layout-single-column  layout--wide  push--bottom">
 					<div class="highlight--top">
 							<ul  class="block-list  push--bottom">
 								
@@ -299,15 +299,52 @@ page-class: page--home
 					</div>
 
 				</div>
+				
+				<footer class="global-footer">
+					<hr class="section-divider">
+					
+					<nav role="supplementary">	
+						<ul class="nav  flush--bottom">
+							<li>
+								<a href="/">Contact Us</a>
+							</li>
+							<li>
+								<a href="/">RSS Feed</a>
+							</li>
+							<li>
+								<a href="/">Press Room</a>
+							</li>
+							<li>
+								<a href="/">Careers</a>
+							</li>
+							<li>
+								<a href="/">Terms of Use</a>
+							</li>
+							<li>
+								<a href="/">Privary Policy</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copy">
+
+						<small>©1994-2014 Cru. All Rights Reserved.</small>
+	
+					</div>
+				</footer>
+				
+				
 			</div>
+	
+			
 		</div>
+	
 		
 		<nav id="off-canvas" class="js-off-canvas">
 			<div class="site-nav--off-canvas  hard">
 				<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
 				<ol class="nav  nav--stacked  flush">
 					<li>
-						<form class="site-search">
+						<form class="site-search  push-half--bottom">
 							<input type="search"  class="search  text-input"></input>
 							<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
 							
@@ -346,7 +383,8 @@ page-class: page--home
 			</div>
 		</nav>
 		
-				
+		
+		
 		{% include footer.html %}
     <script src="{{ site.root }}offcanvas.min.js"></script>
 	
