@@ -5,5 +5,5 @@ pygments: true
 permalink: patterns/:title.html
 
 name: Cru Pattern Library
-root: http://cruweb.github.io/patterns/ 
-# root: '/'
+#root: http://cruweb.github.io/patterns/ 
+root: '/'

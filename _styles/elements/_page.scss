@@ -35,30 +35,36 @@ body{
 }
 
 .home-banner{
-	padding: $base-line-height;
+	@extend %cf;
+		
 	.h4, a{
 		@include mq(981px) {
-			//display: inline-block;
+			display: inline-block;
 		}
 	}
-	
-	a{
-		
-	}	
 }
 
 	.callout{
+		margin-bottom:$base-line-height;
 		@include mq(981px) {
-			//float: left;
-		}
+			margin-bottom: 0;
+		}		
 	}
 	
 	.callout-button{
-		//float: left;
-		width: auto;
-		@include mq(981px){
-			//float: right;
+		@include mq(981px) {
+			text-align: left;
 		}
 	}
+
+.grid--rev > .grid__item{
+	float: right;
+}	
+
+.grid--rev > .one-third + .two-thirds{
+	margin-left: 0;
+	margin-right: 2%;
+}
+	
 
 	

@@ -840,12 +840,12 @@ small {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before, .nav:before, .cf:after, .nav:after, .grid:before, .grid:after {
+.cf:before, .nav:before, .cf:after, .nav:after, .grid:before, .home-banner:before, .grid:after, .home-banner:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
-.cf:after, .nav:after, .grid:after {
+.cf:after, .nav:after, .grid:after, .home-banner:after {
   clear: both; }
 
 /*------------------------------------*\
@@ -3028,11 +3028,26 @@ body {
     margin-left: 0;
     margin-right: 0; } }
 
-.home-banner {
-  padding: 33px; }
+@media screen and (min-width: 61.3125em) {
+  .home-banner .h4, .home-banner a {
+    display: inline-block; } }
 
-.callout-button {
-  width: auto; }
+.callout {
+  margin-bottom: 33px; }
+  @media screen and (min-width: 61.3125em) {
+    .callout {
+      margin-bottom: 0; } }
+
+@media screen and (min-width: 61.3125em) {
+  .callout-button {
+    text-align: left; } }
+
+.grid--rev > .grid__item {
+  float: right; }
+
+.grid--rev > .one-third + .two-thirds, .grid--rev > .two-sixths + .two-thirds, .grid--rev > .four-twelfths + .two-thirds, .grid--rev > .one-third + .four-sixths, .grid--rev > .two-sixths + .four-sixths, .grid--rev > .four-twelfths + .four-sixths, .grid--rev > .one-third + .eight-twelfths, .grid--rev > .two-sixths + .eight-twelfths, .grid--rev > .four-twelfths + .eight-twelfths {
+  margin-left: 0;
+  margin-right: 2%; }
 
 /*------------------------------------*\
     $HEADER
@@ -4013,19 +4028,22 @@ iframe {
   /* 9 */
   color: white; }
 
-.layout-single-column, .layout--wide {
+.base-layout, .layout-single-column, .layout--wide, .layout--cap {
   width: auto;
   margin-left: 20px;
   margin-right: 20px;
   clear: both; }
   @media screen and (min-width: 42.5em) {
-    .layout-single-column, .layout--wide {
-      width: 640px;
+    .base-layout, .layout-single-column, .layout--wide, .layout--cap {
       margin-left: auto;
       margin-right: auto; } }
-  @media screen and (min-width: 50em) {
-    .layout-single-column, .layout--wide {
-      width: 700px; } }
+
+@media screen and (min-width: 42.5em) {
+  .layout-single-column, .layout--wide {
+    width: 640px; } }
+@media screen and (min-width: 50em) {
+  .layout-single-column, .layout--wide {
+    width: 700px; } }
 
 @media screen and (min-width: 62.5em) {
   .layout--wide {
@@ -4037,8 +4055,11 @@ iframe {
 .one-half + .one-half, .two-quarters + .one-half, .three-sixths + .one-half, .four-eighths + .one-half, .five-tenths + .one-half, .six-twelfths + .one-half, .one-half + .two-quarters, .two-quarters + .two-quarters, .three-sixths + .two-quarters, .four-eighths + .two-quarters, .five-tenths + .two-quarters, .six-twelfths + .two-quarters, .one-half + .three-sixths, .two-quarters + .three-sixths, .three-sixths + .three-sixths, .four-eighths + .three-sixths, .five-tenths + .three-sixths, .six-twelfths + .three-sixths, .one-half + .four-eighths, .two-quarters + .four-eighths, .three-sixths + .four-eighths, .four-eighths + .four-eighths, .five-tenths + .four-eighths, .six-twelfths + .four-eighths, .one-half + .five-tenths, .two-quarters + .five-tenths, .three-sixths + .five-tenths, .four-eighths + .five-tenths, .five-tenths + .five-tenths, .six-twelfths + .five-tenths, .one-half + .six-twelfths, .two-quarters + .six-twelfths, .three-sixths + .six-twelfths, .four-eighths + .six-twelfths, .five-tenths + .six-twelfths, .six-twelfths + .six-twelfths {
   float: right; }
 
-.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths {
+.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths, .one-third + .two-thirds, .two-sixths + .two-thirds, .four-twelfths + .two-thirds, .one-third + .four-sixths, .two-sixths + .four-sixths, .four-twelfths + .four-sixths, .one-third + .eight-twelfths, .two-sixths + .eight-twelfths, .four-twelfths + .eight-twelfths {
   margin-left: 2%; }
+
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 64%; }
 
 .layout-single-column--wide {
   max-width: 1100px;
