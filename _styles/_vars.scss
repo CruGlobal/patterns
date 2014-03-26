@@ -47,6 +47,13 @@ $base-line-height:       33px;
 $header-font-ratio:      1.313;
 $header-font-weight:     400;
 
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'lap' '(min-width: 481px) and (max-width: 1023px)',
+    'portable' '(max-width: 980px)',
+    'desk' '(min-width: 981px)'
+) !default;
+
 
 
 

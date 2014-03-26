@@ -35,32 +35,30 @@ body{
 }
 
 .home-banner{
+	text-align: center;
+	padding: $base-line-height;
 	.h4, a{
 		@include mq(981px) {
-			display: inline-block;
+			//display: inline-block;
 		}
 	}
 	
 	a{
 		
-	}
-	
-	min-height: 84px;
-	
+	}	
 }
 
 	.callout{
 		@include mq(981px) {
-			line-height: 84px;		
-			float: left;
+			//float: left;
 		}
 	}
 	
 	.callout-button{
-		float: left;
+		//float: left;
 		width: auto;
 		@include mq(981px){
-			float: right;
+			//float: right;
 		}
 	}
 
