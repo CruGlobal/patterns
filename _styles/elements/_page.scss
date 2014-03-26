@@ -35,7 +35,6 @@ body{
 }
 
 .home-banner{
-	text-align: center;
 	padding: $base-line-height;
 	.h4, a{
 		@include mq(981px) {
