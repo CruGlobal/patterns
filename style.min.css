@@ -3059,7 +3059,7 @@ body {
 .action-icons {
   height: 100%;
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   display: inline-block;
   vertical-align: middle; }
 
@@ -3072,6 +3072,21 @@ body {
   color: #f9b625;
   font-family: "cruicons";
   padding-left: 10px; }
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none; }
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important; }
+
+.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span {
+  width: 85px !important; }
+
+.fb-like.fb_iframe_widget > span, #twitter-widget-0, #___plusone_0 {
+  vertical-align: middle !important;
+  height: 25px !important; }
 
 /*------------------------------------*\
     $HEADER
@@ -3312,6 +3327,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  overflow-x: hidden;
   min-height: 100%;
   width: 100%;
   z-index: 2;
@@ -3345,6 +3361,8 @@ body {
   width: 100%;
   text-transform: uppercase; }
   .site-nav--off-canvas .nav {
+    position: absolute;
+    width: 100%;
     padding-top: 88px;
     padding-top: 4.63158rem; }
   .site-nav--off-canvas li {
@@ -3732,6 +3750,8 @@ tbody {
  */
 .button-group {
   display: block; }
+  .button-group .button {
+    margin-bottom: 10px; }
 
 .button--primary {
   color: inherit;
@@ -3798,6 +3818,9 @@ input.button--unstyled:active {
   input.button--unstyled:focus:hover,
   input.button--unstyled:active:hover {
     color: #353535; }
+
+.button--full {
+  width: 100%; }
 
 abbr[title="required"], abbr[title="Required"] {
   color: #d95c5c;
@@ -4019,7 +4042,7 @@ textarea.text-input {
       top: 0;
       opacity: 1; }
 
-iframe {
+.video > iframe {
   min-height: 100%; }
 
 /*------------------------------------*\
@@ -4071,13 +4094,13 @@ iframe {
     padding-bottom: 1.73684rem;
     /* 9 */ }
 
-.base-layout, .layout-single-column, .layout--wide {
+.base-layout, .layout-single-column, .layout--wide, .layout--cap {
   width: auto;
   margin-left: 20px;
   margin-right: 20px;
   clear: both; }
   @media screen and (min-width: 42.5em) {
-    .base-layout, .layout-single-column, .layout--wide {
+    .base-layout, .layout-single-column, .layout--wide, .layout--cap {
       margin-left: auto;
       margin-right: auto; } }
 
@@ -4093,33 +4116,199 @@ iframe {
     width: 880px; } }
 
 .layout--cap {
-  width: auto;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both; }
-
-.one-half + .one-half, .two-quarters + .one-half, .three-sixths + .one-half, .four-eighths + .one-half, .five-tenths + .one-half, .six-twelfths + .one-half, .one-half + .two-quarters, .two-quarters + .two-quarters, .three-sixths + .two-quarters, .four-eighths + .two-quarters, .five-tenths + .two-quarters, .six-twelfths + .two-quarters, .one-half + .three-sixths, .two-quarters + .three-sixths, .three-sixths + .three-sixths, .four-eighths + .three-sixths, .five-tenths + .three-sixths, .six-twelfths + .three-sixths, .one-half + .four-eighths, .two-quarters + .four-eighths, .three-sixths + .four-eighths, .four-eighths + .four-eighths, .five-tenths + .four-eighths, .six-twelfths + .four-eighths, .one-half + .five-tenths, .two-quarters + .five-tenths, .three-sixths + .five-tenths, .four-eighths + .five-tenths, .five-tenths + .five-tenths, .six-twelfths + .five-tenths, .one-half + .six-twelfths, .two-quarters + .six-twelfths, .three-sixths + .six-twelfths, .four-eighths + .six-twelfths, .five-tenths + .six-twelfths, .six-twelfths + .six-twelfths {
-  float: right; }
-
-.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths, .one-third + .two-thirds, .two-sixths + .two-thirds, .four-twelfths + .two-thirds, .one-third + .four-sixths, .two-sixths + .four-sixths, .four-twelfths + .four-sixths, .one-third + .eight-twelfths, .two-sixths + .eight-twelfths, .four-twelfths + .eight-twelfths {
-  margin-left: 2%; }
-
-.one-quarter, .two-eighths, .three-twelfths {
-  width: 23%;
-  margin-right: 2%; }
-
-.one-quarter:nth-of-type(4n+4), .two-eighths:nth-of-type(4n+4), .three-twelfths:nth-of-type(4n+4) {
-  margin-right: 0; }
-
-.two-thirds, .four-sixths, .eight-twelfths {
-  width: 64%; }
+  max-width: 1100px; }
 
 .layout-single-column--wide {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px; }
 
+/**
+ * Our regular, non-responsive width classes.
+ */
+.one-half + .one-half, .two-quarters + .one-half, .three-sixths + .one-half, .four-eighths + .one-half, .five-tenths + .one-half, .six-twelfths + .one-half, .one-half + .two-quarters, .two-quarters + .two-quarters, .three-sixths + .two-quarters, .four-eighths + .two-quarters, .five-tenths + .two-quarters, .six-twelfths + .two-quarters, .one-half + .three-sixths, .two-quarters + .three-sixths, .three-sixths + .three-sixths, .four-eighths + .three-sixths, .five-tenths + .three-sixths, .six-twelfths + .three-sixths, .one-half + .four-eighths, .two-quarters + .four-eighths, .three-sixths + .four-eighths, .four-eighths + .four-eighths, .five-tenths + .four-eighths, .six-twelfths + .four-eighths, .one-half + .five-tenths, .two-quarters + .five-tenths, .three-sixths + .five-tenths, .four-eighths + .five-tenths, .five-tenths + .five-tenths, .six-twelfths + .five-tenths, .one-half + .six-twelfths, .two-quarters + .six-twelfths, .three-sixths + .six-twelfths, .four-eighths + .six-twelfths, .five-tenths + .six-twelfths, .six-twelfths + .six-twelfths {
+  float: right; }
+
+.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths,
+.one-third + .two-thirds,
+.two-sixths + .two-thirds,
+.four-twelfths + .two-thirds,
+.one-third + .four-sixths,
+.two-sixths + .four-sixths,
+.four-twelfths + .four-sixths,
+.one-third + .eight-twelfths,
+.two-sixths + .eight-twelfths,
+.four-twelfths + .eight-twelfths {
+  margin-left: 2%; }
+
+.one-third:nth-child(4n+4), .two-sixths:nth-child(4n+4), .four-twelfths:nth-child(4n+4) {
+  margin-left: 0; }
+
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 64%; }
+
+.layout-minor {
+  width: 26%;
+  float: left; }
+
+.layout-major {
+  float: right;
+  width: 70%; }
+
+.one-quarter, .two-eighths, .three-twelfths {
+  width: 23%;
+  margin-right: 2%; }
+
+.one-quarter:nth-child(4n+4), .two-eighths:nth-child(4n+4), .three-twelfths:nth-child(4n+4) {
+  margin-right: 0; }
+
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@media only screen and (max-width: 480px) {
+  .palm--one-half + .palm--one-half, .palm--two-quarters + .palm--one-half, .palm--three-sixths + .palm--one-half, .palm--four-eighths + .palm--one-half, .palm--five-tenths + .palm--one-half, .palm--six-twelfths + .palm--one-half, .palm--one-half + .palm--two-quarters, .palm--two-quarters + .palm--two-quarters, .palm--three-sixths + .palm--two-quarters, .palm--four-eighths + .palm--two-quarters, .palm--five-tenths + .palm--two-quarters, .palm--six-twelfths + .palm--two-quarters, .palm--one-half + .palm--three-sixths, .palm--two-quarters + .palm--three-sixths, .palm--three-sixths + .palm--three-sixths, .palm--four-eighths + .palm--three-sixths, .palm--five-tenths + .palm--three-sixths, .palm--six-twelfths + .palm--three-sixths, .palm--one-half + .palm--four-eighths, .palm--two-quarters + .palm--four-eighths, .palm--three-sixths + .palm--four-eighths, .palm--four-eighths + .palm--four-eighths, .palm--five-tenths + .palm--four-eighths, .palm--six-twelfths + .palm--four-eighths, .palm--one-half + .palm--five-tenths, .palm--two-quarters + .palm--five-tenths, .palm--three-sixths + .palm--five-tenths, .palm--four-eighths + .palm--five-tenths, .palm--five-tenths + .palm--five-tenths, .palm--six-twelfths + .palm--five-tenths, .palm--one-half + .palm--six-twelfths, .palm--two-quarters + .palm--six-twelfths, .palm--three-sixths + .palm--six-twelfths, .palm--four-eighths + .palm--six-twelfths, .palm--five-tenths + .palm--six-twelfths, .palm--six-twelfths + .palm--six-twelfths {
+    float: right; }
+
+  .palm--one-third + .palm--one-third, .palm--two-sixths + .palm--one-third, .palm--four-twelfths + .palm--one-third, .palm--one-third + .palm--two-sixths, .palm--two-sixths + .palm--two-sixths, .palm--four-twelfths + .palm--two-sixths, .palm--one-third + .palm--four-twelfths, .palm--two-sixths + .palm--four-twelfths, .palm--four-twelfths + .palm--four-twelfths,
+  .palm--one-third + .palm--two-thirds,
+  .palm--two-sixths + .palm--two-thirds,
+  .palm--four-twelfths + .palm--two-thirds,
+  .palm--one-third + .palm--four-sixths,
+  .palm--two-sixths + .palm--four-sixths,
+  .palm--four-twelfths + .palm--four-sixths,
+  .palm--one-third + .palm--eight-twelfths,
+  .palm--two-sixths + .palm--eight-twelfths,
+  .palm--four-twelfths + .palm--eight-twelfths {
+    margin-left: 2%; }
+
+  .palm--one-third:nth-child(4n+4), .palm--two-sixths:nth-child(4n+4), .palm--four-twelfths:nth-child(4n+4) {
+    margin-left: 0; }
+
+  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths {
+    width: 64%; }
+
+  .palm--layout-minor {
+    width: 26%;
+    float: left; }
+
+  .palm--layout-major {
+    float: right;
+    width: 70%; }
+
+  .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths {
+    width: 23%;
+    margin-right: 2%; }
+
+  .palm--one-quarter:nth-child(4n+4), .palm--two-eighths:nth-child(4n+4), .palm--three-twelfths:nth-child(4n+4) {
+    margin-right: 0; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .lap--one-half + .lap--one-half, .lap--two-quarters + .lap--one-half, .lap--three-sixths + .lap--one-half, .lap--four-eighths + .lap--one-half, .lap--five-tenths + .lap--one-half, .lap--six-twelfths + .lap--one-half, .lap--one-half + .lap--two-quarters, .lap--two-quarters + .lap--two-quarters, .lap--three-sixths + .lap--two-quarters, .lap--four-eighths + .lap--two-quarters, .lap--five-tenths + .lap--two-quarters, .lap--six-twelfths + .lap--two-quarters, .lap--one-half + .lap--three-sixths, .lap--two-quarters + .lap--three-sixths, .lap--three-sixths + .lap--three-sixths, .lap--four-eighths + .lap--three-sixths, .lap--five-tenths + .lap--three-sixths, .lap--six-twelfths + .lap--three-sixths, .lap--one-half + .lap--four-eighths, .lap--two-quarters + .lap--four-eighths, .lap--three-sixths + .lap--four-eighths, .lap--four-eighths + .lap--four-eighths, .lap--five-tenths + .lap--four-eighths, .lap--six-twelfths + .lap--four-eighths, .lap--one-half + .lap--five-tenths, .lap--two-quarters + .lap--five-tenths, .lap--three-sixths + .lap--five-tenths, .lap--four-eighths + .lap--five-tenths, .lap--five-tenths + .lap--five-tenths, .lap--six-twelfths + .lap--five-tenths, .lap--one-half + .lap--six-twelfths, .lap--two-quarters + .lap--six-twelfths, .lap--three-sixths + .lap--six-twelfths, .lap--four-eighths + .lap--six-twelfths, .lap--five-tenths + .lap--six-twelfths, .lap--six-twelfths + .lap--six-twelfths {
+    float: right; }
+
+  .lap--one-third + .lap--one-third, .lap--two-sixths + .lap--one-third, .lap--four-twelfths + .lap--one-third, .lap--one-third + .lap--two-sixths, .lap--two-sixths + .lap--two-sixths, .lap--four-twelfths + .lap--two-sixths, .lap--one-third + .lap--four-twelfths, .lap--two-sixths + .lap--four-twelfths, .lap--four-twelfths + .lap--four-twelfths,
+  .lap--one-third + .lap--two-thirds,
+  .lap--two-sixths + .lap--two-thirds,
+  .lap--four-twelfths + .lap--two-thirds,
+  .lap--one-third + .lap--four-sixths,
+  .lap--two-sixths + .lap--four-sixths,
+  .lap--four-twelfths + .lap--four-sixths,
+  .lap--one-third + .lap--eight-twelfths,
+  .lap--two-sixths + .lap--eight-twelfths,
+  .lap--four-twelfths + .lap--eight-twelfths {
+    margin-left: 2%; }
+
+  .lap--one-third:nth-child(4n+4), .lap--two-sixths:nth-child(4n+4), .lap--four-twelfths:nth-child(4n+4) {
+    margin-left: 0; }
+
+  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths {
+    width: 64%; }
+
+  .lap--layout-minor {
+    width: 26%;
+    float: left; }
+
+  .lap--layout-major {
+    float: right;
+    width: 70%; }
+
+  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths {
+    width: 23%;
+    margin-right: 2%; }
+
+  .lap--one-quarter:nth-child(4n+4), .lap--two-eighths:nth-child(4n+4), .lap--three-twelfths:nth-child(4n+4) {
+    margin-right: 0; } }
+@media only screen and (max-width: 980px) {
+  .portable--one-half + .portable--one-half, .portable--two-quarters + .portable--one-half, .portable--three-sixths + .portable--one-half, .portable--four-eighths + .portable--one-half, .portable--five-tenths + .portable--one-half, .portable--six-twelfths + .portable--one-half, .portable--one-half + .portable--two-quarters, .portable--two-quarters + .portable--two-quarters, .portable--three-sixths + .portable--two-quarters, .portable--four-eighths + .portable--two-quarters, .portable--five-tenths + .portable--two-quarters, .portable--six-twelfths + .portable--two-quarters, .portable--one-half + .portable--three-sixths, .portable--two-quarters + .portable--three-sixths, .portable--three-sixths + .portable--three-sixths, .portable--four-eighths + .portable--three-sixths, .portable--five-tenths + .portable--three-sixths, .portable--six-twelfths + .portable--three-sixths, .portable--one-half + .portable--four-eighths, .portable--two-quarters + .portable--four-eighths, .portable--three-sixths + .portable--four-eighths, .portable--four-eighths + .portable--four-eighths, .portable--five-tenths + .portable--four-eighths, .portable--six-twelfths + .portable--four-eighths, .portable--one-half + .portable--five-tenths, .portable--two-quarters + .portable--five-tenths, .portable--three-sixths + .portable--five-tenths, .portable--four-eighths + .portable--five-tenths, .portable--five-tenths + .portable--five-tenths, .portable--six-twelfths + .portable--five-tenths, .portable--one-half + .portable--six-twelfths, .portable--two-quarters + .portable--six-twelfths, .portable--three-sixths + .portable--six-twelfths, .portable--four-eighths + .portable--six-twelfths, .portable--five-tenths + .portable--six-twelfths, .portable--six-twelfths + .portable--six-twelfths {
+    float: right; }
+
+  .portable--one-third + .portable--one-third, .portable--two-sixths + .portable--one-third, .portable--four-twelfths + .portable--one-third, .portable--one-third + .portable--two-sixths, .portable--two-sixths + .portable--two-sixths, .portable--four-twelfths + .portable--two-sixths, .portable--one-third + .portable--four-twelfths, .portable--two-sixths + .portable--four-twelfths, .portable--four-twelfths + .portable--four-twelfths,
+  .portable--one-third + .portable--two-thirds,
+  .portable--two-sixths + .portable--two-thirds,
+  .portable--four-twelfths + .portable--two-thirds,
+  .portable--one-third + .portable--four-sixths,
+  .portable--two-sixths + .portable--four-sixths,
+  .portable--four-twelfths + .portable--four-sixths,
+  .portable--one-third + .portable--eight-twelfths,
+  .portable--two-sixths + .portable--eight-twelfths,
+  .portable--four-twelfths + .portable--eight-twelfths {
+    margin-left: 2%; }
+
+  .portable--one-third:nth-child(4n+4), .portable--two-sixths:nth-child(4n+4), .portable--four-twelfths:nth-child(4n+4) {
+    margin-left: 0; }
+
+  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths {
+    width: 64%; }
+
+  .portable--layout-minor {
+    width: 26%;
+    float: left; }
+
+  .portable--layout-major {
+    float: right;
+    width: 70%; }
+
+  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths {
+    width: 23%;
+    margin-right: 2%; }
+
+  .portable--one-quarter:nth-child(4n+4), .portable--two-eighths:nth-child(4n+4), .portable--three-twelfths:nth-child(4n+4) {
+    margin-right: 0; } }
+@media only screen and (min-width: 981px) {
+  .desk--one-half + .desk--one-half, .desk--two-quarters + .desk--one-half, .desk--three-sixths + .desk--one-half, .desk--four-eighths + .desk--one-half, .desk--five-tenths + .desk--one-half, .desk--six-twelfths + .desk--one-half, .desk--one-half + .desk--two-quarters, .desk--two-quarters + .desk--two-quarters, .desk--three-sixths + .desk--two-quarters, .desk--four-eighths + .desk--two-quarters, .desk--five-tenths + .desk--two-quarters, .desk--six-twelfths + .desk--two-quarters, .desk--one-half + .desk--three-sixths, .desk--two-quarters + .desk--three-sixths, .desk--three-sixths + .desk--three-sixths, .desk--four-eighths + .desk--three-sixths, .desk--five-tenths + .desk--three-sixths, .desk--six-twelfths + .desk--three-sixths, .desk--one-half + .desk--four-eighths, .desk--two-quarters + .desk--four-eighths, .desk--three-sixths + .desk--four-eighths, .desk--four-eighths + .desk--four-eighths, .desk--five-tenths + .desk--four-eighths, .desk--six-twelfths + .desk--four-eighths, .desk--one-half + .desk--five-tenths, .desk--two-quarters + .desk--five-tenths, .desk--three-sixths + .desk--five-tenths, .desk--four-eighths + .desk--five-tenths, .desk--five-tenths + .desk--five-tenths, .desk--six-twelfths + .desk--five-tenths, .desk--one-half + .desk--six-twelfths, .desk--two-quarters + .desk--six-twelfths, .desk--three-sixths + .desk--six-twelfths, .desk--four-eighths + .desk--six-twelfths, .desk--five-tenths + .desk--six-twelfths, .desk--six-twelfths + .desk--six-twelfths {
+    float: right; }
+
+  .desk--one-third + .desk--one-third, .desk--two-sixths + .desk--one-third, .desk--four-twelfths + .desk--one-third, .desk--one-third + .desk--two-sixths, .desk--two-sixths + .desk--two-sixths, .desk--four-twelfths + .desk--two-sixths, .desk--one-third + .desk--four-twelfths, .desk--two-sixths + .desk--four-twelfths, .desk--four-twelfths + .desk--four-twelfths,
+  .desk--one-third + .desk--two-thirds,
+  .desk--two-sixths + .desk--two-thirds,
+  .desk--four-twelfths + .desk--two-thirds,
+  .desk--one-third + .desk--four-sixths,
+  .desk--two-sixths + .desk--four-sixths,
+  .desk--four-twelfths + .desk--four-sixths,
+  .desk--one-third + .desk--eight-twelfths,
+  .desk--two-sixths + .desk--eight-twelfths,
+  .desk--four-twelfths + .desk--eight-twelfths {
+    margin-left: 2%; }
+
+  .desk--one-third:nth-child(4n+4), .desk--two-sixths:nth-child(4n+4), .desk--four-twelfths:nth-child(4n+4) {
+    margin-left: 0; }
+
+  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
+    width: 64%; }
+
+  .desk--layout-minor {
+    width: 26%;
+    float: left; }
+
+  .desk--layout-major {
+    float: right;
+    width: 70%; }
+
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths {
+    width: 23%;
+    margin-right: 2%; }
+
+  .desk--one-quarter:nth-child(4n+4), .desk--two-eighths:nth-child(4n+4), .desk--three-twelfths:nth-child(4n+4) {
+    margin-right: 0; } }
 .preload {
   display: none !important; }
 
@@ -4164,6 +4353,9 @@ iframe {
       transform: translateX(10px); } }
 
 .slider {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
   height: 364px;
   position: relative; }
 
@@ -4373,21 +4565,40 @@ iframe {
   -o-transition-delay: 62ms, 62ms, 0;
   transition-delay: 62ms, 62ms, 0; }
   .article-details h3 {
-    margin-bottom: 0;
-    font-size: 22px;
-    font-size: 1.15789rem; }
-  .article-details a {
-    color: #ffffff;
     display: block;
-    padding: 0 1.4em;
-    line-height: 2.5em;
-    text-overflow: ellipsis;
+    margin: 0;
+    color: white;
+    line-height: 1.25em;
+    min-height: 2.5em;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 8px 14px 6px;
+    /* 9 */
+    padding: 0.42105rem 0.73684rem 0.31579rem;
+    /* 9 */
+    font-size: 22px;
+    font-size: 1.15789rem;
     -webkit-transition: color 0.15s linear;
     -moz-transition: color 0.15s linear;
     -ms-transition: color 0.15s linear;
     -o-transition: color 0.15s linear;
     transition: color 0.15s linear; }
-    .article-details a:hover {
+    @media screen and (min-width: 61.25em) {
+      .article-details h3 {
+        max-width: 340px; } }
+    .article-details h3:hover {
       color: #cccccc; }
 
 .sub-details {
