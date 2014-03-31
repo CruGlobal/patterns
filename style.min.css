@@ -4017,47 +4017,51 @@ iframe {
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
-.global-footer .nav {
-  background: #f7f7f7;
-  border-top: 5px solid;
-  border-color: #f9b625;
-  color: white;
-  width: 100%;
-  padding: 0;
-  padding: 30px 0 20px;
-  padding: 1.875rem 0 1.25rem;
-  text-align: center; }
-  .global-footer .nav ul {
-    text-align: center; }
-  .global-footer .nav a {
-    color: #444444;
-    padding-left: 6px;
-    padding-right: 6px; }
-.global-footer .copy {
-  background-color: #666062;
-  text-align: center;
-  padding: 30px 0 20px;
+.global-footer {
   /* 3 */
   /* 3 */
   /* 4 */
   /* 6 */
   /* 6 */
   /* 7 */
-  padding-top: 33px;
+  margin-top: 100px;
   /* 9 */
-  padding-top: 1.73684rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-bottom: 33px;
-  /* 9 */
-  padding-bottom: 1.73684rem;
-  /* 9 */
-  color: white; }
+  margin-top: 5.26316rem;
+  /* 9 */ }
+  .global-footer .section-divider {
+    border-color: #f9b625; }
+  .global-footer > nav {
+    color: white;
+    width: 100%;
+    text-align: center;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-bottom: 33px;
+    /* 9 */
+    padding-bottom: 1.73684rem;
+    /* 9 */ }
+    .global-footer > nav ul {
+      text-align: center; }
+    .global-footer > nav a {
+      color: #444444;
+      padding-left: 6px;
+      padding-right: 6px; }
+  .global-footer .copy {
+    text-align: center;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding-bottom: 33px;
+    /* 9 */
+    padding-bottom: 1.73684rem;
+    /* 9 */ }
 
 .base-layout, .layout-single-column, .layout--wide, .layout--cap {
   width: auto;
