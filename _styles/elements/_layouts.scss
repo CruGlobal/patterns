@@ -45,6 +45,15 @@
 	margin-left: 2%;
 }
 
+.one-quarter{
+	width: 23%;
+	margin-right: 2%;
+}
+
+.one-quarter:nth-of-type(4n+4) {
+	margin-right: 0;
+}
+
 .two-thirds{
 	width: 64%;
 }
