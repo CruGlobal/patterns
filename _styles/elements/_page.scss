@@ -67,12 +67,22 @@ body{
 }
 	
 .action-icons{
-	height: 150px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
 }	
 .mask--circle{
 	display: inline-block;
 	border-radius: 50%;
 	overflow: hidden;
+}
+
+.affordance:after {
+    color: $color-gold;
+    font-family: "cruicons";
+    content: '\e800';
+    padding-left: 10px;
 }
 	
