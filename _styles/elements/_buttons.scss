@@ -11,6 +11,10 @@
 
 .button-group{
 	display: block;
+	
+	.button{
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -41,3 +45,8 @@ input.button--unstyled{
 		}
 	}
 }
+
+.button--full{
+	width: 100%;
+}
+

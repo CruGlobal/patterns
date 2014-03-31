@@ -32,34 +32,71 @@
 }
 
 .layout--cap{
-	@extend %base-layout;	
+	@extend %base-layout;
+
 	max-width: 1100px;
-}
-
-
-.one-half + .one-half{
-	float: right;
-}
-
-.one-third + .one-third, .one-third + .two-thirds {
-	margin-left: 2%;
-}
-
-.one-quarter{
-	width: 23%;
-	margin-right: 2%;
-}
-
-.one-quarter:nth-of-type(4n+4) {
-	margin-right: 0;
-}
-
-.two-thirds{
-	width: 64%;
 }
 
 .layout-single-column--wide{
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+
+@mixin device-type($namespace:""){
+	#{$class-type}#{$namespace}one-half + #{$class-type}#{$namespace}one-half{
+		float: right;
+	}
+	
+	#{$class-type}#{$namespace}one-third + #{$class-type}#{$namespace}one-third,
+	#{$class-type}#{$namespace}one-third + #{$class-type}#{$namespace}two-thirds {
+		margin-left: 2%;
+	}
+	
+	#{$class-type}#{$namespace}one-third:nth-child(4n+4){
+		margin-left: 0;
+	}
+
+	#{$class-type}#{$namespace}two-thirds{
+		width: 64%;
+	}
+
+	#{$class-type}#{$namespace}layout-minor{
+		width: 26%;
+		float: left;
+	}
+
+	#{$class-type}#{$namespace}layout-major{
+		float: right;
+		width: 70%;
+	}
+	
+	#{$class-type}#{$namespace}one-quarter{
+		width: 23%;
+		margin-right: 2%;
+	}
+	#{$class-type}#{$namespace}one-quarter:nth-child(4n+4){
+		margin-right: 0;		
+	}
+}
+
+/**
+ * Our regular, non-responsive width classes.
+ */
+@include device-type();
+
+
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@if $responsive == true{
+
+    @each $name in $breakpoint-has-widths {
+        @include grid-media-query($name) {
+           @include device-type('#{$name}--');
+        }
+    }
+
+
 }

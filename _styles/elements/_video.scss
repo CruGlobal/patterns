@@ -1,3 +1,5 @@
-iframe{
-	min-height: 100%;
+.video{
+	& > iframe{
+		min-height: 100%;
+	}
 }

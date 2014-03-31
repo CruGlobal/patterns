@@ -67,12 +67,42 @@ body{
 }
 	
 .action-icons{
-	height: 150px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
+    max-width: 150px;
+    display: inline-block;
+    vertical-align: middle;
 }	
 .mask--circle{
 	display: inline-block;
 	border-radius: 50%;
 	overflow: hidden;
 }
+
+.affordance:after {
+	@extend .icon-right-circle:before;
 	
+    color: $color-gold;
+    font-family: "cruicons";
+    padding-left: 10px;
+}
+	
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span{
+	width: 85px !important;
+}
+
+.fb-like.fb_iframe_widget > span, #twitter-widget-0, #___plusone_0{
+	vertical-align: middle !important;
+	height: 25px !important;
+}
