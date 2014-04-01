@@ -194,9 +194,6 @@ $slider-height: 364px;
     @include font-size(22px, false);
 	
     @include vendor(transition, color .15s linear);
-	@include mq(980px) {
-		max-width: 340px;
-	}
 	
     &:hover{
       color: #cccccc;

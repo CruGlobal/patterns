@@ -153,3 +153,22 @@ code{
 		line-height: 80px;
 	}
 }
+
+.demo-article-nav{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	
+	margin: 0;
+	background-color: $color-gray;
+	padding: 12px;
+	
+	a{
+		color: $color-white;
+	}
+}
+
+.site--select{
+	
+}
