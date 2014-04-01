@@ -69,7 +69,7 @@
 		.nav{
 			position: absolute;
 			width: 100%;
-			@include rem(padding-top, 88px);
+			@include rem(margin-top, 88px);
 		}
 		
 		li{
