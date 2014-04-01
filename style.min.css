@@ -3363,8 +3363,8 @@ body {
   .site-nav--off-canvas .nav {
     position: absolute;
     width: 100%;
-    padding-top: 88px;
-    padding-top: 4.63158rem; }
+    margin-top: 88px;
+    margin-top: 4.63158rem; }
   .site-nav--off-canvas li {
     width: 100%;
     text-align: left;
@@ -4595,9 +4595,6 @@ textarea.text-input {
     -ms-transition: color 0.15s linear;
     -o-transition: color 0.15s linear;
     transition: color 0.15s linear; }
-    @media screen and (min-width: 61.25em) {
-      .article-details h3 {
-        max-width: 340px; } }
     .article-details h3:hover {
       color: #cccccc; }
 
@@ -4943,3 +4940,14 @@ code {
 .grid-demo .pattern__view span {
   display: inline-block;
   line-height: 80px; }
+
+.demo-article-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  background-color: #666062;
+  padding: 12px; }
+  .demo-article-nav a {
+    color: white; }
