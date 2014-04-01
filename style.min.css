@@ -4941,13 +4941,33 @@ code {
   display: inline-block;
   line-height: 80px; }
 
-.demo-article-nav {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.demo-article-nav, .site--select {
+  position: fixed;
+  bottom: -2px;
+  left: -2px;
   z-index: 10;
+  display: inline-block;
+  border: none;
   margin: 0;
-  background-color: #666062;
-  padding: 12px; }
-  .demo-article-nav a {
-    color: white; }
+  padding: 0.4em 0.5em 0.3em 0.5em;
+  min-height: 35px;
+  background-image: none;
+  background-color: #eee;
+  opacity: 0.8;
+  border-radius: 0;
+  font-size: 0.85em;
+  transition: 0.2s; }
+  .demo-article-nav a, .site--select a {
+    color: black; }
+
+.site--select {
+  left: auto;
+  right: -2px;
+  width: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+  .site--select option {
+    font-size: 85%; }
