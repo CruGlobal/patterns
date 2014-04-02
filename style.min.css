@@ -409,6 +409,10 @@ th .table__content, td .table__content, .table__item .table__content, th .table_
 fieldset { border: 0; padding: 33px; padding: 1.73684rem; }
 fieldset + fieldset { margin-bottom: 0; }
 
+.form__inputs:first-of-type { margin-bottom: 0; }
+
+.form__actions { margin-bottom: 0; }
+
 legend { display: block; width: 100%; padding: 0; font-size: 23.75px; font-size: 1.25rem; line-height: 1.38947; }
 
 /** Text Inputs and Form Control  Instead of a `[type]` selector for each kind of form input, we just use a class to target any/every one, e.g.: a <input type=text class=text-input> <input type=email class=text-input> <input type=password class=text-input>  For non-text based inputs such as <select>, <radio>, etc use .form-control which allows you to add nice hover/focus effect to the text inputs if you  choose  */
@@ -806,7 +810,7 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 
 .mr0 { margin-right: 0 !important; }
 
-.mb0, .form__inputs:first-of-type, .form__actions { margin-bottom: 0 !important; }
+.mb0 { margin-bottom: 0 !important; }
 
 .ml0 { margin-left: 0 !important; }
 
@@ -834,9 +838,11 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 /** Font weights */
 .weight--light, h1, .h1 { font-weight: 100 !important; }
 
-.weight--normal { font-weight: 300 !important; }
+.weight--semi-light, h2, .h2, h3, .h3 { font-weight: 300 !important; }
 
-.weight--semibold { font-weight: 600 !important; }
+.weight--normal, h4, .h4, h5, .h5 { font-weight: 400 !important; }
+
+.weight--semibold, h6, .h6 { font-weight: 600 !important; }
 
 /** Pull items full width of `.island` parents. */
 .full-bleed { margin-right: -33px !important; margin-left: -33px !important; }
