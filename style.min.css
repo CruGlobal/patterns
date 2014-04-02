@@ -67,7 +67,6 @@
 /** Base font family */
 /** Default colours for objects’ borders etc. */
 /** Default value for edges and such */
-/** Would you like indented (rather than spaced) paragraph delimiting? */
 /*------------------------------------*\ $TYPOGRAPHY
 \*------------------------------------*/
 /** Basic font sizes */
@@ -95,6 +94,7 @@
 /** I have included variables for only one buttons, the default, since my wish is to not impose style. Feel free to add more variables. I have included  a mixin to help you generate these easily */
 /*------------------------------------*\ $COMPONENTS
 \*------------------------------------*/
+/** These variables are framework variables, sourced from variables defined above. Feel free to use these variables throughout your project, but do not modify or reassign them. */
 /*------------------------------------*\ $TOOLS
 \*------------------------------------*/
 /** We will begin by importing functions that will be used in the framework. There is no need to change any of these functions */
@@ -283,22 +283,19 @@ small { font-size: 80%; line-height: inherit; }
 /*------------------------------------*\ $SHARED
 \*------------------------------------*/
 /** A lot of elements need to share some declarations (mainly for vertical rhythm), so we `@extend` some silent classes. */
-h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, dl, address, table, fieldset, figure, pre, hr, .form-fields > li, .media, .island, .islet, .landmark, dd, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, dl, address, table, fieldset, figure, pre, hr, .form-fields > li, .media, .island, .islet { margin: 0; padding: 0; }
 
-h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, dl, address, table, fieldset, figure, pre, hr, .form-fields > li, .media, .island, .islet, .landmark, dd, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 33px; margin-bottom: 1.73684rem; }
+h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, dl, address, table, fieldset, figure, pre, hr, .form-fields > li, .media, .island, .islet { margin-bottom: 33px; margin-bottom: 33pxrem; }
 
 /** Where `margin-bottom` is concerned, this value will be the same as the base line-height. This allows us to keep a consistent vertical rhythm. As per: csswizardry.com/2012/06/single-direction-margin-declarations  We will be using the above silent classes to quickly remove default  margin and padding and quickly apply margin-bottom to the element with default rem units and px fallbacks.   By default $base-line-height is set to 24px, therefore so is the $magic-number. Therefore, $half-spacing-unit is 12px and $double-spacing-unit is 48px   */
 /** Base elements */
-.islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet p, .islet ul, .islet ol, .islet dl, .islet address, .islet table, .islet fieldset, .islet figure, .islet pre, .islet hr, .islet .form-fields > li, .islet .media, .islet .island, .islet .islet { margin-bottom: 16.5px; margin-bottom: 0.86842rem; }
-
-/** Doubled up `margin-bottom` helper class. */
-.landmark { margin-bottom: 66px; margin-bottom: 3.47368rem; }
+h1, h2, h3, h4, h5, h6, hgroup, p, ul, ol, dl, address, table, fieldset, figure, pre, hr, .form-fields > li, .media, .island, .islet { margin-bottom: 33px; margin-bottom: 33pxrem; }
 
 /** `hr` elements only take up a few pixels, so we need to give them special treatment regarding vertical rhythm. */
 hr { margin-top: 33px; margin-top: 1.73684rem; }
 
 /** Where `margin-left` is concerned we want to try and indent certain elements by a consistent amount. Define that amount once, here. */
-ul, ol, dd { margin-left: 66px; margin-left: 3.47368rem; }
+ul, ol, dd { margin-left: 66px; margin-left: 2rem; }
 
 /** Base styles; unclassed HTML elements etc. */
 /*------------------------------------*\ $BASE
@@ -308,7 +305,7 @@ ul, ol, dd { margin-left: 66px; margin-left: 3.47368rem; }
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 
 /** 1. Set the base element’s `font-size` to the value of your choosing. Set in ems, assuming a browser default of 16px. 2. Work out the unitless `line-height` for your project based around your desired `line-height` (defined previously in pixels), asnd your project’s base font size. */
-html { font-size: 1.1875em; /* [1] */ line-height: 1.73684; /* [2] */     /**
+html { font-size: 1.1875em; /* [1] */ line-height: 1.73684; /* [2] */ background-color: #f7f7f7; color: #444444; overflow-y: scroll; min-height: 100%;     /**
 	 * If you have chosen to display a baseline grid, we turn it on here.
 	 */ }
 
@@ -316,11 +313,7 @@ body { font-family: "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans
 
 /*------------------------------------*\ $HEADINGS
 \*------------------------------------*/
-/*  Default header styles  */
-h1, h2, h3, h4, h5, h6 { font-family: "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans-serif; font-weight: 400; font-style: normal; text-rendering: optimizeLegibility; }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 80%; }
-
-/** Use the %vertical-rhythm class we created in the _shared.scss file to  set the same rhythm on the heading elements */
+/** Headings 1-6  */
 h1, .h1 { font-size: 56.46931px; font-size: 2.97207rem; line-height: 1.16878; }
 
 h2, .h2 { font-size: 43.00785px; font-size: 2.26357rem; line-height: 1.5346; }
@@ -335,7 +328,6 @@ h6, .h6 { font-size: 15.2px; font-size: 0.8rem; line-height: 2.17105; }
 
 /*------------------------------------*\ $PARAGRAPHS
 \*------------------------------------*/
-/*  Default paragraph styles  */
 .lead { font-size: 21.375px; font-size: 1.125rem; }
 
 /** Not strictly a paragraph, but probably doesn’t need its own section. */
@@ -487,19 +479,19 @@ input + .additional { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top
 .one-whole { width: 100%; }
 
 /** Halves */
-.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths { width: 49%; }
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths { width: 50%; }
 
-/** Thirds */
-.one-third, .two-sixths, .four-twelfths { width: 32%; }
+/** Thirds. */
+.one-third, .two-sixths, .three-ninths, .four-twelfths { width: 33.33333%; }
 
-.two-thirds, .four-sixths, .eight-twelfths { width: 64%; }
+.two-thirds, .four-sixths, .six-ninths, .eight-twelfths { width: 66.66667%; }
 
-/** Quarters */
+/** Quarters. */
 .one-quarter, .two-eighths, .three-twelfths { width: 25%; }
 
 .three-quarters, .six-eighths, .nine-twelfths { width: 75%; }
 
-/** Fifths */
+/** Fifths. */
 .one-fifth, .two-tenths { width: 20%; }
 
 .two-fifths, .four-tenths { width: 40%; }
@@ -508,12 +500,12 @@ input + .additional { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top
 
 .four-fifths, .eight-tenths { width: 80%; }
 
-/** Sixths */
-.one-sixth, .two-twelfths { width: 16.666%; }
+/** Sixths. */
+.one-sixth, .two-twelfths { width: 16.66667%; }
 
-.five-sixths, .ten-twelfths { width: 83.333%; }
+.five-sixths, .ten-twelfths { width: 83.33333%; }
 
-/** Eighths */
+/** Eighths. */
 .one-eighth { width: 12.5%; }
 
 .three-eighths { width: 37.5%; }
@@ -522,7 +514,20 @@ input + .additional { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top
 
 .seven-eighths { width: 87.5%; }
 
-/** Tenths */
+/** Ninths. */
+.one-ninth { width: 11.11111%; }
+
+.two-ninths { width: 22.22222%; }
+
+.four-ninths { width: 44.44444%; }
+
+.five-ninths { width: 55.55556%; }
+
+.seven-ninths { width: 77.77778%; }
+
+.eight-ninths { width: 88.88889%; }
+
+/** Tenths. */
 .one-tenth { width: 10%; }
 
 .three-tenths { width: 30%; }
@@ -531,148 +536,176 @@ input + .additional { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top
 
 .nine-tenths { width: 90%; }
 
-/** Twelfths */
-.one-twelfth { width: 8.333%; }
+/** Twelfths. */
+.one-twelfth { width: 8.33333%; }
 
-.five-twelfths { width: 41.666%; }
+.five-twelfths { width: 41.66667%; }
 
-.seven-twelfths { width: 58.333%; }
+.seven-twelfths { width: 58.33333%; }
 
-.eleven-twelfths { width: 91.666%; }
+.eleven-twelfths { width: 91.66667%; }
 
 /** Our responsive classes, if we have enabled them. */
 @media only screen and (max-width: 480px) { /** Whole */
   .palm--one-whole { width: 100%; }
   /** Halves */
-  .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths { width: 49%; }
-  /** Thirds */
-  .palm--one-third, .palm--two-sixths, .palm--four-twelfths { width: 32%; }
-  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths { width: 64%; }
-  /** Quarters */
+  .palm--one-half, .palm--two-quarters, .palm--three-sixths, .palm--four-eighths, .palm--five-tenths, .palm--six-twelfths { width: 50%; }
+  /** Thirds. */
+  .palm--one-third, .palm--two-sixths, .palm--three-ninths, .palm--four-twelfths { width: 33.33333%; }
+  .palm--two-thirds, .palm--four-sixths, .palm--six-ninths, .palm--eight-twelfths { width: 66.66667%; }
+  /** Quarters. */
   .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths { width: 25%; }
   .palm--three-quarters, .palm--six-eighths, .palm--nine-twelfths { width: 75%; }
-  /** Fifths */
+  /** Fifths. */
   .palm--one-fifth, .palm--two-tenths { width: 20%; }
   .palm--two-fifths, .palm--four-tenths { width: 40%; }
   .palm--three-fifths, .palm--six-tenths { width: 60%; }
   .palm--four-fifths, .palm--eight-tenths { width: 80%; }
-  /** Sixths */
-  .palm--one-sixth, .palm--two-twelfths { width: 16.666%; }
-  .palm--five-sixths, .palm--ten-twelfths { width: 83.333%; }
-  /** Eighths */
+  /** Sixths. */
+  .palm--one-sixth, .palm--two-twelfths { width: 16.66667%; }
+  .palm--five-sixths, .palm--ten-twelfths { width: 83.33333%; }
+  /** Eighths. */
   .palm--one-eighth { width: 12.5%; }
   .palm--three-eighths { width: 37.5%; }
   .palm--five-eighths { width: 62.5%; }
   .palm--seven-eighths { width: 87.5%; }
-  /** Tenths */
+  /** Ninths. */
+  .palm--one-ninth { width: 11.11111%; }
+  .palm--two-ninths { width: 22.22222%; }
+  .palm--four-ninths { width: 44.44444%; }
+  .palm--five-ninths { width: 55.55556%; }
+  .palm--seven-ninths { width: 77.77778%; }
+  .palm--eight-ninths { width: 88.88889%; }
+  /** Tenths. */
   .palm--one-tenth { width: 10%; }
   .palm--three-tenths { width: 30%; }
   .palm--seven-tenths { width: 70%; }
   .palm--nine-tenths { width: 90%; }
-  /** Twelfths */
-  .palm--one-twelfth { width: 8.333%; }
-  .palm--five-twelfths { width: 41.666%; }
-  .palm--seven-twelfths { width: 58.333%; }
-  .palm--eleven-twelfths { width: 91.666%; } }
+  /** Twelfths. */
+  .palm--one-twelfth { width: 8.33333%; }
+  .palm--five-twelfths { width: 41.66667%; }
+  .palm--seven-twelfths { width: 58.33333%; }
+  .palm--eleven-twelfths { width: 91.66667%; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) { /** Whole */
   .lap--one-whole { width: 100%; }
   /** Halves */
-  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths { width: 49%; }
-  /** Thirds */
-  .lap--one-third, .lap--two-sixths, .lap--four-twelfths { width: 32%; }
-  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths { width: 64%; }
-  /** Quarters */
+  .lap--one-half, .lap--two-quarters, .lap--three-sixths, .lap--four-eighths, .lap--five-tenths, .lap--six-twelfths { width: 50%; }
+  /** Thirds. */
+  .lap--one-third, .lap--two-sixths, .lap--three-ninths, .lap--four-twelfths { width: 33.33333%; }
+  .lap--two-thirds, .lap--four-sixths, .lap--six-ninths, .lap--eight-twelfths { width: 66.66667%; }
+  /** Quarters. */
   .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths { width: 25%; }
   .lap--three-quarters, .lap--six-eighths, .lap--nine-twelfths { width: 75%; }
-  /** Fifths */
+  /** Fifths. */
   .lap--one-fifth, .lap--two-tenths { width: 20%; }
   .lap--two-fifths, .lap--four-tenths { width: 40%; }
   .lap--three-fifths, .lap--six-tenths { width: 60%; }
   .lap--four-fifths, .lap--eight-tenths { width: 80%; }
-  /** Sixths */
-  .lap--one-sixth, .lap--two-twelfths { width: 16.666%; }
-  .lap--five-sixths, .lap--ten-twelfths { width: 83.333%; }
-  /** Eighths */
+  /** Sixths. */
+  .lap--one-sixth, .lap--two-twelfths { width: 16.66667%; }
+  .lap--five-sixths, .lap--ten-twelfths { width: 83.33333%; }
+  /** Eighths. */
   .lap--one-eighth { width: 12.5%; }
   .lap--three-eighths { width: 37.5%; }
   .lap--five-eighths { width: 62.5%; }
   .lap--seven-eighths { width: 87.5%; }
-  /** Tenths */
+  /** Ninths. */
+  .lap--one-ninth { width: 11.11111%; }
+  .lap--two-ninths { width: 22.22222%; }
+  .lap--four-ninths { width: 44.44444%; }
+  .lap--five-ninths { width: 55.55556%; }
+  .lap--seven-ninths { width: 77.77778%; }
+  .lap--eight-ninths { width: 88.88889%; }
+  /** Tenths. */
   .lap--one-tenth { width: 10%; }
   .lap--three-tenths { width: 30%; }
   .lap--seven-tenths { width: 70%; }
   .lap--nine-tenths { width: 90%; }
-  /** Twelfths */
-  .lap--one-twelfth { width: 8.333%; }
-  .lap--five-twelfths { width: 41.666%; }
-  .lap--seven-twelfths { width: 58.333%; }
-  .lap--eleven-twelfths { width: 91.666%; } }
+  /** Twelfths. */
+  .lap--one-twelfth { width: 8.33333%; }
+  .lap--five-twelfths { width: 41.66667%; }
+  .lap--seven-twelfths { width: 58.33333%; }
+  .lap--eleven-twelfths { width: 91.66667%; } }
 @media only screen and (max-width: 980px) { /** Whole */
   .portable--one-whole { width: 100%; }
   /** Halves */
-  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths { width: 49%; }
-  /** Thirds */
-  .portable--one-third, .portable--two-sixths, .portable--four-twelfths { width: 32%; }
-  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths { width: 64%; }
-  /** Quarters */
+  .portable--one-half, .portable--two-quarters, .portable--three-sixths, .portable--four-eighths, .portable--five-tenths, .portable--six-twelfths { width: 50%; }
+  /** Thirds. */
+  .portable--one-third, .portable--two-sixths, .portable--three-ninths, .portable--four-twelfths { width: 33.33333%; }
+  .portable--two-thirds, .portable--four-sixths, .portable--six-ninths, .portable--eight-twelfths { width: 66.66667%; }
+  /** Quarters. */
   .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths { width: 25%; }
   .portable--three-quarters, .portable--six-eighths, .portable--nine-twelfths { width: 75%; }
-  /** Fifths */
+  /** Fifths. */
   .portable--one-fifth, .portable--two-tenths { width: 20%; }
   .portable--two-fifths, .portable--four-tenths { width: 40%; }
   .portable--three-fifths, .portable--six-tenths { width: 60%; }
   .portable--four-fifths, .portable--eight-tenths { width: 80%; }
-  /** Sixths */
-  .portable--one-sixth, .portable--two-twelfths { width: 16.666%; }
-  .portable--five-sixths, .portable--ten-twelfths { width: 83.333%; }
-  /** Eighths */
+  /** Sixths. */
+  .portable--one-sixth, .portable--two-twelfths { width: 16.66667%; }
+  .portable--five-sixths, .portable--ten-twelfths { width: 83.33333%; }
+  /** Eighths. */
   .portable--one-eighth { width: 12.5%; }
   .portable--three-eighths { width: 37.5%; }
   .portable--five-eighths { width: 62.5%; }
   .portable--seven-eighths { width: 87.5%; }
-  /** Tenths */
+  /** Ninths. */
+  .portable--one-ninth { width: 11.11111%; }
+  .portable--two-ninths { width: 22.22222%; }
+  .portable--four-ninths { width: 44.44444%; }
+  .portable--five-ninths { width: 55.55556%; }
+  .portable--seven-ninths { width: 77.77778%; }
+  .portable--eight-ninths { width: 88.88889%; }
+  /** Tenths. */
   .portable--one-tenth { width: 10%; }
   .portable--three-tenths { width: 30%; }
   .portable--seven-tenths { width: 70%; }
   .portable--nine-tenths { width: 90%; }
-  /** Twelfths */
-  .portable--one-twelfth { width: 8.333%; }
-  .portable--five-twelfths { width: 41.666%; }
-  .portable--seven-twelfths { width: 58.333%; }
-  .portable--eleven-twelfths { width: 91.666%; } }
+  /** Twelfths. */
+  .portable--one-twelfth { width: 8.33333%; }
+  .portable--five-twelfths { width: 41.66667%; }
+  .portable--seven-twelfths { width: 58.33333%; }
+  .portable--eleven-twelfths { width: 91.66667%; } }
 @media only screen and (min-width: 981px) { /** Whole */
   .desk--one-whole { width: 100%; }
   /** Halves */
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths { width: 49%; }
-  /** Thirds */
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths { width: 32%; }
-  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths { width: 64%; }
-  /** Quarters */
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths { width: 50%; }
+  /** Thirds. */
+  .desk--one-third, .desk--two-sixths, .desk--three-ninths, .desk--four-twelfths { width: 33.33333%; }
+  .desk--two-thirds, .desk--four-sixths, .desk--six-ninths, .desk--eight-twelfths { width: 66.66667%; }
+  /** Quarters. */
   .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths { width: 25%; }
   .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths { width: 75%; }
-  /** Fifths */
+  /** Fifths. */
   .desk--one-fifth, .desk--two-tenths { width: 20%; }
   .desk--two-fifths, .desk--four-tenths { width: 40%; }
   .desk--three-fifths, .desk--six-tenths { width: 60%; }
   .desk--four-fifths, .desk--eight-tenths { width: 80%; }
-  /** Sixths */
-  .desk--one-sixth, .desk--two-twelfths { width: 16.666%; }
-  .desk--five-sixths, .desk--ten-twelfths { width: 83.333%; }
-  /** Eighths */
+  /** Sixths. */
+  .desk--one-sixth, .desk--two-twelfths { width: 16.66667%; }
+  .desk--five-sixths, .desk--ten-twelfths { width: 83.33333%; }
+  /** Eighths. */
   .desk--one-eighth { width: 12.5%; }
   .desk--three-eighths { width: 37.5%; }
   .desk--five-eighths { width: 62.5%; }
   .desk--seven-eighths { width: 87.5%; }
-  /** Tenths */
+  /** Ninths. */
+  .desk--one-ninth { width: 11.11111%; }
+  .desk--two-ninths { width: 22.22222%; }
+  .desk--four-ninths { width: 44.44444%; }
+  .desk--five-ninths { width: 55.55556%; }
+  .desk--seven-ninths { width: 77.77778%; }
+  .desk--eight-ninths { width: 88.88889%; }
+  /** Tenths. */
   .desk--one-tenth { width: 10%; }
   .desk--three-tenths { width: 30%; }
   .desk--seven-tenths { width: 70%; }
   .desk--nine-tenths { width: 90%; }
-  /** Twelfths */
-  .desk--one-twelfth { width: 8.333%; }
-  .desk--five-twelfths { width: 41.666%; }
-  .desk--seven-twelfths { width: 58.333%; }
-  .desk--eleven-twelfths { width: 91.666%; } }
+  /** Twelfths. */
+  .desk--one-twelfth { width: 8.33333%; }
+  .desk--five-twelfths { width: 41.66667%; }
+  .desk--seven-twelfths { width: 58.33333%; }
+  .desk--eleven-twelfths { width: 91.66667%; } }
 /*------------------------------------*\ $PUSH
 \*------------------------------------*/
 /** Push classes, to move grid items over to the right by certain amounts. */
@@ -748,106 +781,42 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 .nav--keywords > li:last-child:after { display: none; }
 
 /** Style trumps; helper and brand classes */
+/*------------------------------------*\ #SPACING
+\*------------------------------------*/
+/** Margin and padding helper classes.   `.(m|p)(t|r|b|L|e|s)(-|+|0) {}` = margin/padding top/right/bottom/left/ends/sides less/more/none */
+/** Add margins. */
+.m { margin: 33px !important; }
+
+.mt { margin-top: 33px !important; }
+
+.mr { margin-right: 33px !important; }
+
+.mb { margin-bottom: 33px !important; }
+
+.ml { margin-left: 33px !important; }
+
+.me { margin-top: 33px !important; margin-bottom: 33px !important; }
+
+.ms { margin-right: 33px !important; margin-left: 33px !important; }
+
+/** Remove margins. */
+.m0 { margin: 0 !important; }
+
+.mt0 { margin-top: 0 !important; }
+
+.mr0 { margin-right: 0 !important; }
+
+.mb0, .form__inputs:first-of-type, .form__actions { margin-bottom: 0 !important; }
+
+.ml0 { margin-left: 0 !important; }
+
+.me0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+.ms0 { margin-right: 0 !important; margin-left: 0 !important; }
+
 /*------------------------------------*\ $HELPER
 \*------------------------------------*/
 /** A series of helper classes to use arbitrarily. Only use a helper class if an element/component doesn’t already have a class to which you could apply this styling, e.g. if you need to float `.main-nav` left then add `float:left;` to that ruleset as opposed to adding the `.float--left` class to the markup.  A lot of these classes carry `!important` as you will always want them to win out over other selectors. */
-/** Calculate all padding margin helper mixins */
-.mt1, .mtb1 { margin-top: 8.25px; margin-top: 0.51563rem; }
-
-.mb1, .mtb1 { margin-bottom: 8.25px; margin-bottom: 0.51563rem; }
-
-.pt1, .ptb1 { padding-top: 8.25px; padding-top: 0.51563rem; }
-
-.pb1, .ptb1 { padding-bottom: 8.25px; padding-bottom: 0.51563rem; }
-
-.mt2, .mtb2 { margin-top: 16.5px; margin-top: 1.03125rem; }
-
-.mb2, .mtb2 { margin-bottom: 16.5px; margin-bottom: 1.03125rem; }
-
-.pt2, .ptb2 { padding-top: 16.5px; padding-top: 1.03125rem; }
-
-.pb2, .ptb2 { padding-bottom: 16.5px; padding-bottom: 1.03125rem; }
-
-.mt3, .mtb3 { margin-top: 24.75px; margin-top: 1.54688rem; }
-
-.mb3, .mtb3 { margin-bottom: 24.75px; margin-bottom: 1.54688rem; }
-
-.pt3, .ptb3 { padding-top: 24.75px; padding-top: 1.54688rem; }
-
-.pb3, .ptb3 { padding-bottom: 24.75px; padding-bottom: 1.54688rem; }
-
-.mt4, .mtb4 { margin-top: 33px; margin-top: 2.0625rem; }
-
-.mb4, .mtb4 { margin-bottom: 33px; margin-bottom: 2.0625rem; }
-
-.pt4, .ptb4 { padding-top: 33px; padding-top: 2.0625rem; }
-
-.pb4, .ptb4 { padding-bottom: 33px; padding-bottom: 2.0625rem; }
-
-.mt5, .mtb5 { margin-top: 41.25px; margin-top: 2.57813rem; }
-
-.mb5, .mtb5 { margin-bottom: 41.25px; margin-bottom: 2.57813rem; }
-
-.pt5, .ptb5 { padding-top: 41.25px; padding-top: 2.57813rem; }
-
-.pb5, .ptb5 { padding-bottom: 41.25px; padding-bottom: 2.57813rem; }
-
-.mt6, .mtb6 { margin-top: 49.5px; margin-top: 3.09375rem; }
-
-.mb6, .mtb6 { margin-bottom: 49.5px; margin-bottom: 3.09375rem; }
-
-.pt6, .ptb6 { padding-top: 49.5px; padding-top: 3.09375rem; }
-
-.pb6, .ptb6 { padding-bottom: 49.5px; padding-bottom: 3.09375rem; }
-
-.mt7, .mtb7 { margin-top: 57.75px; margin-top: 3.60938rem; }
-
-.mb7, .mtb7 { margin-bottom: 57.75px; margin-bottom: 3.60938rem; }
-
-.pt7, .ptb7 { padding-top: 57.75px; padding-top: 3.60938rem; }
-
-.pb7, .ptb7 { padding-bottom: 57.75px; padding-bottom: 3.60938rem; }
-
-.mt8, .mtb8 { margin-top: 66px; margin-top: 4.125rem; }
-
-.mb8, .mtb8 { margin-bottom: 66px; margin-bottom: 4.125rem; }
-
-.pt8, .ptb8 { padding-top: 66px; padding-top: 4.125rem; }
-
-.pb8, .ptb8 { padding-bottom: 66px; padding-bottom: 4.125rem; }
-
-.mt9, .mtb9 { margin-top: 74.25px; margin-top: 4.64063rem; }
-
-.mb9, .mtb9 { margin-bottom: 74.25px; margin-bottom: 4.64063rem; }
-
-.pt9, .ptb9 { padding-top: 74.25px; padding-top: 4.64063rem; }
-
-.pb9, .ptb9 { padding-bottom: 74.25px; padding-bottom: 4.64063rem; }
-
-.mt10, .mtb10 { margin-top: 82.5px; margin-top: 5.15625rem; }
-
-.mb10, .mtb10 { margin-bottom: 82.5px; margin-bottom: 5.15625rem; }
-
-.pt10, .ptb10 { padding-top: 82.5px; padding-top: 5.15625rem; }
-
-.pb10, .ptb10 { padding-bottom: 82.5px; padding-bottom: 5.15625rem; }
-
-.mt11, .mtb11 { margin-top: 90.75px; margin-top: 5.67188rem; }
-
-.mb11, .mtb11 { margin-bottom: 90.75px; margin-bottom: 5.67188rem; }
-
-.pt11, .ptb11 { padding-top: 90.75px; padding-top: 5.67188rem; }
-
-.pb11, .ptb11 { padding-bottom: 90.75px; padding-bottom: 5.67188rem; }
-
-.mt12, .mtb12 { margin-top: 99px; margin-top: 6.1875rem; }
-
-.mb12, .mtb12 { margin-bottom: 99px; margin-bottom: 6.1875rem; }
-
-.pt12, .ptb12 { padding-top: 99px; padding-top: 6.1875rem; }
-
-.pb12, .ptb12 { padding-bottom: 99px; padding-bottom: 6.1875rem; }
-
 /** Add/remove floats */
 .float--right { float: right !important; }
 
@@ -863,111 +832,11 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 .text--right { text-align: right !important; }
 
 /** Font weights */
-.weight--light { font-weight: 100 !important; }
+.weight--light, h1, .h1 { font-weight: 100 !important; }
 
 .weight--normal { font-weight: 300 !important; }
 
 .weight--semibold { font-weight: 600 !important; }
-
-/** Add/remove margins */
-.push { margin: 33px !important; }
-
-.push--top { margin-top: 33px !important; }
-
-.push--right { margin-right: 33px !important; }
-
-.push--bottom { margin-bottom: 33px !important; }
-
-.push--left { margin-left: 33px !important; }
-
-.push--ends { margin-top: 33px !important; margin-bottom: 33px !important; }
-
-.push--sides { margin-right: 33px !important; margin-left: 33px !important; }
-
-.push-half { margin: 16.5px !important; }
-
-.push-half--top { margin-top: 16.5px !important; }
-
-.push-half--right { margin-right: 16.5px !important; }
-
-.push-half--bottom { margin-bottom: 16.5px !important; }
-
-.push-half--left { margin-left: 16.5px !important; }
-
-.push-half--ends { margin-top: 16.5px !important; margin-bottom: 16.5px !important; }
-
-.push-half--sides { margin-right: 16.5px !important; margin-left: 16.5px !important; }
-
-.push-fourth { margin: 8.25px !important; }
-
-.push-fourth--top { margin-top: 8.25px !important; }
-
-.push-fourth--right { margin-right: 8.25px !important; }
-
-.push-fourth--bottom { margin-bottom: 8.25px !important; }
-
-.push-fourth--left { margin-left: 8.25px !important; }
-
-.push-fourth--ends { margin-top: 8.25px !important; margin-bottom: 8.25px !important; }
-
-.push-fourth--sides { margin-right: 8.25px !important; margin-left: 8.25px !important; }
-
-.flush, .site-nav--off-canvas li { margin: 0 !important; }
-
-.flush--top { margin-top: 0 !important; }
-
-.flush--right { margin-right: 0 !important; }
-
-.flush--bottom, .form__inputs:first-of-type, .form__actions, .site-logo, .site-logo h1, .site-nav { margin-bottom: 0 !important; }
-
-.flush--left { margin-left: 0 !important; }
-
-.flush--ends { margin-top: 0 !important; margin-bottom: 0 !important; }
-
-.flush--sides { margin-right: 0 !important; margin-left: 0 !important; }
-
-/** Add/remove paddings */
-.soft { padding: 33px !important; }
-
-.soft--top { padding-top: 33px !important; }
-
-.soft--right { padding-right: 33px !important; }
-
-.soft--bottom { padding-bottom: 33px !important; }
-
-.soft--left { padding-left: 33px !important; }
-
-.soft--ends { padding-top: 33px !important; padding-bottom: 33px !important; }
-
-.soft--sides { padding-right: 33px !important; padding-left: 33px !important; }
-
-.soft-half { padding: 16.5px !important; }
-
-.soft-half--top { padding-top: 16.5px !important; }
-
-.soft-half--right { padding-right: 16.5px !important; }
-
-.soft-half--bottom { padding-bottom: 16.5px !important; }
-
-.soft-half--left { padding-left: 16.5px !important; }
-
-.soft-half--ends { padding-top: 16.5px !important; padding-bottom: 16.5px !important; }
-
-.soft-half--sides { padding-right: 16.5px !important; padding-left: 16.5px !important; }
-
-.hard { padding: 0 !important; }
-
-.hard--top { padding-top: 0 !important; }
-
-.hard--right { padding-right: 0 !important; }
-
-.hard--bottom { padding-bottom: 0 !important; }
-
-.hard--left { padding-left: 0 !important; }
-
-.hard--ends { padding-top: 0 !important; padding-bottom: 0 !important; }
-
-.hard--sides { padding-right: 0 !important; padding-left: 0 !important; }
 
 /** Pull items full width of `.island` parents. */
 .full-bleed { margin-right: -33px !important; margin-left: -33px !important; }
@@ -994,9 +863,7 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 .center-block { width: 100%; text-align: center; }
 
 /** Take it from here, cap’n... Begin importing your stuff here. */
-body { padding: 0 !important; word-break: break-word; }
-
-.page-container { background-color: #f4f4f4; margin-top: 70px; margin-top: 3.68421rem; padding-top: 38px; padding-top: 2rem; }
+.page-container { margin-top: 70px; margin-top: 3.68421rem; padding-top: 38px; padding-top: 2rem; }
 
 .page-content, .single-column { max-width: 800px; width: auto; margin-left: 20px; margin-right: 20px; }
 @media screen and (min-width: 42.5em) { .page-content, .single-column { width: 640px; margin-left: auto; margin-right: auto; } }
@@ -1013,7 +880,7 @@ body { padding: 0 !important; word-break: break-word; }
 
 .grid--rev > .grid__item { float: right; }
 
-.grid--rev > .one-third + .two-thirds, .grid--rev > .two-sixths + .two-thirds, .grid--rev > .four-twelfths + .two-thirds, .grid--rev > .one-third + .four-sixths, .grid--rev > .two-sixths + .four-sixths, .grid--rev > .four-twelfths + .four-sixths, .grid--rev > .one-third + .eight-twelfths, .grid--rev > .two-sixths + .eight-twelfths, .grid--rev > .four-twelfths + .eight-twelfths { margin-left: 0; margin-right: 2%; }
+.grid--rev > .one-third + .two-thirds { margin-left: 0; margin-right: 2%; }
 
 .action-icons { height: 100%; width: 100%; max-width: 150px; display: inline-block; vertical-align: middle; }
 
@@ -1344,55 +1211,55 @@ textarea.text-input { height: 100%; }
 .layout-single-column--wide { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
 /** Our regular, non-responsive width classes. */
-.one-half + .one-half, .two-quarters + .one-half, .three-sixths + .one-half, .four-eighths + .one-half, .five-tenths + .one-half, .six-twelfths + .one-half, .one-half + .two-quarters, .two-quarters + .two-quarters, .three-sixths + .two-quarters, .four-eighths + .two-quarters, .five-tenths + .two-quarters, .six-twelfths + .two-quarters, .one-half + .three-sixths, .two-quarters + .three-sixths, .three-sixths + .three-sixths, .four-eighths + .three-sixths, .five-tenths + .three-sixths, .six-twelfths + .three-sixths, .one-half + .four-eighths, .two-quarters + .four-eighths, .three-sixths + .four-eighths, .four-eighths + .four-eighths, .five-tenths + .four-eighths, .six-twelfths + .four-eighths, .one-half + .five-tenths, .two-quarters + .five-tenths, .three-sixths + .five-tenths, .four-eighths + .five-tenths, .five-tenths + .five-tenths, .six-twelfths + .five-tenths, .one-half + .six-twelfths, .two-quarters + .six-twelfths, .three-sixths + .six-twelfths, .four-eighths + .six-twelfths, .five-tenths + .six-twelfths, .six-twelfths + .six-twelfths { float: right; }
+.one-half + .one-half { float: right; }
 
-.one-third + .one-third, .two-sixths + .one-third, .four-twelfths + .one-third, .one-third + .two-sixths, .two-sixths + .two-sixths, .four-twelfths + .two-sixths, .one-third + .four-twelfths, .two-sixths + .four-twelfths, .four-twelfths + .four-twelfths, .one-third + .two-thirds, .two-sixths + .two-thirds, .four-twelfths + .two-thirds, .one-third + .four-sixths, .two-sixths + .four-sixths, .four-twelfths + .four-sixths, .one-third + .eight-twelfths, .two-sixths + .eight-twelfths, .four-twelfths + .eight-twelfths { margin-left: 2%; }
+.one-third + .one-third, .one-third + .two-thirds { margin-left: 2%; }
 
-.one-third:nth-child(4n+4), .two-sixths:nth-child(4n+4), .four-twelfths:nth-child(4n+4) { margin-left: 0; }
+.one-third:nth-child(4n+4) { margin-left: 0; }
 
-.two-thirds, .four-sixths, .eight-twelfths { width: 64%; }
+.two-thirds { width: 64%; }
 
 .layout-minor { width: 26%; float: left; }
 
 .layout-major { float: right; width: 70%; }
 
-.one-quarter, .two-eighths, .three-twelfths { width: 23%; margin-right: 2%; }
+.one-quarter { width: 23%; margin-right: 2%; }
 
-.one-quarter:nth-child(4n+4), .two-eighths:nth-child(4n+4), .three-twelfths:nth-child(4n+4) { margin-right: 0; }
+.one-quarter:nth-child(4n+4) { margin-right: 0; }
 
 /** Our responsive classes, if we have enabled them. */
-@media only screen and (max-width: 480px) { .palm--one-half + .palm--one-half, .palm--two-quarters + .palm--one-half, .palm--three-sixths + .palm--one-half, .palm--four-eighths + .palm--one-half, .palm--five-tenths + .palm--one-half, .palm--six-twelfths + .palm--one-half, .palm--one-half + .palm--two-quarters, .palm--two-quarters + .palm--two-quarters, .palm--three-sixths + .palm--two-quarters, .palm--four-eighths + .palm--two-quarters, .palm--five-tenths + .palm--two-quarters, .palm--six-twelfths + .palm--two-quarters, .palm--one-half + .palm--three-sixths, .palm--two-quarters + .palm--three-sixths, .palm--three-sixths + .palm--three-sixths, .palm--four-eighths + .palm--three-sixths, .palm--five-tenths + .palm--three-sixths, .palm--six-twelfths + .palm--three-sixths, .palm--one-half + .palm--four-eighths, .palm--two-quarters + .palm--four-eighths, .palm--three-sixths + .palm--four-eighths, .palm--four-eighths + .palm--four-eighths, .palm--five-tenths + .palm--four-eighths, .palm--six-twelfths + .palm--four-eighths, .palm--one-half + .palm--five-tenths, .palm--two-quarters + .palm--five-tenths, .palm--three-sixths + .palm--five-tenths, .palm--four-eighths + .palm--five-tenths, .palm--five-tenths + .palm--five-tenths, .palm--six-twelfths + .palm--five-tenths, .palm--one-half + .palm--six-twelfths, .palm--two-quarters + .palm--six-twelfths, .palm--three-sixths + .palm--six-twelfths, .palm--four-eighths + .palm--six-twelfths, .palm--five-tenths + .palm--six-twelfths, .palm--six-twelfths + .palm--six-twelfths { float: right; }
-  .palm--one-third + .palm--one-third, .palm--two-sixths + .palm--one-third, .palm--four-twelfths + .palm--one-third, .palm--one-third + .palm--two-sixths, .palm--two-sixths + .palm--two-sixths, .palm--four-twelfths + .palm--two-sixths, .palm--one-third + .palm--four-twelfths, .palm--two-sixths + .palm--four-twelfths, .palm--four-twelfths + .palm--four-twelfths, .palm--one-third + .palm--two-thirds, .palm--two-sixths + .palm--two-thirds, .palm--four-twelfths + .palm--two-thirds, .palm--one-third + .palm--four-sixths, .palm--two-sixths + .palm--four-sixths, .palm--four-twelfths + .palm--four-sixths, .palm--one-third + .palm--eight-twelfths, .palm--two-sixths + .palm--eight-twelfths, .palm--four-twelfths + .palm--eight-twelfths { margin-left: 2%; }
-  .palm--one-third:nth-child(4n+4), .palm--two-sixths:nth-child(4n+4), .palm--four-twelfths:nth-child(4n+4) { margin-left: 0; }
-  .palm--two-thirds, .palm--four-sixths, .palm--eight-twelfths { width: 64%; }
+@media only screen and (max-width: 480px) { .palm--one-half + .palm--one-half { float: right; }
+  .palm--one-third + .palm--one-third, .palm--one-third + .palm--two-thirds { margin-left: 2%; }
+  .palm--one-third:nth-child(4n+4) { margin-left: 0; }
+  .palm--two-thirds { width: 64%; }
   .palm--layout-minor { width: 26%; float: left; }
   .palm--layout-major { float: right; width: 70%; }
-  .palm--one-quarter, .palm--two-eighths, .palm--three-twelfths { width: 23%; margin-right: 2%; }
-  .palm--one-quarter:nth-child(4n+4), .palm--two-eighths:nth-child(4n+4), .palm--three-twelfths:nth-child(4n+4) { margin-right: 0; } }
-@media only screen and (min-width: 481px) and (max-width: 1023px) { .lap--one-half + .lap--one-half, .lap--two-quarters + .lap--one-half, .lap--three-sixths + .lap--one-half, .lap--four-eighths + .lap--one-half, .lap--five-tenths + .lap--one-half, .lap--six-twelfths + .lap--one-half, .lap--one-half + .lap--two-quarters, .lap--two-quarters + .lap--two-quarters, .lap--three-sixths + .lap--two-quarters, .lap--four-eighths + .lap--two-quarters, .lap--five-tenths + .lap--two-quarters, .lap--six-twelfths + .lap--two-quarters, .lap--one-half + .lap--three-sixths, .lap--two-quarters + .lap--three-sixths, .lap--three-sixths + .lap--three-sixths, .lap--four-eighths + .lap--three-sixths, .lap--five-tenths + .lap--three-sixths, .lap--six-twelfths + .lap--three-sixths, .lap--one-half + .lap--four-eighths, .lap--two-quarters + .lap--four-eighths, .lap--three-sixths + .lap--four-eighths, .lap--four-eighths + .lap--four-eighths, .lap--five-tenths + .lap--four-eighths, .lap--six-twelfths + .lap--four-eighths, .lap--one-half + .lap--five-tenths, .lap--two-quarters + .lap--five-tenths, .lap--three-sixths + .lap--five-tenths, .lap--four-eighths + .lap--five-tenths, .lap--five-tenths + .lap--five-tenths, .lap--six-twelfths + .lap--five-tenths, .lap--one-half + .lap--six-twelfths, .lap--two-quarters + .lap--six-twelfths, .lap--three-sixths + .lap--six-twelfths, .lap--four-eighths + .lap--six-twelfths, .lap--five-tenths + .lap--six-twelfths, .lap--six-twelfths + .lap--six-twelfths { float: right; }
-  .lap--one-third + .lap--one-third, .lap--two-sixths + .lap--one-third, .lap--four-twelfths + .lap--one-third, .lap--one-third + .lap--two-sixths, .lap--two-sixths + .lap--two-sixths, .lap--four-twelfths + .lap--two-sixths, .lap--one-third + .lap--four-twelfths, .lap--two-sixths + .lap--four-twelfths, .lap--four-twelfths + .lap--four-twelfths, .lap--one-third + .lap--two-thirds, .lap--two-sixths + .lap--two-thirds, .lap--four-twelfths + .lap--two-thirds, .lap--one-third + .lap--four-sixths, .lap--two-sixths + .lap--four-sixths, .lap--four-twelfths + .lap--four-sixths, .lap--one-third + .lap--eight-twelfths, .lap--two-sixths + .lap--eight-twelfths, .lap--four-twelfths + .lap--eight-twelfths { margin-left: 2%; }
-  .lap--one-third:nth-child(4n+4), .lap--two-sixths:nth-child(4n+4), .lap--four-twelfths:nth-child(4n+4) { margin-left: 0; }
-  .lap--two-thirds, .lap--four-sixths, .lap--eight-twelfths { width: 64%; }
+  .palm--one-quarter { width: 23%; margin-right: 2%; }
+  .palm--one-quarter:nth-child(4n+4) { margin-right: 0; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) { .lap--one-half + .lap--one-half { float: right; }
+  .lap--one-third + .lap--one-third, .lap--one-third + .lap--two-thirds { margin-left: 2%; }
+  .lap--one-third:nth-child(4n+4) { margin-left: 0; }
+  .lap--two-thirds { width: 64%; }
   .lap--layout-minor { width: 26%; float: left; }
   .lap--layout-major { float: right; width: 70%; }
-  .lap--one-quarter, .lap--two-eighths, .lap--three-twelfths { width: 23%; margin-right: 2%; }
-  .lap--one-quarter:nth-child(4n+4), .lap--two-eighths:nth-child(4n+4), .lap--three-twelfths:nth-child(4n+4) { margin-right: 0; } }
-@media only screen and (max-width: 980px) { .portable--one-half + .portable--one-half, .portable--two-quarters + .portable--one-half, .portable--three-sixths + .portable--one-half, .portable--four-eighths + .portable--one-half, .portable--five-tenths + .portable--one-half, .portable--six-twelfths + .portable--one-half, .portable--one-half + .portable--two-quarters, .portable--two-quarters + .portable--two-quarters, .portable--three-sixths + .portable--two-quarters, .portable--four-eighths + .portable--two-quarters, .portable--five-tenths + .portable--two-quarters, .portable--six-twelfths + .portable--two-quarters, .portable--one-half + .portable--three-sixths, .portable--two-quarters + .portable--three-sixths, .portable--three-sixths + .portable--three-sixths, .portable--four-eighths + .portable--three-sixths, .portable--five-tenths + .portable--three-sixths, .portable--six-twelfths + .portable--three-sixths, .portable--one-half + .portable--four-eighths, .portable--two-quarters + .portable--four-eighths, .portable--three-sixths + .portable--four-eighths, .portable--four-eighths + .portable--four-eighths, .portable--five-tenths + .portable--four-eighths, .portable--six-twelfths + .portable--four-eighths, .portable--one-half + .portable--five-tenths, .portable--two-quarters + .portable--five-tenths, .portable--three-sixths + .portable--five-tenths, .portable--four-eighths + .portable--five-tenths, .portable--five-tenths + .portable--five-tenths, .portable--six-twelfths + .portable--five-tenths, .portable--one-half + .portable--six-twelfths, .portable--two-quarters + .portable--six-twelfths, .portable--three-sixths + .portable--six-twelfths, .portable--four-eighths + .portable--six-twelfths, .portable--five-tenths + .portable--six-twelfths, .portable--six-twelfths + .portable--six-twelfths { float: right; }
-  .portable--one-third + .portable--one-third, .portable--two-sixths + .portable--one-third, .portable--four-twelfths + .portable--one-third, .portable--one-third + .portable--two-sixths, .portable--two-sixths + .portable--two-sixths, .portable--four-twelfths + .portable--two-sixths, .portable--one-third + .portable--four-twelfths, .portable--two-sixths + .portable--four-twelfths, .portable--four-twelfths + .portable--four-twelfths, .portable--one-third + .portable--two-thirds, .portable--two-sixths + .portable--two-thirds, .portable--four-twelfths + .portable--two-thirds, .portable--one-third + .portable--four-sixths, .portable--two-sixths + .portable--four-sixths, .portable--four-twelfths + .portable--four-sixths, .portable--one-third + .portable--eight-twelfths, .portable--two-sixths + .portable--eight-twelfths, .portable--four-twelfths + .portable--eight-twelfths { margin-left: 2%; }
-  .portable--one-third:nth-child(4n+4), .portable--two-sixths:nth-child(4n+4), .portable--four-twelfths:nth-child(4n+4) { margin-left: 0; }
-  .portable--two-thirds, .portable--four-sixths, .portable--eight-twelfths { width: 64%; }
+  .lap--one-quarter { width: 23%; margin-right: 2%; }
+  .lap--one-quarter:nth-child(4n+4) { margin-right: 0; } }
+@media only screen and (max-width: 980px) { .portable--one-half + .portable--one-half { float: right; }
+  .portable--one-third + .portable--one-third, .portable--one-third + .portable--two-thirds { margin-left: 2%; }
+  .portable--one-third:nth-child(4n+4) { margin-left: 0; }
+  .portable--two-thirds { width: 64%; }
   .portable--layout-minor { width: 26%; float: left; }
   .portable--layout-major { float: right; width: 70%; }
-  .portable--one-quarter, .portable--two-eighths, .portable--three-twelfths { width: 23%; margin-right: 2%; }
-  .portable--one-quarter:nth-child(4n+4), .portable--two-eighths:nth-child(4n+4), .portable--three-twelfths:nth-child(4n+4) { margin-right: 0; } }
-@media only screen and (min-width: 981px) { .desk--one-half + .desk--one-half, .desk--two-quarters + .desk--one-half, .desk--three-sixths + .desk--one-half, .desk--four-eighths + .desk--one-half, .desk--five-tenths + .desk--one-half, .desk--six-twelfths + .desk--one-half, .desk--one-half + .desk--two-quarters, .desk--two-quarters + .desk--two-quarters, .desk--three-sixths + .desk--two-quarters, .desk--four-eighths + .desk--two-quarters, .desk--five-tenths + .desk--two-quarters, .desk--six-twelfths + .desk--two-quarters, .desk--one-half + .desk--three-sixths, .desk--two-quarters + .desk--three-sixths, .desk--three-sixths + .desk--three-sixths, .desk--four-eighths + .desk--three-sixths, .desk--five-tenths + .desk--three-sixths, .desk--six-twelfths + .desk--three-sixths, .desk--one-half + .desk--four-eighths, .desk--two-quarters + .desk--four-eighths, .desk--three-sixths + .desk--four-eighths, .desk--four-eighths + .desk--four-eighths, .desk--five-tenths + .desk--four-eighths, .desk--six-twelfths + .desk--four-eighths, .desk--one-half + .desk--five-tenths, .desk--two-quarters + .desk--five-tenths, .desk--three-sixths + .desk--five-tenths, .desk--four-eighths + .desk--five-tenths, .desk--five-tenths + .desk--five-tenths, .desk--six-twelfths + .desk--five-tenths, .desk--one-half + .desk--six-twelfths, .desk--two-quarters + .desk--six-twelfths, .desk--three-sixths + .desk--six-twelfths, .desk--four-eighths + .desk--six-twelfths, .desk--five-tenths + .desk--six-twelfths, .desk--six-twelfths + .desk--six-twelfths { float: right; }
-  .desk--one-third + .desk--one-third, .desk--two-sixths + .desk--one-third, .desk--four-twelfths + .desk--one-third, .desk--one-third + .desk--two-sixths, .desk--two-sixths + .desk--two-sixths, .desk--four-twelfths + .desk--two-sixths, .desk--one-third + .desk--four-twelfths, .desk--two-sixths + .desk--four-twelfths, .desk--four-twelfths + .desk--four-twelfths, .desk--one-third + .desk--two-thirds, .desk--two-sixths + .desk--two-thirds, .desk--four-twelfths + .desk--two-thirds, .desk--one-third + .desk--four-sixths, .desk--two-sixths + .desk--four-sixths, .desk--four-twelfths + .desk--four-sixths, .desk--one-third + .desk--eight-twelfths, .desk--two-sixths + .desk--eight-twelfths, .desk--four-twelfths + .desk--eight-twelfths { margin-left: 2%; }
-  .desk--one-third:nth-child(4n+4), .desk--two-sixths:nth-child(4n+4), .desk--four-twelfths:nth-child(4n+4) { margin-left: 0; }
-  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths { width: 64%; }
+  .portable--one-quarter { width: 23%; margin-right: 2%; }
+  .portable--one-quarter:nth-child(4n+4) { margin-right: 0; } }
+@media only screen and (min-width: 981px) { .desk--one-half + .desk--one-half { float: right; }
+  .desk--one-third + .desk--one-third, .desk--one-third + .desk--two-thirds { margin-left: 2%; }
+  .desk--one-third:nth-child(4n+4) { margin-left: 0; }
+  .desk--two-thirds { width: 64%; }
   .desk--layout-minor { width: 26%; float: left; }
   .desk--layout-major { float: right; width: 70%; }
-  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths { width: 23%; margin-right: 2%; }
-  .desk--one-quarter:nth-child(4n+4), .desk--two-eighths:nth-child(4n+4), .desk--three-twelfths:nth-child(4n+4) { margin-right: 0; } }
+  .desk--one-quarter { width: 23%; margin-right: 2%; }
+  .desk--one-quarter:nth-child(4n+4) { margin-right: 0; } }
 .preload { display: none !important; }
 
 .slider-control__next, .slider-control__next .slider-control--btn { right: 0; }
@@ -1497,7 +1364,7 @@ textarea.text-input { height: 100%; }
 
 .flush, .site-nav--off-canvas li { margin: 0 !important; }
 
-.flush--bottom, .form__inputs:first-of-type, .form__actions, .site-logo, .site-logo h1, .site-nav { margin-bottom: 0 !important; }
+.flush--bottom, .site-logo, .site-logo h1, .site-nav { margin-bottom: 0 !important; }
 
 .text-white, .button--primary, .button--secondary { color: white !important; }
 
@@ -1532,7 +1399,7 @@ code { font-size: 90%; }
 
 .demo-logo { position: absolute; top: 5px; float: left; display: inline-block; width: 78px; height: 54px; background: url("assets/images/cru-logo.png"); background-image: url("assets/images/cru-logo.svg"); background-repeat: no-repeat; background-position: top center; background-size: contain; }
 
-.grid-demo .pattern__view .one-whole, .grid-demo .pattern__view .one-half, .grid-demo .pattern__view .two-quarters, .grid-demo .pattern__view .three-sixths, .grid-demo .pattern__view .four-eighths, .grid-demo .pattern__view .five-tenths, .grid-demo .pattern__view .six-twelfths, .grid-demo .pattern__view .one-third, .grid-demo .pattern__view .two-sixths, .grid-demo .pattern__view .four-twelfths, .grid-demo .pattern__view .one-quarter, .grid-demo .pattern__view .two-eighths, .grid-demo .pattern__view .three-twelfths { min-height: 80px; border-radius: 3px; margin-bottom: 10px; margin-top: 10px; font-size: 1em; text-align: center; background-color: #dddddd; }
+.grid-demo .pattern__view .one-whole, .grid-demo .pattern__view .one-half, .grid-demo .pattern__view .one-third, .grid-demo .pattern__view .one-quarter { min-height: 80px; border-radius: 3px; margin-bottom: 10px; margin-top: 10px; font-size: 1em; text-align: center; background-color: #dddddd; }
 
 .grid-demo .pattern__view span { display: inline-block; line-height: 80px; }
 

@@ -44,6 +44,8 @@ $use-breadcrumb:    false;
 $base-font-size:         19px;
 $base-line-height:       33px;
 
+$base-background-color: #f7f7f7;
+
 $header-font-ratio:      1.313;
 $header-font-weight:     400;
 
@@ -56,7 +58,7 @@ $breakpoints: (
 
 
 $enable-margins:          true;
-
+$enable-margins--none:    true;
 
 /*------------------------------------*\
     $CUSTOM
@@ -86,7 +88,6 @@ $base-font-color: #353535;
     $Color Palette
 \*------------------------------------*/
 
-$base-background: #f7f7f7;
 /**
  * Primary colors
  */
@@ -127,8 +128,8 @@ $color-red:          #d95c5c;
 /*------------------------------------*\
     $BUTTON SETTINGS
 \*------------------------------------*/
-$btn-font-size:        16px;
-$btn-default-padding:  0;
+$btn-font-size:                16px;
+$btn-default-padding:          0;
 
 $btn-default-color:            #6d6e71;
 $btn-default-bg:               #f1f1f1;
