@@ -1,11 +1,4 @@
-body{
-	padding: 0 !important;
-	word-break: break-word;
-}
-
-.page-container{
-	background-color:#f4f4f4;
-	
+.page-container{	
 	@include rem(margin-top, 70px);
 	@include rem(padding-top, 38px);
 }
@@ -28,7 +21,7 @@ body{
 }
 
 .background-size-contain.layout-single-column{
-	@include mq(500px, max){
+	@include mq(500px, max) {
 		margin-left: 0;
 		margin-right: 0;
 	}
