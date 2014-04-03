@@ -4,52 +4,56 @@ page-class: page--static
 {% include head.html %}
 
 
-<ul class="content-slider">
+<div class="content-slider  position--relative  overflow--hide  mb">
 	
-	<div class="slider">
+	<div class="slider  centered  position--relative">
 		<!-- .mask -->
-		<div class="mask">
-	    <ul>
+		<div class="slider__mask  overflow--hide">
+	    <ul class="bare-list">
 	
-	      <li class="slider__item  slider1  js-slider1">
-	        <a href="#camera">
-	          <div class="block-image">
+	      <li class="slider__item  slider1  js-slider1  position--absolute  full-height">
+	        <a class="position--relative  display--block  full-height" href="#camera">
+	          <div class="full-height  full-width">
+							<!-- This is the background image style that will be changed based on the article image -->
 	            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_01.jpg')"></div>
 	          </div>
-	          <div class="article-details">
-							<h3 class="affordance">6 Things Every Christian Should Do Superbowl Weekend</h3>
+	          <div class="article-details  position--absolute  p0">
+							<h3 class="affordance  display--block  m0">6 Things Every Christian Should Do Superbowl Weekend</h3>
 	          </div>
 	        </a>
 	      </li>
 	
-	      <li class="slider__item  slider2  js-slider2">
-	        <a href="#birds">
-	          <div class="block-image">
+	      <li class="slider__item  slider2  js-slider2  position--absolute  full-height">
+	        <a class="position--relative  display--block  full-height"  href="#birds">
+	          <div class="full-height  full-width">
+							<!-- This is the background image style that will be changed based on the article image -->
 	            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_02.jpg')"></div>
 	          </div>
-	          <div class="article-details">
-	             	<h3 class="affordance">Emma Had a Burden of Guilt and a Masking Smile</h3>
+	          <div class="article-details  position--absolute  p0">
+	             	<h3 class="affordance  display--block  m0">Emma Had a Burden of Guilt and a Masking Smile</h3>
 	          </div>
 	        </a>
 
 	      </li>
-	      <li class="slider__item  slider3  js-slider3">
-	        <a href="#train">
-	          <div class="block-image">
+	      <li class="slider__item  slider3  js-slider3  position--absolute  full-height">
+	        <a class="position--relative  display--block  full-height" href="#train">
+	          <div class="full-height  full-width">
+							<!-- This is the background image style that will be changed based on the article image -->
 	            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_03.jpg')"></div>
 	          </div>
-	          <div class="article-details">
-	             	<h3 class="affordance">Pre-cancer Susie's Journey of Doubt Before a Brain Tumor</h3>
+	          <div class="article-details  position--absolute  p0">
+	             	<h3 class="affordance  display--block  m0">Pre-cancer Susie's Journey of Doubt Before a Brain Tumor</h3>
 	          </div>
 	        </a>
 	      </li>
-	      <li class="slider__item  slider4  js-slider4">
-	        <a href="#tea">
-	          <div class="block-image">
+	      <li class="slider__item  slider4  js-slider4  position--absolute  full-height">
+	        <a class="position--relative  display--block  full-height" href="#tea">
+	          <div class="full-height  full-width">
+							<!-- This is the background image style that will be changed based on the article image -->
 	            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_04.jpg')"></div>
 	          </div>
-	          <div class="article-details">
-	             	<h3 class="affordance">Yes, It is Possible to Have a Long-Distance Ministry</h3>
+	          <div class="article-details  position--absolute  p0">
+	             	<h3 class="affordance  display--block  m0">Yes, It is Possible to Have a Long-Distance Ministry</h3>
 	          </div>
 	        </a>
 	      </li>
@@ -57,14 +61,14 @@ page-class: page--static
 	  </div>
 		<!-- end .mask -->
 	</div>
-	<a class="slider-control  slider-control__prev">
-				<span class="slider-control--btn">
+	<a class="slider-control  slider-control__prev  position--absolute">
+				<span class="slider-control--btn  position--absolute">
 					<i class="icon-left-arrow"></i>
 				</span>
   </a>
-	<a class="slider-control  slider-control__next">
-				<span class="slider-control--btn">
+	<a class="slider-control  slider-control__next  position--absolute">
+				<span class="slider-control--btn  position--absolute">
 					<i class="icon-right-arrow"></i>
 				</span>
   </a>
-</ul>
+</div>
