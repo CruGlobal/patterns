@@ -1,11 +1,4 @@
-body{
-	padding: 0 !important;
-	word-break: break-word;
-}
-
-.page-container{
-	background-color:#f4f4f4;
-	
+.page-container{	
 	@include rem(margin-top, 70px);
 	@include rem(padding-top, 38px);
 }
@@ -28,7 +21,7 @@ body{
 }
 
 .background-size-contain.layout-single-column{
-	@include mq(500px, max){
+	@include mq(500px, max) {
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -69,7 +62,7 @@ body{
 .action-icons{
 	height: 100%;
 	width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     display: inline-block;
     vertical-align: middle;
 }	
@@ -80,9 +73,29 @@ body{
 }
 
 .affordance:after {
+	@extend .icon-right-circle:before;
+	
     color: $color-gold;
     font-family: "cruicons";
-    content: '\e800';
     padding-left: 10px;
 }
 	
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span{
+	width: 85px !important;
+}
+
+.fb-like.fb_iframe_widget > span, #twitter-widget-0, #___plusone_0{
+	vertical-align: middle !important;
+	height: 25px !important;
+}

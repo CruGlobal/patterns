@@ -2,16 +2,186 @@
 layout: fundamental
 title: Pattern Primer
 ---
-{% include header.html %}
-<ul class="nav">
-	<li>
-		<a href="{{ site.root }}blocks/articles/demo1/">Demo 1</a>
-	</li>
-	<li>
-		<a href="{{ site.root }}blocks/articles/demo2/">Demo 2</a>
-	</li>
-</ul>
+  {% include head.html %}
+    <body  class="page--header  flush  hard">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<!-- DEMO NAVS -->		
+		<ul class="demo-article-nav  nav">
+			<li>
+				<a href="{{ site.root }}blocks/articles/demo1/">Demo 1</a>
+			</li>
+			<li>
+				<a href="{{ site.root }}blocks/articles/demo2/">Demo 2</a>
+			</li>
+		</ul>	
+					
+			<select  class="site--select">
+				<option value>Jump To...</option>
 
+				<optgroup label="Branding">
+					<option value="{{ site.root }}#logo">Logo</option>
+					<option value="{{ site.root }}#font">Font</option>
+					<option value="{{ site.root }}#icons">Icons</option>
+					<option value="{{ site.root }}#colors">Colors</option>
+				</optgroup>
+				<optgroup label="Elements">
+					<option value="{{ site.root }}#buttons">Buttons</option>
+					<option value="{{ site.root }}#forms">Forms</option>
+					<option value="{{ site.root }}#headings">Headings</option>
+					<option value="{{ site.root }}#links">Links</option>
+					<option value="{{ site.root }}#lists">Lists</option>
+					<option value="{{ site.root }}#media">Media</option>
+					<option value="{{ site.root }}#tables">Tables</option>
+					<option value="{{ site.root }}#text">Text</option>
+				</optgroup>
+				<optgroup label="Global">
+					<option value="{{ site.root }}#head">Head</option>
+					<option value="{{ site.root }}blocks/header/">Header</option>					
+					<option value="{{ site.root }}#footer">Footer</option>
+				</optgroup>
+				<optgroup label="Layouts">
+					<option value="{{ site.root }}#layouts-one-whole">One Whole</option>
+					<option value="{{ site.root }}#layouts-one-half-one-half">Halfs</option>
+					<option value="{{ site.root }}#layouts-two-thirds-one-third">Two-Thirds / One-third</option>
+					<option value="{{ site.root }}#layouts-one-third-two-thirds">One-third / Two-thirds</option>
+					<option value="{{ site.root }}#layouts-one-fourth-three-fourth">One-fourth / Three-fourths</option>
+				</optgroup>
+				<optgroup label="Patterns">
+					<option value="{{ site.root }}blocks/articles/demo1/">Articles</option>
+					
+					<option value="{{ site.root }}blocks/slider/">Slider</option>
+					<option value="{{ site.root }}#content-block-calender">Comments</option>
+					<option value="{{ site.root }}#content-block-calender">Calender</option>
+					<option value="{{ site.root }}#content-block-contact">Contact</option>
+					<option value="{{ site.root }}#content-block-about">About</option>
+					<option value="{{ site.root }}#content-block-meetings">Meetings</option>
+					<option value="{{ site.root }}#content-block-navigation">Navigation</option>
+					<option value="{{ site.root }}#content-block-content-block-profile">Profile</option>
+					<option value="{{ site.root }}#content-block-stories">Stories</option>
+					<option value="{{ site.root }}#content-block-alumni">Alumni</option>
+					<option value="{{ site.root }}#content-block-get-involved">Get Involved</option>
+					<option value="{{ site.root }}#content-block-social">Social Media</option>
+				</optgroup>
+				<optgroup label="Templates">
+					<option value="{{ site.root }}templates/home/">Home</option>
+				</optgroup>
+			</select>
+			<!-- END DEMO NAVS -->
+		
+		
+		<div id="js-container"  class="js-container">
+			<header class="site-header"  role="banner">
+				<div class="navigation-wrapper">
+					<hgroup class="title-group  site-logo">
+						<a href="#"  title="Return to Homepage">
+							<h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
+						</a>
+					</hgroup><!--
+					
+				 --><nav class="navigation">
+						<ul class="nav  right-nav  flush--bottom">
+							<li>
+								<a href="#signup">Sign Up</a>
+							<li>
+								<a href="#">Log In</a>
+							</li>
+							
+							<li class="spoken-form">
+								<form class="site-search"  method="post" onsubmit=""  action="#" name="search">
+									<input class="search-field  text-input" placeholder="Search" type="search" />
+									<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
+								</form>
+							</li>
+						</ul>						
+						
+						<ul class="nav  site-nav  flush--bottom">
+							<li>
+								<a href="#"  class="nav-link">How to Know God</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">Train & Grow</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">Opportunities</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">About</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">Communities</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">Store</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							<li>
+								<a href="#"  class="nav-link">Give</a>
+								<div class="dropdown  dropdown__item">
+									<div class="small-wrap">
+										<ul class="nav"></ul>
+									</div>
+								</div>
+							</li>
+							
+							
+						</ul>
+						<a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full">Menu
+							<i class="icon-hamburger"></i></a>
+						
+					</nav>
+				</div>
+			</header>
+			<div  id="js-page-container" class="page-container">
+
+<div class="demo-block">
+
+<article>	
 	<div class="article__image--primary  background-size-contain  layout-single-column">
 		<img src="http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057853~1~staticrendition/cru640x360.jpg">	
 	</div>
@@ -120,5 +290,97 @@ title: Pattern Primer
 			
 			<p><small><em>©2007 Cru Press, Campus Crusade for Christ, Inc. All rights reserved.  No part of this publication may be digitally reproduced, stored in a retrieval system, or transmitted, without the prior permission of Cru Press.</em></small></p>
 		</footer>
+</article>
+	</div>
 	
-	{% include footer.html %}
+				<footer class="global-footer">
+					<hr class="section-divider">
+					
+					<nav role="supplementary">	
+						<ul class="nav  flush--bottom">
+							<li>
+								<a href="/">Contact Us</a>
+							</li>
+							<li>
+								<a href="/">RSS Feed</a>
+							</li>
+							<li>
+								<a href="/">Press Room</a>
+							</li>
+							<li>
+								<a href="/">Careers</a>
+							</li>
+							<li>
+								<a href="/">Terms of Use</a>
+							</li>
+							<li>
+								<a href="/">Privary Policy</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copy">
+
+						<small>©1994-2014 Cru. All Rights Reserved.</small>
+	
+					</div>
+				</footer>
+				
+				
+			</div>
+	
+			
+		</div>
+	
+		
+		<nav id="off-canvas" class="js-off-canvas">
+			<div class="site-nav--off-canvas  hard">
+				<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
+				<ol class="nav  nav--stacked  flush--bottom">
+					<li>
+						<form class="site-search  push-half--bottom">
+							<input type="search"  class="search  text-input"></input>
+							<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
+							
+						</form>
+					</li>
+					<li>
+					    <a href="#">Start with God</a>	
+					</li>
+
+					<li>
+					  <a href="#">Train & Grow</a>	
+					</li>
+
+					<li>
+					  <a href="#">Communities</a>	
+
+					</li>
+
+					<li>
+					  <a href="#">Opportunities</a>	
+
+					</li>
+
+					<li>
+					  <a href="#">About</a>	
+					</li>
+				
+					<li>
+					  <a href="#">Store</a>	
+					</li>
+				
+					<li>
+					  <a href="#">Give</a>	
+					</li>
+				</ol>	
+			</div>
+		</nav>
+		
+		
+		
+		{% include footer.html %}
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+	
+    </body>
+</html>
+

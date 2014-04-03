@@ -32,21 +32,9 @@
 }
 
 .layout--cap{
-	@extend %base-layout;	
+	@extend %base-layout;
+
 	max-width: 1100px;
-}
-
-
-.one-half + .one-half{
-	float: right;
-}
-
-.one-third + .one-third, .one-third + .two-thirds {
-	margin-left: 2%;
-}
-
-.two-thirds{
-	width: 64%;
 }
 
 .layout-single-column--wide{

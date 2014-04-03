@@ -7,7 +7,71 @@ page-class: page--home
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-			
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- DEMO NAVS -->		
+		
+<select  class="site--select">
+	<option value>Jump To...</option>
+
+	<optgroup label="Branding">
+		<option value="{{ site.root }}#logo">Logo</option>
+		<option value="{{ site.root }}#font">Font</option>
+		<option value="{{ site.root }}#icons">Icons</option>
+		<option value="{{ site.root }}#colors">Colors</option>
+	</optgroup>
+	<optgroup label="Elements">
+		<option value="{{ site.root }}#buttons">Buttons</option>
+		<option value="{{ site.root }}#forms">Forms</option>
+		<option value="{{ site.root }}#headings">Headings</option>
+		<option value="{{ site.root }}#links">Links</option>
+		<option value="{{ site.root }}#lists">Lists</option>
+		<option value="{{ site.root }}#media">Media</option>
+		<option value="{{ site.root }}#tables">Tables</option>
+		<option value="{{ site.root }}#text">Text</option>
+	</optgroup>
+	<optgroup label="Global">
+		<option value="{{ site.root }}#head">Head</option>
+		<option value="{{ site.root }}blocks/header/">Header</option>					
+		<option value="{{ site.root }}#footer">Footer</option>
+	</optgroup>
+	<optgroup label="Layouts">
+		<option value="{{ site.root }}#layouts-one-whole">One Whole</option>
+		<option value="{{ site.root }}#layouts-one-half-one-half">Halfs</option>
+		<option value="{{ site.root }}#layouts-two-thirds-one-third">Two-Thirds / One-third</option>
+		<option value="{{ site.root }}#layouts-one-third-two-thirds">One-third / Two-thirds</option>
+		<option value="{{ site.root }}#layouts-one-fourth-three-fourth">One-fourth / Three-fourths</option>
+	</optgroup>
+	<optgroup label="Patterns">
+		<option value="{{ site.root }}blocks/articles/demo1/">Articles</option>
+	
+		<option value="{{ site.root }}blocks/slider/">Slider</option>
+		<option value="{{ site.root }}#content-block-calender">Comments</option>
+		<option value="{{ site.root }}#content-block-calender">Calender</option>
+		<option value="{{ site.root }}#content-block-contact">Contact</option>
+		<option value="{{ site.root }}#content-block-about">About</option>
+		<option value="{{ site.root }}#content-block-meetings">Meetings</option>
+		<option value="{{ site.root }}#content-block-navigation">Navigation</option>
+		<option value="{{ site.root }}#content-block-content-block-profile">Profile</option>
+		<option value="{{ site.root }}#content-block-stories">Stories</option>
+		<option value="{{ site.root }}#content-block-alumni">Alumni</option>
+		<option value="{{ site.root }}#content-block-get-involved">Get Involved</option>
+		<option value="{{ site.root }}#content-block-social">Social Media</option>
+	</optgroup>
+	<optgroup label="Templates">
+		<option value="{{ site.root }}templates/home/">Home</option>
+	</optgroup>
+</select>
+<!-- END DEMO NAVS -->
+	
+				
 		<div id="js-container"  class="js-container">
 			<header class="site-header"  role="banner">
 				<div class="navigation-wrapper">
@@ -107,40 +171,30 @@ page-class: page--home
 			</header>
 			<div  id="js-page-container" class="page-container">
 				<div class="content-slider">
-				  <div class="slider  layout--cap  centered">
+				  <div class="slider  centered">
 
 				    <!-- .mask -->
 				    <div class="mask">
 				      <ul>
+								
 				        <li  class="slider__item  slider--main  animate--first js-at-bat">
 				          <a href="#camera">
 				            <div class="block-image">
 				              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_01.jpg')"></div>
 				            </div>
 				            <div class="article-details">
-				              <a href="#camera">
-				                <h3>6 Things Every Christian Should Do Super Bowl Weekend</h3>
-				              </a>
-				              <div class="sub-details">
-				                <a href="#camera-author"  class="author">I am an author</a>
-				                <span class="subheading">National</span>
-				              </div>
+											<h3 class="affordance">6 Things Every Christian Should Do Superbowl Weekend</h3>
 				            </div>
 				          </a>
 				        </li>
+								
 				        <li  class="slider__item  slider--second  animate--second  js-on-deck">
 				          <a href="#birds">
 				            <div class="block-image">
 				              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_02.jpg')"></div>
 				            </div>
 				            <div class="article-details">
-				              <a href="#birds">
-				                <h3>Emma Had a Burden of Guilt and a Masking Smile</h3>
-				              </a>
-				              <div class="sub-details">
-				                <a href="#birds-author"  class="author">I am an author</a>
-				                <span class="subheading">City</span>
-				              </div>
+				               	<h3 class="affordance">Emma Had a Burden of Guilt and a Masking Smile</h3>
 				            </div>
 				          </a>
 
@@ -151,13 +205,7 @@ page-class: page--home
 				              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_03.jpg')"></div>
 				            </div>
 				            <div class="article-details">
-				              <a href="#train">
-				                <h3>Pre-cancer Susie's Journey of Doubt Before a Brain Tumor</h3>
-				              </a>
-				              <div class="sub-details">
-				                <a href="#train-author"  class="author">I am an author</a>
-				                <span class="subheading">National</span>
-				              </div>
+				               	<h3 class="affordance">Pre-cancer Susie's Journey of Doubt Before a Brain Tumor</h3>
 				            </div>
 				          </a>
 				        </li>
@@ -167,13 +215,7 @@ page-class: page--home
 				              <div class="background-image" style="background-image: url('{{ site.root }}assets/images/cru640x360_story_04.jpg')"></div>
 				            </div>
 				            <div class="article-details">
-				              <a href="#tea">
-				                <h3>Yes, It's Possible to Have a Long-Distance Ministry</h3>
-				              </a>
-				              <div class="sub-details">
-				                <a href="#tea-author"  class="author">I am an author</a>
-				                <span class="subheading">Regional</span>
-				              </div>
+				               	<h3 class="affordance">Yes, It is Possible to Have a Long-Distance Ministry</h3>
 				            </div>
 				          </a>
 				        </li>
@@ -195,6 +237,25 @@ page-class: page--home
 				  </a>
 				</div>
 				
+				<div class="center--block  color-white">
+					<div class="layout--cap">
+						<div class="push-half--sides">						
+							<div class="push-fourth--right  fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+						<a href="https://twitter.com/cru" class="twitter-follow-button  push-fourth--right" data-show-count="false" data-lang="en">Follow @cru</a>
+						<!-- Place this tag where you want the +1 button to render. -->
+						<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+						<!-- Place this tag after the last +1 button tag. -->
+						<script type="text/javascript">
+						  (function() {
+						    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						    po.src = 'https://apis.google.com/js/platform.js';
+						    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						  })();
+						</script>
+						</div>
+					</div>
+				</div>
+				
 				<div class="push--bottom  soft--ends  center-block  home-banner  grid  layout--cap">
 					<div class="grid__item  desk--five-sixths">
 						<h2 class="h4  callout">Cru is a caring community passionate about connecting people to Jesus Christ</h2>						
@@ -207,116 +268,151 @@ page-class: page--home
 				
 				<div class="layout-single-column  layout--wide  push--bottom">
 					<div class="highlight--top">
-							<ul  class="grid  grid--middle block-list  push--bottom">
-                <!--
-								<li class="grid  grid--middle  color-white  push-half--bottom  soft-half">
-									<div class="grid__item  one-whole lap--one-third desk--one-third">
+							<ul  class="grid  block-list  push--bottom">
+								
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
 										<div class="action-icons">
-											<img class="" src="/assets/images/cru-icon-students.svg" alt="College">
+											<img src="{{ site.root }}assets/images/cru-icon-students.svg" alt="Soularium on Campus">
 										</div>
 									</div>									
-										<div class="grid__item  one-whole lap--two-thirds desk--two-thirds  block-list  push-half--bottom">
-											<h4 class="push-fourth--bottom">College</h4>
-											<p>We are a caring community of people who are passionate about Jesus.  And passionate about helping the world know him, too.</p>
-                      <a class="button  button--primary  button--small" href="#">Visit College</a>
-                    </div>
+										<ul class="grid__item block-list">
+											<h4 class="push-fourth--bottom">Students</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</ul>
 								</li>
-                -->
-                <li class="grid__item  one-whole portable--one-half desk--one-quarter color-white push-fourth--ends push-half--bottom  soft-half">
-                  <a href="#" class="">
-                    <img class="action-icons center-block" src="/assets/images/cru-icon-students.svg" alt="College">
-                    <h3 class="push-fourth--bottom push-half--top">College</h3>
-                    <p class="push-fourth--bottom affordance">We are a caring community of people who are passionate about Jesus.</p>
-                  </a>
-                </li>
-                <li class="grid__item  one-whole portable--one-half desk--one-quarter color-white  push-fourth--ends push-half--bottom  soft-half">
-                  <a href="#" class="">
-                    <img class="action-icons center-block" src="/assets/images/cru-icon-families.svg" alt="College">
-                    <h3 class="push-fourth--bottom push-half--top">Families</h3>
-                    <p class="push-fourth--bottom affordance">We are a caring community of people who are passionate about Jesus.</p>
-                  </a>
-                </li>
-                <li class="grid__item  one-whole portable--one-half desk--one-quarter color-white  push-fourth--ends push-half--bottom  soft-half">
-                  <a href="#" class="">
-                    <img class="action-icons center-block" src="/assets/images/cru-icon-cities.svg" alt="College">
-                    <h3 class="push-fourth--bottom push-half--top">City</h3>
-                    <p class="push-fourth--bottom affordance">We are a caring community of people who are passionate about Jesus.  And passionate about helping the world know him, too.</p>
-                  </a>
-                </li>
-                <li class="grid__item  one-whole portable--one-half desk--one-quarter color-white  push-fourth--ends push-half--bottom  soft-half">
-                  <a href="#" class="">
-                    <img class="action-icons center-block" src="/assets/images/cru-icon-sports.svg" alt="College">
-                    <h3 class="push-fourth--bottom push-half--top">Athletes</h3>
-                    <p class="push-fourth--bottom affordance">We are a caring community of people who are passionate about Jesus.  And passionate about helping the world know him, too.</p>
-                  </a>
-                </li>
-								<!--
-								<li class="grid  grid--middle  color-white  grid--rev  push-half--bottom  soft-half">
-									<div class="grid__item  one-third">
+								
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
 										<div class="action-icons">
-											<img class="push-fourth--bottom" src="/assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
+											<img src="{{ site.root }}assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
 										</div>
-									</div>
-										<ul class="grid__item  two-thirds  block-list  push-half--bottom">
+									</div>																		
+										<ul class="grid__item  block-list">
 											<h4 class="push-fourth--bottom">Families</h4>
-
-										<li>
-											<a href="#">Marriage Turnaround</a>
-										</li>
-										<li>
-											<a href="#">Honoring our Soldiers</a>
-										</li>
-										<li>
-											<a href="#">25 Ways to Lead Your Family</a>
-										</li>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</ul>
 								</li>
 								
-								<li class="grid  grid--middle  color-white  push-half--bottom  soft-half">
-									<div class="grid__item  one-third">
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
 										<div class="action-icons">
-											<img class="push-fourth--bottom" src="/assets/images/cru-icon-cities.svg" alt="Uniquely Gifted (image)">
+											<img  src="{{ site.root }}assets/images/cru-icon-cities.svg" alt="Uniquely Gifted (image)">
 										</div>
 									</div>									
-										<ul class="grid__item  two-thirds  block-list  push-half--bottom">
+										<ul class="grid__item  block-list">
 											<h4 class="push-fourth--bottom">City</h4>
-										<li>
-											<a href="#">Does your personality type affect the way you evangelize?</a>											
-										</li>
-										<li>
-											<a href="#">Being a Christian at Work</a>											
-										</li>
-										<li>
-											<a href="#">London: City Lessons</a>											
-										</li>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</ul>
 								</li>
 								
-								<li class="grid  grid--middle  color-white  grid--rev  push-half--bottom  soft-half">
-									<div class="grid__item  one-third">
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
 										<div class="action-icons">
-											<img class="push-fourth--bottom" src="/assets/images/cru-icon-sports.svg" alt="Kevin Durant: Growing Spiritually (photo)">
+											<img src="{{ site.root }}assets/images/cru-icon-sports.svg" alt="Kevin Durant: Growing Spiritually (photo)">
 										</div>
 									</div>
-										<ul class="grid__item  two-thirds  block-list  push-half--bottom">
+										<ul class="grid__item  block-list">
 											<h4 class="push-fourth--bottom">Athletes</h4>
-										<li>
-											<a href="#">Kevin Durant: Growing Spiritually</a>											
-										</li>
-										<li>
-											<a href="#">Tyler Zeller: From Tournament to NBA</a>											
-										</li>
-										<li>
-											<a href="#">Seahawks' Maragos: Downward Spiral Led Me to Christ</a>											
-										</li>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</ul>
 								</li>
-								-->
+								
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
+										<div class="action-icons">
+											<img src="{{ site.root }}assets/images/cru-icon-sports.svg" alt="Kevin Durant: Growing Spiritually (photo)">
+										</div>
+									</div>
+										<ul class="grid__item  block-list">
+											<h4 class="push-fourth--bottom">Athletes</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</ul>
+								</li>
+								
+								<li class="grid__item  desk--one-third  color-white  push-half--bottom  soft-half">
+									<div class="grid__item  text--center">
+										<div class="action-icons">
+											<img src="{{ site.root }}assets/images/cru-icon-sports.svg" alt="Kevin Durant: Growing Spiritually (photo)">
+										</div>
+									</div>
+										<ul class="grid__item  block-list">
+											<h4 class="push-fourth--bottom">Athletes</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</ul>
+								</li>
+								
 							</ul>
 					</div>
+					
+					
 					<div class="color-white  soft">
 						<h3  class="text--center  flush--bottom">Get Started</h3>
 						<hr class="section-divider">
+						
+						<div class="grid  button-group">
+							<div class="grid__item  desk--one-half">
+								<button class="button  button--primary  button--full">Locate a U.S. Campus Ministry</button>
+							</div>
+							<div class="grid__item  desk--one-half">
+								<button class="button  button--primary  button--full">Start a Personal Relationship with Jesus</button>							
+							</div>
+						</div>
+						
+						<div class="grid">
+							<div class="grid__item  desk--one-half">
+								<div class="grid">
+									
+									<div class="grid__item  desk--one-half">										
+										<ul class="block-list  push-half--bottom">
+											<h5 class="push-fourth--bottom">Ministries by Location</h4>
+											<li><a href="#">Africa</a></li>
+											<li><a href="#">Americas</a></li>
+											<li><a href="#">Asia</a></li>
+											<li><a href="#">Australia and Oceania</a></li>
+											<li><a href="#">Europe</a></li>											
+										</ul>
+										
+										<ul class="block-list">
+											<h5 class="push-fourth--bottom">Ministries by Interest</a></h4>
+											<li><a href="#">High School</a></li>
+											<li><a href="#">College</a></li>
+											<li><a href="#">Grad Students and Faculty</a></li>
+											<li><a href="#">Family</a></li>
+											<li><a href="#">Sports</a></li>	
+											<li><a href="#">Marketplace</a></li>																						
+										</ul>
+									</div>
+									
+									<div class="grid__item  desk--one-half">
+										<ul class="block-list">
+											<h5 class="push-fourth--bottom">Ministries by Name</a></h4>
+											<li><a href="#">Athletes in Action</a></li>
+											<li><a href="#">Campus</a></li>
+											<li><a href="#">Christian Embassy, United Nations</a></li>
+											<li><a href="#">Christian Embassy, D.C</a></li>
+											<li><a href="#">City</a></li>	
+											<li><a href="#">Cru Military</a></li>																						
+											<li><a href="#">Faculty and Graduates</a></li>																						
+											<li><a href="#">FamilyLife</a></li>											
+											<li><a href="#">Global Aid Network</a></li>											
+											<li><a href="#">High School</a></li>											
+											<li><a href="#">Inner City</a></li>											
+											<li><a href="#">The Impact Movement</a></li>	
+											<li><a href="#">The JESUS Film Project</a></li>	
+											<li><a href="#">Josh McDowell Ministry</a></li>	
+											<li><a href="#">Keynote</a></li>																					
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+							<div class="grid__item  desk--one-half">
+								<fb:like-box href="https://www.facebook.com/CruGlobal" width="450" show_faces="false" stream="true" header="false" border_color="white" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=116517098374395&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FCruGlobal&amp;locale=en_US&amp;sdk=joey&amp;show_faces=false&amp;stream=true&amp;width=450"><span  class="fb-feed" style="vertical-align: bottom; width: 100%; height: 395px;"><iframe name="f3292db77c" width="100%" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="http://www.facebook.com/plugins/like_box.php?app_id=116517098374395&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FwTH8U0osOYl.js%3Fversion%3D40%23cb%3Df3a68e0ba%26domain%3Dwww.cru.org%26origin%3Dhttp%253A%252F%252Fwww.cru.org%252Ff255a947c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FCruGlobal&amp;locale=en_US&amp;sdk=joey&amp;show_faces=false&amp;stream=true&amp;width=450" class="" style="border: none; visibility: visible; width: 100%; height: 395px;"></iframe></span></fb:like-box>
+							</div>
+						</div>
+						
+						
 					</div>
 
 				</div>
@@ -363,7 +459,7 @@ page-class: page--home
 		<nav id="off-canvas" class="js-off-canvas">
 			<div class="site-nav--off-canvas  hard">
 				<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
-				<ol class="nav  nav--stacked  flush">
+				<ol class="nav  nav--stacked">
 					<li>
 						<form class="site-search  push-half--bottom">
 							<input type="search"  class="search  text-input"></input>

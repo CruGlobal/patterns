@@ -2,16 +2,16 @@
     $FOOTER
 \*------------------------------------*/
 .global-footer {
-	margin-top: 100px;
-	
+	@include rem-calc(margin-top, 100px);	
 	.section-divider{
 		border-color: $color-gold;
 	}
 	> nav{
 		color: white;
 		width: 100%;
-		padding-bottom:1.25rem;
 		text-align: center;
+		
+		@include rem-calc(padding-bottom, $base-line-height);	
 		
 		ul{
 			text-align: center;
@@ -26,8 +26,7 @@
 	
 	.copy{
 		text-align: center;
-		
+	
 		@include rem-calc(padding-bottom, $base-line-height);	
-		
 	}
 }

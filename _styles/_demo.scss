@@ -141,12 +141,55 @@ code{
 	}
 	
 	.one-third{
-		@extend %grid-demo;	
-		
+		@extend %grid-demo;			
+	}
+	
+	.one-quarter{
+		@extend %grid-demo;			
 	}
 	
 	span{
 		display: inline-block;
 		line-height: 80px;
+	}
+}
+
+.demo-article-nav{
+	position: fixed;
+	bottom: -2px;
+	left: -2px;
+	z-index: 10;
+	
+	display: inline-block;
+	border: none;
+	margin: 0;
+	padding: 0.4em 0.5em 0.3em 0.5em;
+	min-height: 35px;
+	
+	background-image: none;
+	background-color: #eee;	
+	opacity: 0.8;
+	border-radius: 0;
+	
+	font-size: 0.85em;
+	
+	transition: 0.2s;
+	
+	a{
+		color: black;
+	}
+}
+
+.site--select{
+	@extend .demo-article-nav;
+	
+	left: auto;
+	right: -2px;
+	width: auto;
+	
+	@include vendor(appearance, none);
+	
+	option{
+		font-size: 85%;
 	}
 }
