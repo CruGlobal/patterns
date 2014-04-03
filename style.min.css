@@ -818,6 +818,21 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 
 .ms0 { margin-right: 0 !important; margin-left: 0 !important; }
 
+/** Add paddings. */
+.p { padding: 33px !important; }
+
+.pt { padding-top: 33px !important; }
+
+.pr { padding-right: 33px !important; }
+
+.pb { padding-bottom: 33px !important; }
+
+.pl { padding-left: 33px !important; }
+
+.pe { padding-top: 33px !important; padding-bottom: 33px !important; }
+
+.ps { padding-right: 33px !important; padding-left: 33px !important; }
+
 /*------------------------------------*\ $HELPER
 \*------------------------------------*/
 /** A series of helper classes to use arbitrarily. Only use a helper class if an element/component doesn’t already have a class to which you could apply this styling, e.g. if you need to float `.main-nav` left then add `float:left;` to that ruleset as opposed to adding the `.float--left` class to the markup.  A lot of these classes carry `!important` as you will always want them to win out over other selectors. */
@@ -843,6 +858,23 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 .weight--normal, h4, .h4, h5, .h5 { font-weight: 400 !important; }
 
 .weight--semibold, h6, .h6 { font-weight: 600 !important; }
+
+/** View helpers */
+.overflow--hide { overflow: hidden; }
+
+.overflow--show { overflow: visible; }
+
+/** Positioning */
+.position--absolute { position: absolute; }
+
+.position--relative { position: relative; }
+
+.position--fixed { position: fixed; }
+
+/** Content Alignment */
+.center-block, .centered { margin-left: auto; margin-right: auto; }
+
+.center-block { width: 100%; text-align: center; }
 
 /** Pull items full width of `.island` parents. */
 .full-bleed { margin-right: -33px !important; margin-left: -33px !important; }
@@ -1148,6 +1180,8 @@ tbody tr { border-bottom: 1px solid #e9e9e9; }
 .button--unstyled:link:hover, .button--unstyled:visited:hover, .button--unstyled:hover:hover, .button--unstyled:focus:hover, .button--unstyled:active:hover, input.button--unstyled:link:hover, input.button--unstyled:visited:hover, input.button--unstyled:hover:hover, input.button--unstyled:focus:hover, input.button--unstyled:active:hover { color: #353535; }
 
 .button--full { width: 100%; }
+
+.button--icon { background: transparent; border: none; }
 
 abbr[title="required"], abbr[title="Required"] { color: #d95c5c; border-bottom: none; }
 
