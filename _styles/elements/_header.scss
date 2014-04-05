@@ -4,12 +4,6 @@
 
 $link-height: 36px;
 
-
-
-.dropdown{
-	display: none;
-}
-
 .preload{
 	display: none;
 }
@@ -83,67 +77,142 @@ $link-height: 36px;
 	
 	.navigation{
 		@extend %inline-block;
-		position: relative;
-		float: right;
-		width: 85%;
-		height: $header-height - 3px;
+		@extend %position--fixed;
+		@extend %full-height;
 		
+		top: 0;
+		right: -100%;
+		z-index: 1;
+		
+		float: right;
+		width: 75%;
+		
+		background-color: #494c49;
+		border-top: 3px solid;
+		border-color: #f9b625;
+		
+		@include mq(980px) {
+			%relative{ position: relative;}
+			
+			@extend %relative;
+			
+			height: $header-height - 3px;
+			
+			background-color: transparent;
+			z-index: 3;
+			right: 0;
+			
+		}
+		
+		@include mq(980px, max) {
+			overflow: scroll;
+		}
+		
+	}
+	
+	.js-slide .js-navigation{
+		right: 0;
 	}
 	
 		.site-nav{
 			@extend %flush--bottom;
 			
-			position: absolute;
-			bottom: 0;
+			@include mq(980px) {
+				position: absolute;
+				bottom: 0;
 			
 			
-			float: right;
-			vertical-align: middle;
-			height: $link-height;
-			width: 100%;
-			text-align: right;
+				float: right;
+				vertical-align: middle;
+				height: $link-height;
+				width: 100%;
+				text-align: right;
+			}
 			
 			@include mq(980px, max) {
-				display: none;
+				width: 100%;
 			}
+			
+			& > .nav__item{
+				@include mq(980px, max) {
+					border-bottom: 0.0625em solid #262728;
+					display: block;
+				}
+				
+				& > a{
+					@include mq(980px, max) {
+						display: block;
+					}
+				}
+			}
+			
 		}
 	
 		.right-nav{			
-			width: auto;
-			float: right;
-			vertical-align: middle;
+			@include mq(980px) {
+				width: auto;
+				float: right;
+				vertical-align: middle;
 			
-			text-align: right;
-			line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
+				text-align: right;
+				line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
+			}
 			
 			@include mq(980px, max) {
-				display: none;
+				width: 100%;
 			}
 			
 			.search__options{
 				display: none;
 			}
 			
+			& > .nav__item{
+				@include mq(980px, max) {
+					border-bottom: 0.0625em solid #262728;
+					display: block;
+				}
+				
+				& > a{
+					@include mq(980px, max) {
+						display: block;
+					}
+				}
+			}	
 		}
 		
-			.nav-link{
-				display: inline-block;
-				padding: 0 18px;
-				color: #3a3a3a;
-				font-weight: 400;
-				font-size: 15px;
-				letter-spacing: 0.9px;
+			.nav__item{
+			}
+	
+		
+			.nav-link{	
+				max-height: 100%;	
 				height: $link-height;
 				line-height: $link-height;
-				max-height: 100%;
-				vertical-align: middle;
+					
+				font-weight: 400;
+				font-size: 15px;
+				padding: 0 18px;
+				letter-spacing: 0.9px;
 
-				@include vendor(transition, all 0.25s ease-in-out);
-			
-				&:hover{
-					background-color: #f6f6f6;
-					text-decoration: none;
+		
+				color: $color-white;
+				
+				&:hover {
 					color: $color-gold;
+					text-decoration: none;
+					background-color: #262728;
+				}
+				
+				@include mq(980px) {
+					display: inline-block;
+					color: #3a3a3a;
+					vertical-align: middle;
+					
+					@include vendor(transition, all 0.25s ease-in-out);
+			
+					&:hover{
+						background-color: #f6f6f6;
+					}
 				}
 			}
 			
@@ -154,6 +223,7 @@ $link-height: 36px;
 			
 			.topbar-toggle{
 				text-transform: uppercase;
+				right: 0;
 				
 				@include font-size(19.2px, false);
 								
@@ -173,6 +243,7 @@ $link-height: 36px;
 			
 			.topbar-open{
 				float: right;
+				color: #3a3a3a;
 				
 				@include mq(981px){
 					display: none;
@@ -193,6 +264,10 @@ $link-height: 36px;
 				
 				&:hover{
 					text-decoration: none;
+				}
+				
+				@include mq(980px) {
+					display: none;
 				}
 			}
 
