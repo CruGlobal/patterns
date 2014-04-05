@@ -2,41 +2,44 @@
 	position: relative;
 	
 	&:hover{
-		> .dropdown{		
-			height: auto;
-			opacity: 1;
-			max-height: 100%;
-			overflow: visible;
-			
-		  	@include vendor(transition, all 0.3s 0.2s ease );
-			
-		    &:after {
-				opacity: 1;
-				
-			  	@include vendor(transition, all 0.2s 0.2s ease );
-		    }
-		}
-	}
-}
-
-.has-dropdown--sub{
-	> .dropdown{
-		background-color: $color-white;
-		
-	}
-	&:hover{
 		> .dropdown{
-			height: auto;
-			opacity: 1;
-			max-height: 100%;
+			@include mq(980px) {
+				height: auto;
+				opacity: 1;
+				max-height: 100%;
+				overflow: visible;
+			
+			  	@include vendor(transition, all 0.3s 0.2s ease );
+			}		
 		}
+		
+	    &:after {
+			@include mq(980px) {				
+				opacity: 1;
+			
+			  	@include vendor(transition, all 0.2s 0.2s ease );
+			}
+	    }
 	}
+	
+    &:after{
+  		content:' ';
+    	width: 0; 
+    	height: 0; 
+    	border-left: 6px solid transparent;
+    	border-right: 6px solid transparent;
+    	border-bottom: 6px solid $color-gray;
+    	position: absolute;
+    	left: 44%;
+    	bottom: 0px;
+		opacity: 0;
+    }
 }
 
 	.dropdown{
-		left: 0;
+		@extend %ps;
+		overflow: hidden;
 		background-color: #f6f6f6;
-		color: #ffffff;
 		max-height: 0;
 		height: 0;
 		opacity: 0;
@@ -45,23 +48,38 @@
 		/* Hover Off */
 	  	@include vendor(transition, opacity 0s 0.2s ease-out );
 		@include clearfix();
-	
-	    &:after{
-	  		content:' ';
-	    	width: 0; 
-	    	height: 0; 
-	    	border-left: 6px solid transparent;
-	    	border-right: 6px solid transparent;
-	    	border-bottom: 6px solid $color-gray;
-	    	position: absolute;
-	    	left: 44%;
-	    	top: 0px;
-			opacity: 0;
-	    }
+		
+		
+		@include mq(980px) {
+			left: 0;
+		}
+		
+		@include mq(980px, max) { 
+			position: relative;
+		}
 	}
 	
 	.dropdown__item{
-		@extend %ps--;
 		float: left;
+		
+		@include mq(980px) {
+			border-bottom: 0.0625em solid #262728;
+			display: block;
+		}
+		
+		& > a{
+			display: block;
+			height: auto;
+			@extend .nav-link;
+			color: $base-text-color;
+			
+			&:hover{
+				background-color: transparent;
+			}
+			
+			@include mq(980px) {
+				display: inline-block;
+			}
+		}
 	}
 
