@@ -5,7 +5,7 @@
 .js-slide{
 	.js-container{
 		@include mq(540px, max) {
-			right: 75%;
+			right: 70%;
 		}
 		
 		@include mq(541px) {
@@ -28,37 +28,47 @@
 	width: 100%;
 	
 	z-index: 2;
-	background-color: white;
 	
 	box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
 	
-	@include vendor(transition, all 0.25s ease);
+	@include vendor(transition, right, width 400ms ease);
+	@include vendor(transition-property, right, width 400ms ease);
+	
 }
 
 
 
-.js-off-canvas{
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 1;
-	
-	width: 15.5em;
-	overflow: scroll;
-	height: 100%;
-	
-	background-color: #494c49;
-	border-top: 3px solid;
-	border-color: $color-gold;
+.js-navigation{
+	//@include vendor(transition, all 400ms ease);
 	
 	@include mq(540px, max) {
-		width: 75%;
+		width: 70%;
 	}
 	
 	@include mq(541px) {
 		@include mq(980px, max) {
 			width: 18.75em;
 		}
+	}
+	
+	@include mq(980px, max) {
+		position: fixed;
+		right: -100%;
+		top: 0;
+		z-index: 1;
+		
+		overflow: scroll;
+		height: 100%;		
+		
+		background-color: #494c49;
+		border-top: 3px solid;
+		border-color: $color-gold;
+		padding-top: 69px;
+	}
+	
+	@include mq(980px) {
+		right: 0;
+		background-color: transparent;
 	}
 }
 
