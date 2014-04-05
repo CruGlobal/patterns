@@ -49,12 +49,12 @@ page-class: page--static
 						<ul class="nav">
 							
 							<!-- The Sub-dropdown: if the li has a dropdown add the .has-dropdown and .js-has-drowpdown classes;
-									 Sub-dropdowns are position absolute
+									 Sub-dropdown .dropdown__items are .position--relative
 							-->
-							<li class="dropdown__item  has-dropdown--sub  js-has-dropdown--sub  position--absolute">
+							<li class="dropdown__item  has-dropdown--sub  js-has-dropdown--sub  position--relative">
 								<a href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-								
-								<ul class="dropdown  overflow--hidden  text--left  bare-list">
+								<!-- Sub-dropdown > dropdowns are .position--absolute  -->
+								<ul class="dropdown  overflow--hidden  position--fixed  text--left  bare-list">
 										
 										<li class="dropdown__item">
 			                <h4><a href="http://www.cru.org/training-and-growth/classics/10-basic-steps/index.htm">10 Basic Steps to Christian Maturity</a></h4>					

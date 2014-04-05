@@ -20,10 +20,15 @@
 }
 
 .has-dropdown--sub{
+	> .dropdown{
+		background-color: $color-white;
+		
+	}
 	&:hover{
 		> .dropdown{
-			width: auto;
-			background: $color-white;
+			height: auto;
+			opacity: 1;
+			max-height: 100%;
 		}
 	}
 }

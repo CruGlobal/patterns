@@ -1044,14 +1044,14 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 \*------------------------------------*/
 .preload { display: none; }
 
-.site-header { position: fixed; top: 0; z-index: 505; overflow: hidden; width: 100%; height: 100%; max-height: 73px; background-color: white; border-top-width: 3px; border-top-style: solid; border-top-color: #f9b625; }
+.site-header { position: fixed; top: 0; z-index: 505; overflow: hidden; width: 100%; height: 73px; background-color: white; border-top-width: 3px; border-top-style: solid; border-top-color: #f9b625; }
 
 .navigation-wrapper { position: absolute; top: -1px; z-index: 500; overflow: hidden; width: 100%; height: 73px; max-height: 100%; background: #ffffff; -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); }
 
 .site-logo { float: left; width: 10%; height: 70px; padding-left: 12px; padding-right: 12px; line-height: 70px; vertical-align: middle; text-align: center; }
 .site-logo a { height: 68px; overflow: hidden; vertical-align: middle; width: 74px; height: 54px; background: url("assets/images/cru-logo.png"); background-image: url("assets/images/cru-logo.svg"); background-repeat: no-repeat; background-position: top center; background-size: contain; }
 
-.navigation { top: 0; right: -100%; z-index: 1; float: right; width: 75%; background-color: #494c49; border-top: 3px solid; border-color: #f9b625; }
+.navigation { top: 0; right: -100%; z-index: 1; float: right; width: 85%; background-color: #494c49; border-top: 3px solid; border-color: #f9b625; }
 @media screen and (min-width: 61.25em) { .navigation { height: 70px; background-color: transparent; z-index: 3; right: 0; }
   .navigation .navigation { position: relative; } }
 @media screen and (max-width: 61.25em) { .navigation { overflow: scroll; } }
@@ -1140,7 +1140,8 @@ button[disabled], button[disabled]:hover, button[disabled]:active, button[disabl
 .has-dropdown:hover > .dropdown { height: auto; opacity: 1; max-height: 100%; overflow: visible; -webkit-transition: all 0.3s 0.2s ease; -moz-transition: all 0.3s 0.2s ease; -ms-transition: all 0.3s 0.2s ease; -o-transition: all 0.3s 0.2s ease; transition: all 0.3s 0.2s ease; }
 .has-dropdown:hover > .dropdown:after { opacity: 1; -webkit-transition: all 0.2s 0.2s ease; -moz-transition: all 0.2s 0.2s ease; -ms-transition: all 0.2s 0.2s ease; -o-transition: all 0.2s 0.2s ease; transition: all 0.2s 0.2s ease; }
 
-.has-dropdown--sub:hover > .dropdown { width: auto; background: white; }
+.has-dropdown--sub > .dropdown { background-color: white; }
+.has-dropdown--sub:hover > .dropdown { height: auto; opacity: 1; max-height: 100%; }
 
 .dropdown { left: 0; background-color: #f6f6f6; color: #ffffff; max-height: 0; height: 0; opacity: 0; -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1); /* Hover Off */ -webkit-transition: opacity 0s 0.2s ease-out; -moz-transition: opacity 0s 0.2s ease-out; -ms-transition: opacity 0s 0.2s ease-out; -o-transition: opacity 0s 0.2s ease-out; transition: opacity 0s 0.2s ease-out; }
 .dropdown:before, .dropdown:after { content: " "; /* 1 */ display: table; /* 2 */ }
