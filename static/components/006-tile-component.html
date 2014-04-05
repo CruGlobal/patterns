@@ -3,14 +3,74 @@ page-class: page--static
 ---
 {% include head.html %}
 
+<div class="layout--wide">
 
 <div class="grid">
-  <div class="grid__item one-whole desk--one-third">
-    <img class="image--circle" src="http://baconmockup.com/200/200" alt="">
-    <h4>Prosciutto shank porchetta</h4>
-    <p>Bacon ipsum dolor sit amet ham hock shank meatball prosciutto venison chuck hamburger t-bone bresaola, strip steak cow chicken landjaeger. Hamburger pork chop strip steak fatback. Prosciutto shank porchetta tail pork belly, capicola pork meatloaf cow tri-tip frankfurter.</p>
-    <a class="button" href="/assets/images/cru-icon-families.svg" alt="">Button Text</a>
+  <div class="grid__item one-whole desk--one-third mb-"> <!-- This grid__item has a centered circle image and button. The text is left justified. -->
+    <div class="text--center color-white">
+      <div class="center-block">
+        <div class="mb- mask--circle">
+          <img src="http://baconmockup.com/200/200" alt="">
+        </div>
+      </div>
+      <h4 class="mb- text--center">Prosciutto shank porchetta</h4>
+      <p class="text--left mb-">Bacon ipsum dolor sit amet ham hock shank meatball prosciutto venison chuck hamburger t-bone .</p>
+      <a class="button mb-" href="/assets/images/cru-icon-families.svg" alt="">Button Text</a>
+    </div>
+  </div><!--grid__item end-->
+
+  <div class="grid__item one-whole desk--two-thirds mb-"> <!-- This grid__item has a centered circle image and button. The text is left justified. -->
+    <div class="p- text--center color-white">
+      <div class="mb- mask--circle">
+        <img class="image--circle one-whole center-block" src="http://baconmockup.com/200/200" alt="">
+      </div>
+      <h4 class="mb- text--center">Prosciutto shank porchetta</h4>
+      <p class="text--left mb-">Bacon ipsum dolor sit amet ham hock shank meatball prosciutto venison chuck hamburger t-bone bresaola, strip steak cow chicken landjaeger. Hamburger pork chop strip steak fatback. Prosciutto shank porchetta tail pork belly, capicola pork meatloaf cow tri-tip frankfurter.</p>
+      <a class="button mb-" href="/assets/images/cru-icon-families.svg" alt="">Button Text</a>
+    </div>
+  </div><!--grid__item end-->
+</div>
+
+
+
+<div class="grid">  <!--Everything is centered and one-whole width-->
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <h4>This is an H4 Kid.</h4>
+    <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+    <a class="button" href="#">Lets try for a long form button</a>
   </div>
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+    <a class="button" href="#">Lets try for a long form button</a>
+  </div>
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <h4>This is an H4 Kid.</h4>
+    <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+  </div>
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <h4>This is an H4 Kid. In it's very long form. Seriously.</h4>
+    <a class="button" href="#">Lets try for a long form button</a>
+  </div>
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <h4>This is an H4 Kid.</h4>
+    <img class="mb-" src="http://baconmockup.com/600/200" alt="">
+    <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+    <a class="button" href="#">Finish the story</a>
+  </div>
+  <div class="grid__item one-whole center-block color-white p mt mb">
+    <h4>This is an H4 Kid.</h4>
+    <div class="mask--circle">
+      <img class="image--circle mb-" src="http://baconmockup.com/200/200" alt="">
+    </div>
+    <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+    <a class="button" href="#">Finish the story</a>
+  </div>
+</div>
+
+<div class="grid">
+
+</div>
 
 
 </div>
+
