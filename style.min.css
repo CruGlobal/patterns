@@ -3070,24 +3070,24 @@ input[disabled]:focus,
 /**
  * Take it from here, cap’n... Begin importing your stuff here.
  */
-.page-container {
+.page-content {
   margin-top: 70px;
   margin-top: 3.68421rem;
   padding-top: 38px;
   padding-top: 2rem; }
 
-.page-content, .single-column {
+.single-column {
   max-width: 800px;
   width: auto;
   margin-left: 20px;
   margin-right: 20px; }
   @media screen and (min-width: 42.5em) {
-    .page-content, .single-column {
+    .single-column {
       width: 640px;
       margin-left: auto;
       margin-right: auto; } }
   @media screen and (min-width: 50em) {
-    .page-content, .single-column {
+    .single-column {
       width: 700px; } }
 
 @media screen and (max-width: 31.25em) {
