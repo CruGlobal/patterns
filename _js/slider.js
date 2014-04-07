@@ -24,12 +24,12 @@ $(document).ready(function(){
 			if(window_focus){
 				sliding = true;
 				$('.slider').removeClass('slider__reverse');
-				$('.js-last-up').addClass('js-off-left').removeClass('js-last-up');
-				$('.js-at-bat').addClass('js-last-up').removeClass('js-at-bat');
-				$('.js-on-deck').addClass('js-at-bat').removeClass('js-on-deck');
-				$('.js-in-the-hole').addClass('js-on-deck').removeClass('js-in-the-hole');	
+				$('.js-slider4').addClass('js-off-left').removeClass('js-slider4');
+				$('.js-slider1').addClass('js-slider4').removeClass('js-js-slider3');
+				$('.js-slider2').addClass('js-slider1').removeClass('js-js-slider2');
+				$('.js-slider3').addClass('js-slider2').removeClass('js-slider3');	
 				$('.js-off-left').addClass('js-off-right').removeClass('js-off-left');
-				$('.js-off-right').addClass('js-in-the-hole').removeClass('js-off-right');
+				$('.js-off-right').addClass('js-slider4').removeClass('js-off-right');
 				setTimeout(function(){sliding=false}, 1200);
 			}
 		}
