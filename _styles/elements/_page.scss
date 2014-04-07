@@ -1,9 +1,9 @@
-.page-container{	
+.page-content{	
 	@include rem(margin-top, 70px);
 	@include rem(padding-top, 38px);
 }
 
-.page-content, .single-column{
+.single-column{
 	max-width: 800px;
 	width: auto;
 	margin-left: 20px;
