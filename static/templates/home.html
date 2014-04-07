@@ -1,3 +1,6 @@
+---
+page-class: page--static
+---
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -35,11 +38,11 @@
   </script>
 
 
-  <link rel="stylesheet" href="/style.min.css">	
+  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
 	
 	
   <link rel="shortcut icon" href="/icon.png">
-  <meta name="apple-mobile-web-app-title" content="csswizardry">
+  <meta name="apple-mobile-web-app-title" content="cru.org">
   <meta name="description" content="Cru helps people in every segment of society -- from students to athletes to families to business professionals -- truly follow Jesus Christ.">	
 	
 	
@@ -50,6 +53,8 @@
 <body class="page  page--home"></body>
 
 	<div id="js-container"  class="js-container">
+		
+		<!-- The primary header -->
 		<header class="site-header"  role="banner">
 			<div class="navigation-wrapper">
 				<hgroup class="title-group  site-logo">
@@ -62,17 +67,118 @@
 				</a>
 			</div>
 		</header>
-	</div>
+		<!-- End primary header -->
+		
+		<!-- Slider Component -->
+		<div class="content-slider  position--relative  overflow--hide  mb">
 	
+			<div class="slider  centered  position--relative">
+				<!-- .mask -->
+				<div class="slider__mask  overflow--hide">
+			    <ul class="bare-list">
 	
+			      <li class="slider__item  position--absolute  full-height">
+			        <a class="position--relative  display--block  full-height" href="#camera">
+			          <div class="full-height  full-width">
+									<!-- This is the background image style that will be changed based on the article image -->
+			            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_01.jpg')"></div>
+			          </div>
+			          <div class="article-details  position--absolute  p0">
+									<h3 class="affordance  display--block  m0">6 Things Every Christian Should Do Superbowl Weekend</h3>
+			          </div>
+			        </a>
+			      </li>
 	
-	
-	
+			      <li class="slider__item  position--absolute  full-height">
+			        <a class="position--relative  display--block  full-height"  href="#birds">
+			          <div class="full-height  full-width">
+									<!-- This is the background image style that will be changed based on the article image -->
+			            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_02.jpg')"></div>
+			          </div>
+			          <div class="article-details  position--absolute  p0">
+			             	<h3 class="affordance  display--block  m0">Emma Had a Burden of Guilt and a Masking Smile</h3>
+			          </div>
+			        </a>
 
-
-
-
-	<!-- This is at the very bottom of the page -->
+			      </li>
+			      <li class="slider__item  position--absolute  full-height">
+			        <a class="position--relative  display--block  full-height" href="#train">
+			          <div class="full-height  full-width">
+									<!-- This is the background image style that will be changed based on the article image -->
+			            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_03.jpg')"></div>
+			          </div>
+			          <div class="article-details  position--absolute  p0">
+			             	<h3 class="affordance  display--block  m0">Pre-cancer Susie's Journey of Doubt Before a Brain Tumor</h3>
+			          </div>
+			        </a>
+			      </li>
+			      <li class="slider__item  position--absolute  full-height">
+			        <a class="position--relative  display--block  full-height" href="#tea">
+			          <div class="full-height  full-width">
+									<!-- This is the background image style that will be changed based on the article image -->
+			            <div class="background-image" style="background-image: url('http://cruglobal.github.io/patterns/assets/images/cru640x360_story_04.jpg')"></div>
+			          </div>
+			          <div class="article-details  position--absolute  p0">
+			             	<h3 class="affordance  display--block  m0">Yes, It is Possible to Have a Long-Distance Ministry</h3>
+			          </div>
+			        </a>
+			      </li>
+			    </ul>
+			  </div>
+				<!-- end .mask -->
+			</div>
+			<a class="slider-control  slider-control__prev  position--absolute">
+						<span class="slider-control--btn  position--absolute">
+							<i class="icon-left-arrow"></i>
+						</span>
+		  </a>
+			<a class="slider-control  slider-control__next  position--absolute">
+						<span class="slider-control--btn  position--absolute">
+							<i class="icon-right-arrow"></i>
+						</span>
+		  </a>
+		</div>
+		<!-- End slider component -->
+		
+		
+		
+		
+		
+		
+		<!-- Footer Component -->
+		<footer class="global-footer">	  
+			<hr class="section-divider">	  
+			<nav role="supplementary">		    
+				<ul class="nav  flush--bottom">	      
+					<li>	       
+						<a href="/">Contact Us</a>	      
+					</li>	      
+					<li>	       
+					  <a href="/">RSS Feed</a>	      
+					</li>	      
+					<li>	        
+						<a href="/">Press Room</a>	      
+					</li>	      
+					<li>	        
+						<a href="/">Careers</a>	      
+					</li>	      
+					<li>	        
+						<a href="/">Terms of Use</a>	      
+					</li>	      
+					<li>	        
+						<a href="/">Privary Policy</a>	     
+					</li>	    
+				</ul>	  
+			</nav>	  
+			<div class="copy">	    
+				<small>©1994-2014 Cru. All Rights Reserved.</small>	  
+			</div>	
+		</footer>
+		<!-- End footer component -->
+	</div><!-- End .js-container -->
+	
+	
+	<!-- Navigation for off cnavas and primary navigaiton: This is at the very bottom of the page -->
 	<nav  id="off-canvas" class="navigation  js-navigation">			
 		<ul class="nav  right-nav  flush--bottom">
 			<li class="nav__item">
@@ -201,43 +307,13 @@
 		</ul>
 		<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
 	</nav>
-	
-	<footer class="global-footer">
-	  <hr class="section-divider">
-
-	  <nav role="supplementary">	
-	    <ul class="nav  flush--bottom">
-	      <li>
-	        <a href="/">Contact Us</a>
-	      </li>
-	      <li>
-	        <a href="/">RSS Feed</a>
-	      </li>
-	      <li>
-	        <a href="/">Press Room</a>
-	      </li>
-	      <li>
-	        <a href="/">Careers</a>
-	      </li>
-	      <li>
-	        <a href="/">Terms of Use</a>
-	      </li>
-	      <li>
-	        <a href="/">Privary Policy</a>
-	      </li>
-	    </ul>
-	  </nav>
-	  <div class="copy">
-	    <small>©1994-2014 Cru. All Rights Reserved.</small>
-	  </div>
-	</footer>
 
 	        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	        <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
 		
 			<script src="/main.min.js"></script>
 		
-			<script src="{{ site.projecturl }}main.min.js"></script>
+			<script src="{{ site.root }}main.min.js"></script>
 		
 	        <script>
 	            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
