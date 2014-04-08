@@ -26,7 +26,7 @@
 	     * Pulls the caption to the left of the image for wide screens
 	     * and centers it for smaller screens.
 		 */
-		.post-image__caption{
+		.image__caption{
 			position: relative;
 			width: 100%;
 			text-align: center;
@@ -88,6 +88,18 @@
         margin-left: -100px;
         margin-right: -100px;
     }
+    
+	& > .image__caption{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		left: 0;
+		margin: 10px auto 0;
+        
+        &:before{
+            content:none;
+        }
+	}
 }
 
 /*section*/.image--full{
