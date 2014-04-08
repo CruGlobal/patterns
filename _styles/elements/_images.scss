@@ -1,0 +1,20 @@
+.cover-image-mask{
+    @extend %full-width;
+    @extend %full-height;
+    
+    display: table;
+}
+
+    .cover-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    
+    }

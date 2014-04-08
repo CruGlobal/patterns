@@ -43,3 +43,20 @@
 	padding: 0 20px;
 }
 
+
+.layout-background-fill{
+    @extend %position--relative;
+    @extend %full-width;
+    @extend %full-height;
+    
+    display: table;
+    
+    max-height: 800px;
+    max-width: 100%;
+    margin-top: 0;
+   
+    background-color: #191918;
+    background-position: center;
+    
+    @include rem-calc(top, -38px);
+}
