@@ -1,3 +1,10 @@
+.post-article figure{
+    @extend %cf;
+    @extend %position--relative;
+    outline: 0;
+}
+
+
 /**
  * The main image in a post. This is a wrapper class with the image 
  * as a child
@@ -53,3 +60,36 @@
 			font-size: 80%;
 			color: #666062;
 		}
+      
+/*figure*/.image--inset__left{
+    width: 100%;
+    clear: both;
+    
+    @include mq(981px) {
+        width: 50%;
+    
+        float: left;
+        margin-top: 10px;
+        margin-right: $base-spacing-unit;
+        margin-bottom: 10px;   
+    }
+}      
+        
+/*figure*/.image--outset__left{
+    @extend .image--inset__left;
+    @include mq(981px) {
+        width: 75%;
+        margin-left: -100px;
+    }
+}
+
+/*figure*/.image--outset__center{
+    @include mq(981px) {
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+}
+
+/*section*/.image--full{
+    
+}
