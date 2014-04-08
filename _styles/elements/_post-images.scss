@@ -3,23 +3,6 @@
     @extend %position--relative;
     outline: 0;
 }
-
-
-/**
- * The main image in a post. This is a wrapper class with the image 
- * as a child
- */
-.post__image--primary{
-	position: relative;
-}
-	/*
-	 * Force the main image to stetch full width to match the text.
-     * Since the posts will be narrow this will not mess up the 
-     * images.
-	 */
-	.post-image{
-		width: 100%;
-	}
 	
 		/** 
 		 * Main image captions. Place the .image-credit within this.
@@ -32,26 +15,6 @@
 			text-align: center;
 			left: 0;
 			margin-top: 10px;
-	
-			@include mq(1164px) {
-				position: absolute;
-				left: -172px;
-				width: 150px;
-				top: 0;
-				text-align: right;
-				margin-top: 0;
-				line-height: 1.6;
-		
-				&:before{
-					width: 25%;
-					margin-left: 75%;
-					border-top: 1px solid #dddddd;
-					display: block;
-					content: "";
-					margin-bottom: 10px;
-				}
-			}
-	
 		}
 		
 		.image-credit{
@@ -73,14 +36,64 @@
         margin-right: $base-spacing-unit;
         margin-bottom: 10px;   
     }
+    
+	& > .image__caption{  
+    	@include mq(1164px) {
+    		position: absolute;
+    		left: -172px;
+    		width: 150px;
+    		top: 0;
+    		text-align: right;
+    		margin-top: 0;
+    		line-height: 1.6;
+
+    		&:before{
+    			width: 25%;
+    			margin-left: 75%;
+    			border-top: 1px solid #dddddd;
+    			display: block;
+    			content: "";
+    			margin-bottom: 10px;
+    		}
+    	}
+    }
+    
 }      
         
 /*figure*/.image--outset__left{
-    @extend .image--inset__left;
+    width: 100%;
+    clear: both;
+    
     @include mq(981px) {
+        float: left;
+        margin-top: 10px;
+        margin-right: $base-spacing-unit;
+        margin-bottom: 10px;  
         width: 75%;
         margin-left: -100px;
     }
+    
+	& > .image__caption{
+		@include mq(1300px) {
+			position: absolute;
+			left: -172px;
+			width: 150px;
+			top: 0;
+			text-align: right;
+			margin-top: 0;
+			line-height: 1.6;
+	
+			&:before{
+				width: 25%;
+				margin-left: 75%;
+				border-top: 1px solid #dddddd;
+				display: block;
+				content: "";
+				margin-bottom: 10px;
+			}
+		}
+	}
+    
 }
 
 /*figure*/.image--outset__center{
