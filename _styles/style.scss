@@ -26,21 +26,25 @@
  */
 @import "elements/mixins";
 @import "elements/functions";
+
+@import "elements/fonts";
+@import "elements/colors";
+@import "elements/text";
+
 @import "elements/page";
 @import "elements/header";
 @import "elements/off-canvas";
 @import "elements/dropdowns";
 @import "elements/post";
 @import "elements/post-images";
-@import "elements/fonts";
-@import "elements/social";
+@import "elements/social";  
 @import "elements/search";
-@import "elements/colors";
 @import "elements/tables";
 @import "elements/buttons";
-@import "elements/text";
 @import "elements/forms";
+
 @import "elements/video";
+
 @import "elements/footer";
 @import "elements/layouts";
 @import "elements/slider";
