@@ -3972,6 +3972,22 @@ q {
   text-align: center;
   left: 0;
   margin-top: 10px; }
+  @media screen and (min-width: 72.75em) {
+    .image__caption.default-view {
+      position: absolute;
+      left: -172px;
+      width: 150px;
+      top: 0;
+      text-align: right;
+      margin-top: 0;
+      line-height: 1.6; }
+      .image__caption.default-view:before {
+        width: 25%;
+        margin-left: 75%;
+        border-top: 1px solid #dddddd;
+        display: block;
+        content: "";
+        margin-bottom: 10px; } }
 
 .image-credit {
   display: block;
