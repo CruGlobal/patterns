@@ -91,7 +91,27 @@ $(document).ready(function(){
 		 $('.slider').addClass('slider__reverse');
  		  slideReverse();
 	 });
-	
-	
-});
 
+	 /*
+	  * Count the slides - debugging purposes only
+	  */
+		//var slide_count = ($( ".slider li" ).length);
+	  	//alert(slide_count);
+
+	 /*
+	  * Add slider# class to slides, starting with 1
+	  */
+
+	  $( ".slider ul li" ).addClass(function( index ) {
+			return "slider" + (index+1);
+	  });
+
+	 /*
+	  * Add js-slider# class to slides, starting with 1
+	  */
+	  $( ".slider li" ).addClass(function( index ) {
+			return "js-slider" + (index+1);
+	  });
+
+
+});
