@@ -9,24 +9,22 @@ page-class: page--static
 
   -->
 
-
 <!--This ul is not part of the component but the wrapper it will be placed inside-->
 <ul class="nav">
 	
 	
 	<!-- The search will be wrapped in an li since it is apart of the navigation -->
-	<li class="spoken-form">
+	<li class="spoken-form  nav__item">
 	
 		<!--The search itself-->
-		<form class="primary-search">
+		<form class="primary-search"  method="post" onsubmit=""  action="#" name="search">
 		
 			<!-- Search input field -->
-			<input class="search-field  text-input"></input>
+			<input class="search-field  text-input" placeholder="Search" type="search" />
 		
 			<!-- Search icon -->
-			<button class="search-button  button--icon" type="submit">
-				<i class="icon-search"></i>
-			</button>
+			<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
+
 		
 			<!-- Dropdown open button -->
 			<button class="primary-search--options  button--icon">
@@ -47,7 +45,7 @@ page-class: page--static
 		<!-- end form.spoken-form -->
 	
 	</li>	
-	
+
 	
 </ul>
 
