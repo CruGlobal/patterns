@@ -57,7 +57,7 @@ $slider-height: 364px;
 
 }
 
-.slider1{
+.slider2{
   width: 63.6%;
   left: 1.6%;
   z-index: 1;
@@ -68,7 +68,7 @@ $slider-height: 364px;
   }
 }
 
-.slider2{
+.slider3{
   left: 67.8%;
 
   @include mq(980px, max) {
@@ -77,7 +77,7 @@ $slider-height: 364px;
   }
 }
 
-.slider3{
+.slider4{
   left: 100.85%;
 
   @include vendor(opacity, 0.3);
@@ -88,7 +88,7 @@ $slider-height: 364px;
   @include vendor(animation-delay, 0, 400ms);
 }
 
-.slider__reverse  .slider3{
+.slider__reverse  .slider4{
   @include vendor(animation, none);
   @include vendor(animation-name, none);
   @include vendor(transition-duration, 800ms);
@@ -98,7 +98,7 @@ $slider-height: 364px;
 
 
 
-.slider4{
+.slider1{
   left: -31.4%;
 
   @include vendor(opacity, 0.3);
@@ -112,7 +112,7 @@ $slider-height: 364px;
   }
 }
 
-.slider__reverse  .js-last-up{
+.slider__reverse  .slider1{
   @include vendor(transition, none);
   @include vendor(animation-name, sliderReverseBegin, sliderReverseEnd);
   @include vendor(animation-duration, 400ms);
@@ -168,7 +168,7 @@ $slider-height: 364px;
   
 }
 
-.js-slider1, .js-slider2{
+.slider2, .slider3{
   .article-details{
     bottom: 0;
     @include vendor(opacity, 1);
