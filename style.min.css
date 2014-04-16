@@ -1534,29 +1534,9 @@ input + .additional {
   margin: 0;
   /* [2] */
   padding: 0;
-  /* [2] */ }
-
-/**
- * 1. Cause columns to stack side-by-side.
- *    - Not implemented at the moment due to legacy support
- *
- * 2. Align columns to the tops of each other.
- * 3. Full-width unless told to behave otherwise.
- * 4. Space columns apart.
- * 5. Required to combine fluid widths and fixed gutters.
- */
-.grid__item {
-  float: left;
-  vertical-align: top;
   /* [2] */
-  width: 100%;
-  /* [3] */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  /* [5] */ }
+  margin-left: -33px;
+  /* [3] */ }
 
 /**
  * Reversed grids allow you to structure your source in the opposite order to
@@ -1602,6 +1582,48 @@ input + .additional {
 /**
  * Our regular, non-responsive width classes.
  */
+/**
+ * 1. Cause columns to stack side-by-side.
+ *    - Not implemented at the moment due to legacy support
+ *
+ * 2. Align columns to the tops of each other.
+ * 3. Space columns apart.
+ * 4. Required to combine fluid widths and fixed gutters.
+ */
+.one-whole, .one-half,
+.two-quarters,
+.three-sixths,
+.four-eighths,
+.five-tenths,
+.six-twelfths, .one-third,
+.two-sixths,
+.three-ninths,
+.four-twelfths, .two-thirds,
+.four-sixths,
+.six-ninths,
+.eight-twelfths, .one-quarter,
+.two-eighths,
+.three-twelfths, .three-quarters,
+.six-eighths,
+.nine-twelfths, .one-fifth,
+.two-tenths, .two-fifths,
+.four-tenths, .three-fifths,
+.six-tenths, .four-fifths,
+.eight-tenths, .one-sixth,
+.two-twelfths, .five-sixths,
+.ten-twelfths, .one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-ninth, .two-ninths, .four-ninths, .five-ninths, .seven-ninths, .eight-ninths, .one-tenth, .three-tenths, .seven-tenths, .nine-tenths, .one-twelfth, .five-twelfths, .seven-twelfths, .eleven-twelfths {
+  float: left;
+  vertical-align: top;
+  /* [2] */
+  padding-left: 33px;
+  /* [3] */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  /* [4] */ }
+
 /**
  * Whole
  */
@@ -1748,6 +1770,48 @@ input + .additional {
  */
 @media only screen and (max-width: 480px) {
   /**
+   * 1. Cause columns to stack side-by-side.
+   *    - Not implemented at the moment due to legacy support
+   *
+   * 2. Align columns to the tops of each other.
+   * 3. Space columns apart.
+   * 4. Required to combine fluid widths and fixed gutters.
+   */
+  .palm--one-whole, .palm--one-half,
+  .palm--two-quarters,
+  .palm--three-sixths,
+  .palm--four-eighths,
+  .palm--five-tenths,
+  .palm--six-twelfths, .palm--one-third,
+  .palm--two-sixths,
+  .palm--three-ninths,
+  .palm--four-twelfths, .palm--two-thirds,
+  .palm--four-sixths,
+  .palm--six-ninths,
+  .palm--eight-twelfths, .palm--one-quarter,
+  .palm--two-eighths,
+  .palm--three-twelfths, .palm--three-quarters,
+  .palm--six-eighths,
+  .palm--nine-twelfths, .palm--one-fifth,
+  .palm--two-tenths, .palm--two-fifths,
+  .palm--four-tenths, .palm--three-fifths,
+  .palm--six-tenths, .palm--four-fifths,
+  .palm--eight-tenths, .palm--one-sixth,
+  .palm--two-twelfths, .palm--five-sixths,
+  .palm--ten-twelfths, .palm--one-eighth, .palm--three-eighths, .palm--five-eighths, .palm--seven-eighths, .palm--one-ninth, .palm--two-ninths, .palm--four-ninths, .palm--five-ninths, .palm--seven-ninths, .palm--eight-ninths, .palm--one-tenth, .palm--three-tenths, .palm--seven-tenths, .palm--nine-tenths, .palm--one-twelfth, .palm--five-twelfths, .palm--seven-twelfths, .palm--eleven-twelfths {
+    float: left;
+    vertical-align: top;
+    /* [2] */
+    padding-left: 33px;
+    /* [3] */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* [4] */ }
+
+  /**
    * Whole
    */
   .palm--one-whole {
@@ -1888,6 +1952,48 @@ input + .additional {
   .palm--eleven-twelfths {
     width: 91.66667%; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * 1. Cause columns to stack side-by-side.
+   *    - Not implemented at the moment due to legacy support
+   *
+   * 2. Align columns to the tops of each other.
+   * 3. Space columns apart.
+   * 4. Required to combine fluid widths and fixed gutters.
+   */
+  .lap--one-whole, .lap--one-half,
+  .lap--two-quarters,
+  .lap--three-sixths,
+  .lap--four-eighths,
+  .lap--five-tenths,
+  .lap--six-twelfths, .lap--one-third,
+  .lap--two-sixths,
+  .lap--three-ninths,
+  .lap--four-twelfths, .lap--two-thirds,
+  .lap--four-sixths,
+  .lap--six-ninths,
+  .lap--eight-twelfths, .lap--one-quarter,
+  .lap--two-eighths,
+  .lap--three-twelfths, .lap--three-quarters,
+  .lap--six-eighths,
+  .lap--nine-twelfths, .lap--one-fifth,
+  .lap--two-tenths, .lap--two-fifths,
+  .lap--four-tenths, .lap--three-fifths,
+  .lap--six-tenths, .lap--four-fifths,
+  .lap--eight-tenths, .lap--one-sixth,
+  .lap--two-twelfths, .lap--five-sixths,
+  .lap--ten-twelfths, .lap--one-eighth, .lap--three-eighths, .lap--five-eighths, .lap--seven-eighths, .lap--one-ninth, .lap--two-ninths, .lap--four-ninths, .lap--five-ninths, .lap--seven-ninths, .lap--eight-ninths, .lap--one-tenth, .lap--three-tenths, .lap--seven-tenths, .lap--nine-tenths, .lap--one-twelfth, .lap--five-twelfths, .lap--seven-twelfths, .lap--eleven-twelfths {
+    float: left;
+    vertical-align: top;
+    /* [2] */
+    padding-left: 33px;
+    /* [3] */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* [4] */ }
+
   /**
    * Whole
    */
@@ -2030,6 +2136,48 @@ input + .additional {
     width: 91.66667%; } }
 @media only screen and (max-width: 980px) {
   /**
+   * 1. Cause columns to stack side-by-side.
+   *    - Not implemented at the moment due to legacy support
+   *
+   * 2. Align columns to the tops of each other.
+   * 3. Space columns apart.
+   * 4. Required to combine fluid widths and fixed gutters.
+   */
+  .portable--one-whole, .portable--one-half,
+  .portable--two-quarters,
+  .portable--three-sixths,
+  .portable--four-eighths,
+  .portable--five-tenths,
+  .portable--six-twelfths, .portable--one-third,
+  .portable--two-sixths,
+  .portable--three-ninths,
+  .portable--four-twelfths, .portable--two-thirds,
+  .portable--four-sixths,
+  .portable--six-ninths,
+  .portable--eight-twelfths, .portable--one-quarter,
+  .portable--two-eighths,
+  .portable--three-twelfths, .portable--three-quarters,
+  .portable--six-eighths,
+  .portable--nine-twelfths, .portable--one-fifth,
+  .portable--two-tenths, .portable--two-fifths,
+  .portable--four-tenths, .portable--three-fifths,
+  .portable--six-tenths, .portable--four-fifths,
+  .portable--eight-tenths, .portable--one-sixth,
+  .portable--two-twelfths, .portable--five-sixths,
+  .portable--ten-twelfths, .portable--one-eighth, .portable--three-eighths, .portable--five-eighths, .portable--seven-eighths, .portable--one-ninth, .portable--two-ninths, .portable--four-ninths, .portable--five-ninths, .portable--seven-ninths, .portable--eight-ninths, .portable--one-tenth, .portable--three-tenths, .portable--seven-tenths, .portable--nine-tenths, .portable--one-twelfth, .portable--five-twelfths, .portable--seven-twelfths, .portable--eleven-twelfths {
+    float: left;
+    vertical-align: top;
+    /* [2] */
+    padding-left: 33px;
+    /* [3] */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* [4] */ }
+
+  /**
    * Whole
    */
   .portable--one-whole {
@@ -2170,6 +2318,48 @@ input + .additional {
   .portable--eleven-twelfths {
     width: 91.66667%; } }
 @media only screen and (min-width: 981px) {
+  /**
+   * 1. Cause columns to stack side-by-side.
+   *    - Not implemented at the moment due to legacy support
+   *
+   * 2. Align columns to the tops of each other.
+   * 3. Space columns apart.
+   * 4. Required to combine fluid widths and fixed gutters.
+   */
+  .desk--one-whole, .desk--one-half,
+  .desk--two-quarters,
+  .desk--three-sixths,
+  .desk--four-eighths,
+  .desk--five-tenths,
+  .desk--six-twelfths, .desk--one-third,
+  .desk--two-sixths,
+  .desk--three-ninths,
+  .desk--four-twelfths, .desk--two-thirds,
+  .desk--four-sixths,
+  .desk--six-ninths,
+  .desk--eight-twelfths, .desk--one-quarter,
+  .desk--two-eighths,
+  .desk--three-twelfths, .desk--three-quarters,
+  .desk--six-eighths,
+  .desk--nine-twelfths, .desk--one-fifth,
+  .desk--two-tenths, .desk--two-fifths,
+  .desk--four-tenths, .desk--three-fifths,
+  .desk--six-tenths, .desk--four-fifths,
+  .desk--eight-tenths, .desk--one-sixth,
+  .desk--two-twelfths, .desk--five-sixths,
+  .desk--ten-twelfths, .desk--one-eighth, .desk--three-eighths, .desk--five-eighths, .desk--seven-eighths, .desk--one-ninth, .desk--two-ninths, .desk--four-ninths, .desk--five-ninths, .desk--seven-ninths, .desk--eight-ninths, .desk--one-tenth, .desk--three-tenths, .desk--seven-tenths, .desk--nine-tenths, .desk--one-twelfth, .desk--five-twelfths, .desk--seven-twelfths, .desk--eleven-twelfths {
+    float: left;
+    vertical-align: top;
+    /* [2] */
+    padding-left: 33px;
+    /* [3] */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* [4] */ }
+
   /**
    * Whole
    */
