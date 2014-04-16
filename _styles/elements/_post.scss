@@ -24,21 +24,55 @@
 /**
  * A different type of <hr> styling. 
  */
-/*hr*/.section-divider{
+/*hr.section-divider{
 	display: block;
 	width: 14%;
 	margin: 50px auto 40px auto;
 	border: 0;
 	border-top: 1px solid #dddddd;
+}*/
+
+%hr{
+    @extend %centered;
+    clear: both;
+	display: block;
 }
 
-/**
- * The main title for a post: give to an h1
+/** 
+ * The primary hr, small width 
  */
+hr{
+    @extend %hr;
+    
+    width: 14%;
+}
+
+/** 
+ * Full width hr 
+ */
+/*hr*/.divider{
+    @extend %hr;
+    
+    width: 100%;
+}
+
+%break-word{
+    word-wrap: break-word;
+    
+}
+
 .post-title{
-	margin-bottom: 10px;
-	
-	font-weight: 100;
+    @extend %break-word;
+    
+    @extend %mb--;
+    letter-spacing: -0.04em;
+}
+
+.post-subtitle{
+    @extend %break-word;
+    
+    @extend %m0;
+    letter-spacing: -0.02em;
 }
 
 /**
