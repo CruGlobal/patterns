@@ -811,7 +811,7 @@ img {
 
 hr {
   border: 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #cccccc; }
 
 /* Helpful Typography Defaults */
 em,
@@ -862,7 +862,7 @@ hgroup, p,
 ul, ol, dl,
 address, table,
 fieldset, figure,
-pre,
+pre, hr,
 .form-fields > li,
 .media,
 .island,
@@ -875,13 +875,13 @@ hgroup, p,
 ul, ol, dl,
 address, table,
 fieldset, figure,
-pre,
+pre, hr,
 .form-fields > li,
 .media,
 .island,
 .islet {
   margin-bottom: 33px;
-  margin-bottom: 1.73684rem; }
+  margin-bottom: 33pxrem; }
 
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
@@ -900,13 +900,26 @@ pre,
 /**
  * Base elements
  */
+h1, h2, h3, h4, h5, h6,
+hgroup, p,
+ul, ol, dl,
+address, table,
+fieldset, figure,
+pre, hr,
+.form-fields > li,
+.media,
+.island,
+.islet {
+  margin-bottom: 33px;
+  margin-bottom: 33pxrem; }
+
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-top: 66px !important;
-  margin-bottom: 66px !important; }
+  margin-top: 33px;
+  margin-top: 1.73684rem; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
@@ -2767,7 +2780,7 @@ input[disabled]:focus,
 .mr-- {
   margin-right: 8.25px !important; }
 
-.mb--, .post-title {
+.mb--, .post-title, .post-subtitle {
   margin-bottom: 8.25px !important; }
 
 .ml-- {
@@ -2810,7 +2823,7 @@ input[disabled]:focus,
 /**
  * Remove margins.
  */
-.m0, .post-subtitle {
+.m0 {
   margin: 0 !important; }
 
 .mt0 {
