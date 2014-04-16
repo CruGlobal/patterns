@@ -34,7 +34,7 @@ $link-height: 36px;
 	max-height: 100%;
 	background: #ffffff;
 	
-	@include vendor(box-shadow, 0 1px 1px rgba(6,8,8,0.1));
+	@include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
 }
 
 	.site-logo{
