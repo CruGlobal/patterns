@@ -2780,7 +2780,7 @@ input[disabled]:focus,
 .mr-- {
   margin-right: 8.25px !important; }
 
-.mb--, .post-title, .post-subtitle {
+.mb--, .post-title {
   margin-bottom: 8.25px !important; }
 
 .ml-- {
@@ -2823,7 +2823,7 @@ input[disabled]:focus,
 /**
  * Remove margins.
  */
-.m0 {
+.m0, .post-subtitle {
   margin: 0 !important; }
 
 .mt0 {
@@ -3389,11 +3389,24 @@ q {
     display: inline-block;
     text-indent: 0; }
 
+.container {
+  -webkit-transition: right, width 400ms ease;
+  -moz-transition: right, width 400ms ease;
+  -ms-transition: right, width 400ms ease;
+  -o-transition: right, width 400ms ease;
+  transition: right, width 400ms ease;
+  -webkit-transition-property: right, width 400ms ease;
+  -moz-transition-property: right, width 400ms ease;
+  -ms-transition-property: right, width 400ms ease;
+  -o-transition-property: right, width 400ms ease;
+  transition-property: right, width 400ms ease; }
+
+.pusher {
+  left: 0; }
+
 .page-content {
-  margin-top: 72px;
-  margin-top: 3.78947rem;
-  padding-top: 38px;
-  padding-top: 2rem; }
+  padding-top: 110px;
+  padding-top: 5.78947rem; }
 
 .single-column {
   max-width: 800px;
@@ -3484,17 +3497,7 @@ q {
   background-color: white;
   border-top-width: 3px;
   border-top-style: solid;
-  border-top-color: #f9b625; }
-
-.navigation-wrapper {
-  position: absolute;
-  top: -1px;
-  z-index: 500;
-  overflow: hidden;
-  width: 100%;
-  height: 73px;
-  max-height: 100%;
-  background: #ffffff;
+  border-top-color: #f9b625;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -3522,31 +3525,39 @@ q {
     background-position: top center;
     background-size: contain; }
 
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
 .navigation {
   top: 0;
   right: -100%;
   z-index: 1;
   float: right;
-  width: 90%;
+  width: 70%;
   background-color: #494c49;
   border-top: 3px solid;
   border-color: #f9b625; }
-  @media screen and (min-width: 61.25em) {
+  @media screen and (min-width: 33.75em) {
     .navigation {
+      width: 18.75em; } }
+  @media screen and (min-width: 61.3125em) {
+    .navigation {
+      width: 90%;
       height: 70px;
       background-color: transparent;
-      z-index: 3;
-      right: 0; }
-      .navigation .navigation {
-        position: relative; } }
-  @media screen and (max-width: 61.25em) {
+      z-index: 505;
+      right: 0;
+      border-color: transparent; } }
+  @media screen and (max-width: 61.3125em) {
     .navigation {
-      overflow: scroll; } }
+      overflow: scroll;
+      padding-top: 69px; } }
+  @media screen and (min-width: 61.3125em) {
+    .navigation {
+      right: 0;
+      background-color: transparent; } }
 
-.js-slide .js-navigation {
-  right: 0; }
-
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 61.3125em) {
   .site-nav {
     position: absolute;
     bottom: 0;
@@ -3566,7 +3577,7 @@ q {
   .site-nav > .nav__item > a {
     display: block; } }
 
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 61.3125em) {
   .right-nav {
     width: auto;
     float: right;
@@ -3599,7 +3610,7 @@ q {
     color: #f9b625;
     text-decoration: none;
     background-color: #262728; }
-  @media screen and (min-width: 61.25em) {
+  @media screen and (min-width: 61.3125em) {
     .nav-link, .dropdown__item > a {
       display: inline-block;
       color: #3a3a3a;
@@ -3736,107 +3747,62 @@ q {
     $OFF-CANVAS
 \*------------------------------------*/
 @media screen and (max-width: 33.75em) {
-  .js-slide .js-container {
+  .nav-is-open .inner-wrap, .nav-is-open .site-header {
     right: 70%; } }
 @media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
-  .js-slide .js-container {
+  .nav-is-open .inner-wrap, .nav-is-open .site-header {
     right: 18.75em; } }
 
-.js-container {
+.nav-is-open .navigation {
+  right: 0; }
+
+.site-nav--off-canvas .nav {
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow-x: hidden;
-  min-height: 100%;
   width: 100%;
-  z-index: 2;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: right, width 400ms ease;
-  -moz-transition: right, width 400ms ease;
-  -ms-transition: right, width 400ms ease;
-  -o-transition: right, width 400ms ease;
-  transition: right, width 400ms ease;
-  -webkit-transition-property: right, width 400ms ease;
-  -moz-transition-property: right, width 400ms ease;
-  -ms-transition-property: right, width 400ms ease;
-  -o-transition-property: right, width 400ms ease;
-  transition-property: right, width 400ms ease; }
-
-@media screen and (max-width: 33.75em) {
-  .js-navigation {
-    width: 70%; } }
-@media screen and (min-width: 33.8125em) and (max-width: 61.25em) {
-  .js-navigation {
-    width: 18.75em; } }
-
-@media screen and (max-width: 61.25em) {
-  .js-navigation {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    z-index: 1;
-    overflow: scroll;
-    height: 100%;
-    background-color: #494c49;
-    border-top: 3px solid;
-    border-color: #f9b625;
-    padding-top: 69px; } }
-@media screen and (min-width: 61.25em) {
-  .js-navigation {
-    right: 0;
-    background-color: transparent; } }
-
-.site-nav--off-canvas {
+  margin-top: 88px;
+  margin-top: 4.63158rem; }
+.site-nav--off-canvas li {
   width: 100%;
-  text-transform: uppercase; }
-  .site-nav--off-canvas .nav {
-    position: absolute;
-    width: 100%;
-    margin-top: 88px;
-    margin-top: 4.63158rem; }
-  .site-nav--off-canvas li {
-    width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-size: 0.73684rem;
+  line-height: 2.35714; }
+  .site-nav--off-canvas li a {
+    line-height: 20px;
+    line-height: 1.25rem;
+    height: auto;
+    border-bottom: 1px solid;
+    border-color: white;
+    border-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    margin: 0;
+    background-color: transparent;
+    font-weight: normal;
     text-align: left;
-    font-size: 14px;
-    font-size: 0.73684rem;
-    line-height: 2.35714; }
-    .site-nav--off-canvas li a {
-      line-height: 20px;
-      line-height: 1.25rem;
-      height: auto;
-      border-bottom: 1px solid;
-      border-color: white;
-      border-color: rgba(255, 255, 255, 0.05);
-      color: white;
-      margin: 0;
-      background-color: transparent;
-      font-weight: normal;
-      text-align: left;
-      padding-top: 10px;
-      padding-top: 0.52632rem;
-      padding-bottom: 10px;
-      padding-bottom: 0.52632rem;
-      padding-left: 16px;
-      padding-left: 0.84211rem;
-      padding-right: 16px;
-      padding-right: 0.84211rem;
-      -webkit-transition: padding color 250ms ease;
-      -moz-transition: padding color 250ms ease;
-      -ms-transition: padding color 250ms ease;
-      -o-transition: padding color 250ms ease;
-      transition: padding color 250ms ease; }
-      .site-nav--off-canvas li a:hover {
-        background-color: #000000;
-        text-decoration: none; }
-  .site-nav--off-canvas .search {
-    max-width: 80%;
-    margin-left: 16px;
-    margin-left: 0.84211rem; }
-  .site-nav--off-canvas .search-button {
-    right: 20px; }
-    .site-nav--off-canvas .search-button > i {
-      font-size: 16px; }
+    padding-top: 10px;
+    padding-top: 0.52632rem;
+    padding-bottom: 10px;
+    padding-bottom: 0.52632rem;
+    padding-left: 16px;
+    padding-left: 0.84211rem;
+    padding-right: 16px;
+    padding-right: 0.84211rem;
+    -webkit-transition: padding color 250ms ease;
+    -moz-transition: padding color 250ms ease;
+    -ms-transition: padding color 250ms ease;
+    -o-transition: padding color 250ms ease;
+    transition: padding color 250ms ease; }
+    .site-nav--off-canvas li a:hover {
+      background-color: #000000;
+      text-decoration: none; }
+.site-nav--off-canvas .search {
+  max-width: 80%;
+  margin-left: 16px;
+  margin-left: 0.84211rem; }
+.site-nav--off-canvas .search-button {
+  right: 20px; }
+  .site-nav--off-canvas .search-button > i {
+    font-size: 16px; }
 
 .has-dropdown {
   position: relative; }
