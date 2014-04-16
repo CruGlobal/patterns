@@ -2,8 +2,8 @@
     $OFF-CANVAS
 \*------------------------------------*/
 
-.js-slide{
-	.js-container{
+.nav-is-open{
+	.inner-wrap, .site-header{
 		@include mq(540px, max) {
 			right: 70%;
 		}
@@ -14,107 +14,11 @@
 			}
 		}
 	}
+    
+    .navigation{
+        right: 0;
+    }
 }
-
-
-.js-container{
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	overflow-x: hidden;
-	
-	min-height: 100%;
-	width: 100%;
-	
-	z-index: 2;
-	
-	box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
-	
-	@include vendor(transition, right, width 400ms ease);
-	@include vendor(transition-property, right, width 400ms ease);
-	
-}
-
-
-
-.js-navigation{
-	//@include vendor(transition, all 400ms ease);
-	
-	@include mq(540px, max) {
-		width: 70%;
-	}
-	
-	@include mq(541px) {
-		@include mq(980px, max) {
-			width: 18.75em;
-		}
-	}
-	
-	@include mq(980px, max) {
-		position: fixed;
-		right: -100%;
-		top: 0;
-		z-index: 1;
-		
-		overflow: scroll;
-		height: 100%;		
-		
-		background-color: #494c49;
-		border-top: 3px solid;
-		border-color: $color-gold;
-		padding-top: 69px;
-	}
-	
-	@include mq(980px) {
-		right: 0;
-		background-color: transparent;
-	}
-}
-
-	.site-nav--off-canvas{
-		width: 100%;
-		text-transform: uppercase;
-		
-		.nav{
-			position: absolute;
-			width: 100%;
-			@include rem(margin-top, 88px);
-		}
-		
-		li{
-			@extend %flush;
-			width: 100%;
-			text-align: left;
-			
-			@include font-size(14px);
-			
-			a{
-				line-height: 20px;
-				line-height: 1.25rem;
-				height: auto;
-				border-bottom: 1px solid;
-				border-color: white;
-				border-color: rgba(255, 255, 255, 0.05);
-				color: white;
-				margin: 0;
-				background-color: transparent;
-				font-weight: normal;
-				text-align: left;
-				
-				@include rem(padding-top, 10px);
-				@include rem(padding-bottom, 10px);
-				@include rem(padding-left, 16px);
-				@include rem(padding-right, 16px);
-				@include vendor(transition, padding color 250ms ease);
-				
-				&:hover{
-					background-color: #000000;
-					text-decoration: none;
-				}
-			}
-		
-		}
 		
 		.search{
 			max-width: 80%;
@@ -129,4 +33,3 @@
 				
 			}
 		}
-	}
