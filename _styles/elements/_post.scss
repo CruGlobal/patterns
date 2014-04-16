@@ -57,21 +57,20 @@ hr{
 }
 
 %break-word{
-    word-wrap: break-word;
-    
+    word-wrap: break-word; 
 }
 
 .post-title{
-    @extend %break-word;
-    
+    @extend %break-word;    
     @extend %mb--;
+    
     letter-spacing: -0.04em;
 }
 
 .post-subtitle{
-    @extend %break-word;
+    @extend %break-word;    
+    @extend %mb--;
     
-    @extend %m0;
     letter-spacing: -0.02em;
 }
 
