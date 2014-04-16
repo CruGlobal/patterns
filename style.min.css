@@ -3756,52 +3756,14 @@ q {
 .nav-is-open .navigation {
   right: 0; }
 
-.site-nav--off-canvas .nav {
-  position: absolute;
-  width: 100%;
-  margin-top: 88px;
-  margin-top: 4.63158rem; }
-.site-nav--off-canvas li {
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
-  font-size: 0.73684rem;
-  line-height: 2.35714; }
-  .site-nav--off-canvas li a {
-    line-height: 20px;
-    line-height: 1.25rem;
-    height: auto;
-    border-bottom: 1px solid;
-    border-color: white;
-    border-color: rgba(255, 255, 255, 0.05);
-    color: white;
-    margin: 0;
-    background-color: transparent;
-    font-weight: normal;
-    text-align: left;
-    padding-top: 10px;
-    padding-top: 0.52632rem;
-    padding-bottom: 10px;
-    padding-bottom: 0.52632rem;
-    padding-left: 16px;
-    padding-left: 0.84211rem;
-    padding-right: 16px;
-    padding-right: 0.84211rem;
-    -webkit-transition: padding color 250ms ease;
-    -moz-transition: padding color 250ms ease;
-    -ms-transition: padding color 250ms ease;
-    -o-transition: padding color 250ms ease;
-    transition: padding color 250ms ease; }
-    .site-nav--off-canvas li a:hover {
-      background-color: #000000;
-      text-decoration: none; }
-.site-nav--off-canvas .search {
+.search {
   max-width: 80%;
   margin-left: 16px;
   margin-left: 0.84211rem; }
-.site-nav--off-canvas .search-button {
+
+.search-button {
   right: 20px; }
-  .site-nav--off-canvas .search-button > i {
+  .search-button > i {
     font-size: 16px; }
 
 .has-dropdown {
@@ -4908,7 +4870,7 @@ textarea.text-input {
 .inline-block, .site-logo, .site-logo a, .navigation {
   display: inline-block; }
 
-.flush, .site-nav--off-canvas li {
+.flush {
   margin: 0 !important; }
 
 .flush--bottom, .site-logo, .site-logo h1, .site-nav {
