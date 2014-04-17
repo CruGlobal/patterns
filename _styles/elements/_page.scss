@@ -41,6 +41,13 @@
 	}
 }
 
+.background-stretch{
+	@include mq(500px, max) {
+        @include rem-calc(margin-left,  -$base-spacing-unit);
+        @include rem-calc(margin-right, -$base-spacing-unit);
+	}
+}
+
 .home-banner{
 	@extend %cf;
 		

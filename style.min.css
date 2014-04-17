@@ -881,7 +881,7 @@ pre, hr,
 .island,
 .islet {
   margin-bottom: 33px;
-  margin-bottom: 33pxrem; }
+  margin-bottom: 1.73684rem; }
 
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
@@ -900,19 +900,6 @@ pre, hr,
 /**
  * Base elements
  */
-h1, h2, h3, h4, h5, h6,
-hgroup, p,
-ul, ol, dl,
-address, table,
-fieldset, figure,
-pre, hr,
-.form-fields > li,
-.media,
-.island,
-.islet {
-  margin-bottom: 33px;
-  margin-bottom: 33pxrem; }
-
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
@@ -2999,6 +2986,9 @@ input[disabled]:focus,
   font-weight: 400 !important; }
 
 .weight--semibold, h6, .h6 {
+  font-weight: 500 !important; }
+
+.weight--bold {
   font-weight: 600 !important; }
 
 /**
@@ -3426,6 +3416,29 @@ q {
   .background-size-contain.layout-single-column {
     margin-left: 0;
     margin-right: 0; } }
+
+@media screen and (max-width: 31.25em) {
+  .background-stretch {
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-left: -33px;
+    /* 9 */
+    margin-left: -1.73684rem;
+    /* 9 */
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    margin-right: -33px;
+    /* 9 */
+    margin-right: -1.73684rem;
+    /* 9 */ } }
 
 @media screen and (min-width: 61.3125em) {
   .home-banner .h4, .home-banner a {
@@ -3912,7 +3925,7 @@ hr {
 /** 
  * Full width hr 
  */
-/*hr*/
+/* hr */
 .divider {
   width: 100%; }
 
@@ -3956,6 +3969,16 @@ hr {
   .source:before {
     content: "-"; }
 
+.more-stories__link {
+  color: inherit;
+  cursor: pointer;
+  font-size: 16.625px;
+  font-size: 0.875rem; }
+  .more-stories__link:hover {
+    color: inherit;
+    text-decoration: none;
+    background: white; }
+
 .post-article figure {
   outline: 0; }
 
@@ -3994,18 +4017,18 @@ hr {
   color: #666062; }
 
 /*figure*/
-.image--inset__left {
+.image--inset__left, .image--legacy {
   width: 100%;
   clear: both; }
   @media screen and (min-width: 61.3125em) {
-    .image--inset__left {
+    .image--inset__left, .image--legacy {
       width: 50%;
       float: left;
       margin-top: 10px;
       margin-right: 33px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 72.75em) {
-    .image--inset__left > .image__caption {
+    .image--inset__left > .image__caption, .image--legacy > .image__caption {
       position: absolute;
       left: -172px;
       width: 150px;
@@ -4013,7 +4036,7 @@ hr {
       text-align: right;
       margin-top: 0;
       line-height: 1.6; }
-      .image--inset__left > .image__caption:before {
+      .image--inset__left > .image__caption:before, .image--legacy > .image__caption:before {
         width: 25%;
         margin-left: 75%;
         border-top: 1px solid #dddddd;
@@ -4878,6 +4901,13 @@ textarea.text-input {
 
 .text-white, .button--primary, .button--secondary {
   color: white !important; }
+
+.basic-transition, .more-stories__link {
+  -webkit-transition: 250ms ease-in;
+  -moz-transition: 250ms ease-in;
+  -ms-transition: 250ms ease-in;
+  -o-transition: 250ms ease-in;
+  transition: 250ms ease-in; }
 
 body {
   background-color: #f8f8f8; }
