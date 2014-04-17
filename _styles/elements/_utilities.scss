@@ -6,3 +6,5 @@
 
 
 .text-white, %text--white       { color: $color-white !important; }
+
+.basic-transition, %basic-transition{ @include vendor(transition, 250ms ease-in) }

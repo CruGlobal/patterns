@@ -47,18 +47,17 @@ hr{
     width: 14%;
 }
 
-/** 
- * Full width hr 
- */
-/*hr*/.divider{
-    @extend %hr;
+    /** 
+     * Full width hr 
+     */
+    /* hr */.divider{
+        @extend %hr;
     
-    width: 100%;
-}
+        width: 100%;
+    }
 
 %break-word{
-    word-wrap: break-word;
-    
+    word-wrap: break-word;   
 }
 
 .post-title{
@@ -68,12 +67,12 @@ hr{
     letter-spacing: -0.04em;
 }
 
-.post-subtitle{
-    @extend %break-word;
+    .post-subtitle{
+        @extend %break-word;
     
-    @extend %m0;
-    letter-spacing: -0.02em;
-}
+        @extend %m0;
+        letter-spacing: -0.02em;
+    }
 
 /**
  * The author, twitter handle and timestamp for a post.
@@ -98,11 +97,25 @@ hr{
 }
 	
 
-.source{
-	@include rem-calc(margin-top, $base-line-height / 2);
-	&:before{
-		content: "-";
-	}
+    .source{
+    	@include rem-calc(margin-top, $base-line-height / 2);
+    	&:before{
+    		content: "-";
+    	}
+    }
+
+.more-stories__link{
+    @extend %basic-transition;
+    color: inherit;
+    cursor: pointer;
+    
+    @include font-size($base-font-size * 0.875, false);
+    
+    &:hover{
+        color: inherit;
+        text-decoration: none; 
+        background: $color-white;
+    }
 }
 
 
