@@ -212,25 +212,7 @@
 				//float: left;
 			}
 			
-			a{				
-				height: 35px;
-				line-height: 35px;
-				
-				color: #8a8a8a;
-		
-				padding: 0 18px;
-				font-size: 14px;
-				font-weight: 400;
-				letter-spacing: 0.9px;
-				
-				@include vendor(transition, all 0.25s ease-in-out);
-			
-				&:hover{
-					background-color: #f6f6f6;
-					text-decoration: none;
-					color: #444444;
-				}
-			}
+
 		}
 		
 		.search{

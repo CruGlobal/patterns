@@ -73,17 +73,26 @@ page-class: page--static
 		<nav  id="nav" class="navigation  js-navigation">			
 			<ul class="nav  right-nav  flush--bottom">
 				<li class="nav__item">
-					<a href="#signup">Sign Up</a>
+					<a class="nav-link" href="#signup">Sign Up</a>
 				<li class="nav__item">
-					<a href="#">Log In</a>
+					<a class="nav-link" href="#">Log In</a>
 				</li>
 
-				<li class="spoken-form  nav__item">
-					<form class="site-search  position--relative"  method="post" onsubmit=""  action="#" name="search">
-						<input class="search-field  text-input" placeholder="Search" type="search" />
-						<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
-					</form>
-				</li>
+      	<li class="spoken-form  nav__item">	
+      		<form class="primary-search  js-primary-search"  method="get"  name="search">
+	      	  <input class="search-field  text-input" placeholder="Search" type="search" />
+      			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
+		      	<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
+      			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
+      				<li>
+      					<a href="">This Site</a>
+      				</li>
+      				<li>
+      					<a href="">Give to Staff, Ministries</a>
+      				</li>
+      			</ul>
+      		</form>
+      	</li>	
 			</ul>						
 
 			<ul class="nav  site-nav  flush--bottom">
@@ -626,10 +635,15 @@ page-class: page--static
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
 
-  <script src="{{ site.root }}modernizr.min.js"></script>      
+  <script src="{{ site.root }}modernizr.min.js"></script>
+  <script src="{{ site.root }}slider.min.js"></script>		
+  <script src="{{ site.root }}search-options.min.js"></script>
   <script src="{{ site.root }}offcanvas.min.js"></script>
-  <script src="{{ site.root }}slider.min.js"></script>
-
+	
+  
+  <!-- Patterns Site only -->
+  <script src="{{ site.root }}nav.min.js"></script>		
+  
 
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

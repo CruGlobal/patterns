@@ -37,12 +37,22 @@ page-class: page--static
 					<a href="#">Log In</a>
 				</li>
 	
-				<li class="spoken-form  nav__item">
-					<form class="primary-search"  method="post" onsubmit=""  action="#" name="search">
-						<input class="search-field  text-input" placeholder="Search" type="search" />
-						<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
-					</form>
-				</li>
+      	<li class="spoken-form  nav__item">	
+      		<form class="primary-search  js-primary-search"  method="get"  name="search">
+	      	  <input class="search-field  text-input" placeholder="Search" type="search" />
+      			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
+		      	<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
+      			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
+      				<li>
+      					<a href="">This Site</a>
+      				</li>
+      				<li>
+      					<a href="">Give to Staff, Ministries</a>
+      				</li>
+      			</ul>
+      		</form>
+      	</li>	
+        
 			</ul>						
 
 			<ul class="nav  site-nav  flush--bottom">

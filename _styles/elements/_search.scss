@@ -1,6 +1,8 @@
 /*------------------------------------*\
     $SEARCH
 \*------------------------------------*/
+$search-height: 32px;
+
 .right-nav{
 	.spoken-form{
 		padding-left: 18px;
@@ -15,9 +17,10 @@
 
 	.search-field{
 		width: 254px;
-		max-height: 16px;
+		max-height: $search-height;
 		line-height: 18px;
 		border-width: 1px;
+        
 		
 		font-size: 80%;
 		&::-webkit-input-placeholder { font-size: 14px;}
@@ -25,25 +28,79 @@
 		      &:-ms-input-placeholder { font-size: 14px;}
 		      &:-moz-placeholder { font-size: 14px;}
 	}
-	.search-button{
+    
+    
+    %search-icons{
 		position: absolute;
 		top: 0;
-		right:0;
-		
-		
-		background: transparent;
-		padding-left: 10px;
-		padding-right: 10px;
-		border: none;
-		
+        display: block;
+        
+        width: $search-height;
+        height: $search-height;
+        line-height: $search-height;
+        		
+        padding: 0;
+        
+        text-align: center;
+        
 		> i{
 			color: $btn-default-color;
 			font-size: 70%;
 			
 		}
+        
+        &:hover{
+            i{
+                color: $color-gold;
+            }
+        }
+    }
+	.search-button{
+        @extend %search-icons;
+        
+		right: 29px;
+		
 	}
+    
+    .primary-search--options{
+        @extend %search-icons;
+        
+		right: 0;
+
+    }
     
     .primary-search--dropdown{
         visibility: hidden;
         position: absolute;
+        right: 0;
+        z-index: 1;
+        
+        width: 94%;
+        
+        background-color: $color-white;
+        border: 1px solid $color-gray;
+        border-top: transparent;
+        
+        padding: $base-padding / 4;
+        
+        font-size: 80%;
     }
+    
+    
+    .primary-search.active{
+        .primary-search--options{
+            background-color: #f4f4f4;
+            
+            .icon-down-arrow{
+                 color: $color-gold;
+                 &:before{
+                     content: '\e80c';
+                 }
+            }
+           
+        }
+        .primary-search--dropdown{
+            visibility: visible;
+        }
+    } 
+   
