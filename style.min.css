@@ -3667,23 +3667,6 @@ q {
 
 .right-nav {
   float: right; }
-  .right-nav a {
-    height: 35px;
-    line-height: 35px;
-    color: #8a8a8a;
-    padding: 0 18px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.9px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out; }
-    .right-nav a:hover {
-      background-color: #f6f6f6;
-      text-decoration: none;
-      color: #444444; }
 
 .search {
   height: auto;
@@ -3968,6 +3951,15 @@ hr {
     text-decoration: none;
     background: white; }
 
+@media screen and (min-width: 61.3125em) {
+  .image--legacy + .post-nav {
+    margin-top: 16.5px; } }
+
+@media screen and (min-width: 61.3125em) {
+  .post-nav {
+    padding-right: 12px;
+    border-right: 1px solid #666062; } }
+
 .post-article figure {
   outline: 0; }
 
@@ -4006,18 +3998,18 @@ hr {
   color: #666062; }
 
 /*figure*/
-.image--inset__left, .image--legacy {
+.image--inset__left, .post-nav, .image--legacy {
   width: 100%;
   clear: both; }
   @media screen and (min-width: 61.3125em) {
-    .image--inset__left, .image--legacy {
+    .image--inset__left, .post-nav, .image--legacy {
       width: 50%;
       float: left;
       margin-top: 10px;
       margin-right: 33px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 72.75em) {
-    .image--inset__left > .image__caption, .image--legacy > .image__caption {
+    .image--inset__left > .image__caption, .post-nav > .image__caption, .image--legacy > .image__caption {
       position: absolute;
       left: -172px;
       width: 150px;
@@ -4025,7 +4017,7 @@ hr {
       text-align: right;
       margin-top: 0;
       line-height: 1.6; }
-      .image--inset__left > .image__caption:before, .image--legacy > .image__caption:before {
+      .image--inset__left > .image__caption:before, .post-nav > .image__caption:before, .image--legacy > .image__caption:before {
         width: 25%;
         margin-left: 75%;
         border-top: 1px solid #dddddd;
@@ -4138,7 +4130,7 @@ hr {
 
 .search-field {
   width: 254px;
-  max-height: 16px;
+  max-height: 32px;
   line-height: 18px;
   border-width: 1px;
   font-size: 80%; }
@@ -4151,21 +4143,47 @@ hr {
   .search-field:-moz-placeholder {
     font-size: 14px; }
 
-.search-button {
+.search-button, .primary-search--options {
   position: absolute;
   top: 0;
-  right: 0;
-  background: transparent;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: none; }
-  .search-button > i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  text-align: center; }
+  .search-button > i, .primary-search--options > i {
     color: #6d6e71;
     font-size: 70%; }
+  .search-button:hover i, .primary-search--options:hover i {
+    color: #f9b625; }
+
+.search-button {
+  right: 29px; }
+
+.primary-search--options {
+  right: 0; }
 
 .primary-search--dropdown {
   visibility: hidden;
-  position: absolute; }
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 94%;
+  background-color: white;
+  border: 1px solid #666062;
+  border-top: transparent;
+  padding: 8.25px;
+  font-size: 80%; }
+
+.primary-search.active .primary-search--options {
+  background-color: #f4f4f4; }
+  .primary-search.active .primary-search--options .icon-down-arrow {
+    color: #f9b625; }
+    .primary-search.active .primary-search--options .icon-down-arrow:before {
+      content: '\e80c'; }
+.primary-search.active .primary-search--dropdown {
+  visibility: visible; }
 
 thead th {
   border-bottom: 2px solid #ddd; }
@@ -4266,6 +4284,13 @@ input.button--unstyled:active {
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
 input[type="checkbox"], input[type="radio"] {
   display: inline-block;
   vertical-align: middle;

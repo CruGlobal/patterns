@@ -17,22 +17,20 @@ page-class: page--static
 	<li class="spoken-form  nav__item">
 	
 		<!--The search itself-->
-		<form class="primary-search"  method="post" onsubmit=""  action="#" name="search">
+		<form class="primary-search  js-primary-search"  method="get"  name="search">
 		
 			<!-- Search input field -->
 			<input class="search-field  text-input" placeholder="Search" type="search" />
 		
 			<!-- Search icon -->
-			<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
+			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
 
 		
 			<!-- Dropdown open button -->
-			<button class="primary-search--options  button--icon">
-				<i class="icon-arrow-down"></i>
-			</button>	
+			<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
 		
 			<!-- The dropdown search items -->
-			<ul class="primary-search--dropdown  bare-list">
+			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
 				<li>
 					<a href="">This Site</a>
 				</li>
@@ -45,13 +43,7 @@ page-class: page--static
 		<!-- end form.spoken-form -->
 	
 	</li>	
-  <li class="spoken-form  nav__item">
-  	<form class="site-search  position--relative"  method="post" onsubmit=""  action="#" name="search">
-  		<input class="search-field  text-input" placeholder="Search" type="search" />
-  		<button class="search-button" value="" type="submit"><i class="icon-search"></i></button>
-  	</form>
-  </li>
 	
 </ul>
 
-
+{% include footer.html %}
