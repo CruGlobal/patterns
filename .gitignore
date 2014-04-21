@@ -9,3 +9,4 @@ css/
 .idea
 .codekit-cache
 _styles/.sass-cache
+/_config.yml
