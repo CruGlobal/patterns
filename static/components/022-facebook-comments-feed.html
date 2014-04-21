@@ -8,3 +8,28 @@ page-class: page--static
   022 - FACEBOOK COMMENTS FEED
 
   --> 
+  
+  <!-- Facebook feed js -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
+  
+  
+  <!-- Wrapper for comments feed -->
+  <section class="layout-single-column">
+    
+    
+    
+    <!-- Test url for comments -->
+    <div class="fb-comments" data-href="http://www.cru.org/ministries-and-locations/australia-and-oceania/australia/seeking-spiritual-health.htm" data-width="700" data-numposts="3" data-colorscheme="light"></div> 
+    
+    
+    
+               
+  </section>

@@ -811,7 +811,7 @@ img {
 
 hr {
   border: 0;
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #dddddd; }
 
 /* Helpful Typography Defaults */
 em,
@@ -862,7 +862,7 @@ hgroup, p,
 ul, ol, dl,
 address, table,
 fieldset, figure,
-pre, hr,
+pre,
 .form-fields > li,
 .media,
 .island,
@@ -875,7 +875,7 @@ hgroup, p,
 ul, ol, dl,
 address, table,
 fieldset, figure,
-pre, hr,
+pre,
 .form-fields > li,
 .media,
 .island,
@@ -905,8 +905,8 @@ pre, hr,
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-top: 33px;
-  margin-top: 1.73684rem; }
+  margin-top: 66px !important;
+  margin-bottom: 66px !important; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
@@ -1521,23 +1521,27 @@ input + .additional {
   margin: 0;
   /* [2] */
   padding: 0;
-  /* [2] */ }
+  /* [2] */
+  margin-left: -33px;
+  /* [3] */ }
 
 /**
  * 1. Cause columns to stack side-by-side.
  *    - Not implemented at the moment due to legacy support
  *
  * 2. Align columns to the tops of each other.
- * 3. Full-width unless told to behave otherwise.
- * 4. Space columns apart.
+ * 3. Space columns apart.
+ * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
 .grid__item {
   float: left;
   vertical-align: top;
   /* [2] */
-  width: 100%;
+  padding-left: 33px;
   /* [3] */
+  width: 100%;
+  /* [4] */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -3479,21 +3483,6 @@ q {
   padding-left: 10px;
   font-size: 18px; }
 
-/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
-#fb-root {
-  display: none; }
-
-/* To fill the container and nothing else */
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-  width: 100% !important; }
-
-.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span {
-  width: 85px !important; }
-
-.fb-like.fb_iframe_widget > span, #twitter-widget-0, #___plusone_0 {
-  vertical-align: middle !important;
-  height: 25px !important; }
-
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -4110,6 +4099,32 @@ hr {
   .social__item--twitter:hover {
     color: #55acee; }
 
+/**
+ * Facebook Comments box
+ */
+.fbFeedbackContent .composer {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px; }
+.fbFeedbackContent .fbFeedbackPost {
+  padding-bottom: 5px !important;
+  padding-top: 15px; }
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none; }
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important; }
+
+.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span {
+  width: 85px !important; }
+
+.fb-like.fb_iframe_widget > span, #page--home #twitter-widget-0, #___plusone_0 {
+  vertical-align: middle !important;
+  height: 25px !important; }
+
 /*------------------------------------*\
     $SEARCH
 \*------------------------------------*/
@@ -4147,6 +4162,10 @@ hr {
   .search-button > i {
     color: #6d6e71;
     font-size: 70%; }
+
+.primary-search--dropdown {
+  visibility: hidden;
+  position: absolute; }
 
 thead th {
   border-bottom: 2px solid #ddd; }
