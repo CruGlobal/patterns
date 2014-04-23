@@ -103,4 +103,18 @@ $search-height: 32px;
             visibility: visible;
         }
     } 
+    
+    .primary-search__results{
+        h3{
+            @extend %pb;
+            border-bottom: 1px solid #dddddd;
+        }
+    }
+    
+        .primary-search__results--item{
+            @extend %mt;
+            @extend %pb;
+            
+            border-bottom: 1px solid #dddddd;
+        }
    

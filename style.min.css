@@ -2785,7 +2785,7 @@ input[disabled]:focus,
 .m {
   margin: 33px !important; }
 
-.mt {
+.mt, .primary-search__results--item {
   margin-top: 33px !important; }
 
 .mr {
@@ -2895,7 +2895,7 @@ input[disabled]:focus,
 .pr {
   padding-right: 33px !important; }
 
-.pb {
+.pb, .primary-search__results h3, .primary-search__results--item {
   padding-bottom: 33px !important; }
 
 .pl {
@@ -4606,6 +4606,12 @@ hr {
       content: '\e80c'; }
 .primary-search.active .primary-search--dropdown {
   visibility: visible; }
+
+.primary-search__results h3 {
+  border-bottom: 1px solid #dddddd; }
+
+.primary-search__results--item {
+  border-bottom: 1px solid #dddddd; }
 
 thead th {
   border-bottom: 2px solid #ddd; }
