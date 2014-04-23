@@ -3,7 +3,7 @@ page-class: page--static
 ---
 {% include head.html %}
 
-	<div id="js-container"  class="js-container">
+<div id="js-container"  class="js-container">
 		
 		<!-- .site-header -->
 			{% include header.html %}		
@@ -11,13 +11,156 @@ page-class: page--static
   
     
     <!-- .page-content -->
-    <div class="page-content"> 
-    	<div class="layout-single-column  layout--wide">
-    		<h1>Hello World!</h1>
-    	</div> 	
-	</div>
+    <div class="page-content pt"> 
 
-  
+    	<!-- Start community header -->
+    	<div class="post__headline  layout-single-column center-block">
+			<!-- Start community breadcrumbs -->
+			<ul class= "nav">
+				<li>
+					<a href= "#">Communities</a>
+				</li>
+				<li>
+					<a href= "#">Cities</a>
+				</li>
+			</ul>
+			<!-- End community breadcrumbs -->
+
+			<!-- Start community name -->
+			<h1>New York Bacon Lovers</h1>
+			<!-- End community name -->
+
+			<!-- Start community sub nav -->
+			<ul class= "nav">
+				<li>
+					<a href="#" class="nav-link">Stories</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Get Involved</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Events</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Calander</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+			<!-- End community sub nav -->
+
+    	</div>
+    	<!-- End community header -->
+
+    	<!-- Primary wrapper for community page -->
+    	<div class="layout-single-column layout--wide">
+    		<div class= "grid">
+     			<!-- Default community hero image -->
+			    <figure >
+			     	<img src="http://baconmockup.com/1200/600" alt="A Big Pile of Delicious Meats" title="A Big Pile of Delicious Meats" />
+			    </figure>
+    		</div>
+  	  	
+		  	<div  class="grid  block-list mb">
+				<div class="grid__item text--center one-whole desk--one-half">
+		        	<div class="m-- p-- color-white">
+		          		<div class="action-icons">
+		            		<img class="mb-" src="{{ site.root }}assets/images/tea.jpg" alt="Fabulous Story Photo" title="Fabulous Story Photo">
+		          		</div>
+		          		<h4 class="mb0">Fabulous Story</h4>
+		      			<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		          		<a class="button button--subtle" href="#">What happened next?</a>
+		        	</div>
+		      	</div>
+
+		      	<div class="grid__item text--center one-whole desk--one-half">
+		        	<div class="m-- p-- color-white">
+			          <div class="action-icons">
+			            <img class="mb-" src="{{ site.root }}assets/images/tea.jpg" alt="Jimmy's broken heart photo" title="Jimmy's broken heart photo">
+			          </div>
+			          <h4 class="mb0">Heart Tug Story</h4>
+			          <p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			          <a class="button button--subtle" href="#">Read Jimmy's response</a>
+		        	</div>
+		      	</div>
+	      	</div>
+
+	      	<div  class="grid">
+		      	<div class="grid__item text--center one-whole mt">
+		     		<h2 class= "mt++">Get Involved</h2>
+		     	</div>
+
+		     
+			     	<div class= "grid button-group">
+				     	<div class= "grid_item desk--one-half">
+				     		<div class="m--">
+				     			<button class= "button button--primary full-width">Find a Location</button>
+				     		</div>
+				     	</div>
+				     	<div class= "grid_item desk--one-half">
+				     		<div class="m--">
+				     			<button class= "button button--primary full-width">Start a Personal Relationship with Jesus</button>
+				     		</div>
+				     	</div>
+			     	</div>
+		     	
+
+		      	<div class="grid__item text--center one-whole  desk--one-third">
+        		
+        			<div class="m-- p-- color-white">
+          				<div class="action-icons">
+            				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-students.svg" alt="Soularium on Campus"/>
+          				</div>
+            			<h4 class="mb0">Students</h4>
+            			<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			            <a class="button button--subtle" href="#">Read More</a>
+        			</div>
+    			</div>
+
+      			<div class="grid__item text--center one-whole  desk--one-third">
+        			<div class="m-- p-- color-white">
+          				<div class="action-icons">
+            				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
+          				</div>
+          				<h4 class="mb0">Families</h4>
+          				<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          				<a class="button button--subtle" href="#">Read More</a>
+        			</div>
+      			</div>
+
+		      	<div class="grid__item text--center one-whole  desk--one-third">
+		        	<div class="m-- p-- color-white">
+		          		<div class="action-icons">
+		            		<img class="mb-" src="{{ site.root }}assets/images/cru-icon-cities.svg" alt="Uniquely Gifted (image)">
+		          		</div>
+		          		<h4 class="mb0">City</h4>
+		          		<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		          		<a class="button button--subtle" href="#">Read More</a>
+		        	</div>
+		     	</div>
+
+		     	
+
+		      	<div class="grid__item text--left one-whole">
+		        	<div class="m-- p-- color-white">
+			          <div class="action-icons">
+			            <img class="mb-" src="{{ site.root }}assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
+			          </div>
+			          <h4 class="mb0">Families</h4>
+			          <p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			          <a class="button button--subtle" href="#">Read More</a>
+		        	</div>
+		      	</div>
+
+		      	</div>
+		    </div>
+		</div>
+  	</div>
+
     <!-- Footer Component -->
     <footer class="global-footer">    
       <hr class="section-divider">
