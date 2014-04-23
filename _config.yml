@@ -1,9 +1,0 @@
-host:        localhost
-
-markdown: rdiscount
-pygments: true
-permalink: patterns/:title.html
-
-name: Cru Pattern Library
-root: http://cruglobal.github.io/patterns/ 
-#root: '/'
