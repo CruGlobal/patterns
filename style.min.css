@@ -2785,7 +2785,7 @@ input[disabled]:focus,
 .m {
   margin: 33px !important; }
 
-.mt {
+.mt, .primary-search__results--item {
   margin-top: 33px !important; }
 
 .mr {
@@ -2797,7 +2797,7 @@ input[disabled]:focus,
 .ml {
   margin-left: 33px !important; }
 
-.me {
+.me, .locations .locations__select {
   margin-top: 33px !important;
   margin-bottom: 33px !important; }
 
@@ -2869,7 +2869,7 @@ input[disabled]:focus,
 .mr0 {
   margin-right: 0 !important; }
 
-.mb0, .grid__item.media {
+.mb0, .grid__item.media, .locations li > a {
   margin-bottom: 0 !important; }
 
 .ml0 {
@@ -2895,7 +2895,7 @@ input[disabled]:focus,
 .pr {
   padding-right: 33px !important; }
 
-.pb {
+.pb, .primary-search__results h3, .primary-search__results--item {
   padding-bottom: 33px !important; }
 
 .pl {
@@ -3073,6 +3073,9 @@ input[disabled]:focus,
 
 .display--inline {
   display: inline; }
+
+.display--none, .locations .locations__list {
+  display: none; }
 
 /**
  * Sizes
@@ -3528,6 +3531,18 @@ q {
   font-family: "cruicons";
   padding-left: 10px;
   font-size: 18px; }
+
+@media screen and (min-width: 37.5em) {
+  .locations .locations__select {
+    display: none; } }
+@media screen and (min-width: 37.5em) {
+  .locations .locations__list {
+    display: block; } }
+@media screen and (min-width: 37.5em) {
+  .locations li {
+    width: 33.3333333%; } }
+.locations li > a:hover {
+  background-color: #f6f6f6; }
 
 /*------------------------------------*\
     $HEADER
@@ -4592,6 +4607,12 @@ hr {
 .primary-search.active .primary-search--dropdown {
   visibility: visible; }
 
+.primary-search__results h3 {
+  border-bottom: 1px solid #dddddd; }
+
+.primary-search__results--item {
+  border-bottom: 1px solid #dddddd; }
+
 thead th {
   border-bottom: 2px solid #ddd; }
 
@@ -5353,12 +5374,15 @@ textarea.text-input {
 .text-white, .button--primary, .button--secondary {
   color: white !important; }
 
-.basic-transition, .more-stories__link {
+.basic-transition, .locations li > a, .more-stories__link {
   -webkit-transition: 250ms ease-in;
   -moz-transition: 250ms ease-in;
   -ms-transition: 250ms ease-in;
   -o-transition: 250ms ease-in;
   transition: 250ms ease-in; }
+
+.decoration--none, .locations li > a:hover {
+  text-decoration: none; }
 
 body {
   background-color: #f8f8f8; }
