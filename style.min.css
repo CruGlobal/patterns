@@ -2320,55 +2320,37 @@ input + .additional {
  * Base button styles
  */
 .button {
+  position: relative;
   display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
   cursor: pointer;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
   background-color: #f1f1f1;
   background-image: none;
   border: 2px solid;
   border-color: #d7d7d7;
   color: #6d6e71;
   font-weight: 500;
-  line-height: 3;
   text-align: center;
+  letter-spacing: 0.02em;
   vertical-align: middle;
   overflow: visible;
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 6px 18px;
+  /* 9 */
+  padding: 0.31579rem 0.94737rem;
+  /* 9 */
   font-size: 16px;
   font-size: 0.84211rem;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  min-height: 40px;
-  /* 9 */
-  min-height: 2.10526rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-left: 24px;
-  /* 9 */
-  padding-left: 1.26316rem;
-  /* 9 */
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  padding-right: 24px;
-  /* 9 */
-  padding-right: 1.26316rem;
-  /* 9 */
   /* 3 */
   /* 3 */
   /* 4 */
@@ -2379,6 +2361,11 @@ input + .additional {
   /* 9 */
   border-radius: 0.10526rem;
   /* 9 */
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -2431,6 +2418,22 @@ input + .additional {
    * 1. Remove padding so that widths and paddings don’t conflict.
    */ }
   .button--small {
+    line-height: 1.75;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    padding: 8px 22px;
+    /* 9 */
+    padding: 0.42105rem 1.15789rem;
+    /* 9 */ }
+  .button--large {
     line-height: 2;
     /* 3 */
     /* 3 */
@@ -2438,61 +2441,13 @@ input + .additional {
     /* 6 */
     /* 6 */
     /* 7 */
-    height: 24px;
-    /* 9 */
-    height: 1.26316rem;
-    /* 9 */
-    /* 3 */
-    /* 3 */
     /* 4 */
     /* 6 */
     /* 6 */
     /* 7 */
-    padding-left: 8px;
+    padding: 12px 26px;
     /* 9 */
-    padding-left: 0.42105rem;
-    /* 9 */
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    padding-right: 8px;
-    /* 9 */
-    padding-right: 0.42105rem;
-    /* 9 */ }
-  .button--large {
-    line-height: 4;
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    height: 64px;
-    /* 9 */
-    height: 3.36842rem;
-    /* 9 */
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    padding-left: 30px;
-    /* 9 */
-    padding-left: 1.57895rem;
-    /* 9 */
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    padding-right: 30px;
-    /* 9 */
-    padding-right: 1.57895rem;
+    padding: 0.63158rem 1.36842rem;
     /* 9 */ }
   .button--full {
     width: 100%;
@@ -2723,6 +2678,75 @@ input[disabled]:focus,
   display: none; }
 
 /*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+/**
+ * Basic pagination object, extends `.nav`.
+ * Requires some funky commenting to collapse any white-space caused by the
+ * `display:inline-block;` rules.
+ *
+   <ol class="nav  pagination">
+       <li class=pagination__first>First</li>
+       <li class=pagination__prev>Previous</li>
+       <li><a href=/page/1>1</a></li>
+       <li><a href=/page/2>2</a></li>
+       <li class=current><a href=/page/3>3</a></li>
+       <li><a href=/page/4>4</a></li>
+       <li><a href=/page/5>5</a></li>
+       <li class=pagination__next><a href=/page/next>Next</a></li>
+       <li class=pagination__last><a href=/page/last>Last</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/9Y6PU
+ *
+ */
+.pagination {
+  margin-bottom: 33px;
+  text-align: center;
+  /**
+   * Remove whitespace caused by `inline-block`.
+   */
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em; }
+
+.pagination li {
+  padding: 16.5px;
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.pagination li > a {
+  padding: 16.5px;
+  margin: -16.5px; }
+
+.pagination__prev > .button, .pagination__next > .button {
+  margin: 0;
+  /* 3 */
+  /* 3 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  /* 4 */
+  /* 6 */
+  /* 6 */
+  /* 7 */
+  padding: 8px 22px;
+  /* 9 */
+  padding: 0.42105rem 1.15789rem;
+  /* 9 */ }
+
+.pagination__prev a:before {
+  content: "\00AB" "\00A0"; }
+
+.pagination__next a:after {
+  content: "\00A0" "\00BB"; }
+
+.current > a {
+  pointer-events: none;
+  cursor: text;
+  color: #444444; }
+
+/*------------------------------------*\
     $MEDIA
 \*------------------------------------*/
 /**
@@ -2785,7 +2809,7 @@ input[disabled]:focus,
 .m {
   margin: 33px !important; }
 
-.mt, .primary-search__results--item {
+.mt {
   margin-top: 33px !important; }
 
 .mr {
@@ -2895,7 +2919,7 @@ input[disabled]:focus,
 .pr {
   padding-right: 33px !important; }
 
-.pb, .primary-search__results h3, .primary-search__results--item {
+.pb, .primary-search__results h3 {
   padding-bottom: 33px !important; }
 
 .pl {
@@ -2953,7 +2977,7 @@ input[disabled]:focus,
 .pl- {
   padding-left: 16.5px !important; }
 
-.pe- {
+.pe-, .primary-search__results--item {
   padding-top: 16.5px !important;
   padding-bottom: 16.5px !important; }
 
@@ -4610,8 +4634,15 @@ hr {
 .primary-search__results h3 {
   border-bottom: 1px solid #dddddd; }
 
-.primary-search__results--item {
-  border-bottom: 1px solid #dddddd; }
+.primary-search__results--item:hover {
+  background-color: #f2f2f2; }
+.primary-search__results--item > a {
+  color: #444444; }
+  .primary-search__results--item > a, .primary-search__results--item > a:hover {
+    text-decoration: none; }
+
+.results-title {
+  color: #3eb1c8; }
 
 thead th {
   border-bottom: 2px solid #ddd; }
@@ -4627,6 +4658,9 @@ tbody {
 /** 
  * Use this mixin to quickly pump out buttons:
  * @mixin btn($background, $border, $color).
+ *
+ * Change the hover and other states with:;
+ * @mixin btn-effects($background, $border, $color).
  * 
  * Quick not that it will not work with transparency due to 
  * the hover states. 
@@ -4640,10 +4674,6 @@ tbody {
   color: inherit;
   background-color: #f9b625;
   border-color: #f8ae0c; }
-  .button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
-    color: inherit;
-    background-color: #efa507;
-    border-color: #c28605; }
   .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
     background-image: none; }
   .button--primary.disabled, .button--primary.disabled:hover, .button--primary.disabled:focus, .button--primary.disabled:active, .button--primary.disabled.active, .button--primary[disabled], .button--primary[disabled]:hover, .button--primary[disabled]:focus, .button--primary[disabled]:active, .button--primary[disabled].active, fieldset[disabled] .button--primary, fieldset[disabled] .button--primary:hover, fieldset[disabled] .button--primary:focus, fieldset[disabled] .button--primary:active, fieldset[disabled] .button--primary.active {
@@ -4651,15 +4681,15 @@ tbody {
     border-color: #f8ae0c;
     cursor: not-allowed;
     pointer-events: none; }
+  .button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
+    color: white;
+    background-color: #efa507;
+    border-color: #c28605; }
 
 .button--secondary {
   color: inherit;
   background-color: #666062;
   border-color: #595455; }
-  .button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
-    color: inherit;
-    background-color: #514c4e;
-    border-color: #393637; }
   .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
     background-image: none; }
   .button--secondary.disabled, .button--secondary.disabled:hover, .button--secondary.disabled:focus, .button--secondary.disabled:active, .button--secondary.disabled.active, .button--secondary[disabled], .button--secondary[disabled]:hover, .button--secondary[disabled]:focus, .button--secondary[disabled]:active, .button--secondary[disabled].active, fieldset[disabled] .button--secondary, fieldset[disabled] .button--secondary:hover, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary.active {
@@ -4667,16 +4697,16 @@ tbody {
     border-color: #595455;
     cursor: not-allowed;
     pointer-events: none; }
+  .button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
+    color: white;
+    background-color: #514c4e;
+    border-color: #393637; }
 
 .button--subtle, input.button--subtle {
   background-color: #e9e9e9;
   color: #6d6e71;
   background-color: rgba(229, 229, 229, 0.35);
   border-color: rgba(216, 216, 216, 0.35); }
-  .button--subtle:hover, .button--subtle:focus, .button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:hover, input.button--subtle:focus, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
-    color: #6d6e71;
-    background-color: rgba(209, 209, 209, 0.35);
-    border-color: rgba(186, 186, 186, 0.35); }
   .button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
     background-image: none; }
   .button--subtle.disabled, .button--subtle.disabled:hover, .button--subtle.disabled:focus, .button--subtle.disabled:active, .button--subtle.disabled.active, .button--subtle[disabled], .button--subtle[disabled]:hover, .button--subtle[disabled]:focus, .button--subtle[disabled]:active, .button--subtle[disabled].active, fieldset[disabled] .button--subtle, fieldset[disabled] .button--subtle:hover, fieldset[disabled] .button--subtle:focus, fieldset[disabled] .button--subtle:active, fieldset[disabled] .button--subtle.active, input.button--subtle.disabled, input.button--subtle.disabled:hover, input.button--subtle.disabled:focus, input.button--subtle.disabled:active, input.button--subtle.disabled.active, input.button--subtle[disabled], input.button--subtle[disabled]:hover, input.button--subtle[disabled]:focus, input.button--subtle[disabled]:active, input.button--subtle[disabled].active, fieldset[disabled] input.button--subtle, fieldset[disabled] input.button--subtle:hover, fieldset[disabled] input.button--subtle:focus, fieldset[disabled] input.button--subtle:active, fieldset[disabled] input.button--subtle.active {
@@ -4684,6 +4714,10 @@ tbody {
     border-color: rgba(216, 216, 216, 0.35);
     cursor: not-allowed;
     pointer-events: none; }
+  .button--subtle:hover, .button--subtle:focus, .button--subtle:active, .button--subtle.active, .open .button--subtle.dropdown-toggle, input.button--subtle:hover, input.button--subtle:focus, input.button--subtle:active, input.button--subtle.active, .open input.button--subtle.dropdown-toggle {
+    color: white;
+    background-color: #666062;
+    border-color: #595455; }
 
 .button--unstyled:link, .button--unstyled:visited, .button--unstyled:hover, .button--unstyled:focus, .button--unstyled:active,
 input.button--unstyled:link,
@@ -5375,11 +5409,11 @@ textarea.text-input {
   color: white !important; }
 
 .basic-transition, .locations li > a, .more-stories__link {
-  -webkit-transition: 250ms ease-in;
-  -moz-transition: 250ms ease-in;
-  -ms-transition: 250ms ease-in;
-  -o-transition: 250ms ease-in;
-  transition: 250ms ease-in; }
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease; }
 
 .decoration--none, .locations li > a:hover {
   text-decoration: none; }
