@@ -112,9 +112,22 @@ $search-height: 32px;
     }
     
         .primary-search__results--item{
-            @extend %mt;
-            @extend %pb;
+            @extend %pe-;
             
-            border-bottom: 1px solid #dddddd;
+            &:hover{
+                background-color: #f2f2f2;
+            }
+            
+            & > a{
+                color: $base-text-color;
+                
+                &, &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .results-title{
+            color: $color-bright-blue;
         }
    
