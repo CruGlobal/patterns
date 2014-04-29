@@ -11,12 +11,13 @@ page-class: page--static
   
     
     <!-- .page-content -->
-    <div class="page-content pt"> 
+    <div class="page-content  pt"> 
 
     	<!-- Start community header -->
-    	<div class="post__headline  layout-single-column  center-block">
+    	<div class="layout-single-column  center-block  layout--wide">
+			
 			<!-- Start community breadcrumbs -->
-			<ul class= "nav">
+			<ul class="nav">
 				<li>
 					<a href= "#">Communities</a>
 				</li>
@@ -24,12 +25,13 @@ page-class: page--static
 					<a href= "#">Cities</a>
 				</li>
 			</ul>
-
+				
 			<!-- Start community name -->
 			<h1>New York Bacon Lovers</h1>
-
+		</div>
+		<div class="layout-single-column  center-block">
 			<!-- Start community sub nav -->
-			<ul class= "nav  color-white">
+			<ul class="nav  color-white  text--center">
 				<li>
 					<a href="#" class="nav-link">Stories</a>
 				</li>
@@ -40,7 +42,7 @@ page-class: page--static
 					<a href="#" class="nav-link">Events</a>
 				</li>
 				<li>
-					<a href="#" class="nav-link">Calander</a>
+					<a href="#" class="nav-link">Calendar</a>
 				</li>
 				<li>
 					<a href="#" class="nav-link">About</a>
@@ -49,88 +51,80 @@ page-class: page--static
 					<a href="#" class="nav-link">Contact</a>
 				</li>
 			</ul>
-
-    	</div>
-
-    	<!-- Primary wrapper for community page -->
-    	<div class="post-body  layout-single-column  layout--wide">
-    		<div class= "grid">
-     			<!-- Default community hero image -->
-			    <figure class="ml">
+		</div>
+		<div class="layout-single-column  center-block  layout--wide">	
+			<!-- Default community hero image -->
+		    <figure>
+		    	<a href="#">
 			     	<img src="http://baconmockup.com/1200/600" alt="A Big Pile of Delicious Meats" title="A Big Pile of Delicious Meats" />
-			    </figure>
-    		</div>
-  	  	
-		  	<div  class="grid  block-list mb">
-				<div class="grid__item text--center  one-whole  desk--one-half">
-		        	<div class="m--  p--  color-white">
-		          		<div class="action-icons">
-		            		<img class="mb-" src="{{ site.root }}assets/images/tea.jpg" alt="Fabulous Story Photo" title="Fabulous Story Photo">
+			     	<figcaption class="image__caption">Cum sociis natoque penatibus et magnis</figcaption>
+		        </a>
+		    </figure>
+		  
+  	  		<div class="grid">
+  	  			<div class="grid__item  one-whole  media">
+		        	<div class="color-white  p  mb">
+		          		<div class="media__img">
+		            		<img class="mb-" src="http://baconmockup.com/400/200" alt="Fabulous Story Photo" title="Fabulous Story Photo">
 		          		</div>
-		          		<h4 class="mb0">Fabulous Story</h4>
-		      			<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-		          		<a class="button  button--subtle" href="#">What happened next?</a>
+		          		<div class="media__body  text--left">
+		          			<h4>Fabulous Story</h4>
+		          			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		          			<a class="button  button--subtle" href="#">What happens next?</a>
+		          		</div>
 		        	</div>
-		      	</div>
-
-		      	<div class="grid__item  text--center  one-whole  desk--one-half">
-		        	<div class="m--  p--  color-white">
-			          <div class="action-icons">
-			            <img class="mb-" src="{{ site.root }}assets/images/tea.jpg" alt="Jimmy's broken heart photo" title="Jimmy's broken heart photo">
-			          </div>
-			          <h4 class="mb0">Heart Tug Story</h4>
-			          <p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-			          <a class="button  button--subtle" href="#">Read Jimmy's response</a>
-		        	</div>
-		      	</div>
+	        	</div>
 	      	</div>
-
-	      	<div class="center-block  mt">
-	     		<h2 class= "callout mt+">Get Involved</h2>
+	      	<div class="grid">
+		   		<div class="grid__item  one-whole  media">
+		        	<div class="color-white  p  mb">
+		          		<div class="media__img">
+	            			<img class="mb-" src="http://baconmockup.com/200/200" alt="Jimmy's broken heart photo" title="Jimmy's broken heart photo">
+		          		</div>
+		          		<div class="media__body  text--left">
+		          			<h4>Heart Tug Story</h4>
+		          			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		          			<a class="button  button--subtle" href="#">Jimmy responded by&#46;&#46;&#46;</a>
+		          		</div>
+		        	</div>
+		        </div>
+	      	</div>
+	      	
+	      	<!--Start of Get Involved-->
+	      	<div class="center-block  mt  mb">
+	     		<h2 class= "callout">Get Involved</h2>
 	     	</div>
 		     
-	     	<div class= "grid button-group">
-		     	<div class= "grid__item  desk--one-half">
-		     		<div class="m--">
-		     			<button class= "button  button--primary  full-width">Find a Location</button>
-		     		</div>
+	     	<div class="grid">
+		     	<div class= "grid__item  desk--one-half  button-group">
+		     		<button class= "button  button--primary  full-width">Find a Location</button>
 		     	</div>
-		     	<div class= "grid__item  desk--one-half">
-		     		<div class="m--">
-		     			<button class= "button  button--primary  full-width">Start a Personal Relationship with Jesus</button>
-		     		</div>
-		     	</div>
+	     	
+	     		<div class= "grid__item  desk--one-half button-group">
+	     			<button class= "button  button--primary  full-width">Start a Personal Relationship with Jesus</button>
+	     		</div>
 	     	</div>
+	    	
 		     
-		    <!--Start of Events Calendar Table-->	
-		    <div class="center-block  mt">
-	     		<h2 class= "callout mt+">Events&#58;&#32;May 11&#45;17</h2>
+		    <!--Start of Events Calendar-->	
+		    <div class="center-block  mt  mb">
+	     		<h2 class= "callout">Events</h2>
 	     	</div>
-
+		 
 		    <div class="grid">
-		    	<div class="grid__item  one-quarter">
-		    		<div class="pattern">
-		    			<p class="h3  text--center  pt">Sunday</p>
-		    			<p class="h2  text--center">May 11</p>
-		    		</div>
+		    	<div class="grid__item  one-whole  desk--one-quarter">
+		    		<div class="pattern text--center  mb-">
+						<h4 class="text-white  color-gray  mb--">Sunday</h4>
+		    			<h3 class="m--">May 11</h3>	
+				    </div>
 		    	</div>
-		    
-		    	<div class="grid__item  three-quarters">	
-		    		<div class="pattern  pattern__view">
-		    			<table>
-							<thead>
-								<tr>
-									<th>Day</th>
-									<th>Date</th>
-									<th class="">Time</th>
-									<th class="">Info</th>
-								</tr>
-							</thead>
+		   
+		    	<div class="grid__item  desk--three-quarters">	
+		    		<div class="pattern text--left">
+		    			<table class="mb0">
 							<tbody>
 								<tr>
-									<td>Sunday</td>
-									<td>May 11</td>
-									<td>6&#45;8&#58;30 PM</td>
+									<td>6&#58;30&#45;8&#58;30 PM</td>
 									<td>
 										<ul class="bare-list">
 											<li>Event&#58;&#32;Book of John Study</li>
@@ -141,8 +135,6 @@ page-class: page--static
 									</td>
 								</tr>
 								<tr>
-									<td>Sunday</td>
-									<td>May 11</td>
 									<td>7&#45;8 PM</td>
 									<td>
 										<ul class="bare-list">
@@ -153,9 +145,24 @@ page-class: page--static
 										</ul>
 									</td>
 								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+ 			</div>
+ 			<div class="grid">
+		    	<div class="grid__item  desk--one-quarter">
+		    		<div class="pattern text--center  mb-">
+		    			<h4 class="text-white  color-gray  mb--">Monday</h4>
+		    			<h3 class="m--">May 12</h3>
+		    		</div>
+		    	</div>
+
+				<div class="grid__item  desk--three-quarters">	
+		    		<div class="pattern text--left">
+		    			<table class="mb0">
+							<tbody>
 								<tr>
-									<td>Monday</td>
-									<td>May 12</td>
 									<td>6&#45;7&#58;30 PM</td>
 									<td>
 										<ul class="bare-list">
@@ -166,36 +173,75 @@ page-class: page--static
 										</ul>
 									</td>
 								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid__item  desk--one-quarter">
+		    		<div class="pattern text--center  mb-">
+		    			<h4 class="text-white  color-gray  mb--">Wednesday</h4>
+		    			<h3 class="m--">May 14</h3>
+		    		</div>
+		    	</div>
+		    
+		    	<div class="grid__item  desk--three-quarters">	
+		    		<div class="pattern text--left">
+		    			<table class="mb0">
+							<tbody>
 								<tr>
-									<td>Thursday</td>
-									<td>May 15</td>
-									<td>6&#45;PM</td>
+									<td>6&#58;30&#45;8&#58;30 PM</td>
 									<td>
 										<ul class="bare-list">
-											<li>Event&#58;&#32;Parade Float Building</li>
-											<li>Location&#58;&#32;Lee Franklin Stadium</li>
-											<li>Contact&#58;&#32;Event Chairperson</li>
+											<li>Event&#58;&#32;Ladies Bible Study A</li>
+											<li>Location&#58;&#32;Allison Hall, Group Room</li>
+											<li>Contact&#58;&#32;Sally May</li>
 											<li>Phone&#58;&#32;&#40;555&#41;555&#45;5555</li>
 										</ul>
 									</td>
 								</tr>
 								<tr>
-									<td>Friday</td>
-									<td>May 16</td>
-									<td>6&#45;PM</td>
+									<td>6&#58;30&#45;8&#58;30 PM</td>
 									<td>
 										<ul class="bare-list">
-											<li>Event&#58;&#32;Parade Float Building</li>
-											<li>Location&#58;&#32;Lee Franklin Stadium</li>
-											<li>Contact&#58;&#32;Event Chairperson</li>
+											<li>Event&#58;&#32;Ladies Bible Study D</li>
+											<li>Location&#58;&#32;Beckley Hall, Group Room</li>
+											<li>Contact&#58;&#32;Susie Que</li>
 											<li>Phone&#58;&#32;&#40;555&#41;555&#45;5555</li>
 										</ul>
 									</td>
 								</tr>
 								<tr>
-									<td>Saturday</td>
-									<td>May 17</td>
-									<td>8&#45;AM</td>
+									<td>7&#45;8 PM</td>
+									<td>
+										<ul class="bare-list">
+											<li>Event&#58;&#32;Men of Courage</li>
+											<li>Location&#58;&#32;Flex Hall Auditorium</li>
+											<li>Contact&#58;&#32;Jim Heavy</li>
+											<li>Phone&#58;&#32;&#40;555&#41;555&#45;5555</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid__item  desk--one-quarter">
+		    		<div class="pattern text--center  mb-">
+		    			<h4 class="text-white  color-gray  mb--">Friday</h4>
+		    			<h3 class="m--">May 16</h3>
+		    		</div>
+		    	</div>
+
+				<div class="grid__item  desk--three-quarters">	
+		    		<div class="pattern text--left">
+						<table class="mb0">
+							<tbody>
+								<tr>
+									<td>6&#45;PM</td>
 									<td>
 										<ul class="bare-list">
 											<li>Event&#58;&#32;Parade Float Building</li>
@@ -207,45 +253,84 @@ page-class: page--static
 								</tr>
 							</tbody>
 						</table>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid__item  desk--one-quarter">
+		    		<div class="pattern text--center  mb-">
+		    			<h4 class="text-white  color-gray  mb--">Saturday</h4>
+		    			<h3 class="m--">May 17</h3>
+		    		</div>
+		    	</div>
+				<div class="grid__item  desk--three-quarters">	
+		    		<div class="pattern text--left">
+						<table class="mb0">
+							<tbody>
+
+								<tr>
+									<td>8&#45;AM</td>
+									<td>
+										<ul class="bare-list">
+											<li>Event&#58;&#32;Parade Float Building</li>
+											<li>Location&#58;&#32;Lee Franklin Stadium</li>
+											<li>Contact&#58;&#32;Event Chairperson</li>
+											<li>Phone&#58;&#32;&#40;555&#41;555&#45;5555</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>1&#45;PM</td>
+									<td>
+										<ul class="bare-list">
+											<li>Event&#58;&#32;Parade</li>
+											<li>Location&#58;&#32;Main Street&#58; In front of Green's Arts Supply</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 		    		</div>	
 		    	</div>
 		    </div>
+		
+		
+			<div class="grid">
+		      	<div class="grid__item  text--center  one-whole  desk--one-third">
+	    			<div class="m--  p--  color-white">
+	      				<div class="action-icons">
+	        				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-students.svg" alt="Soularium on Campus"/>
+	      				</div>
+	        			<h4 class="mb0">Contact</h4>
+	        			<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+			            <a class="button  button--subtle" href="#">Read More</a>
+	    			</div>
+				</div>
 
+	  			<div class="grid__item  text--center  one-whole  desk--one-third">
+	    			<div class="m--  p--  color-white">
+	      				<div class="action-icons">
+	        				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
+	      				</div>
+	      				<h4 class="mb0">About</h4>
+	      				<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+	      				<a class="button  button--subtle" href="#">Read More</a>
+	    			</div>
+	  			</div>
 
-	      	<div class="grid__item  text--center  one-whole  desk--one-third">
-    		
-    			<div class="m--  p--  color-white">
-      				<div class="action-icons">
-        				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-students.svg" alt="Soularium on Campus"/>
-      				</div>
-        			<h4 class="mb0">Contact</h4>
-        			<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-		            <a class="button  button--subtle" href="#">Read More</a>
-    			</div>
-			</div>
-
-  			<div class="grid__item  text--center  one-whole  desk--one-third">
-    			<div class="m--  p--  color-white">
-      				<div class="action-icons">
-        				<img class="mb-" src="{{ site.root }}assets/images/cru-icon-families.svg" alt="Marriage Turnaround">
-      				</div>
-      				<h4 class="mb0">About</h4>
-      				<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-      				<a class="button  button--subtle" href="#">Read More</a>
-    			</div>
-  			</div>
-
-	      	<div class="grid__item  text--center  one-whole  desk--one-third">
-	        	<div class="m-- p-- color-white">
-	          		<div class="action-icons">
-	            		<img class="mb-" src="{{ site.root }}assets/images/cru-icon-cities.svg" alt="Uniquely Gifted (image)">
-	          		</div>
-	          		<h4 class="mb0">Bacon Lovers Alumni</h4>
-	          		<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-	          		<a class="button  button--subtle" href="#">Read More</a>
-	        	</div>
-	     	</div>
+		      	<div class="grid__item  text--center  one-whole  desk--one-third">
+		        	<div class="m-- p-- color-white">
+		          		<div class="action-icons">
+		            		<img class="mb-" src="{{ site.root }}assets/images/cru-icon-cities.svg" alt="Uniquely Gifted (image)">
+		          		</div>
+		          		<h4 class="mb0">Bacon Lovers Alumni</h4>
+		          		<p class="text--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+		          		<a class="button  button--subtle" href="#">Read More</a>
+		        	</div>
+		     	</div>
+		    </div>
 		</div>
+	</div>								
 		    
 	
   	
