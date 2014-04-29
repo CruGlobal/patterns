@@ -52,6 +52,11 @@ page-class: page--static
 </head>
 <!-- Custom class on the body -->
 <body class="page  page--article">
+    <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+    <div class="preload">
+        <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
+        <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+    </div>
     
     <!-- Facebook feed js -->
     <div id="fb-root"></div>
@@ -62,249 +67,248 @@ page-class: page--static
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
-    <div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
+	<div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
 		
-      <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
-      	<!-- The primary header -->
-      	<header class="site-header"  role="banner">
-      		<hgroup class="title-group  site-logo">
-      			<a href="#"  title="Return to Homepage">
-      				<h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
-      			</a>
-      		</hgroup>
-      		<a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
-      			<i class="icon-hamburger"></i>
-      		</a>
-      	</header>
-      	<!-- End primary header -->
+    <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
+    		<!-- The primary header -->
+    		<header class="site-header"  role="banner">
+  				<hgroup class="title-group  site-logo">
+  					<a href="#"  title="Return to Homepage">
+  						<h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
+  					</a>
+  				</hgroup>
+  				<a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
+  					<i class="icon-hamburger"></i>
+  				</a>
+    		</header>
+    		<!-- End primary header -->
 		
       
-    	    <!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
-  		    <nav  id="nav" class="navigation  js-navigation">			
-  			<ul class="nav  right-nav  flush--bottom">
-    			<ul class="nav  right-nav  flush--bottom">
-    				<li class="nav__item">
-    					<a class="nav-link" href="#signup">Sign Up</a>
-    				<li class="nav__item">
-    					<a class="nav-link" href="#">Log In</a>
-    				</li>
+  	<!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
+		<nav  id="nav" class="navigation  js-navigation">			
+			<ul class="nav  right-nav  flush--bottom">
+				<li class="nav__item">
+					<a class="nav-link" href="#signup">Sign Up</a>
+				<li class="nav__item">
+					<a class="nav-link" href="#">Log In</a>
+				</li>
 
-        	<li class="spoken-form  nav__item">	
-        		<form class="primary-search  js-primary-search"  method="get"  name="search">
-  	      	  <input class="search-field  text-input" placeholder="Search" type="search" />
-        			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
-  		      	<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
-        			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
-        				<li>
-        					<a href="">This Site</a>
-        				</li>
-        				<li>
-        					<a href="">Give to Staff, Ministries</a>
-        				</li>
-        			</ul>
-        		</form>
-        	</li>	
-  			</ul>						
+      	<li class="spoken-form  nav__item">	
+      		<form class="primary-search  js-primary-search"  method="get"  name="search">
+	      	  <input class="search-field  text-input" placeholder="Search" type="search" />
+      			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
+		      	<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
+      			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
+      				<li>
+      					<a href="">This Site</a>
+      				</li>
+      				<li>
+      					<a href="">Give to Staff, Ministries</a>
+      				</li>
+      			</ul>
+      		</form>
+      	</li>	
+			</ul>						
 
-  			<ul class="nav  site-nav  flush--bottom">
+			<ul class="nav  site-nav  flush--bottom">
 
-  				<!-- If the li has a dropdown add the .has-dropdown and .js-has-dropdown classes -->
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">How to Know God</a>
+				<!-- If the li has a dropdown add the .has-dropdown and .js-has-drowpdown classes -->
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">How to Know God</a>
 	
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item  has-dropdown--sub  js-has-dropdown--sub  position--relative">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item  has-dropdown--sub  js-has-dropdown--sub  position--relative">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
+            </ul>
+					</div>
+					<!-- End dropdown -->
 	
-  				</li>
-  				<!--End .nav-link.has-dropdown-->
+				</li>
+				<!--End .nav-link.has-dropdown-->
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">Train & Grow</a>
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">Train & Grow</a>
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
+            </ul>
+					</div>
+					<!-- End dropdown -->
+				</li>
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">Opportunities</a>
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">Opportunities</a>
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
+            </ul>
+					</div>
+					<!-- End dropdown -->
+				</li>
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">About</a>
-  							<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">About</a>
+							<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+								<ul class="nav  pe--">
 
-  					        <li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+										<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+									</li>
+									<li class="dropdown__item">
+										<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+									</li>							
+									<li class="dropdown__item">
+										<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+									</li>
+									<li class="dropdown__item">
+										<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+									</li>
+									<li class="dropdown__item">
+										<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+									</li>
 
-  				        </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
+						    </ul>
+							</div>
+							<!-- End dropdown -->
+				</li>
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">Communities</a>
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">Communities</a>
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
+            </ul>
+					</div>
+					<!-- End dropdown -->
+				</li>
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">Store</a>
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">Store</a>
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
+            </ul>
+					</div>
+					<!-- End dropdown -->
+				</li>
 
-  				<li class="nav__item  has-dropdown  js-has-dropdown">
-  					<a href="#"  class="nav-link">Give</a>
-  					<!-- Dropdown -->
-  					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
-  						<ul class="nav  pe--">
+				<li class="nav__item  has-dropdown  js-has-dropdown">
+					<a href="#"  class="nav-link">Give</a>
+					<!-- Dropdown -->
+					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left">
+						<ul class="nav  pe--">
 			
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
-  							</li>							
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
-  							</li>
-  							<li class="dropdown__item">
-  								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
-  							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/would-you-like-to-know-god-personally/index.htm">Would You Like to Know God Personally?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/who-is-jesus-god-or-just-a-good-man/index.htm">Who Is Jesus?</a>
+							</li>							
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/did-jesus-christ-really-rise-from-the-dead/index.htm">Did Jesus Rise From the Dead?</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/jesus-and-the-intellectual/index.htm">Jesus and the Intellectual</a>
+							</li>
+							<li class="dropdown__item">
+								<a class="ps-  pe--" href="http://www.cru.org/how-to-know-god/my-story-a-life-changed/index.htm">My Story</a>
+							</li>
 			
-                          </ul>
-  					</div>
-  					<!-- End dropdown -->
-  				</li>
-                
-  			</ul>
-  			<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
-  		</nav>
+            </ul>
+					</div>
+					<!-- End dropdown -->
+				</li>
+
+
+			</ul>
+			<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
+		</nav>
 		
     
           <!-- .page-content -->
@@ -312,7 +316,7 @@ page-class: page--static
       
             <article class="post-article">
         
-        
+              <!-- This is an optional image space. Only displayed if an image is placed there.-->
               <!-- COVER IMAGE COMPONENT -->
               <!-- Article main image -- full width version -->
             	<div class="layout-background-fill">
@@ -344,14 +348,14 @@ page-class: page--static
               <!-- POST BODY -->
               <div class="post__body  layout-single-column">
 
-                <!-- Default image view -->
-                <figure >
-                  <img src="http://baconmockup.com/1200/580"/>
-                  <figcaption class="image__caption  default-view">
-                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet.           
-                    <span class="image-credit">Photo by Morgan Thrall</span>
-                  </figcaption>
-                </figure>
+                <!-- Legacy Image -->
+              <figure class="image--legacy">
+                <img class="" src="http://baconmockup.com/1100/820"/>
+                <figcaption class="image__caption">
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                  <span class="image-credit">Photo by Bruce Wayne</span>
+                </figcaption>
+              </figure>
 
                 <!-- The component: a link list with one extra class on the wrapper -->
                 <nav class="post-nav">
@@ -430,7 +434,7 @@ page-class: page--static
          
                <!--Image expands past content to the left and right -->
                <figure class="image--outset__center">
-                 <img class="" src="http://baconmockup.com/1300/1040"/>
+                 <img class="" src="http://baconmockup.com/1300/540"/>
                  <figcaption class="image__caption">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</figcaption>
                </figure>
                <!-- Testing paragraphs -->
