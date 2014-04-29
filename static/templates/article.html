@@ -52,6 +52,11 @@ page-class: page--static
 </head>
 <!-- Custom class on the body -->
 <body class="page  page--article">
+    <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+    <div class="preload">
+        <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
+        <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+    </div>
     
     <!-- Facebook feed js -->
     <div id="fb-root"></div>
@@ -311,12 +316,12 @@ page-class: page--static
       
             <article class="post-article">
         
-        
+              <!-- This is an optional image space. Only displayed if an image is placed there.-->
               <!-- COVER IMAGE COMPONENT -->
               <!-- Article main image -- full width version -->
             	<div class="layout-background-fill">
                 <div class="cover-image-mask">
-                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"></div>         
+                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"  height=""></div>         
                 </div>
             	</div>
               <!-- End article main image -- full width version -->
@@ -325,33 +330,64 @@ page-class: page--static
               <!-- ARTICLE HEADLINE COMPONENT -->
             	<header class="post__headline  layout-single-column">
     
-              	 <h1 class="post-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h1>
+              	 <h1 class="post-title">Modern day abolitionist in Austin</h1>
     
               	<ul class="post-meta">
-                	<li class="accent">by Ultricies Nullam Lorem</li>
+                	<li class="accent">by Blair Pippin</li>
                 	<li class="accent">
-                    <a href="#">@Vestibulum</a>
+                    <a href="#">@blairpippin</a>
                   </li>
                 	<li>
-                    <time>4 days ago</time>
+                    <time>23 April 2014</time>
                   </li>	
               	</ul>
     
             	</header>
         
-        
               <!-- POST BODY -->
               <div class="post__body  layout-single-column">
-          
+
+                <!-- Article Share Buttons - Facebook, Twitter, Google+ -->
+                <div class="social-shares mb--">
+                  <div class="display--inline-block">
+                    <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=121368404576629";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                  </div>
+                  <div class="display--inline-block">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="crutweets" data-hashtags="cru" data-dnt="true">Tweet</a>
+
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                  </div>
+                  <div class="display--inline-block">
+                    <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+
+                    <script type="text/javascript">
+                      (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/platform.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                      })();
+                    </script>
+                  </div>
+                </div>
+
                 <!-- Default image view -->
                 <figure >
-                  <img src="http://baconmockup.com/1200/980"/>
+                  <img src="http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_058733~1~staticrendition/cru640x360.jpg"/>
                   <figcaption class="image__caption  default-view">
-                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet.           
-                    <span class="image-credit">Photo by Morgan Thrall</span>
+                    From an early age, John Nehme knew that the Lord was leading him to serve people on the margins of society.
+                    <span class="image-credit">Photo courtesy John Nehme</span>
                   </figcaption>
                 </figure>
-          
+
                 <!-- Testing paragraphs -->
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
                    Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo
@@ -377,7 +413,7 @@ page-class: page--static
          
                <!-- Image inset to the left -->
                <figure class="image--inset__left">
-                 <img class="" src="http://baconmockup.com/1100/820"/>
+                 <img class="" src="http://baconmockup.com/1100/520"/>
                  <figcaption class="image__caption">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</figcaption>
                </figure>
                <!-- Testing paragraphs -->
@@ -404,7 +440,7 @@ page-class: page--static
          
                <!--Image expands past content to the left and right -->
                <figure class="image--outset__center">
-                 <img class="" src="http://baconmockup.com/1300/1040"/>
+                 <img class="" src="http://baconmockup.com/1300/540"/>
                  <figcaption class="image__caption">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</figcaption>
                </figure>
                <!-- Testing paragraphs -->
@@ -429,10 +465,40 @@ page-class: page--static
                 <p>Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
              
-                  <!-- .pullquote text default in an <em> -->
-            			<blockquote class="pullquote"><em>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</em></blockquote>
-          
-          
+
+                <div class="more-stories  more-stories--related">
+                  <hr>
+                  <h4 class="ps- mb-  text--center">Related Stories</h4>
+
+                  <!--
+                   By default the li class is one-whole, if there are two related stories
+                   add desk--one-half, if there are three
+                   desk--one-third. There can be no more than three related stories
+                  -->
+
+                  <!-- Two related stories -->
+                  <ul class="grid  block-list">
+                    <li class="grid__item  desk--one-half">
+                      <a href="#"   class="more-stories__link  p-  affordance  small">
+                        <!-- Related story title -->
+                        <h5  class="m0  weight--semibold">Discovery Changes Volunteer’s Ministry</h5>
+
+                        <!-- Related story description -->
+                        <span>A volunteer shares how God broke him and then used him to launch ministries on four campuses.</span>
+                      </a>
+                    </li>
+                    <li class="grid__item  desk--one-half">
+                      <a href="#"   class="more-stories__link  p-  affordance  small">
+                        <!-- Related story title -->
+                        <h5  class="m0  weight--semibold">Comic Book Evangelism Tools</h5>
+
+                        <!-- Related story description -->
+                        <span>Cru develops a manga comic book to start conversations about depression and suicide.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <hr>
               </div>
         
         
@@ -502,6 +568,8 @@ page-class: page--static
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.10.1.min.js"><\/script>')</script>
+
+
 
     <script src="{{ site.root }}modernizr.min.js"></script>
     <script src="{{ site.root }}slider.min.js"></script>		
