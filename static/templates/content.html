@@ -1,4 +1,6 @@
-
+---
+page-class: page--static
+---
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -49,8 +51,13 @@
   <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
 </head>
 <!-- Custom class on the body -->
-<body class="page  page--article">
-
+<body class="page">
+  <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+  <div class="preload">
+      <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
+      <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+  </div>
+  
 <!-- Facebook feed js -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -307,200 +314,9 @@
 <!-- .page-content -->
 <div class="page-content"  role="main">
 
-  <article class="post-article">
-
-
-    <!-- COVER IMAGE COMPONENT -->
-    <!-- Article main image -- full width version -->
-    <div class="layout-background-fill">
-      <div class="cover-image-mask">
-        <div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"></div>
-      </div>
-    </div>
-    <!-- End article main image -- full width version -->
-
-
-    <!-- ARTICLE HEADLINE COMPONENT -->
-    <header class="post__headline  layout-single-column">
-
-      <h1 class="post-title">Modern day abolitionist in Austin</h1>
-
-      <ul class="post-meta">
-        <li class="accent">by Blair Pippin</li>
-        <li class="accent">
-          <a href="#">@blairpippin</a>
-        </li>
-        <li>
-          <time>23 April 2014</time>
-        </li>
-      </ul>
-
-    </header>
-
-    <!-- POST BODY -->
-    <div class="post__body  layout-single-column">
-
-      <!-- Article Share Buttons - Facebook, Twitter, Google+ -->
-      <div class="social-shares mb--">
-        <div class="display--inline-block">
-          <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=121368404576629";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-        </div>
-        <div class="display--inline-block">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-via="crutweets" data-hashtags="cru" data-dnt="true">Tweet</a>
-
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-        <div class="display--inline-block">
-          <div class="g-plus" data-action="share" data-annotation="bubble"></div>
-
-          <script type="text/javascript">
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/platform.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-          </script>
-        </div>
-      </div>
-
-      <!-- Default image view -->
-      <figure >
-        <img src="http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_058733~1~staticrendition/cru640x360.jpg"/>
-        <figcaption class="image__caption  default-view">
-          From an early age, John Nehme knew that the Lord was leading him to serve people on the margins of society.
-          <span class="image-credit">Photo courtesy John Nehme</span>
-        </figcaption>
-      </figure>
-
-      <!-- Testing paragraphs -->
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.
-        Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo
-        luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
-        sed odio dui. Curabitur blandit tempus porttitor.
-      </p>
-
-      <!-- .pullquote text default in an <em> -->
-      <blockquote class="pullquote">
-        <em>Integer posuere erat a ante venenatis dapibus posuere
-          velit aliquet. Vestibulum id ligula porta felis euismod semper.
-        </em>
-      </blockquote>
-
-      <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
-        sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Sed posuere
-        consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum
-        faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl
-        consectetur et.
-      </p>
-
-
-      <!-- Image inset to the left -->
-      <figure class="image--inset__left">
-        <img class="" src="http://baconmockup.com/1100/520"/>
-        <figcaption class="image__caption">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</figcaption>
-      </figure>
-      <!-- Testing paragraphs -->
-      <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
-        varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia
-        quam venenatis vestibulum. Curabitur blandit tempus porttitor. Morbi leo risus, porta
-        ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor
-        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur
-        est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-        lacinia odio sem nec elit.
-      </p>
-      <!-- Standard blockquotes text are in a <p> tag -->
-      <blockquote>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        </p>
-      </blockquote>
-
-
-      <!--Image expands past content to the left and right -->
-      <figure class="image--outset__center">
-        <img class="" src="http://baconmockup.com/1300/540"/>
-        <figcaption class="image__caption">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</figcaption>
-      </figure>
-      <!-- Testing paragraphs -->
-      <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh
-        ultricies vehicula ut id elit.Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-      </p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis
-        interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non
-        mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-      </p>
-
-      <!-- Image expands past content to the left -->
-      <figure class="image--outset__left">
-        <img class="" src="http://baconmockup.com/1000/790"/>
-        <figcaption class="image__caption">Vestibulum id ligula porta felis euismod semper.</figcaption>
-      </figure>
-      <!-- Testing paragraphs -->
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo,
-        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a
-        pharetra augue. Curabitur blandit tempus porttitor.</p>
-      <p>Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-
-
-      <div class="more-stories  more-stories--related">
-        <hr>
-        <h4 class="ps- mb-  text--center">Related Stories</h4>
-
-        <!--
-         By default the li class is one-whole, if there are two related stories
-         add desk--one-half, if there are three
-         desk--one-third. There can be no more than three related stories
-        -->
-
-        <!-- Two related stories -->
-        <ul class="grid  block-list">
-          <li class="grid__item  desk--one-half">
-            <a href="#"   class="more-stories__link  p-  affordance  small">
-              <!-- Related story title -->
-              <h5  class="m0  weight--semibold">Discovery Changes Volunteer’s Ministry</h5>
-
-              <!-- Related story description -->
-              <span>A volunteer shares how God broke him and then used him to launch ministries on four campuses.</span>
-            </a>
-          </li>
-          <li class="grid__item  desk--one-half">
-            <a href="#"   class="more-stories__link  p-  affordance  small">
-              <!-- Related story title -->
-              <h5  class="m0  weight--semibold">Comic Book Evangelism Tools</h5>
-
-              <!-- Related story description -->
-              <span>Cru develops a manga comic book to start conversations about depression and suicide.</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <hr>
-    </div>
-
-
-  </article>
-
-  <!-- Facebook Comments Feed -->
-  <section class="layout-single-column">
-    <div class="fb-comments" data-href="https://www.facebook.com/CruGlobal" data-width="700" data-numposts="3" data-colorscheme="dark"></div>
-  </section>
+  <div class="layout-single-column  layout--wide">
+    
+  </div>
 
 </div><!-- End .page-content -->
 
