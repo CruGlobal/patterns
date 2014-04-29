@@ -1,0 +1,13 @@
+.state-select, .campus-name{
+    @include mq(900px) {
+        width: 47%;
+    }
+}
+
+label[for="state-select"] { 
+    width: 5%;
+}
+
+.ui-helper-hidden-accessible{
+    @extend %accessibility;
+}

@@ -52,6 +52,11 @@ page-class: page--static
 </head>
 <!-- Custom class on the body -->
 <body class="page  page--article">
+    <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+    <div class="preload">
+        <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
+        <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+    </div>
     
     <!-- Facebook feed js -->
     <div id="fb-root"></div>
@@ -311,12 +316,12 @@ page-class: page--static
       
             <article class="post-article">
         
-        
+              <!-- This is an optional image space. Only displayed if an image is placed there.-->
               <!-- COVER IMAGE COMPONENT -->
               <!-- Article main image -- full width version -->
             	<div class="layout-background-fill">
                 <div class="cover-image-mask">
-                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"></div>         
+                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"  height=""></div>         
                 </div>
             	</div>
               <!-- End article main image -- full width version -->

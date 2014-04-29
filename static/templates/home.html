@@ -51,7 +51,13 @@ page-class: page--static
   <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
 </head>
 <body class="page  page--home">
-
+  <!-- Hidden preload `div` to fetch images before CSS needs them. -->
+  <div class="preload">
+      <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
+      <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+  </div>
+    
+    
 	<div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
 		
     <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
