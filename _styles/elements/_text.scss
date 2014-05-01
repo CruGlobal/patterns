@@ -17,6 +17,14 @@ figcaption{
 	@include font-size(14px, false);
 }
 
+.block-link, %block-link{
+    @extend %basic-transition; 
+    &:hover{
+        background-color: #f2f2f2;
+        text-decoration: none;
+    }
+}
+
 /**
  * Places a dash after a piece of text. Mainly for post meta info
  * 

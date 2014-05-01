@@ -111,14 +111,8 @@ $search-height: 32px;
         }
     }
     
-        .primary-search__results--item{
-            @extend %pe-;
-            
-            &:hover{
-                background-color: #f2f2f2;
-            }
-            
-            & > a{
+        .primary-search__results--item{                       
+            & > a{                
                 color: $base-text-color;
                 
                 &, &:hover{
