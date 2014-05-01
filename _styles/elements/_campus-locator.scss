@@ -38,3 +38,13 @@ a + .phone{
     display: block;
     border-radius: 3px 3px 0 0;
 }
+.contact__titles{
+    display: none;
+    @include mq(981px) { 
+        display: block;
+    }
+}
+.contact__item{
+    border-bottom: 1px solid #d0d0d0;
+    
+}
