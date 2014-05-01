@@ -1,54 +1,52 @@
 $(document).ready(function() {
 
-	$( function() {
-		$( '.js-campus-name' ).autocomplete( {
-			source: function( request, response ) {
-				$.ajax( {
-					url: cru_campus_finder_l10n.ministry_search,
-					dataType: 'jsonp',
-                    async: false,
-					data: {
-						'name': request.term,
-						'limit': 10
-					},
-					success: function( data ) {
-						response( $.map( data, function( item ) {
-							return {
-								label: item.name,
-								value: item.name,
-								id: item.id
-							};
-						} ) );
-					}
-				} );
-			},
-            /**
-			minLength: 2,
-			autoFocus: true,
-			select: function( event, ui ) {
-				$( '.js-campus-name' ).val( ui.item.id );
-				$( '.state-select-title' ).text("");
-				$( '.state-select-results' ).text("");
-				if( $( '.campus-finder form' ).attr( 'action' ) == '' ) {
-					display_campus_finder_results( ui.item.id );
-				}
-				else {
-					$( '.js-campus-name"]' ).val( ui.item.label );
-					$( '.campus-finder form' ).get( 0 ).submit();
-				}
-                */
-			}
-		} );
-		
-		$( '.campus-finder input.button' ).click( function() {
-			$( '.campus-finder input.campus-name' ).autocomplete( "search" );
-		} );
-		
-		if( $( '.campus-finder input[name="campus-id"]' ).val() != '' ) {
-			display_campus_finder_results( $( '.campus-finder input[name="campus-id"]' ).val() );
-		}
-		
-	} );
+    $( function() {
+        $( '.campus-finder input.campus-name' ).autocomplete( {
+                source: function( request, response ) {
+                        $.ajax( {
+                                url: cru_campus_finder_l10n.ministry_search,
+                                dataType: 'jsonp',
+            async: false,
+                                data: {
+                                        'name': request.term,
+                                        'limit': 10
+                                },
+                                success: function( data ) {
+                                        response( $.map( data, function( item ) {
+                                                return {
+                                                        label: item.name,
+                                                        value: item.name,
+                                                        id: item.id
+                                                };
+                                        } ) );
+                                }
+                        } );
+                },
+                minLength: 2,
+                autoFocus: true,
+                select: function( event, ui ) {
+                        $( '.campus-finder input[name="campus-id"]' ).val( ui.item.id );
+                        $( '.state-select-title' ).text("");
+                        $( '.state-select-results' ).text("");
+                        if( $( '.campus-finder form' ).attr( 'action' ) == '' ) {
+                                display_campus_finder_results( ui.item.id );
+                        }
+                        else {
+                                $( '.campus-finder input[name="campus-name"]' ).val( ui.item.label );
+                                $( '.campus-finder form' ).get( 0 ).submit();
+                        }
+                }
+        } );
+    
+        $( '.campus-finder input.button' ).click( function() {
+                $( '.campus-finder input.campus-name' ).autocomplete( "search" );
+        } );
+    
+        if( $( '.campus-finder input[name="campus-id"]' ).val() != '' ) {
+                display_campus_finder_results( $( '.js-campus-finder input[name="campus-id"]' ).val() );
+        }
+        
+    } );
 
 	function display_campus_finder_results( campusid ) {
 		$.ajax( {
@@ -60,7 +58,7 @@ $(document).ready(function() {
 			},
 			success: function( data ) {
 
-				var results = $( '.campus-finder-results' ).empty();
+				var results = $( '.js-campus-finder-results' ).empty();
 				if( data.strategies.length > 0 ) {
 					var strategies = $.map( data.strategies, function( item ) {
 							if( cru_campus_finder_l10n.ministries[ item.strategy ] ) {
@@ -72,37 +70,61 @@ $(document).ready(function() {
 							return a.strategy.localeCompare( b.strategy );
 						} );
 					
-					$( '<h1 class="campus-title"></h1>' )
+					$( '<h2 class="campus-title"></h2>' )
 						.text( data.name )
 						.appendTo( results );
 					
+                    var strategyList = $( '<ul class="block-list"></ul>' ).empty();
+                    
 					$.each( strategies, function( index, item ) {
-						var strategy = $( '<div class="strategy"></div>' );
-						$( '<div class="strategy-title"></div>' )
+						var strategy = $( '<details><div class="p-"></div></details>' );
+                        
+						$( '<summary class="strategy-title"></summary>' )
 							.text( item.strategy )
 							.appendTo( strategy );
 						
 						if( item.contacts.length > 0 ) {
-							var ul = $( '<ul class="contacts"></ul>');
+							var contactTable = $( '<table class="contacts  table"><tr><td class="col-head" role=columnheader>Name</td><td class="col-head" role=columnheader>Email</td><td class="col-head" role=columnheader>Phone</td></tr></table>');
+                            
+                            var tableLayout  = $( '<tr></tr>'),
+                                titleName    = $( '<td class="col-head row-head" role=columnheader>Name</td>').append( tableLayout ),
+                                titleEmail   = $( '<td class="col-head row-head" role=columnheader>Email</td>').append( tableLayout ),
+                                titlePhone   = $( '<td class="col-head row-head" role=columnheader>Phone</td>').append( tableLayout );
+                                
+                            
 							$.each( item.contacts, function( index, contact ) {
-								var li = $( '<li></li>' ),
-									name = contact.preferred + ' ' + contact.last;
+								var contactRow = $( '<tr></tr>' ),
+									name       = contact.preferred + ' ' + contact.last;
+                                
+                                contactRow.append($('<td class="contact__email">' + name + '</td>'));    
+                                
+                                
 								if( contact.email )
-									li.append(
-										$( '<a></a>' )
-											.text( name )
-											.attr( 'href', 'mailto:' + contact.email )
-									);
-								else
-									li.text( name );
+									contactRow.append( 
+                                        $( '<td class="contact__email"><a href="mailto:' + contact.email + '">' + contact.email + '<a></td>' ) 
+                                    ) ;
+                                else
+    								contactRow.append( 
+                                        $( '<td></td>')
+                                    );
+                                    
 								if( contact.phone )
-									li.append( $( '<span class="phone"></span>').text( contact.phone ) );
-								
-								ul.append( li );
+									contactRow.append( 
+                                        $( '<td class="contact__phone">' + contact.phone + '</td>')
+                                    );
+                                else
+    								contactRow.append( 
+                                        $( '<td></td>')
+                                    );
+                                
+								contactTable.append( contactRow );
 								
 							} );
-							strategy.append( ul );
+                            
+                            tableLayout.append( contactTable );
+							strategy.append( contactTable );
 						}
+                        
 						if( item.url )
 						// Test for existance of url
 						if(item.url != ''){
@@ -111,19 +133,21 @@ $(document).ready(function() {
 								item.url = 'http://' + item.url;
 								}
 							$( '<div class="url"><div>' )
-								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url ) )
+								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url.substr(7)) )
 								.appendTo( strategy );
 						}
 						
 						if( item.facebook )
 							$( '<div class="facebook url"><div>' )
-								.append( $( '<a></a>' ).attr( 'href', item.facebook ).text( item.facebook ) )
+								.append( $( '<a class="social__item  icon-facebook"></a>' ).attr( 'href', item.facebook ) )
 								.appendTo( strategy );
 						
 						//Only add strategy if some form of contact info exists
 						if( item.contacts.length > 0 || item.url || item.facebook )
 							strategy.appendTo( results );
 					} );
+                    
+                    strategy.appendTo( strategyList );
 				}
 				// Remove the Campus name if no valid strategies were found
 				if( $( '.strategy', results ).size() <= 0 )
@@ -146,15 +170,15 @@ $(document).ready(function() {
 		return false;
 		} else {
 			// User selected "Select A State" so clear fields
-			$(".state-select-results").text("");
-			$(".state-select-title").text("");
+			$(".js-state-select-results").text("");
+			$(".js-state-select-title").text("");
         }
     });
 	
 
     // State Select Results
    function getStateResults() {
-   	   $(".campus-finder-results").text("");
+   	   $(".js-campus-finder-results").text("");
 	   var stateSelectTitle ="";
 	   var states = {"AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado", "CT": "Connecticut",
 	                  "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", 
@@ -167,15 +191,15 @@ $(document).ready(function() {
 
     stateSelectTitle = states[state];
 
-    $(".state-select-results").text("");
-    $(".state-select-title").text("Campuses in " + stateSelectTitle);
+    $(".js-state-select-results").text("");
+    $(".js-state-select-title").text("Campuses in " + stateSelectTitle).removeClass("mb0");
 
         $.getJSON(jsonLink,
 
         function (data) {
             $.each(data, function (key, value) {
-                $(".state-select-results").append(
-                    "<a href='" + value.id + "' name='select'>" + value.name +"</a> <small>(" + value.city + ", " + value.state + ")</small></br>");
+                $(".js-state-select-results").append(
+                    "<li><a class='ps--  block-link' href='" + value.id + "' name='select'>" + value.name +" <small>(" + value.city + ", " + value.state + ")</small></a></li>");
             });
         });
     }
@@ -200,8 +224,8 @@ $(document).ready(function() {
 				'active': 1
 			},
 			success: function( data ) {
-				$(".state-select-results, .state-select-title").text('');
-				var results = $( '.state-select-results' ).empty();
+				$(".js-state-select-results, .js-state-select-title").text('');
+				var results = $( '.js-state-select-results' ).empty();
 				if( data.strategies.length > 0 ) {
 					var strategies = $.map( data.strategies, function( item ) {
 							if( cru_campus_finder_l10n.ministries[ item.strategy ] ) {
@@ -212,19 +236,19 @@ $(document).ready(function() {
 						} ).sort( function( a, b ) {
 							return a.strategy.localeCompare( b.strategy );
 						} );
-					
-					$( '<h1 class="campus-title"></h1>' )
+                          
+					$( '<h2 class="campus-title"></h2>' )
 						.text( data.name )
 						.appendTo( results );
 					
 					$.each( strategies, function( index, item ) {
 						var strategy = $( '<div class="strategy"></div>' );
-						$( '<div class="strategy-title"></div>' )
+						$( '<h3 class="h4  strategy-title  mb--"></h4>' )
 							.text( item.strategy )
 							.appendTo( strategy );
 						
 						if( item.contacts.length > 0 ) {
-							var ul = $( '<ul class="contacts"></ul>');
+							var ul = $( '<ul class="contacts  mb-"></ul>');
 							$.each( item.contacts, function( index, contact ) {
 								var li = $( '<li></li>' ),
 									name = contact.preferred + ' ' + contact.last;
@@ -273,9 +297,15 @@ $(document).ready(function() {
 			}
 		} );
 		
+        
+        
 	}
-	
-	
+    
+    
+    // Remove jquery-ui helper span
+    $(function() {
+        $(".js-campus-finder").find("span").remove();
+    });
 	
 });
 
