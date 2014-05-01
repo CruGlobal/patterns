@@ -29,7 +29,7 @@ $(document).ready(function() {
                         $( '.state-select-title' ).text("");
                         $( '.state-select-results' ).text("");
                         if( $( '.campus-finder form' ).attr( 'action' ) === '' ) {
-                                display_campus_finder_results( ui.item.id );
+                                school_detail_results( ui.item.id );
                         }
                         else {
                                 $( '.campus-finder input[name="campus-name"]' ).val( ui.item.label );
@@ -43,12 +43,12 @@ $(document).ready(function() {
         } );
     
         if( $( '.campus-finder input[name="campus-id"]' ).val() !== '' ) {
-                display_campus_finder_results( $( '.js-campus-finder input[name="campus-id"]' ).val() );
+                school_detail_results( $( '.js-campus-finder input[name="campus-id"]' ).val() );
         }
         
     } );
 
-	function display_campus_finder_results( campusid ) {
+	function school_detail_results( campusid ) {
 		$.ajax( {
 			url: cru_campus_finder_l10n.ministry_details.replace( '%d', campusid ),
 			dataType: 'jsonp',
@@ -213,101 +213,11 @@ $(document).ready(function() {
 	    e.preventDefault();
 		
 		var campusid = this.getAttribute("href");
-		display_select_finder_results( campusid );
+		$(".js-state-select-results").text("");
+		$(".js-state-select-title").text("");
+		school_detail_results( campusid );
 	});
 	
-	
-
-	function display_select_finder_results( campusid ) {
-		$.ajax( {
-			url: cru_campus_finder_l10n.ministry_details.replace( '%d', campusid ),
-			dataType: 'jsonp',
-			data: {
-				'active': 1
-			},
-			success: function( data ) {
-				$(".js-state-select-results, .js-state-select-title").text('');
-				var results = $( '.js-state-select-results' ).empty();
-				if( data.strategies.length > 0 ) {
-					var strategies = $.map( data.strategies, function( item ) {
-							if( cru_campus_finder_l10n.ministries[ item.strategy ] ) {
-								item.strategy = cru_campus_finder_l10n.ministries[ item.strategy ];
-								return item;
-							}
-							return null;
-						} ).sort( function( a, b ) {
-							return a.strategy.localeCompare( b.strategy );
-						} );
-                          
-					$( '<h2 class="campus-title"></h2>' )
-						.text( data.name )
-						.appendTo( results );
-					
-					$.each( strategies, function( index, item ) {
-						var strategy = $( '<div class="strategy"></div>' );
-						$( '<h3 class="h4  strategy-title  mb--"></h4>' )
-							.text( item.strategy )
-							.appendTo( strategy );
-						
-						if( item.contacts.length > 0 ) {
-							var ul = $( '<ul class="contacts  mb-"></ul>');
-							$.each( item.contacts, function( index, contact ) {
-								var li = $( '<li></li>' ),
-									name = contact.preferred + ' ' + contact.last;
-								if( contact.email ) {
-									li.append(
-										$( '<a></a>' )
-											.text( name )
-											.attr( 'href', 'mailto:' + contact.email )
-									);
-								}
-								else
-									li.text( name );
-								if( contact.phone ) {
-									li.append( $( '<span class="phone" style="padding-left:10px;"></span>').text( contact.phone ) );
-								}
-								ul.append( li );
-								
-							} );
-							strategy.append( ul );
-						}
-						if( item.url )
-						// Test for existance of url
-						if(item.url != ''){
-						// Test to see if fully qualified url, if not add http://
-							if(item.url.substr(0,7) != 'http://'){
-								item.url = 'http://' + item.url;
-								}
-							$( '<div class="url"><div>' )
-								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url ) )
-								.appendTo( strategy );
-						}
-						
-						if( item.facebook ) {
-							$( '<div class="facebook url"><div>' )
-								.append( $( '<a></a>' ).attr( 'href', item.facebook ).text( item.facebook ) )
-								.appendTo( strategy );
-							}
-						
-						//Only add strategy if some form of contact info exists
-						if( item.contacts.length > 0 || item.url || item.facebook ) {
-							strategy.appendTo( results );
-						}
-					} );
-				}
-				// Remove the Campus name if no valid strategies were found
-				if( $( '.strategy', results ).size() <= 0 ) {
-					results.empty();
-				}
-
-			}
-		} );
-		
-        
-        
-	}
-    
-    
     // Remove jquery-ui helper span
     $(function() {
         $(".js-campus-finder").find("span").remove();
