@@ -28,7 +28,7 @@ $(document).ready(function() {
                         $( '.campus-finder input[name="campus-id"]' ).val( ui.item.id );
                         $( '.state-select-title' ).text("");
                         $( '.state-select-results' ).text("");
-                        if( $( '.campus-finder form' ).attr( 'action' ) == '' ) {
+                        if( $( '.campus-finder form' ).attr( 'action' ) === '' ) {
                                 display_campus_finder_results( ui.item.id );
                         }
                         else {
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 $( '.campus-finder input.campus-name' ).autocomplete( "search" );
         } );
     
-        if( $( '.campus-finder input[name="campus-id"]' ).val() != '' ) {
+        if( $( '.campus-finder input[name="campus-id"]' ).val() !== '' ) {
                 display_campus_finder_results( $( '.js-campus-finder input[name="campus-id"]' ).val() );
         }
         
@@ -96,27 +96,29 @@ $(document).ready(function() {
 								var contactRow = $( '<tr></tr>' ),
 									name       = contact.preferred + ' ' + contact.last;
                                 
-                                contactRow.append($('<td class="contact__email">' + name + '</td>'));    
+                                contactRow.append($('<td class="contact__email">' + name + '</td>'));
                                 
                                 
-								if( contact.email )
-									contactRow.append( 
-                                        $( '<td class="contact__email"><a href="mailto:' + contact.email + '">' + contact.email + '<a></td>' ) 
+								if( contact.email ) {
+									contactRow.append(
+                                        $( '<td class="contact__email"><a href="mailto:' + contact.email + '">' + contact.email + '<a></td>' )
                                     ) ;
-                                else
-    								contactRow.append( 
+								}
+                                else {
+									contactRow.append(
                                         $( '<td></td>')
                                     );
-                                    
-								if( contact.phone )
-									contactRow.append( 
+                                    }
+								if( contact.phone ) {
+									contactRow.append(
                                         $( '<td class="contact__phone">' + contact.phone + '</td>')
                                     );
-                                else
-    								contactRow.append( 
+								}
+                                else {
+									contactRow.append(
                                         $( '<td></td>')
                                     );
-                                
+                                }
 								contactTable.append( contactRow );
 								
 							} );
@@ -127,9 +129,9 @@ $(document).ready(function() {
                         
 						if( item.url )
 						// Test for existance of url
-						if(item.url != ''){
+						if(item.url !== ''){
 						// Test to see if fully qualified url, if not add http://
-							if(item.url.substr(0,7) != 'http://'){
+							if(item.url.substr(0,7) !== 'http://'){
 								item.url = 'http://' + item.url;
 								}
 							$( '<div class="url"><div>' )
@@ -163,8 +165,8 @@ $(document).ready(function() {
 	$('.state-select').change(function() {
 		// assign the value to a variable, so you can test to see if it is working
     state = $('.state-select :selected').val();
-    if (state != ""){
-    	jsonLink = 'http://ml.uscm.org/ministries.json?state=' + state + '&active=true&callback=?';
+    if (state !== ""){
+		jsonLink = 'http://ml.uscm.org/ministries.json?state=' + state + '&active=true&callback=?';
 		getStateResults();
 		$(".state-select").prop('selectedIndex',0);
 		return false;
@@ -178,16 +180,16 @@ $(document).ready(function() {
 
     // State Select Results
    function getStateResults() {
-   	   $(".js-campus-finder-results").text("");
-	   var stateSelectTitle ="";
-	   var states = {"AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado", "CT": "Connecticut",
-	                  "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", 
-	                  "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts",
-	                  "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", 
-	                  "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
-	                  "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", 
-	                  "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
-	                  "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming", "DC": "Washington DC"};
+   		$(".js-campus-finder-results").text("");
+		var stateSelectTitle ="";
+		var states = {"AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado", "CT": "Connecticut",
+	                "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana",
+	                "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts",
+	                "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+	                "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
+	                "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+	                "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+	                "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming", "DC": "Washington DC"};
 
     stateSelectTitle = states[state];
 
@@ -252,17 +254,18 @@ $(document).ready(function() {
 							$.each( item.contacts, function( index, contact ) {
 								var li = $( '<li></li>' ),
 									name = contact.preferred + ' ' + contact.last;
-								if( contact.email )
+								if( contact.email ) {
 									li.append(
 										$( '<a></a>' )
 											.text( name )
 											.attr( 'href', 'mailto:' + contact.email )
 									);
+								}
 								else
 									li.text( name );
-								if( contact.phone )
+								if( contact.phone ) {
 									li.append( $( '<span class="phone" style="padding-left:10px;"></span>').text( contact.phone ) );
-								
+								}
 								ul.append( li );
 								
 							} );
@@ -280,19 +283,22 @@ $(document).ready(function() {
 								.appendTo( strategy );
 						}
 						
-						if( item.facebook )
+						if( item.facebook ) {
 							$( '<div class="facebook url"><div>' )
 								.append( $( '<a></a>' ).attr( 'href', item.facebook ).text( item.facebook ) )
 								.appendTo( strategy );
+							}
 						
 						//Only add strategy if some form of contact info exists
-						if( item.contacts.length > 0 || item.url || item.facebook )
+						if( item.contacts.length > 0 || item.url || item.facebook ) {
 							strategy.appendTo( results );
+						}
 					} );
 				}
 				// Remove the Campus name if no valid strategies were found
-				if( $( '.strategy', results ).size() <= 0 )
+				if( $( '.strategy', results ).size() <= 0 ) {
 					results.empty();
+				}
 
 			}
 		} );
