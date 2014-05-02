@@ -37,14 +37,12 @@ $(document).ready(function() {
                         }
                 }
         } );
-    
-        $( '.campus-finder input.button' ).click( function() {
-                $( '.campus-finder input.campus-name' ).autocomplete( "search" );
-        } );
-    
+
+
+
         if( $( '.campus-finder input[name="campus-id"]' ).val() !== '' ) {
                 school_detail_results( $( '.js-campus-finder input[name="campus-id"]' ).val() );
-        }
+            }
         
     } );
 
@@ -79,85 +77,95 @@ $(document).ready(function() {
                     var strategyBlock = $( '<ul class="block-list"></ul>' );
                     
 					$.each( strategies, function( index, item ) {
-					   var strategyRow = $( '<li></li>' ).appendTo( strategyBlock );
-                        // Strategy Name
-						$( '<h3 class="h4 mb-"></h3>' )
-							.text( item.strategy )
-							.appendTo( strategyRow );
+						
+                        
+						//Only add strategy name if some form of contact info exists
+						if( item.contacts.length > 0 || item.url || item.facebook ) {
+							var strategyRow = $( '<li></li>' ).appendTo( strategyBlock );
+							// Strategy Name
+							$( '<h3 class="h4 mb-"></h3>' )
+								.text( item.strategy )
+								.appendTo( strategyRow );
+							}
+
+						// If There Is A Website Or Facebook URL Add That UL Block
+						if( item.url || item.facebook ) {
+							var socialBlock = $( '<ul class="nav  social  mb-"></ul>' );
+
+						if( item.facebook ) {
+							$( '<li class="accent"></li>' )
+								.append( $( '<a class="social__item  icon-facebook"></a>' ).attr( 'href', item.facebook ) )
+								.appendTo( socialBlock );
+							}
+						
+						if( item.url ) {
+							// Test for existance of url
+							if(item.url !== ''){
+								// Test to see if fully qualified url, if not add http://
+								if(item.url.substr(0,7) !== 'http://'){
+									item.url = 'http://' + item.url;
+								}
+							$( '<li></li>' )
+								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url.substr(7)) )
+								.appendTo( socialBlock );
+							}
+						}
+						
+						
+
+						$(socialBlock).appendTo( strategyRow );
+
+						}
+						
+                        
 						
 						if( item.contacts.length > 0 ) {
-							$('<li class="contact__item  contact__titles">
-									<ul class="grid">
-										<li class="contact__name  grid__item  desk--one-third">Name</li>
-										<li class="contact__email  grid__item  desk--one-third">Email</li>
-										<li class="contact__phone  grid__item  desk--one-third">Phone</li>
-									</ul>
-								</li>
-								').appendTo( strategyRow );
+
+							var contactList = $('<ul class="block-list  contacts"></ul>');
+
+
+							$('<li class="contact__item  contact__titles"><ul class="grid"><li class="contact__name  grid__item  desk--one-third">Name</li><li class="contact__email  grid__item  desk--one-third">Email</li><li class="contact__phone  grid__item  desk--one-third">Phone</li></ul></li>')
+							.appendTo( contactList );
 							
 							$.each( item.contacts, function( index, contact ) {
-								var contactRow = $( '<ul class="grid"></ul>' ),
+								var contactRow = $('<li class="contact__item"></li>');
+								var contactBlock = $( '<ul class="grid"></ul>' ),
 									name       = contact.preferred + ' ' + contact.last;
                                 
-                                contactRow.append($('<li class="contact__name  grid__item  desk--one-third">' + name + '</li>'));
+                                contactBlock.append($('<li class="contact__name  grid__item  desk--one-third">' + name + '</li>'));
                                 
                                 
 								if( contact.email ) {
-									contactRow.append(
+									contactBlock.append(
                                         $( '<li class="contact__email  grid__item  desk--one-third"><a href="mailto:' + contact.email + '">' + contact.email + '<a></li>' )
                                     ) ;
 								}
                                 else {
-									contactRow.append(
+									contactBlock.append(
                                         $( '<li class="contact__email  grid__item  desk--one-third"> </li>')
                                     );
                                     }
 								if( contact.phone ) {
-									contactRow.append(
+									contactBlock.append(
                                         $( '<li class="contact__phone  grid__item  desk--one-third">' + contact.phone + '</li>')
                                     );
 								}
                                 else {
-									contactRow.append(
+									contactBlock.append(
                                         $( '<li class="contact__phone  grid__item  desk--one-third"></li>')
                                     );
                                 }
-								strategyRow.append( contactRow );
-								
+								contactRow.append( contactBlock );
+								contactList.append( contactRow );
 							} );
                             
-                            //tableLayout.append( contactTable );
-							//strategy.append( contactTable );
-						} 
-                        
-						if( item.url )
-						// Test for existance of url
-						if(item.url !== ''){
-						// Test to see if fully qualified url, if not add http://
-							if(item.url.substr(0,7) !== 'http://'){
-								item.url = 'http://' + item.url;
-								}
-							$( '<div class="url"><div>' )
-								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url.substr(7)) )
-								.appendTo( strategyRow );
+                            strategyRow.append( contactList );
+							
 						}
-						
-						if( item.facebook )
-							$( '<div class="facebook url"><div>' )
-								.append( $( '<a class="social__item  icon-facebook"></a>' ).attr( 'href', item.facebook ) )
-								.appendTo( strategyRow );
-						/*
-						//Only add strategy if some form of contact info exists
-						if( item.contacts.length > 0 || item.url || item.facebook ) {
-							strategy.appendTo( strategyRow );
-						}
-						*/
-						
-
-                    
+                                    
                     } );
 					$(strategyBlock).appendTo( results );
-				} 
+				}
 				// Remove the Campus name if no valid strategies were found
 				if ($(strategyBlock).children().length <= 0 ) {
 					results.empty();
@@ -188,16 +196,16 @@ $(document).ready(function() {
 
     // State Select Results
    function getStateResults() {
-   		$(".js-campus-finder-results").text("");
+		$(".js-campus-finder-results").text("");
 		var stateSelectTitle ="";
 		var states = {"AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado", "CT": "Connecticut",
-	                "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana",
-	                "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts",
-	                "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-	                "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
-	                "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
-	                "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
-	                "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming", "DC": "Washington DC"};
+		"DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana",
+		"IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts",
+		"MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+		"NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
+		"OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+		"SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+		"WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming", "DC": "Washington DC"};
 
     stateSelectTitle = states[state];
 
@@ -218,8 +226,7 @@ $(document).ready(function() {
 
 	// State Select Detail Links
 	$(document).on("click", "a[name=select]", function(e) {
-	    e.preventDefault();
-		
+		e.preventDefault();
 		var campusid = this.getAttribute("href");
 		$(".js-state-select-results").text("");
 		$(".js-state-select-title").text("");
