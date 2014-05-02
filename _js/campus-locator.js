@@ -70,62 +70,65 @@ $(document).ready(function() {
 							return a.strategy.localeCompare( b.strategy );
 						} );
 					
-					$( '<h2 class="campus-title"></h2>' )
+
+					// School Name
+					$( '<h2 class="mb-"></h2>' )
 						.text( data.name )
 						.appendTo( results );
 					
-                    var strategyList = $( '<ul class="block-list"></ul>' ).empty();
+                    var strategyBlock = $( '<ul class="block-list"></ul>' );
                     
 					$.each( strategies, function( index, item ) {
-						var strategy = $( '<details><div class="p-"></div></details>' );
-                        
-						$( '<summary class="strategy-title"></summary>' )
+					   var strategyRow = $( '<li></li>' ).appendTo( strategyBlock );
+                        // Strategy Name
+						$( '<h3 class="h4 mb-"></h3>' )
 							.text( item.strategy )
-							.appendTo( strategy );
+							.appendTo( strategyRow );
 						
 						if( item.contacts.length > 0 ) {
-							var contactTable = $( '<table class="contacts  table"><tr><td class="col-head" role=columnheader>Name</td><td class="col-head" role=columnheader>Email</td><td class="col-head" role=columnheader>Phone</td></tr></table>');
-                            
-                            var tableLayout  = $( '<tr></tr>'),
-                                titleName    = $( '<td class="col-head row-head" role=columnheader>Name</td>').append( tableLayout ),
-                                titleEmail   = $( '<td class="col-head row-head" role=columnheader>Email</td>').append( tableLayout ),
-                                titlePhone   = $( '<td class="col-head row-head" role=columnheader>Phone</td>').append( tableLayout );
-                                
-                            
+							$('<li class="contact__item  contact__titles">
+									<ul class="grid">
+										<li class="contact__name  grid__item  desk--one-third">Name</li>
+										<li class="contact__email  grid__item  desk--one-third">Email</li>
+										<li class="contact__phone  grid__item  desk--one-third">Phone</li>
+									</ul>
+								</li>
+								').appendTo( strategyRow );
+							
 							$.each( item.contacts, function( index, contact ) {
-								var contactRow = $( '<tr></tr>' ),
+								var contactRow = $( '<ul class="grid"></ul>' ),
 									name       = contact.preferred + ' ' + contact.last;
                                 
-                                contactRow.append($('<td class="contact__email">' + name + '</td>'));
+                                contactRow.append($('<li class="contact__name  grid__item  desk--one-third">' + name + '</li>'));
                                 
                                 
 								if( contact.email ) {
 									contactRow.append(
-                                        $( '<td class="contact__email"><a href="mailto:' + contact.email + '">' + contact.email + '<a></td>' )
+                                        $( '<li class="contact__email  grid__item  desk--one-third"><a href="mailto:' + contact.email + '">' + contact.email + '<a></li>' )
                                     ) ;
 								}
                                 else {
 									contactRow.append(
-                                        $( '<td></td>')
+                                        $( '<li class="contact__email  grid__item  desk--one-third"> </li>')
                                     );
                                     }
 								if( contact.phone ) {
 									contactRow.append(
-                                        $( '<td class="contact__phone">' + contact.phone + '</td>')
+                                        $( '<li class="contact__phone  grid__item  desk--one-third">' + contact.phone + '</li>')
                                     );
 								}
                                 else {
 									contactRow.append(
-                                        $( '<td></td>')
+                                        $( '<li class="contact__phone  grid__item  desk--one-third"></li>')
                                     );
                                 }
-								contactTable.append( contactRow );
+								strategyRow.append( contactRow );
 								
 							} );
                             
-                            tableLayout.append( contactTable );
-							strategy.append( contactTable );
-						}
+                            //tableLayout.append( contactTable );
+							//strategy.append( contactTable );
+						} 
                         
 						if( item.url )
 						// Test for existance of url
@@ -136,24 +139,29 @@ $(document).ready(function() {
 								}
 							$( '<div class="url"><div>' )
 								.append( $( '<a></a>' ).attr( 'href', item.url ).text( item.url.substr(7)) )
-								.appendTo( strategy );
+								.appendTo( strategyRow );
 						}
 						
 						if( item.facebook )
 							$( '<div class="facebook url"><div>' )
 								.append( $( '<a class="social__item  icon-facebook"></a>' ).attr( 'href', item.facebook ) )
-								.appendTo( strategy );
-						
+								.appendTo( strategyRow );
+						/*
 						//Only add strategy if some form of contact info exists
-						if( item.contacts.length > 0 || item.url || item.facebook )
-							strategy.appendTo( results );
-					} );
+						if( item.contacts.length > 0 || item.url || item.facebook ) {
+							strategy.appendTo( strategyRow );
+						}
+						*/
+						
+
                     
-                    strategy.appendTo( strategyList );
-				}
+                    } );
+					$(strategyBlock).appendTo( results );
+				} 
 				// Remove the Campus name if no valid strategies were found
-				if( $( '.strategy', results ).size() <= 0 )
+				if ($(strategyBlock).children().length <= 0 ) {
 					results.empty();
+				}
 
 			}
 		} );
