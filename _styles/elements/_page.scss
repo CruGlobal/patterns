@@ -1,3 +1,8 @@
+.preload{
+  display: none !important;
+}
+
+
 .container{    
 	@include vendor(transition, right, width 400ms ease);
 	@include vendor(transition-property, right, width 400ms ease);
@@ -6,11 +11,6 @@
 .pusher{
     left: 0;
 }
-
-
-
-
-
 
 
 .page-content{	

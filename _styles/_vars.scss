@@ -29,7 +29,7 @@ $use-buttons:       true;
 $use-island:        false;
 $use-block-list:    false;
 //$use-options:       false;
-//$use-pagination:    false;
+$use-pagination:    true;
 //$use-breadcrumb:    false;
 $use-media:         true;
 
@@ -202,4 +202,4 @@ $base-animation-delay:   250ms;
 /*------------------------------------*\
     $ADDITIONAL
 \*------------------------------------*/
-$header-height: 73px;
+$header-height: 84px;

@@ -1,0 +1,50 @@
+/**
+.state-select, .campus-name{
+    @include mq(900px) {
+        width: 47%;
+    }
+}
+
+label[for="state-select"] { 
+    width: 5%;
+}
+*/
+
+
+.ui-helper-hidden-accessible{
+    @extend .accessibility;
+}
+
+
+.state-select-results{
+    a{  
+        small{
+            color: $base-text-color;
+        }
+    }
+}
+
+a + .phone{
+    @extend .accent;
+}
+
+
+.details{
+    color: #004b6a;
+    background-color: #f2f2f2;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+    padding: 0.5em 1%;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px 3px 0 0;
+}
+.contact__titles{
+    display: none;
+    @include mq(981px) { 
+        display: block;
+    }
+}
+.contact__item{
+    border-bottom: 1px solid #d0d0d0;
+    
+}
