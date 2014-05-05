@@ -12,7 +12,7 @@ label[for="state-select"] {
 
 
 .ui-helper-hidden-accessible{
-    @extend %accessibility;
+    @extend .accessibility;
 }
 
 
