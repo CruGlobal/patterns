@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $PAGE-SUBNAV
+\*------------------------------------*/
+
+.page-subnav{
+	z-index: 1;
+	position: relative;
+	bottom: -18px;
+	background: #ffffff;
+	text: center;
+	
+		&.wrapper{
+			width: auto;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
