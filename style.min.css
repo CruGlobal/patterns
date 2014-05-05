@@ -4531,15 +4531,6 @@ label[for="state-select"] {
   display: block;
   border-radius: 3px 3px 0 0; }
 
-.contact__titles {
-  display: none; }
-  @media screen and (min-width: 61.3125em) {
-    .contact__titles {
-      display: block; } }
-
-.contact__item {
-  border-bottom: 1px solid #d0d0d0; }
-
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
