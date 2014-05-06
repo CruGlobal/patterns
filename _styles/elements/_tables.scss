@@ -33,23 +33,24 @@ tbody{
 }
 
 .event{
-        width: 100%;
-        border: 1px solid;
-        border-color: #dddddd;
-        border-radius: 3px;
-        background-color: #fff;
+    width: 100%;
+    border: 1px solid;
+    border-color: #dddddd;
+    border-radius: 3px;
+    background-color: #fff;
+    
+    tbody{
+        border-bottom: none;
+    }
+    
+    tr{
+        border-bottom: 1px solid #e9e9e9;
+    }
+    
+    &:last-child{
+        border-bottom: none;
+    }
 }
-        tbody{
-                border-bottom: none;
-            }
-        tr{
-            border-bottom: 1px solid #e9e9e9;
-
-            &:last-child{
-                border-bottom: none;
-            }
-        }
-
 
 .row-head{
     line-height: 36px;
@@ -61,4 +62,4 @@ tbody{
 
 	td{
 		vertical-align: top;
-    }
+		}
