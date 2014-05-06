@@ -13,10 +13,10 @@
  */
 
 .button-group{
-	display: block;
+	@extend %display--block;
 	
 	.button{
-		margin-bottom: 10px;
+		@extend %mb--;
 	}
 }
 
@@ -36,7 +36,7 @@
 }
 
 .button--subtle, input.button--subtle{
-	background-color: #e9e9e9;
+	background-color: $btn-subtle-bg-fallback;
 	@include btn($btn-subtle-bg, $btn-subtle-border, $btn-subtle-color);
     @include btn-effects($btn-alt-bg, $btn-alt-border, $color-white)
 }
@@ -49,13 +49,13 @@ input.button--unstyled{
 		border-color: $btn-unstyled-border;
 
 		&:hover{
-			color: $base-font-color;
+			color: $base-text-color;
 		}
 	}
 }
 
 .button--full{
-	width: 100%;
+	@extend %full-width;
 }
 
 

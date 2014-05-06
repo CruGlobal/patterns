@@ -1,4 +1,15 @@
-.cover-image-mask{
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+
+.mask--circle{
+    @extend %display--inline-block;
+    @extend %overflow--hide;
+    
+	border-radius: 50%;
+}
+
+.mask--cover-image{
     @extend %full-width;
     @extend %full-height;
     
@@ -6,16 +17,25 @@
 }
 
     .cover-image{
-        position: absolute;
+        @extend %position--absolute;
+        
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position: center;
-    
+        bottom: 0;      
+        
+        background-position: center;  
+        
+        @include vendor(background-size, cover);  
     }
+    
+
+.action-icons{
+    @extend %display--inline-block;
+	@extend %full-width;
+    @extend %full-height;
+    
+    max-width: 150px;
+    vertical-align: middle;
+}	
     

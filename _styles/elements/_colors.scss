@@ -2,11 +2,23 @@
     $COLORS
 \*------------------------------------*/
 /**
- * Used for background colors at the moment, text is either in 
- * the default text color or white. You can extend %text-white
- * found in the _utilities.scss file if you wish to change the
- * text color. 
+ * Classes allow for color-sharing
  */
+ 
+/**
+ * Border Colors
+ */ 
+.color-border-base, %color-border-base  { border-color: $base-ui-color;}
+.color-border-gold, %color-border-gold  { border-color: $color-gold; }
+  
+  
+
+/**
+ * Font Colors
+ */ 
+.text-base,  %text-base                  { color: $base-text-color;}
+.text-white, %text--white                { color: $color-white !important; }
+
 
 /**
  * Primary Colors

@@ -1,15 +1,12 @@
+/*------------------------------------*\
+    $CAMPUS-LOCATOR
+\*------------------------------------*/
 /**
-.state-select, .campus-name{
-    @include mq(900px) {
-        width: 47%;
-    }
-}
-
-label[for="state-select"] { 
-    width: 5%;
-}
-*/
-
+ * Used for background colors at the moment, text is either in 
+ * the default text color or white. You can extend %text-white
+ * found in the _utilities.scss file if you wish to change the
+ * text color. 
+ */
 
 .ui-helper-hidden-accessible{
     @extend .accessibility;
@@ -19,7 +16,7 @@ label[for="state-select"] {
 .state-select-results{
     a{  
         small{
-            color: $base-text-color;
+            @extend %text-base;
         }
     }
 }
@@ -29,22 +26,57 @@ a + .phone{
 }
 
 
-.details{
-    color: #004b6a;
-    background-color: #f2f2f2;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
-    padding: 0.5em 1%;
-    overflow: hidden;
-    display: block;
-    border-radius: 3px 3px 0 0;
-}
 .contact__titles{
-    display: none;
+    @extend %display--none;
+    
     @include mq(981px) { 
         display: block;
     }
 }
+
+    .contact__title-name{
+        @extend %weight--semibold;
+        @extend %small-text;
+    }
+
 .contact__item{
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;    
+}
+
+.locations{ 
     
+    .locations__select{
+        @extend %me;
+        
+        @include mq(600px) {
+            display: none;
+        }
+    }
+    
+    .locations__list{
+        @extend %display--none;
+        
+        @include mq(600px) {
+            display: block;
+        }
+    }
+    
+        li{
+            @include mq(600px) {
+            width: 33.3333333%;
+            }
+            
+            & > a{
+                @extend %mb0;
+                @extend %basic-transition;
+                                
+                &:hover{
+                    @extend %decoration--none;
+                    background-color: #f6f6f6;
+                    
+                }
+            }
+        }
+        
+        
 }

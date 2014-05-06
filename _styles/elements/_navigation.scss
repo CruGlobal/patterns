@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .navigation{
-	@extend %inline-block;
+	@extend %display--inline-block;
 	@extend %position--fixed;
 	@extend %full-height;
 	
@@ -47,7 +47,7 @@
 }
 	
 		.site-nav{
-			@extend %flush--bottom;
+    		@extend %mb0;
 			
 			@include mq(981px) {
 				position: absolute;

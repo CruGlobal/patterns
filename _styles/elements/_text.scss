@@ -17,8 +17,13 @@ figcaption{
 	@include font-size(14px, false);
 }
 
+.dark-link, %dark-link{
+    @extend %text-base;
+}
+
 .block-link, %block-link{
     @extend %basic-transition; 
+    
     &:hover{
         background-color: #f2f2f2;
         text-decoration: none;
@@ -35,6 +40,15 @@ figcaption{
 		@include rem-calc(margin-left, 12px);
 		@include rem-calc(margin-right, 12px);
 	}
+}
+
+.affordance:after {
+	@extend .icon-right-circle:before;
+	
+    color: $color-gold;
+    font-family: "cruicons";
+    padding-left: 10px;
+    font-size: 18px;
 }
 
 blockquote{

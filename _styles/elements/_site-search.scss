@@ -5,24 +5,24 @@ $search-height: 32px;
 
 .right-nav{
 	.spoken-form{
-		padding-left: 18px;
-		padding-right: 18px;
+        @extend %ms-;
 	}
 }
 
 .primary-search{
-	position: relative;
+	@extend %position--relative;
+    
 	top: 2px;
 }
 
 	.search-field{
+        @extend %small-text;
+        
 		width: 254px;
 		max-height: $search-height;
 		line-height: 18px;
 		border-width: 1px;
-        
-		
-		font-size: 80%;
+        		
 		&::-webkit-input-placeholder { font-size: 14px;}
 		      &::-moz-placeholder { font-size: 14px;}
 		      &:-ms-input-placeholder { font-size: 14px;}
@@ -31,18 +31,16 @@ $search-height: 32px;
     
     
     %search-icons{
-		position: absolute;
+    	@extend %position--absolute;
+        @extend %display--block;
+        @extend %p0;
+        @extend %text--center;
 		top: 0;
-        display: block;
         
         width: $search-height;
         height: $search-height;
         line-height: $search-height;
-        		
-        padding: 0;
-        
-        text-align: center;
-        
+        		                
 		> i{
 			color: $btn-default-color;
 			font-size: 70%;
@@ -70,20 +68,21 @@ $search-height: 32px;
     }
     
     .primary-search--dropdown{
+        @extend %overflow--hide;
+    	@extend %position--absolute;
+        @extend %color-white;
+        @extend %small-text;
+        @extend %p--;
+        
         visibility: hidden;
-        position: absolute;
+        
         right: 0;
         z-index: 1;
         
         width: 94%;
         
-        background-color: $color-white;
         border: 1px solid $color-gray;
-        border-top: transparent;
-        
-        padding: $base-padding / 4;
-        
-        font-size: 80%;
+        border-top: transparent;        
     }
     
     
@@ -107,18 +106,19 @@ $search-height: 32px;
     .primary-search__results{
         h3{
             @extend %pb;
+            
             border-bottom: 1px solid #dddddd;
         }
     }
     
         .primary-search__results--item{                       
             & > a{                
-                color: $base-text-color;
+                @extend %text-base;
                 
-                &, &:hover{
-                    text-decoration: none;
+                &:hover{
+                    @extend %decoration--none;
                 }
-            }
+           }
         }
         
         .results-title{

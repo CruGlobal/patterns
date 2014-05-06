@@ -1,10 +1,15 @@
+/*------------------------------------*\
+    $POST-IMAGES
+\*------------------------------------*/
+
 .post-article figure{
     @extend %cf;
     @extend %position--relative;
+    
     outline: 0;
     
     & > img{
-        width: 100%;
+       @extend %full-width;
     }
 }
 	
@@ -14,11 +19,12 @@
 	     * and centers it for smaller screens.
 		 */
 		.image__caption{
-			position: relative;
-			width: 100%;
-			text-align: center;
+            @extend %position--relative;
+            @extend %full-width;
+            @extend %text--center;
+            @extend %mt--;
+            
 			left: 0;
-			margin-top: 10px;
             
             &.default-view{
             	@include mq(1164px) {
@@ -43,14 +49,16 @@
 		}
 		
 		.image-credit{
-			display: block;
-			margin-top: 16px;
-			font-size: 80%;
+            @extend %display--block;
+            @extend %mt-;
+            @extend %small-text;
+            
 			color: #666062;
 		}
       
 /*figure*/.image--inset__left{
-    width: 100%;
+    @extend %full-width;
+    
     clear: both;
     
     @include mq(981px) {
@@ -86,7 +94,8 @@
 }      
         
 /*figure*/.image--outset__left{
-    width: 100%;
+    @extend %full-width;
+    
     clear: both;
     
     @include mq(981px) {
@@ -144,6 +153,3 @@
 	}
 }
 
-/*section*/.image--full{
-    
-}

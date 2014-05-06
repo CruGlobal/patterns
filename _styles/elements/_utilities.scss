@@ -1,12 +1,5 @@
-.inline-block, %inline-block    { display: inline-block; }
-
-
-.flush, %flush                  { margin:        0 !important; }
-.flush--bottom, %flush--bottom  { margin-bottom: 0 !important; }
-
-
-.text-white, %text--white       { color: $color-white !important; }
-
 .basic-transition, %basic-transition{ @include vendor(transition, 250ms ease) }
 
 .decoration--none, %decoration--none{ text-decoration: none; }
+
+.break-word, %break-word{ word-wrap: break-word; }
