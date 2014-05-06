@@ -1,7 +1,7 @@
 .has-dropdown{
 	position: relative;
-	
-	&:hover{
+
+	//&:hover{
 		> .dropdown{
 			@include mq(980px) {
 				height: auto;
@@ -20,7 +20,7 @@
 			  	@include vendor(transition, all 0.2s 0.2s ease );
 			}
 	    }
-	}
+	//}
 	
     &:after{
   		content:' ';
@@ -38,11 +38,11 @@
 
 	.dropdown{
 		@extend %ps;
-		overflow: hidden;
-		background-color: #f6f6f6;
-		max-height: 0;
-		height: 0;
-		opacity: 0;
+		//overflow: hidden;
+		background-color: #1e1e1e;
+		//max-height: 0;
+		//height: 0;
+		//opacity: 0;
 	  	@include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
 	
 		/* Hover Off */
@@ -63,23 +63,67 @@
 		float: left;
 		
 		@include mq(980px) {
-			border-bottom: 0.0625em solid #262728;
+			//border-bottom: 0.0625em solid #262728;
 			display: block;
 		}
 		
 		& > a{
 			display: block;
 			height: auto;
-			@extend .nav-link;
-			color: $base-text-color;
-			
-			&:hover{
-				background-color: transparent;
-			}
+            line-height: 20px;
+
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0 9px;
+            letter-spacing: 0.9px;
+
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+
+            color: $color-white;
+
+            &:hover {
+              background-color: $color-gold;
+              color: #1e1e1e;
+              text-decoration: none;
+            }
 			
 			@include mq(980px) {
 				display: inline-block;
 			}
 		}
-	}
+        ul {
+          line-height: 20px;
+        }
+        ul li {
+            & > a{
+              display: block;
+              height: auto;
 
+              font-weight: 400;
+              font-size: 15px;
+              padding: 0 18px;
+              letter-spacing: 0.9px;
+
+              -webkit-border-radius: 2px;
+                 -moz-border-radius: 2px;
+                      border-radius: 2px;
+
+              color: $color-white;
+
+              &:hover {
+                background-color: $color-gold;
+                color: #1e1e1e;
+                text-decoration: none;
+              }
+
+              @include mq(980px) {
+                display: inline-block;
+              }
+            }
+        }
+        ul li:last-child {
+            margin-bottom: 10px;
+        }
+	}

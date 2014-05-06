@@ -67,7 +67,7 @@
 			
 			& > .nav__item{
 				@include mq(980px, max) {
-					border-bottom: 0.0625em solid #262728;
+					//border-bottom: 0.0625em solid #262728;
 					display: block;
 				}
 				
@@ -100,7 +100,7 @@
 			
 			& > .nav__item{
 				@include mq(980px, max) {
-					border-bottom: 0.0625em solid #262728;
+					//border-bottom: 0.0625em solid #262728;
 					display: block;
 				}
 				
