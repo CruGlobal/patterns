@@ -10,6 +10,7 @@
  */ 
 .color-border-base, %color-border-base  { border-color: $base-ui-color;}
 .color-border-gold, %color-border-gold  { border-color: $color-gold; }
+.color-border-ui,   %color-border-ui    { border-color: #e9e9e9; }
   
   
 
@@ -17,7 +18,7 @@
  * Font Colors
  */ 
 .text-base,  %text-base                  { color: $base-text-color;}
-.text-white, %text--white                { color: $color-white !important; }
+.text-white, %text--white                { color: $color-white; }
 
 
 /**
@@ -40,3 +41,12 @@
  */
 .color-bright-blue, %color-bright-blue   { background-color: $color-bright-blue; }
 .color-deep-blue, %color-deep-blue       { background-color: $color-deep-blue; }
+
+/**
+ *  Additional Colors
+ */
+ 
+$accent-bg: #f2f2f2;
+
+.color-accent-bg, %color-accent-bg      { background-color: $accent-bg; }
+ 

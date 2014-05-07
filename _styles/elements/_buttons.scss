@@ -37,6 +37,7 @@
 
 .button--subtle, input.button--subtle{
 	background-color: $btn-subtle-bg-fallback;
+    border-color: #d0d0d0;
 	@include btn($btn-subtle-bg, $btn-subtle-border, $btn-subtle-color);
     @include btn-effects($btn-alt-bg, $btn-alt-border, $color-white)
 }

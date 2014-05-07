@@ -40,7 +40,8 @@
  * BUTTONS.............Cru specific buttons, extends brackets.css
  * TABLES..............Cru specific tables, extends brackets.css
  * FORMS...............Cru specific forms, extends brackets.css
- * VIDEO...............Cleaning up video display
+ * VIDEO...............
+ * IMAGES..............
  * HEADER..............
  * FOOTER..............
  * SOCIAL..............Site and post specific social media
@@ -50,6 +51,7 @@
  * OFF-CANVAS..........Off canvas nav for small screens, extends the navigation
  *
  * CAMPUS-LOCATOR......
+ * COUNTRY-LIST........
  * SLIDER..............Primary site slider. For now only on homepage
  * POST................Basic post stylings for articles
  * POST-IMAGES.........Image handling in posts, etc, extends the post
@@ -135,6 +137,7 @@
  * Page components
  */
 @import "elements/campus-locator";
+@import "elements/country-list";
 @import "elements/slider";
  
 @import "elements/post";
