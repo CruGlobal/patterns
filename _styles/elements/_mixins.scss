@@ -19,14 +19,12 @@
   } 
 }
 
-@mixin btn($background, $border, $color: inherit) {
-  color: $color;
+@mixin btn($background, $border) {
   background-color: $background;
   border-color: $border;
 
   &:active,
-  &.active,
-  .open &.dropdown-toggle {
+  &.active{
     background-image: none;
   }
   
@@ -46,13 +44,12 @@
   }
 }
 
-@mixin btn-effects($background, $border, $color: inherit){
+@mixin btn-effects($background, $border){
     &:hover,
     &:focus,
     &:active,
     &.active,
     .open &.dropdown-toggle {
-      color: $color;
       background-color: $background;
           border-color: $border;
     }
