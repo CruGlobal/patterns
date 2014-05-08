@@ -37,7 +37,8 @@
 
 .button--subtle, input.button--subtle{
 	background-color: $btn-subtle-bg-fallback;
-    border-color: #d0d0d0;
+    border-color: $btn-subtle-border-fallback;
+    
 	@include btn($btn-subtle-bg, $btn-subtle-border, $btn-subtle-color);
     @include btn-effects($btn-alt-bg, $btn-alt-border, $color-white)
 }
@@ -61,6 +62,6 @@ input.button--unstyled{
 
 
 .button--icon{
+    @extend %ui-border-0;
 	background: transparent;
-	border: none;
 }

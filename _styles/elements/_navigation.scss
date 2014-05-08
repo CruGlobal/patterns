@@ -80,7 +80,14 @@
 			
 		}
 	
-		.right-nav{			
+		.right-nav{	
+			float: right;
+			
+			& > li{
+				//display: block;
+				//float: left;
+			}
+		
 			@include mq(981px) {
 				width: auto;
 				float: right;
@@ -111,10 +118,6 @@
 				}
 			}	
 		}
-		
-			.nav__item{
-			}
-	
 		
 			.nav-link{	
 				max-height: 100%;	
@@ -185,7 +188,7 @@
 			.topbar-close{
 				position: absolute;
 				
-				color: #ffffff;
+				color: #fff;
 				
 				@include rem(top, 22px);
 				@include rem(right, 16px);
@@ -203,17 +206,6 @@
 				}
 			}
 
-
-		.right-nav{
-			float: right;
-			
-			& > li{
-				//display: block;
-				//float: left;
-			}
-			
-
-		}
 		
 		.search{
 			height: auto;
@@ -291,7 +283,7 @@
 	z-index: 501;
 	top: 31px;
 	
-	background-color: #ffffff;
+	background-color: #fff;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
 }

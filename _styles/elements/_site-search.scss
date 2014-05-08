@@ -53,6 +53,7 @@ $search-height: 32px;
             }
         }
     }
+    
 	.search-button{
         @extend %search-icons;
         
@@ -92,22 +93,25 @@ $search-height: 32px;
             
             .icon-down-arrow{
                  color: $color-gold;
+                 
                  &:before{
                      content: '\e80c';
-                 }
+                 }                
             }
            
         }
+        
         .primary-search--dropdown{
             visibility: visible;
         }
+        
     } 
     
     .primary-search__results{
         h3{
             @extend %pb;
             
-            border-bottom: 1px solid #dddddd;
+            border-bottom: 1px solid #ddd;
         }
     }
     
