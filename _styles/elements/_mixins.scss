@@ -19,14 +19,16 @@
   } 
 }
 
-@mixin btn($background, $border) {
-  background-color: $background;
-  border-color: $border;
+@mixin btn($background, $border, $color: inherit) {
+    background-color: $background;
+    border-color: $border;
+    
+    color: $color;
 
-  &:active,
-  &.active{
-    background-image: none;
-  }
+    &:active,
+    &.active{
+        background-image: none;
+    }
   
   &.disabled,
   &[disabled],
@@ -44,7 +46,7 @@
   }
 }
 
-@mixin btn-effects($background, $border){
+@mixin btn-effects($background, $border, $color: inherit){
     &:hover,
     &:focus,
     &:active,
@@ -52,5 +54,6 @@
     .open &.dropdown-toggle {
       background-color: $background;
           border-color: $border;
+                 color: $color;
     }
 }

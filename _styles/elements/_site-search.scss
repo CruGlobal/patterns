@@ -10,7 +10,7 @@ $search-height: 32px;
 }
 
 .primary-search{
-	@extend %position--relative;
+    position: relative;
     
 	top: 2px;
 }
@@ -31,11 +31,13 @@ $search-height: 32px;
     
     
     %search-icons{
-    	@extend %position--absolute;
-        @extend %display--block;
         @extend %p0;
-        @extend %text--center;
+
+        position: absolute;
 		top: 0;
+        
+        display: block;
+        text-align: center;
         
         width: $search-height;
         height: $search-height;
@@ -69,13 +71,14 @@ $search-height: 32px;
     }
     
     .primary-search--dropdown{
-        @extend %overflow--hide;
-    	@extend %position--absolute;
-        @extend %color-white;
         @extend %small-text;
         @extend %p--;
         
+        position: absolute;
+        overflow: hidden;
         visibility: hidden;
+        
+        color: $color-white;
         
         right: 0;
         z-index: 1;
@@ -120,7 +123,7 @@ $search-height: 32px;
                 @extend %text-base;
                 
                 &:hover{
-                    @extend %decoration--none;
+                    text-decoration: none;
                 }
            }
         }

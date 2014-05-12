@@ -1,65 +1,50 @@
 thead{
 	th{
-        @extend %ui-border-b2;
-        @extend %color-border-ui; 
+        border-bottom: 2px solid #e9e9e9;
 	}
 }
 
 tbody{
-    @extend %ui-border-b1;
-    @extend %color-border-ui; 
+    border-bottom: 1px solid #e9e9e9;
 	
 	tr{
-        @extend %ui-border-b1;
-        @extend %color-border-ui; 
+        border-bottom: 1px solid #e9e9e9;
+
 	}
 }
 
 .table{
-    @extend %ui-border-b1;
-    @extend %ui-border-radius2;
-    
-    @extend %color-border-ui; 
-    
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
 }
 
 .col-head{
-    @extend %color-accent-bg;
-    @extend %ui-border-b1;
-    @extend %color-border-ui; 
+    background-color: $accent-bg;
+    border-bottom: 1px solid #e9e9e9;
     
     &:first-child{
-        @extend %ui-border-radius-tl2;
-        @extend %ui-border-radius-tr2;        
+        border-top-left-radius: 3px;     
     }
     
     &:last-child{
-        @extend %ui-border-radius-tr2;
+        border-top-right-radius: 3px;    
     }
 }
 
 .event{
-    @extend %full-width;
-    @extend %color-white;
-    @extend %ui-border-1;    
-    @extend %color-border-ui; 
-    @extend %ui-border-radius;
+    width: 100%;
+    color: $color-white;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
     
-    tbody{
-        @extend %ui-border-b0; 
-    }
-    
-    tr{
-        &:last-child{
-             @extend %ui-border-b0;
-        }
+    tbody, tr:last-child{
+        border-bottom: 0;
     }
 }
 
 .row-head{
-    @extend %weight--semibold;
-    @extend %color-accent-bg;
-    
+    background-color: $accent-bg;
+    font-weight: 500;
     line-height: 36px;
     color: #595959;
 }

@@ -13,7 +13,7 @@
     }
 
     .locations__list{
-        @extend %display--none;
+        display: none;
 
         @include mq(600px) {
             display: block;

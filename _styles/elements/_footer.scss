@@ -7,25 +7,25 @@
 	@include rem-calc(margin-top, 100px);	
     
 	.section-divider{
-		@extend %color-border-gold;        
+        border-color: $color-gold;
 	}
     
-	> nav{	
-        
+	> nav{	        
 	    @extend %pb;
 		
 		ul{
-			@extend %text--center;
+            text-align: center;
 		}
 		
 		a{
             @extend %ps--;
-            @extend %dark-link;
+            color: $base-text-color;
+            
 		}
 	}
 	
 	.copy{
-		@extend %text--center;
-	    @extend %pb;
+        @extend %pb;
+		text-align: center;
 	}
 }

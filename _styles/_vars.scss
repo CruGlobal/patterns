@@ -27,6 +27,8 @@ $debug-mode:        false;
 
 
 
+
+
 /*------------------------------------*\
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
@@ -48,6 +50,8 @@ $use-media:         true;
 
 
 
+
+
 /*------------------------------------*\
     $OVERRIDES
 \*------------------------------------*/
@@ -55,7 +59,7 @@ $use-media:         true;
  * Place any variables that should override brackets.css’ defaults here.
  */
 $base-font-size:         19px;
-$base-line-height:       33px;
+$base-line-height:       29px;
 
 $base-background-color: #f7f7f7;
 
@@ -85,6 +89,10 @@ $enable-paddings--large:  false;
 $enable-paddings--huge:   false;
 $enable-paddings--none:   true;
 
+
+
+
+
 /*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
@@ -93,17 +101,16 @@ $enable-paddings--none:   true;
  */
 
 
-
-
-
 /*------------------------------------*\
     $Fonts
 \*------------------------------------*/
-$base-font-family:     "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
-$numberal-font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$base-font-family:      "freight-sans-pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+$numberal-font-family:  "Helvetica Neue", Arial, Helvetica, sans-serif;
 
-$base-text-color:      #353535;
+$base-text-color:       #353535;
 
+$paragraph-font-size:   21px;
+$paragraph-line-height: 31px;
 
 
 

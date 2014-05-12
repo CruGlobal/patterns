@@ -7,6 +7,39 @@
 
 .break-word, %break-word{ word-wrap: break-word; }
 
+
+.text-small, %text-small{
+    font-weight: 500;
+    @include font-size($base-font-size * .8, true);
+}
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include spacing(padding-left);
+ * }
+ */
+@mixin spacing($property) {
+    #{$property}: $base-spacing-unit;
+    #{$property}: $base-spacing-ratio + rem;
+}
+
+@mixin double-spacing($property) {
+    #{$property}: 2 * $base-spacing-unit;
+    #{$property}: 2 * $base-spacing-ratio + rem;
+}
+
+@mixin half-spacing($property) {
+    #{$property}: $base-spacing-unit / 2;
+    #{$property}: ($base-spacing-ratio / 2) + rem;
+}
+
+@mixin quarter-spacing($property) {
+    #{$property}: $base-spacing-unit / 4;
+    #{$property}: ($base-spacing-ratio / 4) + rem;
+}
+
 /**
  * Border Radii
  */

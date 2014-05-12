@@ -3,21 +3,20 @@
 \*------------------------------------*/
 
 .mask--circle{
-    @extend %display--inline-block;
-    @extend %overflow--hide;
-    
+    display: inline-block;
+    overflow: hidden;
 	border-radius: 50%;
 }
 
 .mask--cover-image{
-    @extend %full-width;
-    @extend %full-height;
+    width: 100%;
+    height: 100%;
     
     display: table;
 }
 
     .cover-image{
-        @extend %position--absolute;
+        position: absolute;
         
         top: 0;
         left: 0;
@@ -31,9 +30,9 @@
     
 
 .action-icons{
-    @extend %display--inline-block;
-	@extend %full-width;
-    @extend %full-height;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     
     max-width: 150px;
     vertical-align: middle;

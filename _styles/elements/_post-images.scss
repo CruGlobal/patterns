@@ -4,12 +4,12 @@
 
 .post-article figure{
     @extend %cf;
-    @extend %position--relative;
+    position: relative;
     
     outline: 0;
     
     & > img{
-       @extend %full-width;
+       width: 100%;
     }
 }
 	
@@ -19,12 +19,13 @@
 	     * and centers it for smaller screens.
 		 */
 		.image__caption{
-            @extend %position--relative;
-            @extend %full-width;
-            @extend %text--center;
             @extend %mt--;
+            position: relative;
+            left: 0;
             
-			left: 0;
+            width: 100%;
+            text-align: center;
+			
             
             &.default-view{
             	@include mq(1164px) {
@@ -49,15 +50,16 @@
 		}
 		
 		.image-credit{
-            @extend %display--block;
-            @extend %mt-;
             @extend %small-text;
+            
+            display: block;
+            
             
 			color: #666062;
 		}
       
 /*figure*/.image--inset__left{
-    @extend %full-width;
+    width: 100%;
     
     clear: both;
     
@@ -94,7 +96,7 @@
 }      
         
 /*figure*/.image--outset__left{
-    @extend %full-width;
+    width: 100%;
     
     clear: both;
     

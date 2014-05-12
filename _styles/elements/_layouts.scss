@@ -45,7 +45,7 @@
  * The wrapper class for full-width images
  */
 .layout-background-fill{    
-    @extend %position--relative;
+    position: relative;
     
     left: 0;     
     overflow: hidden;

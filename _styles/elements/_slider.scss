@@ -4,11 +4,7 @@ $slider-height: 364px;
  * Slider Helper classes
  */
 %animate-duration--400{
-    @include vendor(transition-duration, 800ms);
-}
-
-%animate-duration--800{
-    @include vendor(transition-duration, 800ms);
+    @include vendor(transition-duration, 400ms);
 }
 
 %animate-delay--400{
@@ -19,25 +15,6 @@ $slider-height: 364px;
     @include vendor(animation-timing-function, ease);
 }
 
-%animate-property--wlo{
-    @include vendor(transition-property, width, left, opacity);
-}
-
-%none--transition{
-    @include vendor(transition, none);
-}
-
-%none--animation{
-    @include vendor(animation, none);
-}
-
-%opacity--03{
-    @include vendor(opacity, 0.3);
-}
-
-%opacity--1{
-    @include vendor(opacity, 1);
-}
 
 .content-slider{
     
@@ -79,18 +56,20 @@ $slider-height: 364px;
 
 .slider__item{
     @extend %m0;
-    @extend %animate-duration--800;
-    @extend %animate-timing--ease;
-    @extend %animate-property--wlo;
     
-    width: 30.6%;
-
+    width: 31.6%;
+    
+    @include vendor(transition-property, width, left, opacity);
+    @include vendor(transition-duration, .8s);
     @include vendor(transform, translate3d(0px,0px,0px));
 }
 
+/**
+ * At bat
+ */
 .slider2{
-    width: 63.6%;
-    left: 1.6%;
+    width: 64.9%;
+    left: 0%;
     z-index: 1;
 
     @include mq(980px, max) {
@@ -99,8 +78,11 @@ $slider-height: 364px;
     }
 }
 
+/**
+ * On Deck
+ */
 .slider3{
-    left: 67.8%;
+    left: 66.666666%;
 
     @include mq(980px, max) {
         left: 100%;
@@ -108,35 +90,14 @@ $slider-height: 364px;
     }
 }
 
-.slider4{
-    @extend %animate-duration--400;
-    @extend %animate-timing--ease;
-    @extend %none--transition;
-    @extend %opacity--03;
-    @extend %animate-delay--400;
+/**
+ * Last up
+ */
+.slider1{    
+    left: -33.333333%;
     
-    left: 100.85%;
-
-    @include vendor(animation-name, sliderBegin, sliderEnd);
-}
-
-.slider__reverse  .slider4{
-    @extend %animate-duration--800;
-    @extend %animate-timing--ease;
-    @extend %none--animation;
-    @extend %animate-property--wlo;
+    @include vendor(opacity, 0.3);
     
-    
-    @include vendor(animation-name, none);
-}
-
-
-
-.slider1{
-    @extend %opacity--03;
-    
-    left: -31.4%;
-
     @include mq(979px, max) {
         left: -100%;
         width: 100%;
@@ -145,23 +106,54 @@ $slider-height: 364px;
     }
 }
 
-.slider__reverse  .slider1{
+    .slider__reverse  .slider1{
+        
+        @extend %animate-duration--400;
+        @extend %animate-timing--ease;
+        @extend %animate-delay--400;
+    
+        @include vendor(transition, none);
+        @include vendor(animation-name, sliderReverseBegin, sliderReverseEnd);
+        @include vendor(animation-delay, 0, 400ms);
+        @include vendor(transition-duration, 400ms);
+    }
+
+/**
+ * In the hole
+ */
+.slider4{
     @extend %animate-duration--400;
     @extend %animate-timing--ease;
-    @extend %none--transition;
     @extend %animate-delay--400;
     
-    @include vendor(animation-name, sliderReverseBegin, sliderReverseEnd);
+    
+    left: 100%;
+    
+    @include vendor(transition, none);
+    @include vendor(animation-name, sliderBegin, sliderEnd);
+    
+    @include vendor(animation-delay, 0, 400ms);
+    @include vendor(transition-duration, 400ms);
+    @include vendor(opacity, 0.3);
 }
 
-.background-image{
-    @extend %position--absolute;
-    @extend %position--t0;
-    @extend %position--l0;
-    @extend %full-width;
-    @extend %full-height;
-    @extend %overflow--hide;
 
+    .slider__reverse  .slider4{
+        @extend %animate-timing--ease;
+        
+        @include vendor(transition-duration, 800ms);
+        @include vendor(animation, none);
+    }
+
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+    width: 100%;
+    height: 100%;
+    
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -186,14 +178,13 @@ $slider-height: 364px;
 
 
     h3{
-        @extend %text--white;
-
         line-height: 1.25em;
         min-height: 2.5em;
+        
+        color: $color-white;
 
         @include rem-calc(padding, 8px 14px 6px);
         @include font-size(22px, false);
-
         @include vendor(transition, color .15s linear);
 
         &:hover{
@@ -206,8 +197,9 @@ $slider-height: 364px;
 .slider2, .slider3{
     
   .article-details{
-    @extend %position--b0;
-    @extend %opacity--1;
+    bottom: 0;
+    
+    @include vendor(opacity, 1);
   }
   
 }
@@ -220,11 +212,12 @@ $slider-height: 364px;
 
 .slider-control{
     @extend %slider-transition;
-    @extend %display--block;
-    @extend %position--b0;
     
     top: 25%;
-
+    bottom: 0;
+    
+    display: block;
+    
     height: 50%;
     min-width: 55px;
     min-height: 60px;
@@ -256,14 +249,14 @@ $slider-height: 364px;
 
 
 .slider-control__prev{
-    @extend %position--l0;
+    left: 0;
 
     @include mq(981px) {
         @include vendor(transform, translateX(-58px));
     }
     
     .slider-control--btn{
-        @extend %position--l0;
+        left: 0;
     }
 
     &:hover{
@@ -274,14 +267,14 @@ $slider-height: 364px;
 }
 
 .slider-control__next{
-    @extend %position--r0;
+    right: 0;
 
     @include mq(981px) {
         @include vendor(transform, translateX(58px));
     }
 
     .slider-control--btn{
-        @extend %position--r0;
+        right: 0;
     }
 
     &:hover{
@@ -291,9 +284,7 @@ $slider-height: 364px;
     }
 }
 
-.slider-control--btn{
-    @extend %text--white;
-    
+.slider-control--btn{    
     top: 50%;
     width: 48px;
     height: 60px;
@@ -302,6 +293,8 @@ $slider-height: 364px;
     line-height: 60px;
     font-size: 2.2em;
 
+    color: $color-white;
+    
     background-color: #222;
     background-color: rgba(0,0,0,0.35);
 

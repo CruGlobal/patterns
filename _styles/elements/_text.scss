@@ -1,32 +1,36 @@
+
+
+
 abbr[title="required"], abbr[title="Required"] {
-    @extend %ui-border-b0;
+    border: 0;
 	color: $color-red;
 }
 
 b, strong{
-	@extend %weight--bold;
+    font-weight: 600;
 }
 
 figure{
-    @extend %position--relative;
+    position: relative;
 }
 
 figcaption{
 	line-height: 1.6;
+    
 	@include rem-calc(margin, 5px 0 15px);
 	@include font-size(14px, false);
 }
 
 .dark-link, %dark-link{
-    @extend %text-base;
+    color: $base-text-color;
 }
 
 .block-link, %block-link{
     @extend %basic-transition;  
        
     &:hover{
-        @extend %decoration--none;
-        @extend %color-accent-bg;     
+        text-decoration: none;
+        background-color: $accent-bg;     
     }
     
 }
@@ -54,7 +58,7 @@ figcaption{
 }
 
 blockquote{
-    @extend %weight--semilight;
+    font-weight: 300;
     
 	letter-spacing: .01rem;
 	font-style: italic;
@@ -63,7 +67,7 @@ blockquote{
 	padding-bottom: 3px;
 	
 	@include rem-calc(padding-left, 28px);
-	@include font-size($base-font-size);		
+	@include font-size($paragraph-font-size);		
 }
 
 	.pullquote{
@@ -84,7 +88,7 @@ blockquote{
 		@include vendor(transition, margin .1s);
 		
 		em, strong{
-            @extend %weight--semibold ;
+            font-weight: 500;
 			font-style: normal;
 			font-size: 110%;
 		}
@@ -117,13 +121,13 @@ q{
      * If an element opens with an inline quote, let’s hang that.
      */
     &.opener {
-        @extend %display--inline-block;
+        display: inline-block;
         
         text-indent: -0.22em;
     }
 	
     &:first-child {
-        @extend %display--inline-block;
+        display: inline-block;
         
         text-indent: 0;
     }

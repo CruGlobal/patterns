@@ -23,9 +23,9 @@ $link-height: 36px;
 }
 
 	.site-logo{
-		@extend %display--inline-block;
 		@extend %mb0;
-	
+        
+	    display: inline-block;
 		float: left;
 		width: 10%;
 		height: $header-height - 3px;
@@ -39,8 +39,7 @@ $link-height: 36px;
 		text-align: center;
 	
 		a{
-    		@extend %display--inline-block;
-		
+    	    display: inline-block;		
 			overflow: hidden;
 			vertical-align: middle;
 			

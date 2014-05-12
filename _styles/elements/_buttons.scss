@@ -3,47 +3,31 @@
 \*------------------------------------*/
 /** 
  * Use this mixin to quickly pump out buttons:
- * @mixin btn($background, $border).
+ * @mixin btn($background, $border, $color:inherit).
  *
  * Change the hover and other states with:;
- * @mixin btn-effects($background, $border).
+ * @mixin btn-effects($background, $border, $color:inherit).
  * 
  * Quick not that it will not work with transparency due to 
  * the hover states. 
  */
 
 .button-group{
-	@extend %display--block;
+	display: block;
 	
 	.button{
-		@extend %mb--;
+        @include quarter-spacing(margin-bottom);
 	}
 }
 
-
-.button--primary{
-    	
-	@include btn($btn-primary-bg, $btn-primary-border);
-    @include btn-effects(darken($btn-primary-bg, 8%), darken($btn-primary-border, 12%));
-    
-    
-    &,
-    &:hover{
-    	@extend %text--white;
-    }
-    
+.button--primary{ 	
+	@include btn($btn-primary-bg, $btn-primary-border, $color-white);
+    @include btn-effects(darken($btn-primary-bg, 8%), darken($btn-primary-border, 12%), $color-white);
 }
 
 .button--secondary{
-    	
-	@include btn($btn-alt-bg, $btn-alt-border);
-    @include btn-effects(darken($btn-alt-bg, 8%), darken($btn-alt-border, 12%));
-    
-    &,
-    &:hover{
-    	@extend %text--white;
-    }
-    
+	@include btn($btn-alt-bg, $btn-alt-border, $color-white);
+    @include btn-effects(darken($btn-alt-bg, 8%), darken($btn-alt-border, 12%), $color-white);
 }
 
 .button--subtle, input.button--subtle{
@@ -55,7 +39,7 @@
     @include btn-effects($btn-alt-bg, $btn-alt-border);
     
     &:hover{
-    	@extend %text--white;
+    	color: $color-white;
     }
 }
 
@@ -63,47 +47,16 @@
  * Positive actions; e.g. sign in, purchase, submit, etc.
  */
 .button--positive{
-    @extend %text--white;
-    
-    @include btn($btn-positive-bg, darken($btn-positive-bg, 5%));
-    @include btn-effects(darken($btn-positive-bg, 8%), darken($btn-positive-bg, 12%));
-    
-    background-color: $btn-positive-bg;
-	border-color: darken($btn-positive-bg, 10%);
-
-	&:hover,
-	&:focus,
-	&:active, 
-	&:visited {
-		@extend %text--white;
-        background-color: darken($btn-positive-bg, 10%);
-	}
-
-	&:hover{
-		background-color: darken($btn-positive-bg, 10%);
-	}
+    @include btn($btn-positive-bg, darken($btn-positive-bg, 5%), $color-white);
+    @include btn-effects(darken($btn-positive-bg, 8%), darken($btn-positive-bg, 12%), $color-white);
 }
 
 /**
  * Negative actions; e.g. close account, delete photo, remove friend, etc.
  */
 .button--negative{
-    @extend %text--white;
-    
-    background-color: $btn-negative-bg;
-	border-color: darken($btn-negative-bg, 10%);
-
-
-	&:hover,
-	&:focus,
-	&:active, 
-	&:visited {
-    	@extend %text--white;
-	}
-
-	&:hover{
-		background-color: darken($btn-negative-bg, 10%);
-	}
+    @include btn($btn-negative-bg, darken($btn-negative-bg, 5%), $color-white);
+    @include btn-effects(darken($btn-negative-bg, 8%), darken($btn-negative-bg, 12%), $color-white);
 }
 
 /**
@@ -117,24 +70,6 @@
 		@extend %btn--inactive;
 	}
 }
-
-.button--unstyled, 
-input.button--unstyled{
-	&:link, &:visited, &:hover, &:focus, &:active{
-		color: $btn-unstyled-color;
-		background-color: $btn-unstyled-bg;
-		border-color: $btn-unstyled-border;
-
-		&:hover{
-			color: $base-text-color;
-		}
-	}
-}
-
-.button--full{
-	@extend %full-width;
-}
-
 
 .button--icon{
     @extend %ui-border-0;

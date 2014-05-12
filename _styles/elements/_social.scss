@@ -19,7 +19,7 @@ $color-twitter:  #55acee;
 	@include font-size(24px);
 	
 	&:hover{
-		@extend %decoration--none;
+		text-decoration: none;
 	}
 }
 
