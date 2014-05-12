@@ -1,28 +1,38 @@
+
+
+
 abbr[title="required"], abbr[title="Required"] {
+    border: 0;
 	color: $color-red;
-	border-bottom: none;
 }
 
 b, strong{
-	font-weight: 600;
+    font-weight: 600;
 }
 
 figure{
-	position: relative;
+    position: relative;
 }
 
 figcaption{
 	line-height: 1.6;
+    
 	@include rem-calc(margin, 5px 0 15px);
 	@include font-size(14px, false);
 }
 
+.dark-link, %dark-link{
+    color: $base-text-color;
+}
+
 .block-link, %block-link{
-    @extend %basic-transition; 
+    @extend %basic-transition;  
+       
     &:hover{
-        background-color: #f2f2f2;
         text-decoration: none;
+        background-color: $accent-bg;     
     }
+    
 }
 
 /**
@@ -32,27 +42,39 @@ figcaption{
 .accent{
 	&:after{
 		content: "-";
+        
 		@include rem-calc(margin-left, 12px);
 		@include rem-calc(margin-right, 12px);
 	}
 }
 
+.affordance:after {
+	@extend .icon-right-circle:before;
+	
+    color: $color-gold;
+    font-family: "cruicons";
+    padding-left: 10px;
+    font-size: 18px;
+}
+
 blockquote{
+    font-weight: 300;
+    
 	letter-spacing: .01rem;
-	font-weight: 300;
 	font-style: italic;
 	border-left: 3px solid $color-gold;
 	margin-left: -26px;
 	padding-bottom: 3px;
 	
 	@include rem-calc(padding-left, 28px);
-	@include font-size($base-font-size);		
+	@include font-size($paragraph-font-size);		
 }
 
 	.pullquote{
-		padding-left: 0;
+		@extend %pl0;
+        
 		border-left-color: transparent;
-		margin: 48px 0px;
+		margin: 48px 0;
 		text-align: center;
 		
 		@include mq(501px) {
@@ -66,8 +88,8 @@ blockquote{
 		@include vendor(transition, margin .1s);
 		
 		em, strong{
+            font-weight: 500;
 			font-style: normal;
-			font-weight: 500;
 			font-size: 110%;
 		}
 	}
@@ -100,11 +122,13 @@ q{
      */
     &.opener {
         display: inline-block;
+        
         text-indent: -0.22em;
     }
 	
     &:first-child {
         display: inline-block;
+        
         text-indent: 0;
     }
 }

@@ -1,10 +1,47 @@
-.background-size-contain{
-	@include rem-calc(margin-bottom, $base-line-height);
+/*------------------------------------*\
+    $POST
+\*------------------------------------*/
+
+.post-article{
+    @include mq(700px) {
+        font-size: $paragraph-font-size;
+        line-height: $paragraph-line-height;
+        letter-spacing: 0.01rem;
+    }
 }
 
-.post__footer {
-	@include rem-calc(margin-bottom, $base-line-height * 3);
+
+.post-title{
+    @extend %mb--;
+    
+    word-wrap: break-word;    
+    letter-spacing: -0.04em;
 }
+
+    .post-subtitle{
+        @extend %m0;
+        
+        word-wrap: break-word;    
+        letter-spacing: -0.02em;
+    }
+    
+    /**
+     * The author, twitter handle and timestamp for a post.
+     * Use to extend .nav
+     */
+    .post-meta{
+        @extend .nav;
+
+    	color: $color-gray;
+    	line-height: 1.6;
+	
+    	@include font-size(16px, false);
+	
+    	&, 
+    	a{
+    		color: $color-gray;
+    	}
+    }
 
 
 /**
@@ -12,7 +49,7 @@
  * list. 
  */
 .post__list{
-	margin-left: 0;
+	@extend %ml0;
 	
 	li{
 		@include mq(716px, max) {
@@ -20,85 +57,10 @@
 		}
 	}
 }
-	
-/**
- * A different type of <hr> styling. 
- */
-/*hr.section-divider{
-	display: block;
-	width: 14%;
-	margin: 50px auto 40px auto;
-	border: 0;
-	border-top: 1px solid #dddddd;
-}*/
-
-%hr{
-    @extend %centered;
-    clear: both;
-	display: block;
-}
-
-/** 
- * The primary hr, small width 
- */
-hr{
-    @extend %hr;
-    
-    width: 14%;
-}
-
-    /** 
-     * Full width hr 
-     */
-    /* hr */.divider{
-        @extend %hr;
-    
-        width: 100%;
-    }
-
-%break-word{
-    word-wrap: break-word;   
-}
-
-.post-title{
-    @extend %break-word;
-    
-    @extend %mb--;
-    letter-spacing: -0.04em;
-}
-
-    .post-subtitle{
-        @extend %break-word;
-    
-        @extend %m0;
-        letter-spacing: -0.02em;
-    }
-
-/**
- * The author, twitter handle and timestamp for a post.
- * Use to extend .nav
- */
-.post-meta{
-	margin-left: 0;
-	list-style-type: none;
-	color: $color-gray;
-	line-height: 1.6;
-	
-	@include font-size(16px, false);
-	
-	> li{
-		display: inline-block;
-	}
-	
-	&, 
-	a{
-		color: $color-gray;
-	}
-}
-	
 
     .source{
     	@include rem-calc(margin-top, $base-line-height / 2);
+        
     	&:before{
     		content: "-";
     	}
@@ -106,16 +68,12 @@ hr{
 
 .more-stories__link{
     @extend %basic-transition;
+    @extend %block-link;
+    
     color: inherit;
     cursor: pointer;
     
     @include font-size($base-font-size * 0.875, false);
-    
-    &:hover{
-        color: inherit;
-        text-decoration: none; 
-        background: $color-white;
-    }
 }
 
 .image--legacy + .post-nav{
@@ -134,6 +92,10 @@ hr{
         border-right: 1px solid $color-gray;
     }
 
+}
+
+.post__footer {
+	@include rem-calc(margin-bottom, $base-line-height * 3);
 }
 
 

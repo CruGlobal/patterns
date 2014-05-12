@@ -20,15 +20,15 @@
 }
 
 @mixin btn($background, $border, $color: inherit) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
+    background-color: $background;
+    border-color: $border;
+    
+    color: $color;
 
-  &:active,
-  &.active,
-  .open &.dropdown-toggle {
-    background-image: none;
-  }
+    &:active,
+    &.active{
+        background-image: none;
+    }
   
   &.disabled,
   &[disabled],
@@ -52,8 +52,8 @@
     &:active,
     &.active,
     .open &.dropdown-toggle {
-      color: $color;
       background-color: $background;
           border-color: $border;
+                 color: $color;
     }
 }

@@ -5,24 +5,24 @@ $search-height: 29px;
 
 .right-nav{
 	.spoken-form{
-		padding-left: 18px;
-		padding-right: 18px;
+        @extend %ms-;
 	}
 }
 
 .primary-search{
-	position: relative;
+    position: relative;
+    
 	top: 2px;
 }
 
 	.search-field{
+        @extend %small-text;
+        
 		width: 254px;
 		max-height: $search-height;
 		line-height: 18px;
 		border-width: 1px;
-        
-		
-		font-size: 80%;
+        		
 		&::-webkit-input-placeholder { font-size: 14px;}
 		      &::-moz-placeholder { font-size: 14px;}
 		      &:-ms-input-placeholder { font-size: 14px;}
@@ -31,18 +31,18 @@ $search-height: 29px;
     
     
     %search-icons{
-		position: absolute;
+        @extend %p0;
+
+        position: absolute;
 		top: 0;
+        
         display: block;
+        text-align: center;
         
         width: $search-height;
         height: $search-height;
         line-height: $search-height;
-        		
-        padding: 0;
-        
-        text-align: center;
-        
+        		                
 		> i{
 			color: $btn-default-color;
 			font-size: 70%;
@@ -55,6 +55,7 @@ $search-height: 29px;
             }
         }
     }
+    
 	.search-button{
         @extend %search-icons;
         
@@ -70,20 +71,22 @@ $search-height: 29px;
     }
     
     .primary-search--dropdown{
-        visibility: hidden;
+        @extend %small-text;
+        @extend %p--;
+        
         position: absolute;
+        overflow: hidden;
+        visibility: hidden;
+        
+        color: $color-white;
+        
         right: 0;
         z-index: 1;
         
         width: 94%;
         
-        background-color: $color-white;
         border: 1px solid $color-gray;
-        border-top: transparent;
-        
-        padding: $base-padding / 4;
-        
-        font-size: 80%;
+        border-top: transparent;        
     }
     
     
@@ -93,32 +96,36 @@ $search-height: 29px;
             
             .icon-down-arrow{
                  color: $color-gold;
+                 
                  &:before{
                      content: '\e80c';
-                 }
+                 }                
             }
            
         }
+        
         .primary-search--dropdown{
             visibility: visible;
         }
+        
     } 
     
     .primary-search__results{
         h3{
             @extend %pb;
-            border-bottom: 1px solid #dddddd;
+            
+            border-bottom: 1px solid #ddd;
         }
     }
     
         .primary-search__results--item{                       
             & > a{                
-                color: $base-text-color;
+                @extend %text-base;
                 
-                &, &:hover{
+                &:hover{
                     text-decoration: none;
                 }
-            }
+           }
         }
         
         .results-title{
