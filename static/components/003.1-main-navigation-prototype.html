@@ -3,132 +3,217 @@ page-class: page--static
 ---
 {% include head.html %}
 
-<!--  
+<!--
 
   003 - MAIN NAVIGATION
 
   -->
 
 
-<!-- Including the off-canvas -->
+<!-- The primary header -->
+<header class="site-header"  role="banner">
+  <hgroup class="title-group  site-logo">
+    <a href="#"  title="Return to Homepage">
+      <h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
+    </a>
+  </hgroup>
+  <a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
+    <i class="icon-hamburger"></i>
+  </a>
+</header>
+<!-- End primary header -->
 
-		<div id="js-container"  class="js-container">
-			<header class="site-header"  role="banner">
-				<div class="navigation-wrapper">
-					<hgroup class="title-group  site-logo">
-						<a href="#"  title="Return to Homepage">
-							<h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
-						</a>
-					</hgroup>
-					<a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
-						<i class="icon-hamburger"></i>
-					</a>
-				</div>
-			</header>
-		</div>
-		
-		
-		<!-- This is at the very bottom of the page -->
-		<nav  id="off-canvas" class="navigation  js-navigation">			
-			<ul class="nav  right-nav  flush--bottom">
-				<li class="nav__item">
-					<a class="nav-link" href="#signup">Sign Up</a>
-				<li class="nav__item">
-					<a class="nav-link"  href="#">Log In</a>
-				</li>
-	
-      	<li class="spoken-form  nav__item">	
-      		<form class="primary-search  js-primary-search"  method="get"  name="search">
-	      	  <input class="search-field  text-input" placeholder="Search" type="search" />
-      			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
-		      	<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
-      			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
-      				<li>
-      					<a href="">This Site</a>
-      				</li>
-      				<li>
-      					<a href="">Give to Staff, Ministries</a>
-      				</li>
-      			</ul>
-      		</form>
-      	</li>	
-        
-			</ul>						
 
-			<ul class="nav  site-nav  flush--bottom">
-				
-				<!-- If the li has a dropdown add the .has-dropdown and .js-has-drowpdown classes -->
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">How to Know God</a>
-					
-					<!-- Dropdown -->
-					<div class="dropdown  full-width  overflow--hidden  position--fixed  text--left pe">
-						<div class="nav grid layout--full">
-              <ul>
 
-                <li class="dropdown__item grid__item desk--one-quarter">
-                  <a class="mb--" href="">Would You Like to Know God Personally?</a>
-                  <!--
-                  <ul class="bare-list">
-                    <li><a href="">Rich</a></li>
-                    <li><a href="">Shawn</a></li>
-                    <li><a href="">Jimmy</a></li>
-                    <li><a href="">Terry</a></li>
-                  </ul>
-                  -->
-                </li>
-                <li class="dropdown__item grid__item desk--one-quarter">
-                  <a class="mb--" href="">Who Is Jesus?</a>
-                </li>
-                <li class="dropdown__item grid__item desk--one-quarter">
-                  <a class="mb--" href="">Did Jesus Rise From the Dead?</a>
-                </li>
-                <li class="dropdown__item grid__item desk--one-quarter">
-                  <a class="mb--" href="">Jesus and the Intellectual</a>
-                </li>
-              </ul>
-            </div><!-- end grid -->
-            <div class="nav grid layout--full">
-              <ul>
-                <li class="dropdown__item grid__item desk--one-quarter">
-                  <a class="mb--" href="">My Story</a>
-            </div><!-- end grid -->
+<!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
+<nav  id="nav" class="navigation ">
+<ul class="nav  right-nav ">
 
-					</div>
-					<!-- End dropdown -->
-					
-				</li>
-				<!--End .nav-link.has-dropdown-->
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">Train & Grow</a>
-				</li>
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">Opportunities</a>
-				</li>
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">About</a>
-				</li>
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">Communities</a>
-				</li>
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">Store</a>
-				</li>
-	
-				<li class="nav__item  has-dropdown  js-has-dropdown">
-					<a href="#"  class="nav-link">Give</a>
-				</li>
-	
-	
-			</ul>
-			<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
-		</nav>
-		
-	{% include footer.html %}
-  <script src="{{ site.root }}offcanvas.min.js"></script>
-	
+  <li class="nav__item">
+    <a class="nav-link" href="#signup">Sign Up</a>
+  <li class="nav__item">
+    <a class="nav-link" href="#">Log In</a>
+  </li>
+
+  <!--Search-->
+  <li class="spoken-form  nav__item">
+    <form class="primary-search  js-primary-search"  method="get"  name="search">
+      <input class="search-field  text-input" placeholder="Search" type="search" />
+      <button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
+      <a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>
+      <ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
+        <li>
+          <a href="">This Site</a>
+        </li>
+        <li>
+          <a href="">Give to Staff, Ministries</a>
+        </li>
+      </ul>
+    </form>
+  </li>
+
+  <!--Search - END-->
+</ul>
+<div class="navigation js-dropdown">
+<ul class="nav  site-nav">
+
+    <li class="dropdown__item">
+      <a href="#"  class="">How to Know God</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">Train & Grow</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">Opportunities</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">Communities</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">About</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">Store</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+    <li class="dropdown__item">
+      <a href="#"  class="">Give</a>
+      <div class="dropdown  dropdown__item">
+
+        <div class="">
+          <ul class="nav  grid">
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Know God Personally</a>
+              <a href="#">Jesus and the Intellectual</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Who is Jesus?</a>
+              <a href="#">My Story</a>
+            </li>
+            <li class="grid__item  one-third  dropdown--column">
+              <a href="#">Did Jesus Rise from the Dead?</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!---->
+    </li>
+
+
+
+</ul>
+</div>
+    {% include footer.html %}
