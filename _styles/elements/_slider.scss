@@ -79,9 +79,9 @@ $slider-height: 364px;
   @include vendor(opacity, 0.3);
   @include vendor(transition, none);
   @include vendor(animation-name, sliderBegin, sliderEnd);
-  @include vendor(animation-duration, 400ms);
+  @include vendor(animation-duration, 720ms);
   @include vendor(animation-timing-function, ease);
-  @include vendor(animation-delay, 0, 400ms);
+  @include vendor(animation-delay, 0, 720ms);
 }
 
 .slider__reverse  .slider4{
@@ -111,9 +111,13 @@ $slider-height: 364px;
 .slider__reverse  .slider1{
   @include vendor(transition, none);
   @include vendor(animation-name, sliderReverseBegin, sliderReverseEnd);
-  @include vendor(animation-duration, 400ms);
+  @include vendor(animation-duration, 720ms);
   @include vendor(animation-timing-function, ease);
-  @include vendor(animation-delay, 0, 400ms);
+  @include vendor(animation-delay, 0, 720ms);
+}
+
+.slider5, .slider6, .slider7, .slider8 {
+  right: 500%;
 }
 
 .background-image{

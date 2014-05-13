@@ -3,13 +3,13 @@
         left: -31.4%
 	}	
     to {
-        left: -56%
+        left: -90%
 	}
 }
 
 @include keyframes(sliderEnd) {
     from {
-        left: 110%
+        left: 180%
 	}	
     to {
         left: 100.85%
@@ -20,13 +20,13 @@
         left: 100.85%
 	}	
     to {
-        left: 125.45%
+        left: 180.45%
 	}
 }
 
 @include keyframes(sliderReverseEnd) {
     from {
-        left: -40.55%
+        left: -90.55%
 	}	
     to {
         left: -31.4%
