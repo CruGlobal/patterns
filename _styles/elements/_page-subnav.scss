@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .page-subnav{   
-    width: 100%;
-    position: relative;
+    @extend %position--relative;  
+    @extend %full-width;
      
 	z-index: 1;
 	bottom: -18px;
@@ -14,38 +14,32 @@
     }
       
 	& > li {
+        @extend %block-link;
         
         @include mq(520px, max) { 
             width: 50%;
             float: left;
             border-bottom: 1px solid rgba(6,8,8,0.1); 
+            
             &:nth-child(odd) {
                 border-right: 1px solid rgba(6,8,8,0.1);          
             }
         }
         
-        &:hover{
-            background-color: $base-background-color;
-        }
-        
     }
     
     a{
+        @extend %block-link;
         text-transform: capitalize;
-
-        font-weight: 400;
-        
+                
         @include font-size(15px, false);
-        
-        &:hover{
-            text-decoration: none;
-        }
     }
       
 }
 
 .page-hero .article-details{
     bottom: -1px;
+    
     @include vendor(opacity, 1);
 }
 

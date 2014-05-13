@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*------------------------------------*\
+ $DEMO
+\*------------------------------------*/
+/**
+ * This file is for use in the pattern library only. 
+ */
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in brackets.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if brackets.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. Brackets.css ignores its own variables in favour of
+ * using your own, so you can completely modify how brackets.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $PROJECT-MODES
+\*------------------------------------*/
+/**
+ * This allows you to use debug settings which can be useful in
+ * development.
+ *
+ * Make sure to set this to false before using the code for production.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of brackets.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override brackets.css’ defaults here.
+ */
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of brackets.css here.
+ */
+/*------------------------------------*\
+    $Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+    $Color Palette
+\*------------------------------------*/
+/**
+ * Primary colors
+ */
+/* Cru Gold */
+/* Cru Gray */
+/* White */
+/**
+ * Secondary colors
+ */
+/* Cru Orange */
+/**
+ * Accent colors
+ */
+/* Cru Bright Blue */
+/* Cru Deep Blue */
+/**
+ * Grayscale
+ */
+/* Cru Gold */
+/* Cru Gold */
+/**
+ * Additional Colors
+ */
+/*------------------------------------*\
+    $BUTTON SETTINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $URL PATHS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ADDITIONAL
+\*------------------------------------*/
+body {
+  background-color: #f8f8f8; }
+
+.page--home .site-content {
+  padding: 24px !important; }
+
+.site-content {
+  margin-top: 70px; }
+
+.pattern {
+  clear: both;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0 0 3em;
+  width: 100%;
+  border: 1px solid;
+  border-color: #dddddd;
+  border-radius: 3px;
+  background-color: #fff; }
+
+.pattern--alt {
+  border: none; }
+
+.pattern__details {
+  color: #004b6a;
+  background-color: #f2f2f2;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+  padding: 0.5em 1%;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid;
+  border-color: #dddddd;
+  border-radius: 3px 3px 0 0; }
+
+.pattern__view {
+  padding: 10px;
+  width: auto;
+  background-color: #f8f8f8;
+  overflow: hidden; }
+
+.swatch-group > li:nth-child(4n+4) {
+  margin-right: 2%; }
+
+.swatch {
+  float: left;
+  margin-bottom: 1em;
+  width: 96%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4); }
+
+.swatch__preview {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  float: left;
+  height: 60px;
+  width: 100%;
+  margin: 0 0.8em 0.5em 0; }
+
+.swatch__details {
+  padding-left: 0.5em; }
+
+.article-wrap {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+code {
+  font-size: 90%; }
+
+.demo-header {
+  padding-left: 24px;
+  padding-right: 24px;
+  max-height: 68px;
+  border-bottom: 1px solid #ddd; }
+  .demo-header nav {
+    float: right;
+    line-height: 68px; }
+
+.demo-logo {
+  position: absolute;
+  top: 5px;
+  float: left;
+  display: inline-block;
+  width: 78px;
+  height: 54px;
+  background: url("assets/images/cru-logo.png");
+  background-image: url("assets/images/cru-logo.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; }
+
+.grid-demo .pattern__view .one-whole, .grid-demo .pattern__view .one-half, .grid-demo .pattern__view .one-third, .grid-demo .pattern__view .one-quarter {
+  min-height: 80px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+  background-color: #dddddd; }
+
+.grid-demo .pattern__view span {
+  display: inline-block;
+  line-height: 80px; }
+
+.demo-article-nav, .site--select {
+  position: fixed;
+  bottom: -2px;
+  left: -2px;
+  z-index: 10;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0.4em 0.5em 0.3em 0.5em;
+  min-height: 35px;
+  background-image: none;
+  background-color: #eee;
+  opacity: 0.8;
+  border-radius: 0;
+  font-size: 0.85em;
+  transition: 0.2s; }
+  .demo-article-nav a, .site--select a {
+    color: black; }
+
+.site--select {
+  left: auto;
+  right: -2px;
+  width: auto;
+  -webkit-appearance: none;
+  appearance: none; }
+  .site--select option {
+    font-size: 85%; }

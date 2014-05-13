@@ -1,12 +1,114 @@
-.inline-block, %inline-block    { display: inline-block; }
+.basic-transition, %basic-transition{ @include vendor(transition, .25s ease) }
 
-
-.flush, %flush                  { margin:        0 !important; }
-.flush--bottom, %flush--bottom  { margin-bottom: 0 !important; }
-
-
-.text-white, %text--white       { color: $color-white !important; }
-
-.basic-transition, %basic-transition{ @include vendor(transition, 250ms ease) }
+%base-transition--200{ @include vendor(transition, .2s ease) }
+%appearance--none{ @include vendor(appearance, none) }
 
 .decoration--none, %decoration--none{ text-decoration: none; }
+
+.break-word, %break-word{ word-wrap: break-word; }
+
+
+.text-small, %text-small{
+    font-weight: 500;
+    @include font-size($base-font-size * .8, true);
+}
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include spacing(padding-left);
+ * }
+ */
+@mixin spacing($property) {
+    #{$property}: $base-spacing-unit;
+    #{$property}: $base-spacing-ratio + rem;
+}
+
+@mixin double-spacing($property) {
+    #{$property}: 2 * $base-spacing-unit;
+    #{$property}: 2 * $base-spacing-ratio + rem;
+}
+
+@mixin half-spacing($property) {
+    #{$property}: $base-spacing-unit / 2;
+    #{$property}: ($base-spacing-ratio / 2) + rem;
+}
+
+@mixin quarter-spacing($property) {
+    #{$property}: $base-spacing-unit / 4;
+    #{$property}: ($base-spacing-ratio / 4) + rem;
+}
+
+/**
+ * Border Radii
+ */
+ 
+.ui-border-radius-t, %ui-border-radius-tl { border-top-left-radius: 3px; }
+.ui-border-radius-b, %ui-border-radius-tr { border-top-right-radius: 3px; }
+.ui-border-radius-l, %ui-border-radius-bl { border-bottom-left-radius: 3px; }
+.ui-border-radius-r, %ui-border-radius-br { border-bottom-right-radius: 3px; }
+.ui-border-radius,   %ui-border-radius    { 
+    @extend  %ui-border-radius-tl;
+    @extend  %ui-border-radius-tr;
+    @extend  %ui-border-radius-bl;
+    @extend  %ui-border-radius-br;
+}
+
+.ui-border-radius-t2, %ui-border-radius-tl2 { border-top-left-radius: 6px; }
+.ui-border-radius-b2, %ui-border-radius-tr2 { border-top-right-radius: 6px; }
+.ui-border-radius-l2, %ui-border-radius-bl2 { border-bottom-left-radius: 6px; }
+.ui-border-radius-r2, %ui-border-radius-br2 { border-bottom-right-radius: 6px; }
+.ui-border-radius2,   %ui-border-radius2    { 
+    @extend  %ui-border-radius-tl2;
+    @extend  %ui-border-radius-tr2;
+    @extend  %ui-border-radius-bl2;
+    @extend  %ui-border-radius-br2;
+}
+ 
+ 
+/**
+ * Border widths
+ */
+ %ui-border-solid-t { border-top-style: solid; }
+ %ui-border-solid-b { border-bottom-style: solid; }
+ %ui-border-solid-l { border-left-style: solid; }
+ %ui-border-solid-r { border-right-style: solid; }
+
+/**
+ * Border Size: 1px
+ */
+.ui-border-t1, %ui-border-t1 { @extend %ui-border-solid-t; border-top-width: 1px; }
+.ui-border-b1, %ui-border-b1 { @extend %ui-border-solid-b; border-bottom-width: 1px; }
+.ui-border-l1, %ui-border-l1 { @extend %ui-border-solid-l; border-left-width: 1px; }
+.ui-border-r1, %ui-border-r1 { @extend %ui-border-solid-r; border-right-width: 1px; }
+.ui-border-1,  %ui-border-1  { 
+    @extend %ui-border-t1;
+    @extend %ui-border-b1;
+    @extend %ui-border-l1;
+    @extend %ui-border-r1;
+}
+
+
+/**
+ * Border Size: 2px
+ */
+.ui-border-t2, %ui-border-t2 { @extend %ui-border-solid-t; border-top-width: 2px; }
+.ui-border-b2, %ui-border-b2 { @extend %ui-border-solid-b; border-bottom-width: 2px; }
+.ui-border-l2, %ui-border-l2 { @extend %ui-border-solid-l; border-left-width: 2px; }
+.ui-border-r2, %ui-border-r2 { @extend %ui-border-solid-r; border-right-width: 2px; }
+.ui-border-2,  %ui-border-2  { 
+    @extend %ui-border-t2;
+    @extend %ui-border-b2;
+    @extend %ui-border-l2;
+    @extend %ui-border-r2;
+}
+
+/**
+ * Border None
+ */
+ .ui-border-t0, %ui-border-t0 { border-top: 0; }
+ .ui-border-b0, %ui-border-b0 { border-bottom: 0; }
+ .ui-border-l0, %ui-border-l0 { border-left: 0; }
+ .ui-border-r0, %ui-border-r0 { border-right: 0; }
+ .ui-border-0,  %ui-border-0  { @extend %ui-border-t0; @extend %ui-border-b0; @extend %ui-border-l0; @extend %ui-border-r0; }
