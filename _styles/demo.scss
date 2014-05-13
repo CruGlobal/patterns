@@ -1,3 +1,15 @@
+/*------------------------------------*\
+ $DEMO
+\*------------------------------------*/
+/**
+ * This file is for use in the pattern library only. 
+ */
+ 
+ 
+@import "vars";
+@import "elements/functions";
+@import "elements/mixins";
+
 body{
 	background-color: #f8f8f8;
 }
@@ -186,8 +198,9 @@ code{
 	left: auto;
 	right: -2px;
 	width: auto;
-	
-	@include vendor(appearance, none);
+    
+    -webkit-appearance: none;
+	        appearance: none;
 	
 	option{
 		font-size: 85%;

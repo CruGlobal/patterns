@@ -1,32 +1,31 @@
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
+
 .global-footer {
+    //@extend %mt+ !optional;
 	@include rem-calc(margin-top, 100px);	
+    
 	.section-divider{
-		border-color: $color-gold;
+        border-color: $color-gold;
 	}
-	> nav{
-		color: white;
-		width: 100%;
-		text-align: center;
-		
-		@include rem-calc(padding-bottom, $base-line-height);	
+    
+	> nav{	        
+	    @extend %pb;
 		
 		ul{
-			text-align: center;
+            text-align: center;
 		}
 		
 		a{
-			color: $color-black;
-			padding-left: 6px;
-			padding-right: 6px;
+            @extend %ps--;
+            color: $base-text-color;
+            
 		}
 	}
 	
 	.copy{
+        @extend %pb;
 		text-align: center;
-	
-		@include rem-calc(padding-bottom, $base-line-height);	
 	}
 }

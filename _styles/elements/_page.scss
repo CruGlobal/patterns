@@ -1,50 +1,19 @@
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+
 .preload{
-  display: none !important;
+    display: none !important;
 }
-
-
-.container{    
-	@include vendor(transition, right, width 400ms ease);
-	@include vendor(transition-property, right, width 400ms ease);
-}
-
-.pusher{
-    left: 0;
-}
-
 
 .page-content{	
 	@include rem(padding-top, $base-spacing-unit * 4);
-}
-
-.single-column{
-	max-width: 800px;
-	width: auto;
-	margin-left: 20px;
-	margin-right: 20px;
-	
-	@include mq(680px) {
-		width: 640px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	@include mq(800px){
-		width: 700px;
-	}
 }
 
 .background-size-contain.layout-single-column{
 	@include mq(500px, max) {
 		margin-left: 0;
 		margin-right: 0;
-	}
-}
-
-.background-stretch{
-	@include mq(500px, max) {
-        @include rem-calc(margin-left,  -$base-spacing-unit);
-        @include rem-calc(margin-right, -$base-spacing-unit);
 	}
 }
 
@@ -59,7 +28,8 @@
 }
 
 	.callout{
-		margin-bottom:$base-line-height;
+		@extend %mb;
+        
 		@include mq(981px) {
 			margin-bottom: 0;
 		}		
@@ -70,73 +40,40 @@
 			text-align: left;
 		}
 	}
-
-.grid--rev > .grid__item{
-	float: right;
-}	
-
-.grid--rev > .one-third + .two-thirds{
-	margin-left: 0;
-	margin-right: 2%;
-}
-	
-.action-icons{
-	height: 100%;
-	width: 100%;
-    max-width: 150px;
-    display: inline-block;
-    vertical-align: middle;
-}	
-.mask--circle{
-	display: inline-block;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.affordance:after {
-	@extend .icon-right-circle:before;
-	
-    color: $color-gold;
-    font-family: "cruicons";
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-
-.locations{ 
     
-    .locations__select{
-        @extend %me;
+    
+    /**
+     * A different type of <hr> styling. 
+     */
+    /*hr.section-divider{
+    	display: block;
+    	width: 14%;
+    	margin: 50px auto 40px auto;
+    	border: 0;
+    	border-top: 1px solid #dddddd;
+    }*/
+
+    %hr{
+        @extend %centered;
         
-        @include mq(600px) {
-            display: none;
-        }
+        clear: both;
+    	display: block;
     }
+
+    /** 
+     * The primary hr, small width 
+     */
+    hr{
+        @extend %hr;
     
-    .locations__list{
-        @extend %display--none;
-        
-        @include mq(600px) {
-            display: block;
-        }
+        width: 14%;
     }
+
+        /** 
+         * Full width hr 
+         */
+        /* hr */.divider{
+            @extend %hr;
     
-        li{
-            @include mq(600px) {
-            width: 33.3333333%;
-            }
-            
-            & > a{
-                @extend %mb0;
-                @extend %basic-transition;
-                                
-                &:hover{
-                    @extend %decoration--none;
-                    background-color: #f6f6f6;
-                    
-                }
-            }
+            width: 100%;
         }
-        
-        
-}

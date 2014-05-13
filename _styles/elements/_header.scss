@@ -21,10 +21,11 @@ $link-height: 36px;
 	@include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
     
 }
+
 	.site-logo{
-		@extend %inline-block;
-		@extend %flush--bottom;
-	
+		@extend %mb0;
+        
+	    display: inline-block;
 		float: left;
 		width: 10%;
 		height: $header-height - 3px;
@@ -38,9 +39,7 @@ $link-height: 36px;
 		text-align: center;
 	
 		a{
-			@extend %inline-block;
-		
-			height: 68px;
+    	    display: inline-block;		
 			overflow: hidden;
 			vertical-align: middle;
 			
@@ -54,6 +53,6 @@ $link-height: 36px;
 		}
 	
 		h1{
-			@extend %flush--bottom;
+    		@extend %mb0;
 		}
 	}
