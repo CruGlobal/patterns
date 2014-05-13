@@ -57,24 +57,31 @@ $slider-height: 364px;
 .slider__item{
     @extend %m0;
     
-    width: 31.6%;
+    position: absolute;
     
-    @include vendor(transition-property, width, left, opacity);
-    @include vendor(transition-duration, .8s);
-    @include vendor(transform, translate3d(0px,0px,0px));
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    @include vendor(transform, translate3d(0,0,0));    
+    @include vendor(transition-property, left);
+    
+    @include mq(980px){
+        width: 31.6%;
+        @include vendor(transition-property, width, left, opacity);
+        @include vendor(transition-duration, .8s);
+    }
 }
 
 /**
  * At bat
  */
 .slider2{
-    width: 64.9%;
-    left: 0%;
+    left: 0;
     z-index: 1;
 
-    @include mq(980px, max) {
-        width: 100%;
-        left: 0;
+    @include mq(980px) {
+        width: 64.9%;
     }
 }
 
@@ -82,11 +89,10 @@ $slider-height: 364px;
  * On Deck
  */
 .slider3{
-    left: 66.666666%;
+    left: 100%;
 
-    @include mq(980px, max) {
-        left: 100%;
-        width: 100%;
+    @include mq(980px) {
+        left: 66.666666%;
     }
 }
 
@@ -94,47 +100,43 @@ $slider-height: 364px;
  * Last up
  */
 .slider1{    
-    left: -33.333333%;
-    
-    @include vendor(opacity, 0.3);
-    
-    @include mq(979px, max) {
-        left: -100%;
-        width: 100%;
+    left: -100%;
         
-        @include vendor(opacity, 1);
+    @include mq(980px) {
+        left: -33.333333%;        
+        @include vendor(opacity, 0.3);
     }
 }
 
     .slider__reverse  .slider1{
+        @include mq(980px) {
         
-        @extend %animate-duration--400;
-        @extend %animate-timing--ease;
-        @extend %animate-delay--400;
-    
-        @include vendor(transition, none);
-        @include vendor(animation-name, sliderReverseBegin, sliderReverseEnd);
-        @include vendor(animation-delay, 0, 400ms);
-        @include vendor(transition-duration, 400ms);
+            @include vendor(transition, none);
+        
+            @include animation-name(sliderReverseBegin, sliderReverseEnd);
+            @include animation-duration(.72s);
+            @include animation-delay(0, .72s); 
+        }
     }
 
 /**
  * In the hole
  */
 .slider4{
-    @extend %animate-duration--400;
-    @extend %animate-timing--ease;
-    @extend %animate-delay--400;
-    
-    
-    left: 100%;
-    
-    @include vendor(transition, none);
-    @include vendor(animation-name, sliderBegin, sliderEnd);
-    
-    @include vendor(animation-delay, 0, 400ms);
-    @include vendor(transition-duration, 400ms);
-    @include vendor(opacity, 0.3);
+    display: none;
+       
+    @include mq(980px){
+        left: 100%;
+        display: block;
+        
+        @include animation-name(sliderBegin, sliderEnd);
+        @include animation-duration( .5s);
+        @include animation-delay(0, .3s); 
+        
+        @include vendor(opacity, 0.3);
+        @include vendor(transition, none);
+        
+    }
 }
 
 
@@ -144,6 +146,17 @@ $slider-height: 364px;
         @include vendor(transition-duration, 800ms);
         @include vendor(animation, none);
     }
+    
+.slider5, 
+.slider6, 
+.slider7, 
+.slider8 {
+    right: 500%;
+}
+    
+.slider__sides{
+    @include vendor(opacity, 0.3);
+}
 
 .background-image{
     position: absolute;
