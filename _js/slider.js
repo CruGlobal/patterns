@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 
-	var interval = setInterval(slideForward, 5000); // Animation delay interval 
+	var interval = setInterval(slideForward, 50000000); // Animation delay interval 
 	var sliding = false; // Used to prevent stacking animation functions
 	var window_focus = true; // Used to check for window focus before animation runs
 	

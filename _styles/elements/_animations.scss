@@ -23,7 +23,7 @@
 
 @include keyframes(sliderEnd) {
     from {
-        left: 116%;
+        left: 140%;
         opacity: 0
     }
     
@@ -36,11 +36,11 @@
 
 @include keyframes(sliderReverseBegin) {
     from{
-        left: 100%
+        left: 66%
     }
     
     to{
-        left: 134.2%
+        left: 100%
     }
     
 }

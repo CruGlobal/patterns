@@ -113,9 +113,9 @@ $slider-height: 364px;
         
             @include vendor(transition, none);
         
-            @include animation-name(sliderReverseBegin, sliderReverseEnd);
-            @include animation-duration(.72s);
-            @include animation-delay(0, .72s); 
+            @include animation-name(sliderReverseEnd);
+            @include animation-duration(.7s);
+            @include animation-delay(0, .1s); 
         }
     }
 
@@ -129,22 +129,18 @@ $slider-height: 364px;
         left: 100%;
         display: block;
         
-        @include animation-name(sliderBegin, sliderEnd);
-        @include animation-duration( .5s);
-        @include animation-delay(0, .3s); 
+        @include animation-name(sliderEnd);
+        @include animation-duration( .7s);
+        @include animation-delay(0, .1s); 
         
         @include vendor(opacity, 0.3);
-        @include vendor(transition, none);
         
     }
 }
 
 
-    .slider__reverse  .slider4{
-        @extend %animate-timing--ease;
-        
-        @include vendor(transition-duration, 800ms);
-        @include vendor(animation, none);
+    .slider__reverse  .slider4{        
+        @include animation(none);
     }
     
 .slider5, 
