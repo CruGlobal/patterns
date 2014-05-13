@@ -29,23 +29,37 @@
 }
 
 .dropdown--column{
+  color: #fffff;
+  border-radius: 1px;
+  margin-bottom:  rem-calc($base-spacing-unit) / 2;
+
   a{
-    display: inline-block;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 0;
-    margin-bottom: $base-spacing-unit / 2;
-    margin-bottom: rem-calc($base-spacing-unit) / 2;
+    display: block;
     text-align: center;
     background: #333333;
     color: #ffffff;
     border-radius: 3px;
 
+    padding-left: rem-calc($base-spacing-unit) / 4;
+    padding-right: rem-calc($base-spacing-unit) / 4;
+
+    @include vendor(transition, all 0.1s ease-in-out);
+
     &:hover{
       text-decoration: none;
-      background: lighten(#333333, 3%);
+      background: $color-gold;
+      color: #333333;
     }
   }
+
+  & ul li a {
+    padding-left: rem-calc($base-spacing-unit) / 2;
+    padding-right: rem-calc($base-spacing-unit) / 2;
+    margin: 0;
+    text-align: left;
+    font-size: 85%;
+
+  }
+
 }
+

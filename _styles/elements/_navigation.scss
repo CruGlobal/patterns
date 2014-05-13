@@ -139,8 +139,9 @@
     &:hover {
       color: $color-gold;
       text-decoration: none;
-      background-color: #262728;
+      background-color: #444444;
     }
+
 
     @include mq(981px) {
       display: inline-block;
@@ -170,12 +171,12 @@
   padding-right: 30px;
   opacity: 0;
   /* Hover Off */
-  @include vendor(transition, opacity 0s 0.2s ease-out );
+  //@include vendor(transition, opacity 0s 0.2s ease-out );
   @include clearfix();
 
-  //@include vendor(transform, translate3d(0, -160%, 0));
-  //@include vendor(backface-visibility, hidden);
-  //@include vendor(perspective, 1000);
+  @include vendor(transform, translate3d(0, 0, -160%));
+  @include vendor(backface-visibility, hidden);
+  @include vendor(perspective, 1000);
 
   h2, h3, h4{
     color: #ffffff;
@@ -197,17 +198,14 @@
 }
 .nav li:hover > .dropdown {
   padding-top: 30px;
-  padding-bottom: 30px;
-  max-height: 270px;
-  height: 270px;
+  padding-bottom: 15px;
+  max-height: 640px;
+  height: inherit;
   overflow: visible;
   opacity: 1;
 
-  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
-  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
+
   /* Hover On */
   /*-webkit-transition: max-height 0.25s ease;*/
 
