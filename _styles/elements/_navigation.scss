@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .navigation{
-  @extend %position--fixed;
+  position: fixed;
 
   float: none;
   width: 89%;
@@ -34,27 +34,35 @@
     right: 0;
 
     border-color: transparent;
+    
   }
 
   @include mq(981px, max) {
     overflow: scroll;
     padding-top: 69px;
+    height: 100%;
   }
-
-  @include mq(981px) {
-    right: 0;
-    background-color: transparent;
-  }
-
+  
 }
 
 .site-nav {
-  float: right;
-  width: auto;
   margin-top: 43px;
-  padding-right: 20px;
   position: relative;
   z-index: 1;
+  
+    @include mq(981px) {
+        float: right;
+        width: auto;
+        padding-right: 20px;
+        
+    }
+    
+    & > li{
+        @include mq(981px, max) {
+          display: block;
+        }
+    }
+  
 }
 
 .site-nav > li > a, .right-nav > li > a,  .topbar-toggle, .topbar-search{
@@ -83,6 +91,10 @@
         -moz-border-radius-topright: 1px;
              border-top-left-radius: 1px;
             border-top-right-radius: 1px;
+  }
+  
+  @include mq(981px, max) {
+    display: block;
   }
 
 }
@@ -369,7 +381,8 @@
 
 .topbar-close{
   position: absolute;
-
+  z-index: 1;
+  
   color: #ffffff;
 
   @include rem(top, 22px);
