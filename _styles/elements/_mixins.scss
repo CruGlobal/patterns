@@ -76,6 +76,11 @@
           animation-fill-mode: #{$name};
 }
 
+@mixin opacity($opacity) {
+    filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+    opacity: $opacity;
+}
+
 @mixin btn($background, $border, $color: inherit) {
     background-color: $background;
     border-color: $border;

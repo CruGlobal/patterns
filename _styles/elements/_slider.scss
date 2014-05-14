@@ -104,7 +104,7 @@ $slider-height: 364px;
         
     @include mq(980px) {
         left: -33.333333%;        
-        @include vendor(opacity, 0.3);
+        @include opacity(0.3);
     }
 }
 
@@ -133,7 +133,7 @@ $slider-height: 364px;
         @include animation-duration( .7s);
         @include animation-delay(0, .1s); 
         
-        @include vendor(opacity, 0.3);
+        @include opacity(.3);
         
     }
 }
@@ -150,8 +150,8 @@ $slider-height: 364px;
     right: 500%;
 }
     
-.slider__sides{
-    @include vendor(opacity, 0.3);
+.slider__upcoming{
+    @include opacity(.3);
 }
 
 .background-image{
@@ -180,7 +180,7 @@ $slider-height: 364px;
     background: rgba(0,0,0,0.7);
 
 
-    @include vendor(opacity, 0);
+    @include opacity(0);
     @include vendor(transition-property, opacity, bottom, color);
     @include vendor(transition-duration, 250ms);
     @include vendor(transition-delay, 62ms, 62ms,0);

@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
+	var cru_campus_finder_l10n = {"ministry_search":"http://ml.uscm.org/ministries.json?active=true","ministry_details":"http://ml.uscm.org/ministries/%d.json","ministries":{"CA":"Catalytic","SC":"Staffed Campus","IE":"Epic","ID":"Destino","II":"Impact","IN":"Nations","WI":"WSN ICS","WS":"WSN Stint","BR":"Bridges","MM":"Military Ministry","AA":"Athletes In Action","GR":"Grad Resource","CL":"Christian Leadership Ministries","KC":"Korean CCC","GK":"Greek","VL":"Valor","OT":"Other","FS":"Campus Field Ministry"}};
+	
     $( function() {
+
+
         $( '.campus-finder input.campus-name' ).autocomplete( {
                 source: function( request, response ) {
                         $.ajax( {
@@ -238,6 +242,7 @@ $(document).ready(function() {
         $(".js-campus-finder").find("span").remove();
         $(".js-campus-finder").find("ul.ui-autocomplete").addClass("block-list");
     });
+
 	
 });
 
