@@ -35,20 +35,22 @@
 
   a{
     display: block;
-    text-align: center;
-    background: #333333;
-    color: #ffffff;
+    text-align: left;
+    //background: #333333;
+    color: $color-gold;
     border-radius: 3px;
 
     padding-left: rem-calc($base-spacing-unit) / 4;
     padding-right: rem-calc($base-spacing-unit) / 4;
 
-    @include vendor(transition, all 0.1s ease-in-out);
+    @include vendor(transition, all 0.1s ease-in);
 
     &:hover{
       text-decoration: none;
       background: $color-gold;
       color: #333333;
+
+      @include vendor(transition, all 0.1s ease-out);
     }
   }
 
@@ -58,6 +60,7 @@
     margin: 0;
     text-align: left;
     font-size: 85%;
+    color: #ffffff;
 
   }
 
