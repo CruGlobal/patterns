@@ -11,7 +11,7 @@ linters:
     enabled: false
 
   Comment:
-    enabled: false  #always false
+    enabled: false  #always leave false
 
   DebugStatement:
     enabled: true
@@ -45,7 +45,7 @@ linters:
 
   #ended here
   LeadingZero:
-    enabled: true
+    enabled: false
     style: exclude_zero # or 'include_zero'
 
   MergeableSelector:
@@ -53,7 +53,7 @@ linters:
     force_nesting: false
 
   NameFormat:
-    enabled: false
+    enabled: false #always leave false
     convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
   PlaceholderInExtend:

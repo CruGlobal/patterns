@@ -8,7 +8,9 @@ page-class: page--static
   003 - MAIN NAVIGATION
 
   -->
-
+<div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
+		
+  <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
 
 <!-- The primary header -->
 <header class="site-header"  role="banner">
@@ -17,16 +19,16 @@ page-class: page--static
       <h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
     </a>
   </hgroup>
-  <a href="#off-canvas"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
-    <i class="icon-hamburger"></i>
-  </a>
+	<a href="#nav"  id="nav-open-btn"  class="topbar-toggle  topbar-open  nav-link  nav-link--full  position--absolute">Menu
+		<i class="icon-hamburger"></i>
+	</a>
 </header>
 <!-- End primary header -->
 
 
 
 <!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
-<nav  id="nav" class="navigation ">
+<nav id="nav" class="navigation ">
 <ul class="nav  right-nav ">
 
   <li class="nav__item">
@@ -363,5 +365,10 @@ page-class: page--static
 
 
 </ul>
+</div>
+			<a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close</a>
+
+</nav>
+</div>
 </div>
     {% include footer.html %}
