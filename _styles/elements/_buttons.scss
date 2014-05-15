@@ -72,6 +72,6 @@
 }
 
 .button--icon{
-    @extend %ui-border-0;
+    border: 0;
 	background: transparent;
 }
