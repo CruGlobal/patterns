@@ -15,15 +15,15 @@
     }
 }
 .dropdown--column{
-  color: #fffff;
+  color: $color-white;
   border-radius: 1px;
   margin-bottom:  rem-calc($base-spacing-unit) / 2;
 
   a{
     display: block;
-    text-align: center;
+    text-align: left;
     background: #333333;
-    color: #ffffff;
+    color: $color-gold;
     border-radius: 3px;
 
     padding-left: rem-calc($base-spacing-unit) / 4;
@@ -44,6 +44,7 @@
     margin: 0;
     text-align: left;
     font-size: 85%;
+    color: $color-white;
 
   }
 
