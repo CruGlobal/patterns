@@ -70,6 +70,10 @@
     }
 }
 
+/**
+ *  Nav that includes Sign Up, Log In, and Search
+ **/
+
 .right-nav{
   @include mq(981px) {
     width: auto;
@@ -106,7 +110,6 @@
   }
 }
 
-
  .nav__link{
      max-height: 100%;
      height: $link-height;
@@ -121,13 +124,6 @@
      
      color: $color-white;
 
-
-     &:hover {
-         color: $color-gold;
-         text-decoration: none;
-         background-color: #444444;
-     }
-     
      &:hover{
        background-color: #444444;
        color: $color-gold;
@@ -159,9 +155,6 @@
  }
  
 
-
-
-
 .nav li .dropdown {
   position: fixed;
   left: 0;
@@ -187,8 +180,6 @@
 
   }
 }
-
-
 
 .no-csstransitions .nav li .dropdown {
   height: 0; }
