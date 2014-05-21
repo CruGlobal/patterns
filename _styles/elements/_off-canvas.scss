@@ -7,12 +7,67 @@
 		@include mq(540px, max) {
 			right: 70%;
 		}
-		
+
 		@include mq(541px) {
 			@include mq(980px, max) {
 				right: 18.75em;
 			}
+            .navigation {
+                overflow: scroll;
+                padding-top: 20px;
+                height: 100%;
+            }
+            .site-nav > .has-dropdown {
+                border-bottom: 1px solid #333333;
+            }
+            .right-nav > .nav__item {
+                float: left;
+                margin-bottom: 20px;
+            }
+            .nav__item > .user-action {
+                display: inline-block;
+                @include clearfix();
+            }
+            .nav__item > .primary-search {
+                float: none;
+            }
+            .primary-search > .search-field {
+                width: 320px;
+            }
+            .nav li .dropdown {
+                position: relative;
+                display: block;
+                margin: 0;
+                padding: 0;
+                //background-color: $color-dark-gray;
+                //color: #ffffff;
+                //width: 100% !important;
+                //overflow: hidden;
+                //padding-left: 30px;
+                //padding-right: 30px;
+                //opacity: 0;
+                /* Hover Off */
+
+                & .grid {
+                    margin: 0;
+                    padding: 0;
+                }
+                & .grid > .grid__item {
+                    margin: 0;
+                    padding: 0;
+                    background-color: deepskyblue;
+                }
+                & .grid__item > div {
+                    margin: 0;
+                    padding: 3px 12px;
+                    font-size: 80%;
+                }
+            }
+            .dropdown--column ul li a {
+                font-size: 100%;
+            }
 		}
+
 	}
     
     .navigation{

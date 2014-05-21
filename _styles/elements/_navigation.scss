@@ -42,7 +42,7 @@
     padding-top: 69px;
     height: 100%;
   }
-  
+
 }
 
 .site-nav {
@@ -64,11 +64,22 @@
   
 }
 
-.nav > .nav__item, .nav__item > .nav__link{
+.nav > .nav__item,
+.nav__item > .nav__link{
     @include mq(981px, max) {
         display: block;
     }
 }
+
+.nav_item {
+    @include mq(981px, max) {
+      border-bottom-color: $color-gold;
+    }
+}
+
+/**
+ *  Nav that includes Sign Up, Log In, and Search
+ **/
 
 .right-nav{
   @include mq(981px) {
@@ -106,7 +117,6 @@
   }
 }
 
-
  .nav__link{
      max-height: 100%;
      height: $link-height;
@@ -121,13 +131,6 @@
      
      color: $color-white;
 
-
-     &:hover {
-         color: $color-gold;
-         text-decoration: none;
-         background-color: #444444;
-     }
-     
      &:hover{
        background-color: #444444;
        color: $color-gold;
@@ -153,14 +156,11 @@
 }
 
  .has-dropdown{
-     &:hover{
+     &:hover, &:focus{
        @include border-top-radius(1px);
      }
  }
  
-
-
-
 
 .nav li .dropdown {
   position: fixed;
@@ -188,19 +188,20 @@
   }
 }
 
-
-
 .no-csstransitions .nav li .dropdown {
-  height: 0; }
+    height: 0;
+}
 
-.nav li:hover > .arrow-up {
-  display: block; }
+.nav li:hover > .arrow-up,
+.nav li:focus > .arrow-up{
+    display: block;
+}
 
 
 .dropdown .small-wrap{
   opacity: 0;
 }
-.nav li:hover > .dropdown {
+.nav li:hover > .dropdown, .nav li:focus > .dropdown {
   padding-top: 30px;
   padding-bottom: 15px;
   max-height: 640px;
@@ -217,7 +218,8 @@
 
 }
 
-.nav li.dropdown__item:hover{
+.nav li.dropdown__item:hover,
+.nav li.dropdown__item:focus{
   &:after{
     opacity: 1;
     @include vendor(transition, all 0.2s 0.2s ease );
@@ -369,7 +371,7 @@
   @include rem(top, 22px);
   @include rem(right, 16px);
 
-  &:hover{
+  &:hover, &:focus{
     text-decoration: none;
   }
 
