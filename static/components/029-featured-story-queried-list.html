@@ -114,12 +114,40 @@ page-class: page--static
            desk--one-third. There can be no more than three featured stories
           -->
           
-          <!-- One featured story with image-->  
+<!-- One featured story with image-->  
           <ul class="grid  block-list">
             <li class="grid__item  one-whole">
               <a href="#"   class="more-stories__link  p-  small  block-link">                
                 <!-- Optional image item --> 
-                <div style="float:left;" class="pt--">  
+                <div class="img--list  pt--">  
+                  <img src="http://baconmockup.com/100/100" alt="">
+                </div>
+                <div  style="overflow: hidden" class="pl--  affordance"> 
+                <!-- Related story title -->
+                  <h5  class="m0  weight--semibold">Single list items in one-whole</h5>               
+                  <!-- Related story description -->
+                  <span>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item  one-whole">
+              <a href="#"   class="more-stories__link  p-  small  block-link">                
+                <!-- Optional image item --> 
+                <div class="img--list  pt--">  
+                  <img src="http://baconmockup.com/100/100" alt="">
+                </div>
+                <div  style="overflow: hidden" class="pl--  affordance"> 
+                <!-- Related story title -->
+                  <h5  class="m0  weight--semibold">Fusce Lorem Commodo</h5>               
+                  <!-- Related story description -->
+                  <span>Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item  one-whole">
+              <a href="#"   class="more-stories__link  p-  small  block-link">                
+                <!-- Optional image item --> 
+                <div class="img--list  pt--">  
                   <img src="http://baconmockup.com/100/100" alt="">
                 </div>
                 <div  style="overflow: hidden" class="pl--  affordance"> 
@@ -132,17 +160,17 @@ page-class: page--static
             </li>
           </ul>  
     
-          <!-- Two featured stories with images-->
+<!-- Two featured stories with images-->
           <ul class="grid  block-list">
             <li class="grid__item  one-whole desk--one-half">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;"  class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/85/85" alt="">
                 </div> 
                 <!-- Related story title -->
                 <div  style="overflow: hidden" class="pl--  affordance">
-                  <h5  style="overflow: hidden"  class="m0  weight--semibold">Fusce Lorem Commodo</h5>
+                  <h5  style="overflow: hidden"  class="m0  weight--semibold">Two list items per row</h5>
                 
                   <!-- Related story description -->
                   <span>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
@@ -152,7 +180,7 @@ page-class: page--static
             <li class="grid__item  one-whole desk--one-half">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/150/150" alt="">
                 </div>
                 <div  style="overflow: hidden" class="pl--  affordance">
@@ -166,17 +194,17 @@ page-class: page--static
             </li>
           </ul> 
     
-          <!-- Three featured stories with images-->
-          <ul class="grid  block-list">
+<!-- Three featured stories with images-->
+          <ul class="grid  block-list js-masonry">
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/75/75" alt="">
                 </div>
                 <!-- Related story title -->
                 <div  style="overflow: hidden" class="pl--  affordance"> 
-                  <h5  class="m0  weight--semibold">N1 Fusce Lorem Commodo</h5>
+                  <h5  class="m0  weight--semibold">N1 Three list items in first row</h5>
                 
                   <!-- Related story description -->
                   <span>Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
@@ -186,8 +214,8 @@ page-class: page--static
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
-                  <img src="http://baconmockup.com/100/150" alt="">
+                <div class="img--list  pt--">
+                  <img src="http://baconmockup.com/75/150" alt="">
                 </div>
                 <!-- Related story title -->
                 <div  style="overflow: hidden" class="pl--  affordance"> 
@@ -200,7 +228,7 @@ page-class: page--static
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/75/75" alt="">
                 </div>
                 <!-- Related story title -->
@@ -211,15 +239,17 @@ page-class: page--static
                 </div>
               </a>
             </li>
+          <!--</ul>
+          <ul class="grid  block-list">-->
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/100/75" alt="">
                 </div>
                 <!-- Related story title -->
                 <div  style="overflow: hidden" class="pl--  affordance"> 
-                  <h5  class="m0  weight--semibold">N4 Fusce Lorem Commodo</h5>
+                  <h5  class="m0  weight--semibold">N4 Three list items in second row</h5>
                 
                   <!-- Related story description -->
                   <span>Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
@@ -229,7 +259,7 @@ page-class: page--static
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/75/75" alt="">
                 </div>
                 <!-- Related story title -->
@@ -243,7 +273,7 @@ page-class: page--static
             <li class="grid__item  one-whole desk--one-third">
               <a href="#"   class="more-stories__link  p-  small  block-link">
                 <!-- Optional image item -->   
-                <div style="float:left;" class="pt--">
+                <div class="img--list  pt--">
                   <img src="http://baconmockup.com/100/75" alt="">
                 </div>
                 <!-- Related story title -->
@@ -261,3 +291,6 @@ page-class: page--static
 
        
     </div>
+  {% include footer.html %}
+  <script src="{{ site.root }}offcanvas.min.js"></script>
+  <script src="{{ site.root }}dropdown.min.js"></script>
