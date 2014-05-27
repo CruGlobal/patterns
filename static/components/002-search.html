@@ -17,24 +17,24 @@ page-class: page--static
 	<li class="spoken-form  nav__item">
 	
 		<!--The search itself-->
-		<form class="primary-search  js-primary-search"  method="get"  name="search">
+		<form class="primary-search  js-primary-search"  method="get"  name="search" action="#" onsubmit="javascript:setPubWebSearch(this.site);">
 		
 			<!-- Search input field -->
-			<input class="search-field  text-input" placeholder="Search" type="search" />
+			<input name="ssUserText" class="search-field  text-input" placeholder="Search" type="search" />
 		
 			<!-- Search icon -->
 			<button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
 
 			<!-- Dropdown open button -->
 			<a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>	
-		
+			<input id="Query" type="hidden" name="Query" value="#">
 			<!-- The dropdown search items -->
 			<ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
 				<li>
-					<a href="">This Site</a>
+					<a id="cru" onclick="chooseSearch('cru','give','default_collection');">This Site</a>
 				</li>
 				<li>
-					<a href="">Give to Staff, Ministries</a>
+					<a id="give" onclick="chooseSearch('give','cru','default_collection');" class="selected">Give to Staff, Ministries</a>
 				</li>
 			</ul>
 		
