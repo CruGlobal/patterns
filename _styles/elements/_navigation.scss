@@ -49,19 +49,19 @@
   position: relative;
   z-index: 1;
   margin-top: 4px;
-  
+
     @include mq(981px) {
         float: right;
         width: auto;
-        
+
     }
-    
+
     & > li{
         @include mq(981px, max) {
           display: block;
         }
     }
-  
+
 }
 
 .nav > .nav__item,
@@ -126,15 +126,15 @@
      font-size: 15px;
      padding: 0 18px;
      letter-spacing: 0.9px;
-     
+
      vertical-align: middle;
-     
+
      color: $color-white;
 
      &:hover{
        background-color: #444444;
        color: $color-gold;
-       text-decoration: none; 
+       text-decoration: none;
      }
 
      @include mq(981px) {
@@ -160,7 +160,7 @@
        @include border-top-radius(1px);
      }
  }
- 
+
 
 .nav li .dropdown {
   position: fixed;
@@ -365,13 +365,13 @@
 .topbar-close{
   position: absolute;
   z-index: 1;
-  
+
   color: #ffffff;
 
   @include rem(top, 22px);
   @include rem(right, 16px);
 
-  &:hover, &:focus{
+  &:hover, &:focus {
     text-decoration: none;
   }
 
