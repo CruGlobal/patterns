@@ -2008,6 +2008,13 @@ img[height] {
   padding: 4px;
   border: 1px solid #cccccc; }
 
+/**
+ * Images in list.
+ */
+.img--list {
+  float: left;
+  border: 3px; }
+
 /*------------------------------------*\
     $LISTS
 \*------------------------------------*/
@@ -4706,6 +4713,10 @@ td {
   top: -3px; }
 .social-shares .twitter-share-button, .social-shares .twitter-tweet-button, .social-shares .twitter-count-horizontal {
   width: 85px !important; }
+.social-shares .share-alt {
+  position: relative;
+  top: -5px;
+  margin-right: 15px; }
 
 /*------------------------------------*\
     $SEARCH
