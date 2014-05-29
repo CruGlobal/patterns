@@ -201,7 +201,8 @@
 .dropdown .small-wrap{
   opacity: 0;
 }
-.nav li:hover > .dropdown, .nav li:focus > .dropdown {
+.nav li:hover > .dropdown,
+.nav li:focus > .dropdown {
   padding-top: 30px;
   padding-bottom: 15px;
   max-height: 640px;
@@ -215,6 +216,23 @@
   /*-webkit-transition: max-height 0.25s ease;*/
 
   @include vendor(transition, all 0.3s 0.2s ease );
+
+}
+
+.nav .off-canvas-desk > .dropdown {  // This is a dup of the above style for UX issue on desktop where hover needs to be overridden //
+    padding-top: 30px;
+    padding-bottom: 15px;
+    max-height: 640px;
+    height: inherit;
+    overflow: visible;
+    opacity: 1;
+
+    @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
+
+    /* Hover On */
+    /*-webkit-transition: max-height 0.25s ease;*/
+
+    @include vendor(transition, all 0.3s 0.2s ease );
 
 }
 
