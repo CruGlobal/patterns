@@ -162,7 +162,8 @@
  }
 
 
-.nav li .dropdown {
+.nav li .dropdown,
+.nav li .off-canvas-desk{
   position: fixed;
   left: 0;
   background-color: $color-dark-gray;
@@ -178,14 +179,10 @@
   //@include vendor(transition, opacity 0s 0.2s ease-out );
   @include clearfix();
 
-  @include vendor(transform, translate3d(0, 0, -160%));
-  @include vendor(backface-visibility, hidden);
-  @include vendor(perspective, 1000);
+  //@include vendor(transform, translate3d(0, 0, -160%));
+  //@include vendor(backface-visibility, hidden);
+  //@include vendor(perspective, 1000);
 
-  h2, h3, h4{
-    color: #ffffff;
-
-  }
 }
 
 .no-csstransitions .nav li .dropdown {
@@ -201,7 +198,9 @@
 .dropdown .small-wrap{
   opacity: 0;
 }
-.nav li:hover > .dropdown, .nav li:focus > .dropdown {
+.nav li:hover > .dropdown,
+.nav li:focus > .dropdown,
+.nav li > .off-canvas-desk {
   padding-top: 30px;
   padding-bottom: 15px;
   max-height: 640px;
@@ -209,20 +208,21 @@
   overflow: visible;
   opacity: 1;
 
-  @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
+  //@include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
 
   /* Hover On */
   /*-webkit-transition: max-height 0.25s ease;*/
 
-  @include vendor(transition, all 0.3s 0.2s ease );
+  //@include vendor(transition, all 0.3s 0.2s ease );
 
 }
+
 
 .nav li.dropdown__item:hover,
 .nav li.dropdown__item:focus{
   &:after{
     opacity: 1;
-    @include vendor(transition, all 0.2s 0.2s ease );
+    //@include vendor(transition, all 0.2s 0.2s ease );
   }
 }
 
