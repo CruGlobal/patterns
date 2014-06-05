@@ -12,7 +12,7 @@ $search-height: 29px;
 .primary-search{
     position: relative;
     
-	top: 2px;
+	//top: 2px;
 }
 
 	.search-field{
@@ -24,6 +24,7 @@ $search-height: 29px;
 		border-width: 1px;
         padding-left: 8px;
         padding-right: 60px;
+        display: block;
         		
 		&::-webkit-input-placeholder { font-size: 14px;}
 		      &::-moz-placeholder { font-size: 14px;}
