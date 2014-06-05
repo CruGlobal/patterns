@@ -34,28 +34,16 @@
             .primary-search > .search-field {
                 width: 320px;
             }
-            .nav li .dropdown {
+            .nav .nav__item > .dropdown {
                 position: relative;
                 display: block;
                 margin: 0;
                 padding: 0;
-                //background-color: $color-dark-gray;
-                //color: #ffffff;
-                //width: 100% !important;
-                //overflow: hidden;
-                //padding-left: 30px;
-                //padding-right: 30px;
-                //opacity: 0;
-                /* Hover Off */
 
-                & .grid {
-                    margin: 0;
-                    padding: 0;
-                }
+                & .grid,
                 & .grid > .grid__item {
                     margin: 0;
                     padding: 0;
-                    background-color: deepskyblue;
                 }
                 & .grid__item > div {
                     margin: 0;
@@ -63,7 +51,33 @@
                     font-size: 80%;
                 }
             }
-            .dropdown--column ul li a {
+            .nav .nav__item:hover > .dropdown {
+                display: none;
+            }
+
+            .nav .nav__item > .off-canvas-desk {
+                height: auto;
+                color: green;
+                background-color: lightseagreen;
+                display: block;
+                margin: 0;
+                padding: 0;
+
+                & .grid,
+                & .grid > .grid__item {
+                  margin: 0;
+                  padding: 0;
+                }
+                & .grid__item > div {
+                  margin: 0;
+                  padding: 3px 12px;
+                  font-size: 80%;
+                }
+            }
+
+
+
+          .dropdown--column ul li a {
                 font-size: 100%;
             }
 
