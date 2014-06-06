@@ -150,7 +150,7 @@
 
 })(window, window.document);
 
-<<<<<<< HEAD
+
 /*
  * Detect Browser Width
  */
@@ -177,32 +177,4 @@ $(window).ready(function() {
     }
   });
 });
-=======
 
-/*
-* Detect Browser Width
-*/
-
-// On Page Load
-$(window).ready(function() {
-    var wi = $(window).width();  
-    if (wi <= 980){
-        
-            $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
-            }
-        else {
-            $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
-            }
-    // On Window Resize
-    $(window).resize(function() {
-        var wi = $(window).width();
-
-        if (wi <= 980){
-            $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
-            }
-        else {
-            $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
-            }
-    });            
-});
->>>>>>> 01a1759a16d03490a3b06b3c22d6d33f13ab3f90
