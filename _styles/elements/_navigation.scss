@@ -3,45 +3,44 @@
 \*------------------------------------*/
 
 .navigation{
-  position: fixed;
+    position: fixed;
 
-  float: none;
-  width: 89%;
-  display: inline-block;
-  vertical-align: middle;
+    float: none;
+    width: 89%;
+    display: inline-block;
+    vertical-align: middle;
 
-  top: 0;
-  right: -100%;
-  z-index: 1;
+    top: 0;
+    right: -100%;
+    z-index: 1;
 
-  width: 70%;
+    width: 70%;
 
-  background-color: #444444;
-  border-top: 3px solid;
-  border-color: #f9b625;
+    background-color: #444444;
+    border-top: 3px solid;
+    border-color: #f9b625;
 
-  @include mq(540px) {
-    width: 18.75em;
+    @include mq(540px) {
+        width: 18.75em;
+    }
 
-  }
+    @include mq(981px) {
+        width: 90%;
+        height: $header-height - 3px;
 
-  @include mq(981px) {
-    width: 90%;
-    height: $header-height - 3px;
+        background-color: transparent;
+        z-index: 505;
+        right: 0;
 
-    background-color: transparent;
-    z-index: 505;
-    right: 0;
+        border-color: transparent;
 
-    border-color: transparent;
-    
-  }
+    }
 
-  @include mq(981px, max) {
-    overflow: scroll;
-    padding-top: 69px;
-    height: 100%;
-  }
+    @include mq(981px, max) {
+        overflow: scroll;
+        padding-top: 69px;
+        height: 100%;
+    }
 
 }
 
@@ -50,18 +49,17 @@
   z-index: 1;
   margin-top: 4px;
 
-    @include mq(981px) {
-        float: right;
-        width: auto;
+      @include mq(981px) {
+          float: right;
+          width: auto;
 
-    }
+      }
 
-    & > li{
-        @include mq(981px, max) {
-          display: block;
-        }
-    }
-
+      & > li{
+          @include mq(981px, max) {
+              display: block;
+          }
+      }
 }
 
 .nav > .nav__item,
@@ -73,7 +71,7 @@
 
 .nav_item {
     @include mq(981px, max) {
-      border-bottom-color: $color-gold;
+        border-bottom-color: $color-gold;
     }
 }
 
@@ -82,72 +80,72 @@
  **/
 
 .right-nav{
-  @include mq(981px) {
-    width: auto;
-    float: right;
-    vertical-align: middle;
+    @include mq(981px) {
+        width: auto;
+        float: right;
+        vertical-align: middle;
 
-    position: relative;
-    z-index: 506;
+        position: relative;
+        z-index: 506;
 
-    margin-top: 5px;
+        margin-top: 5px;
 
-    text-align: right;
-    line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
-  }
+        text-align: right;
+        line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
+    }
 
-  @include mq(980px, max) {
-    width: 100%;
-  }
-
-  .search__options{
-    display: none;
-  }
-
-  & > .nav__item{
     @include mq(980px, max) {
-      display: block;
+        width: 100%;
     }
 
-    & > a{
-      @include mq(980px, max) {
-        display: block;
-      }
+    .search__options{
+        display: none;
     }
-  }
+
+    & > .nav__item{
+        @include mq(980px, max) {
+            display: block;
+        }
+
+        & > a{
+            @include mq(980px, max) {
+                display: block;
+            }
+        }
+    }
 }
 
- .nav__link{
-     max-height: 100%;
-     height: $link-height;
-     line-height: $link-height;
+.nav__link{
+   max-height: 100%;
+   height: $link-height;
+   line-height: $link-height;
 
-     font-weight: 400;
-     font-size: 15px;
-     padding: 0 18px;
-     letter-spacing: 0.9px;
+   font-weight: 400;
+   font-size: 15px;
+   padding: 0 18px;
+   letter-spacing: 0.9px;
 
-     vertical-align: middle;
+   vertical-align: middle;
 
-     color: $color-white;
+   color: $color-white;
 
-     &:hover{
-       background-color: #444444;
-       color: $color-gold;
-       text-decoration: none;
-     }
+   &:hover{
+     background-color: #444444;
+     color: $color-gold;
+     text-decoration: none;
+   }
 
-     @include mq(981px) {
-         color: $color-dark-gray;
-         /*
-         @include vendor(transition, all 0.25s ease-in-out);
-         */
-         &:hover{
-             //background-color: #f6f6f6;
-         }
-     }
+   @include mq(981px) {
+       color: $color-dark-gray;
+       /*
+       @include vendor(transition, all 0.25s ease-in-out);
+       */
+       &:hover{
+           //background-color: #f6f6f6;
+       }
+   }
 
- }
+}
 
 .primary-link i {
     @include mq(981px) {
@@ -163,33 +161,34 @@
 
 
 .nav .nav__item > .dropdown{
-  position: fixed;
-  left: 0;
-  background-color: $color-dark-gray;
-  color: #ffffff;
-  width: 100% !important;
-  overflow: hidden;
-  max-height: 0;
-  height: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  opacity: 0;
-  /* Hover Off */
-  //@include vendor(transition, opacity 0s 0.2s ease-out );
-  @include clearfix();
+    position: fixed;
+    left: 0;
+    background-color: $color-dark-gray;
+    color: #ffffff;
+    width: 100% !important;
+    overflow: hidden;
+    max-height: 0;
+    height: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    /* Hover Off */
+    //@include vendor(transition, opacity 0s 0.2s ease-out );
+    @include clearfix();
 
-  //@include vendor(transform, translate3d(0, 0, -160%));
-  //@include vendor(backface-visibility, hidden);
-  //@include vendor(perspective, 1000);
+    //@include vendor(transform, translate3d(0, 0, -160%));
+    //@include vendor(backface-visibility, hidden);
+    //@include vendor(perspective, 1000);
 
 }
 
-.nav .nav__item > .off-canvas-desk {
+.nav .nav__item > .off-canvas-desk-is-collasped,
+.nav .nav__item > .off-canvas-desk-is-open {
     display: none;
 }
 
 .no-csstransitions .nav li .dropdown {
-    height: 0;
+ //   height: 0;
 }
 
 .nav li:hover > .arrow-up,
@@ -197,30 +196,23 @@
     display: block;
 }
 
-
-.dropdown .small-wrap{
-  opacity: 0;
-}
 .nav .nav__item:hover > .dropdown,
 .nav .nav__item:focus > .dropdown{
-  padding-top: 30px;
-  padding-bottom: 15px;
-  max-height: 640px;
-  height: inherit;
-  overflow: visible;
-  opacity: 1;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    max-height: 640px;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
 
+    @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
 
-  //@include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
+    /* Hover On */
+    /*-webkit-transition: max-height 0.25s ease;*/
 
-  /* Hover On */
-  /*-webkit-transition: max-height 0.25s ease;*/
-
-  //@include vendor(transition, all 0.3s 0.2s ease );
+    //@include vendor(transition, all 0.3s 0.2s ease );
 
 }
-
-
 
 .nav li.dropdown__item:hover,
 .nav li.dropdown__item:focus{
