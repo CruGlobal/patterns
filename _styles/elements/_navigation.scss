@@ -155,15 +155,14 @@
     }
 }
 
- .has-dropdown{
-     &:hover, &:focus{
-       @include border-top-radius(1px);
-     }
- }
+ //.has-dropdown{
+   //  &:hover, &:focus{
+     //  @include border-top-radius(1px);
+    // }
+ //}
 
 
-.nav .nav__item > .dropdown
-  {
+.nav .nav__item > .dropdown{
   position: fixed;
   left: 0;
   background-color: $color-dark-gray;
@@ -183,6 +182,10 @@
   //@include vendor(backface-visibility, hidden);
   //@include vendor(perspective, 1000);
 
+}
+
+.nav .nav__item > .off-canvas-desk {
+    display: none;
 }
 
 .no-csstransitions .nav li .dropdown {
