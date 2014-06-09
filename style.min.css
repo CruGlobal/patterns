@@ -4954,19 +4954,15 @@ td {
   .nav .nav__item > .dropdown:after, .post-meta .nav__item > .dropdown:after {
     clear: both; }
 
-.nav .nav__item > .off-canvas-desk, .post-meta .nav__item > .off-canvas-desk {
+.nav .nav__item > .off-canvas-desk-is-collasped, .post-meta .nav__item > .off-canvas-desk-is-collasped,
+.nav .nav__item > .off-canvas-desk-is-open,
+.post-meta .nav__item > .off-canvas-desk-is-open {
   display: none; }
-
-.no-csstransitions .nav li .dropdown, .no-csstransitions .post-meta li .dropdown {
-  height: 0; }
 
 .nav li:hover > .arrow-up, .post-meta li:hover > .arrow-up,
 .nav li:focus > .arrow-up,
 .post-meta li:focus > .arrow-up {
   display: block; }
-
-.dropdown .small-wrap {
-  opacity: 0; }
 
 .nav .nav__item:hover > .dropdown, .post-meta .nav__item:hover > .dropdown,
 .nav .nav__item:focus > .dropdown,
@@ -4974,9 +4970,14 @@ td {
   padding-top: 30px;
   padding-bottom: 15px;
   max-height: 640px;
-  height: inherit;
+  height: auto;
   overflow: visible;
   opacity: 1;
+  -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  -o-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+  box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
   /* Hover On */
   /*-webkit-transition: max-height 0.25s ease;*/ }
 
@@ -5193,8 +5194,6 @@ td {
     margin-bottom: 20px; }
   .nav-is-open .site-nav > .nav__item {
     border-bottom: 1px solid #333333; }
-  .nav-is-open .nav__item > .user-action {
-    display: inline-block; }
   .nav-is-open .nav__item > .primary-search {
     float: none; }
   .nav-is-open .primary-search > .search-field {
@@ -5212,19 +5211,36 @@ td {
       padding: 3px 12px;
       font-size: 80%; }
   .nav-is-open .nav .nav__item:hover > .dropdown, .nav-is-open .post-meta .nav__item:hover > .dropdown {
-    display: none; }
-  .nav-is-open .nav .nav__item > .off-canvas-desk, .nav-is-open .post-meta .nav__item > .off-canvas-desk {
-    height: auto;
+    position: fixed;
+    height: 0;
+    opacity: 0; }
+  .nav-is-open .nav .nav__item > .off-canvas-desk-is-open, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open,
+  .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed,
+  .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed {
     display: block;
     margin: 0;
     padding: 0; }
-    .nav-is-open .nav .nav__item > .off-canvas-desk .grid, .nav-is-open .post-meta .nav__item > .off-canvas-desk .grid, .nav-is-open .nav .nav__item > .off-canvas-desk .grid > .grid__item, .nav-is-open .post-meta .nav__item > .off-canvas-desk .grid > .grid__item {
+    .nav-is-open .nav .nav__item > .off-canvas-desk-is-open .grid, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open .grid, .nav-is-open .nav .nav__item > .off-canvas-desk-is-open .grid > .grid__item, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open .grid > .grid__item,
+    .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed .grid,
+    .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed .grid,
+    .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed .grid > .grid__item,
+    .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed .grid > .grid__item {
       margin: 0;
       padding: 0; }
-    .nav-is-open .nav .nav__item > .off-canvas-desk .grid__item > div, .nav-is-open .post-meta .nav__item > .off-canvas-desk .grid__item > div {
+    .nav-is-open .nav .nav__item > .off-canvas-desk-is-open .grid__item > div, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open .grid__item > div,
+    .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed .grid__item > div,
+    .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed .grid__item > div {
       margin: 0;
       padding: 3px 12px;
       font-size: 80%; }
+  .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed {
+    position: fixed;
+    height: 0px;
+    opacity: 0; }
+  .nav-is-open .nav .nav__item > .off-canvas-desk-is-open, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open {
+    position: relative;
+    height: auto;
+    opacity: 1; }
   .nav-is-open .dropdown--column ul li a {
     font-size: 100%; }
   .nav-is-open .navigation {
