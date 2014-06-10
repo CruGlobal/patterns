@@ -81,12 +81,14 @@
 
         .nav .nav__item > .off-canvas-desk-is-collapsed{
             position: fixed;
+            display: none;
 
             height: 0px;
             opacity: 0;
         }
         .nav .nav__item > .off-canvas-desk-is-open {
             position: relative;
+            display: block;
 
             height: auto;
             opacity: 1;
