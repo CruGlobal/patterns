@@ -5235,10 +5235,12 @@ td {
       font-size: 80%; }
   .nav-is-open .nav .nav__item > .off-canvas-desk-is-collapsed, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-collapsed {
     position: fixed;
+    display: none;
     height: 0px;
     opacity: 0; }
   .nav-is-open .nav .nav__item > .off-canvas-desk-is-open, .nav-is-open .post-meta .nav__item > .off-canvas-desk-is-open {
     position: relative;
+    display: block;
     height: auto;
     opacity: 1; }
   .nav-is-open .dropdown--column ul li a {
