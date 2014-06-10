@@ -160,21 +160,38 @@ $(window).ready(function() {
   var wi = $(window).width();
   if (wi <= 980){
 
-    $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
+    $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk-is-collapsed" );
   }
   else {
-    $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
+    $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open off-canvas-desk-is-collapsed" ).addClass( "dropdown" );
   }
   // On Window Resize
   $(window).resize(function() {
     var wi = $(window).width();
 
     if (wi <= 980){
-      $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
+      $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk-is-collapsed" );
     }
     else {
-      $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
+      $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open off-canvas-desk-is-collapsed" ).addClass( "dropdown" );
     }
   });
 });
 
+/*
+ * Click To Open Off Canvas Main Nav
+ */
+$('li.nav__item').click(function(event){
+    event.preventDefault();
+    $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open");
+    $(this).children("div").addClass( "off-canvas-desk-is-open" );
+});
+
+/*
+ * Click Close Open Main Nav
+ */
+$('li.nav__item > div .off-canvas-desk-is-open').click(function(event){
+    event.preventDefault();
+    alert('You Got It!');
+    $(this).removeClass( "off-canvas-desk-is-open" );
+});
