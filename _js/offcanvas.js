@@ -187,11 +187,3 @@ $('li.nav__item').click(function(event){
     $(this).children("div").addClass( "off-canvas-desk-is-open" );
 });
 
-/*
- * Click Close Open Main Nav
- */
-$('li.nav__item > div .off-canvas-desk-is-open').click(function(event){
-    event.preventDefault();
-    alert('You Got It!');
-    $(this).removeClass( "off-canvas-desk-is-open" );
-});
