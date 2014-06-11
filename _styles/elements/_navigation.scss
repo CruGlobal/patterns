@@ -147,7 +147,11 @@
 
 }
 
-
+.is-active{
+  background-color: #444444;
+  color: $color-gold;
+  text-decoration: none;
+}
 .primary-link i {
     @include mq(981px) {
       display: none;

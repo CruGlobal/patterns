@@ -4930,6 +4930,11 @@ td {
       @include vendor(transition, all 0.25s ease-in-out);
       */ } }
 
+.is-active {
+  background-color: #444444;
+  color: #f9b625;
+  text-decoration: none; }
+
 @media screen and (min-width: 61.3125em) {
   .primary-link i {
     display: none; } }
