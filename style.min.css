@@ -3780,8 +3780,7 @@ input[disabled]:focus,
 /**
  * Remove margins.
  */
-.m0,
-.button, .media__body,
+.m0, .media__body,
 .media__body > :last-child, .slider__item, .post-subtitle {
   margin: 0; }
 
@@ -6172,5 +6171,15 @@ hr, .divider, .layout--full, .center-block, .centered,
 
 .decoration--none, .content-slider a {
   text-decoration: none; }
+
+.debug {
+  background-color: #007cb1; }
+
+.box-shadown--thin {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
 /* endif */
