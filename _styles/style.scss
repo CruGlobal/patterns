@@ -26,9 +26,6 @@
  * IMPORTS.............Begin importing the sections below
  *
  * SETUP...............Import project variables and brackets.css
- * 
- * FUNCTIONS...........Functions that allow for some fun math
- * MIXINS..............Super-simple Sass stuff
  *
  * FONT................Set up the primary font
  * COLORS..............Set base colors and variables for easy use
@@ -91,13 +88,6 @@
 /**
  * Begin importing custom stuff here.
  */
-  
-/**
- * Core variables, mixins, utilities, etc
- */
-@import "elements/functions";
-@import "elements/mixins";
-
 
 /**
  * Primary site colors and fonts
@@ -131,7 +121,7 @@
 @import "elements/navigation";
 @import "elements/dropdowns";
 @import "elements/off-canvas";
-
+@import "elements/ui-autocomplete";
 
 /**
  * Page components
@@ -144,6 +134,7 @@
 @import "elements/post-images";
 
 
+
 /**
  * Community specific components
  */
@@ -154,7 +145,7 @@
  * Overrides and additional tools
  */
 @import "elements/animations";
-@import "elements/utilities";
+@import "brackets.css/generic/helpers";
 @import "elements/debug";
 
 
