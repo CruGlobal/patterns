@@ -5255,6 +5255,9 @@ td {
   max-width: 80%;
   margin-left: 16px;
   margin-left: 0.84211rem; }
+@media screen and (max-width: 33.75em) {
+  .nav-is-open .primary-search > .search-field {
+    width: 240px; } }
 .nav-is-open .primary-search > input {
   display: block; }
 .nav-is-open .primary-search--dropdown {

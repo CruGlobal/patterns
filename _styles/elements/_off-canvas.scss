@@ -14,6 +14,7 @@
 			}
 		}
 	}
+
     @include mq(979px, max){
         .navigation {
             overflow: scroll;
@@ -105,6 +106,12 @@
     .search{
         max-width: 80%;
         @include rem(margin-left, 16px);
+    }
+
+    @include mq(540px, max) {
+        .primary-search > .search-field {
+          width: 240px;
+        }
     }
 
     .primary-search > input{
