@@ -5364,7 +5364,10 @@ td {
     transform: translateX(10px); } }
 
 .slider__mask, .slider {
-  height: 364px; }
+  height: 396px; }
+  @media screen and (max-width: 33.8125em) {
+    .slider__mask, .slider {
+      height: 288px; } }
 
 .slider {
   max-width: 1100px; }
