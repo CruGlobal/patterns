@@ -48,13 +48,15 @@ figcaption{
 	}
 }
 
-.affordance:after {
-	@extend .icon-right-circle:before;
-	
-    color: $color-gold;
-    font-family: "cruicons";
-    padding-left: 10px;
-    font-size: 18px;
+.affordance {
+    &:after{
+        @extend .icon-right-circle:before;
+
+        color: $color-gold;
+        font-family: "cruicons";
+        padding-left: 10px;
+        font-size: 18px;
+    }
 }
 
 blockquote{

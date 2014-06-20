@@ -3282,7 +3282,6 @@ input + .additional {
    * Inactive, disabled buttons.
    */ }
   .button--small {
-    line-height: 1.75;
     /* 3 */
     /* 3 */
     /* 4 */
@@ -3293,9 +3292,9 @@ input + .additional {
     /* 6 */
     /* 6 */
     /* 7 */
-    padding: 8px 22px;
+    padding: 2px 6px;
     /* 9 */
-    padding: parseInt(8px)/19rem parseInt(22px)/19rem;
+    padding: parseInt(2px)/19rem parseInt(6px)/19rem;
     /* 9 */ }
   .button--large {
     line-height: 2;
@@ -3965,7 +3964,7 @@ input[disabled]:focus,
   content: '\e808'; }
 
 /* '' */
-.icon-right-circle:before, .affordance:after {
+.icon-right-circle:before, .affordance:after, .tile > a > h4:after, .tile > a > p:after {
   content: '\e800'; }
 
 /* '' */
@@ -4297,7 +4296,7 @@ figcaption {
   margin-right: parseInt(12px)/19rem;
   /* 9 */ }
 
-.affordance:after {
+.affordance:after, .tile > a > h4:after, .tile > a > p:after {
   color: #f9b625;
   font-family: "cruicons";
   padding-left: 10px;
@@ -4378,7 +4377,7 @@ q {
  * Change the hover and other states with:;
  * @mixin btn-effects($background, $border, $color:inherit).
  * 
- * Quick not that it will not work with transparency due to 
+ * Quick note: it will not work with transparency due to
  * the hover states. 
  */
 .button-group {
@@ -5291,6 +5290,74 @@ td {
     .ui-autocomplete li a:hover {
       color: #f9b625; }
 
+.tile {
+  background-color: white;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 29px;
+  text-align: left; }
+  .tile > h4 {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    padding-left: 15px; }
+  .tile > a > h4 {
+    color: #444444;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px; }
+  .tile > ul {
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 90%;
+    list-style: none; }
+    .tile > ul li {
+      text-indent: -.5em; }
+    .tile > ul li:before {
+      content: "\002022";
+      color: #f9b625;
+      display: inline-block;
+      width: .5em;
+      margin-left: .1em; }
+  .tile > ol {
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    font-size: 90%; }
+  .tile > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 90%; }
+  .tile > a > p {
+    color: #444444;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 90%; }
+  .tile > .button {
+    margin-bottom: 15px;
+    margin-left: 15px; }
+  .tile > div > img {
+    width: 100%;
+    display: block; }
+
 /**
  * Page components
  */
@@ -6183,10 +6250,7 @@ hr, .divider, .layout--full, .center-block, .centered,
 .decoration--none, .content-slider a {
   text-decoration: none; }
 
-.debug {
-  background-color: #007cb1; }
-
-.box-shadown--thin {
+.box-shadow--thin {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
