@@ -1,4 +1,4 @@
-.tile {
+.tile__item {
   background-color: $color-white;
   @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
 
