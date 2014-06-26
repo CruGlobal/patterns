@@ -73,13 +73,13 @@ $color-twitter:  #55acee;
     @extend %display--none;
 }
  
-/* To fill the container and nothing else */
+/* To fill the container and nothing else */ 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    width: 100% !important;
+    //width: 100% !important;
 }
 
 .fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span{
-	width: 85px !important;
+	//width: 85px !important;
 }
 
 .fb-like.fb_iframe_widget > span, #page--home #twitter-widget-0, #___plusone_0{
@@ -87,6 +87,9 @@ $color-twitter:  #55acee;
 	height: 25px !important;
 }
 
+#twitter-widget-0 {
+    //margin-top: 20px;
+}
 
 /**
  * Article Share Buttons
@@ -98,7 +101,9 @@ $color-twitter:  #55acee;
 
     .fb-like {
         @extend %position--relative;
-        top: -3px;
+        top:-3px;
+        margin: 0px  !important;
+        padding: 0px  !important;
     }
 
     .twitter-share-button, .twitter-tweet-button, .twitter-count-horizontal {
@@ -118,3 +123,15 @@ $color-twitter:  #55acee;
     
 }
 
+/**
+*Twitter Follow Button
+*
+*/
+
+.follow-button {
+margin-top: 10px;
+    a > span{
+        margin-top: 100px;
+    }
+}
+    
