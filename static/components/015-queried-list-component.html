@@ -4,186 +4,738 @@ page-class: page--static
 {% include head.html %}
 
 <!--  
-
 	015 - QUERIED LIST COMPONENT
-
 	--> 
 	
-	<!-- The ol/uls are the wrapper classes;
-			 The <hr> elements are purely for the demo
-	 -->
+<!-- The ol/uls are the wrapper classes;
+	The <hr> elements are purely for the demo
+	-->
 
-	 <!-- List without Bullets -->
-<div>
 
-        <ul  class="grid  bare-list">
-            <li>
-                <div class="grid__item  one-third  color-white  p  mb--">  
-                    <div class="float-left">
-                        <img class="mb-" src="http://baconmockup.com/100/100" alt="">
-                    </div>
-                    <div class="float-right">
-                        <h4>This is an H4 Kid.</h4>
-                        <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p> 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="grid__item  one-third  color-white  p  mb--">  
-                    <div class="float-left">
-                        <img class="mb-" src="http://baconmockup.com/100/100" alt="">
-                    </div>
-                    <div class="float-right">
-                        <h4>This is number 2</h4>
-                        <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p> 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="grid__item  one-third  color-white  p  mb--">  
-                    <div class="float-left">
-                        <img class="mb-" src="http://baconmockup.com/100/100" alt="">
-                    </div>
-                    <div class="float-right">
-                        <h4>This is number 3.</h4>
-                        <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p> 
-                    </div>
-                </div>
-            </li>
-        </ul>
- 
-</div>
- <div class="grid">
-    <div class="grid__item  one-third">
-        <ul  class="bare-list">
-                   <li>
-                <div class="color-white  p  mb--">
-                    <div class="image--thumbnail">
-                        <img class="mb-" src="http://baconmockup.com/75/75" alt="">
-                    </div>
-                    <div>
-                        <h4>This is an H4 Kid.</h4>
-                        <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p> 
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="color-white  p  mb--">
-                    <div class="image--thumbnail">
-                        <img class="mb-" src="http://baconmockup.com/75/75" alt="">
-                    </div>
-                    <div>
-                        <h4>This is an H4 Kid.</h4>
-                        <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p> 
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 
-		<div class="grid">
+<div class="grid  layout-single-column  pt">
+
+
+<!-- Using Component 024-Horizontal Tile in list-->
+<h3>Using Component 024-Horizontal Tile in list</h3>
+<ul class="bare-list">
+    <li>
+        <div class="grid__item  one-whole  media">
+          <a href="#">
+              <div class="p  mb">  
+                <div class="media__img">
+                  <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+                </div>
+                <div class="media__body">
+                  <h4>This is an H4 Kid.</h4>
+                  <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+                </div>
+              </div>
+            </a>
+        </div>
+    </li>
+    <li>
+        <div class="grid__item  one-whole  media">
+          <div class="color-white  p  mb">  
+            <div class="media__img">
+              <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+            </div>
+            <div class="media__body">
+              <h4>This is an H4 Kid.</h4>
+              <p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
+              <a class="button" href="#">Finish the story</a>
+            </div>
+          </div>
+        </div>
+    </li>
+</ul>
+
+<!-- List without bullets -->
+
+
+<!-- Bare-list with only Titles links-->
+<h3>Bare-list with only Titles links</h3>
+<ul class="bare-list">
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">-->
+        
+            <!-- Optional link item -->
+            <a href="#">You Can Be Sure You Are a Christian</a>
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>How You Can Be Sure You Are a Christian. Millions Are Not Sure. Millions of followers of Christ still remain unsure about their salvation.</span>
+            </div>-->
+         </li>
+    
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Experience God's Love and Forgiveness</a>
+             
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>-->
+         </li>
+    
+    
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Be Filled With the Holy Spirit</a>
             
-				<ul  class="bare-list">
-                    
-						<li>
-							<div class="grid__item  one-whole  one-sixth  color-white">
-								
-										<!-- Optional image item -->
-										
-												<img alt="Some alt text" src="http://placebacn.com/100/100" />
-										
-										<!-- Optional link item -->
-										
-												<a href="#">Purus Cursus Elit Ornare</a>
-						
-												<!-- Optional paragraph text -->
-												<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-												Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in,
-												egestas eget quam.</p>
-										
-							</div>	
-						</li>
-						<li>
-						    <div class="grid__item  one-whole one-third  color-white">  
-										
-												<!-- Optional image item -->
-												<img alt="Some alt text" src="http://placebacn.com/100/100" />
-										
-										
-												<!-- Optional link item -->
-												<a href="#">Purus Cursus Elit Ornare</a>
-												<!-- Optional paragraph text -->
-												<p>“It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.” “It forced me to reevaluate my life. Once I understood [this principle], I didn’t want to waste any more time.”</p>
-										
-							</div>
-						
-						</li>	
-				</ul>
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Walk in the Spirit</a>
             
-		</div>
-	 
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Be a Fruitful Witness</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Introduce Others to Christ</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Help Fulfill the Great Commission</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <Span>How You Can Help Fulfill the Great Commission. Catch Excitement for the Gospel. Every person has an important, God-given role to play in helping to fulfill the Great Commission.</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Love By Faith</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Pray With Confidence</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Experience the Adventure of Giving</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+     </ul>
+     <hr class="section-divider"/>
+
+
+
+<!-- Bare-list with Image & Titles-->
+<h3>Bare-list with Image & Titles</h3>
+<ul class="bare-list">
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">You Can Be Sure You Are a Christian</a>
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>How You Can Be Sure You Are a Christian. Millions Are Not Sure. Millions of followers of Christ still remain unsure about their salvation.</span>
+            </div>-->
+         </li>
+    
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Experience God's Love and Forgiveness</a>
+             
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>-->
+         </li>
+    
+    
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Be Filled With the Holy Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Walk in the Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Be a Fruitful Witness</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Introduce Others to Christ</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Help Fulfill the Great Commission</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <Span>How You Can Help Fulfill the Great Commission. Catch Excitement for the Gospel. Every person has an important, God-given role to play in helping to fulfill the Great Commission.</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Love By Faith</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Pray With Confidence</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li>
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="pb--">
+        
+            <!-- Optional link item -->
+            <a href="#">Experience the Adventure of Giving</a>
+            
+            <!-- Optional paragraph text 
+            <div class="pl">
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+     </ul>
+     <hr class="section-divider"/>
+
+<!-- Bare-list with all available options-->
+<h3>Bare-list with all available options</h3>
+<ul class="bare-list">
+         
+    
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Experience God's Love and Forgiveness</a>
+             
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>
+         </li>
+    
+    
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Be Filled With the Holy Spirit</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>
+         </li>
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">You Can Be Sure You Are a Christian</a>
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>How You Can Be Sure You Are a Christian. Millions Are Not Sure. Millions of followers of Christ still remain unsure about their salvation.</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Walk in the Spirit</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060331~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Be a Fruitful Witness</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Introduce Others to Christ</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Help Fulfill the Great Commission</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <Span>How You Can Help Fulfill the Great Commission. Catch Excitement for the Gospel. Every person has an important, God-given role to play in helping to fulfill the Great Commission.</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Love By Faith</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Pray With Confidence</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+
+         <li class="cf">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt=""  class="img--list  pe--  pr--">
+        
+            <!-- Optional link item -->
+            <a href="#">Experience the Adventure of Giving</a>
+            
+            <!-- Optional paragraph text -->
+            <div class="overflow--hide  small-text">
+                <span>Ligula Amet Consectetur</span>
+            </div>
+         </li>
+     </ul>
+     <hr class="section-divider"/>
+
+<!-- List with bullets -->
+
+     <ul>
+         <li class="pb">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+        
+            <!-- Optional link item -->
+            <a href="#">You Can Be Sure You Are a Christian</a>
+            <!-- Optional paragraph text -->
+            <div>
+                <span>How You Can Be Sure You Are a Christian. Millions Are Not Sure. Millions of followers of Christ still remain unsure about their salvation.</span>
+            </div>
+         </li>
+    
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Experience God's Love and Forgiveness</a>
+             
+            <!-- Optional paragraph text -->
+            <div>
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>
+         </li>
+    
+    
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Be Filled With the Holy Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Walk in the Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Be a Fruitful Witness</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Introduce Others to Christ</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Help Fulfill the Great Commission</a>
+            
+            <!-- Optional paragraph text--> 
+            <div>
+                <Span>How You Can Help Fulfill the Great Commission. Catch Excitement for the Gospel. Every person has an important, God-given role to play in helping to fulfill the Great Commission.</span>
+            </div>
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+        
+            <!-- Optional link item -->
+            <a href="#">Love By Faith</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Pray With Confidence</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Experience the Adventure of Giving</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+     </ul>
+
+
 	 <hr class="section-divider"/>
 
-	 <!-- List with bullets -->
-	 <ul>
-		 <li>
-			 <!-- Optional image item -->
-			 <img alt="Some alt text" src="" />
-		
-			 <!-- Optional link item -->
-			 <a href="#">Purus Cursus Elit Ornare</a>
-		
-			 <!-- Optional paragraph text -->
-			 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-					Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in,
-					egestas eget quam.</p>
-		 </li>
-	
-	
-		 <li>
-			 <!-- Optional paragraph text -->
-			 <p>Ligula Amet Consectetur</p>
-		 </li>
-	
-	
-		 <li>
-			 <!-- Optional link item -->
-			 <a href="#">Egestas Risus Ultricies Pellentesque</a>
-		 </li>
-	 </ul>
 
-	 <hr class="section-divider"/>
+
+
 
 	 <!-- Unordered list with numbers -->
 	 <ul class="numbered-list">
-		 <li>
-			 <!-- Optional image item -->
-			 <img alt="Some alt text" src="" />
-		
-		
-			 <!-- Optional link item -->
-			 <a href="#">Purus Cursus Elit Ornare</a>
-		
-			 <!-- Optional paragraph text -->
-			 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-					Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in,
-					egestas eget quam.</p>
-		 </li>
-	
-	
-		 <li>
-			 <!-- Optional paragraph text -->
-			 <p>Ligula Amet Consectetur</p>
-		 </li>
-	
-	
-		 <li>
-			 <!-- Optional link item -->
-			 <a href="#">Egestas Risus Ultricies Pellentesque</a>
-		 </li>
-	
-	 </ul>
+	     
+         <li class="pb">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+        
+            <!-- Optional link item -->
+            <a href="#">You Can Be Sure You Are a Christian</a>
+            <!-- Optional paragraph text -->
+            <div>
+                <span>How You Can Be Sure You Are a Christian. Millions Are Not Sure. Millions of followers of Christ still remain unsure about their salvation.</span>
+            </div>
+         </li>
+    
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Experience God's Love and Forgiveness</a>
+             
+            <!-- Optional paragraph text -->
+            <div>
+                <span>How You Can Experience God's Love and Forgiveness. The Forgiveness God Offers. Jesus covers even that sin you think is beyond forgiveness.</span>
+            </div>
+         </li>
+    
+    
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Be Filled With the Holy Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Walk in the Spirit</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Be a Fruitful Witness</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Introduce Others to Christ</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Help Fulfill the Great Commission</a>
+            
+            <!-- Optional paragraph text--> 
+            <div>
+                <Span>How You Can Help Fulfill the Great Commission. Catch Excitement for the Gospel. Every person has an important, God-given role to play in helping to fulfill the Great Commission.</span>
+            </div>
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item -->
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
+        
+            <!-- Optional link item -->
+            <a href="#">Love By Faith</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Pray With Confidence</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+
+         <li class="pb">
+            <!-- Optional image item 
+            <img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">-->
+        
+            <!-- Optional link item -->
+            <a href="#">Experience the Adventure of Giving</a>
+            
+            <!-- Optional paragraph text 
+            <div>
+                <span>Ligula Amet Consectetur</span>
+            </div>-->
+         </li>
+     </ul>
+
 
 	 <hr class="section-divider"/>
 
@@ -191,7 +743,7 @@ page-class: page--static
 	 <ol>
 		<li>
 			<!-- Optional image item -->
-			<img alt="Some alt text" src="" />
+			<img src="http://static.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_060333~1~staticrendition/cru75x41.jpg" alt="">
 	 
 			<!-- Optional link item -->
 			<a href="#">Purus Cursus Elit Ornare</a>
@@ -214,4 +766,12 @@ page-class: page--static
 			<a href="#">Egestas Risus Ultricies Pellentesque</a>
 		</li>
 	 </ol>
-	
+</div>
+
+    <hr class="section-divider"/>
+    
+
+
+    {% include footer.html %}
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+    <script src="{{ site.root }}dropdown.min.js"></script>	
