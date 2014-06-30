@@ -181,9 +181,13 @@ $(window).ready(function() {
 /*
  * Click To Open Off Canvas Main Nav
  */
-$('li.nav__item').click(function(event){
+$('li.nav__item .nav__link').click(function(event){
     event.preventDefault();
+    var isOpen = ($(this).siblings("div").hasClass( "off-canvas-desk-is-open" ));
+    
     $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open");
-    $(this).children("div").addClass( "off-canvas-desk-is-open" );
+    if(!isOpen){
+        $(this).siblings("div").addClass( "off-canvas-desk-is-open" );
+    };
 });
 
