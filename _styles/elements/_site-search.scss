@@ -156,4 +156,8 @@ $search-height: 29px;
         .results-title{
             color: $color-bright-blue;
         }
+
+#search-dropdown a.selected {
+    text-decoration: underline;
+}
    
