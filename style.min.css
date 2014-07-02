@@ -4721,9 +4721,25 @@ td {
 
 /* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
 /* To fill the container and nothing else */
-.fb-like.fb_iframe_widget > span, #page--home #twitter-widget-0, #___plusone_0 {
+.fb-like.fb_iframe_widget > span,
+#page--home #twitter-widget-0,
+#___plusone_0 {
   vertical-align: middle !important;
   height: 25px !important; }
+
+.fb-like {
+  position: relative;
+  margin-right: 2px; }
+
+.twitter-follow-button {
+  position: relative;
+  top: 3px;
+  height: 25px;
+  margin-right: 2px; }
+
+#___plusone_0 {
+  position: relative;
+  top: -1px; }
 
 /**
  * Article Share Buttons
@@ -4731,24 +4747,19 @@ td {
  */
 /*    */
 .social-shares .fb-like {
-  top: -3px;
-  margin: 0px  !important;
-  padding: 0px  !important; }
+  top: -3px; }
 .social-shares .twitter-share-button, .social-shares .twitter-tweet-button, .social-shares .twitter-count-horizontal {
   width: 85px !important; }
 .social-shares .share-alt {
   position: relative;
-  top: -5px;
-  margin-right: 15px; }
+  top: -5px; }
 
 /**
 *Twitter Follow Button
 *
 */
-.follow-button {
-  margin-top: 10px; }
-  .follow-button a > span {
-    margin-top: 100px; }
+.follow-button a > span {
+  margin-top: 100px; }
 
 /*------------------------------------*\
     $SEARCH
@@ -4833,6 +4844,9 @@ td {
 
 .results-title {
   color: #3eb1c8; }
+
+#search-dropdown a.selected {
+  text-decoration: underline; }
 
 /*------------------------------------*\
     $NAVIGATION
