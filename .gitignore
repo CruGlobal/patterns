@@ -10,3 +10,4 @@ css/
 .codekit-cache
 _styles/.sass-cache
 style.min.css
+/Gemfile.lock
