@@ -41,20 +41,22 @@ figcaption{
  */
 .accent{
 	&:after{
-		content: "-";
+		content: "\00A0";    //  "\00A0" is a temporary replacement for "-" until legacy articles are phased out.
         
 		@include rem-calc(margin-left, 12px);
 		@include rem-calc(margin-right, 12px);
 	}
 }
 
-.affordance:after {
-	@extend .icon-right-circle:before;
-	
-    color: $color-gold;
-    font-family: "cruicons";
-    padding-left: 10px;
-    font-size: 18px;
+.affordance {
+    &:after{
+        @extend .icon-right-circle:before;
+
+        color: $color-gold;
+        font-family: "cruicons";
+        padding-left: 10px;
+        font-size: 18px;
+    }
 }
 
 blockquote{

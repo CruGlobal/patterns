@@ -84,7 +84,7 @@ $search-height: 29px;
         color: $color-white;
         
         right: 0;
-        z-index: 1;
+        z-index: 2;
         
         width: 100%;
 
@@ -156,4 +156,8 @@ $search-height: 29px;
         .results-title{
             color: $color-bright-blue;
         }
+
+#search-dropdown a.selected {
+    text-decoration: underline;
+}
    

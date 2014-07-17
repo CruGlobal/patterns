@@ -150,7 +150,7 @@
 
 })(window, window.document);
 
-<<<<<<< HEAD
+
 /*
  * Detect Browser Width
  */
@@ -160,49 +160,34 @@ $(window).ready(function() {
   var wi = $(window).width();
   if (wi <= 980){
 
-    $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
+    $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk-is-collapsed" );
   }
   else {
-    $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
+    $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open off-canvas-desk-is-collapsed" ).addClass( "dropdown" );
   }
   // On Window Resize
   $(window).resize(function() {
     var wi = $(window).width();
 
     if (wi <= 980){
-      $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
+      $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk-is-collapsed" );
     }
     else {
-      $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
+      $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open off-canvas-desk-is-collapsed" ).addClass( "dropdown" );
     }
   });
 });
-=======
 
 /*
-* Detect Browser Width
-*/
-
-// On Page Load
-$(window).ready(function() {
-    var wi = $(window).width();  
-    if (wi <= 980){
-        
-            $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
-            }
-        else {
-            $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
-            }
-    // On Window Resize
-    $(window).resize(function() {
-        var wi = $(window).width();
-
-        if (wi <= 980){
-            $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk" );
-            }
-        else {
-            $( "li.nav__item > div" ).removeClass( "off-canvas-desk" ).addClass( "dropdown" );
-            }
-    });            
+ * Click To Open Off Canvas Main Nav
+ */
+$('li.nav__item .nav__link').click(function(event){
+    event.preventDefault();
+    var isOpen = ($(this).siblings("div").hasClass( "off-canvas-desk-is-open" ));
+    
+    $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open");
+    if(!isOpen){
+        $(this).siblings("div").addClass( "off-canvas-desk-is-open" );
+    };
 });
->>>>>>> 01a1759a16d03490a3b06b3c22d6d33f13ab3f90
+

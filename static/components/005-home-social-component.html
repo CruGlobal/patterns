@@ -8,12 +8,15 @@ page-class: page--static
   005 - HOME SOCIAL COMPONENT
 
   -->
+  
 
-    <div class="center--block  color-white">
+
+    <div class="color-white">
       <div class="layout--cap">
-        <ul class="nav  push-half--sides">
+        <ul class="nav  layout--full  display--inline">
           <li>
-            <div class="push-third--right  fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+            <div id="fb-root"></div>
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
           </li>
           <li>
             <a href="https://twitter.com/crutweets" class="twitter-follow-button  push-fourth--right" data-show-count="false" data-lang="en">Follow @crutweets</a>
@@ -21,7 +24,7 @@ page-class: page--static
           </li>
           <li>
             <!-- Place this tag where you want the +1 button to render. -->
-            <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+            <div class="g-plusone" ata-size="medium" data-annotation="none"></div>
           </li>
 
           <!-- Place this tag after the last +1 button tag. -->
@@ -32,6 +35,17 @@ page-class: page--static
               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
             })();
           </script>
+
         </ul>
       </div>
     </div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
