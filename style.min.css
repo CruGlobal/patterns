@@ -3282,7 +3282,6 @@ input + .additional {
    * Inactive, disabled buttons.
    */ }
   .button--small {
-    line-height: 1.75;
     /* 3 */
     /* 3 */
     /* 4 */
@@ -3293,9 +3292,9 @@ input + .additional {
     /* 6 */
     /* 6 */
     /* 7 */
-    padding: 8px 22px;
+    padding: 2px 6px;
     /* 9 */
-    padding: parseInt(8px)/19rem parseInt(22px)/19rem;
+    padding: parseInt(2px)/19rem parseInt(6px)/19rem;
     /* 9 */ }
   .button--large {
     line-height: 2;
@@ -3965,7 +3964,7 @@ input[disabled]:focus,
   content: '\e808'; }
 
 /* '' */
-.icon-right-circle:before, .affordance:after {
+.icon-right-circle:before, .affordance:after, .tile__item > a > h4:after, .tile__item > a > p:after {
   content: '\e800'; }
 
 /* '' */
@@ -4275,7 +4274,7 @@ figcaption {
  * 
  */
 .accent:after, a + .phone:after {
-  content: "-";
+  content: "\00A0";
   /* 3 */
   /* 3 */
   /* 4 */
@@ -4297,7 +4296,7 @@ figcaption {
   margin-right: parseInt(12px)/19rem;
   /* 9 */ }
 
-.affordance:after {
+.affordance:after, .tile__item > a > h4:after, .tile__item > a > p:after {
   color: #f9b625;
   font-family: "cruicons";
   padding-left: 10px;
@@ -4378,7 +4377,7 @@ q {
  * Change the hover and other states with:;
  * @mixin btn-effects($background, $border, $color:inherit).
  * 
- * Quick not that it will not work with transparency due to 
+ * Quick note: it will not work with transparency due to
  * the hover states. 
  */
 .button-group {
@@ -4722,15 +4721,25 @@ td {
 
 /* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
 /* To fill the container and nothing else */
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-  width: 100% !important; }
-
-.fb-like.fb_iframe_widget, .fb-like.fb_iframe_widget > span {
-  width: 85px !important; }
-
-.fb-like.fb_iframe_widget > span, #page--home #twitter-widget-0, #___plusone_0 {
+.fb-like.fb_iframe_widget > span,
+#page--home #twitter-widget-0,
+#___plusone_0 {
   vertical-align: middle !important;
   height: 25px !important; }
+
+.fb-like {
+  position: relative;
+  margin-right: 2px; }
+
+.twitter-follow-button {
+  position: relative;
+  top: 3px;
+  height: 25px;
+  margin-right: 2px; }
+
+#___plusone_0 {
+  position: relative;
+  top: -1px; }
 
 /**
  * Article Share Buttons
@@ -4743,8 +4752,14 @@ td {
   width: 85px !important; }
 .social-shares .share-alt {
   position: relative;
-  top: -5px;
-  margin-right: 15px; }
+  top: -5px; }
+
+/**
+*Twitter Follow Button
+*
+*/
+.follow-button a > span {
+  margin-top: 100px; }
 
 /*------------------------------------*\
     $SEARCH
@@ -4830,6 +4845,9 @@ td {
 .results-title {
   color: #3eb1c8; }
 
+#search-dropdown a.selected {
+  text-decoration: underline; }
+
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
@@ -4839,6 +4857,7 @@ td {
   width: 89%;
   display: inline-block;
   vertical-align: middle;
+  max-width: 1220px;
   top: 0;
   right: -100%;
   z-index: 1;
@@ -5291,6 +5310,74 @@ td {
     .ui-autocomplete li a:hover {
       color: #f9b625; }
 
+.tile__item {
+  background-color: white;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 29px;
+  text-align: left; }
+  .tile__item > h4 {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    padding-left: 15px; }
+  .tile__item > a > h4 {
+    color: #444444;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px; }
+  .tile__item > ul {
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 90%;
+    list-style: none; }
+    .tile__item > ul li {
+      text-indent: -.5em; }
+    .tile__item > ul li:before {
+      content: "\002022";
+      color: #f9b625;
+      display: inline-block;
+      width: .5em;
+      margin-left: .1em; }
+  .tile__item > ol {
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    font-size: 90%; }
+  .tile__item > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 90%; }
+  .tile__item > a > p {
+    color: #444444;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 90%; }
+  .tile__item > .button {
+    margin-bottom: 15px;
+    margin-left: 15px; }
+  .tile__item > div > img {
+    width: 100%;
+    display: block; }
+
 /**
  * Page components
  */
@@ -5364,7 +5451,10 @@ td {
     transform: translateX(10px); } }
 
 .slider__mask, .slider {
-  height: 364px; }
+  height: 396px; }
+  @media screen and (max-width: 33.8125em) {
+    .slider__mask, .slider {
+      height: 288px; } }
 
 .slider {
   max-width: 1100px; }
@@ -6180,10 +6270,7 @@ hr, .divider, .layout--full, .center-block, .centered,
 .decoration--none, .content-slider a {
   text-decoration: none; }
 
-.debug {
-  background-color: #007cb1; }
-
-.box-shadown--thin {
+.box-shadow--thin {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);

@@ -1,4 +1,4 @@
-$slider-height: 364px;
+$slider-height: 396px;
 
 /**
  * Slider Helper classes
@@ -46,6 +46,10 @@ $slider-height: 364px;
 
 .slider__mask, %slider-mask{
     height: $slider-height;
+
+    @include mq(541, max) {
+        height: 288px;
+    }
 }
 
 .slider {
@@ -53,6 +57,8 @@ $slider-height: 364px;
     
     max-width: 1100px;
 }
+
+
 
 .slider__item{
     @extend %m0;
