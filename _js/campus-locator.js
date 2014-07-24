@@ -173,15 +173,14 @@ $(document).ready(function() {
         } );		
     }
 
-
 	// State Selection Box
-	$('.state-select').change(function() {
+	$('.locator__state-select').change(function() {
 		// assign the value to a variable, so you can test to see if it is working
-    state = $('.state-select :selected').val();
+    state = $('.locator__state-select :selected').val();
     if (state !== ""){
 		jsonLink = 'http://ml.uscm.org/ministries.json?state=' + state + '&active=true&callback=?';
 		getStateResults();
-		$(".state-select").prop('selectedIndex',0);
+		$(".locator__state-select").prop('selectedIndex',0);
 		return false;
 		} else {
 			// User selected "Select A State" so clear fields
@@ -190,6 +189,7 @@ $(document).ready(function() {
         }
     });
 	
+
 
     // State Select Results
    function getStateResults() {
