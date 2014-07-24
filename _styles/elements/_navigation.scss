@@ -424,3 +424,9 @@
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
+
+
+/*-- added for you are here functionality, adds underline to main nav item --*/
+.primary-link-active {
+  text-decoration: underline;
+}
