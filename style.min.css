@@ -5198,7 +5198,7 @@ td {
 
 /*-- added for you are here functionality, adds underline to main nav item --*/
 .primary-link-active {
-  text-decoration: underline; }
+  text-decoration: underline !important; }
 
 /*
 .navigation{
