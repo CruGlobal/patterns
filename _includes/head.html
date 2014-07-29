@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
 <head>	
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -21,9 +18,21 @@
 
   <title>Cru</title>
 
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]>
+    <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="{{ site.root }}style.ie.min.css">
+    <![endif]-->
+
   <!-- Load Stylesheets and fonts -->
   {% include fonts.html %}
-  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
+  <link rel="stylesheet" href="{{ site.root }}style.min.css">
 
   <!-- Pattern Library Use only. Not for production -->
   <link rel="stylesheet" href="{{ site.root }}demo.min.css">	
