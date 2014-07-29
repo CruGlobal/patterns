@@ -27,7 +27,7 @@
     padding-left: rem-calc($base-spacing-unit) / 4;
     padding-right: rem-calc($base-spacing-unit) / 4;
 
-    //@include vendor(transition, all 0.1s ease-in-out);
+    @include vendor(transition, all 0.1s ease-in-out);
 
     &:hover{
       text-decoration: none;
