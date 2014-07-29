@@ -3779,26 +3779,26 @@ input[disabled]:focus,
 /**
  * Large Margins.
  */
-.m + {
+.m_x {
   margin: 58px; }
 
-.mt + {
+.mt_x {
   margin-top: 58px; }
 
-.mr + {
+.mr_x {
   margin-right: 58px; }
 
-.mb +, .callout + {
+.mb_x {
   margin-bottom: 58px; }
 
-.ml + {
+.ml_x {
   margin-left: 58px; }
 
-.me +, .locations .locations__select + {
+.me_x {
   margin-top: 58px;
   margin-bottom: 58px; }
 
-.ms + {
+.ms_x {
   margin-right: 58px;
   margin-left: 58px; }
 
@@ -3910,26 +3910,26 @@ input[disabled]:focus,
 /**
  * Large paddings.
  */
-.p + {
+.p_x {
   padding: 58px; }
 
-.pt + {
+.pt_x {
   padding-top: 58px; }
 
-.pr + {
+.pr_x {
   padding-right: 58px; }
 
-.pb +, .global-footer > nav +, .global-footer .copy +, .primary-search__results h3 + {
+.pb_x {
   padding-bottom: 58px; }
 
-.pl + {
+.pl_x {
   padding-left: 58px; }
 
-.pe + {
+.pe_x {
   padding-top: 58px;
   padding-bottom: 58px; }
 
-.ps + {
+.ps_x {
   padding-right: 58px;
   padding-left: 58px; }
 
@@ -5984,7 +5984,29 @@ td {
 /*figure*/
 .image--outset__left {
   width: 100%;
-  clear: both; }
+  clear: both;
+    /*
+	& > .image__caption{
+		@include mq(1300px) {
+			position: absolute;
+			left: -172px;
+			width: 150px;
+			top: 0;
+			text-align: right;
+			margin-top: 0;
+			line-height: 1.6;
+	
+			&:before{
+				width: 25%;
+				margin-left: 75%;
+				border-top: 1px solid #ddd;
+				display: block;
+				content: "";
+				margin-bottom: 10px;
+			}
+		}
+	}
+    */ }
   @media screen and (min-width: 61.3125em) {
     .image--outset__left {
       float: left;
@@ -5993,22 +6015,6 @@ td {
       margin-bottom: 10px;
       width: 75%;
       margin-left: -100px; } }
-  @media screen and (min-width: 81.25em) {
-    .image--outset__left > .image__caption {
-      position: absolute;
-      left: -172px;
-      width: 150px;
-      top: 0;
-      text-align: right;
-      margin-top: 0;
-      line-height: 1.6; }
-      .image--outset__left > .image__caption:before {
-        width: 25%;
-        margin-left: 75%;
-        border-top: 1px solid #ddd;
-        display: block;
-        content: "";
-        margin-bottom: 10px; } }
 
 /*figure*/
 @media screen and (min-width: 61.3125em) {
