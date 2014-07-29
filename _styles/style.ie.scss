@@ -4,21 +4,32 @@
     STYLE.IE.CSS
 \*------------------------------------*/
 /**
- *  
+ * Here lies the custom styles for Cru.org for IE8 (& below). These styles have been
+ * built on top of our front-end framework: brackets.css.
+ *
+ * Be sure read the warning before continuing to edit or add any new
+ * styles. In addition, be sure to change the variables to turn off
+ * demo mode and debug mode before pushing to production. 
  * 
  */
-
-
-/*------------------------------------*\
- $CONTENTS
-\*------------------------------------*/
-/**
- * CONTENTS............You’re reading it!
- * IMPORTS.............Begin importing the sections below
-*/
 
 /*------------------------------------*\
  $IMPORTS
 \*------------------------------------*/
 
-@import "elements/layouts-ie8-below";
+/*
+ * Main Style
+ */
+@import "style.scss";
+
+/*
+ * Main Navigation
+ * * References - elements/navigation, elements/dropdowns, elements/off-canvas
+ */
+
+@import "ie/ie-navigation";
+
+
+
+
+
