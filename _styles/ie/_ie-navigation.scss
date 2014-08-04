@@ -26,20 +26,17 @@
 }
 
 .site-nav {
+  display: block;
   position: relative;
   z-index: 1;
   margin-top: 4px;
 
-  @include mq(981px) {
-    float: right;
-    width: auto;
-
-  }
+  width: auto;
+  max-width: 980px;
+  border: 1px solid black;
 
   & > li{
-    @include mq(981px, max) {
-      display: block;
-    }
+      display: inline-block;
   }
 }
 

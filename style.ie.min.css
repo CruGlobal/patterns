@@ -6403,6 +6403,26 @@ hr, .divider, .layout--full, .center-block, .centered,
 
 /* endif */
 /*
+ * Brackets Helpers
+ * * References - brackets/generic/*
+ */
+/*------------------------------------*\
+    IE $HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ */
+/**
+ * Sizes
+ */
+.full-width, .page-subnav, .center-block {
+  width: 981px; }
+
+/*
  * Main Navigation
  * * References - elements/navigation, elements/dropdowns, elements/off-canvas
  */
@@ -6425,6 +6445,17 @@ hr, .divider, .layout--full, .center-block, .centered,
 .right-nav {
   float: right !important;
   text-align: right; }
+
+.site-nav {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 4px;
+  width: auto;
+  max-width: 980px;
+  border: 1px solid black; }
+  .site-nav > li {
+    display: inline-block; }
 
 #nav-open-btn,
 #nav-close-btn {
