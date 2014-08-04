@@ -1,16 +1,68 @@
-.nav-is-open {
-  display: none;
+//.nav-is-open {
+//  display: none;
+//}
+
+//.nav .nav__item > .dropdown {
+//
+//  & .grid{
+//    margin-left: -29px !important;
+//  }
+//  & .grid__item {
+//    padding-left: 29px !important;
+//    float: left !important;
+//    width: 33% \0;
+//  }
+//
+//}
+
+
+/*------------------------------------*\
+    $OFF-CANVAS
+\*------------------------------------*/
+
+.nav-is-open{
+  .inner-wrap, .site-header{
+    @include mq(980px, max) {
+      right: 18.75em;
+    }
+  }
+
+
+  .search{
+    max-width: 80%;
+    @include rem(margin-left, 16px);
+  }
+
+  @include mq(540px, max) {
+    .primary-search > .search-field {
+      width: 240px;
+    }
+  }
+
+  .primary-search > input{
+    display: block;
+  }
+
+  .primary-search--dropdown{
+    background-color: #f7f7f7;
+  }
+  .primary-search.active{
+    .primary-search--options{
+      background-color: #f7f7f7;
+      border: 1px solid $color-gold;
+      border-bottom: none;
+      border-radius: 1px;
+    }
+  }
+  .primary-search--dropdown li a{
+    color: $color-dark-gray;
+  }
+  .primary-search--dropdown{
+    border: 1px solid $color-gold;
+    border-top: none;
+  }
+
 }
 
-.nav .nav__item > .dropdown {
 
-  & .grid{
-    margin-left: -29px !important;
-  }
-  & .grid__item {
-    padding-left: 29px !important;
-    float: left !important;
-    width: 33% \0;
-  }
 
-}
