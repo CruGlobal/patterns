@@ -1,5 +1,80 @@
 /*
- * Main Navigation
- * * References - elements/navigation, elements/dropdowns, elements/off-canvas
- */
+* Main Navigation
+* * References - elements/navigation, elements/dropdowns, elements/off-canvas
+*/
 
+.nav-is-open {
+  display: none \0;
+}
+
+
+.nav__link {
+  color: #444444 !important;
+  &:hover{
+    color: #f9b625 !important;
+  }
+}
+
+.primary-link i {
+  display: none !important;
+}
+
+.site-nav,
+.right-nav {
+  float: right !important;
+  text-align: right;
+}
+
+.site-nav {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 4px;
+
+  width: auto;
+  max-width: 980px;
+  border: 1px solid black;
+
+  & > li{
+      display: inline-block;
+  }
+}
+
+#nav-open-btn,
+#nav-close-btn {
+  display: none !important;
+}
+
+.right-nav {
+  width: 50% !important;
+  margin-top: -10px \0;
+  padding: 0 !important;
+  border: 1px dotted greenyellow;
+  text-align: right;
+  display: inline;
+}
+
+.primary-search {
+  border: 1px solid orange \0;
+}
+
+.site-logo {
+
+}
+
+.nav .nav__item > .dropdown {
+
+  & .grid{
+    margin-left: -29px !important;
+  }
+  & .grid__item {
+    padding-left: 29px !important;
+    float: left !important;
+    width: 33% \0;
+  }
+
+}
+.nav .nav__item > .off-canvas-desk-is-open,
+.nav .nav__item > .off-canvas-desk-is-collapsed {
+  display: none !important;
+}

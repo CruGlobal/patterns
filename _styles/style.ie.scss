@@ -23,13 +23,15 @@
 @import "style.scss";
 
 /*
+ * Brackets Helpers
+ * * References - brackets/generic/*
+ */
+@import "ie/ie-helpers";
+
+/*
  * Main Navigation
  * * References - elements/navigation, elements/dropdowns, elements/off-canvas
  */
 
 @import "ie/ie-navigation";
-
-
-
-
-
+@import "ie/ie-off-canvas";

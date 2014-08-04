@@ -6403,10 +6403,93 @@ hr, .divider, .layout--full, .center-block, .centered,
 
 /* endif */
 /*
- * Main Navigation
- * * References - elements/navigation, elements/dropdowns, elements/off-canvas
+ * Brackets Helpers
+ * * References - brackets/generic/*
  */
+/*------------------------------------*\
+    IE $HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ */
+/**
+ * Sizes
+ */
+.full-width, .page-subnav, .center-block {
+  width: 981px; }
+
 /*
  * Main Navigation
  * * References - elements/navigation, elements/dropdowns, elements/off-canvas
  */
+/*
+* Main Navigation
+* * References - elements/navigation, elements/dropdowns, elements/off-canvas
+*/
+.nav-is-open {
+  display: none \0; }
+
+.nav__link {
+  color: #444444 !important; }
+  .nav__link:hover {
+    color: #f9b625 !important; }
+
+.primary-link i {
+  display: none !important; }
+
+.site-nav,
+.right-nav {
+  float: right !important;
+  text-align: right; }
+
+.site-nav {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-top: 4px;
+  width: auto;
+  max-width: 980px;
+  border: 1px solid black; }
+  .site-nav > li {
+    display: inline-block; }
+
+#nav-open-btn,
+#nav-close-btn {
+  display: none !important; }
+
+.right-nav {
+  width: 50% !important;
+  margin-top: -10px \0;
+  padding: 0 !important;
+  border: 1px dotted greenyellow;
+  text-align: right;
+  display: inline; }
+
+.primary-search {
+  border: 1px solid orange \0; }
+
+.nav .nav__item > .dropdown .grid, .post-meta .nav__item > .dropdown .grid {
+  margin-left: -29px !important; }
+.nav .nav__item > .dropdown .grid__item, .post-meta .nav__item > .dropdown .grid__item {
+  padding-left: 29px !important;
+  float: left !important;
+  width: 33% \0; }
+
+.nav .nav__item > .off-canvas-desk-is-open, .post-meta .nav__item > .off-canvas-desk-is-open,
+.nav .nav__item > .off-canvas-desk-is-collapsed,
+.post-meta .nav__item > .off-canvas-desk-is-collapsed {
+  display: none !important; }
+
+.nav-is-open {
+  display: none; }
+
+.nav .nav__item > .dropdown .grid, .post-meta .nav__item > .dropdown .grid {
+  margin-left: -29px !important; }
+.nav .nav__item > .dropdown .grid__item, .post-meta .nav__item > .dropdown .grid__item {
+  padding-left: 29px !important;
+  float: left !important;
+  width: 33% \0; }
