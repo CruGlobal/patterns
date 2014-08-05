@@ -17,7 +17,7 @@
   & > a > h4 {
     color: $color-black;
 
-    @extend .affordance;
+    //@extend .affordance; //We will turn this back on when the next version of tiles are implemented. Yo.
 
     margin-bottom: 0;
     padding-top:    half($base-margin);
@@ -97,4 +97,8 @@
     width: 100%;
     display: block;
   }
+}
+
+.test {
+  border: 1px solid $color-gold;
 }

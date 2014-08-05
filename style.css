@@ -1,23 +1,5 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    STYLE.IE.CSS
-\*------------------------------------*/
-/**
- * Here lies the custom styles for Cru.org for IE8 (& below). These styles have been
- * built on top of our front-end framework: brackets.css.
- *
- * Be sure read the warning before continuing to edit or add any new
- * styles. In addition, be sure to change the variables to turn off
- * demo mode and debug mode before pushing to production. 
- * 
- */
-/*------------------------------------*\
- $IMPORTS
-\*------------------------------------*/
-/*
- * Main Style
- */
-/*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
 /**
@@ -4034,7 +4016,7 @@ input[disabled]:focus,
   content: '\e808'; }
 
 /* '' */
-.icon-right-circle:before, .affordance:after, .tile__item > a > p:after {
+.icon-right-circle:before, .affordance:after, .tile__item > a > h4:after, .tile__item > a > p:after {
   content: '\e800'; }
 
 /* '' */
@@ -4366,7 +4348,7 @@ figcaption {
   margin-right: parseInt(12px)/19rem;
   /* 9 */ }
 
-.affordance:after, .tile__item > a > p:after {
+.affordance:after, .tile__item > a > h4:after, .tile__item > a > p:after {
   color: #f9b625;
   font-family: "cruicons";
   padding-left: 10px;
@@ -5490,9 +5472,6 @@ td {
     width: 100%;
     display: block; }
 
-.test {
-  border: 1px solid #f9b625; }
-
 /**
  * Page components
  */
@@ -6405,92 +6384,3 @@ hr, .divider, .layout--full, .center-block, .centered,
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
 /* endif */
-/*
- * Main Navigation
- * * References - elements/navigation, elements/dropdowns, elements/off-canvas
- */
-/*
-* Main Navigation
-* * References - elements/navigation, elements/dropdowns, elements/off-canvas
-*/
-.nav-is-open {
-  display: none \0; }
-
-.nav__link {
-  color: #444444 !important; }
-  .nav__link:hover {
-    color: #f9b625 !important; }
-
-.primary-link i {
-  display: none !important; }
-
-.site-nav,
-.right-nav {
-  float: right !important;
-  text-align: right; }
-
-.site-nav {
-  position: relative;
-  z-index: 1;
-  margin-top: 4px; }
-  @media screen and (min-width: 61.3125em) {
-    .site-nav {
-      float: right;
-      width: auto; } }
-  @media screen and (max-width: 61.3125em) {
-    .site-nav > li {
-      display: block; } }
-
-#nav-open-btn,
-#nav-close-btn {
-  display: none !important; }
-
-.right-nav {
-  width: 50% !important;
-  margin-top: -10px \0;
-  padding: 0 !important;
-  border: 1px dotted greenyellow;
-  text-align: right;
-  display: inline; }
-
-.primary-search {
-  border: 1px solid orange \0; }
-
-.nav .nav__item > .dropdown .grid, .post-meta .nav__item > .dropdown .grid {
-  margin-left: -29px !important; }
-.nav .nav__item > .dropdown .grid__item, .post-meta .nav__item > .dropdown .grid__item {
-  padding-left: 29px !important;
-  float: left !important;
-  width: 33% \0; }
-
-.nav .nav__item > .off-canvas-desk-is-open, .post-meta .nav__item > .off-canvas-desk-is-open,
-.nav .nav__item > .off-canvas-desk-is-collapsed,
-.post-meta .nav__item > .off-canvas-desk-is-collapsed {
-  display: none !important; }
-
-.site-header {
-  position: fixed;
-  top: 0;
-  z-index: 505;
-  overflow: hidden;
-  width: 100%;
-  height: 84px;
-  background-color: white;
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #f9b625;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
-
-.nav-is-open {
-  display: none; }
-
-.nav .nav__item > .dropdown .grid, .post-meta .nav__item > .dropdown .grid {
-  margin-left: -29px !important; }
-.nav .nav__item > .dropdown .grid__item, .post-meta .nav__item > .dropdown .grid__item {
-  padding-left: 29px !important;
-  float: left !important;
-  width: 33% \0; }
