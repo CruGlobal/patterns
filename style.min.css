@@ -4901,7 +4901,7 @@ td {
   text-decoration: underline; }
 
 /*------------------------------------*\
-    $NAVIGATION
+    $NAVIGATION [IE version ie/ie-navigation]
 \*------------------------------------*/
 .navigation {
   position: fixed;
@@ -5291,7 +5291,7 @@ td {
     color: white; }
 
 /*------------------------------------*\
-    $OFF-CANVAS
+    $OFF-CANVAS [IE version ie/ie-off-canvas]
 \*------------------------------------*/
 @media screen and (max-width: 33.75em) {
   .nav-is-open .inner-wrap, .nav-is-open .site-header {
@@ -6187,7 +6187,7 @@ td {
   to {
     left: -33.33333%; } }
 /*------------------------------------*\
-    $HELPER
+    $HELPER [IE version in patterns ie/ie-helpers]
 \*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an

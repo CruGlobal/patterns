@@ -158,8 +158,8 @@
 // On Page Load
 $(window).ready(function() {
   var wi = $(window).width();
-  if (wi <= 980){
 
+  if (wi <= 980){
     $( "li.nav__item > div" ).removeClass( "dropdown" ).addClass( "off-canvas-desk-is-collapsed" );
   }
   else {
@@ -184,10 +184,10 @@ $(window).ready(function() {
 $('li.nav__item .nav__link').click(function(event){
     event.preventDefault();
     var isOpen = ($(this).siblings("div").hasClass( "off-canvas-desk-is-open" ));
-    
+
     $( "li.nav__item > div" ).removeClass( "off-canvas-desk-is-open");
     if(!isOpen){
         $(this).siblings("div").addClass( "off-canvas-desk-is-open" );
-    };
+    }
 });
 
