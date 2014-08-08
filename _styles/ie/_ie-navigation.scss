@@ -6,73 +6,28 @@
   position: fixed;
 
   float: none;
-  width: 89%;
   display: inline-block;
   vertical-align: middle;
   max-width: 1220px;
   top: 0;
-  right: -100%;
-  z-index: 1;
-
-  width: 70%;
-
-  background-color: #444444;
   border-top: 3px solid;
-  border-color: #f9b625;
 
-  @include mq(540px) {
-    width: 18.75em;
-  }
+  width: 90%;
+  background-color: transparent;
+  z-index: 505;
+  right: 0;
 
-  @include mq(981px) {
-    width: 90%;
-    height: $header-height - 3px;
+  border-color: transparent;
 
-    background-color: transparent;
-    z-index: 505;
-    right: 0;
-
-    border-color: transparent;
-
-  }
-
-  @include mq(981px, max) {
-    overflow: scroll;
-    padding-top: 69px;
-    height: 100%;
-  }
-
+  overflow: scroll;
+  padding-top: 69px;
+  height: 100%;
 }
 
 .site-nav {
   position: relative;
   z-index: 1;
   margin-top: 4px;
-
-  @include mq(981px) {
-    float: right;
-    width: auto;
-
-  }
-
-  & > li{
-    @include mq(981px, max) {
-      display: block;
-    }
-  }
-}
-
-.nav > .nav__item,
-.nav__item > .nav__link{
-  @include mq(981px, max) {
-    display: block;
-  }
-}
-
-.nav_item {
-  @include mq(981px, max) {
-    border-bottom-color: $color-gold;
-  }
 }
 
 /**
@@ -80,9 +35,7 @@
  **/
 
 .right-nav{
-  @include mq(981px) {
-    width: auto;
-    float: right;
+    width: 980px;
     vertical-align: middle;
 
     position: relative;
@@ -90,28 +43,11 @@
 
     margin-top: 5px;
 
-    text-align: right;
+    text-align: left;
     line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
-  }
-
-  @include mq(980px, max) {
-    width: 100%;
-  }
 
   .search__options{
     display: none;
-  }
-
-  & > .nav__item{
-    @include mq(980px, max) {
-      display: block;
-    }
-
-    & > a{
-      @include mq(980px, max) {
-        display: block;
-      }
-    }
   }
 }
 
@@ -158,32 +94,34 @@
   }
 }
 
-//.has-dropdown{
-//  &:hover, &:focus{
-//  @include border-top-radius(1px);
-// }
-//}
-
 
 .nav .nav__item > .dropdown{
   position: fixed;
   left: 0;
   background-color: $color-dark-gray;
   color: #ffffff;
-  width: 100% !important;
+  width: 980px !important;
   overflow: hidden;
   max-height: 0;
   height: 0;
   padding-left: 30px;
   padding-right: 30px;
   opacity: 0;
-  /* Hover Off */
-  @include vendor(transition, opacity 0s 0.2s ease-out );
-  @include clearfix();
 
-  @include vendor(transform, translate3d(0, 0, -160%));
-  @include vendor(backface-visibility, hidden);
-  @include vendor(perspective, 1000);
+  /* Hover Off */
+  @include clearfix();
+}
+
+.nav .nav__item > .dropdown {
+
+  & .grid{
+    margin-left: -29px !important;
+  }
+  & .grid__item {
+    padding-left: 29px !important;
+    float: left !important;
+    width: 33% \0;
+  }
 
 }
 
