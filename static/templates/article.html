@@ -2,11 +2,8 @@
 page-class: page--static
 ---
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-<head>	
+
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
@@ -38,14 +35,24 @@ page-class: page--static
   </script>
 
 
-  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
-	
-	
+    <!--[if !IE]><!-->
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.ie.min.css">
+    <![endif]-->
+
+
   <link rel="shortcut icon" href="/icon.png">
   <meta name="apple-mobile-web-app-title" content="cru.org">
-  <meta name="description" content="Cru helps people in every segment of society -- from students to athletes to families to business professionals -- truly follow Jesus Christ.">	
-	
-	
+  <meta name="description" content="Cru helps people in every segment of society -- from students to athletes to families to business professionals -- truly follow Jesus Christ.">
+
+
   <!-- Load Javascipt libraries the need to be at the top of the page -->
   <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
   <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
@@ -55,9 +62,9 @@ page-class: page--static
     <!-- Hidden preload `div` to fetch images before CSS needs them. -->
     <div class="preload">
         <img src="/assets/images/cru-logo.svg" alt="" width="0" height="0">
-        <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">     
+        <img src="/assets/images/cru-logo.png" alt="" width="0" height="0">
     </div>
-    
+
     <!-- Facebook feed js -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -69,7 +76,7 @@ page-class: page--static
     }(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
-		
+
       <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
       	<!-- The primary header -->
       	<header class="site-header"  role="banner">
@@ -88,11 +95,11 @@ page-class: page--static
         <nav id="nav" class="navigation">
         <ul class="nav  right-nav ">
 
-          <li class="nav__item">
-            <a class="nav__link  user-action" href="#signup">Sign Up</a>
-          <li class="nav__item">
-            <a class="nav__link  user-action" href="#">Log In</a>
-          </li>
+          <!--<li class="nav__item">-->
+            <!--<a class="nav__link  user-action" href="#signup">Sign Up</a>-->
+          <!--<li class="nav__item">-->
+            <!--<a class="nav__link  user-action" href="#">Log In</a>-->
+          <!--</li>-->
 
           <!--Search-->
           <li class="spoken-form  nav__item">
@@ -408,29 +415,29 @@ page-class: page--static
         <a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close <i class="icon-cancel-circled"></i></a>
 
         </nav>
-		
-    
+
+
           <!-- .page-content -->
-          <div class="page-content"  role="main">  
-      
+          <div class="page-content"  role="main">
+
             <article class="post-article  color-white box-shadow--thin layout--full">
-        
+
               <!-- This is an optional image space. Only displayed if an image is placed there.-->
               <!-- COVER IMAGE COMPONENT -->
               <!-- Article main image -- full width version -->
             	<div class="layout-background-fill">
                 <div class="cover-image-mask">
-                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"  height=""></div>         
+                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"  height=""></div>
                 </div>
             	</div>
               <!-- End article main image -- full width version -->
-      
-      
+
+
               <!-- ARTICLE HEADLINE COMPONENT -->
             	<header class="post__headline  layout-single-column">
-    
+
               	 <h1 class="post-title pt_x">Modern day abolitionist in Austin</h1>
-    
+
               	<ul class="post-meta">
                 	<li class="accent">by Blair Pippin</li>
                 	<li class="accent">
@@ -438,11 +445,11 @@ page-class: page--static
                   </li>
                 	<li>
                     <time>23 April 2014</time>
-                  </li>	
+                  </li>
               	</ul>
-    
+
             	</header>
-        
+
               <!-- POST BODY -->
               <div class="post__body  layout-single-column  pb">
 
@@ -500,14 +507,14 @@ page-class: page--static
                    luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
                    sed odio dui. Curabitur blandit tempus porttitor.
                 </p>
-          
+
                 <!-- .pullquote text default in an <em> -->
           			<blockquote class="pullquote">
                   <em>Integer posuere erat a ante venenatis dapibus posuere
                    velit aliquet. Vestibulum id ligula porta felis euismod semper.
                  </em>
                </blockquote>
-          
+
                 <p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
                  sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
                  nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Sed posuere
@@ -515,8 +522,8 @@ page-class: page--static
                  faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl
                  consectetur et.
                </p>
-         
-         
+
+
                <!-- Image inset to the left -->
                <figure class="image--inset__left">
                  <img class="" src="http://baconmockup.com/1100/520"/>
@@ -529,8 +536,8 @@ page-class: page--static
                   ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor
                   mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                </p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. 
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque
                   penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur
                   est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
@@ -542,8 +549,8 @@ page-class: page--static
                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                   </p>
                </blockquote>
-         
-         
+
+
                <!--Image expands past content to the left and right -->
                <figure class="image--outset__center">
                  <img class="" src="http://baconmockup.com/1300/540"/>
@@ -558,7 +565,7 @@ page-class: page--static
                   Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non
                   mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                </p>
-          
+
                 <!-- Image expands past content to the left -->
                 <figure class="image--outset__left">
                   <img class="" src="http://baconmockup.com/640/360"/>
@@ -572,8 +579,8 @@ page-class: page--static
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
               </div>
-        
-        
+
+
             </article>
 
 
@@ -613,17 +620,17 @@ page-class: page--static
 
             <!-- Facebook Comments Feed -->
             <section class="layout-single-column">
-              <div class="fb-comments" data-href="https://www.facebook.com/CruGlobal" data-width="700" data-numposts="3" data-colorscheme="dark"></div>            
+              <div class="fb-comments" data-href="https://www.facebook.com/CruGlobal" data-width="700" data-numposts="3" data-colorscheme="dark"></div>
             </section>
-    
+
           </div><!-- End .page-content -->
-    
+
           <!-- Footer Component -->
-          <footer class="global-footer">    
+          <footer class="global-footer">
             <hr class="section-divider">
-  
+
             <!-- Social wrapper -->
-            <div class="mb">      
+            <div class="mb">
               <!-- Social -->
               <div class="social  center-block">
                 <ul class="nav">
@@ -637,39 +644,39 @@ page-class: page--static
                     <a class="social__item  social__item--gplus  icon-gplus" href="#" rel="external"></a>
                   </li>
                 </ul>
-              </div> 
+              </div>
               <!-- End social-->
             </div>
             <!-- End social wrapper -->
-  
-            <nav role="supplementary">        
-              <ul class="nav  flush--bottom">        
-                <li>         
-                  <a href="/">Contact Us</a>        
-                </li>        
-                <li>         
-                  <a href="/">RSS Feed</a>        
-                </li>        
-                <li>          
-                  <a href="/">Press Room</a>        
-                </li>        
-                <li>          
-                  <a href="/">Careers</a>        
-                </li>        
-                <li>          
-                  <a href="/">Terms of Use</a>        
-                </li>        
-                <li>          
-                  <a href="/">Privary Policy</a>       
-                </li>      
-              </ul>    
-            </nav>    
-            <div class="copy">      
-              <small>©1994-2014 Cru. All Rights Reserved.</small>    
-            </div>  
+
+            <nav role="supplementary">
+              <ul class="nav  flush--bottom">
+                <li>
+                  <a href="/">Contact Us</a>
+                </li>
+                <li>
+                  <a href="/">RSS Feed</a>
+                </li>
+                <li>
+                  <a href="/">Press Room</a>
+                </li>
+                <li>
+                  <a href="/">Careers</a>
+                </li>
+                <li>
+                  <a href="/">Terms of Use</a>
+                </li>
+                <li>
+                  <a href="/">Privary Policy</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copy">
+              <small>©1994-2014 Cru. All Rights Reserved.</small>
+            </div>
           </footer>
           <!-- End footer component -->
-      
+
       </div><!-- End #js-inner-wrap -->
     </div><!-- End #js-outer-wrap -->
 
@@ -679,14 +686,21 @@ page-class: page--static
 
 
     <script src="{{ site.root }}modernizr.min.js"></script>
-    <script src="{{ site.root }}slider.min.js"></script>		
+    <script src="{{ site.root }}slider.min.js"></script>
     <script src="{{ site.root }}search-options.min.js"></script>
-    <script src="{{ site.root }}offcanvas.min.js"></script>
-	
-  
+
+    <!--[if !IE]><!-->
+        <script src="{{ site.root }}offcanvas.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]>
+        <script src="{{ site.root }}offcanvas.min.js"></script>
+    <![endif]-->
+
+
     <!-- Patterns Site only -->
-    <script src="{{ site.root }}nav.min.js"></script>		
-  
+    <script src="{{ site.root }}nav.min.js"></script>
+
 
 
     <script>
@@ -695,7 +709,6 @@ page-class: page--static
       g.src='//www.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    
+
   </body>
 </html>
-		
