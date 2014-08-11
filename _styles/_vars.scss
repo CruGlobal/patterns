@@ -126,33 +126,42 @@ $paragraph-line-height: 31px;
 
 $color-gold:         #f9b625; /* Cru Gold */
 $color-gray:         #666062; /* Cru Gray */
-$color-white:        #fff; /* White */
+$color-white:        #ffffff; /* White */
 
 /**
  * Secondary colors
  */
-$color-orange:       #dd7d1b; /* Cru Orange */
+$color-orange:             #dd7d1b; /* Cru Orange */
 
 /**
  * Accent colors
  */
-$color-bright-blue:  #3eb1c8; /* Cru Bright Blue */
-$color-deep-blue:    #007398; /* Cru Deep Blue */
+$color-bright-blue:        #3eb1c8; /* Cru Bright Blue */
+$color-deep-blue:          #007398; /* Cru Deep Blue */
 
 /**
  * Grayscale
  */ 
-$color-black:        #444444;
-$color-dark-gray:    #444444;
-$color-darker-gray:  #333333;
+$color-black:              #444444;
+$color-dark-gray:          #404040;
+$color-darker-gray:        #333333;
+
+$color-gray-background:    #f7f7f7;
+$color-gray-keyline:       #e9e9e9;
+$color-gray-light:         #e2e2e2;
+
 
 
 
 /**
  * Additional Colors
  */
-
-$color-red:          #d95c5c;
+$color-text:               #404040;
+$color-message:            #efefef;
+$color-warning:            #F6F3D5;
+$color-info:               #E6F4F9;
+$color-success:            #5BBD72;
+$color-red:                #d95c5c;
 
 
 
