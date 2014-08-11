@@ -4212,73 +4212,20 @@ hr {
 /*------------------------------------*\
     $LAYOUTS
 \*------------------------------------*/
-.base-layout, .layout-single-column, .layout--wide {
-  width: auto;
+.layout-single-column {
+  width: 700px;
   margin-left: 20px;
   margin-right: 20px;
   clear: both; }
-  @media screen and (min-width: 42.5em) {
-    .base-layout, .layout-single-column, .layout--wide {
-      margin-left: auto;
-      margin-right: auto; } }
 
-@media screen and (min-width: 42.5em) {
-  .layout-single-column, .layout--wide {
-    width: 640px; } }
-@media screen and (min-width: 50em) {
-  .layout-single-column, .layout--wide {
-    width: 700px; } }
-
-@media screen and (min-width: 62.5em) {
-  .layout--wide {
-    width: 880px; } }
+.layout--wide {
+  width: 880px;
+  margin-left: 20px;
+  margin-right: 20px;
+  clear: both; }
 
 .layout--full {
-  max-width: 1100px; }
-
-/**
- * The wrapper class for full-width images
- */
-.layout-background-fill {
-  position: relative;
-  left: 0;
-  overflow: hidden;
-  max-width: 100%;
-  width: 100%;
-  margin-top: 0;
-  /* 3 */
-  /* 3 */
-  /* 4 */
-  /* 6 */
-  /* 6 */
-  /* 7 */
-  top: -25px;
-  /* 9 */
-  top: parseInt(-25px)/19rem;
-  /* 9 */ }
-
-@media screen and (max-width: 31.25em) {
-  .layout-background-stretch {
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    margin-left: -29px;
-    /* 9 */
-    margin-left: parseInt(-29px)/19rem;
-    /* 9 */
-    /* 3 */
-    /* 3 */
-    /* 4 */
-    /* 6 */
-    /* 6 */
-    /* 7 */
-    margin-right: -29px;
-    /* 9 */
-    margin-right: parseInt(-29px)/19rem;
-    /* 9 */ } }
+  width: 1100px; }
 
 /**
  * Site-wide elements and components
@@ -4949,7 +4896,7 @@ td {
   letter-spacing: 0.9px;
   vertical-align: middle;
   color: white;
-  color: #444444;
+  color: #404040;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -4971,7 +4918,7 @@ td {
 .nav .nav__item > .dropdown, .post-meta .nav__item > .dropdown {
   position: fixed;
   left: 0;
-  background-color: #444444;
+  background-color: #404040;
   color: #ffffff;
   width: 980px !important;
   overflow: hidden;
@@ -5149,7 +5096,7 @@ td {
   border-bottom: none;
   border-radius: 1px; }
 .nav-is-open .primary-search--dropdown li a {
-  color: #444444; }
+  color: #404040; }
 .nav-is-open .primary-search--dropdown {
   border: 1px solid #f9b625;
   border-top: none; }
@@ -5245,7 +5192,7 @@ td {
   border-bottom: none;
   border-radius: 1px; }
 .nav-is-open .primary-search--dropdown li a {
-  color: #444444; }
+  color: #404040; }
 .nav-is-open .primary-search--dropdown {
   border: 1px solid #f9b625;
   border-top: none; }
@@ -5259,7 +5206,7 @@ td {
   .ui-autocomplete li {
     list-style: none outside none; }
   .ui-autocomplete li a {
-    background-color: #444444;
+    background-color: #404040;
     color: white;
     display: block;
     padding: 5px 13px;
