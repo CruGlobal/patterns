@@ -27,7 +27,8 @@
   .site-nav {
     position: relative;
     z-index: 1;
-    margin-top: 4px;
+    margin-top: 20px;
+    text-align: right;
   }
 
 /**
@@ -41,9 +42,9 @@
     position: relative;
     z-index: 506;
 
-    margin-top: 5px;
+    margin-top: 20px;
 
-    text-align: left;
+    text-align: right;
     line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
 
   .search__options{

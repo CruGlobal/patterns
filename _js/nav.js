@@ -8,8 +8,11 @@ $(".site--select").change(function() {
 
  $("div.dropdown").hover(
  	function() {
-  		$(this).prev("a").addClass("is-active") 
+  		$(this).prev("a").addClass("is-active");
   	}, function() {
   		$(this).prev("a").removeClass("is-active");
 	});
-  	
+
+if($("html").hasClass("ie8")){
+    $("a[title='Return to Homepage']").first().addClass('ie-logo').append('<img src="/assets/images/cru-logo.png" alt="" width="74" height="54">');
+}
