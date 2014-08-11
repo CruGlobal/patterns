@@ -6,6 +6,1039 @@
  * This file is for use in the pattern library only. 
  */
 /*------------------------------------*\
+    $SETTINGS
+\*------------------------------------*/
+/**
+ * Default variables. Redefine these in your `_vars.scss` file
+ */
+/**
+ * Set your base font size here. Define in pixels; the library will
+ * convert measurements to the appropriate units (rems or unitless
+ * for the line height).
+ */
+/**
+ * Would you like to show a baseline grid? This is handy during development.
+ */
+/*------------------------------------*\
+    $BORDER-BOX
+\*------------------------------------*/
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base font family
+ */
+/**
+ * Default colours for objects’ borders etc.
+ */
+/**
+ * Default value for edges and such
+ */
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Basic font sizes
+ */
+/**
+ * Headings
+ */
+/* Header sizes */
+/* Subheaders */
+/**
+ * Smalls
+ */
+/**
+ * Paragraphs
+ */
+/**
+ * Blockquotes
+ */
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/**
+ * This grid system is heavily based off the work of Harry Roberts of
+ * css-wizardry and inuit.css. Css-wizardry-grids provides the basic
+ * foundation and inspiration.
+ */
+/**
+ * If you are building a non-responsive site but would still like to use
+ * the girds, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the max width of your grids, if you set this to false, the wrapper will only
+ * center the content and apply a left/right padding
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like push and pull classes enabled? Keep in mind this adds a large
+ * amount of additional code
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+ * I have included variables for only one buttons, the default, since my wish
+ * is to not impose style. Feel free to add more variables. I have included 
+ * a mixin to help you generate these easily
+ */
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/**
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all. 
+ */
+/*------------------------------------*\
+    $MIXINS/ALERTS
+\*------------------------------------*/
+/**
+ * Animations
+ */
+/*------------------------------------*\
+    $MIXINS/BUTTONS
+\*------------------------------------*/
+/**
+ * Border Radius
+ */
+/* Top-Left Corner */
+/* Top-Right Corner Only*/
+/* Bottom-Left Corner Only */
+/* Bottom-Right Corner Only */
+/* Both Top Corners */
+/* Both Right Corners */
+/* Both Bottom Corners */
+/* Both Left Corners */
+/*------------------------------------*\
+    $MIXINS/BOX-MODEL
+\*------------------------------------*/
+/**
+ * Box Sizing
+ */
+/*------------------------------------*\
+    $MIXINS/BUTTONS
+\*------------------------------------*/
+/**
+ * Button Varients
+ */
+/**
+ * Button Effects: use with btn
+ */
+/**
+ * Button Sizes
+ */
+/*------------------------------------*\
+    $MIXINS/CENTER-BLOCK
+\*------------------------------------*/
+/**
+ * Center-align a block level element
+ */
+/*------------------------------------*\
+    $MIXINS/CLEARFIX
+\*------------------------------------*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 
+ *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+/**
+ * The newest clearfix: Unsure about support
+ */
+/*------------------------------------*\
+    $MIXINS/FORMS
+\*------------------------------------*/
+/**
+ * Form control sizing
+ *
+ * Relative text size, padding, and border-radii changes for form controls. For
+ * horizontal sizing, wrap controls in the predefined grid classes. `<select>`
+ * element gets special love because it's special, and that's a fact!
+ * [converter] $parent hack
+ */
+/*------------------------------------*\
+    $MIXINS/GRID-SETUP
+\*------------------------------------*/
+/**
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/*------------------------------------*\
+    $MIXINS/IMAGES
+\*------------------------------------*/
+/** 
+ * Responsive image
+ *
+ * Keep images from scaling beyond the width of their parents.
+ */
+/*------------------------------------*\
+    $MIXINS/LINKS
+\*------------------------------------*/
+/**
+ * Writes the typical link, button in one go
+ * Includes active and focus for accessibility 
+ * 
+ */
+/*------------------------------------*\
+    $MIXINS/MEDIA-QUERY
+\*------------------------------------*/
+/**
+ * Media query for easy breakpoint. Use pixel width with or without units
+ * and it will convert to em 
+ */
+/**
+ * Set $query1: max for a max-qidth query, defaults to min-width
+ */
+/*------------------------------------*\
+    $MIXINS/MESSAGE
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS/OPACITY
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS/PANELS
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS/PREFIX
+\*------------------------------------*/
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+/*------------------------------------*\
+    $MIXINS/SIZING
+\*------------------------------------*/
+/**
+ * Can handle shorthand calculations
+ * Do not change the variable set
+ */
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include spacing(padding-left);
+ * }
+ */
+/*------------------------------------*\
+    $MIXINS/SPACING
+\*------------------------------------*/
+/**
+ *  Calculates any number of margins and paddings in one swoop
+ * 
+ * Running this is as easy 
+ * @include vertical-calc(1, 12) {}
+ *
+ * DO NOT USE AT THE MOMENT
+ */
+/*------------------------------------*\
+    $MIXINS/TEXT
+\*------------------------------------*/
+/**
+ * Quickly generate a font-size in rems, with a pixel fallback, based on the
+ * value we pass into the mixin, e.g.:
+ *
+ * h1 {
+ *     @include font-size(24px);
+ * }
+ */
+/**
+ * Style any number of headings in one fell swoop, e.g.:
+ *
+   .foo{
+       @include headings(1, 3){
+           color:#c0ffee;
+       }
+    }
+ *
+ * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
+ * @thierrylemoulec for refining and improving my initial mixin.
+ */
+/*------------------------------------*\
+    $MIXINS/WIDTHS
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Whole
+ */
+.one-whole {
+  width: 100%; }
+
+/**
+ * Halves
+ */
+.one-half,
+.two-quarters,
+.three-sixths,
+.four-eighths,
+.five-tenths,
+.six-twelfths {
+  width: 50%; }
+
+/**
+ * Thirds.
+ */
+.one-third,
+.two-sixths,
+.three-ninths,
+.four-twelfths {
+  width: 33.33333%; }
+
+.two-thirds,
+.four-sixths,
+.six-ninths,
+.eight-twelfths {
+  width: 66.66667%; }
+
+/**
+ * Quarters.
+ */
+.one-quarter,
+.two-eighths,
+.three-twelfths {
+  width: 25%; }
+
+.three-quarters,
+.six-eighths,
+.nine-twelfths {
+  width: 75%; }
+
+/**
+ * Fifths.
+ */
+.one-fifth,
+.two-tenths {
+  width: 20%; }
+
+.two-fifths,
+.four-tenths {
+  width: 40%; }
+
+.three-fifths,
+.six-tenths {
+  width: 60%; }
+
+.four-fifths,
+.eight-tenths {
+  width: 80%; }
+
+/**
+ * Sixths.
+ */
+.one-sixth,
+.two-twelfths {
+  width: 16.66667%; }
+
+.five-sixths,
+.ten-twelfths {
+  width: 83.33333%; }
+
+/**
+ * Eighths.
+ */
+.one-eighth {
+  width: 12.5%; }
+
+.three-eighths {
+  width: 37.5%; }
+
+.five-eighths {
+  width: 62.5%; }
+
+.seven-eighths {
+  width: 87.5%; }
+
+/**
+ * Ninths.
+ */
+.one-ninth {
+  width: 11.11111%; }
+
+.two-ninths {
+  width: 22.22222%; }
+
+.four-ninths {
+  width: 44.44444%; }
+
+.five-ninths {
+  width: 55.55556%; }
+
+.seven-ninths {
+  width: 77.77778%; }
+
+.eight-ninths {
+  width: 88.88889%; }
+
+/**
+ * Tenths.
+ */
+.one-tenth {
+  width: 10%; }
+
+.three-tenths {
+  width: 30%; }
+
+.seven-tenths {
+  width: 70%; }
+
+.nine-tenths {
+  width: 90%; }
+
+/**
+ * Twelfths.
+ */
+.one-twelfth {
+  width: 8.33333%; }
+
+.five-twelfths {
+  width: 41.66667%; }
+
+.seven-twelfths {
+  width: 58.33333%; }
+
+.eleven-twelfths {
+  width: 91.66667%; }
+
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@media only screen and (max-width: 480px) {
+  /**
+   * Whole
+   */
+  .palm--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .palm--one-half,
+  .palm--two-quarters,
+  .palm--three-sixths,
+  .palm--four-eighths,
+  .palm--five-tenths,
+  .palm--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds.
+   */
+  .palm--one-third,
+  .palm--two-sixths,
+  .palm--three-ninths,
+  .palm--four-twelfths {
+    width: 33.33333%; }
+
+  .palm--two-thirds,
+  .palm--four-sixths,
+  .palm--six-ninths,
+  .palm--eight-twelfths {
+    width: 66.66667%; }
+
+  /**
+   * Quarters.
+   */
+  .palm--one-quarter,
+  .palm--two-eighths,
+  .palm--three-twelfths {
+    width: 25%; }
+
+  .palm--three-quarters,
+  .palm--six-eighths,
+  .palm--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths.
+   */
+  .palm--one-fifth,
+  .palm--two-tenths {
+    width: 20%; }
+
+  .palm--two-fifths,
+  .palm--four-tenths {
+    width: 40%; }
+
+  .palm--three-fifths,
+  .palm--six-tenths {
+    width: 60%; }
+
+  .palm--four-fifths,
+  .palm--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths.
+   */
+  .palm--one-sixth,
+  .palm--two-twelfths {
+    width: 16.66667%; }
+
+  .palm--five-sixths,
+  .palm--ten-twelfths {
+    width: 83.33333%; }
+
+  /**
+   * Eighths.
+   */
+  .palm--one-eighth {
+    width: 12.5%; }
+
+  .palm--three-eighths {
+    width: 37.5%; }
+
+  .palm--five-eighths {
+    width: 62.5%; }
+
+  .palm--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Ninths.
+   */
+  .palm--one-ninth {
+    width: 11.11111%; }
+
+  .palm--two-ninths {
+    width: 22.22222%; }
+
+  .palm--four-ninths {
+    width: 44.44444%; }
+
+  .palm--five-ninths {
+    width: 55.55556%; }
+
+  .palm--seven-ninths {
+    width: 77.77778%; }
+
+  .palm--eight-ninths {
+    width: 88.88889%; }
+
+  /**
+   * Tenths.
+   */
+  .palm--one-tenth {
+    width: 10%; }
+
+  .palm--three-tenths {
+    width: 30%; }
+
+  .palm--seven-tenths {
+    width: 70%; }
+
+  .palm--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths.
+   */
+  .palm--one-twelfth {
+    width: 8.33333%; }
+
+  .palm--five-twelfths {
+    width: 41.66667%; }
+
+  .palm--seven-twelfths {
+    width: 58.33333%; }
+
+  .palm--eleven-twelfths {
+    width: 91.66667%; } }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+  .lap--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .lap--one-half,
+  .lap--two-quarters,
+  .lap--three-sixths,
+  .lap--four-eighths,
+  .lap--five-tenths,
+  .lap--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds.
+   */
+  .lap--one-third,
+  .lap--two-sixths,
+  .lap--three-ninths,
+  .lap--four-twelfths {
+    width: 33.33333%; }
+
+  .lap--two-thirds,
+  .lap--four-sixths,
+  .lap--six-ninths,
+  .lap--eight-twelfths {
+    width: 66.66667%; }
+
+  /**
+   * Quarters.
+   */
+  .lap--one-quarter,
+  .lap--two-eighths,
+  .lap--three-twelfths {
+    width: 25%; }
+
+  .lap--three-quarters,
+  .lap--six-eighths,
+  .lap--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths.
+   */
+  .lap--one-fifth,
+  .lap--two-tenths {
+    width: 20%; }
+
+  .lap--two-fifths,
+  .lap--four-tenths {
+    width: 40%; }
+
+  .lap--three-fifths,
+  .lap--six-tenths {
+    width: 60%; }
+
+  .lap--four-fifths,
+  .lap--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths.
+   */
+  .lap--one-sixth,
+  .lap--two-twelfths {
+    width: 16.66667%; }
+
+  .lap--five-sixths,
+  .lap--ten-twelfths {
+    width: 83.33333%; }
+
+  /**
+   * Eighths.
+   */
+  .lap--one-eighth {
+    width: 12.5%; }
+
+  .lap--three-eighths {
+    width: 37.5%; }
+
+  .lap--five-eighths {
+    width: 62.5%; }
+
+  .lap--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Ninths.
+   */
+  .lap--one-ninth {
+    width: 11.11111%; }
+
+  .lap--two-ninths {
+    width: 22.22222%; }
+
+  .lap--four-ninths {
+    width: 44.44444%; }
+
+  .lap--five-ninths {
+    width: 55.55556%; }
+
+  .lap--seven-ninths {
+    width: 77.77778%; }
+
+  .lap--eight-ninths {
+    width: 88.88889%; }
+
+  /**
+   * Tenths.
+   */
+  .lap--one-tenth {
+    width: 10%; }
+
+  .lap--three-tenths {
+    width: 30%; }
+
+  .lap--seven-tenths {
+    width: 70%; }
+
+  .lap--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths.
+   */
+  .lap--one-twelfth {
+    width: 8.33333%; }
+
+  .lap--five-twelfths {
+    width: 41.66667%; }
+
+  .lap--seven-twelfths {
+    width: 58.33333%; }
+
+  .lap--eleven-twelfths {
+    width: 91.66667%; } }
+@media only screen and (max-width: 1023px) {
+  /**
+   * Whole
+   */
+  .portable--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .portable--one-half,
+  .portable--two-quarters,
+  .portable--three-sixths,
+  .portable--four-eighths,
+  .portable--five-tenths,
+  .portable--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds.
+   */
+  .portable--one-third,
+  .portable--two-sixths,
+  .portable--three-ninths,
+  .portable--four-twelfths {
+    width: 33.33333%; }
+
+  .portable--two-thirds,
+  .portable--four-sixths,
+  .portable--six-ninths,
+  .portable--eight-twelfths {
+    width: 66.66667%; }
+
+  /**
+   * Quarters.
+   */
+  .portable--one-quarter,
+  .portable--two-eighths,
+  .portable--three-twelfths {
+    width: 25%; }
+
+  .portable--three-quarters,
+  .portable--six-eighths,
+  .portable--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths.
+   */
+  .portable--one-fifth,
+  .portable--two-tenths {
+    width: 20%; }
+
+  .portable--two-fifths,
+  .portable--four-tenths {
+    width: 40%; }
+
+  .portable--three-fifths,
+  .portable--six-tenths {
+    width: 60%; }
+
+  .portable--four-fifths,
+  .portable--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths.
+   */
+  .portable--one-sixth,
+  .portable--two-twelfths {
+    width: 16.66667%; }
+
+  .portable--five-sixths,
+  .portable--ten-twelfths {
+    width: 83.33333%; }
+
+  /**
+   * Eighths.
+   */
+  .portable--one-eighth {
+    width: 12.5%; }
+
+  .portable--three-eighths {
+    width: 37.5%; }
+
+  .portable--five-eighths {
+    width: 62.5%; }
+
+  .portable--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Ninths.
+   */
+  .portable--one-ninth {
+    width: 11.11111%; }
+
+  .portable--two-ninths {
+    width: 22.22222%; }
+
+  .portable--four-ninths {
+    width: 44.44444%; }
+
+  .portable--five-ninths {
+    width: 55.55556%; }
+
+  .portable--seven-ninths {
+    width: 77.77778%; }
+
+  .portable--eight-ninths {
+    width: 88.88889%; }
+
+  /**
+   * Tenths.
+   */
+  .portable--one-tenth {
+    width: 10%; }
+
+  .portable--three-tenths {
+    width: 30%; }
+
+  .portable--seven-tenths {
+    width: 70%; }
+
+  .portable--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths.
+   */
+  .portable--one-twelfth {
+    width: 8.33333%; }
+
+  .portable--five-twelfths {
+    width: 41.66667%; }
+
+  .portable--seven-twelfths {
+    width: 58.33333%; }
+
+  .portable--eleven-twelfths {
+    width: 91.66667%; } }
+@media only screen and (min-width: 1024px) {
+  /**
+   * Whole
+   */
+  .desk--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .desk--one-half,
+  .desk--two-quarters,
+  .desk--three-sixths,
+  .desk--four-eighths,
+  .desk--five-tenths,
+  .desk--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds.
+   */
+  .desk--one-third,
+  .desk--two-sixths,
+  .desk--three-ninths,
+  .desk--four-twelfths {
+    width: 33.33333%; }
+
+  .desk--two-thirds,
+  .desk--four-sixths,
+  .desk--six-ninths,
+  .desk--eight-twelfths {
+    width: 66.66667%; }
+
+  /**
+   * Quarters.
+   */
+  .desk--one-quarter,
+  .desk--two-eighths,
+  .desk--three-twelfths {
+    width: 25%; }
+
+  .desk--three-quarters,
+  .desk--six-eighths,
+  .desk--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths.
+   */
+  .desk--one-fifth,
+  .desk--two-tenths {
+    width: 20%; }
+
+  .desk--two-fifths,
+  .desk--four-tenths {
+    width: 40%; }
+
+  .desk--three-fifths,
+  .desk--six-tenths {
+    width: 60%; }
+
+  .desk--four-fifths,
+  .desk--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths.
+   */
+  .desk--one-sixth,
+  .desk--two-twelfths {
+    width: 16.66667%; }
+
+  .desk--five-sixths,
+  .desk--ten-twelfths {
+    width: 83.33333%; }
+
+  /**
+   * Eighths.
+   */
+  .desk--one-eighth {
+    width: 12.5%; }
+
+  .desk--three-eighths {
+    width: 37.5%; }
+
+  .desk--five-eighths {
+    width: 62.5%; }
+
+  .desk--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Ninths.
+   */
+  .desk--one-ninth {
+    width: 11.11111%; }
+
+  .desk--two-ninths {
+    width: 22.22222%; }
+
+  .desk--four-ninths {
+    width: 44.44444%; }
+
+  .desk--five-ninths {
+    width: 55.55556%; }
+
+  .desk--seven-ninths {
+    width: 77.77778%; }
+
+  .desk--eight-ninths {
+    width: 88.88889%; }
+
+  /**
+   * Tenths.
+   */
+  .desk--one-tenth {
+    width: 10%; }
+
+  .desk--three-tenths {
+    width: 30%; }
+
+  .desk--seven-tenths {
+    width: 70%; }
+
+  .desk--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths.
+   */
+  .desk--one-twelfth {
+    width: 8.33333%; }
+
+  .desk--five-twelfths {
+    width: 41.66667%; }
+
+  .desk--seven-twelfths {
+    width: 58.33333%; }
+
+  .desk--eleven-twelfths {
+    width: 91.66667%; } }
+/*------------------------------------*\
+    PUSH
+\*------------------------------------*/
+/**
+ * Push classes, to move grid items over to the right by certain amounts.
+ */
+/*------------------------------------*\
+    PULL
+\*------------------------------------*/
+/**
+ * Pull classes, to move grid items back to the left by certain amounts.
+ */
+/*------------------------------------*\
     VARS.SCSS
 \*------------------------------------*/
 /**
@@ -70,8 +1103,6 @@
 /**
  * Grayscale
  */
-/* Cru Gold */
-/* Cru Gold */
 /**
  * Additional Colors
  */
@@ -92,9 +1123,6 @@ body {
 
 .page--home .site-content {
   padding: 24px !important; }
-
-.site-content {
-  margin-top: 70px; }
 
 .pattern {
   clear: both;
@@ -152,6 +1180,24 @@ body {
   width: 100%;
   margin: 0 0.8em 0.5em 0; }
 
+.swatch--gold {
+  background-color: #f9b625; }
+
+.swatch--gray {
+  background-color: #666062; }
+
+.swatch--white {
+  background-color: #ffffff; }
+
+.swatch--orange {
+  background-color: #dd7d1b; }
+
+.swatch--bright-blue {
+  background-color: #3eb1c8; }
+
+.swatch--deep-blue {
+  background-color: #007398; }
+
 .swatch__details {
   padding-left: 0.5em; }
 
@@ -165,8 +1211,16 @@ code {
 .demo-header {
   padding-left: 24px;
   padding-right: 24px;
-  max-height: 68px;
-  border-bottom: 1px solid #ddd; }
+  width: 100%;
+  height: 68px;
+  background-color: #ffffff;
+  border-top: 3px solid #f9b625;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
   .demo-header nav {
     float: right;
     line-height: 68px; }
