@@ -2,7 +2,7 @@
     $LAYOUTS
 \*------------------------------------*/
 
-.base-layout, %base-layout{
+.layout-single-column, %layout-single-column{
 	width: 700px;
 	
 	margin-left: 20px;
@@ -10,14 +10,12 @@
 	clear: both;
 }
 
-.layout-single-column, %layout-single-column{
-	@extend %base-layout;
-}
-
 .layout--wide{
-	@extend %layout-single-column;
-	
 	width: 880px;
+	
+	margin-left: 20px;
+	margin-right: 20px;
+	clear: both;
 }
 
 .layout--full{
