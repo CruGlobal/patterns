@@ -1,1 +1,107 @@
-My Github Page
+---
+layout: fundamental
+title: Pattern Primer
+page-class: page--home
+---
+{% include header.html %}
+	<h1 class="flush--bottom">Website Style Guide</h1>
+	<ul class="nav  flush--bottom">
+		<li>
+			<a href="https://github.com/CruGlobal/patterns">View on Github</a>
+		</li>
+	</ul>
+	<hr />
+	
+<h2>Brand</h2>
+{% for post in site.categories.brand %}
+<section id="{{ site.id }}">
+  <h2 class="section-title">{{ post.title }}</h2>
+  {{ post.content }}
+</section>
+{% endfor %}
+
+<h2>Elements</h2>
+<section id="buttons">
+    <h3 class="section-title">Buttons</h3>	
+{% for post in site.categories.buttons %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="forms">
+    <h3 class="section-title">Forms</h3>	
+{% for post in site.categories.forms order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="headings">
+    <h3 class="section-title">Headings</h3>	
+{% for post in site.categories.headings order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="links">
+    <h3 class="section-title">Links</h3>	
+{% for post in site.categories.links order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="lists">
+    <h3 class="section-title">Lists</h3>	
+{% for post in site.categories.lists order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="media">
+    <h3 class="section-title">Media</h3>	
+{% for post in site.categories.media order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="tables">
+    <h3 class="section-title">Tables</h3>	
+{% for post in site.categories.tables order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+<section id="text">
+    <h3 class="section-title">Text</h3>	
+{% for post in site.categories.text order:ascending %}
+	{% include default.html %}
+{% endfor %}
+</section>
+
+
+<h2>Global</h2>
+<section id="{{ pattern.id }}">
+	{% for post in site.categories.head  %}
+		{% include details-only.html %}
+	{% endfor %}
+		
+	{% for post in site.categories.global  %}
+		{% include default.html %}
+	{% endfor %}
+</section>
+
+<h2>Layouts</h2>
+<section id="{{ pattern.id }}">
+{% for post in site.categories.layouts order:ascending %}
+	{% include grid.html %}
+{% endfor %}
+</section>
+
+<h2>Patterns</h2>
+{% for post in site.categories.patterns %}
+<section id="{{ pattern.id }}">
+  <h3 class="section-title">{{ post.title }}</h3>
+  {{ post.content }}
+</section>
+{% endfor %}
+
+{% include footer.html %}
