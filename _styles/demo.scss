@@ -5,10 +5,9 @@
  * This file is for use in the pattern library only. 
  */
  
- 
+@import "brackets.css/defaults";
+@import "brackets.css/generic/mixins"; 
 @import "vars";
-@import "elements/functions";
-@import "elements/mixins";
 
 body{
 	background-color: #f8f8f8;
@@ -16,10 +15,6 @@ body{
 
 .page--home .site-content{
 	padding: 24px !important;
-}
-
-.site-content{
-	margin-top: 70px;
 }
 
 .pattern{
@@ -51,8 +46,6 @@ body{
 	border-color: #dddddd;
 	border-radius: 3px 3px 0 0;
 }
-
-
 
 	.pattern__view{
 		padding: 10px;
@@ -89,6 +82,30 @@ body{
 		margin: 0 0.8em 0.5em 0;
 	}
 	
+	.swatch--gold{
+		background-color: $color-gold;
+	}
+	
+	.swatch--gray{
+		background-color: $color-gray;
+	}
+	
+	.swatch--white{
+		background-color: #ffffff;
+	}
+	
+	.swatch--orange{
+		background-color: $color-orange;
+	}
+	
+	.swatch--bright-blue{
+		background-color: $color-bright-blue;
+	}
+	
+	.swatch--deep-blue{
+		background-color: $color-deep-blue;
+	}
+	
 	.swatch__details{
 		padding-left: 0.5em;
 	}
@@ -107,10 +124,16 @@ code{
 	padding-left: 24px;
 	padding-right: 24px;
 	
-	max-height: 68px;
+	width: 100%;
+	height: 68px;
+	
+	background-color: #ffffff;
+	border-top: 3px solid $color-gold;
 
 	border-bottom: 1px solid #ddd;
-	
+
+	@include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
+
 	nav{
 		float: right;
 		line-height: 68px;
