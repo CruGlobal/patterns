@@ -3815,7 +3815,7 @@ input[disabled]:focus,
 .mr0 {
   margin-right: 0; }
 
-.mb0, .grid__item.media, .site-logo, .site-logo h1, .locations li > a {
+.mb0, .grid__item.media, .site-logo, a.ie-logo h1, .locations li > a {
   margin-bottom: 0; }
 
 .ml0, .post__list {
@@ -4683,6 +4683,9 @@ td {
     $HEADER
 \*------------------------------------*/
 .site-header {
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+  display: inline-block;
   position: fixed;
   top: 0;
   z-index: 505;
@@ -4709,17 +4712,18 @@ td {
   line-height: 81px;
   vertical-align: middle;
   text-align: center; }
-  .site-logo a {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: middle;
+
+a.ie-logo {
+  display: block;
+  overflow: hidden;
+  vertical-align: middle; }
+  a.ie-logo img {
+    position: absolute;
+    display: block;
     width: 74px;
     height: 54px;
-    background: url("assets/images/cru-logo.png");
-    background-image: url("assets/images/cru-logo.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain; }
+    margin-left: 17px;
+    margin-top: 17px; }
 
 /*------------------------------------*\
     $FOOTER
@@ -4923,7 +4927,8 @@ td {
 .site-nav {
   position: relative;
   z-index: 1;
-  margin-top: 4px; }
+  margin-top: 20px;
+  text-align: right; }
 
 /**
  *  Nav that includes Sign Up, Log In, and Search
@@ -4933,8 +4938,8 @@ td {
   vertical-align: middle;
   position: relative;
   z-index: 506;
-  margin-top: 5px;
-  text-align: left;
+  margin-top: 20px;
+  text-align: right;
   line-height: 1.26316; }
   .right-nav .search__options {
     display: none; }
