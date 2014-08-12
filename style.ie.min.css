@@ -5542,6 +5542,7 @@ a.ie-logo {
   opacity: 0.3; }
 
 .background-image {
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -5554,8 +5555,7 @@ a.ie-logo {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  -ms-behavior: url(/backgroundsize.min.htc); }
+  background-size: cover; }
 
 .article-details {
   bottom: -10px;
@@ -5636,7 +5636,7 @@ a.ie-logo {
   min-height: 60px;
   width: 100px;
   -webkit-tap-highlight-color: transparent;
-  z-index: 1; }
+  z-index: 1000000; }
   .slider-control i {
     color: #ccc;
     -webkit-transition-property: left;
