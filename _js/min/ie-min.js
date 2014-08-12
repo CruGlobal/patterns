@@ -1,0 +1,1 @@
+function isIE(e,t){var n="IE",i=document.createElement("B"),c=document.documentElement,d;return e&&(n+=" "+e,t&&(n=t+" "+n)),i.innerHTML="<!--[if "+n+']><b id="iecctest"></b><![endif]-->',c.appendChild(i),d=!!document.getElementById("iecctest"),c.removeChild(i),d}isIE(),isIE(6),isIE(7,"lte");
