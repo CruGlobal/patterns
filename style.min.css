@@ -4628,7 +4628,6 @@ tbody {
 
 .event {
   width: 100%;
-  color: white;
   border: 1px solid #e9e9e9;
   border-radius: 3px; }
   .event tbody, .event tr:last-child {
@@ -4996,7 +4995,7 @@ td {
     text-decoration: none; }
   @media screen and (min-width: 61.3125em) {
     .nav__link {
-      color: #444444;
+      color: #404040;
       -webkit-transition: all 0.25s ease-in-out;
       -moz-transition: all 0.25s ease-in-out;
       -ms-transition: all 0.25s ease-in-out;
@@ -5015,7 +5014,7 @@ td {
 .nav .nav__item > .dropdown, .post-meta .nav__item > .dropdown {
   position: fixed;
   left: 0;
-  background-color: #444444;
+  background-color: #404040;
   color: #ffffff;
   width: 100% !important;
   overflow: hidden;
@@ -5381,7 +5380,7 @@ td {
   border-bottom: none;
   border-radius: 1px; }
 .nav-is-open .primary-search--dropdown li a {
-  color: #444444; }
+  color: #404040; }
 .nav-is-open .primary-search--dropdown {
   border: 1px solid #f9b625;
   border-top: none; }
@@ -5395,7 +5394,7 @@ td {
   .ui-autocomplete li {
     list-style: none outside none; }
   .ui-autocomplete li a {
-    background-color: #444444;
+    background-color: #404040;
     color: white;
     display: block;
     padding: 5px 13px;
@@ -5426,6 +5425,8 @@ td {
     padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px; }
+  .tile__item > a:hover {
+    text-decoration: none; }
   .tile__item > ul {
     margin-bottom: 0;
     padding-top: 7px;
