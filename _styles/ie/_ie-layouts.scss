@@ -2,24 +2,25 @@
     $LAYOUTS
 \*------------------------------------*/
 
-.layout-single-column, %layout-single-column{
-	width: 700px;
-	
-	margin-left: 20px;
-	margin-right: 20px;
+%base{
+	margin: 0 auto;
 	clear: both;
 }
 
+.layout-single-column, %layout-single-column{
+	@extend %base;
+	 
+	width: 980px;
+}
+
 .layout--wide{
-	width: 880px;
+	@extend %base;
 	
-	margin-left: 20px;
-	margin-right: 20px;
-	clear: both;
+	width: 980px;
 }
 
 .layout--full{
 	@extend %centered;
 
-	width: 1100px;
+	width: 980px;
 }
