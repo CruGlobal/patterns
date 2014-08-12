@@ -25,6 +25,9 @@
     padding-bottom: half($base-margin);
     padding-left:   half($base-margin);
   }
+  & > a:hover {
+    text-decoration: none;
+  }
 
   & > ul {
     margin-bottom: 0;
