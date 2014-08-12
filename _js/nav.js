@@ -1,17 +1,30 @@
+/*
+ * Add selected class to dropdown item that has been previously selected
+ */
+
 $(".site--select").change(function() {
-  window.location = $(this).find("option:selected").val();
+    window.location = $(this).find("option:selected").val();
 });
 
 /* 
  * Desktop Nav Tab Stays Dark When Hovering Over Related Subnav
  */
 
- $("div.dropdown").hover(
- 	function() {
-  		$(this).prev("a").addClass("is-active");
-  	}, function() {
-  		$(this).prev("a").removeClass("is-active");
-	});
+$("div.dropdown").hover(
+    function() {
+        $(this).prev("a").addClass("is-active")
+    }, function() {
+        $(this).prev("a").removeClass("is-active");
+    });
+
+/*
+ * Desktop active class added to main nav item to inicate you are here
+ */
+
+$(function() {
+    $('nav a[href^="' + location.pathname + '"]').addClass('primary-link-active');
+});
+
 
 if($("html").hasClass("ie8")){
     $("a[title='Return to Homepage']").first().addClass('ie-logo').append('<img src="/assets/images/cru-logo.png" alt="" width="103" height="64">');
