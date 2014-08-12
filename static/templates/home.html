@@ -746,5 +746,41 @@ page-class: page--static
     </div><!-- End #js-inner-wrap -->
   </div><!-- End #js-outer-wrap -->
 
-  {% include footer.html %}
-		
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+  <script src="{{ site.root }}modernizr.min.js"></script>
+  <script src="{{ site.root }}search-options.min.js"></script>
+  <script src="{{ site.root }}masonry.min.js"></script>
+  <script src="{{ site.root }}images-loaded.min.js"></script>
+  <script src="{{ site.root }}apply-masonry.min.js"></script>
+  <script src="{{ site.root }}campus-locator.min.js"></script>
+  <script src="{{ site.root }}country-dropdown.min.js"></script>
+
+  <!--[if !IE]><!-->
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+    <script src="{{ site.root }}slider.min.js"></script>
+  <!--<![endif]-->
+
+  <!--[if gte IE 9]>
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+    <script src="{{ site.root }}slider.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="{{ site.root }}ie.min.js">
+    <script src="{{ site.root }}slider-ie.min.js"></script>
+  <![endif]-->
+
+  <!-- Patterns Site only -->
+  <script src="{{ site.root }}nav.min.js"></script>
+
+
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src='//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
