@@ -38,7 +38,17 @@ page-class: page--static
   </script>
 
 
-  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
+  <!--[if !IE]><!-->
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.ie.min.css">
+    <![endif]-->
 	
 	
   <link rel="shortcut icon" href="/icon.png">
