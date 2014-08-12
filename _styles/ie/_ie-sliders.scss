@@ -219,6 +219,13 @@ $slider-height: 396px;
   
 }
 
+.slider2 {
+    .article-details{
+        @include opacity(1);
+    }
+}
+
+
 %slider-transition{
     -webkit-transition: -webkit-transform 200ms;
     -moz-transition: -moz-transform 200ms;
