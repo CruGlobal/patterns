@@ -84,8 +84,9 @@
 @import "brackets.css/brackets";
 
 /**
- * Begin importing custom stuff here.
+ * Brackets files
  */
+@import "ie/ie-defaults"; // This file is referencing defaults.scss in brackets.
 @import "ie/ie-grids";
 /**
  * Primary site colors and fonts

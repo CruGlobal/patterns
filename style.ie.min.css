@@ -3960,7 +3960,133 @@ input[disabled]:focus,
   padding-left: 0; }
 
 /**
- * Begin importing custom stuff here.
+ * Brackets files
+ */
+/*------------------------------------*\
+    $SETTINGS
+\*------------------------------------*/
+/**
+ * Default variables. Redefine these in your `_vars.scss` file
+ */
+/**
+ * Set your base font size here. Define in pixels; the library will
+ * convert measurements to the appropriate units (rems or unitless
+ * for the line height).
+ */
+/**
+ * Would you like to show a baseline grid? This is handy during development.
+ */
+/*------------------------------------*\
+    $BORDER-BOX
+\*------------------------------------*/
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base font family
+ */
+/**
+ * Default colours for objects’ borders etc.
+ */
+/**
+ * Default value for edges and such
+ */
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Basic font sizes
+ */
+/**
+ * Headings
+ */
+/* Header sizes */
+/* Subheaders */
+/**
+ * Smalls
+ */
+/**
+ * Paragraphs
+ */
+/**
+ * Blockquotes
+ */
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/**
+ * This grid system is heavily based off the work of Harry Roberts of
+ * css-wizardry and inuit.css. Css-wizardry-grids provides the basic
+ * foundation and inspiration.
+ */
+/**
+ * If you are building a non-responsive site but would still like to use
+ * the girds, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the max width of your grids, if you set this to false, the wrapper will only
+ * center the content and apply a left/right padding
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like push and pull classes enabled? Keep in mind this adds a large
+ * amount of additional code
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+ * I have included variables for only one buttons, the default, since my wish
+ * is to not impose style. Feel free to add more variables. I have included
+ * a mixin to help you generate these easily
+ */
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/**
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
  */
 /*------------------------------------*\
     $GRIDS
