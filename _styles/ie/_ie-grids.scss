@@ -92,9 +92,7 @@
 
   padding-left:$gutter;                       /* [3] */
 
-  @if $mobile-first == true{
-    width:100%;                             /* [4] */
-  }
+
 
   @if $use-markup-fix != true{
     letter-spacing:normal;
@@ -154,3 +152,17 @@
     vertical-align:middle;
   }
 }
+
+
+/**
+ *
+ */
+
+.desk--one-third
+{ width: 33.3333333% !important;}
+
+.desk--one-half
+{ width: 50% !important;}
+
+.desk--one-quarter
+{ width: 25% !important;}
