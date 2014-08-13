@@ -3762,7 +3762,7 @@ input[disabled]:focus,
 .mr- {
   margin-right: 15px; }
 
-.mb- {
+.mb-, .post-subtitle, .post-meta {
   margin-bottom: 15px; }
 
 .ml- {
@@ -3806,7 +3806,7 @@ input[disabled]:focus,
  * Remove margins.
  */
 .m0, .media__body,
-.media__body > :last-child, .slider__item, .post-subtitle {
+.media__body > :last-child, .slider__item {
   margin: 0; }
 
 .mt0 {
@@ -4959,7 +4959,7 @@ td {
  **/
 @media screen and (min-width: 61.3125em) {
   .right-nav {
-    width: auto;
+    width: 50%;
     float: right;
     vertical-align: middle;
     position: relative;
@@ -5249,7 +5249,7 @@ td {
 
 /*-- added for you are here functionality, adds underline to main nav item --*/
 .primary-link-active {
-  text-decoration: underline !important; }
+  border-bottom: 3px solid #f9b625; }
 
 /*
 .navigation{
@@ -5845,6 +5845,7 @@ td {
   letter-spacing: -0.04em; }
 
 .post-subtitle {
+  line-height: 1.32857;
   word-wrap: break-word;
   letter-spacing: -0.02em; }
 
