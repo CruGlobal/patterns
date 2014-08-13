@@ -5115,13 +5115,13 @@ td {
   right: 0;
   border-color: transparent;
   overflow: scroll;
-  padding-top: 69px;
+  padding-top: 0px;
   height: 100%; }
 
 .site-nav {
   position: relative;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: right; }
 
 /**
@@ -5132,7 +5132,7 @@ td {
   vertical-align: middle;
   position: relative;
   z-index: 506;
-  margin-top: 20px;
+  margin-top: 5px;
   text-align: right;
   line-height: 1.26316; }
   .right-nav .search__options {
