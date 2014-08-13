@@ -5473,6 +5473,11 @@ td {
     width: 100%;
     display: block; }
 
+.tile-masonry .grid__item {
+  /*following properties fix problem where two halves stack instead of sit side-by-side */
+  margin-left: -1px;
+  transform: translateX(1px); }
+
 /**
  * Page components
  */

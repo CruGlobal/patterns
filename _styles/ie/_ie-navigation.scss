@@ -24,28 +24,28 @@
   height: 100%;
 }
 
-  .site-nav {
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-    text-align: right;
-  }
+.site-nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  text-align: right;
+}
 
 /**
  *  Nav that includes Sign Up, Log In, and Search
  **/
 
 .right-nav{
-    width: 980px;
-    vertical-align: middle;
+  width: 980px;
+  vertical-align: middle;
 
-    position: relative;
-    z-index: 506;
+  position: relative;
+  z-index: 506;
 
-    margin-top: 20px;
+  margin-top: 20px;
 
-    text-align: right;
-    line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
+  text-align: right;
+  line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
 
   .search__options{
     display: none;
@@ -91,7 +91,7 @@
   left: 0;
   background-color: $color-dark-gray;
   color: #ffffff;
-  width: 980px !important;
+  width: 100%;
   overflow: hidden;
   max-height: 0;
   height: 0;
