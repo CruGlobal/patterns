@@ -8,11 +8,10 @@
   float: none;
   display: inline-block;
   vertical-align: middle;
-  max-width: 1220px;
   top: 0;
   border-top: 3px solid;
 
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   z-index: 505;
   right: 0;
@@ -29,6 +28,9 @@
   z-index: 1;
   margin-top: 5px;
   text-align: right;
+
+  width: 980px;
+  margin: 0 auto;
 }
 
 /**
@@ -37,6 +39,8 @@
 
 .right-nav{
   width: 980px;
+  margin: 0 auto;
+
   vertical-align: middle;
 
   position: relative;
@@ -91,7 +95,7 @@
   left: 0;
   background-color: $color-dark-gray;
   color: #ffffff;
-  width: 100%;
+  width: 980px;
   overflow: hidden;
   max-height: 0;
   height: 0;
@@ -130,6 +134,7 @@
   overflow: visible;
   opacity: 1;
 
+  margin: 0 auto !important;
   @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
 
   /* Hover On */
@@ -137,6 +142,13 @@
 
   @include vendor(transition, all 0.3s 0.2s ease );
 
+}
+
+.dropdown{
+  width: 100% !important;
+  margin: 0 auto !important;
+  text-align: center;
+  float: right;
 }
 
 .nav li.dropdown__item:hover,

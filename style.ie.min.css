@@ -4891,6 +4891,7 @@ td {
   border-top-width: 3px;
   border-top-style: solid;
   border-top-color: #f9b625;
+  margin: 0 auto;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -4898,26 +4899,31 @@ td {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 
 .site-logo {
-  display: inline-block;
-  float: left;
-  width: 10%;
+  display: block;
+  float: none;
+  width: 980px;
+  margin: 0 auto;
   height: 81px;
   padding-left: 12px;
   padding-right: 12px;
   line-height: 81px;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .site-logo a {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
-    width: 74px;
-    height: 54px;
+    width: 103px;
+    height: 64px;
     background: url("assets/images/cru-logo.png");
-    background-image: url("assets/images/cru-logo.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain; }
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5px; }
 
 /*------------------------------------*\
     $FOOTER
@@ -5106,10 +5112,9 @@ td {
   float: none;
   display: inline-block;
   vertical-align: middle;
-  max-width: 1220px;
   top: 0;
   border-top: 3px solid;
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   z-index: 505;
   right: 0;
@@ -5122,13 +5127,16 @@ td {
   position: relative;
   z-index: 1;
   margin-top: 5px;
-  text-align: right; }
+  text-align: right;
+  width: 980px;
+  margin: 0 auto; }
 
 /**
  *  Nav that includes Sign Up, Log In, and Search
  **/
 .right-nav {
   width: 980px;
+  margin: 0 auto;
   vertical-align: middle;
   position: relative;
   z-index: 506;
@@ -5172,7 +5180,7 @@ td {
   left: 0;
   background-color: #404040;
   color: #ffffff;
-  width: 100%;
+  width: 980px;
   overflow: hidden;
   max-height: 0;
   height: 0;
@@ -5207,6 +5215,7 @@ td {
   height: auto;
   overflow: visible;
   opacity: 1;
+  margin: 0 auto !important;
   -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
   -moz-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
   -ms-box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
@@ -5219,6 +5228,12 @@ td {
   -ms-transition: all 0.3s 0.2s ease;
   -o-transition: all 0.3s 0.2s ease;
   transition: all 0.3s 0.2s ease; }
+
+.dropdown {
+  width: 100% !important;
+  margin: 0 auto !important;
+  text-align: center;
+  float: right; }
 
 .nav li.dropdown__item:hover:after, .post-meta li.dropdown__item:hover:after,
 .nav li.dropdown__item:focus:after,
