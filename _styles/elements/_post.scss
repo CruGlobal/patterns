@@ -20,7 +20,7 @@
 
     .post-subtitle{
         @extend %mb-;
-      line-height: $paragraph-line-height/.9;
+        line-height: ($paragraph-line-height/$paragraph-font-size)*.9;
         word-wrap: break-word;    
         letter-spacing: -0.02em;
     }
