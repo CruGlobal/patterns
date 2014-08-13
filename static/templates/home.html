@@ -38,7 +38,17 @@ page-class: page--static
   </script>
 
 
-  <link rel="stylesheet" href="{{ site.root }}style.min.css">	
+  <!--[if !IE]><!-->
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <!--<![endif]-->
+
+    <!--[if gte IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}style.ie.min.css">
+    <![endif]-->
 	
 	
   <link rel="shortcut icon" href="/icon.png">
@@ -501,20 +511,20 @@ page-class: page--static
     </div>
     <!-- End hompage social bar-->
     
-    <!-- Section-title wrapper on homepage to add margin -->
-    <div class="mb  ps-">
-      
-      <!-- Section-title -->
-      <div class="section-title  center-block">
-        <h2 class="section-title__item  display--inline-block">Tristique Malesuada Cursus Fusce Dapibus</h2>
-        <div class="section-title__item  display--inline-block  inline-btn  pl-">
-          <button class="button  button--secondary  button--small">.button--secondary.button--small</button>
+
+
+    <!-- Start of the 'Tag Line' -->
+    <div class="layout-single-column  layout--wide">
+      <div class="grid js-masonry">
+        <div class="grid__item one-whole text--center  mt">
+          <div class="tile__item center-block">
+            <a href="#"><h4>Cru is a caring community passionate about connecting people to Jesus Christ</h4></a>
+          </div>
         </div>
-      </div>
-      <!-- End section-title -->
-      
+      </div>  
     </div>
-    
+    <!-- End of the 'Tag Line' -->
+
     <!-- Primary wrapper for home page-->
     <div class="layout-single-column  layout--wide">
       
@@ -736,5 +746,41 @@ page-class: page--static
     </div><!-- End #js-inner-wrap -->
   </div><!-- End #js-outer-wrap -->
 
-  {% include footer.html %}
-		
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+  <script src="{{ site.root }}modernizr.min.js"></script>
+  <script src="{{ site.root }}search-options.min.js"></script>
+  <script src="{{ site.root }}masonry.min.js"></script>
+  <script src="{{ site.root }}images-loaded.min.js"></script>
+  <script src="{{ site.root }}apply-masonry.min.js"></script>
+  <script src="{{ site.root }}campus-locator.min.js"></script>
+  <script src="{{ site.root }}country-dropdown.min.js"></script>
+
+  <!--[if !IE]><!-->
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+    <script src="{{ site.root }}slider.min.js"></script>
+  <!--<![endif]-->
+
+  <!--[if gte IE 9]>
+    <script src="{{ site.root }}offcanvas.min.js"></script>
+    <script src="{{ site.root }}slider.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="{{ site.root }}ie.min.js">
+    <script src="{{ site.root }}slider-ie.min.js"></script>
+  <![endif]-->
+
+  <!-- Patterns Site only -->
+  <script src="{{ site.root }}nav.min.js"></script>
+
+
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src='//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

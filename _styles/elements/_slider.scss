@@ -173,6 +173,7 @@ $slider-height: 396px;
     background-repeat: no-repeat;
 
     @include vendor(background-size, cover);
+    -ms-behavior: url(/backgroundsize.min.htc);
 }
 
 .article-details{	
@@ -182,11 +183,10 @@ $slider-height: 396px;
 
     bottom: -10px;
     text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-    border: 0 none;
-    background: rgba(0,0,0,0.7);
+    background: rgb(0, 0, 0);
 
 
-    @include opacity(0);
+    @include opacity(1);
     @include vendor(transition-property, opacity, bottom, color);
     @include vendor(transition-duration, 250ms);
     @include vendor(transition-delay, 62ms, 62ms,0);
