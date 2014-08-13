@@ -81,7 +81,7 @@
 
 .right-nav{
     @include mq(981px) {
-        width: auto;
+        width: 50%;
         float: right;
         vertical-align: middle;
 

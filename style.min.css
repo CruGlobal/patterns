@@ -3762,7 +3762,7 @@ input[disabled]:focus,
 .mr- {
   margin-right: 15px; }
 
-.mb- {
+.mb-, .post-subtitle, .post-meta {
   margin-bottom: 15px; }
 
 .ml- {
@@ -3806,7 +3806,7 @@ input[disabled]:focus,
  * Remove margins.
  */
 .m0, .media__body,
-.media__body > :last-child, .slider__item, .post-subtitle {
+.media__body > :last-child, .slider__item {
   margin: 0; }
 
 .mt0 {
@@ -4959,7 +4959,7 @@ td {
  **/
 @media screen and (min-width: 61.3125em) {
   .right-nav {
-    width: auto;
+    width: 50%;
     float: right;
     vertical-align: middle;
     position: relative;
@@ -5473,6 +5473,11 @@ td {
     width: 100%;
     display: block; }
 
+.tile-masonry .grid__item {
+  /*following properties fix problem where two halves stack instead of sit side-by-side */
+  margin-left: -1px;
+  transform: translateX(1px); }
+
 /**
  * Page components
  */
@@ -5840,6 +5845,7 @@ td {
   letter-spacing: -0.04em; }
 
 .post-subtitle {
+  line-height: 34.44444px;
   word-wrap: break-word;
   letter-spacing: -0.02em; }
 

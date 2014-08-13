@@ -19,8 +19,8 @@
 }
 
     .post-subtitle{
-        @extend %m0;
-        
+        @extend %mb-;
+      line-height: $paragraph-line-height/.9;
         word-wrap: break-word;    
         letter-spacing: -0.02em;
     }
@@ -31,6 +31,8 @@
      */
     .post-meta{
         @extend .nav;
+
+        @extend %mb-;
 
     	color: $color-gray;
     	line-height: 1.6;
