@@ -428,5 +428,5 @@
 
 /*-- added for you are here functionality, adds underline to main nav item --*/
 .primary-link-active {
-  text-decoration: underline !important;
+  border-bottom: 3px solid $color-gold;
 }
