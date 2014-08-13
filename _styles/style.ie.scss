@@ -99,7 +99,6 @@
  * Overall site and layout
  */
 @import "elements/page";
-//@import "elements/layouts";
 @import "ie/ie-layouts";
 
 
@@ -114,6 +113,7 @@
 @import "elements/images";
 
 @import "ie/ie-header";
+//@import "elements/header";
 @import "elements/footer";
 @import "elements/social";
 

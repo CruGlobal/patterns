@@ -26,6 +26,6 @@ $(function() {
 });
 
 
-if($("html").hasClass("ie8")){
-    $("a[title='Return to Homepage']").first().addClass('ie-logo').append('<img src="/assets/images/cru-logo.png" alt="" width="103" height="64">');
-}
+//if($("html").hasClass("ie8")){
+//    $("a[title='Return to Homepage']").first().addClass('ie-logo').append('<img src="/assets/images/cru-logo.png" alt="" width="103" height="64">');
+//}
