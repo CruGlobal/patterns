@@ -364,9 +364,9 @@ $(function() {
   Headroom.options = {
     tolerance : {
       up : 10,
-      down : 10
+      down : 0
     },
-    offset : 100,
+    offset : 85,
     scroller: window,
     classes : {
       pinned : 'is-visible',
