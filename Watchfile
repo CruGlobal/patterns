@@ -2,4 +2,4 @@
 
 # run sass from console w/o gui... run the command below
 # sh Watchfile
-sass --watch _styles/style.scss:style.min.css _styles/style.ie.scss:style.ie.min.css
+`sass --watch _styles/style.scss:style.min.css _styles/style.ie.scss:style.ie.min.css`

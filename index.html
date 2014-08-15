@@ -12,12 +12,12 @@ page-class: page--home
 	</ul>
 	<hr />
 	
-<h2>Brand</h2>
 {% for post in site.categories.brand %}
 <section id="{{ site.id }}">
   <h2 class="section-title">{{ post.title }}</h2>
   {{ post.content }}
 </section>
+<hr />
 {% endfor %}
 
 <h2>Elements</h2>
@@ -27,56 +27,56 @@ page-class: page--home
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="forms">
     <h3 class="section-title">Forms</h3>	
 {% for post in site.categories.forms order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="headings">
     <h3 class="section-title">Headings</h3>	
 {% for post in site.categories.headings order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="links">
     <h3 class="section-title">Links</h3>	
 {% for post in site.categories.links order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="lists">
     <h3 class="section-title">Lists</h3>	
 {% for post in site.categories.lists order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="media">
     <h3 class="section-title">Media</h3>	
 {% for post in site.categories.media order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="tables">
     <h3 class="section-title">Tables</h3>	
 {% for post in site.categories.tables order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 <section id="text">
     <h3 class="section-title">Text</h3>	
 {% for post in site.categories.text order:ascending %}
 	{% include default.html %}
 {% endfor %}
 </section>
-
+<hr />
 
 <h2>Global</h2>
 <section id="{{ pattern.id }}">
@@ -88,20 +88,21 @@ page-class: page--home
 		{% include default.html %}
 	{% endfor %}
 </section>
-
+<hr />
 <h2>Layouts</h2>
 <section id="{{ pattern.id }}">
 {% for post in site.categories.layouts order:ascending %}
 	{% include grid.html %}
 {% endfor %}
 </section>
-
+<hr />
 <h2>Patterns</h2>
 {% for post in site.categories.patterns %}
 <section id="{{ pattern.id }}">
   <h3 class="section-title">{{ post.title }}</h3>
   {{ post.content }}
 </section>
+<hr />
 {% endfor %}
 
 {% include footer.html %}

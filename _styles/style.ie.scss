@@ -84,9 +84,10 @@
 @import "brackets.css/brackets";
 
 /**
- * Begin importing custom stuff here.
+ * Brackets files
  */
-
+@import "ie/ie-defaults"; // This file is referencing defaults.scss in brackets.
+@import "ie/ie-grids";
 /**
  * Primary site colors and fonts
  */
@@ -98,7 +99,7 @@
  * Overall site and layout
  */
 @import "elements/page";
-@import "elements/layouts";
+@import "ie/ie-layouts";
 
 
 /**
@@ -111,7 +112,8 @@
 @import "elements/video";
 @import "elements/images";
 
-@import "elements/header";
+@import "ie/ie-header";
+//@import "elements/header";
 @import "elements/footer";
 @import "elements/social";
 
@@ -128,7 +130,7 @@
  */
 @import "elements/campus-locator";
 @import "elements/country-list";
-@import "elements/slider";
+@import "ie/ie-sliders";
 
 @import "elements/post";
 @import "elements/post-images";
@@ -147,7 +149,6 @@
 @import "elements/animations";
 @import "ie/ie-helpers";
 @import "elements/debug";
-
 
 
 

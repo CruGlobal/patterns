@@ -2,6 +2,10 @@
 page-class: page--static
 ---
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html>         <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -56,6 +60,8 @@ page-class: page--static
   <!-- Load Javascipt libraries the need to be at the top of the page -->
   <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
   <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
+
+  <script src="{{ site.root }}modernizr.min.js"></script>
 </head>
 <!-- Custom class on the body -->
 <body class="page  page--article">
@@ -422,17 +428,6 @@ page-class: page--static
 
             <article class="post-article  color-white box-shadow--thin layout--full">
 
-              <!-- This is an optional image space. Only displayed if an image is placed there.-->
-              <!-- COVER IMAGE COMPONENT -->
-              <!-- Article main image -- full width version -->
-            	<div class="layout-background-fill">
-                <div class="cover-image-mask">
-                	<div class="cover-image" style="background-image:url(http://www.cru.org/ucmcons/groups/public/@shared-lh-comm-web/documents/stillimage/~extract/CMS1_057928~1~staticrendition/cru640x360.jpg);"  height=""></div>
-                </div>
-            	</div>
-              <!-- End article main image -- full width version -->
-
-
               <!-- ARTICLE HEADLINE COMPONENT -->
             	<header class="post__headline  layout-single-column">
 
@@ -685,7 +680,6 @@ page-class: page--static
 
 
 
-    <script src="{{ site.root }}modernizr.min.js"></script>
     <script src="{{ site.root }}slider.min.js"></script>
     <script src="{{ site.root }}search-options.min.js"></script>
 
@@ -695,6 +689,10 @@ page-class: page--static
 
     <!--[if gte IE 9]>
         <script src="{{ site.root }}offcanvas.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="{{ site.root }}ie.min.js">
     <![endif]-->
 
 
