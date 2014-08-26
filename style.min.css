@@ -5733,9 +5733,9 @@ td {
     /* 6 */
     /* 6 */
     /* 7 */
-    padding: 8px 14px 6px;
+    padding: 14px 14px 6px;
     /* 9 */
-    padding: parseInt(8px)/19rem parseInt(14px)/19rem parseInt(6px)/19rem;
+    padding: parseInt(14px)/19rem parseInt(14px)/19rem parseInt(6px)/19rem;
     /* 9 */
     font-size: 22px;
     font-size: 1.15789rem;

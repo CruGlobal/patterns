@@ -198,7 +198,7 @@ $slider-height: 396px;
         
         color: $color-white;
 
-        @include rem-calc(padding, 8px 14px 6px);
+        @include rem-calc(padding, 14px 14px 6px);
         @include font-size(22px, false);
         @include vendor(transition, color .15s linear);
 
