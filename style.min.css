@@ -4459,21 +4459,21 @@ q {
     border-color: #c28605;
     color: white; }
 
-.button--secondary {
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
+  background-color: #514c4e;
+  border-color: #393637;
+  color: white; }
+.button--secondary, .button--secondary:active, .button--secondary:focus {
   background-color: #666062;
   border-color: #595455;
   color: white; }
-  .button--secondary:active, .button--secondary.active {
+  .button--secondary:active, .button--secondary.active, .button--secondary:active:active, .button--secondary:active.active, .button--secondary:focus:active, .button--secondary:focus.active {
     background-image: none; }
-  .button--secondary.disabled, .button--secondary.disabled:hover, .button--secondary.disabled:focus, .button--secondary.disabled:active, .button--secondary.disabled.active, .button--secondary[disabled], .button--secondary[disabled]:hover, .button--secondary[disabled]:focus, .button--secondary[disabled]:active, .button--secondary[disabled].active, fieldset[disabled] .button--secondary, fieldset[disabled] .button--secondary:hover, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary.active {
+  .button--secondary.disabled, .button--secondary.disabled:hover, .button--secondary.disabled:focus, .button--secondary.disabled:active, .button--secondary.disabled.active, .button--secondary[disabled], .button--secondary[disabled]:hover, .button--secondary[disabled]:focus, .button--secondary[disabled]:active, .button--secondary[disabled].active, fieldset[disabled] .button--secondary, fieldset[disabled] .button--secondary:hover, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary.active, .button--secondary:active.disabled, .button--secondary:active.disabled:hover, .button--secondary:active.disabled:focus, .button--secondary:active.disabled:active, .button--secondary:active.disabled.active, .button--secondary:active[disabled], .button--secondary:active[disabled]:hover, .button--secondary:active[disabled]:focus, .button--secondary:active[disabled]:active, .button--secondary:active[disabled].active, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary:active:hover, fieldset[disabled] .button--secondary:active:focus, fieldset[disabled] .button--secondary:active:active, fieldset[disabled] .button--secondary:active.active, .button--secondary:focus.disabled, .button--secondary:focus.disabled:hover, .button--secondary:focus.disabled:focus, .button--secondary:focus.disabled:active, .button--secondary:focus.disabled.active, .button--secondary:focus[disabled], .button--secondary:focus[disabled]:hover, .button--secondary:focus[disabled]:focus, .button--secondary:focus[disabled]:active, .button--secondary:focus[disabled].active, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:focus:hover, fieldset[disabled] .button--secondary:focus:focus, fieldset[disabled] .button--secondary:focus:active, fieldset[disabled] .button--secondary:focus.active {
     background-color: #666062;
     border-color: #595455;
     cursor: not-allowed;
     pointer-events: none; }
-  .button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
-    background-color: #514c4e;
-    border-color: #393637;
-    color: white; }
 
 .button--subtle, input.button--subtle {
   color: #6d6e71;

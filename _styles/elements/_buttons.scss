@@ -21,13 +21,23 @@
 }
 
 .button--primary{ 	
-	@include btn($btn-primary-bg, $btn-primary-border, $color-white);
     @include btn-effects(darken($btn-primary-bg, 8%), darken($btn-primary-border, 12%), $color-white);
+    
+	&, 
+	&:active, 
+	&:focus{
+    	@include btn($btn-primary-bg, $btn-primary-border, $color-white);    
+	}
 }
 
 .button--secondary{
-	@include btn($btn-alt-bg, $btn-alt-border, $color-white);
     @include btn-effects(darken($btn-alt-bg, 8%), darken($btn-alt-border, 12%), $color-white);
+    
+	&, 
+	&:active, 
+	&:focus{
+    	@include btn($btn-alt-bg, $btn-alt-border, $color-white);
+	}
 }
 
 .button--subtle, input.button--subtle{
