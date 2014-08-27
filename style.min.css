@@ -3979,8 +3979,8 @@ input[disabled]:focus,
  */
 @font-face {
   font-family: 'cruicons';
-  src: url("assets/fonts/cruicons.eot?13550619");
-  src: url("assets/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("assets/fonts/cruicons.woff?13550619") format("woff"), url("assets/fonts/cruicons.ttf?13550619") format("truetype"), url("assets/fonts/cruicons.svg?13550619#cruicons") format("svg");
+  src: url("fonts/cruicons.eot?13550619");
+  src: url("fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("fonts/cruicons.woff?13550619") format("woff"), url("fonts/cruicons.ttf?13550619") format("truetype"), url("fonts/cruicons.svg?13550619#cruicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -4443,37 +4443,37 @@ q {
     margin-bottom: 7px;
     margin-bottom: 0rem; }
 
-.button--primary {
+.button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
+  background-color: #efa507;
+  border-color: #c28605;
+  color: white; }
+.button--primary, .button--primary:active, .button--primary:focus {
   background-color: #f9b625;
   border-color: #f8ae0c;
-  color: white; }
-  .button--primary:active, .button--primary.active {
+  color: white !important; }
+  .button--primary:active, .button--primary.active, .button--primary:active:active, .button--primary:active.active, .button--primary:focus:active, .button--primary:focus.active {
     background-image: none; }
-  .button--primary.disabled, .button--primary.disabled:hover, .button--primary.disabled:focus, .button--primary.disabled:active, .button--primary.disabled.active, .button--primary[disabled], .button--primary[disabled]:hover, .button--primary[disabled]:focus, .button--primary[disabled]:active, .button--primary[disabled].active, fieldset[disabled] .button--primary, fieldset[disabled] .button--primary:hover, fieldset[disabled] .button--primary:focus, fieldset[disabled] .button--primary:active, fieldset[disabled] .button--primary.active {
+  .button--primary.disabled, .button--primary.disabled:hover, .button--primary.disabled:focus, .button--primary.disabled:active, .button--primary.disabled.active, .button--primary[disabled], .button--primary[disabled]:hover, .button--primary[disabled]:focus, .button--primary[disabled]:active, .button--primary[disabled].active, fieldset[disabled] .button--primary, fieldset[disabled] .button--primary:hover, fieldset[disabled] .button--primary:focus, fieldset[disabled] .button--primary:active, fieldset[disabled] .button--primary.active, .button--primary:active.disabled, .button--primary:active.disabled:hover, .button--primary:active.disabled:focus, .button--primary:active.disabled:active, .button--primary:active.disabled.active, .button--primary:active[disabled], .button--primary:active[disabled]:hover, .button--primary:active[disabled]:focus, .button--primary:active[disabled]:active, .button--primary:active[disabled].active, fieldset[disabled] .button--primary:active, fieldset[disabled] .button--primary:active:hover, fieldset[disabled] .button--primary:active:focus, fieldset[disabled] .button--primary:active:active, fieldset[disabled] .button--primary:active.active, .button--primary:focus.disabled, .button--primary:focus.disabled:hover, .button--primary:focus.disabled:focus, .button--primary:focus.disabled:active, .button--primary:focus.disabled.active, .button--primary:focus[disabled], .button--primary:focus[disabled]:hover, .button--primary:focus[disabled]:focus, .button--primary:focus[disabled]:active, .button--primary:focus[disabled].active, fieldset[disabled] .button--primary:focus, fieldset[disabled] .button--primary:focus:hover, fieldset[disabled] .button--primary:focus:focus, fieldset[disabled] .button--primary:focus:active, fieldset[disabled] .button--primary:focus.active {
     background-color: #f9b625;
     border-color: #f8ae0c;
     cursor: not-allowed;
     pointer-events: none; }
-  .button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
-    background-color: #efa507;
-    border-color: #c28605;
-    color: white; }
 
-.button--secondary {
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
+  background-color: #514c4e;
+  border-color: #393637;
+  color: white; }
+.button--secondary, .button--secondary:active, .button--secondary:focus {
   background-color: #666062;
   border-color: #595455;
-  color: white; }
-  .button--secondary:active, .button--secondary.active {
+  color: white !important; }
+  .button--secondary:active, .button--secondary.active, .button--secondary:active:active, .button--secondary:active.active, .button--secondary:focus:active, .button--secondary:focus.active {
     background-image: none; }
-  .button--secondary.disabled, .button--secondary.disabled:hover, .button--secondary.disabled:focus, .button--secondary.disabled:active, .button--secondary.disabled.active, .button--secondary[disabled], .button--secondary[disabled]:hover, .button--secondary[disabled]:focus, .button--secondary[disabled]:active, .button--secondary[disabled].active, fieldset[disabled] .button--secondary, fieldset[disabled] .button--secondary:hover, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary.active {
+  .button--secondary.disabled, .button--secondary.disabled:hover, .button--secondary.disabled:focus, .button--secondary.disabled:active, .button--secondary.disabled.active, .button--secondary[disabled], .button--secondary[disabled]:hover, .button--secondary[disabled]:focus, .button--secondary[disabled]:active, .button--secondary[disabled].active, fieldset[disabled] .button--secondary, fieldset[disabled] .button--secondary:hover, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary.active, .button--secondary:active.disabled, .button--secondary:active.disabled:hover, .button--secondary:active.disabled:focus, .button--secondary:active.disabled:active, .button--secondary:active.disabled.active, .button--secondary:active[disabled], .button--secondary:active[disabled]:hover, .button--secondary:active[disabled]:focus, .button--secondary:active[disabled]:active, .button--secondary:active[disabled].active, fieldset[disabled] .button--secondary:active, fieldset[disabled] .button--secondary:active:hover, fieldset[disabled] .button--secondary:active:focus, fieldset[disabled] .button--secondary:active:active, fieldset[disabled] .button--secondary:active.active, .button--secondary:focus.disabled, .button--secondary:focus.disabled:hover, .button--secondary:focus.disabled:focus, .button--secondary:focus.disabled:active, .button--secondary:focus.disabled.active, .button--secondary:focus[disabled], .button--secondary:focus[disabled]:hover, .button--secondary:focus[disabled]:focus, .button--secondary:focus[disabled]:active, .button--secondary:focus[disabled].active, fieldset[disabled] .button--secondary:focus, fieldset[disabled] .button--secondary:focus:hover, fieldset[disabled] .button--secondary:focus:focus, fieldset[disabled] .button--secondary:focus:active, fieldset[disabled] .button--secondary:focus.active {
     background-color: #666062;
     border-color: #595455;
     cursor: not-allowed;
     pointer-events: none; }
-  .button--secondary:hover, .button--secondary:focus, .button--secondary:active, .button--secondary.active, .open .button--secondary.dropdown-toggle {
-    background-color: #514c4e;
-    border-color: #393637;
-    color: white; }
 
 .button--subtle, input.button--subtle {
   color: #6d6e71;
@@ -4719,8 +4719,8 @@ td {
     vertical-align: middle;
     width: 74px;
     height: 54px;
-    background: url("assets/images/cru-logo.png");
-    background-image: url("assets/images/cru-logo.svg");
+    background: url("images/cru-logo.png");
+    background-image: url("images/cru-logo.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain; }
