@@ -1199,21 +1199,6 @@ body {
 .swatch--deep-blue {
   background-color: #007398; }
 
-.swatch--gray-background {
-  background-color: #f7f7f7; }
-
-.swatch--gray-keyline {
-  background-color: #e9e9e9; }
-
-.swatch--gray-dark {
-  background-color: #4c4749; }
-
-.swatch--gray-light {
-  background-color: #e2e2e2; }
-
-.swatch--text {
-  background-color: #353535; }
-
 .swatch__details {
   padding-left: 0.5em; }
 
@@ -1248,8 +1233,8 @@ code {
   display: inline-block;
   width: 78px;
   height: 54px;
-  background: url("/images/cru-logo.png");
-  background-image: url("/images/cru-logo.svg");
+  background: url("images/cru-logo.png");
+  background-image: url("images/cru-logo.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain; }

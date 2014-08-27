@@ -183,13 +183,14 @@ $slider-height: 396px;
 
     bottom: -10px;
     text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-    background: rgb(0, 0, 0);
+    background-color: black;
+    background-color: rgba(0,0,0,0.7);
 
 
-    @include opacity(1);
+    @include opacity(0);
     @include vendor(transition-property, opacity, bottom, color);
     @include vendor(transition-duration, 250ms);
-    @include vendor(transition-delay, 62ms, 62ms,0);
+    @include vendor(transition-delay, 340ms, 340ms, 0);
 
 
     h3{
@@ -198,7 +199,7 @@ $slider-height: 396px;
         
         color: $color-white;
 
-        @include rem-calc(padding, 8px 14px 6px);
+        @include rem-calc(padding, 13px 14px 6px);
         @include font-size(22px, false);
         @include vendor(transition, color .15s linear);
 
@@ -214,7 +215,7 @@ $slider-height: 396px;
   .article-details{
     bottom: 0;
     
-    @include vendor(opacity, 1);
+    @include opacity(1);
   }
   
 }
