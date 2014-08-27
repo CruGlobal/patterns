@@ -370,6 +370,10 @@
  * framework. There is no need to change any of these functions
  */
 /**
+ * This allows us to use the rem-calc mixin for shorthand 
+ * conversions.
+ */
+/**
  * Use this em function instead of the other
  */
 /*------------------------------------*\
@@ -507,6 +511,7 @@
 /**
  * Can handle shorthand calculations
  * Do not change the variable set
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
  */
 /**
  * Space elements by an amount based on your magic number. Pass in the property
@@ -2242,7 +2247,7 @@ label,
   /* 7 */
   margin-bottom: 6px;
   /* 9 */
-  margin-bottom: parseInt(6px)/19rem;
+  margin-bottom: 0.31579rem;
   /* 9 */ }
 
 /**
@@ -2265,7 +2270,7 @@ input + .additional {
   /* 7 */
   margin-top: 6px;
   /* 9 */
-  margin-top: parseInt(6px)/19rem;
+  margin-top: 0.31579rem;
   /* 9 */ }
 
 .additional, .check-list > li {
@@ -2277,7 +2282,7 @@ input + .additional {
   /* 7 */
   margin-bottom: 12px;
   /* 9 */
-  margin-bottom: parseInt(12px)/19rem;
+  margin-bottom: 0.63158rem;
   /* 9 */ }
 
 /*
@@ -3229,7 +3234,7 @@ input + .additional {
   /* 7 */
   padding: 6px 18px;
   /* 9 */
-  padding: parseInt(6px)/19rem parseInt(18px)/19rem;
+  padding: 0.31579rem 0.94737rem;
   /* 9 */
   font-size: 16px;
   font-size: 0.84211rem;
@@ -3241,7 +3246,7 @@ input + .additional {
   /* 7 */
   border-radius: 2px;
   /* 9 */
-  border-radius: parseInt(2px)/19rem;
+  border-radius: 0.10526rem;
   /* 9 */
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -3294,7 +3299,7 @@ input + .additional {
     /* 7 */
     padding: 2px 6px;
     /* 9 */
-    padding: parseInt(2px)/19rem parseInt(6px)/19rem;
+    padding: 0.10526rem 0.31579rem;
     /* 9 */ }
   .button--large {
     line-height: 2;
@@ -3310,7 +3315,7 @@ input + .additional {
     /* 7 */
     padding: 12px 26px;
     /* 9 */
-    padding: parseInt(12px)/19rem parseInt(26px)/19rem;
+    padding: 0.63158rem 1.36842rem;
     /* 9 */ }
   .button--full {
     width: 100%;
@@ -3328,7 +3333,7 @@ input + .additional {
     /* 7 */
     font-size: 30px;
     /* 9 */
-    font-size: parseInt(30px)/19rem;
+    font-size: 1.57895rem;
     /* 9 */ }
   .button--beta {
     /* 3 */
@@ -3339,7 +3344,7 @@ input + .additional {
     /* 7 */
     font-size: 24px;
     /* 9 */
-    font-size: parseInt(24px)/19rem;
+    font-size: 1.26316rem;
     /* 9 */ }
   .button--gamma {
     /* 3 */
@@ -3350,7 +3355,7 @@ input + .additional {
     /* 7 */
     font-size: 16px;
     /* 9 */
-    font-size: parseInt(16px)/19rem;
+    font-size: 0.84211rem;
     /* 9 */ }
   .button--positive {
     background-color: #4a993e;
@@ -3596,7 +3601,7 @@ input[disabled]:focus,
   /* 7 */
   padding: 4px 14px;
   /* 9 */
-  padding: parseInt(4px)/19rem parseInt(14px)/19rem;
+  padding: 0.21053rem 0.73684rem;
   /* 9 */
   /* 3 */
   /* 3 */
@@ -3610,7 +3615,7 @@ input[disabled]:focus,
   /* 7 */
   margin: 8px 4px;
   /* 9 */
-  margin: parseInt(8px)/19rem parseInt(4px)/19rem;
+  margin: 0.42105rem 0.21053rem;
   /* 9 */ }
   .pagination li a:hover, .pagination li a:focus {
     background: #f0f0f0;
@@ -4254,7 +4259,7 @@ hr {
   /* 7 */
   top: -25px;
   /* 9 */
-  top: parseInt(-25px)/19rem;
+  top: -1.31579rem;
   /* 9 */ }
 
 @media screen and (max-width: 31.25em) {
@@ -4267,7 +4272,7 @@ hr {
     /* 7 */
     margin-left: -29px;
     /* 9 */
-    margin-left: parseInt(-29px)/19rem;
+    margin-left: -1.52632rem;
     /* 9 */
     /* 3 */
     /* 3 */
@@ -4277,7 +4282,7 @@ hr {
     /* 7 */
     margin-right: -29px;
     /* 9 */
-    margin-right: parseInt(-29px)/19rem;
+    margin-right: -1.52632rem;
     /* 9 */ } }
 
 /**
@@ -4309,7 +4314,7 @@ figcaption {
   /* 7 */
   margin: 5px 0 15px;
   /* 9 */
-  margin: parseInt(5px)/19rem 0 parseInt(15px)/19rem;
+  margin: 0.26316rem 0 0.78947rem;
   /* 9 */
   font-size: 14px;
   font-size: 0.73684rem; }
@@ -4335,7 +4340,7 @@ figcaption {
   /* 7 */
   margin-left: 12px;
   /* 9 */
-  margin-left: parseInt(12px)/19rem;
+  margin-left: 0.63158rem;
   /* 9 */
   /* 3 */
   /* 3 */
@@ -4345,7 +4350,7 @@ figcaption {
   /* 7 */
   margin-right: 12px;
   /* 9 */
-  margin-right: parseInt(12px)/19rem;
+  margin-right: 0.63158rem;
   /* 9 */ }
 
 .affordance:after, .tile__item > a > h4:after, .tile__item > a > p:after {
@@ -4369,7 +4374,7 @@ blockquote {
   /* 7 */
   padding-left: 28px;
   /* 9 */
-  padding-left: parseInt(28px)/19rem;
+  padding-left: 1.47368rem;
   /* 9 */
   font-size: 21px;
   font-size: 1.10526rem;
@@ -4555,7 +4560,7 @@ input[type="checkbox"], input[type="radio"] {
   /* 7 */
   margin-bottom: 2px;
   /* 9 */
-  margin-bottom: parseInt(2px)/19rem;
+  margin-bottom: 0.10526rem;
   /* 9 */
   /* 3 */
   /* 3 */
@@ -4565,7 +4570,7 @@ input[type="checkbox"], input[type="radio"] {
   /* 7 */
   font-size: 14px;
   /* 9 */
-  font-size: parseInt(14px)/19rem;
+  font-size: 0.73684rem;
   /* 9 */ }
 
 select[multiple] {
@@ -4732,7 +4737,7 @@ td {
   /* 7 */
   margin-top: 100px;
   /* 9 */
-  margin-top: parseInt(100px)/19rem;
+  margin-top: 5.26316rem;
   /* 9 */ }
   .global-footer .section-divider {
     border-color: #f9b625; }
@@ -5697,9 +5702,10 @@ td {
 .article-details {
   bottom: -10px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-  background: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   -webkit-transition-property: opacity, bottom, color;
   -moz-transition-property: opacity, bottom, color;
   -ms-transition-property: opacity, bottom, color;
@@ -5710,11 +5716,11 @@ td {
   -ms-transition-duration: 250ms;
   -o-transition-duration: 250ms;
   transition-duration: 250ms;
-  -webkit-transition-delay: 62ms, 62ms, 0;
-  -moz-transition-delay: 62ms, 62ms, 0;
-  -ms-transition-delay: 62ms, 62ms, 0;
-  -o-transition-delay: 62ms, 62ms, 0;
-  transition-delay: 62ms, 62ms, 0; }
+  -webkit-transition-delay: 340ms, 340ms, 0;
+  -moz-transition-delay: 340ms, 340ms, 0;
+  -ms-transition-delay: 340ms, 340ms, 0;
+  -o-transition-delay: 340ms, 340ms, 0;
+  transition-delay: 340ms, 340ms, 0; }
   .article-details h3 {
     line-height: 1.25em;
     min-height: 2.5em;
@@ -5733,9 +5739,9 @@ td {
     /* 6 */
     /* 6 */
     /* 7 */
-    padding: 8px 14px 6px;
+    padding: 13px 14px 6px;
     /* 9 */
-    padding: parseInt(8px)/19rem parseInt(14px)/19rem parseInt(6px)/19rem;
+    padding: 0.68421rem 0.73684rem 0.31579rem;
     /* 9 */
     font-size: 22px;
     font-size: 1.15789rem;
@@ -5749,10 +5755,7 @@ td {
 
 .slider2 .article-details, .slider3 .article-details {
   bottom: 0;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  -ms-opacity: 1;
-  -o-opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1; }
 
 .slider-control, .slider-control i {
@@ -5876,7 +5879,7 @@ td {
     /* 7 */
     margin-left: 22px;
     /* 9 */
-    margin-left: parseInt(22px)/19rem;
+    margin-left: 1.15789rem;
     /* 9 */ } }
 
 .source {
@@ -5888,7 +5891,7 @@ td {
   /* 7 */
   margin-top: 14.5px;
   /* 9 */
-  margin-top: parseInt(14.5px)/19rem;
+  margin-top: 0.76316rem;
   /* 9 */ }
   .source:before {
     content: "-"; }
@@ -5917,7 +5920,7 @@ td {
   /* 7 */
   margin-bottom: 87px;
   /* 9 */
-  margin-bottom: parseInt(87px)/19rem;
+  margin-bottom: 4.57895rem;
   /* 9 */ }
 
 /*------------------------------------*\
