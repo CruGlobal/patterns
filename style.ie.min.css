@@ -5124,7 +5124,6 @@ td {
   z-index: 505;
   right: 0;
   border-color: transparent;
-  overflow: scroll;
   padding-top: 0px;
   height: 100%;
   overflow: hidden; }
