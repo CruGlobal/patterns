@@ -102,7 +102,7 @@
   }
 }
 
-.masonry__item .grid__item { /*following properties fix problem where two halves stack instead of sit side-by-side */
+.masonry__item { /*following properties fix problem where two halves stack instead of sit side-by-side */
   margin-left:-1px;
   transform:translateX(1px);
 }
