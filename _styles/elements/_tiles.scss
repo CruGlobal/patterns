@@ -17,7 +17,7 @@
   & > a > h4 {
     color: $color-black;
 
-    @extend .affordance;
+    // @extend .affordance;
 
     margin-bottom: 0;
     padding-top:    half($base-margin);
@@ -78,7 +78,7 @@
   & > a > p {
     color: $color-black;
 
-    @extend .affordance;
+    // @extend .affordance;
 
     margin-top: 0;
     margin-bottom: 0;
