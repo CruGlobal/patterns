@@ -19,155 +19,6 @@
  * WARNING.............There be rocks ahead
  * IMPORTS.............Begin importing the sections below
  *
- * SETUP...............Import project variables and brackets.css
- *
- * FONT................Set up the primary font
- * COLORS..............Set base colors and variables for easy use
- *
- * PAGE................Overall page settings and foundation
- * LAYOUTS.............Primary widths and wrappers
- *
- * TEXT................Text element settings for articles, etc.
- * BUTTONS.............Cru specific buttons, extends brackets.css
- * TABLES..............Cru specific tables, extends brackets.css
- * FORMS...............Cru specific forms, extends brackets.css
- * VIDEO...............
- * IMAGES..............
- * HEADER..............
- * FOOTER..............
- * SOCIAL..............Site and post specific social media
- * SITE-SEARCH.........Primary site search, extends the header
- * NAVIGATION..........Praimry site nav, extends the header
- * DROPDOWNS...........Dropdown views for large screens, extends the navigation
- * OFF-CANVAS..........Off canvas nav for small screens, extends the navigation
- *
- * CAMPUS-LOCATOR......
- * COUNTRY-LIST........
- * SLIDER..............Primary site slider. For now only on homepage
- * POST................Basic post stylings for articles
- * POST-IMAGES.........Image handling in posts, etc, extends the post
- * PAGE-SUBNAV.........Additional navigation for community/landing pages
- *
- * ANIMATIONS..........Site-wide animation handling
- * UTILITIES...........A series of helper classes to use arbitrarily
- * DEBUG...............Enable to add visual flags for debugging purposes
- */
-/*------------------------------------*\
-  $WARNING
-\*------------------------------------*/
-/**
- * Custom styles for cru.org are meant to be place in the elements folder. 
- * They should be as specific to cru as possible and mainly ui related. If 
- * there is a generic feature needed, please submit an issue to the
- * brackets.css github page. 
- *
- */
-/*------------------------------------*\
- $IMPORTS
-\*------------------------------------*/
-/**
- * Setup
- */
-/*------------------------------------*\
-    VARS.SCSS
-\*------------------------------------*/
-/**
- * Any variables you find set in brackets.css’ `_vars.scss` that you do not wish to
- * keep, simply redefine here. This means that if brackets.css, for example, sets
- * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
- * that variable in this file. Brackets.css ignores its own variables in favour of
- * using your own, so you can completely modify how brackets.css works without ever
- * having to alter the framework itself.
- */
-/*------------------------------------*\
-    $PROJECT-MODES
-\*------------------------------------*/
-/**
- * This allows you to use debug settings which can be useful in
- * development.
- *
- * Make sure to set this to false before using the code for production.
- */
-/*------------------------------------*\
-    $OBJECTS-AND-ABSTRACTIONS
-\*------------------------------------*/
-/**
- * All of brackets.css’ objects and abstractions are initially turned off by
- * default. This means that you start any project with as little as possible,
- * and introducing objects and abstractions is as simple as switching the
- * following variables to `true`.
- */
-/*------------------------------------*\
-    $OVERRIDES
-\*------------------------------------*/
-/**
- * Place any variables that should override brackets.css’ defaults here.
- */
-/*------------------------------------*\
-    $CUSTOM
-\*------------------------------------*/
-/**
- * Place any of your own variables that sit on top of brackets.css here.
- */
-/*------------------------------------*\
-    $Fonts
-\*------------------------------------*/
-/*------------------------------------*\
-    $Color Palette
-\*------------------------------------*/
-/**
- * Primary colors
- */
-/* Cru Gold */
-/* Cru Gray */
-/* White */
-/**
- * Secondary colors
- */
-/* Cru Orange */
-/**
- * Accent colors
- */
-/* Cru Bright Blue */
-/* Cru Deep Blue */
-/**
- * Grayscale
- */
-/**
- * Additional Colors
- */
-/*------------------------------------*\
-    $BUTTON SETTINGS
-\*------------------------------------*/
-/*------------------------------------*\
-    $URL PATHS
-\*------------------------------------*/
-/*------------------------------------*\
-    $ANIMATIONS
-\*------------------------------------*/
-/*------------------------------------*\
-    $ADDITIONAL
-\*------------------------------------*/
-/*------------------------------------*\
-    $BRACKETS.CSS
-\*------------------------------------*/
-/**
- * Brackets is our base framework for cru.org and other projects. We
- * have done our best to stay away from any inherint style as to not 
- * impose a prebuilt ui. This framework is our lowest level 
- * foundation which we will build our patterns on top of.
- *
- * Designed and built with all the love in our hearts
- * 
- */
-/*------------------------------------*\
-    $CONTENTS
-\*------------------------------------*/
-/**
- * CONTENTS............You’re reading it!
- * WARNING.............There be rocks ahead
- * IMPORTS.............Begin importing the sections below
- *
  * TOOLS...............Functions that allow for some fun math
  * MIXINS..............A series of useful mixins for the project
  *** /ALERTS...........
@@ -214,24 +65,50 @@
  *
  * HELPERS.............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
+ *
+ * FONT................Set up the primary font
+ * COLORS..............Set base colors and variables for easy use
+ *
+ * PAGE................Overall page settings and foundation
+ * LAYOUTS.............Primary widths and wrappers
+ *
+ * TEXT................Text element settings for articles, etc.
+ * BUTTONS.............Cru specific buttons, extends brackets.css
+ * TABLES..............Cru specific tables, extends brackets.css
+ * FORMS...............Cru specific forms, extends brackets.css
+ * VIDEO...............
+ * IMAGES..............
+ * HEADER..............
+ * FOOTER..............
+ * SOCIAL..............Site and post specific social media
+ * SITE-SEARCH.........Primary site search, extends the header
+ * NAVIGATION..........Praimry site nav, extends the header
+ * DROPDOWNS...........Dropdown views for large screens, extends the navigation
+ * OFF-CANVAS..........Off canvas nav for small screens, extends the navigation
+ *
+ * CAMPUS-LOCATOR......
+ * COUNTRY-LIST........
+ * SLIDER..............Primary site slider. For now only on homepage
+ * POST................Basic post stylings for articles
+ * POST-IMAGES.........Image handling in posts, etc, extends the post
+ * PAGE-SUBNAV.........Additional navigation for community/landing pages
+ *
+ * ANIMATIONS..........Site-wide animation handling
+ * UTILITIES...........A series of helper classes to use arbitrarily
+ * DEBUG...............Enable to add visual flags for debugging purposes
  */
 /*------------------------------------*\
-    $WARNING
+  $WARNING
 \*------------------------------------*/
-/*
- * Brackets is an OO framework, which works in keeping the open/closed
- * principle. The variables you set previously are now being used 
- * throughout brackets.css to style everything we need for a base. 
- * Any custom styles SHOULD NOT be added or modified in brackets.css
- * directly, but added via your theme stylesheet as per the
- * open/closed principle:
+/**
+ * Custom styles for cru.org are meant to be place in the elements folder. 
+ * They should be as specific to cru as possible and mainly ui related. If 
+ * there is a generic feature needed, please submit an issue to the
+ * brackets.css github page. 
  *
- * csswizardry.com/2012/06/the-open-closed-principle-applied-to-css
- *
- * Try not to edit any CSS beyond this point
  */
 /*------------------------------------*\
-    $IMPORTS
+ $IMPORTS
 \*------------------------------------*/
 /**
  * Core variables, mixins, utilities, etc
@@ -362,6 +239,86 @@
  * above. Feel free to use these variables throughout your project, but do not
  * modify or reassign them.
  */
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in brackets.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if brackets.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. Brackets.css ignores its own variables in favour of
+ * using your own, so you can completely modify how brackets.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $PROJECT-MODES
+\*------------------------------------*/
+/**
+ * This allows you to use debug settings which can be useful in
+ * development.
+ *
+ * Make sure to set this to false before using the code for production.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of brackets.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override brackets.css’ defaults here.
+ */
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of brackets.css here.
+ */
+/*------------------------------------*\
+    $Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+    $Color Palette
+\*------------------------------------*/
+/**
+ * Primary colors
+ */
+/* Cru Gold */
+/* Cru Gray */
+/* White */
+/**
+ * Secondary colors
+ */
+/* Cru Orange */
+/**
+ * Accent colors
+ */
+/* Cru Bright Blue */
+/* Cru Deep Blue */
+/**
+ * Grayscale
+ */
+/**
+ * Additional Colors
+ */
+/*------------------------------------*\
+    $BUTTON SETTINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $URL PATHS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ADDITIONAL
+\*------------------------------------*/
 /*------------------------------------*\
     $TOOLS
 \*------------------------------------*/
@@ -990,7 +947,7 @@
 
   .lap--eleven-twelfths {
     width: 91.66667%; } }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1023px) {
   /**
    * Whole
    */
@@ -1131,7 +1088,7 @@
 
   .portable--eleven-twelfths {
     width: 91.66667%; } }
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 1024px) {
   /**
    * Whole
    */
@@ -1284,43 +1241,12 @@
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
-   Normalize.scss settings
+   HTML5 display definitions
    ========================================================================== */
-/**
- * Includes legacy browser support IE6/7
- *
- * Set to false if you want to drop support for IE6 and IE7
- */
-/* Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0; }
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
+/*
+ * Correct `block` display not defined in IE 8/9.
  */
 article,
 aside,
@@ -1336,71 +1262,70 @@ section,
 summary {
   display: block; }
 
-/**
- * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+/*
+ * Correct `inline-block` display not defined in IE 8/9.
  */
 audio,
 canvas,
-progress,
 video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
+  display: inline-block; }
 
-/**
- * Prevents modern browsers from displaying `audio` without controls.
+/*
+ * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+/*
+ * Address styling not present in IE 8/9.
  */
-[hidden],
-template {
+[hidden] {
   display: none; }
 
-/* Links
+/* ==========================================================================
+   Base
    ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
+/*
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
  */
-a {
-  background: transparent; }
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
 
-/**
+/*
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
-/* Text-level semantics
+/* ==========================================================================
+   Typography
    ========================================================================== */
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold; }
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic; }
-
-/**
+/*
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
@@ -1408,20 +1333,69 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/**
- * Addresses styling not present in IE 8/9.
+/*
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/*
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/*
+ * Address styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
   color: #000; }
 
-/**
+/*
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/*
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
  * Address inconsistent and variable font size in all browsers.
  */
 small {
   font-size: 80%; }
 
-/**
+/*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 sub,
@@ -1437,103 +1411,91 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* Embedded content
+/* ==========================================================================
+   Embedded content
    ========================================================================== */
-/**
- * 1. Remove border when inside `a` element in IE 8/9/10.
- * 2. Improves image quality when scaled in IE 7.
+/*
+ * Remove border when inside `a` element in IE 8/9.
  */
 img {
   border: 0; }
 
-/**
+/*
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
   overflow: hidden; }
 
-/* Grouping content
+/* ==========================================================================
+   Figures
    ========================================================================== */
-/**
+/*
  * Address margin not present in IE 8/9 and Safari 5.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
-/**
- * Address differences between Firefox and other browsers.
- */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-/**
- * Contain overflow in all browsers.
- */
-pre {
-  overflow: auto; }
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-/* Forms
+/* ==========================================================================
+   Forms
    ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
+/*
+ * Define consistent border, margin, and padding.
  */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- * 4. Improves appearance and consistency in all browsers.
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
 button,
 input,
-optgroup,
 select,
 textarea {
-  color: inherit;
+  font-family: inherit;
   /* 1 */
-  font: inherit;
+  font-size: 100%;
   /* 2 */
   margin: 0;
   /* 3 */ }
 
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
+/*
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
  */
-button {
-  overflow: visible; }
+button,
+input {
+  line-height: normal; }
 
-/**
+/*
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 button,
 select {
   text-transform: none; }
 
-/**
+/*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
  * 2. Correct inability to style clickable `input` types in iOS.
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
- * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
  */
 button,
 html input[type="button"],
@@ -1544,32 +1506,16 @@ input[type="submit"] {
   cursor: pointer;
   /* 3 */ }
 
-/**
+/*
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-input {
-  line-height: normal; }
-
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- *    Known issue: excess padding remains in IE 6.
+/*
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
  */
 input[type="checkbox"],
 input[type="radio"] {
@@ -1578,18 +1524,9 @@ input[type="radio"] {
   padding: 0;
   /* 2 */ }
 
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+/*
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
 input[type="search"] {
@@ -1600,60 +1537,41 @@ input[type="search"] {
   /* 2 */
   box-sizing: content-box; }
 
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
+/*
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/**
- * Define consistent border, margin, and padding.
+/*
+ * Remove inner padding and border in Firefox 4+.
  */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- * 3. Corrects text not wrapping in Firefox 3.
- * 4. Corrects alignment displayed oddly in IE 6/7.
- */
-legend {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
+  padding: 0; }
 
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
+/*
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
 
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-optgroup {
-  font-weight: bold; }
-
-/* Tables
+/* ==========================================================================
+   Tables
    ========================================================================== */
-/**
+/*
  * Remove most spacing between table cells.
  */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
 
 /*------------------------------------*\
     $RESTART
@@ -1785,8 +1703,8 @@ pre,
 .media,
 .island,
 .islet {
-  margin-bottom: 29px;
-  margin-bottom: 1.52632rem; }
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
 
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
@@ -1810,15 +1728,15 @@ pre,
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-top: 58px;
-  margin-bottom: 58px; }
+  margin-top: 48px;
+  margin-bottom: 48px; }
 
 /**
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
 ul, ol, dd {
-  margin-left: 58px;
+  margin-left: 48px;
   margin-left: 2rem; }
 
 /**
@@ -1871,34 +1789,34 @@ body {
  */
 h1, .h1 {
   font-size: 200;
-  font-size: 56.46931px;
-  font-size: 2.97207rem;
-  line-height: 1.02711; }
+  font-size: 63.96135px;
+  font-size: 3.36639rem;
+  line-height: 1.3602; }
 
 h2, .h2 {
-  font-size: 43.00785px;
-  font-size: 2.26357rem;
-  line-height: 1.34859; }
+  font-size: 45.23434px;
+  font-size: 2.38075rem;
+  line-height: 1.28221; }
 
 h3, .h3 {
-  font-size: 32.75541px;
-  font-size: 1.72397rem;
-  line-height: 1.7707; }
+  font-size: 31.99034px;
+  font-size: 1.6837rem;
+  line-height: 1.81305; }
 
 h4, .h4 {
-  font-size: 24.947px;
-  font-size: 1.313rem;
-  line-height: 1.16246; }
+  font-size: 22.624px;
+  font-size: 1.19074rem;
+  line-height: 1.28182; }
 
 h5, .h5 {
-  font-size: 19px;
-  font-size: 1rem;
-  line-height: 1.52632; }
+  font-size: 16px;
+  font-size: 0.84211rem;
+  line-height: 1.8125; }
 
 h6, .h6 {
-  font-size: 15.2px;
-  font-size: 0.8rem;
-  line-height: 1.90789; }
+  font-size: 12.8px;
+  font-size: 0.67368rem;
+  line-height: 2.26563; }
 
 /*------------------------------------*\
     $PARAGRAPHS
@@ -1937,7 +1855,7 @@ blockquote {
   font-style: italic;
   text-indent: -0.41em;
   /* [1] */
-  padding-left: 15px;
+  padding-left: 12px;
   padding-left: 1rem;
   font-size: 23px;
   font-size: 1.21053rem;
@@ -1987,6 +1905,9 @@ q {
     display: inline-block;
     text-indent: 0; }
 
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
@@ -2089,8 +2010,8 @@ th, td,
 th,
 td,
 .table__item {
-  line-height: 1.52632;
-  padding: 15px;
+  line-height: 1.5;
+  padding: 12px;
   padding: 1rem; }
   th .table__item,
   th th,
@@ -2130,8 +2051,8 @@ td,
 \*------------------------------------*/
 fieldset {
   border: 0;
-  padding: 29px;
-  padding: 1.52632rem; }
+  padding: 24px;
+  padding: 1.5rem; }
   fieldset + fieldset {
     margin-bottom: 0; }
 
@@ -2173,7 +2094,7 @@ legend {
   /** 
    * Make inputs at least the height of their button counterpart (base line-height + padding + border)
    */
-  height: 34.25px;
+  height: 33px;
   padding-top: 4.83333px;
   padding-bottom: 4.83333px;
   font-size: 16.625px;
@@ -2181,9 +2102,9 @@ legend {
   background-image: none;
   border: 2px solid #cccccc;
   border-radius: 2px;
-  padding-left: 15px;
+  padding-left: 12px;
   padding-left: 1rem;
-  padding-right: 15px;
+  padding-right: 12px;
   padding-right: 1rem; }
   .text-input.disabled, .form-control.disabled {
     cursor: not-allowed; }
@@ -2412,7 +2333,7 @@ input + .additional {
   /* [2] */
   padding: 0;
   /* [2] */
-  margin-left: -29px;
+  margin-left: -24px;
   /* [3] */ }
 
 /**
@@ -2428,7 +2349,7 @@ input + .additional {
   float: left;
   vertical-align: top;
   /* [2] */
-  padding-left: 29px;
+  padding-left: 24px;
   /* [3] */
   width: 100%;
   /* [4] */
@@ -2907,7 +2828,7 @@ input + .additional {
 
   .lap--eleven-twelfths {
     width: 91.66667%; } }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1023px) {
   /**
    * Whole
    */
@@ -3048,7 +2969,7 @@ input + .additional {
 
   .portable--eleven-twelfths {
     width: 91.66667%; } }
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 1024px) {
   /**
    * Whole
    */
@@ -3511,7 +3432,7 @@ input[disabled]:focus,
     letter-spacing: normal;
     word-spacing: normal; }
     .nav--block > li > a {
-      padding: 15px;
+      padding: 12px;
       padding: 1rem; }
 
 /**
@@ -3675,7 +3596,7 @@ input[disabled]:focus,
 @media screen and (min-width: 62.5em) {
   .media__img {
     float: left;
-    margin-right: 29px; } }
+    margin-right: 24px; } }
 
 /**
  * Reversed image location (right instead of left).
@@ -3683,7 +3604,7 @@ input[disabled]:focus,
 @media screen and (min-width: 62.5em) {
   .media__img--rev {
     float: right;
-    margin-left: 29px; } }
+    margin-left: 24px; } }
 
 .media__img img,
 .media__img--rev img {
@@ -4167,8 +4088,8 @@ input[disabled]:focus,
   display: none !important; }
 
 .page-content {
-  padding-top: 116px;
-  padding-top: 6.10526rem; }
+  padding-top: 96px;
+  padding-top: 5.05263rem; }
 
 @media screen and (max-width: 31.25em) {
   .background-size-contain.layout-single-column {
@@ -4270,9 +4191,9 @@ hr {
     /* 6 */
     /* 6 */
     /* 7 */
-    margin-left: -29px;
+    margin-left: -24px;
     /* 9 */
-    margin-left: -1.52632rem;
+    margin-left: -1.26316rem;
     /* 9 */
     /* 3 */
     /* 3 */
@@ -4280,9 +4201,9 @@ hr {
     /* 6 */
     /* 6 */
     /* 7 */
-    margin-right: -29px;
+    margin-right: -24px;
     /* 9 */
-    margin-right: -1.52632rem;
+    margin-right: -1.26316rem;
     /* 9 */ } }
 
 /**
@@ -4440,7 +4361,7 @@ q {
 .button-group {
   display: block; }
   .button-group .button {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     margin-bottom: 0rem; }
 
 .button--primary:hover, .button--primary:focus, .button--primary:active, .button--primary.active, .open .button--primary.dropdown-toggle {
@@ -4875,9 +4796,9 @@ td {
     text-align: left;
     color: #f9b625;
     border-radius: 3px;
-    margin: 0.22656rem;
-    padding-left: 0.45313rem;
-    padding-right: 0.45313rem; }
+    margin: 0.1875rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem; }
     .primary-search--dropdown li a:hover {
       text-decoration: none;
       background: #f9b625;
@@ -5268,15 +5189,15 @@ td {
 .dropdown--column {
   color: white;
   border-radius: 1px;
-  margin-bottom: 0.90625rem; }
+  margin-bottom: 0.75rem; }
   .dropdown--column a {
     display: block;
     text-align: left;
     background: #333333;
     color: #f9b625;
     border-radius: 3px;
-    padding-left: 0.45313rem;
-    padding-right: 0.45313rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -5287,8 +5208,8 @@ td {
       background: #f9b625;
       color: #333333; }
   .dropdown--column ul li a {
-    padding-left: 0.90625rem;
-    padding-right: 0.90625rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     margin: 0;
     text-align: left;
     font-size: 85%;
@@ -5972,7 +5893,7 @@ td {
       width: 50%;
       float: left;
       margin-top: 10px;
-      margin-right: 29px;
+      margin-right: 24px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 72.75em) {
     .image--inset__left > .image__caption, .post-nav > .image__caption, .image--legacy > .image__caption {
@@ -6021,7 +5942,7 @@ td {
     .image--outset__left {
       float: left;
       margin-top: 10px;
-      margin-right: 29px;
+      margin-right: 24px;
       margin-bottom: 10px;
       width: 75%;
       margin-left: -100px; } }
