@@ -64,7 +64,7 @@
  * GRIDS...............Fluid, proportional and nestable grids
  * BUTTONS.............Use the beautons micro library
  * ISLAND..............Boxed off content
- * NAVS................A simple abstraction to put a list in horizontal nav mode
+ * NAVS................Simple abstraction to put a list in horizontal nav mode
  * PAGINATION..........Very stripped back, basic paginator
  * BREADCRUMB..........Simple breadcrumb trail object
  * MEDIA...............Media object
@@ -125,6 +125,11 @@
 /**
  * Core variables, mixins, utilities, etc
  */
+@import "compass";
+
+@import "compass/css3/box-sizing";
+@import "compass/css3/opacity";
+
 @import "defaults";
 @import "vars";
 @import "generic/tools";
@@ -224,6 +229,6 @@
  * Overrides and additional tools
  */
 @import "elements/animations";
-@import "brackets.css/generic/helpers";
+@import "generic/helpers";
 @import "elements/debug";
 

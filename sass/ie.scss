@@ -78,10 +78,49 @@
  $IMPORTS
 \*------------------------------------*/
 /**
- * Setup
+ * Core variables, mixins, utilities, etc
  */
+@import "defaults";
 @import "vars";
-@import "brackets.css/brackets";
+@import "generic/tools";
+@import "generic/mixins";
+@import "generic/_normalize.scss";
+@import "generic/restart";
+@import "generic/clearfix";
+@import "core/shared";
+
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+@import "core/base";
+@import "core/headings";
+@import "core/paragraphs";
+@import "core/quotes";
+@import "core/images";
+@import "core/lists";
+@import "core/tables";
+@import "core/forms";
+
+/**
+ * Objects and abstractions
+ */
+@import "core/grids";
+@import "generic/mixins/widths";
+@import "components/buttons";
+@import "components/islands";
+@import "components/navs";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/media";
+
+/**
+ * Style trumps; helper and brand classes
+ */
+@import "generic/spacing";
+
+/**
+ * Begin importing custom stuff here.
+ */
 
 /**
  * Brackets files

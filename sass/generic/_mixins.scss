@@ -19,10 +19,12 @@
 @import "mixins/links";
 @import "mixins/media-query";
 @import "mixins/messages";
-@import "mixins/opacity";
 @import "mixins/panels";
 @import "mixins/prefix";
 @import "mixins/sizing";
 @import "mixins/spacing";
 @import "mixins/text";
 @import "mixins/widths";
+
+@import "compass/css3/opacity";
+@import "compass/utilities/general/clearfix";
