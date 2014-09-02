@@ -4921,7 +4921,7 @@ td {
     vertical-align: middle;
     width: 74px;
     height: 54px;
-    background: url("images/cru-logo-ie.png");
+    background: url("/images/cru-logo-ie.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
