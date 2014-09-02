@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*------------------------------------*\
-    IE-STYLE.CSS
+    STYLE.CSS
 \*------------------------------------*/
 /**
  * Here lies the custom styles for Cru.org. These styles have been
@@ -25,7 +25,52 @@
  * WARNING.............There be rocks ahead
  * IMPORTS.............Begin importing the sections below
  *
- * SETUP...............Import project variables and brackets.css
+ * TOOLS...............Functions that allow for some fun math
+ * MIXINS..............A series of useful mixins for the project
+ *** /ALERTS...........
+ *** /ANIMATIONS.......
+ *** /BORDER_RADIUS....
+ *** /BOX-MODEL........
+ *** /BUTTONS..........
+ *** /CENTER-BLOCK.....
+ *** /CLEARFIX.........
+ *** /FORMS............
+ *** /GRID-SETUP.......
+ *** /IMAGES...........
+ *** /LINKS............
+ *** /MEDIA-QUERY......
+ *** /MESSAGES.........
+ *** /OPACITY..........
+ *** /PANELS...........
+ *** /PREFIX...........
+ *** /SIZING...........
+ *** /SPACING..........Do not implement this at the moment
+ *** /TEXT.............
+ *** /WIDTHS...........
+ * NORMALIZE...........normalize.css
+ * RESTART.............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ *
+ * BASE................High-level elements like `html`, `body`, etc.
+ * HEADINGS............Double-stranded heading hierarchy
+ * PARAGRAPHS..........
+ * QUOTES..............
+ * LISTS...............
+ * IMAGES..............
+ * TABLES..............
+ * FORMS...............
+ *
+ * GRIDS...............Fluid, proportional and nestable grids
+ * BUTTONS.............Use the beautons micro library
+ * ISLAND..............Boxed off content
+ * NAVS................Simple abstraction to put a list in horizontal nav mode
+ * PAGINATION..........Very stripped back, basic paginator
+ * BREADCRUMB..........Simple breadcrumb trail object
+ * MEDIA...............Media object
+ *
+ * HELPERS.............A series of helper classes to use arbitrarily
+ * DEBUG...............Enable to add visual flags for debugging purposes
  *
  * FONT................Set up the primary font
  * COLORS..............Set base colors and variables for easy use
@@ -72,22 +117,61 @@
 
 
 
-
-
+  
+ 
 /*------------------------------------*\
  $IMPORTS
 \*------------------------------------*/
 /**
- * Setup
+ * Core variables, mixins, utilities, etc
  */
+@import "compass";
+
+@import "compass/css3/box-sizing";
+@import "compass/css3/opacity";
+
+@import "defaults";
 @import "vars";
-@import "brackets.css/brackets";
+@import "generic/tools";
+@import "generic/mixins";
+@import "generic/normalize";
+@import "generic/restart";
+@import "generic/clearfix";
+@import "core/shared";
 
 /**
- * Brackets files
+ * Base styles; unclassed HTML elements etc.
  */
-@import "ie/ie-defaults"; // This file is referencing defaults.scss in brackets.
-@import "ie/ie-grids";
+@import "core/base";
+@import "core/headings";
+@import "core/paragraphs";
+@import "core/quotes";
+@import "core/images";
+@import "core/lists";
+@import "core/tables";
+@import "core/forms";
+
+/**
+ * Objects and abstractions
+ */
+@import "core/grids";
+@import "generic/mixins/widths";
+@import "components/buttons";
+@import "components/islands";
+@import "components/navs";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/media";
+
+/**
+ * Style trumps; helper and brand classes
+ */
+@import "generic/spacing";
+
+/**
+ * Begin importing custom stuff here.
+ */
+
 /**
  * Primary site colors and fonts
  */
@@ -99,7 +183,7 @@
  * Overall site and layout
  */
 @import "elements/page";
-@import "ie/ie-layouts";
+@import "elements/layouts";
 
 
 /**
@@ -111,16 +195,14 @@
 @import "elements/tables";
 @import "elements/video";
 @import "elements/images";
-
-@import "ie/ie-header";
-//@import "elements/header";
+ 
+@import "elements/header";
 @import "elements/footer";
-@import "elements/social";
+@import "elements/social";  
 
 @import "elements/site-search";
-@import "ie/ie-navigation";
+@import "elements/navigation";
 @import "elements/dropdowns";
-@import "ie/ie-off-canvas";
 @import "elements/off-canvas";
 @import "elements/ui-autocomplete";
 @import "elements/tiles";
@@ -130,8 +212,8 @@
  */
 @import "elements/campus-locator";
 @import "elements/country-list";
-@import "ie/ie-sliders";
-
+@import "elements/slider";
+ 
 @import "elements/post";
 @import "elements/post-images";
 
@@ -147,8 +229,6 @@
  * Overrides and additional tools
  */
 @import "elements/animations";
-@import "ie/ie-helpers";
+@import "generic/helpers";
 @import "elements/debug";
-
-
 
