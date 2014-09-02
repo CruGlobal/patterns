@@ -39,7 +39,7 @@ page-class: page--static
 
 
   <!--[if !IE]><!-->
-        <link rel="stylesheet" href="{{ site.root }}style.min.css">
+        <link rel="stylesheet" href="{{ site.root }}css/screen.css">
     <!--<![endif]-->
 
     <!--[if gte IE 9]>
@@ -68,340 +68,502 @@ page-class: page--static
   </div>
     
     
-	<div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
-		
-    <div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
-    <!-- The primary header -->
-    <header class="site-header"  role="banner">
-      <hgroup class="title-group  site-logo">
-        <a href="#"  title="Return to Homepage">
-          <h1><span class="accessibility">Cru : a caring community passionate about connecting people to Jesus Christ</span></h1>
-        </a>
-      </hgroup>
-      <a href="#nav"  id="nav-open-btn"  class="topbar-toggle  topbar-open   position--absolute">Menu <i class="icon-hamburger"></i></a>
-    </header>
-    <!-- End primary header -->
+    <div id="js-outer-wrap"  class="position--relative  full-width  overflow--hidden  outer-wrap  js-outer-wrap">
+    	<div id="js-inner-wrap"  class="position--relative  full-width  inner-wrap  js-inner-wrap">
+        <!-- The primary header -->
+<header class="site-header"  role="banner">
+        <hgroup class="title-group  site-logo">
+            <a href="/content/cru/us/en.html" title="Return to Homepage">
+            	<h1>
+                    <span class="accessibility">
+                        Cru : a caring community passionate about connecting people to Jesus Christ
+                    </span>
+                </h1>
+            </a>
+       </hgroup>
+       <a href="#nav" id="nav-open-btn" class="topbar-toggle  topbar-open   position--absolute">Menu <i class="icon-hamburger"></i></a>
+</header>
+<!-- End primary header -->
 
 
-
-    <!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
-    <nav id="nav" class="navigation">
+<!-- Navigation for off canvas and primary navigaiton: This is at the very bottom of the page -->
+<nav id="nav" class="navigation">
     <ul class="nav  right-nav ">
+        <!--Search-->
+        <li class="spoken-form nav__item">
+<!--The search itself-->
 
-      <!--Search-->
-      <li class="spoken-form  nav__item  user-action">
-        <form class="primary-search  js-primary-search"  method="get"  name="search">
-          <input class="search-field  text-input" placeholder="Search" type="search" />
-          <button class="search-button  button--icon" value="" type="submit"><i class="icon-search"></i></button>
-          <a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>
-          <ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
-            <li>
-              <a href="">This Site</a>
-            </li>
-            <li>
-              <a href="">Give to Staff, Ministries</a>
-            </li>
-          </ul>
-        </form>
-      </li>
+<form class="primary-search js-primary-search" method="get" name="search">
 
-      <!--Search - END-->
+    <!-- Search input field -->
+    <input class="search-field  text-input" placeholder="Search" type="search">
+
+    <!-- Search icon -->
+    <button class="search-button  button--icon" value="" type="submit">
+        <i class="icon-search"></i>
+    </button>
+
+    <!-- Dropdown open button -->
+    <a href="#" class="primary-search--options  js-search-menu  button--icon"><i class="icon-down-arrow"></i></a>
+
+    <!-- The dropdown search items -->
+    <ul id="search-dropdown" class="primary-search--dropdown   js-search-content  bare-list">
+        
+        
+        <li><a href="/content/cru/us/en/search" id="cru_org" class="searchlink selected">This Site</a></li>
+        
+        
+        
+        
+        <li><a href="https://give.cru.org/give/VirtualCommonLinks/process/search2" id="give_site" class="searchlink">Give to Staff, Ministries</a></li>
+        
+    </ul>
+</form>
+</li>
+
+
+        <!--Search - END-->
     </ul>
     <ul class="nav  site-nav">
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/how-to-know-god.html" class="nav__link  primary-link">How to know God<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/how-to-know-god/would-you-like-to-know-god-personally-.html">Would You Like to Know God Personally?</a>
+                            
 
-    <li class="nav__item  has-dropdown">
-      <a href="#"  class="nav__link  primary-link">How to Know God <i class="icon-down-arrow small-text float--right mr-"></i></a>
-      <div class="dropdown">
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/how-to-know-god/who-is-jesus-.html">Who is Jesus?</a>
+                            
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Know God Personally</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Jesus and the Intellectual</a>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">My Story</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Who is Jesus?</a>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Did Jesus Rise from the Dead?</a>
-            </div>
-          </li>
-        </ul>
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/how-to-know-god/did-jesus-rise-from-the-dead-.html">Did Jesus Rise From the Dead?</a>
+                            
 
-      </div><!---->
-    </li>
-    <li class="nav__item  has-dropdown">
-      <a href="#"  class="nav__link  primary-link">Train & Grow <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/how-to-know-god/jesus---the-intellectual.html">Jesus &amp; the Intellectual</a>
+                            
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Classic Cru</a>
-              <ul class="bare-list">
-                <li><a href="#">10 Basic Steps to Christian Maturity</a></li>
-                <li><a href="#">Transferable Concepts</a></li>
-                <li><a href="#">The Spirit-Filled Life</a></li>
-                <li><a href="#">Would You Like to Know God Personally?</a></li>
-                <li><a href="#">The Four Spiritual Laws</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Prayer, Quiet-Times, & Devotionals</a>
-              <ul class="bare-list">
-                <li><a href="#">Today's Promise</a></li>
-                <li><a href="#">7 Steps to Successful Fasting & Prayer</a></li>
-                <li><a href="#">Your Personal Guide to Fasting & Prayer</a></li>
-                <li><a href="#">Discover God</a></li>
-                <li><a href="#">Advent</a></li>
-                <li><a href="#">Lent</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Training</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Bible Studies</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Mentoring</a>
-            </div>
-          </li>
-        </ul>
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/how-to-know-god/my-story.html">My Story</a>
+                            
 
-      </div><!---->
-    </li>
-    <li class="nav__item has-dropdown">
-      <a href="#"  class="nav__link  primary-link">Communities <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/training-and-growth.html" class="nav__link  primary-link">Train &amp; Grow<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/training-and-growth/classic-cru.html">Classic Cru</a>
+                            
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Campus</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">City</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Inner City</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Athletes</a>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Families</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">High School</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Military</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Locations</a>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">More</a>
-              <ul class="bare-list">
-                <li><a href="#">Christian Embassy, United Nations</a></li>
-                <li><a href="#">Christian Embassy, D.C.</a></li>
-                <li><a href="#">Faculty and Graduates</a></li>
-                <li><a href="#">Global Aid Network</a></li>
-                <li><a href="#">The Impact Movement</a></li>
-                <li><a href="#">The JESUS Film Project</a></li>
-                <li><a href="#">Josh McDowell Ministry</a></li>
-                <li><a href="#">Keynote</a></li>
-                <li><a href="#">All</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/training-and-growth/training.html">Training</a>
+                            
 
-      </div><!---->
-    </li>
-    <li class="nav__item has-dropdown">
-      <a href="#"  class="nav__link  primary-link">Opportunities <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/training-and-growth/prayer--quiet-times--devotionals.html">Prayer, Quiet Times, Devotionals</a>
+                            
+                            
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Careers</a>
-              <ul class="bare-list">
-                <li><a href="#">Missionary Staff</a></li>
-                <li><a href="#">Hourly & Salaried Staff</a></li>
-                <li><a href="#">International Missions</a></li>
-                <li><a href="#">Staff Profiles</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Internships</a>
-              <ul class="bare-list">
-                <li><a href="#">1-Year Internship in Orlando</a></li>
-                <li><a href="#">Preview Weekend (For College Students)</a></li>
-                <li><a href="#">Orlando Summer Project Internship</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Mission Trips</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Volunteer</a>
-              <ul class="bare-list">
-                <li><a href="#">Orlando Openings</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Contact the Volunteer Office</a></li>
-                <li><a href="#">Volunteer Profiles</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+                            <ul class="bare-list">
 
-      </div><!---->
-    </li>
+                                
 
-    <li class="nav__item has-dropdown">
-      <a href="#"  class="nav__link  primary-link">About <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                                    <li><a href="/content/cru/us/en/training-and-growth/prayer--quiet-times--devotionals/daily-content-year.html">Daily Content Year</a></li>
+                                
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Donor Relations</a>
-              <ul class="bare-list">
-                <li><a href="#">Our New Name</a></li>
-                <li><a href="#">Annual Report</a></li>
-                <li><a href="#">Stewardship Guidelines</a></li>
-                <li><a href="#">How Staff Members Raise Their Support</a></li>
-              </ul>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">What We Do</a>
-              <ul class="bare-list">
-                <li><a href="#">Milestones</a></li>
-                <li><a href="#">Innovators in Evangelism & Discipleship</a></li>
-                <li><a href="#">What Others Are Saying</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Our Leadership</a>
-              <ul class="bare-list">
-                <li><a href="#">Cru Leadership</a></li>
-                <li><a href="#">International Leadership</a></li>
-                <li><a href="#">Board of Directors</a></li>
-                <li><a href="#">Our Founders</a></li>
-              </ul>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Statement of Faith</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">World Wide Challenge</a>
-            </div>
-          </li>
-          <li class="grid__item  one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Press</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Contact</a>
-            </div>
-          </li>
-        </ul>
+                                    <li><a href="/content/cru/us/en/training-and-growth/prayer--quiet-times--devotionals/daily-content-periodical.html">Daily Content Periodical</a></li>
+                                
 
-      </div><!---->
-    </li>
-    <li class="nav__item has-dropdown">
-      <a href="#"  class="nav__link  primary-link">Store <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                                    <li><a href="/content/cru/us/en/training-and-growth/prayer--quiet-times--devotionals/daily-content.html">Daily Content</a></li>
+                                
+                            </ul>
+                            
+                            
 
-        <ul class="grid">
-          <li class="grid__item  one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">All Stores</a>
-            </div>
-          </li>
-          <li class="grid__item  one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Featured Products</a>
-            </div>
-          </li>
-        </ul>
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/training-and-growth/bible-studies.html">Bible Studies</a>
+                            
 
-      </div><!---->
-    </li>
-    <li class="nav__item has-dropdown">
-      <a href="#"  class="nav__link  primary-link">Give <i class="icon-down-arrow small-text"></i></a>
-      <div class="dropdown">
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/training-and-growth/mentoring.html">Mentoring</a>
+                            
 
-        <ul class="grid">
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Search Staff, Ministries</a>
-              <ul class="bare-list">
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Search for Staff by Name</a></li>
-                <li><a href="#">Search by Quick Link Code</a></li>
-              </ul>
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
             </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Your Account</a>
-              <ul class="bare-list">
-                <li><a href="#">Manage Recurring Gifts</a></li>
-                <li><a href="#">Your Giving History</a></li>
-                <li><a href="#">Payment Methods</a></li>
-                <li><a href="#">Your Profile</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="grid__item  desk--one-third  dropdown--column">
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Gift Cart & Checkout</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">Donor Relations</a>
-            </div>
-            <div class="mb- ms- p- color-darker-gray">
-              <a href="#">FAQ</a>
-            </div>
-          </li>
-        </ul>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/ministries-and-locations.html" class="nav__link  primary-link">Communities<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/campus.html">Campus</a>
+                            
 
-      </div><!---->
-    </li>
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/city.html">City</a>
+                            
 
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/inner-city.html">Inner City</a>
+                            
 
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/athletes.html">Athletes</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/families.html">Families</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/high-school.html">High School</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/military.html">Military</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/more.html">More</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/ministries-and-locations/locations.html">Locations</a>
+                            
+                            
+
+                            <ul class="bare-list">
+
+                                
+
+                                    <li><a href="/content/cru/us/en/ministries-and-locations/locations/africa.html">Africa</a></li>
+                                
+
+                                    <li><a href="/content/cru/us/en/ministries-and-locations/locations/americas.html">Americas</a></li>
+                                
+
+                                    <li><a href="/content/cru/us/en/ministries-and-locations/locations/asia.html">Asia</a></li>
+                                
+
+                                    <li><a href="/content/cru/us/en/ministries-and-locations/locations/australia---oceania.html">Australia &amp; Oceania</a></li>
+                                
+
+                                    <li><a href="/content/cru/us/en/ministries-and-locations/locations/europe.html">Europe</a></li>
+                                
+                            </ul>
+                            
+                            
+
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/opportunities.html" class="nav__link  primary-link">Opportunities<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/opportunities/careers.html">Careers</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/opportunities/internships.html">Internships</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/opportunities/mission-trips.html">Mission Trips</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/opportunities/volunteer.html">Volunteer</a>
+                            
+
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/about-us.html" class="nav__link  primary-link">About<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/donor-relations.html">Donor Relations</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/what-we-do.html">What We Do</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/statement-of-faith.html">Statement of Faith</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/our-leadership.html">Our Leadership</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/worldwide-challenge.html">Worldwide Challenge</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/press-room.html">Press</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/test.html">Contact</a>
+                            
+                            
+
+                            <ul class="bare-list">
+
+                                
+
+                                    <li><a href="/content/cru/us/en/about-us/contact-us/store.html">Store</a></li>
+                                
+                            </ul>
+                            
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/about-us/policies.html">Policies</a>
+                            
+                            
+
+                            <ul class="bare-list">
+
+                                
+
+                                    <li><a href="/content/cru/us/en/about-us/policies/terms-of-use.html">Terms of Use</a></li>
+                                
+
+                                    <li><a href="/content/cru/us/en/about-us/policies/privacy-policy.html">Privacy Policy</a></li>
+                                
+                            </ul>
+                            
+                            
+
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/store.html" class="nav__link  primary-link">Store<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/store/all-stores.html">All Stores</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/store/featured-products.html">Featured Products</a>
+                            
+
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
+        <li class="nav__item has-dropdown">
+            <a href="/content/cru/us/en/give.html" class="nav__link  primary-link">Give<i class="icon-down-arrow small-text float--right mr-"></i></a>
+            
+            
+            <div class="dropdown">
+                <ul class="grid">
+                    
+                    
+                    <li class="grid__item  desk--one-third  dropdown--column">
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/search-staff--ministries.html">Search Staff, Ministries</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/gift-cart---checkout.html">Gift Cart &amp; Checkout</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/your-account.html">Your Account</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/other-ways-to-give.html">Other Ways to Give</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/donor-relations.html">Donor Relations</a>
+                            
+
+                        </div>
+                        
+                        <div class="mb- ms- p- color-darker-gray">
+                            <a href="/content/cru/us/en/give/faq.html">FAQ</a>
+                            
+
+                        </div>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            
+            
+        </li>
+        
 
     </ul>
-    <a href="#" id="nav-close-btn"  class="topbar-toggle  topbar-close">Close <i class="icon-cancel-circled"></i></a>
+	<a href="#" id="nav-close-btn" class="topbar-toggle  topbar-close">Close <i class="icon-cancel-circled"></i></a>
 
-    </nav>
+</nav>
+
     
     <!-- Content wrap -->
     <div class="page-content"  role="main">

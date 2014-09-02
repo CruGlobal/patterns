@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $NAVIGATION [IE version ie/ie-navigation]
+    $NAVIGATION
 \*------------------------------------*/
 $nav-break-min: 980px;
 $nav-break-max: 979px;
@@ -231,7 +231,7 @@ $nav-break-max: 979px;
 
 .js-close-button{
   @include mq($nav-break-min) {
-    display: none;
+      display: none;
   }
 }
 
