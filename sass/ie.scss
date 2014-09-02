@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*------------------------------------*\
-    STYLE.CSS
+    IE-STYLE.CSS
 \*------------------------------------*/
 /**
  * Here lies the custom styles for Cru.org. These styles have been
@@ -72,21 +72,61 @@
 
 
 
-  
- 
+
+
 /*------------------------------------*\
  $IMPORTS
 \*------------------------------------*/
 /**
- * Setup
+ * Core variables, mixins, utilities, etc
  */
+@import "defaults";
 @import "vars";
-@import "brackets.css/brackets";
+@import "generic/tools";
+@import "generic/mixins";
+@import "generic/_normalize.scss";
+@import "generic/restart";
+@import "generic/clearfix";
+@import "core/shared";
+
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+@import "core/base";
+@import "core/headings";
+@import "core/paragraphs";
+@import "core/quotes";
+@import "core/images";
+@import "core/lists";
+@import "core/tables";
+@import "core/forms";
+
+/**
+ * Objects and abstractions
+ */
+@import "core/grids";
+@import "generic/mixins/widths";
+@import "components/buttons";
+@import "components/islands";
+@import "components/navs";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/media";
+
+/**
+ * Style trumps; helper and brand classes
+ */
+@import "generic/spacing";
 
 /**
  * Begin importing custom stuff here.
  */
 
+/**
+ * Brackets files
+ */
+@import "ie/ie-defaults"; // This file is referencing defaults.scss in brackets.
+@import "ie/ie-grids";
 /**
  * Primary site colors and fonts
  */
@@ -98,7 +138,7 @@
  * Overall site and layout
  */
 @import "elements/page";
-@import "elements/layouts";
+@import "ie/ie-layouts";
 
 
 /**
@@ -110,14 +150,16 @@
 @import "elements/tables";
 @import "elements/video";
 @import "elements/images";
- 
-@import "elements/header";
+
+@import "ie/ie-header";
+//@import "elements/header";
 @import "elements/footer";
-@import "elements/social";  
+@import "elements/social";
 
 @import "elements/site-search";
-@import "elements/navigation";
+@import "ie/ie-navigation";
 @import "elements/dropdowns";
+@import "ie/ie-off-canvas";
 @import "elements/off-canvas";
 @import "elements/ui-autocomplete";
 @import "elements/tiles";
@@ -127,8 +169,8 @@
  */
 @import "elements/campus-locator";
 @import "elements/country-list";
-@import "elements/slider";
- 
+@import "ie/ie-sliders";
+
 @import "elements/post";
 @import "elements/post-images";
 
@@ -144,6 +186,8 @@
  * Overrides and additional tools
  */
 @import "elements/animations";
-@import "brackets.css/generic/helpers";
+@import "ie/ie-helpers";
 @import "elements/debug";
+
+
 
