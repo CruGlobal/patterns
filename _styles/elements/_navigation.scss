@@ -1,6 +1,8 @@
 /*------------------------------------*\
     $NAVIGATION [IE version ie/ie-navigation]
 \*------------------------------------*/
+$nav-break-min: 980px;
+$nav-break-max: 979px;
 
 .navigation{
     position: fixed;
@@ -24,7 +26,7 @@
         width: 18.75em;
     }
 
-    @include mq(981px) {
+    @include mq($nav-break-min) {
         width: 90%;
         height: $header-height - 3px;
 
@@ -36,7 +38,7 @@
 
     }
 
-    @include mq(981px, max) {
+    @include mq($nav-break-max, max) {
         overflow: scroll;
         padding-top: 69px;
         height: 100%;
@@ -49,14 +51,14 @@
   z-index: 1;
   margin-top: 4px;
 
-      @include mq(981px) {
+      @include mq($nav-break-min) {
           float: right;
           width: auto;
 
       }
 
       & > li{
-          @include mq(981px, max) {
+          @include mq($nav-break-max, max) {
               display: block;
           }
       }
@@ -64,13 +66,13 @@
 
 .nav > .nav__item,
 .nav__item > .nav__link{
-    @include mq(981px, max) {
+    @include mq($nav-break-max, max) {
         display: block;
     }
 }
 
 .nav_item {
-    @include mq(981px, max) {
+    @include mq($nav-break-max, max) {
         border-bottom-color: $color-gold;
     }
 }
@@ -80,7 +82,7 @@
  **/
 
 .right-nav{
-    @include mq(981px) {
+    @include mq($nav-break-min) {
         width: 50%;
         float: right;
         vertical-align: middle;
@@ -94,7 +96,7 @@
         line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
     }
 
-    @include mq(980px, max) {
+    @include mq($nav-break-max, max) {
         width: 100%;
     }
 
@@ -103,12 +105,12 @@
     }
 
     & > .nav__item{
-        @include mq(980px, max) {
+        @include mq($nav-break-max, max) {
             display: block;
         }
 
         & > a{
-            @include mq(980px, max) {
+            @include mq($nav-break-max, max) {
                 display: block;
             }
         }
@@ -135,7 +137,7 @@
      text-decoration: none;
    }
 
-   @include mq(981px) {
+   @include mq($nav-break-min) {
        color: $color-dark-gray;
 
        @include vendor(transition, all 0.25s ease-in-out);
@@ -153,7 +155,7 @@
   text-decoration: none;
 }
 .primary-link i {
-    @include mq(981px) {
+    @include mq($nav-break-min) {
       display: none;
     }
 }
@@ -228,7 +230,7 @@
 }
 
 .js-close-button{
-  @media screen and (min-width: 61.25em){
+  @include mq($nav-break-min) {
     display: none;
   }
 }
@@ -256,25 +258,25 @@
 }
 
 .js-nav #inner-wrap {
-  @media screen and (max-width: 61.24em){
+  @include mq($nav-break-max, max) {
     right: 70%;
   }
 }
 
 .js-nav #flyout{
-  @media screen and (max-width: 61.24em){
+    @include mq($nav-break-max, max) {
     right: 0;
   }
 }
 
 .js-nav .site-header{
-  @media screen and (max-width: 61.24em){
+    @include mq($nav-break-max, max) {
     position: absolute;
   }
 }
 
 .js-nav body{
-  @media screen and (max-width: 61.24em){
+    @include mq($nav-break-max, max) {
     padding-top: 0;
   }
 }
@@ -349,7 +351,7 @@
     text-decoration: none;
   }
 
-  @include mq(981px){
+  @include mq($nav-break-min){
     display: none;
   }
 }
@@ -376,7 +378,7 @@
     text-decoration: none;
   }
 
-  @include mq(980px) {
+  @include mq($nav-break-min) {
     display: none;
   }
 }
