@@ -40,8 +40,9 @@ $nav-break-max: 979px;
 
     @include mq($nav-break-max, max) {
         overflow: scroll;
-        padding-top: 69px;
         height: 100%;
+        
+@include rem-calc(padding-top, 69px);
     }
 
 }
@@ -54,7 +55,6 @@ $nav-break-max: 979px;
       @include mq($nav-break-min) {
           float: right;
           width: auto;
-
       }
 
       & > li{
@@ -131,20 +131,21 @@ $nav-break-max: 979px;
 
    color: $color-white;
 
+   @include mq($nav-break-min) {
+       color: $color-dark-gray;
+
+@include transition(all 0.25s ease-in-out);
+       /**
+       * &:hover{
+       *      //background-color: #f6f6f6;
+       * }
+       */
+   }
+
    &:hover{
      background-color: #444444;
      color: $color-gold;
      text-decoration: none;
-   }
-
-   @include mq($nav-break-min) {
-       color: $color-dark-gray;
-
-       @include vendor(transition, all 0.25s ease-in-out);
-
-       &:hover{
-           //background-color: #f6f6f6;
-       }
    }
 
 }
@@ -156,7 +157,7 @@ $nav-break-max: 979px;
 }
 .primary-link i {
     @include mq($nav-break-min) {
-      display: none;
+        display: none;
     }
 }
 
@@ -180,12 +181,12 @@ $nav-break-max: 979px;
     padding-right: 30px;
     opacity: 0;
     /* Hover Off */
-    @include vendor(transition, opacity 0s 0.2s ease-out );
-    @include clearfix();
+@include transition(opacity 0s 0.2s ease-out);
+@include pie-clearfix;
 
-    @include vendor(transform, translate3d(0, 0, -160%));
-    @include vendor(backface-visibility, hidden);
-    @include vendor(perspective, 1000);
+@include translate3d(0, 0, -160%);
+@include backface-visibility(hidden);
+@include perspective(1000);
 
 }
 
@@ -212,20 +213,18 @@ $nav-break-max: 979px;
     overflow: visible;
     opacity: 1;
 
-    @include vendor(box-shadow, 0 1px 1px rgba(6, 8, 8, 0.1));
-
-    /* Hover On */
-    -webkit-transition: max-height 0.25s ease;
-
-    @include vendor(transition, all 0.3s 0.2s ease );
-
+@include box-shadow(0 1px 1px rgba(6, 8, 8, 0.1) );
+/* Hover On */
+@include transition(max-height 0.25s ease);
+@include transition(all 0.3s 0.2s ease);
 }
 
 .nav li.dropdown__item:hover,
 .nav li.dropdown__item:focus{
   &:after{
     opacity: 1;
-    @include vendor(transition, all 0.2s 0.2s ease );
+    
+@include transition(all 0.2s 0.2s ease);
   }
 }
 
@@ -236,94 +235,87 @@ $nav-break-max: 979px;
 }
 
 #flyout{
-  position: absolute;
-  top: 0;
-  padding-top: 5.25rem;
+    position: absolute;
+    top: 0;
+    padding-top: 5.25rem;
 
-  &:not(:target) {
-    z-index: 1;
-    height: 0;
-  }
+    &:not(:target) {
+        z-index: 1;
+        height: 0;
+    }
 }
 
 
 .js-ready #flyout{
-  right: -70%;
-  height: 100%;
-  width: 70%;
-  background: #333333;
-  -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-  box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+    right: -70%;
+    height: 100%;
+    width: 70%;
+    background: #333333;
+
+@include box-shadow(inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25))
 }
 
 .js-nav #inner-wrap {
-  @include mq($nav-break-max, max) {
-    right: 70%;
-  }
+    @include mq($nav-break-max, max) {
+        right: 70%;
+    }
 }
 
 .js-nav #flyout{
     @include mq($nav-break-max, max) {
-    right: 0;
-  }
+        right: 0;
+    }
 }
 
 .js-nav .site-header{
     @include mq($nav-break-max, max) {
-    position: absolute;
-  }
+        position: absolute;
+    }
 }
 
 .js-nav body{
     @include mq($nav-break-max, max) {
-    padding-top: 0;
-  }
+        padding-top: 0;
+    }
 }
 
 .js-nav #main{
-  padding-top: 67px;
+@include rem-calc(padding-top, 67px);
 }
 
 .grid{
-  @include clearfix();
-
+    @include pie-clearfix;
 }
 
 #flyout .js-close-button {
-  position: absolute;
-  top: 2.1rem;
-  right: 1.75rem;
+    position: absolute;
+    top: 2.1rem;
+    right: 1.75rem;
 }
 
 .is-hidden, .is-visible{
-  @include vendor(transition, all 0.5s);
+    @include transition(all 0.5s);
 }
 
 .is-hidden{
-  -webkit-transform: translateY(-6em);
-  -ms-transform: translateY(-6em);
-  transform: translateY(-6em);
 
-  .nav li > .dropdown{
-    height: 0;
-    overflow: hidden;
-    @include vendor(transition, all 0s);
-    visibility: hidden;
+@include translateY(-6em);
 
-  }
+    .nav li > .dropdown{
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+@include transition(all 0s);
+    }
 }
 
 .is-visible {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+@include translateY(0);
 
-  .nav li > .dropdown{
-    -webkit-transform: none;
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
+    .nav li > .dropdown{
+@include translateY(0);
+
+    }
 }
 
 
@@ -414,21 +406,21 @@ $nav-break-max: 979px;
 
 
 #toolbar form {
-  border-radius: 2px;
+    border-radius: 2px;
 }
 
 
 #search_options{
-  z-index: 501;
-  top: 31px;
+    z-index: 501;
+    top: 31px;
 
-  background-color: #ffffff;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+    background-color: #ffffff;
+@include border-bottom-right-radius(2px); 
+@include border-bottom-left-radius(2px);
 }
 
 
 /*-- added for you are here functionality, adds underline to main nav item --*/
 .primary-link-active {
-  border-bottom: 3px solid $color-gold;
+    border-bottom: 3px solid $color-gold;
 }

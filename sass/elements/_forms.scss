@@ -33,7 +33,7 @@ select, textarea, input[type="text"]{
       &.active {
   		background: #e5e5e5;
   		background: rgba(229, 229, 229, 0.5);
-			cursor: not-allowed;
+		cursor: not-allowed;
       }
   }
 }
@@ -42,21 +42,22 @@ textarea.text-input{
     height: 100%;
 }
 
+
+.form-help, .text-input{
+@include transition(all $base-animation-time);    
+}
+
 .form-help{
     display: block;	
 
     opacity: 0;
 	max-height: 0;
 	top: -1.1538461538461537em;
-	overflow: hidden;
-    
-	@include vendor(transition, all $base-animation-time);
-	
+	overflow: hidden;	
 }
 
 .text-input{
-	@include vendor(transition, all $base-animation-time);
-    
+
 	&:active, &:focus{
 		border-color: darken($base-ui-color, 25%);
 		

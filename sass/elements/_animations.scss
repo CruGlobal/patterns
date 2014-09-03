@@ -35,22 +35,22 @@
 }
 
 @include keyframes(sliderReverseBegin) {
-    from{
+    from {
         left: 66%
     }
     
-    to{
+    to {
         left: 100%
     }
     
 }
 
 @include keyframes(sliderReverseEnd) {
-    from{
+    from {
         left: -52%
     }
     
-    to{
+    to {
         left: -33.333333%
     }
 }

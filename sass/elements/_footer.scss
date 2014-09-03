@@ -19,13 +19,14 @@
 		
 		a{
             @extend %ps--;
-            color: $base-text-color;
             
+            color: $base-text-color;            
 		}
 	}
 	
 	.copy{
         @extend %pb;
+        
 		text-align: center;
 	}
 }

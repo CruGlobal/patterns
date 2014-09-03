@@ -58,7 +58,7 @@
         .nav .nav__item:hover > .dropdown {
             position: fixed;
             height: 0;
-            opacity: 0;
+@include opacity(0);
         }
 
 

@@ -14,11 +14,9 @@ $link-height: 36px;
   height: $header-height;
   background-color: $color-white;
 
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: $color-gold;
+border-top: 3px solid $color-gold;
 
-  @include vendor(box-shadow, 0 0 6px rgba(0,0,0,0.2));
+@include box-shadow(0 0 6px rgba(0,0,0,0.2));
 
 }
 
@@ -46,10 +44,9 @@ $link-height: 36px;
     width: 74px;
     height: 54px;
     background: url("/images/cru-logo.png");
-    background-image: url("/images/cru-logo.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+background: url("/images/cru-logo.svg") no-repeat top center;
+@include background-size(contain);
+
   }
 
   h1{
