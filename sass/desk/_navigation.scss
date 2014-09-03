@@ -1,80 +1,42 @@
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
-$nav-break-min: 981px;
-$nav-break-max: 980px;
+$nav-break-min: 980px;
+$nav-break-max: 979px;
+
+body, .navigation, .site-header{
+    min-width: 980px;
+}
 
 .navigation{
     position: fixed;
 
     float: none;
-    width: 89%;
     display: inline-block;
     vertical-align: middle;
     max-width: 1220px;
     top: 0;
-    right: -100%;
-    z-index: 1;
+    right: 0;
+    z-index: 505;
 
-    width: 70%;
+    width: 90%;
+    height: $header-height - 3px;
 
-    background-color: #444444;
+    background-color: transparent;
     border-top: 3px solid;
-    border-color: #f9b625;
-
-    @include mq(540px) {
-        width: 18.75em;
+    border-color: transparent;
+    
+    @include mq(979px, max) {
+        left: 10%;
     }
-
-    @include mq($nav-break-min) {
-        width: 90%;
-        height: $header-height - 3px;
-
-        background-color: transparent;
-        z-index: 505;
-        right: 0;
-
-        border-color: transparent;
-
-    }
-
-    @include mq($nav-break-max, max) {
-        overflow: scroll;
-        padding-top: 69px;
-        height: 100%;
-    }
-
 }
 
 .site-nav {
   position: relative;
   z-index: 1;
   margin-top: 4px;
-
-      @include mq($nav-break-min) {
-          float: right;
-          width: auto;
-
-      }
-
-      & > li{
-          @include mq($nav-break-max, max) {
-              display: block;
-          }
-      }
-}
-
-.nav > .nav__item,
-.nav__item > .nav__link{
-    @include mq($nav-break-max, max) {
-        display: block;
-    }
-}
-
-.nav_item {
-    @include mq($nav-break-max, max) {
-        border-bottom-color: $color-gold;
-    }
+  float: right;
+  width: auto;
 }
 
 /**
@@ -82,38 +44,21 @@ $nav-break-max: 980px;
  **/
 
 .right-nav{
-    @include mq($nav-break-min) {
-        width: 50%;
-        float: right;
-        vertical-align: middle;
+     width: 50%;
+     float: right;
+     position: relative;
+     z-index: 506;
+     
+     vertical-align: middle;
 
-        position: relative;
-        z-index: 506;
 
-        margin-top: 5px;
+     margin-top: 5px;
 
-        text-align: right;
-        line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
-    }
-
-    @include mq($nav-break-max, max) {
-        width: 100%;
-    }
+     text-align: right;
+     line-height: ceil($base-font-size / 24px) * (24px / $base-font-size);
 
     .search__options{
         display: none;
-    }
-
-    & > .nav__item{
-        @include mq($nav-break-max, max) {
-            display: block;
-        }
-
-        & > a{
-            @include mq($nav-break-max, max) {
-                display: block;
-            }
-        }
     }
 }
 
@@ -129,24 +74,14 @@ $nav-break-max: 980px;
 
    vertical-align: middle;
 
-   color: $color-white;
-
+    color: $color-dark-gray;
+    
+    @include vendor(transition, all 0.25s ease-in-out);
    &:hover{
      background-color: #444444;
      color: $color-gold;
      text-decoration: none;
    }
-
-   @include mq($nav-break-min) {
-       color: $color-dark-gray;
-
-       @include vendor(transition, all 0.25s ease-in-out);
-
-       &:hover{
-           //background-color: #f6f6f6;
-       }
-   }
-
 }
 
 .is-active{
@@ -154,6 +89,7 @@ $nav-break-max: 980px;
   color: $color-gold;
   text-decoration: none;
 }
+
 .primary-link i {
     @include mq($nav-break-min) {
       display: none;
@@ -235,26 +171,10 @@ $nav-break-max: 980px;
   }
 }
 
-.js-nav #inner-wrap {
-  @include mq($nav-break-max, max) {
-    right: 70%;
-  }
-}
 
-.js-nav .site-header{
-    @include mq($nav-break-max, max) {
-    position: absolute;
-  }
-}
+.grid{
+  @include clearfix();
 
-.js-nav body{
-    @include mq($nav-break-max, max) {
-    padding-top: 0;
-  }
-}
-
-.js-nav #main{
-  padding-top: 67px;
 }
 
 .is-hidden, .is-visible{
@@ -289,32 +209,7 @@ $nav-break-max: 980px;
 
 
 .topbar-toggle{
-  text-transform: uppercase;
-
-  position: absolute;
-  top: 22px;
-  right: 16px;
-
-  color: #3a3a3a;
-
-  @include font-size(19.2px, false);
-
-  &:after{
-    vertical-align: text-bottom;
-    font-weight: bold;
-    line-height: 0.9em;
-
-    @include font-size(28px, false);
-  }
-
-  &:hover{
-    color: $color-gold;
-    text-decoration: none;
-  }
-
-  @include mq($nav-break-min){
     display: none;
-  }
 }
 /*
 .topbar-open{
@@ -327,21 +222,7 @@ $nav-break-max: 980px;
 }
 */
 .topbar-close{
-  position: absolute;
-  z-index: 1;
-
-  color: #ffffff;
-
-  @include rem(top, 22px);
-  @include rem(right, 16px);
-
-  &:hover, &:focus {
-    text-decoration: none;
-  }
-
-  @include mq($nav-break-min) {
     display: none;
-  }
 }
 
 
