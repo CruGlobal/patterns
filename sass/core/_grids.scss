@@ -57,7 +57,7 @@
     list-style: none;                           /* [1] */
     margin: 0;                                  /* [2] */
     padding: 0;                                 /* [2] */
-    margin-left:-$gutter;                       /* [3] */
+    margin-left: -$gutter;                      /* [3] */
 		
     @if $use-markup-fix != true{
         letter-spacing:-0.31em;
@@ -71,7 +71,7 @@
     /* Opera hack */
     .opera:-o-prefocus,
     #{$class-type}grid{
-        word-spacing:-0.43em;
+        word-spacing: -0.43em;
     }
 }
 
@@ -86,19 +86,19 @@
  * 5. Required to combine fluid widths and fixed gutters.
  */
 #{$class-type}grid__item{ 
-    // display:inline-block;                    /* [1] */
-    float:left;                              
-    vertical-align:top;                         /* [2] */
+    // display: inline-block;                    /* [1] */
+    float: left;                              
+    vertical-align: top;                         /* [2] */
     
-    padding-left:$gutter;                       /* [3] */
+    padding-left: $gutter;                       /* [3] */
     
     @if $mobile-first == true{
-        width:100%;                             /* [4] */
+        width: 100%;                             /* [4] */
     }
         
     @if $use-markup-fix != true{
-        letter-spacing:normal;
-        word-spacing:normal;
+        letter-spacing: normal;
+        word-spacing: normal;
     }
     
     @include box-sizing(border-box);            /* [5] */
@@ -110,12 +110,12 @@
  * how your rendered layout will appear. Extends `.grid`.
  */
 #{$class-type}grid--rev{
-    direction:rtl;
-    text-align:left;
+    direction: rtl;
+    text-align: left;
 
     > #{$class-type}grid__item{
-        direction:ltr;
-        text-align:left;
+        direction: ltr;
+        text-align: left;
     }
 }
 
@@ -124,10 +124,10 @@
  * Align the entire grid to the right. Extends `.grid`.
  */
 #{$class-type}grid--right{
-    text-align:right;
+    text-align: right;
 
     > #{$class-type}grid__item{
-        text-align:left;
+        text-align: left;
     }
 }
 
@@ -137,10 +137,10 @@
  * classes. Extends `.grid`.
  */
 #{$class-type}grid--center{
-    text-align:center;
+    text-align: center;
 
     > #{$class-type}grid__item{
-        text-align:left;
+        text-align: left;
     }
 }
 
@@ -151,6 +151,6 @@
 #{$class-type}grid--middle{
 
     > #{$class-type}grid__item{
-        vertical-align:middle;
+        vertical-align: middle;
     }
 }

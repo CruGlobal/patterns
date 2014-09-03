@@ -14,6 +14,7 @@
  */
 table {
 	@extend %vertical-rhythm;
+    
 	max-width: 100%;
 	width: 100%; /* [1] */
 	
@@ -38,25 +39,28 @@ table {
 	
 	th, td, 
 	.table__item, 
-	%table__item{
+	%table__item {
 		@extend %table__item;
 		
 	    line-height: $base-spacing-ratio;
 		
 		@include half-spacing(padding);
-	.table__item, 
-	%table__item{
-		 display: table-cell; /* [3] */
-	}
+        
+    	.table__item, 
+    	%table__item {
+    		 display: table-cell; /* [3] */
+    	}
 	
-	th, td, 
-	.table__item,  
-	%table__item{
-	   // padding: $base-spacing-unit / 2;
-	    //line-height: $base-spacing-unit;
-	}
+    /**
+	 * th, td, 
+	 * .table__item,  
+	 * %table__item{
+	 *    // padding: $base-spacing-unit / 2;
+	 *    //line-height: $base-spacing-unit;
+	 * }
+     */
 	
-		.table__content{
+		.table__content {
 			display: block; /* [4] */
 		}
 

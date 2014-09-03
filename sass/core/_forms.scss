@@ -26,6 +26,7 @@ legend{
 	display: block;
 	width: 100%;
 	padding: 0;
+    
 	@include font-size($base-font-size * 1.25);
 }
 
@@ -66,13 +67,12 @@ legend{
 	line-height: $base-line-height;
 	
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-	border: 2px solid $base-ui-color;
-	border-radius: $base-border-radius;
-	
+	border: 2px solid $base-ui-color;	
 	
 	@include half-spacing(padding-left);
 	@include half-spacing(padding-right);
-	
+@include border-radius($base-border-radius);
+    
 	&.disabled{
 	    cursor: not-allowed;
 	}
@@ -142,6 +142,7 @@ legend{
 label,
 .label{
     display:block;
+    
 	@include rem-calc(margin-bottom, 6px);
 }
 
@@ -215,7 +216,6 @@ label,
     
     input, select, label{
         display:inline-block;
-        //font:inherit;
     }
 }
 

@@ -13,14 +13,14 @@ img[height]{
  * Rounded images.
  */
 .image--rounded { 
-	border-radius: $base-border-radius; 
+    @include border-radius($base-border-radius);
 }
 
 /**
  * Circle images.
  */
 .image--circle { 
-	border-radius: 50%; 
+    @include border-radius(50%);
 }
 
 /**
