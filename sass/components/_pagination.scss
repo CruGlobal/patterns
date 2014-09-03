@@ -35,8 +35,8 @@
     }
     
         .pagination li{
-            letter-spacing:normal;
-            word-spacing:normal;
+            letter-spacing: normal;
+            word-spacing: normal;
             display: inline;
         }
 
@@ -48,6 +48,7 @@
             background: #fff;
             border-radius: 4px;
             color: #666062;
+            
             @include rem-calc(padding, 4px 14px);
             @include rem-calc(margin, 8px 4px);
 
@@ -71,7 +72,7 @@
                     }
 
                     a:before{
-                        content:"\00AB" "\00A0";
+                        content: "\00AB" "\00A0";
                     }
                 }
                 .pagination__next{
@@ -80,7 +81,7 @@
                     }
                     
                     a:after{
-                        content:"\00A0" "\00BB";
+                        content: "\00A0" "\00BB";
                     }
                 }
                 .current > a{

@@ -40,16 +40,6 @@
 }
 
 
-// User select
-// For selecting text on the page
-@mixin user-select($select) {
-  -webkit-user-select: $select;
-     -moz-user-select: $select;
-      -ms-user-select: $select; // IE10+
-       -o-user-select: $select;
-          user-select: $select;
-}
-
 // Form control focus state
 //
 // Generate a customized focus state and for any input with the specified color,

@@ -10,9 +10,6 @@
     //@extend %m0;
     position: relative;
     display: inline-block;
-
-	cursor: pointer;
-
 	
 	background-color: $btn-default-bg;
 	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -26,15 +23,16 @@
     letter-spacing: .02em;
 	vertical-align: middle;
 	overflow: visible;
+	cursor: pointer;
     
 	-webkit-font-smoothing: antialiased;
     
-    @include rem-calc(padding, 6px 18px);		
-    @include font-size($btn-font-size, false);		
-	@include rem-calc(border-radius, $base-border-radius);	
-    @include vendor(transition, all .2s ease);
-	@include vendor(appearance, none);
-	@include user-select(none);
+    @include font-size($btn-font-size, false);   
+    @include rem-calc(padding, 6px 18px);		        		
+@include border-radius($base-border-radius);
+@include transition(all .2s ease);
+@include appearance(none);
+@include user-select(none);
     
 	/**
 	 * Button size modifiers
@@ -49,6 +47,7 @@
 
 	&--large{
 		line-height: 2;
+        
         @include rem-calc(padding, 12px 26px);
 	}
     
@@ -150,13 +149,13 @@
 
 		&:hover{
 			background-color: darken($btn-default-bg, 10%);
-			box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+            @include box-shadow(0 0 1px rgba(0, 0, 0, .3));
 		}
 
 		&:active,
 		&:focus{
 		    outline:none;
-		    box-shadow:0 0 2px rgba(0, 0, 0, .3) inset;
+            @include box-shadow(0 0 2px rgba(0, 0, 0, .3) inset);
 		}
 
 		&:focus {

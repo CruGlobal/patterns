@@ -21,7 +21,7 @@
 }
 
     %media__img--width{        
-        @include mq(1000px){
+        @include mq(1000px) {
             max-width: 25%;
         }
     }
@@ -29,8 +29,8 @@
     .media__img{
         @extend %media__img--width;
         
-        @include mq(1000px){
-            float:left;
+        @include mq(1000px) {
+            float: left;
             margin-right: $base-spacing-unit;
         }
     }
@@ -41,8 +41,8 @@
     .media__img--rev{
         @extend %media__img--width;
         
-        @include mq(1000px){
-            float:right;
+        @include mq(1000px) {
+            float: right;
             margin-left: $base-spacing-unit;
         }
     }

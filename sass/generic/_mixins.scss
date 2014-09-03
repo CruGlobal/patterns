@@ -25,5 +25,19 @@
 @import "mixins/spacing";
 @import "mixins/text";
 
-@import "compass/css3/opacity";
-@import "compass/utilities/general/clearfix"
+/**
+ * This give us access all of Compass's css3 mixins. 
+ * See: http://compass-style.org/reference/compass/css3/ for documentation
+ *
+ * We are currently using:
+ * opacity, appearance, border-radius, transition, and user-interface
+ */
+@import "compass/css3";
+
+
+/**
+ * currently using pie-clearfix, includes others
+ */
+@import "compass/utilities/general/clearfix";
+
+
