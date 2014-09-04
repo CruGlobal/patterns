@@ -1,6 +1,8 @@
 /*------------------------------------*\
     $OFF-CANVAS [IE version ie/ie-off-canvas]
 \*------------------------------------*/
+$nav-break-min: 981px;
+$nav-break-max: 980px;
 
 .nav-is-open{
 	.inner-wrap, .site-header{
@@ -8,14 +10,14 @@
 			right: 70%;
 		}
 
-		@include mq(541px) {
-			@include mq(980px, max) {
+        @include mq($nav-break-max, max) {
+			@include mq(541px) {
 				right: 18.75em;
 			}
 		}
 	}
 
-    @include mq(979px, max){
+    @include mq($nav-break-max, max){
         .navigation {
             overflow: scroll;
             padding-top: 20px;

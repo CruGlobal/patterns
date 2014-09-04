@@ -30,7 +30,7 @@
 .layout--wide{
 	@extend %layout-single-column;
 	
-	@include mq(1000px){
+	@include mq(1024px){
 		width: 880px;
 	}
 }
