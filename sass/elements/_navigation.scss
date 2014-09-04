@@ -64,7 +64,9 @@ $nav-break-max: 980px;
       }
       
       & > .nav__item{
-          float: left;
+          @include mq($nav-break-min) {         
+              float: left;
+          }
       }
 }
 
