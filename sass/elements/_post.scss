@@ -13,7 +13,9 @@
 
 .post-title{
     @extend %mb--;
+    @extend %h2;
     
+    //text-transform: capitalize;
     word-wrap: break-word;    
     letter-spacing: -0.04em;
 }
