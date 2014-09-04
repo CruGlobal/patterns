@@ -41,10 +41,10 @@ $(document).ready(function(){
 					$('.temp').addClass('slider5').removeClass('temp');
 				}
 				if (slide_count === 7) {
+					$('.slider4').addClass('slider3').removeClass('slider4');
 					$('.slider5').addClass('slider4').removeClass('slider5');
 					$('.slider6').addClass('slider5').removeClass('slider6');
-					$('.slider7').addClass('slider6').removeClass('slider7');
-					$('.slider0').addClass('slider7').removeClass('slider0');
+					$('.temp').addClass('slider6').removeClass('temp');
 				}
 				if (slide_count === 8) {
 					$('.slider5').addClass('slider4').removeClass('slider5');
