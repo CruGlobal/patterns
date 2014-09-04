@@ -47,11 +47,11 @@ $(document).ready(function(){
 					$('.temp').addClass('slider6').removeClass('temp');
 				}
 				if (slide_count === 8) {
+					$('.slider4').addClass('slider3').removeClass('slider4');
 					$('.slider5').addClass('slider4').removeClass('slider5');
 					$('.slider6').addClass('slider5').removeClass('slider6');
 					$('.slider7').addClass('slider6').removeClass('slider7');
-					$('.slider8').addClass('slider7').removeClass('slider8');
-					$('.slider0').addClass('slider8').removeClass('slider0');
+					$('.temp').addClass('slider7').removeClass('temp');
 				}
 
 				
@@ -67,11 +67,11 @@ $(document).ready(function(){
 		if(!sliding){
 			sliding = true;
 			if (slide_count === 8) {
-				$('.slider8').addClass('slider0').removeClass('slider8');
-				$('.slider7').addClass('slider8').removeClass('slider7');
+				$('.slider7').addClass('temp').removeClass('slider7');
 				$('.slider6').addClass('slider7').removeClass('slider6');
 				$('.slider5').addClass('slider6').removeClass('slider5');
 				$('.slider4').addClass('slider5').removeClass('slider4');
+				$('.slider3').addClass('slider4').removeClass('slider3');
 			}
 			if (slide_count === 7) {
 				$('.slider6').addClass('temp').removeClass('slider6');
