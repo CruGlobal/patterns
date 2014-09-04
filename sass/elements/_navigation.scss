@@ -62,6 +62,10 @@ $nav-break-max: 980px;
               display: block;
           }
       }
+      
+      & > .nav__item{
+          float: left;
+      }
 }
 
 .nav > .nav__item,
