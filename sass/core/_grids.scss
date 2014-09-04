@@ -54,6 +54,7 @@
 #{$class-type}grid{
 	@extend %cf;
 	
+    position: relative;
     list-style: none;                           /* [1] */
     margin: 0;                                  /* [2] */
     padding: 0;                                 /* [2] */
