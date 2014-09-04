@@ -89,13 +89,13 @@ $(document).ready(function(){
 				$('.slider4').addClass('slider5').removeClass('slider4');
 			}
 			if (slide_count === 4) {
-				$('.slider3').addClass('slider7').removeClass('slider3'); // $('.slider4').addClass('slider0').removeClass('slider4');
+				$('.slider3').addClass('temp').removeClass('slider3'); // $('.slider4').addClass('slider0').removeClass('slider4');
 			}
 			
-			$('.slider3').addClass('slider4').removeClass('slider3');
 			$('.slider2').addClass('slider3').removeClass('slider2');
 			$('.slider1').addClass('slider2').removeClass('slider1');
 			$('.slider0').addClass('slider1').removeClass('slider0');
+			$('.temp').addClass('slider0').removeClass('temp');
 			
 			setTimeout(function(){sliding=false;}, 1200);
 			}
