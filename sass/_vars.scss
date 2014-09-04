@@ -92,6 +92,12 @@ $header-font-ratio:            1.414 !default;
 	$h3-font-size: 			   $h4-font-size   * $header-font-ratio !default;
 	$h2-font-size:             $h3-font-size   * $header-font-ratio !default; 
 	$h1-font-size:             $h2-font-size   * $header-font-ratio !default; 
+    
+    $h1-font-size-small:       $h1-font-size - 20px;
+    $h2-font-size-small:       $h2-font-size - 8px;
+    $h3-font-size-small:       $h3-font-size - 5px;
+    $h4-font-size-small:       $h4-font-size - 5px;
+    $h5-font-size-small:       $h5-font-size - 2px;
 
 	/* Subheaders */
 	$subheader-line-height:    1.414 !default;

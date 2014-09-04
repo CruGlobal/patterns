@@ -13,6 +13,7 @@
 
 .post-title{
     @extend %mb--;
+    @extend %h2;
     
     word-wrap: break-word;    
     letter-spacing: -0.04em;
