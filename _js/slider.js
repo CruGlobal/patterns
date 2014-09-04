@@ -36,9 +36,9 @@ $(document).ready(function(){
 					$('.temp').addClass('slider4').removeClass('temp');
 				}
 				if (slide_count === 6) {
+					$('.slider4').addClass('slider3').removeClass('slider4');
 					$('.slider5').addClass('slider4').removeClass('slider5');
-					$('.slider6').addClass('slider5').removeClass('slider6');
-					$('.slider0').addClass('slider6').removeClass('slider0');
+					$('.temp').addClass('slider5').removeClass('temp');
 				}
 				if (slide_count === 7) {
 					$('.slider5').addClass('slider4').removeClass('slider5');
@@ -80,9 +80,9 @@ $(document).ready(function(){
 				$('.slider4').addClass('slider5').removeClass('slider4');
 			}
 			if (slide_count === 6) {
-				$('.slider6').addClass('slider0').removeClass('slider6');
-				$('.slider5').addClass('slider6').removeClass('slider5');
+				$('.slider5').addClass('temp').removeClass('slider5');
 				$('.slider4').addClass('slider5').removeClass('slider4');
+				$('.slider3').addClass('slider4').removeClass('slider3');
 			}
 			if (slide_count === 5) {
 				$('.slider4').addClass('temp').removeClass('slider4');
