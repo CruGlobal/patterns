@@ -39,8 +39,8 @@ figcaption{
  * Places a dash after a piece of text. Mainly for post meta info
  * 
  */
-.accent{
-	&:after{
+.accent + .accent{
+	&:before{
 		content: "\2013";    //  "\00A0" is a temporary replacement for "-" until legacy articles are phased out.
         
 		@include rem-calc(margin-left, 12px);
