@@ -46,5 +46,9 @@
 
   }
 
+  @include mq(980px, max){
+    width: 100%;
+  }
+
 }
 
