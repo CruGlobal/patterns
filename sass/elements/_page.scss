@@ -12,6 +12,10 @@
 
 .page--home .banner-title{
     @extend %h3;
+    
+    @include mq(620px, max){
+        line-height: 1.25;
+    }
 }
 
 .background-size-contain.layout-single-column{
