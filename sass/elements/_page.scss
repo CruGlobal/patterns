@@ -10,6 +10,10 @@
 	@include rem(padding-top, $base-spacing-unit * 4);
 }
 
+.page--home .banner-title{
+    @extend %h3;
+}
+
 .background-size-contain.layout-single-column{
 	@include mq(500px, max) {
 		margin-left: 0;
