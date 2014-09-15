@@ -32,6 +32,9 @@ a + .phone{
     }
 }
 
-    .contact__title-name{
-        @extend %small-text;
+.contact__title-name{
+    @extend %small-text;
+
+    @include mq(1023px, max) {
+      display: none;
     }
