@@ -8,11 +8,16 @@ $(document).ready(function() {
     /*
      * When browser window loses focus stop animation from firing to prevent queue up issues
      */
-    $(window).focus(function() {
-        window_focus = true;
-    }).blur(function() {
-        window_focus = false;
+     /*
+     * IE8 does not support window focus so test for that browser first 
+     */
+     if ( !$('html').hasClass('lt-ie9')) {
+        $(window).focus(function() {
+        window_focus=true;
+        }).blur(function() {
+        window_focus=false;
     });
+ }
 
 
     /*
